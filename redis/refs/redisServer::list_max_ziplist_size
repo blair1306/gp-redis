@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1141' type='int'/>
+<offset>21376</offset>
+<doc f='codebrowser/src/server.h' l='1140'>/* List parameters */</doc>
+<use f='codebrowser/src/config.c' l='545' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1064' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1239' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2019' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/module.c' l='352' u='r' c='moduleCreateEmptyKey'/>
+<use f='codebrowser/src/rdb.c' l='1162' u='r' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1314' u='r' c='rdbLoadObject'/>
+<use f='codebrowser/src/server.c' l='1419' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/t_list.c' l='184' u='r' c='listTypeConvert'/>
+<use f='codebrowser/src/t_list.c' l='209' u='r' c='pushGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='554' u='r' c='rpoplpushHandlePush'/>

@@ -1,0 +1,2 @@
+<dec f='include/valgrind/valgrind.h' l='7021'/>
+<doc f='include/valgrind/valgrind.h' l='7020'>/* Disassociate a piece of memory from a memory pool. */</doc>

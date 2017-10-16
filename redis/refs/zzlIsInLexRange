@@ -1,0 +1,5 @@
+<def f='codebrowser/src/t_zset.c' l='871' ll='891' type='int zzlIsInLexRange(unsigned char * zl, zlexrangespec * range)'/>
+<use f='codebrowser/src/t_zset.c' l='899' u='c' c='zzlFirstInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='924' u='c' c='zzlLastInLexRange'/>
+<doc f='codebrowser/src/t_zset.c' l='869'>/* Returns if there is a part of the zset is in range. Should only be used
+ * internally by zzlFirstInRange and zzlLastInRange. */</doc>

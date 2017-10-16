@@ -1,0 +1,2 @@
+<dec f='codebrowser/src/anet.h' l='78' type='int anetFormatSock(int fd, char * fmt, size_t fmt_len)'/>
+<def f='codebrowser/src/anet.c' l='652' ll='658' type='int anetFormatSock(int fd, char * fmt, size_t fmt_len)'/>

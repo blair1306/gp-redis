@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1746' type='void slotToKeyFlushAsync()'/>
+<use f='codebrowser/src/db.c' l='330' u='c' c='emptyDb'/>
+<def f='codebrowser/src/lazyfree.c' l='100' ll='108' type='void slotToKeyFlushAsync()'/>
+<doc f='codebrowser/src/lazyfree.c' l='98'>/* Empty the slots-keys map of Redis CLuster by creating a new empty one
+ * and scheduiling the old for lazy freeing. */</doc>

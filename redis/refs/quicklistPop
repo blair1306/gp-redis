@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/quicklist.h' l='155' type='int quicklistPop(quicklist * quicklist, int where, unsigned char ** data, unsigned int * sz, long long * slong)'/>
+<def f='codebrowser/src/quicklist.c' l='1385' ll='1401' type='int quicklistPop(quicklist * quicklist, int where, unsigned char ** data, unsigned int * sz, long long * slong)'/>
+<doc f='codebrowser/src/quicklist.c' l='1382'>/* Default pop function
+ *
+ * Returns malloc&apos;d value from quicklist */</doc>

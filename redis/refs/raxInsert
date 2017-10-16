@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/rax.h' l='147' type='int raxInsert(rax * rax, unsigned char * s, size_t len, void * data, void ** old)'/>
+<use f='codebrowser/src/db.c' l='1371' u='c' c='slotToKeyUpdateKey'/>
+<def f='codebrowser/src/rax.c' l='411' ll='794' type='int raxInsert(rax * rax, unsigned char * s, size_t len, void * data, void ** old)'/>
+<doc f='codebrowser/src/rax.c' l='406'>/* Insert the element &apos;s&apos; of size &apos;len&apos;, setting as auxiliary data
+ * the pointer &apos;data&apos;. If the element is already present, the associated
+ * data is updated, and 0 is returned, otherwise the element is inserted
+ * and 1 is returned. On out of memory the function returns 0 as well but
+ * sets errno to ENOMEM, otherwise errno will be set to 0. */</doc>

@@ -1,0 +1,22 @@
+<dec f='codebrowser/src/server.h' l='535' type='struct RedisModuleCtx *'/>
+<use f='codebrowser/src/aof.c' l='1041' macro='1' u='w'/>
+<use f='codebrowser/src/aof.c' l='1043' u='r' c='rewriteModuleObject'/>
+<use f='codebrowser/src/aof.c' l='1044' u='r' c='rewriteModuleObject'/>
+<use f='codebrowser/src/aof.c' l='1045' u='r' c='rewriteModuleObject'/>
+<offset>256</offset>
+<doc f='codebrowser/src/server.h' l='535'>/* Optional context, see RM_GetContextFromIO()*/</doc>
+<use f='codebrowser/src/module.c' l='3278' u='r' c='RM_GetContextFromIO'/>
+<use f='codebrowser/src/module.c' l='3278' u='r' c='RM_GetContextFromIO'/>
+<use f='codebrowser/src/module.c' l='3280' u='w' c='RM_GetContextFromIO'/>
+<use f='codebrowser/src/module.c' l='3281' u='r' c='RM_GetContextFromIO'/>
+<use f='codebrowser/src/module.c' l='3282' u='r' c='RM_GetContextFromIO'/>
+<use f='codebrowser/src/module.c' l='3283' u='r' c='RM_GetContextFromIO'/>
+<use f='codebrowser/src/module.c' l='3284' u='r' c='RM_GetContextFromIO'/>
+<use f='codebrowser/src/rdb.c' l='770' macro='1' u='w'/>
+<use f='codebrowser/src/rdb.c' l='784' u='r' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='785' u='r' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='786' u='r' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='1411' macro='1' u='w'/>
+<use f='codebrowser/src/rdb.c' l='1416' u='r' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1417' u='r' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1418' u='r' c='rdbLoadObject'/>

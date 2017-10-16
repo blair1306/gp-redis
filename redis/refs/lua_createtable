@@ -1,0 +1,29 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='181' type='void lua_createtable(lua_State * L, int narr, int nrec)'/>
+<def f='codebrowser/deps/lua/src/lapi.c' l='578' ll='584' macro='1' type='void lua_createtable(lua_State * L, int narray, int nrec)'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='117' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='368' u='c' c='luaL_findtable'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='427' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='638' u='c' c='base_open'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='120' u='c' c='db_getinfo'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='250' u='c' c='gethooktable'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='531' u='c' c='newfenv'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='575' u='c' c='ll_seeall'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='642' u='c' c='luaopen_package'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='659' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/loslib.c' l='137' u='c' c='os_date'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='848' u='c' c='createmetatable'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='125' u='c' c='getargs'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='381' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='1143' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='1195' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='1364' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='549' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='560' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='894' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='166' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='176' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='194' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='217' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='676' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='916' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='1081' macro='1' u='c'/>

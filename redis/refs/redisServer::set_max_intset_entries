@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1136' type='size_t'/>
+<offset>21120</offset>
+<use f='codebrowser/src/config.c' l='549' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1068' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1243' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2021' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/rdb.c' l='1179' u='r' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1378' u='r' c='rdbLoadObject'/>
+<use f='codebrowser/src/server.c' l='1421' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/t_set.c' l='69' u='r' c='setTypeAdd'/>

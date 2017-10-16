@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/sentinel.c' l='423' type='void sentinelRoleCommand(client * c)'/>
+<use f='codebrowser/src/sentinel.c' l='434'/>
+<use f='codebrowser/src/sentinel.c' l='434'/>
+<use f='codebrowser/src/sentinel.c' l='434'/>
+<use f='codebrowser/src/sentinel.c' l='434'/>
+<def f='codebrowser/src/sentinel.c' l='3276' ll='3291' type='void sentinelRoleCommand(client * c)'/>
+<doc f='codebrowser/src/sentinel.c' l='3274'>/* Implements Sentinel verison of the ROLE command. The output is
+ * &quot;sentinel&quot; and the list of currently monitored master names. */</doc>

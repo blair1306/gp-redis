@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1016' type='int'/>
+<use f='codebrowser/src/aof.c' l='1058' u='r' c='aofReadDiffFromParent'/>
+<use f='codebrowser/src/aof.c' l='1194' u='r' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1295' u='w' c='aofCreatePipes'/>
+<use f='codebrowser/src/aof.c' l='1314' u='r' c='aofClosePipes'/>
+<offset>15296</offset>

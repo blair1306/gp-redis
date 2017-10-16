@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1407' type='robj * listTypeGet(listTypeEntry * entry)'/>
+<use f='codebrowser/src/debug.c' l='161' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/sort.c' l='361' u='c' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='375' u='c' c='sortCommand'/>
+<def f='codebrowser/src/t_list.c' l='126' ll='139' type='robj * listTypeGet(listTypeEntry * entry)'/>
+<doc f='codebrowser/src/t_list.c' l='125'>/* Return entry or NULL at the current position of the iterator. */</doc>

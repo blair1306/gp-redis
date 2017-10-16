@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='196'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='177' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='185' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='192'>/*
+ * ffs()/ffsl() functions to use for bitmapping.  Don&apos;t use these directly;
+ * instead, use jemalloc_ffs() or jemalloc_ffsl() from util.h.
+ */</doc>

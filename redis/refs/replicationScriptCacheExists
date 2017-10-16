@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1494' type='int replicationScriptCacheExists(sds sha1)'/>
+<def f='codebrowser/src/replication.c' l='2330' ll='2332' type='int replicationScriptCacheExists(sds sha1)'/>
+<doc f='codebrowser/src/replication.c' l='2328'>/* Returns non-zero if the specified entry exists inside the cache, that is,
+ * if all the slaves are aware of this script SHA1. */</doc>
+<use f='codebrowser/src/scripting.c' l='1384' u='c' c='evalGenericCommand'/>

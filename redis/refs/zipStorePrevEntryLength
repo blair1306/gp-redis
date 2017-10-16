@@ -1,0 +1,11 @@
+<def f='codebrowser/src/ziplist.c' l='408' ll='419' type='unsigned int zipStorePrevEntryLength(unsigned char * p, unsigned int len)'/>
+<use f='codebrowser/src/ziplist.c' l='467' u='c' c='zipPrevLenByteDiff'/>
+<use f='codebrowser/src/ziplist.c' l='625' u='c' c='__ziplistCascadeUpdate'/>
+<use f='codebrowser/src/ziplist.c' l='656' u='c' c='__ziplistCascadeUpdate'/>
+<use f='codebrowser/src/ziplist.c' l='667' u='c' c='__ziplistCascadeUpdate'/>
+<use f='codebrowser/src/ziplist.c' l='704' u='c' c='__ziplistDelete'/>
+<use f='codebrowser/src/ziplist.c' l='775' u='c' c='__ziplistInsert'/>
+<use f='codebrowser/src/ziplist.c' l='802' u='c' c='__ziplistInsert'/>
+<use f='codebrowser/src/ziplist.c' l='830' u='c' c='__ziplistInsert'/>
+<doc f='codebrowser/src/ziplist.c' l='406'>/* Encode the length of the previous entry and write it to &quot;p&quot;. Return the
+ * number of bytes needed to encode this length if &quot;p&quot; is NULL. */</doc>

@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1254' macro='1' type='void je_arena_dalloc(tsd_t * tsd, void * ptr, tcache_t * tcache)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='1005' macro='1' u='c'/>

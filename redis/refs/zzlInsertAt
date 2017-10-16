@@ -1,0 +1,5 @@
+<def f='codebrowser/src/t_zset.c' l='976' ll='997' type='unsigned char * zzlInsertAt(unsigned char * zl, unsigned char * eptr, sds ele, double score)'/>
+<use f='codebrowser/src/t_zset.c' l='1014' u='c' c='zzlInsert'/>
+<use f='codebrowser/src/t_zset.c' l='1019' u='c' c='zzlInsert'/>
+<use f='codebrowser/src/t_zset.c' l='1030' u='c' c='zzlInsert'/>
+<use f='codebrowser/src/t_zset.c' l='1172' u='c' c='zsetConvert'/>

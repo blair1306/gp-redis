@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='1557' type='int'/>
+<dec f='codebrowser/src/server.h' l='1563' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/src/geo.c' l='228' u='w' c='geoGetPointsInRange'/>
+<use f='codebrowser/src/module.c' l='1810' u='w' c='zsetInitScoreRange'/>
+<use f='codebrowser/src/t_zset.c' l='248' u='r' c='zslValueGteMin'/>
+<use f='codebrowser/src/t_zset.c' l='261' u='r' c='zslIsInRange'/>
+<use f='codebrowser/src/t_zset.c' l='334' u='r' c='zslDeleteRangeByScore'/>
+<use f='codebrowser/src/t_zset.c' l='467' u='w' c='zslParseRange'/>
+<use f='codebrowser/src/t_zset.c' l='479' u='w' c='zslParseRange'/>
+<use f='codebrowser/src/t_zset.c' l='564' u='a' c='zslParseLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='584' u='r' c='zslLexValueGteMin'/>
+<use f='codebrowser/src/t_zset.c' l='602' u='r' c='zslIsInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='776' u='r' c='zzlIsInRange'/>
+<use f='codebrowser/src/t_zset.c' l='877' u='r' c='zzlIsInLexRange'/>

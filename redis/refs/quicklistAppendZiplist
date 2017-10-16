@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/quicklist.h' l='128' type='void quicklistAppendZiplist(quicklist * quicklist, unsigned char * zl)'/>
+<def f='codebrowser/src/quicklist.c' l='525' ll='534' type='void quicklistAppendZiplist(quicklist * quicklist, unsigned char * zl)'/>
+<doc f='codebrowser/src/quicklist.c' l='522'>/* Create new node consisting of a pre-formed ziplist.
+ * Used for loading RDBs where entire ziplists have been stored
+ * to be retrieved later. */</doc>
+<use f='codebrowser/src/rdb.c' l='1321' u='c' c='rdbLoadObject'/>

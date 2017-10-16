@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='681' type='sds'/>
+<offset>320</offset>
+<doc f='codebrowser/src/server.h' l='681'>/* If this is a master, this buffer represents the
+                               yet not applied replication stream that we
+                               are receiving from the master. */</doc>
+<use f='codebrowser/src/networking.c' l='99' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='803' u='r' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='1394' u='w' c='readQueryFromClient'/>
+<use f='codebrowser/src/networking.c' l='1394' u='r' c='readQueryFromClient'/>
+<use f='codebrowser/src/networking.c' l='1427' u='r' c='readQueryFromClient'/>
+<use f='codebrowser/src/networking.c' l='1428' u='r' c='readQueryFromClient'/>
+<use f='codebrowser/src/replication.c' l='2133' u='r' c='replicationCacheMaster'/>

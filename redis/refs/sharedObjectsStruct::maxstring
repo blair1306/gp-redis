@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='755' type='sds'/>
+<offset>647552</offset>
+<use f='codebrowser/src/server.c' l='1335' u='w' c='createSharedObjects'/>
+<use f='codebrowser/src/t_zset.c' l='523' u='r' c='zslParseLexRangeItem'/>
+<use f='codebrowser/src/t_zset.c' l='547' u='r' c='zslFreeLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='549' u='r' c='zslFreeLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='578' u='r' c='sdscmplex'/>
+<use f='codebrowser/src/t_zset.c' l='579' u='r' c='sdscmplex'/>

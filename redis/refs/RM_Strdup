@@ -1,0 +1,3 @@
+<def f='codebrowser/src/module.c' l='264' ll='266' type='char * RM_Strdup(const char * str)'/>
+<use f='codebrowser/src/module.c' l='3900' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='263'>/* Like strdup() but returns memory allocated with RedisModule_Alloc(). */</doc>

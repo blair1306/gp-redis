@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1862' type='void lrangeCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='161' u='r'/>
+<use f='codebrowser/src/server.c' l='161' u='r'/>
+<use f='codebrowser/src/server.c' l='161' u='r'/>
+<use f='codebrowser/src/server.c' l='161' u='r'/>
+<def f='codebrowser/src/t_list.c' l='398' ll='442' type='void lrangeCommand(client * c)'/>

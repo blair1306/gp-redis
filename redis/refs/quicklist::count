@@ -1,0 +1,22 @@
+<dec f='codebrowser/src/quicklist.h' l='76' type='unsigned long'/>
+<offset>128</offset>
+<doc f='codebrowser/src/quicklist.h' l='76'>/* total count of all entries in all ziplists */</doc>
+<use f='codebrowser/src/debug.c' l='383' u='r' c='debugCommand'/>
+<use f='codebrowser/src/quicklist.c' l='100' u='w' c='quicklistCreate'/>
+<use f='codebrowser/src/quicklist.c' l='152' u='r' c='quicklistCount'/>
+<use f='codebrowser/src/quicklist.c' l='165' u='w' c='quicklistRelease'/>
+<use f='codebrowser/src/quicklist.c' l='494' u='w' c='quicklistPushHead'/>
+<use f='codebrowser/src/quicklist.c' l='517' u='w' c='quicklistPushTail'/>
+<use f='codebrowser/src/quicklist.c' l='533' u='w' c='quicklistAppendZiplist'/>
+<use f='codebrowser/src/quicklist.c' l='598' u='w' c='__quicklistDelNode'/>
+<use f='codebrowser/src/quicklist.c' l='625' u='w' c='quicklistDelIndex'/>
+<use f='codebrowser/src/quicklist.c' l='846' u='w' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='939' u='w' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='965' u='r' c='quicklistDelRange'/>
+<use f='codebrowser/src/quicklist.c' l='967' u='r' c='quicklistDelRange'/>
+<use f='codebrowser/src/quicklist.c' l='1026' u='w' c='quicklistDelRange'/>
+<use f='codebrowser/src/quicklist.c' l='1206' u='w' c='quicklistDup'/>
+<use f='codebrowser/src/quicklist.c' l='1243' u='r' c='quicklistIndex'/>
+<use f='codebrowser/src/quicklist.c' l='1283' u='r' c='quicklistRotate'/>
+<use f='codebrowser/src/quicklist.c' l='1333' u='r' c='quicklistPopCustom'/>
+<use f='codebrowser/src/quicklist.c' l='1390' u='r' c='quicklistPop'/>

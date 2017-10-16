@@ -1,0 +1,31 @@
+<dec f='codebrowser/src/server.h' l='1809' type='void dictSdsDestructor(void * privdata, void * val)'/>
+<dec f='codebrowser/src/config.c' l='1428' type='void dictSdsDestructor(void * privdata, void * val)'/>
+<use f='codebrowser/src/config.c' l='1440'/>
+<use f='codebrowser/src/config.c' l='1440'/>
+<use f='codebrowser/src/config.c' l='1449'/>
+<use f='codebrowser/src/config.c' l='1449'/>
+<use f='codebrowser/src/expire.c' l='329' u='r' c='rememberSlaveKeyWithExpire'/>
+<use f='codebrowser/src/expire.c' l='329' u='r' c='rememberSlaveKeyWithExpire'/>
+<def f='codebrowser/src/server.c' l='475' ll='480' type='void dictSdsDestructor(void * privdata, void * val)'/>
+<use f='codebrowser/src/server.c' l='560'/>
+<use f='codebrowser/src/server.c' l='560'/>
+<use f='codebrowser/src/server.c' l='580'/>
+<use f='codebrowser/src/server.c' l='580'/>
+<use f='codebrowser/src/server.c' l='590'/>
+<use f='codebrowser/src/server.c' l='590'/>
+<use f='codebrowser/src/server.c' l='610'/>
+<use f='codebrowser/src/server.c' l='610'/>
+<use f='codebrowser/src/server.c' l='620'/>
+<use f='codebrowser/src/server.c' l='621'/>
+<use f='codebrowser/src/server.c' l='620'/>
+<use f='codebrowser/src/server.c' l='621'/>
+<use f='codebrowser/src/server.c' l='643'/>
+<use f='codebrowser/src/server.c' l='643'/>
+<use f='codebrowser/src/server.c' l='655'/>
+<use f='codebrowser/src/server.c' l='655'/>
+<use f='codebrowser/src/server.c' l='667'/>
+<use f='codebrowser/src/server.c' l='667'/>
+<use f='codebrowser/src/server.c' l='677'/>
+<use f='codebrowser/src/server.c' l='677'/>
+<use f='codebrowser/src/server.c' l='689'/>
+<use f='codebrowser/src/server.c' l='689'/>

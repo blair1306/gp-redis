@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/module.c' l='47' type='int'/>
+<use f='codebrowser/src/module.c' l='659' u='w' c='RM_SetModuleAttribs'/>
+<use f='codebrowser/src/module.c' l='3879' u='r' c='moduleCommand'/>
+<offset>128</offset>
+<doc f='codebrowser/src/module.c' l='47'>/* Module version. We use just progressive integers. */</doc>

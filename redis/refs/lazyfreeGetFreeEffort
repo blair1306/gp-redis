@@ -1,0 +1,17 @@
+<def f='codebrowser/src/lazyfree.c' l='31' ll='47' type='size_t lazyfreeGetFreeEffort(robj * obj)'/>
+<use f='codebrowser/src/lazyfree.c' l='65' u='c' c='dbAsyncDelete'/>
+<doc f='codebrowser/src/lazyfree.c' l='16'>/* Return the amount of work needed in order to free an object.
+ * The return value is not always the actual number of allocations the
+ * object is compoesd of, but a number proportional to it.
+ *
+ * For strings the function always returns 1.
+ *
+ * For aggregated objects represented by hash tables or other data structures
+ * the function just returns the number of elements the object is composed of.
+ *
+ * Objects composed of single allocations are always reported as having a
+ * single item even if they are actaully logical composed of multiple
+ * elements.
+ *
+ * For lists the funciton returns the number of elements in the quicklist
+ * representing the list. */</doc>

@@ -1,0 +1,26 @@
+<dec f='codebrowser/src/geohash.h' l='68' type='uint8_t'/>
+<use f='codebrowser/src/geo.c' l='86' u='w' c='decodeGeohash'/>
+<use f='codebrowser/src/geo.c' l='344' macro='1' u='r'/>
+<use f='codebrowser/src/geo.c' l='371' u='r' c='membersOfAllNeighbors'/>
+<use f='codebrowser/src/geo.c' l='371' u='r' c='membersOfAllNeighbors'/>
+<offset>64</offset>
+<use f='codebrowser/src/geohash.c' l='134' u='w' c='geohashEncode'/>
+<use f='codebrowser/src/geohash.c' l='166' macro='1' u='r'/>
+<use f='codebrowser/src/geohash.c' l='172' u='r' c='geohashDecode'/>
+<use f='codebrowser/src/geohash.c' l='231' u='r' c='geohash_move_x'/>
+<use f='codebrowser/src/geohash.c' l='240' u='r' c='geohash_move_x'/>
+<use f='codebrowser/src/geohash.c' l='251' u='r' c='geohash_move_y'/>
+<use f='codebrowser/src/geohash.c' l='258' u='r' c='geohash_move_y'/>
+<use f='codebrowser/src/geohash_helper.c' l='173' macro='1' u='w'/>
+<use f='codebrowser/src/geohash_helper.c' l='174' macro='1' u='w'/>
+<use f='codebrowser/src/geohash_helper.c' l='175' macro='1' u='w'/>
+<use f='codebrowser/src/geohash_helper.c' l='178' macro='1' u='w'/>
+<use f='codebrowser/src/geohash_helper.c' l='179' macro='1' u='w'/>
+<use f='codebrowser/src/geohash_helper.c' l='180' macro='1' u='w'/>
+<use f='codebrowser/src/geohash_helper.c' l='183' macro='1' u='w'/>
+<use f='codebrowser/src/geohash_helper.c' l='184' macro='1' u='w'/>
+<use f='codebrowser/src/geohash_helper.c' l='185' macro='1' u='w'/>
+<use f='codebrowser/src/geohash_helper.c' l='188' macro='1' u='w'/>
+<use f='codebrowser/src/geohash_helper.c' l='189' macro='1' u='w'/>
+<use f='codebrowser/src/geohash_helper.c' l='190' macro='1' u='w'/>
+<use f='codebrowser/src/geohash_helper.c' l='206' u='r' c='geohashAlign52Bits'/>

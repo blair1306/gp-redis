@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='242' macro='1' type='void je_hash_x64_128(const void * key, const int len, const uint32_t seed, uint64_t * r_out)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='325' macro='1' u='c'/>

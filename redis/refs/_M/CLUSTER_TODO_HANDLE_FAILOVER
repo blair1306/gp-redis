@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/cluster.h' l='77'/>
+<use f='codebrowser/src/cluster.c' l='2010' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2842' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3472' u='c'/>
+<doc f='codebrowser/src/cluster.h' l='76'>/* clusterState todo_before_sleep flags. */</doc>

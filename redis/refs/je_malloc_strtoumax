@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='143' macro='1' type='uintmax_t je_malloc_strtoumax(const char * nptr, char ** endptr, int base)'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='846' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1028' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1055' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1085' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1122' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/util.c' l='100' macro='1' type='uintmax_t je_malloc_strtoumax(const char * nptr, char ** endptr, int base)'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='443' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='466' macro='1' u='c'/>

@@ -1,0 +1,22 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='149' type='struct timeval *'/>
+<offset>1344</offset>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='606' u='w' c='redisContextInit'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='631' u='r' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='632' u='r' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='659' u='r' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='661' u='r' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/net.c' l='183' u='r' c='redisContextTimeoutMsec'/>
+<use f='codebrowser/deps/hiredis/net.c' l='295' u='r' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='296' u='r' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='297' u='w' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='299' u='r' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='302' u='r' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='303' u='r' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='304' u='w' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='444' u='r' c='redisContextConnectUnix'/>
+<use f='codebrowser/deps/hiredis/net.c' l='445' u='r' c='redisContextConnectUnix'/>
+<use f='codebrowser/deps/hiredis/net.c' l='446' u='w' c='redisContextConnectUnix'/>
+<use f='codebrowser/deps/hiredis/net.c' l='448' u='r' c='redisContextConnectUnix'/>
+<use f='codebrowser/deps/hiredis/net.c' l='451' u='r' c='redisContextConnectUnix'/>
+<use f='codebrowser/deps/hiredis/net.c' l='452' u='r' c='redisContextConnectUnix'/>
+<use f='codebrowser/deps/hiredis/net.c' l='453' u='w' c='redisContextConnectUnix'/>

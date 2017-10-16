@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='153' macro='1' type='int je_malloc_snprintf(char * str, size_t size, const char * format)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1555' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1560' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/stats.c' l='121' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/stats.c' l='124' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/stats.c' l='127' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/stats.c' l='130' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/util.c' l='591' macro='1' type='int je_malloc_snprintf(char * str, size_t size, const char * format)'/>

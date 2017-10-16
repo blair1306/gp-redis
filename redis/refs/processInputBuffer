@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1341' type='void processInputBuffer(client * c)'/>
+<use f='codebrowser/src/blocked.c' l='126' u='c' c='processUnblockedClients'/>
+<def f='codebrowser/src/networking.c' l='1291' ll='1350' type='void processInputBuffer(client * c)'/>
+<use f='codebrowser/src/networking.c' l='1420' u='c' c='readQueryFromClient'/>
+<use f='codebrowser/src/networking.c' l='1423' u='c' c='readQueryFromClient'/>
+<doc f='codebrowser/src/networking.c' l='1287'>/* This function is called every time, in the client structure &apos;c&apos;, there is
+ * more query buffer to process, because we read more data from the socket
+ * or because a client was blocked and later reactivated, so there could be
+ * pending query buffer, already representing a full command, to process. */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1501' type='long long getPsyncInitialOffset()'/>
+<use f='codebrowser/src/rdb.c' l='1849' u='c' c='rdbSaveToSlavesSockets'/>
+<def f='codebrowser/src/replication.c' l='398' ll='400' type='long long getPsyncInitialOffset()'/>
+<use f='codebrowser/src/replication.c' l='615' u='c' c='startBgsaveForReplication'/>
+<doc f='codebrowser/src/replication.c' l='394'>/* Return the offset to provide as reply to the PSYNC command received
+ * from the slave. The returned value is only valid immediately after
+ * the BGSAVE process started and before executing any other command
+ * from clients. */</doc>

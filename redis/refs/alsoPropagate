@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/server.h' l='1609' type='void alsoPropagate(struct redisCommand * cmd, int dbid, robj ** argv, int argc, int target)'/>
+<use f='codebrowser/src/module.c' l='454' u='c' c='moduleHandlePropagationAfterCommandCallback'/>
+<use f='codebrowser/src/module.c' l='1213' u='c' c='RM_Replicate'/>
+<use f='codebrowser/src/module.c' l='1234' u='c' c='RM_ReplicateVerbatim'/>
+<use f='codebrowser/src/scripting.c' l='1367' u='c' c='evalGenericCommand'/>
+<def f='codebrowser/src/server.c' l='2106' ll='2120' type='void alsoPropagate(struct redisCommand * cmd, int dbid, robj ** argv, int argc, int target)'/>
+<doc f='codebrowser/src/server.c' l='2094'>/* Used inside commands to schedule the propagation of additional commands
+ * after the current command is propagated to AOF / Replication.
+ *
+ * &apos;cmd&apos; must be a pointer to the Redis command to replicate, dbid is the
+ * database ID the command should be propagated into.
+ * Arguments of the command to propagte are passed as an array of redis
+ * objects pointers of len &apos;argc&apos;, using the &apos;argv&apos; vector.
+ *
+ * The function does not take a reference to the passed &apos;argv&apos; vector,
+ * so it is up to the caller to release the passed argv (but it is usually
+ * stack allocated).  The function autoamtically increments ref count of
+ * passed objects, so the caller does not need to. */</doc>
+<use f='codebrowser/src/t_set.c' l='490' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='537' u='c' c='spopWithCountCommand'/>

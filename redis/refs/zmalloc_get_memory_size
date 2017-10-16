@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/zmalloc.h' l='86' type='size_t zmalloc_get_memory_size()'/>
+<use f='codebrowser/src/server.c' l='1814' u='c' c='initServer'/>
+<def f='codebrowser/src/zmalloc.c' l='368' ll='409' type='size_t zmalloc_get_memory_size()'/>
+<doc f='codebrowser/src/zmalloc.c' l='355'>/* Returns the size of physical memory (RAM) in bytes.
+ * It looks ugly, but this is the cleanest way to achive cross platform results.
+ * Cleaned up from:
+ *
+ * http://nadeausoftware.com/articles/2012/09/c_c_tip_how_get_physical_memory_size_system
+ *
+ * Note that this function:
+ * 1) Was released under the following CC attribution license:
+ *    http://creativecommons.org/licenses/by/3.0/deed.en_US.
+ * 2) Was originally implemented by David Robert Nadeau.
+ * 3) Was modified for Redis by Matt Stancliff.
+ * 4) This note exists in order to comply with the original license.
+ */</doc>

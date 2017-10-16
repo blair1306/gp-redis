@@ -1,0 +1,4 @@
+<def f='codebrowser/src/scripting.c' l='1066' ll='1069' type='void scriptingRelease()'/>
+<use f='codebrowser/src/scripting.c' l='1072' u='c' c='scriptingReset'/>
+<doc f='codebrowser/src/scripting.c' l='1064'>/* Release resources related to Lua scripting.
+ * This function is used in order to reset the scripting environment. */</doc>

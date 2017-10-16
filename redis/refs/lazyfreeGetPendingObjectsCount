@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1747' type='size_t lazyfreeGetPendingObjectsCount()'/>
+<def f='codebrowser/src/lazyfree.c' l='10' ll='14' type='size_t lazyfreeGetPendingObjectsCount()'/>
+<doc f='codebrowser/src/lazyfree.c' l='9'>/* Return the number of currently pending objects to free. */</doc>
+<use f='codebrowser/src/server.c' l='2975' u='c' c='genRedisInfoString'/>

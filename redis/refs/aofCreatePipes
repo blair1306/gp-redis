@@ -1,0 +1,7 @@
+<def f='codebrowser/src/aof.c' l='1282' ll='1308' type='int aofCreatePipes()'/>
+<use f='codebrowser/src/aof.c' l='1342' u='c' c='rewriteAppendOnlyFileBackground'/>
+<doc f='codebrowser/src/aof.c' l='1277'>/* Create the pipes used for parent - child process IPC during rewrite.
+ * We have a data pipe used to send AOF incremental diffs to the child,
+ * and two other pipes used by the children to signal it finished with
+ * the rewrite so no more data should be written, and another for the
+ * parent to acknowledge it understood this new condition. */</doc>

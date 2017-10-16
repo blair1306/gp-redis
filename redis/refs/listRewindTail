@@ -1,0 +1,2 @@
+<dec f='codebrowser/src/adlist.h' l='87' type='void listRewindTail(list * list, listIter * li)'/>
+<def f='codebrowser/src/adlist.c' l='210' ll='213' type='void listRewindTail(list * list, listIter * li)'/>

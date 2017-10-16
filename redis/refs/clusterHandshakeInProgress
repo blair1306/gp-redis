@@ -1,0 +1,5 @@
+<def f='codebrowser/src/cluster.c' l='1235' ll='1250' type='int clusterHandshakeInProgress(char * ip, int port, int cport)'/>
+<use f='codebrowser/src/cluster.c' l='1296' u='c' c='clusterStartHandshake'/>
+<doc f='codebrowser/src/cluster.c' l='1232'>/* Return true if we already have a node in HANDSHAKE state matching the
+ * specified ip address and port number. This function is used in order to
+ * avoid adding a new handshake node for the same address multiple times. */</doc>

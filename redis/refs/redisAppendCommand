@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='207' type='int redisAppendCommand(redisContext * c, const char * format)'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='951' ll='959' type='int redisAppendCommand(redisContext * c, const char * format)'/>
+<use f='codebrowser/src/redis-cli.c' l='2056' u='c' c='getKeyTypes'/>
+<use f='codebrowser/src/redis-cli.c' l='2094' u='c' c='getKeySizes'/>
+<use f='codebrowser/src/redis-cli.c' l='2487' u='c' c='LRUTestMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2495' u='c' c='LRUTestMode'/>

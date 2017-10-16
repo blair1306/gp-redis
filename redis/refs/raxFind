@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rax.h' l='149' type='void * raxFind(rax * rax, unsigned char * s, size_t len)'/>
+<def f='codebrowser/src/rax.c' l='799' ll='808' type='void * raxFind(rax * rax, unsigned char * s, size_t len)'/>
+<doc f='codebrowser/src/rax.c' l='796'>/* Find a key in the rax, returns raxNotFound special void pointer value
+ * if the item was not found, otherwise the value associated with the
+ * item is returned. */</doc>

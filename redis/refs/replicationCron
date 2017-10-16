@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1484' type='void replicationCron()'/>
+<def f='codebrowser/src/replication.c' l='2491' ll='2673' type='void replicationCron()'/>
+<doc f='codebrowser/src/replication.c' l='2490'>/* Replication cron function, called 1 time per second. */</doc>
+<use f='codebrowser/src/server.c' l='1140' u='c' c='serverCron'/>

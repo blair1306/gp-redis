@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1094' type='char *'/>
+<offset>19200</offset>
+<doc f='codebrowser/src/server.h' l='1094'>/* Slave-&gt; master SYNC temp file name */</doc>
+<use f='codebrowser/src/replication.c' l='1247' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1277' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1837' u='w' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1898' u='r' c='replicationAbortSyncTransfer'/>
+<use f='codebrowser/src/replication.c' l='1899' u='r' c='replicationAbortSyncTransfer'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1979' type='void georadiusCommand(client * c)'/>
+<def f='codebrowser/src/geo.c' l='676' ll='678' type='void georadiusCommand(client * c)'/>
+<doc f='codebrowser/src/geo.c' l='675'>/* GEORADIUS wrapper function. */</doc>
+<use f='codebrowser/src/server.c' l='293' u='r'/>
+<use f='codebrowser/src/server.c' l='293' u='r'/>
+<use f='codebrowser/src/server.c' l='293' u='r'/>
+<use f='codebrowser/src/server.c' l='293' u='r'/>

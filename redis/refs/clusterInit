@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1759' type='void clusterInit()'/>
+<doc f='codebrowser/src/server.h' l='1758'>/* Cluster */</doc>
+<def f='codebrowser/src/cluster.c' l='407' ll='497' type='void clusterInit()'/>
+<use f='codebrowser/src/server.c' l='1945' u='c' c='initServer'/>

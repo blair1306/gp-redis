@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/pages.h' l='12' macro='1' type='void * je_pages_map(void * addr, size_t size)'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_mmap.c' l='19' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_mmap.c' l='56' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/pages.c' l='7' macro='1' type='void * je_pages_map(void * addr, size_t size)'/>
+<doc f='codebrowser/deps/jemalloc/src/pages.c' l='4'>/******************************************************************************/</doc>

@@ -1,0 +1,28 @@
+<dec f='codebrowser/src/server.h' l='1064' type='char *'/>
+<offset>17920</offset>
+<doc f='codebrowser/src/server.h' l='1064'>/* Replication backlog for partial syncs */</doc>
+<use f='codebrowser/src/multi.c' l='183' u='r' c='execCommand'/>
+<use f='codebrowser/src/object.c' l='825' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='826' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/rdb.c' l='2037' u='r' c='rdbPopulateSaveInfo'/>
+<use f='codebrowser/src/replication.c' l='78' u='r' c='createReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='79' u='w' c='createReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='101' u='r' c='resizeReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='107' u='r' c='resizeReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='108' u='w' c='resizeReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='118' u='r' c='freeReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='119' u='w' c='freeReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='136' u='r' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='188' u='r' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/replication.c' l='191' u='r' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/replication.c' l='211' u='r' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/replication.c' l='227' u='r' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/replication.c' l='292' u='r' c='replicationFeedSlavesFromMasterStream'/>
+<use f='codebrowser/src/replication.c' l='387' u='r' c='addReplyReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='491' u='r' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='692' u='r' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='1291' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1539' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='2611' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='1478' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3247' u='r' c='genRedisInfoString'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1441' type='robj * createRawStringObject(const char * ptr, size_t len)'/>
+<use f='codebrowser/src/config.c' l='167' u='c' c='queueLoadModule'/>
+<use f='codebrowser/src/db.c' l='288' u='c' c='dbUnshareStringValue'/>
+<use f='codebrowser/src/geo.c' l='417' u='c' c='geoaddCommand'/>
+<use f='codebrowser/src/module.c' l='2136' u='c' c='RM_HashSet'/>
+<use f='codebrowser/src/module.c' l='2234' u='c' c='RM_HashGet'/>
+<def f='codebrowser/src/object.c' l='77' ll='79' type='robj * createRawStringObject(const char * ptr, size_t len)'/>
+<use f='codebrowser/src/object.c' l='121' u='c' c='createStringObject'/>
+<use f='codebrowser/src/object.c' l='168' u='c' c='dupStringObject'/>
+<doc f='codebrowser/src/object.c' l='75'>/* Create a string object with encoding OBJ_ENCODING_RAW, that is a plain
+ * string object where o-&gt;ptr points to a proper sds string. */</doc>
+<use f='codebrowser/src/rdb.c' l='486' u='c' c='rdbGenericLoadStringObject'/>
+<use f='codebrowser/src/t_hash.c' l='633' u='c' c='hincrbyfloatCommand'/>

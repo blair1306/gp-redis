@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/adlist.h' l='85' type='listNode * listIndex(list * list, long index)'/>
+<def f='codebrowser/src/adlist.c' l='315' ll='327' type='listNode * listIndex(list * list, long index)'/>
+<doc f='codebrowser/src/adlist.c' l='310'>/* Return the element at the specified zero-based index
+ * where 0 is the head, 1 is the element next to head
+ * and so on. Negative integers are used in order to count
+ * from the tail, -1 is the last element, -2 the penultimate
+ * and so on. If the index is out of range NULL is returned. */</doc>

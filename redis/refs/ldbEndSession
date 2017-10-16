@@ -1,0 +1,4 @@
+<def f='codebrowser/src/scripting.c' l='1647' ll='1674' type='void ldbEndSession(client * c)'/>
+<use f='codebrowser/src/scripting.c' l='1714' u='c' c='evalGenericCommandWithDebugging'/>
+<doc f='codebrowser/src/scripting.c' l='1645'>/* End a debugging session after the EVAL call with debugging enabled
+ * returned. */</doc>

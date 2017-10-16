@@ -1,0 +1,9 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='221' ll='245'/>
+<size>96</size>
+<mbr r='arena_bin_info_s::reg_size' o='0' t='size_t'/>
+<mbr r='arena_bin_info_s::redzone_size' o='64' t='size_t'/>
+<mbr r='arena_bin_info_s::reg_interval' o='128' t='size_t'/>
+<mbr r='arena_bin_info_s::run_size' o='192' t='size_t'/>
+<mbr r='arena_bin_info_s::nregs' o='256' t='uint32_t'/>
+<mbr r='arena_bin_info_s::bitmap_info' o='320' t='bitmap_info_t'/>
+<mbr r='arena_bin_info_s::reg0_offset' o='704' t='uint32_t'/>

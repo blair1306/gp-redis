@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/evict.c' l='58' type='int'/>
+<use f='codebrowser/src/evict.c' l='150' u='w' c='evictionPoolAlloc'/>
+<use f='codebrowser/src/evict.c' l='257' u='w' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='444' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='447' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='450' u='r' c='freeMemoryIfNeeded'/>
+<offset>192</offset>
+<doc f='codebrowser/src/evict.c' l='58'>/* Key DB number. */</doc>

@@ -1,0 +1,5 @@
+<def f='codebrowser/src/rax.c' l='1095' ll='1108' type='void raxRecursiveFree(rax * rax, raxNode * n)'/>
+<use f='codebrowser/src/rax.c' l='1102' u='c' c='raxRecursiveFree'/>
+<use f='codebrowser/src/rax.c' l='1112' u='c' c='raxFree'/>
+<doc f='codebrowser/src/rax.c' l='1093'>/* This is the core of raxFree(): performs a depth-first scan of the
+ * tree and releases all the nodes found. */</doc>

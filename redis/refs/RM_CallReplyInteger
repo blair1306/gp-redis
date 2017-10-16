@@ -1,0 +1,3 @@
+<def f='codebrowser/src/module.c' l='2450' ll='2454' type='long long RM_CallReplyInteger(RedisModuleCallReply * reply)'/>
+<use f='codebrowser/src/module.c' l='3927' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='2449'>/* Return the long long of an integer reply. */</doc>

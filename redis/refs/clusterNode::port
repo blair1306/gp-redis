@@ -1,0 +1,25 @@
+<dec f='codebrowser/src/cluster.h' l='126' type='int'/>
+<use f='codebrowser/src/cluster.c' l='176' u='w' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='180' u='r' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='488' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='491' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='691' u='w' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='1245' u='r' c='clusterHandshakeInProgress'/>
+<use f='codebrowser/src/cluster.c' l='1306' u='w' c='clusterStartHandshake'/>
+<use f='codebrowser/src/cluster.c' l='1390' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1395' u='w' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1459' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1464' u='w' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1469' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1474' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1738' u='w' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1800' u='w' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2287' u='r' c='clusterSetGossipEntry'/>
+<use f='codebrowser/src/cluster.c' l='3442' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3816' u='r' c='clusterSetMaster'/>
+<use f='codebrowser/src/cluster.c' l='3866' u='r' c='clusterGenNodeDescription'/>
+<use f='codebrowser/src/cluster.c' l='4036' u='r' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4046' u='r' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='5401' u='r' c='clusterRedirectClient'/>
+<offset>17920</offset>
+<doc f='codebrowser/src/cluster.h' l='126'>/* Latest known clients port of this node */</doc>

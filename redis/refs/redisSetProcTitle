@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1330' type='void redisSetProcTitle(char * title)'/>
+<use f='codebrowser/src/aof.c' l='1350' u='c' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/rdb.c' l='1063' u='c' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1870' u='c' c='rdbSaveToSlavesSockets'/>
+<def f='codebrowser/src/server.c' l='3563' ll='3577' type='void redisSetProcTitle(char * title)'/>
+<use f='codebrowser/src/server.c' l='3830' u='c' c='main'/>

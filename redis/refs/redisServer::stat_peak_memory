@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='947' type='size_t'/>
+<offset>8256</offset>
+<doc f='codebrowser/src/server.h' l='947'>/* Max used memory record */</doc>
+<use f='codebrowser/src/object.c' l='819' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/rdb.c' l='1461' u='r' c='loadingProgress'/>
+<use f='codebrowser/src/rdb.c' l='1462' u='w' c='loadingProgress'/>
+<use f='codebrowser/src/server.c' l='988' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='989' u='w' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1883' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2919' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2920' u='w' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2923' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2958' u='r' c='genRedisInfoString'/>

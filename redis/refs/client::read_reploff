@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='706' type='long long'/>
+<offset>1600</offset>
+<doc f='codebrowser/src/server.h' l='706'>/* Read replication offset if this is a master. */</doc>
+<use f='codebrowser/src/networking.c' l='114' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='1333' u='r' c='processInputBuffer'/>
+<use f='codebrowser/src/networking.c' l='1400' u='w' c='readQueryFromClient'/>
+<use f='codebrowser/src/replication.c' l='1082' u='w' c='replicationCreateMasterClient'/>
+<use f='codebrowser/src/replication.c' l='2134' u='w' c='replicationCacheMaster'/>

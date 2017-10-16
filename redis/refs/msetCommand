@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1901' type='void msetCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='220' u='r'/>
+<use f='codebrowser/src/server.c' l='220' u='r'/>
+<use f='codebrowser/src/server.c' l='220' u='r'/>
+<use f='codebrowser/src/server.c' l='220' u='r'/>
+<def f='codebrowser/src/t_string.c' l='333' ll='335' type='void msetCommand(client * c)'/>

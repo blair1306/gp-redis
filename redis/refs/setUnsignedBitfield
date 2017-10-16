@@ -1,0 +1,23 @@
+<def f='codebrowser/src/bitops.c' l='209' ll='222' type='void setUnsignedBitfield(unsigned char * p, uint64_t offset, uint64_t bits, uint64_t value)'/>
+<use f='codebrowser/src/bitops.c' l='226' u='c' c='setSignedBitfield'/>
+<use f='codebrowser/src/bitops.c' l='1076' u='c' c='bitfieldCommand'/>
+<doc f='codebrowser/src/bitops.c' l='188'>/* The following set.*Bitfield and get.*Bitfield functions implement setting
+ * and getting arbitrary size (up to 64 bits) signed and unsigned integers
+ * at arbitrary positions into a bitmap.
+ *
+ * The representation considers the bitmap as having the bit number 0 to be
+ * the most significant bit of the first byte, and so forth, so for example
+ * setting a 5 bits unsigned integer to value 23 at offset 7 into a bitmap
+ * previously set to all zeroes, will produce the following representation:
+ *
+ * +--------+--------+
+ * |00000001|01110000|
+ * +--------+--------+
+ *
+ * When offsets and integer sizes are aligned to bytes boundaries, this is the
+ * same as big endian, however when such alignment does not exist, its important
+ * to also understand how the bits inside a byte are ordered.
+ *
+ * Note that this format follows the same convention as SETBIT and related
+ * commands.
+ */</doc>

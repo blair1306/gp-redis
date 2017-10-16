@@ -1,0 +1,6 @@
+<def f='codebrowser/src/config.c' l='1605' ll='1619' type='int rewriteConfigFormatMemory(char * buf, size_t len, long long bytes)'/>
+<use f='codebrowser/src/config.c' l='1627' u='c' c='rewriteConfigBytesOption'/>
+<use f='codebrowser/src/config.c' l='1777' u='c' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/config.c' l='1779' u='c' c='rewriteConfigClientoutputbufferlimitOption'/>
+<doc f='codebrowser/src/config.c' l='1603'>/* Write the long long &apos;bytes&apos; value as a string in a way that is parsable
+ * inside redis.conf. If possible uses the GB, MB, KB notation. */</doc>

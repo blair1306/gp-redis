@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_macros.h' l='56'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='143' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='144' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='100' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='100' u='c'/>

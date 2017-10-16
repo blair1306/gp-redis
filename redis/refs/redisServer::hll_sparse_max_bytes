@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1139' type='size_t'/>
+<offset>21312</offset>
+<use f='codebrowser/src/config.c' l='555' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1074' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1249' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2024' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/hyperloglog.c' l='823' u='r' c='hllSparseAdd'/>
+<use f='codebrowser/src/hyperloglog.c' l='1402' u='r' c='pfselftestCommand'/>
+<use f='codebrowser/src/server.c' l='1424' u='w' c='initServerConfig'/>

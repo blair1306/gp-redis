@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/lundump.h' l='14' type='Proto * luaU_undump(lua_State * L, ZIO * Z, Mbuffer * buff, const char * name)'/>
+<def f='codebrowser/deps/lua/src/lundump.c' l='195' ll='209' type='Proto * luaU_undump(lua_State * L, ZIO * Z, Mbuffer * buff, const char * name)'/>
+<doc f='codebrowser/deps/lua/src/lundump.c' l='192'>/*
+** load precompiled chunk
+*/</doc>

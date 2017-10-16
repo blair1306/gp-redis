@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1095' type='time_t'/>
+<offset>19264</offset>
+<doc f='codebrowser/src/server.h' l='1095'>/* Unix time of the latest read, for timeout */</doc>
+<use f='codebrowser/src/replication.c' l='1139' u='w' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1208' u='w' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1356' u='w' c='sendSynchronousCommand'/>
+<use f='codebrowser/src/replication.c' l='1836' u='w' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1873' u='w' c='connectWithMaster'/>
+<use f='codebrowser/src/replication.c' l='2498' u='r' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2506' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='3163' u='r' c='genRedisInfoString'/>

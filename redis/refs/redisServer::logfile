@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/server.h' l='1053' type='char *'/>
+<offset>16832</offset>
+<doc f='codebrowser/src/server.h' l='1052'>/* Logging */</doc>
+<doc f='codebrowser/src/server.h' l='1053'>/* Path of log file */</doc>
+<use f='codebrowser/src/config.c' l='273' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='274' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='275' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='278' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1217' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1217' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1963' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/debug.c' l='842' u='r' c='openDirectLogFiledes'/>
+<use f='codebrowser/src/debug.c' l='845' u='r' c='openDirectLogFiledes'/>
+<use f='codebrowser/src/debug.c' l='851' u='r' c='closeDirectLogFiledes'/>
+<use f='codebrowser/src/server.c' l='320' u='r' c='serverLogRaw'/>
+<use f='codebrowser/src/server.c' l='325' u='r' c='serverLogRaw'/>
+<use f='codebrowser/src/server.c' l='379' u='r' c='serverLogFromHandler'/>
+<use f='codebrowser/src/server.c' l='385' u='r' c='serverLogFromHandler'/>
+<use f='codebrowser/src/server.c' l='1375' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3433' u='r' c='redisAsciiArt'/>

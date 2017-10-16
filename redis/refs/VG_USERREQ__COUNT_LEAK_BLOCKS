@@ -1,0 +1,2 @@
+<dec f='include/valgrind/memcheck.h' l='97' type='1296236556'/>
+<doc f='include/valgrind/memcheck.h' l='96'>/* Not next to VG_USERREQ__COUNT_LEAKS because it was added later. */</doc>

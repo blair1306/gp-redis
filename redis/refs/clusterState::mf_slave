@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/cluster.h' l='156' type='clusterNode *'/>
+<use f='codebrowser/src/cluster.c' l='2020' u='w' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='3153' u='w' c='resetManualFailover'/>
+<use f='codebrowser/src/cluster.c' l='3406' u='r' c='clusterCron'/>
+<offset>4195072</offset>
+<doc f='codebrowser/src/cluster.h' l='155'>/* Manual failover state of master. */</doc>
+<doc f='codebrowser/src/cluster.h' l='156'>/* Slave performing the manual failover. */</doc>

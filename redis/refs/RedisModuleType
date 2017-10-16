@@ -1,0 +1,13 @@
+<def f='codebrowser/src/server.h' l='493' ll='503'/>
+<size>80</size>
+<doc f='codebrowser/src/server.h' l='491'>/* The module type, which is referenced in each value of a given type, defines
+ * the methods and links to the module exporting the type. */</doc>
+<mbr r='RedisModuleType::id' o='0' t='uint64_t'/>
+<mbr r='RedisModuleType::module' o='64' t='struct RedisModule *'/>
+<mbr r='RedisModuleType::rdb_load' o='128' t='moduleTypeLoadFunc'/>
+<mbr r='RedisModuleType::rdb_save' o='192' t='moduleTypeSaveFunc'/>
+<mbr r='RedisModuleType::aof_rewrite' o='256' t='moduleTypeRewriteFunc'/>
+<mbr r='RedisModuleType::mem_usage' o='320' t='moduleTypeMemUsageFunc'/>
+<mbr r='RedisModuleType::digest' o='384' t='moduleTypeDigestFunc'/>
+<mbr r='RedisModuleType::free' o='448' t='moduleTypeFreeFunc'/>
+<mbr r='RedisModuleType::name' o='512' t='char [10]'/>

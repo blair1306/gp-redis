@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/lua/src/lgc.h' l='21'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='586' u='c'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='592' u='c'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='649' u='c'/>

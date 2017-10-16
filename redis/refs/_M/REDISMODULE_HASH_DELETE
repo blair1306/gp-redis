@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/redismodule.h' l='87'/>
+<use f='codebrowser/src/module.c' l='2155' u='c'/>
+<doc f='codebrowser/src/redismodule.h' l='85'>/* A special pointer that we can use between the core and the module to signal
+ * field deletion, and that is impossible to be a valid pointer. */</doc>

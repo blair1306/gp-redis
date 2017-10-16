@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1410' type='void listTypeDelete(listTypeIterator * iter, listTypeEntry * entry)'/>
+<def f='codebrowser/src/t_list.c' l='170' ll='176' type='void listTypeDelete(listTypeIterator * iter, listTypeEntry * entry)'/>
+<use f='codebrowser/src/t_list.c' l='513' u='c' c='lremCommand'/>
+<doc f='codebrowser/src/t_list.c' l='169'>/* Delete the element pointed to. */</doc>

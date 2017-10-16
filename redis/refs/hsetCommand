@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1928' type='void hsetCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='201' u='r'/>
+<use f='codebrowser/src/server.c' l='201' u='r'/>
+<use f='codebrowser/src/server.c' l='204' u='r'/>
+<use f='codebrowser/src/server.c' l='204' u='r'/>
+<use f='codebrowser/src/server.c' l='201' u='r'/>
+<use f='codebrowser/src/server.c' l='201' u='r'/>
+<use f='codebrowser/src/server.c' l='204' u='r'/>
+<use f='codebrowser/src/server.c' l='204' u='r'/>
+<def f='codebrowser/src/t_hash.c' l='530' ll='557' type='void hsetCommand(client * c)'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1926' type='void zrankCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='198' u='r'/>
+<use f='codebrowser/src/server.c' l='198' u='r'/>
+<use f='codebrowser/src/server.c' l='198' u='r'/>
+<use f='codebrowser/src/server.c' l='198' u='r'/>
+<def f='codebrowser/src/t_zset.c' l='3054' ll='3056' type='void zrankCommand(client * c)'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='230' type='int lua_gc(lua_State * L, int what, int data)'/>
+<def f='codebrowser/deps/lua/src/lapi.c' l='899' ll='955' macro='1' type='int lua_gc(lua_State * L, int what, int data)'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='188' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='200' u='c' c='luaB_collectgarbage'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='203' u='c' c='luaB_collectgarbage'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='106' u='c' c='docall'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='347' u='c' c='pmain'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='349' u='c' c='pmain'/>
+<use f='codebrowser/src/scripting.c' l='1344' u='c' c='evalGenericCommand'/>
+<use f='codebrowser/src/server.c' l='2912' u='c' c='genRedisInfoString'/>

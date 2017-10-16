@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='308' type='uint64_t'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2222' u='r' c='je_arena_malloc_large'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2222' u='w' c='je_arena_malloc_large'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3043' u='w' c='je_arena_new'/>
+<offset>1472</offset>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1036' type='time_t'/>
+<offset>16192</offset>
+<doc f='codebrowser/src/server.h' l='1036'>/* Current RDB save start time. */</doc>
+<use f='codebrowser/src/rdb.c' l='1091' u='w' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1695' u='r' c='backgroundSaveDoneHandlerDisk'/>
+<use f='codebrowser/src/rdb.c' l='1696' u='w' c='backgroundSaveDoneHandlerDisk'/>
+<use f='codebrowser/src/rdb.c' l='1719' u='w' c='backgroundSaveDoneHandlerSocket'/>
+<use f='codebrowser/src/rdb.c' l='1961' u='w' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/server.c' l='1878' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='3008' u='r' c='genRedisInfoString'/>

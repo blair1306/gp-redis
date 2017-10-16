@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1374' type='void asyncCloseClientOnOutputBufferLimitReached(client * c)'/>
+<use f='codebrowser/src/networking.c' l='247' u='c' c='_addReplyObjectToList'/>
+<use f='codebrowser/src/networking.c' l='277' u='c' c='_addReplySdsToList'/>
+<use f='codebrowser/src/networking.c' l='303' u='c' c='_addReplyStringToList'/>
+<use f='codebrowser/src/networking.c' l='455' u='c' c='setDeferredMultiBulkLength'/>
+<def f='codebrowser/src/networking.c' l='1907' ll='1917' type='void asyncCloseClientOnOutputBufferLimitReached(client * c)'/>
+<doc f='codebrowser/src/networking.c' l='1900'>/* Asynchronously close a client if soft or hard limit is reached on the
+ * output buffer size. The caller can check if the client will be closed
+ * checking if the client CLIENT_CLOSE_ASAP flag is set.
+ *
+ * Note: we need to close the client asynchronously because this function is
+ * called from contexts where the client can&apos;t be freed safely, i.e. from the
+ * lower level functions pushing data inside the client output buffers. */</doc>

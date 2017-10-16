@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/util.h' l='40' type='uint32_t sdigits10(int64_t v)'/>
+<use f='codebrowser/src/object.c' l='546' u='c' c='stringObjectLen'/>
+<use f='codebrowser/src/t_hash.c' l='152' u='c' c='hashTypeGetValueLength'/>
+<def f='codebrowser/src/util.c' l='255' ll='264' type='uint32_t sdigits10(int64_t v)'/>
+<doc f='codebrowser/src/util.c' l='254'>/* Like digits10() but for signed values. */</doc>

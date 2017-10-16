@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1165' type='client *'/>
+<offset>22272</offset>
+<doc f='codebrowser/src/server.h' l='1165'>/* The &quot;fake client&quot; to query Redis from Lua */</doc>
+<use f='codebrowser/src/scripting.c' l='351' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='900' u='w' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='1051' u='r' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='1052' u='w' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='1053' u='r' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='1294' u='r' c='evalGenericCommand'/>

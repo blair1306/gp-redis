@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1791' type='void disconnectAllBlockedClients()'/>
+<def f='codebrowser/src/blocked.c' l='179' ll='195' type='void disconnectAllBlockedClients()'/>
+<doc f='codebrowser/src/blocked.c' l='172'>/* Mass-unblock clients because something changed in the instance that makes
+ * blocking no longer safe. For example clients blocked in list operations
+ * in an instance which turns from master to slave is unsafe, so this function
+ * is called when a master turns into a slave.
+ *
+ * The semantics is to send an -UNBLOCKED error to the client, disconnecting
+ * it at the same time. */</doc>
+<use f='codebrowser/src/replication.c' l='1935' u='c' c='replicationSetMaster'/>

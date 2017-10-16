@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1587' type='int zslValueGteMin(double value, zrangespec * spec)'/>
+<use f='codebrowser/src/module.c' l='2028' u='c' c='RM_ZsetRangePrev'/>
+<use f='codebrowser/src/module.c' l='2050' u='c' c='RM_ZsetRangePrev'/>
+<def f='codebrowser/src/t_zset.c' l='247' ll='249' type='int zslValueGteMin(double value, zrangespec * spec)'/>
+<use f='codebrowser/src/t_zset.c' l='264' u='c' c='zslIsInRange'/>
+<use f='codebrowser/src/t_zset.c' l='285' u='c' c='zslFirstInRange'/>
+<use f='codebrowser/src/t_zset.c' l='319' u='c' c='zslLastInRange'/>
+<use f='codebrowser/src/t_zset.c' l='782' u='c' c='zzlIsInRange'/>
+<use f='codebrowser/src/t_zset.c' l='808' u='c' c='zzlFirstInRange'/>
+<use f='codebrowser/src/t_zset.c' l='838' u='c' c='zzlLastInRange'/>
+<use f='codebrowser/src/t_zset.c' l='2570' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2632' u='c' c='genericZrangebyscoreCommand'/>

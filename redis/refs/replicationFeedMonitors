@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1482' type='void replicationFeedMonitors(client * c, list * monitors, int dictid, robj ** argv, int argc)'/>
+<use f='codebrowser/src/multi.c' l='196' u='c' c='execCommand'/>
+<def f='codebrowser/src/replication.c' l='303' ll='340' type='void replicationFeedMonitors(client * c, list * monitors, int dictid, robj ** argv, int argc)'/>
+<use f='codebrowser/src/server.c' l='2194' u='c' c='call'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1632' type='void activeDefragCycle()'/>
+<def f='codebrowser/src/defrag.c' l='478' ll='571' type='void activeDefragCycle()'/>
+<doc f='codebrowser/src/defrag.c' l='475'>/* Perform incremental defragmentation work from the serverCron.
+ * This works in a similar way to activeExpireCycle, in the sense that
+ * we do incremental work across calls. */</doc>
+<use f='codebrowser/src/server.c' l='885' u='c' c='databasesCron'/>

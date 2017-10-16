@@ -1,0 +1,5 @@
+<def f='codebrowser/src/replication.c' l='77' ll='87' type='void createReplicationBacklog()'/>
+<use f='codebrowser/src/replication.c' l='698' u='c' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='1291' u='c' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1539' u='c' c='slaveTryPartialResynchronization'/>
+<doc f='codebrowser/src/replication.c' l='75'>/* ---------------------------------- MASTER -------------------------------- */</doc>

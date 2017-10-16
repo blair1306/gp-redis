@@ -1,0 +1,22 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='44' type='arena_runs_dirty_link_t'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='214' u='a' c='je_extent_node_dirty_linkage_init'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='214' u='a' c='je_extent_node_dirty_linkage_init'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='214' u='a' c='je_extent_node_dirty_linkage_init'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='214' u='a' c='je_extent_node_dirty_linkage_init'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='223' u='a' c='je_extent_node_dirty_insert'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='223' u='a' c='je_extent_node_dirty_insert'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='223' u='a' c='je_extent_node_dirty_insert'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='223' u='a' c='je_extent_node_dirty_insert'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='231' u='a' c='je_extent_node_dirty_remove'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='231' u='a' c='je_extent_node_dirty_remove'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='231' u='a' c='je_extent_node_dirty_remove'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='231' u='a' c='je_extent_node_dirty_remove'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='231' u='a' c='je_extent_node_dirty_remove'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='231' u='a' c='je_extent_node_dirty_remove'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='231' u='a' c='je_extent_node_dirty_remove'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='231' u='a' c='je_extent_node_dirty_remove'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1247' u='a' c='arena_dirty_count'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1305' u='a' c='arena_stash_dirty'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1388' u='a' c='arena_purge_stashed'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1475' u='a' c='arena_unstash_purged'/>
+<offset>320</offset>

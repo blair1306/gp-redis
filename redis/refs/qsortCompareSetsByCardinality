@@ -1,0 +1,2 @@
+<def f='codebrowser/src/t_set.c' l='776' ll='778' type='int qsortCompareSetsByCardinality(const void * s1, const void * s2)'/>
+<use f='codebrowser/src/t_set.c' l='824' u='r' c='sinterGenericCommand'/>

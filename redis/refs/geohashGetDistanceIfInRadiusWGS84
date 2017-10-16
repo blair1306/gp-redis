@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/geohash_helper.h' l='66' type='int geohashGetDistanceIfInRadiusWGS84(double x1, double y1, double x2, double y2, double radius, double * distance)'/>
+<use f='codebrowser/src/geo.c' l='197' u='c' c='geoAppendIfWithinRadius'/>
+<def f='codebrowser/src/geohash_helper.c' l='231' ll='235' type='int geohashGetDistanceIfInRadiusWGS84(double x1, double y1, double x2, double y2, double radius, double * distance)'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='715' type='char [46]'/>
+<offset>2304</offset>
+<doc f='codebrowser/src/server.h' l='715'>/* Optionally given by REPLCONF ip-address */</doc>
+<use f='codebrowser/src/networking.c' l='118' u='w' c='createClient'/>
+<use f='codebrowser/src/replication.c' l='58' u='r' c='replicationGetSlaveName'/>
+<use f='codebrowser/src/replication.c' l='62' u='r' c='replicationGetSlaveName'/>
+<use f='codebrowser/src/replication.c' l='62' u='r' c='replicationGetSlaveName'/>
+<use f='codebrowser/src/replication.c' l='62' u='r' c='replicationGetSlaveName'/>
+<use f='codebrowser/src/replication.c' l='797' u='r' c='replconfCommand'/>
+<use f='codebrowser/src/replication.c' l='798' u='r' c='replconfCommand'/>
+<use f='codebrowser/src/replication.c' l='2046' u='r' c='roleCommand'/>
+<use f='codebrowser/src/server.c' l='3201' u='r' c='genRedisInfoString'/>

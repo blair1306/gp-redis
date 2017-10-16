@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/quicklist.h' l='77' type='unsigned int'/>
+<offset>192</offset>
+<doc f='codebrowser/src/quicklist.h' l='77'>/* number of quicklistNodes */</doc>
+<use f='codebrowser/src/debug.c' l='379' u='r' c='debugCommand'/>
+<use f='codebrowser/src/debug.c' l='383' u='r' c='debugCommand'/>
+<use f='codebrowser/src/lazyfree.c' l='34' u='r' c='lazyfreeGetFreeEffort'/>
+<use f='codebrowser/src/quicklist.c' l='99' u='w' c='quicklistCreate'/>
+<use f='codebrowser/src/quicklist.c' l='160' u='r' c='quicklistRelease'/>
+<use f='codebrowser/src/quicklist.c' l='169' u='w' c='quicklistRelease'/>
+<use f='codebrowser/src/quicklist.c' l='270' u='r' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='377' u='r' c='__quicklistInsertNode'/>
+<use f='codebrowser/src/quicklist.c' l='384' u='w' c='__quicklistInsertNode'/>
+<use f='codebrowser/src/quicklist.c' l='602' u='w' c='__quicklistDelNode'/>
+<use f='codebrowser/src/quicklist.c' l='1307' u='r' c='quicklistRotate'/>
+<use f='codebrowser/src/rdb.c' l='656' u='r' c='rdbSaveObject'/>

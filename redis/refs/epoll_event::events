@@ -1,0 +1,13 @@
+<dec f='include/x86_64-linux-gnu/sys/epoll.h' l='89' type='uint32_t'/>
+<use f='codebrowser/src/ae_epoll.c' l='81' u='w' c='aeApiAddEvent'/>
+<use f='codebrowser/src/ae_epoll.c' l='83' u='w' c='aeApiAddEvent'/>
+<use f='codebrowser/src/ae_epoll.c' l='84' u='w' c='aeApiAddEvent'/>
+<use f='codebrowser/src/ae_epoll.c' l='95' u='w' c='aeApiDelEvent'/>
+<use f='codebrowser/src/ae_epoll.c' l='96' u='w' c='aeApiDelEvent'/>
+<use f='codebrowser/src/ae_epoll.c' l='97' u='w' c='aeApiDelEvent'/>
+<use f='codebrowser/src/ae_epoll.c' l='122' u='r' c='aeApiPoll'/>
+<use f='codebrowser/src/ae_epoll.c' l='123' u='r' c='aeApiPoll'/>
+<use f='codebrowser/src/ae_epoll.c' l='124' u='r' c='aeApiPoll'/>
+<use f='codebrowser/src/ae_epoll.c' l='125' u='r' c='aeApiPoll'/>
+<offset>0</offset>
+<doc f='include/x86_64-linux-gnu/sys/epoll.h' l='89'>/* Epoll events */</doc>

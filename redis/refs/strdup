@@ -1,0 +1,6 @@
+<dec f='include/string.h' l='171' type='char * strdup(const char * __s)'/>
+<doc f='include/string.h' l='170'>/* Duplicate S, returning an identical malloc&apos;d string.  */</doc>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='705' u='c' c='linenoiseEditHistoryNext'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1057' u='c' c='linenoise'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1061' u='c' c='linenoise'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1117' u='c' c='linenoiseHistoryAdd'/>

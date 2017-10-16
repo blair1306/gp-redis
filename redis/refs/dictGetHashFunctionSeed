@@ -1,0 +1,2 @@
+<dec f='codebrowser/src/dict.h' l='179' type='uint8_t * dictGetHashFunctionSeed()'/>
+<def f='codebrowser/src/dict.c' l='80' ll='82' type='uint8_t * dictGetHashFunctionSeed()'/>

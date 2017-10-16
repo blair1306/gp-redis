@@ -1,0 +1,3 @@
+<def f='codebrowser/deps/jemalloc/src/ckh.c' l='52' ll='65' macro='1' type='size_t ckh_bucket_search(ckh_t * ckh, size_t bucket, const void * key)'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='81' u='c' c='ckh_isearch'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='87' u='c' c='ckh_isearch'/>

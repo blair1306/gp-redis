@@ -1,0 +1,21 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='141' type='int'/>
+<use f='codebrowser/deps/hiredis/async.c' l='149' u='r' c='__redisAsyncCopyError'/>
+<use f='codebrowser/deps/hiredis/async.c' l='456' u='w' c='redisProcessCallbacks'/>
+<offset>0</offset>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='141'>/* Error flags, 0 when there is no error */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='575' u='w' c='__redisSetError'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='599' u='w' c='redisContextInit'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='644' u='w' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='799' u='r' c='redisBufferRead'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='835' u='r' c='redisBufferWrite'/>
+<use f='codebrowser/src/redis-benchmark.c' l='325' u='r' c='createClient'/>
+<use f='codebrowser/src/redis-cli.c' l='524' u='r' c='cliConnect'/>
+<use f='codebrowser/src/redis-cli.c' l='767' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='770' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='945' u='r' c='reconnectingRedisCommand'/>
+<use f='codebrowser/src/redis-cli.c' l='947' u='r' c='reconnectingRedisCommand'/>
+<use f='codebrowser/src/redis-cli.c' l='961' u='r' c='reconnectingRedisCommand'/>
+<use f='codebrowser/src/redis-cli.c' l='961' u='r' c='reconnectingRedisCommand'/>
+<use f='codebrowser/src/redis-cli.c' l='2063' u='r' c='getKeyTypes'/>
+<use f='codebrowser/src/redis-cli.c' l='2109' u='r' c='getKeySizes'/>
+<use f='codebrowser/src/redis-cli.c' l='2513' u='r' c='LRUTestMode'/>

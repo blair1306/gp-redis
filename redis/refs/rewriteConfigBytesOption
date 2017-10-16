@@ -1,0 +1,7 @@
+<def f='codebrowser/src/config.c' l='1622' ll='1630' type='void rewriteConfigBytesOption(struct rewriteConfigState * state, char * option, long long value, long long defvalue)'/>
+<use f='codebrowser/src/config.c' l='1982' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1983' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1992' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1997' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2005' u='c' c='rewriteConfig'/>
+<doc f='codebrowser/src/config.c' l='1621'>/* Rewrite a simple &quot;option-name &lt;bytes&gt;&quot; configuration option. */</doc>

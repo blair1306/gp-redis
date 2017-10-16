@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/rax.h' l='112'/>
+<use f='codebrowser/src/rax.h' l='118' u='c'/>
+<doc f='codebrowser/src/rax.h' l='109'>/* Stack data structure used by raxLowWalk() in order to, optionally, return
+ * a list of parent nodes to the caller. The nodes do not have a &quot;parent&quot;
+ * field for space concerns, so we use the auxiliary stack when needed. */</doc>
+<use f='codebrowser/src/rax.c' l='81' u='c'/>

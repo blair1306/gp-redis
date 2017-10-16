@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='254'/>
+<use f='codebrowser/src/aof.c' l='596' u='c'/>
+<doc f='codebrowser/src/server.h' l='252'>/* Client block type (btype field in client structure)
+ * if CLIENT_BLOCKED flag is set. */</doc>
+<use f='codebrowser/src/blocked.c' l='147' u='c'/>
+<use f='codebrowser/src/networking.c' l='125' u='c'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='2005' type='void bugReportStart()'/>
+<use f='codebrowser/src/debug.c' l='561' u='c' c='_serverAssert'/>
+<use f='codebrowser/src/debug.c' l='576' u='c' c='_serverAssertPrintClientInfo'/>
+<use f='codebrowser/src/debug.c' l='622' u='c' c='_serverAssertPrintObject'/>
+<use f='codebrowser/src/debug.c' l='640' u='c' c='_serverPanic'/>
+<def f='codebrowser/src/debug.c' l='651' ll='657' type='void bugReportStart()'/>
+<use f='codebrowser/src/debug.c' l='1021' u='c' c='sigsegvHandler'/>

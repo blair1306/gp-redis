@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/cluster.c' l='70' type='void clusterSendUpdate(clusterLink * link, clusterNode * node)'/>
+<use f='codebrowser/src/cluster.c' l='1931' u='c' c='clusterProcessPacket'/>
+<def f='codebrowser/src/cluster.c' l='2521' ll='2531' type='void clusterSendUpdate(clusterLink * link, clusterNode * node)'/>
+<doc f='codebrowser/src/cluster.c' l='2518'>/* Send an UPDATE message to the specified link carrying the specified &apos;node&apos;
+ * slots configuration. The node name, slots bitmap, and configEpoch info
+ * are included. */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='73' type='unsigned int'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='149' u='r' c='je_rtree_subkey'/>
+<offset>64</offset>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='36' u='w' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='38' u='r' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='42' u='w' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='49' u='w' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='69' u='r' c='rtree_delete_subtree'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='106' u='r' c='rtree_node_init'/>

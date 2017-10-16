@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1701' type='int rewriteConfig(char * path)'/>
+<def f='codebrowser/src/config.c' l='1939' ll='2055' type='int rewriteConfig(char * path)'/>
+<use f='codebrowser/src/config.c' l='2085' u='c' c='configCommand'/>
+<doc f='codebrowser/src/config.c' l='1931'>/* Rewrite the configuration file at &quot;path&quot;.
+ * If the configuration file already exists, we try at best to retain comments
+ * and overall structure.
+ *
+ * Configuration parameters that are at their default value, unless already
+ * explicitly included in the old configuration file, are not rewritten.
+ *
+ * On error -1 is returned and errno is set accordingly, otherwise 0. */</doc>
+<use f='codebrowser/src/sentinel.c' l='1851' u='c' c='sentinelFlushConfig'/>
+<use f='codebrowser/src/server.c' l='1554' u='c' c='restartServer'/>

@@ -1,0 +1,32 @@
+<dec f='codebrowser/src/zmalloc.h' l='79' type='char * zstrdup(const char * s)'/>
+<use f='codebrowser/src/cluster.c' l='3220' u='c' c='clusterCron'/>
+<use f='codebrowser/src/config.c' l='236' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='239' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='274' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='296' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='389' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='451' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='495' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='498' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='505' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='586' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='589' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='681' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='842' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='846' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='849' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='852' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='984' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/latency.c' l='109' u='c' c='latencyAddSample'/>
+<use f='codebrowser/src/module.c' l='265' u='c' c='RM_Strdup'/>
+<use f='codebrowser/src/replication.c' l='1837' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/server.c' l='1375' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1377' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1401' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1402' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1431' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3365' u='c' c='createPidFile'/>
+<use f='codebrowser/src/server.c' l='3725' u='c' c='main'/>
+<use f='codebrowser/src/server.c' l='3771' u='c' c='main'/>
+<use f='codebrowser/src/sparkline.c' l='66' u='c' c='sparklineSequenceAddSample'/>
+<def f='codebrowser/src/zmalloc.c' l='204' ll='210' type='char * zstrdup(const char * s)'/>

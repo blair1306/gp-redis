@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/dict.h' l='175' type='void dictDisableResize()'/>
+<def f='codebrowser/src/dict.c' l='994' ll='996' type='void dictDisableResize()'/>
+<use f='codebrowser/src/server.c' l='742' u='c' c='updateDictResizePolicy'/>

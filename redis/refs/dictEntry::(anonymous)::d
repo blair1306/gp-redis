@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/dict.h' l='53' type='double'/>
+<offset>0</offset>
+<use f='codebrowser/src/t_zset.c' l='2295' macro='1' u='w'/>
+<use f='codebrowser/src/t_zset.c' l='2303' u='a' c='zunionInterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2319' macro='1' u='r'/>

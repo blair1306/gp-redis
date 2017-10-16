@@ -1,0 +1,9 @@
+<def f='codebrowser/src/server.c' l='467' ll='473' type='void dictObjectDestructor(void * privdata, void * val)'/>
+<use f='codebrowser/src/server.c' l='550'/>
+<use f='codebrowser/src/server.c' l='550'/>
+<use f='codebrowser/src/server.c' l='581'/>
+<use f='codebrowser/src/server.c' l='581'/>
+<use f='codebrowser/src/server.c' l='591'/>
+<use f='codebrowser/src/server.c' l='591'/>
+<use f='codebrowser/src/server.c' l='632'/>
+<use f='codebrowser/src/server.c' l='632'/>

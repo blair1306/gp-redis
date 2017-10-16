@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1401' type='void listTypePush(robj * subject, robj * value, int where)'/>
+<use f='codebrowser/src/module.c' l='1600' u='c' c='RM_ListPush'/>
+<use f='codebrowser/src/sort.c' l='544' u='c' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='558' u='c' c='sortCommand'/>
+<def f='codebrowser/src/t_list.c' l='41' ll='51' type='void listTypePush(robj * subject, robj * value, int where)'/>
+<use f='codebrowser/src/t_list.c' l='213' u='c' c='pushGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='242' u='c' c='pushxGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='559' u='c' c='rpoplpushHandlePush'/>
+<use f='codebrowser/src/t_list.c' l='852' u='c' c='handleClientsBlockedOnLists'/>
+<doc f='codebrowser/src/t_list.c' l='36'>/* The function pushes an element to the specified list object &apos;subject&apos;,
+ * at head or tail position as specified by &apos;where&apos;.
+ *
+ * There is no need for the caller to increment the refcount of &apos;value&apos; as
+ * the function takes care of it if needed. */</doc>

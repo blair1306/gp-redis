@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1037' type='int'/>
+<offset>16256</offset>
+<doc f='codebrowser/src/server.h' l='1037'>/* BGSAVE when possible if true. */</doc>
+<use f='codebrowser/src/rdb.c' l='2006' u='w' c='bgsaveCommand'/>
+<use f='codebrowser/src/server.c' l='1165' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1172' u='w' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1869' u='w' c='initServer'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1114' type='list *'/>
+<offset>20352</offset>
+<doc f='codebrowser/src/server.h' l='1113'>/* Synchronous replication. */</doc>
+<doc f='codebrowser/src/server.h' l='1114'>/* Clients waiting in WAIT command. */</doc>
+<use f='codebrowser/src/replication.c' l='2415' u='r' c='waitCommand'/>
+<use f='codebrowser/src/replication.c' l='2428' u='r' c='unblockClientWaitingReplicas'/>
+<use f='codebrowser/src/replication.c' l='2430' u='r' c='unblockClientWaitingReplicas'/>
+<use f='codebrowser/src/replication.c' l='2442' u='r' c='processClientsWaitingReplicas'/>
+<use f='codebrowser/src/server.c' l='1213' u='r' c='beforeSleep'/>
+<use f='codebrowser/src/server.c' l='1811' u='w' c='initServer'/>

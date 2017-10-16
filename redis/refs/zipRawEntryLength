@@ -1,0 +1,7 @@
+<def f='codebrowser/src/ziplist.c' l='471' ll='476' type='unsigned int zipRawEntryLength(unsigned char * p)'/>
+<use f='codebrowser/src/ziplist.c' l='686' u='c' c='__ziplistDelete'/>
+<use f='codebrowser/src/ziplist.c' l='760' u='c' c='__ziplistInsert'/>
+<use f='codebrowser/src/ziplist.c' l='981' u='c' c='ziplistIndex'/>
+<use f='codebrowser/src/ziplist.c' l='1003' u='c' c='ziplistNext'/>
+<use f='codebrowser/src/ziplist.c' l='1175' u='c' c='ziplistLen'/>
+<doc f='codebrowser/src/ziplist.c' l='470'>/* Return the total number of bytes used by the entry pointed to by &apos;p&apos;. */</doc>

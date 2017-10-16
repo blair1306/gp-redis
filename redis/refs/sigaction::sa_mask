@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/bits/sigaction.h' l='43' type='__sigset_t'/>
+<offset>64</offset>
+<doc f='include/x86_64-linux-gnu/bits/sigaction.h' l='42'>/* Additional set of signals to be blocked.  */</doc>
+<use f='codebrowser/src/debug.c' l='1110' u='a' c='sigsegvHandler'/>
+<use f='codebrowser/src/debug.c' l='1185' u='a' c='enableWatchdog'/>
+<use f='codebrowser/src/debug.c' l='1207' u='a' c='disableWatchdog'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='166' u='a' c='rdbCheckSetupSignals'/>
+<use f='codebrowser/src/scripting.c' l='1603' u='a' c='ldbStartSession'/>
+<use f='codebrowser/src/server.c' l='3491' u='a' c='setupSignalHandlers'/>
+<use f='codebrowser/src/server.c' l='3498' u='a' c='setupSignalHandlers'/>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='448' macro='1' type='void * je_bootstrap_calloc(size_t num, size_t size)'/>
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='353' macro='1' type='void * je_bootstrap_calloc(size_t num, size_t size)'/>

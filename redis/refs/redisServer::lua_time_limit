@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1168' type='mstime_t'/>
+<offset>22464</offset>
+<doc f='codebrowser/src/server.h' l='1168'>/* Script timeout in milliseconds */</doc>
+<use f='codebrowser/src/config.c' l='635' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1076' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1250' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2006' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/scripting.c' l='1188' u='r' c='luaMaskCountHook'/>
+<use f='codebrowser/src/scripting.c' l='1306' u='r' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='2357' u='r' c='luaLdbLineHook'/>
+<use f='codebrowser/src/scripting.c' l='2358' u='r' c='luaLdbLineHook'/>
+<use f='codebrowser/src/server.c' l='1442' u='w' c='initServerConfig'/>

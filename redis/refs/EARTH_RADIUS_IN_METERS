@@ -1,0 +1,7 @@
+<def f='codebrowser/src/geohash_helper.c' l='52' type='const double'/>
+<use f='codebrowser/src/geohash_helper.c' l='107' u='r' c='geohashBoundingBox'/>
+<use f='codebrowser/src/geohash_helper.c' l='108' u='r' c='geohashBoundingBox'/>
+<use f='codebrowser/src/geohash_helper.c' l='109' u='r' c='geohashBoundingBox'/>
+<use f='codebrowser/src/geohash_helper.c' l='110' u='r' c='geohashBoundingBox'/>
+<use f='codebrowser/src/geohash_helper.c' l='219' u='r' c='geohashGetDistance'/>
+<doc f='codebrowser/src/geohash_helper.c' l='51'>/// @brief Earth&apos;s quatratic mean radius for WGS-84</doc>

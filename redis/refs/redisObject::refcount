@@ -1,0 +1,26 @@
+<dec f='codebrowser/src/server.h' l='590' type='int'/>
+<use f='codebrowser/src/aof.c' l='1091' macro='1' u='w'/>
+<offset>32</offset>
+<use f='codebrowser/src/db.c' l='286' u='r' c='dbUnshareStringValue'/>
+<use f='codebrowser/src/debug.c' l='410' u='r' c='debugCommand'/>
+<use f='codebrowser/src/debug.c' l='593' u='r' c='_serverAssertPrintClientInfo'/>
+<use f='codebrowser/src/debug.c' l='600' u='r' c='serverLogObjectDebugInfo'/>
+<use f='codebrowser/src/defrag.c' l='101' u='r' c='activeDefragStringOb'/>
+<use f='codebrowser/src/module.c' l='903' u='r' c='moduleAssertUnsharedString'/>
+<use f='codebrowser/src/object.c' l='46' u='w' c='createObject'/>
+<use f='codebrowser/src/object.c' l='70' u='r' c='makeObjectShared'/>
+<use f='codebrowser/src/object.c' l='71' u='w' c='makeObjectShared'/>
+<use f='codebrowser/src/object.c' l='91' u='w' c='createEmbeddedStringObject'/>
+<use f='codebrowser/src/object.c' l='307' u='r' c='incrRefCount'/>
+<use f='codebrowser/src/object.c' l='307' u='w' c='incrRefCount'/>
+<use f='codebrowser/src/object.c' l='311' u='r' c='decrRefCount'/>
+<use f='codebrowser/src/object.c' l='323' u='r' c='decrRefCount'/>
+<use f='codebrowser/src/object.c' l='324' u='r' c='decrRefCount'/>
+<use f='codebrowser/src/object.c' l='324' u='w' c='decrRefCount'/>
+<use f='codebrowser/src/object.c' l='348' u='w' c='resetRefCount'/>
+<use f='codebrowser/src/object.c' l='394' u='r' c='tryObjectEncoding'/>
+<use f='codebrowser/src/object.c' l='1018' u='r' c='objectCommand'/>
+<use f='codebrowser/src/rdb.c' l='927' macro='1' u='w'/>
+<use f='codebrowser/src/scripting.c' l='603' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/slowlog.c' l='75' u='r' c='slowlogCreateEntry'/>
+<use f='codebrowser/src/t_string.c' l='357' u='r' c='incrDecrCommand'/>

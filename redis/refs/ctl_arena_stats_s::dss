@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='36' type='const char *'/>
+<offset>64</offset>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='522' u='w' c='ctl_arena_clear'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='545' u='a' c='ctl_arena_stats_amerge'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1999' u='r' c='stats_arenas_i_dss_ctl'/>

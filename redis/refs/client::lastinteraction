@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='696' type='time_t'/>
+<offset>1088</offset>
+<doc f='codebrowser/src/server.h' l='696'>/* Time of the last interaction, used for timeout */</doc>
+<use f='codebrowser/src/cluster.c' l='2874' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/networking.c' l='109' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='963' u='w' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='1399' u='w' c='readQueryFromClient'/>
+<use f='codebrowser/src/networking.c' l='1524' u='r' c='catClientInfoString'/>
+<use f='codebrowser/src/replication.c' l='2204' u='w' c='replicationResurrectCachedMaster'/>
+<use f='codebrowser/src/replication.c' l='2514' u='r' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2651' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='786' u='r' c='clientsCronHandleTimeout'/>
+<use f='codebrowser/src/server.c' l='816' u='r' c='clientsCronResizeQueryBuffer'/>
+<use f='codebrowser/src/server.c' l='3152' u='r' c='genRedisInfoString'/>

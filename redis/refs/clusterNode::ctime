@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/cluster.h' l='106' type='mstime_t'/>
+<use f='codebrowser/src/cluster.c' l='679' u='w' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='1796' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='3255' u='r' c='clusterCron'/>
+<offset>0</offset>
+<doc f='codebrowser/src/cluster.h' l='106'>/* Node object creation time. */</doc>

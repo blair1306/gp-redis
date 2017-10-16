@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1084' type='int'/>
+<offset>18720</offset>
+<doc f='codebrowser/src/server.h' l='1084'>/* Timeout after N seconds of master idle */</doc>
+<use f='codebrowser/src/config.c' l='355' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='356' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1088' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1263' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1981' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/rdb.c' l='1854' u='r' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/replication.c' l='2498' u='r' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2506' u='r' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2514' u='r' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2595' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='1469' u='w' c='initServerConfig'/>

@@ -1,0 +1,10 @@
+<def f='codebrowser/src/cluster.c' l='579' ll='590' type='void freeClusterLink(clusterLink * link)'/>
+<use f='codebrowser/src/cluster.c' l='857' u='c' c='freeClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='1393' u='c' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1466' u='c' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1802' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2059' u='c' c='handleLinkIOError'/>
+<use f='codebrowser/src/cluster.c' l='3387' u='c' c='clusterCron'/>
+<doc f='codebrowser/src/cluster.c' l='576'>/* Free a cluster link, but does not free the associated node of course.
+ * This function will just make sure that the original node associated
+ * with this link will have the &apos;link&apos; field set to NULL. */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/rdb.h' l='142' type='int rdbSaveStringObject(rio * rdb, robj * obj)'/>
+<use f='codebrowser/src/module.c' l='3019' u='c' c='RM_SaveString'/>
+<def f='codebrowser/src/rdb.c' l='427' ll='436' type='int rdbSaveStringObject(rio * rdb, robj * obj)'/>
+<use f='codebrowser/src/rdb.c' l='648' u='c' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='822' u='c' c='rdbSaveKeyValuePair'/>
+<doc f='codebrowser/src/rdb.c' l='426'>/* Like rdbSaveRawString() gets a Redis object instead. */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/adlist.h' l='59'/>
+<use f='codebrowser/src/aof.c' l='126' u='c'/>
+<use f='codebrowser/src/networking.c' l='232' u='c'/>
+<use f='codebrowser/src/networking.c' l='262' u='c'/>
+<use f='codebrowser/src/networking.c' l='288' u='c'/>
+<use f='codebrowser/src/networking.c' l='428' u='c'/>
+<use f='codebrowser/src/replication.c' l='2314' u='c'/>
+<use f='codebrowser/src/slowlog.c' l='131' u='c'/>
+<use f='codebrowser/src/slowlog.c' l='137' u='c'/>

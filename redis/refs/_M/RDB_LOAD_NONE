@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rdb.h' l='114'/>
+<doc f='codebrowser/src/rdb.h' l='113'>/* rdbLoad...() functions flags. */</doc>
+<use f='codebrowser/src/module.c' l='3053' u='c'/>
+<use f='codebrowser/src/rdb.c' l='496' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1123' u='c'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/quicklist.h' l='137' type='void quicklistDelEntry(quicklistIter * iter, quicklistEntry * entry)'/>
+<def f='codebrowser/src/quicklist.c' l='634' ll='661' type='void quicklistDelEntry(quicklistIter * iter, quicklistEntry * entry)'/>
+<doc f='codebrowser/src/quicklist.c' l='630'>/* Delete one element represented by &apos;entry&apos;
+ *
+ * &apos;entry&apos; stores enough metadata to delete the proper position in
+ * the correct ziplist in the correct quicklist node. */</doc>
+<use f='codebrowser/src/t_list.c' l='172' u='c' c='listTypeDelete'/>

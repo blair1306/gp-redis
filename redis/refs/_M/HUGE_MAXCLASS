@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/size_classes.h' l='498'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2309' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2311' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2315' u='c'/>

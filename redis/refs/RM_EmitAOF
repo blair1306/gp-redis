@@ -1,0 +1,7 @@
+<def f='codebrowser/src/module.c' l='3227' ll='3271' type='void RM_EmitAOF(RedisModuleIO * io, const char * cmdname, const char * fmt)'/>
+<use f='codebrowser/src/module.c' l='3984' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3222'>/* Emits a command into the AOF during the AOF rewriting process. This function
+ * is only called in the context of the aof_rewrite method of data types exported
+ * by a module. The command works exactly like RedisModule_Call() in the way
+ * the parameters are passed, but it does not return anything as the error
+ * handling is performed by Redis itself. */</doc>

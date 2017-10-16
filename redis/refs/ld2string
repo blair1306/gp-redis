@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/util.h' l='46' type='int ld2string(char * buf, size_t len, long double value, int humanfriendly)'/>
+<use f='codebrowser/src/object.c' l='149' u='c' c='createStringObjectFromLongDouble'/>
+<use f='codebrowser/src/t_hash.c' l='620' u='c' c='hincrbyfloatCommand'/>
+<def f='codebrowser/src/util.c' l='500' ll='537' type='int ld2string(char * buf, size_t len, long double value, int humanfriendly)'/>
+<doc f='codebrowser/src/util.c' l='493'>/* Convert a long double into a string. If humanfriendly is non-zero
+ * it does not use exponential format and trims trailing zeroes at the end,
+ * however this results in loss of precision. Otherwise exp format is used
+ * and the output of snprintf() is not modified.
+ *
+ * The function returns the length of the string or zero if there was not
+ * enough buffer room to store it. */</doc>

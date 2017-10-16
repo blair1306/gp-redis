@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='226' type='sds sdscpylen(sds s, const char * t, size_t len)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='405' ll='414' type='sds sdscpylen(sds s, const char * t, size_t len)'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='419' u='c' c='sdscpy'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='403'>/* Destructively modify the sds string &apos;s&apos; to hold the specified binary
+ * safe string pointed by &apos;t&apos; of length &apos;len&apos; bytes. */</doc>
+<dec f='codebrowser/src/sds.h' l='226' type='sds sdscpylen(sds s, const char * t, size_t len)'/>
+<def f='codebrowser/src/sds.c' l='408' ll='417' type='sds sdscpylen(sds s, const char * t, size_t len)'/>
+<use f='codebrowser/src/sds.c' l='422' u='c' c='sdscpy'/>
+<doc f='codebrowser/src/sds.c' l='406'>/* Destructively modify the sds string &apos;s&apos; to hold the specified binary
+ * safe string pointed by &apos;t&apos; of length &apos;len&apos; bytes. */</doc>

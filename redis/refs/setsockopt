@@ -1,0 +1,23 @@
+<dec f='include/x86_64-linux-gnu/sys/socket.h' l='226' type='int setsockopt(int __fd, int __level, int __optname, const void * __optval, socklen_t __optlen)'/>
+<use f='codebrowser/deps/hiredis/net.c' l='79' u='c' c='redisSetReuseAddr'/>
+<use f='codebrowser/deps/hiredis/net.c' l='131' u='c' c='redisKeepAlive'/>
+<use f='codebrowser/deps/hiredis/net.c' l='146' u='c' c='redisKeepAlive'/>
+<use f='codebrowser/deps/hiredis/net.c' l='153' u='c' c='redisKeepAlive'/>
+<use f='codebrowser/deps/hiredis/net.c' l='159' u='c' c='redisKeepAlive'/>
+<use f='codebrowser/deps/hiredis/net.c' l='171' u='c' c='redisSetTcpNoDelay'/>
+<use f='codebrowser/deps/hiredis/net.c' l='254' u='c' c='redisContextSetTimeout'/>
+<use f='codebrowser/deps/hiredis/net.c' l='258' u='c' c='redisContextSetTimeout'/>
+<use f='codebrowser/deps/hiredis/net.c' l='357' u='c' c='_redisContextConnectTcp'/>
+<doc f='include/x86_64-linux-gnu/sys/socket.h' l='223'>/* Set socket FD&apos;s option OPTNAME at protocol level LEVEL
+   to *OPTVAL (which is OPTLEN bytes long).
+   Returns 0 on success, -1 for errors.  */</doc>
+<use f='codebrowser/src/anet.c' l='99' u='c' c='anetKeepAlive'/>
+<use f='codebrowser/src/anet.c' l='112' u='c' c='anetKeepAlive'/>
+<use f='codebrowser/src/anet.c' l='122' u='c' c='anetKeepAlive'/>
+<use f='codebrowser/src/anet.c' l='130' u='c' c='anetKeepAlive'/>
+<use f='codebrowser/src/anet.c' l='143' u='c' c='anetSetTcpNoDelay'/>
+<use f='codebrowser/src/anet.c' l='164' u='c' c='anetSetSendBuffer'/>
+<use f='codebrowser/src/anet.c' l='175' u='c' c='anetTcpKeepAlive'/>
+<use f='codebrowser/src/anet.c' l='189' u='c' c='anetSendTimeout'/>
+<use f='codebrowser/src/anet.c' l='242' u='c' c='anetSetReuseAddr'/>
+<use f='codebrowser/src/anet.c' l='457' u='c' c='anetV6Only'/>

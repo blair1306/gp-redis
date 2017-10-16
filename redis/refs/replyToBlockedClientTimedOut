@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1789' type='void replyToBlockedClientTimedOut(client * c)'/>
+<def f='codebrowser/src/blocked.c' l='160' ll='170' type='void replyToBlockedClientTimedOut(client * c)'/>
+<doc f='codebrowser/src/blocked.c' l='157'>/* This function gets called when a blocked client timed out in order to
+ * send it a reply of some kind. After this function is called,
+ * unblockClient() will be called with the same client as argument. */</doc>
+<use f='codebrowser/src/server.c' l='798' u='c' c='clientsCronHandleTimeout'/>

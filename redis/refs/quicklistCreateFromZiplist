@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/quicklist.h' l='131' type='quicklist * quicklistCreateFromZiplist(int fill, int compress, unsigned char * zl)'/>
+<def f='codebrowser/src/quicklist.c' l='566' ll='569' type='quicklist * quicklistCreateFromZiplist(int fill, int compress, unsigned char * zl)'/>
+<doc f='codebrowser/src/quicklist.c' l='563'>/* Create new (potentially multi-node) quicklist from a single existing ziplist.
+ *
+ * Returns new quicklist.  Frees passed-in ziplist &apos;zl&apos;. */</doc>
+<use f='codebrowser/src/t_list.c' l='186' u='c' c='listTypeConvert'/>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/src/server.h' l='1370' type='void rewriteClientCommandArgument(client * c, int i, robj * newval)'/>
+<def f='codebrowser/src/networking.c' l='1780' ll='1798' type='void rewriteClientCommandArgument(client * c, int i, robj * newval)'/>
+<doc f='codebrowser/src/networking.c' l='1769'>/* Rewrite a single item in the command vector.
+ * The new val ref count is incremented, and the old decremented.
+ *
+ * It is possible to specify an argument over the current size of the
+ * argument vector: in this case the array of objects gets reallocated
+ * and c-&gt;argc set to the max value. However it&apos;s up to the caller to
+ *
+ * 1. Make sure there are no &quot;holes&quot; and all the arguments are set.
+ * 2. If the original argument vector was longer than the one we
+ *    want to end with, it&apos;s up to the caller to set c-&gt;argc and
+ *    free the no longer used objects on c-&gt;argv. */</doc>
+<use f='codebrowser/src/scripting.c' l='1392' u='c' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1394' u='c' c='evalGenericCommand'/>
+<use f='codebrowser/src/t_hash.c' l='634' u='c' c='hincrbyfloatCommand'/>
+<use f='codebrowser/src/t_hash.c' l='636' u='c' c='hincrbyfloatCommand'/>
+<use f='codebrowser/src/t_string.c' l='430' u='c' c='incrbyfloatCommand'/>
+<use f='codebrowser/src/t_string.c' l='432' u='c' c='incrbyfloatCommand'/>

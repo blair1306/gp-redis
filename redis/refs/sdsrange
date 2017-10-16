@@ -1,0 +1,56 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='239' type='void sdsrange(sds s, int start, int end)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='852' u='c' c='redisBufferWrite'/>
+<use f='codebrowser/deps/hiredis/read.c' l='513' u='c' c='redisReaderGetReply'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='712' ll='738' type='void sdsrange(sds s, int start, int end)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='696'>/* Turn the string into a smaller (or equal) string containing only the
+ * substring specified by the &apos;start&apos; and &apos;end&apos; indexes.
+ *
+ * start and end can be negative, where -1 means the last character of the
+ * string, -2 the penultimate character, and so forth.
+ *
+ * The interval is inclusive, so the start and end characters will be part
+ * of the resulting string.
+ *
+ * The string is modified in-place.
+ *
+ * Example:
+ *
+ * s = sdsnew(&quot;Hello World&quot;);
+ * sdsrange(s,1,-1); =&gt; &quot;ello World&quot;
+ */</doc>
+<dec f='codebrowser/src/sds.h' l='239' type='void sdsrange(sds s, int start, int end)'/>
+<use f='codebrowser/src/aof.c' l='404' u='c' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/cluster.c' l='2078' u='c' c='clusterWriteHandler'/>
+<use f='codebrowser/src/module.c' l='1579' u='c' c='RM_StringTruncate'/>
+<use f='codebrowser/src/networking.c' l='1086' u='c' c='processInlineBuffer'/>
+<use f='codebrowser/src/networking.c' l='1135' u='c' c='setProtocolError'/>
+<use f='codebrowser/src/networking.c' l='1184' u='c' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1237' u='c' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1278' u='c' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1428' u='c' c='readQueryFromClient'/>
+<use f='codebrowser/src/redis-benchmark.c' l='234' u='c' c='readHandler'/>
+<use f='codebrowser/src/redis-cli.c' l='455' u='c' c='hintsCallback'/>
+<use f='codebrowser/src/replication.c' l='889' u='c' c='sendBulkToSlave'/>
+<use f='codebrowser/src/scripting.c' l='1547' u='c' c='ldbLogWithMaxLen'/>
+<use f='codebrowser/src/scripting.c' l='1906' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1907' u='c' c='ldbCatStackValueRec'/>
+<def f='codebrowser/src/sds.c' l='717' ll='743' type='void sdsrange(sds s, int start, int end)'/>
+<doc f='codebrowser/src/sds.c' l='701'>/* Turn the string into a smaller (or equal) string containing only the
+ * substring specified by the &apos;start&apos; and &apos;end&apos; indexes.
+ *
+ * start and end can be negative, where -1 means the last character of the
+ * string, -2 the penultimate character, and so forth.
+ *
+ * The interval is inclusive, so the start and end characters will be part
+ * of the resulting string.
+ *
+ * The string is modified in-place.
+ *
+ * Example:
+ *
+ * s = sdsnew(&quot;Hello World&quot;);
+ * sdsrange(s,1,-1); =&gt; &quot;ello World&quot;
+ */</doc>
+<use f='codebrowser/src/sentinel.c' l='2674' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/util.c' l='649' u='c' c='getAbsolutePath'/>
+<use f='codebrowser/src/util.c' l='658' u='c' c='getAbsolutePath'/>

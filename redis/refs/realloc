@@ -1,0 +1,18 @@
+<dec f='include/stdlib.h' l='480' type='void * realloc(void * __ptr, size_t __size)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='108' u='c' c='redisAsyncInitialize'/>
+<doc f='include/stdlib.h' l='477'>/* __attribute_malloc__ is not used, because if realloc returns
+   the same pointer that was passed to it, aliasing needs to be allowed
+   between objects pointed by the old and new pointers.  */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='235' u='c' c='redisvFormatCommand'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='384' u='c' c='redisvFormatCommand'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='221' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='255' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='812' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='1021' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='1095' macro='1' u='c'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='436' u='c' c='linenoiseAddCompletion'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='462' u='c' c='abAppend'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1011' u='c' c='linenoiseNoTTY'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='635' u='c' c='l_alloc'/>
+<use f='codebrowser/deps/lua/src/strbuf.c' l='176' u='c' c='strbuf_resize'/>
+<dec f='codebrowser/src/server.h' l='1998' type='void * realloc(void * ptr, size_t size)'/>

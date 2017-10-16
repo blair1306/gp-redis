@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1706' type='int expireIfNeeded(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/db.c' l='94' u='c' c='lookupKeyReadWithFlags'/>
+<use f='codebrowser/src/db.c' l='140' u='c' c='lookupKeyWrite'/>
+<use f='codebrowser/src/db.c' l='228' u='c' c='dbRandomKey'/>
+<use f='codebrowser/src/db.c' l='432' u='c' c='delGenericCommand'/>
+<use f='codebrowser/src/db.c' l='461' u='c' c='existsCommand'/>
+<use f='codebrowser/src/db.c' l='513' u='c' c='keysCommand'/>
+<use f='codebrowser/src/db.c' l='722' u='c' c='scanGenericCommand'/>
+<def f='codebrowser/src/db.c' l='1087' ll='1122' type='int expireIfNeeded(redisDb * db, robj * key)'/>

@@ -1,0 +1,3 @@
+<def f='codebrowser/deps/lua/src/lua_bit.c' l='163' ll='188' macro='1' type='int luaopen_bit(lua_State * L)'/>
+<dec f='codebrowser/src/scripting.c' l='819' type='int luaopen_bit(lua_State * L)'/>
+<use f='codebrowser/src/scripting.c' l='830' u='r' c='luaLoadLibraries'/>

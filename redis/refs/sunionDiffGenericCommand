@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/t_set.c' l='36' type='void sunionDiffGenericCommand(client * c, robj ** setkeys, int setnum, robj * dstkey, int op)'/>
+<use f='codebrowser/src/t_set.c' l='439' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='668' u='c' c='srandmemberWithCountCommand'/>
+<def f='codebrowser/src/t_set.c' l='927' ll='1085' type='void sunionDiffGenericCommand(client * c, robj ** setkeys, int setnum, robj * dstkey, int op)'/>
+<use f='codebrowser/src/t_set.c' l='1088' u='c' c='sunionCommand'/>
+<use f='codebrowser/src/t_set.c' l='1092' u='c' c='sunionstoreCommand'/>
+<use f='codebrowser/src/t_set.c' l='1096' u='c' c='sdiffCommand'/>
+<use f='codebrowser/src/t_set.c' l='1100' u='c' c='sdiffstoreCommand'/>
+<doc f='codebrowser/src/t_set.c' l='32'>/*-----------------------------------------------------------------------------
+ * Set Commands
+ *----------------------------------------------------------------------------*/</doc>

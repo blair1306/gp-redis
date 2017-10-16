@@ -1,0 +1,13 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='379' type='struct (anonymous struct at /home/jon/workspace/redis/deps/jemalloc/include/jemalloc/internal/arena.h:379:2)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3060' u='a' c='je_arena_new'/>
+<offset>3712</offset>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='93' u='a' c='je_huge_palloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='93' u='a' c='je_huge_palloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='93' u='a' c='je_huge_palloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='93' u='a' c='je_huge_palloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='93' u='a' c='je_huge_palloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='368' u='a' c='je_huge_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='368' u='a' c='je_huge_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='368' u='a' c='je_huge_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='368' u='a' c='je_huge_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='368' u='a' c='je_huge_dalloc'/>

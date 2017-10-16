@@ -1,0 +1,5 @@
+<def f='codebrowser/src/cluster.c' l='1136' ll='1144' type='int clusterBlacklistExists(char * nodeid)'/>
+<use f='codebrowser/src/cluster.c' l='1408' u='c' c='clusterProcessGossipSection'/>
+<doc f='codebrowser/src/cluster.c' l='1133'>/* Return non-zero if the specified node ID exists in the blacklist.
+ * You don&apos;t need to pass an sds string here, any pointer to 40 bytes
+ * will work. */</doc>

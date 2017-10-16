@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/rio.h' l='73' type='off_t'/>
+<offset>64</offset>
+<doc f='codebrowser/src/rio.h' l='73'>/* Bytes written since last fsync. */</doc>
+<use f='codebrowser/src/rio.c' l='113' u='w' c='rioFileWrite'/>
+<use f='codebrowser/src/rio.c' l='116' u='r' c='rioFileWrite'/>
+<use f='codebrowser/src/rio.c' l='120' u='w' c='rioFileWrite'/>
+<use f='codebrowser/src/rio.c' l='156' u='w' c='rioInitWithFile'/>

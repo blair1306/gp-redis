@@ -1,0 +1,4 @@
+<def f='codebrowser/src/geo.c' l='75' ll='80' type='void geoArrayFree(geoArray * ga)'/>
+<use f='codebrowser/src/geo.c' l='570' u='c' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='672' u='c' c='georadiusGeneric'/>
+<doc f='codebrowser/src/geo.c' l='74'>/* Destroy a geoArray created with geoArrayCreate(). */</doc>

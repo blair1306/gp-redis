@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='53' type='void *(*)(void *, const void *)'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='150' macro='1' u='r'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='150' macro='1' u='r'/>
+<offset>64</offset>
+<dec f='codebrowser/src/dict.h' l='60' type='void *(*)(void *, const void *)'/>
+<offset>64</offset>
+<use f='codebrowser/src/dict.c' l='316' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='316' macro='1' u='r'/>
+<use f='codebrowser/src/t_set.c' l='58' macro='1' u='r'/>
+<use f='codebrowser/src/t_set.c' l='58' macro='1' u='r'/>
+<use f='codebrowser/src/t_zset.c' l='2294' macro='1' u='r'/>
+<use f='codebrowser/src/t_zset.c' l='2294' macro='1' u='r'/>

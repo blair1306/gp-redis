@@ -1,0 +1,2 @@
+<def f='codebrowser/src/aof.c' l='1065' ll='1140' type='int rewriteAppendOnlyFileRio(rio * aof)'/>
+<use f='codebrowser/src/aof.c' l='1177' u='c' c='rewriteAppendOnlyFile'/>

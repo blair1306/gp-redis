@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/bio.h' l='33' type='unsigned long long bioPendingJobsOfType(int type)'/>
+<use f='codebrowser/src/aof.c' l='296' u='c' c='flushAppendOnlyFile'/>
+<def f='codebrowser/src/bio.c' l='219' ll='225' type='unsigned long long bioPendingJobsOfType(int type)'/>
+<doc f='codebrowser/src/bio.c' l='218'>/* Return the number of pending jobs of the specified type. */</doc>
+<use f='codebrowser/src/evict.c' l='560' u='c' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/server.c' l='3034' u='c' c='genRedisInfoString'/>

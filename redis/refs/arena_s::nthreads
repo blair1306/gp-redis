@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='283' type='unsigned int'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3013' u='w' c='je_arena_new'/>
+<offset>32</offset>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='449' u='w' c='arena_bind_locked'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='472' u='w' c='je_arena_migrate'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='473' u='w' c='je_arena_migrate'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='484' u='r' c='je_arena_nbound'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='496' u='w' c='arena_unbind'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='591' u='r' c='je_arena_choose_hard'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='592' u='r' c='je_arena_choose_hard'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='608' u='r' c='je_arena_choose_hard'/>

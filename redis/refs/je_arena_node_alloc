@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='435' macro='1' type='extent_node_t * je_arena_node_alloc(arena_t * arena)'/>
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='850' macro='1' type='extent_node_t * je_arena_node_alloc(arena_t * arena)'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='282' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='505' macro='1' u='c'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/src/quicklist.c' l='394' ll='398' type='void _quicklistInsertNodeAfter(quicklist * quicklist, quicklistNode * old_node, quicklistNode * new_node)'/>
+<use f='codebrowser/src/quicklist.c' l='515' u='c' c='quicklistPushTail'/>
+<use f='codebrowser/src/quicklist.c' l='532' u='c' c='quicklistAppendZiplist'/>
+<use f='codebrowser/src/quicklist.c' l='1210' u='c' c='quicklistDup'/>

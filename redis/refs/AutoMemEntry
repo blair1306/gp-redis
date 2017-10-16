@@ -1,0 +1,4 @@
+<def f='codebrowser/src/module.c' l='57' ll='60'/>
+<size>16</size>
+<doc f='codebrowser/src/module.c' l='55'>/* Entries in the context-&gt;amqueue array, representing objects to free
+ * when the callback returns. */</doc>

@@ -1,0 +1,8 @@
+<dec f='include/unistd.h' l='782' type='int isatty(int __fd)'/>
+<doc f='include/unistd.h' l='780'>/* Return 1 if FD is a valid descriptor associated
+   with a terminal, zero if not.  */</doc>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='221' u='c' c='enableRawMode'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1042' u='c' c='linenoise'/>
+<use f='codebrowser/src/redis-cli.c' l='1293' u='c' c='repl'/>
+<use f='codebrowser/src/redis-cli.c' l='2648' u='c' c='main'/>
+<use f='codebrowser/src/server.c' l='3434' u='c' c='redisAsciiArt'/>

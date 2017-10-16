@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/valgrind.h' l='16'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/valgrind.h' l='7'>/*
+ * The size that is reported to Valgrind must be consistent through a chain of
+ * malloc..realloc..realloc calls.  Request size isn&apos;t recorded anywhere in
+ * jemalloc, so it is critical that all callers of these macros provide usize
+ * rather than request size.  As a result, buffer overflow detection is
+ * technically weakened for the standard API, though it is generally accepted
+ * practice to consider any extra bytes reported by malloc_usable_size() as
+ * usable space.
+ */</doc>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='477' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='616' u='c'/>

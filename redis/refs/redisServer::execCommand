@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='933' type='struct redisCommand *'/>
+<offset>7360</offset>
+<use f='codebrowser/src/module.c' l='454' u='r' c='moduleHandlePropagationAfterCommandCallback'/>
+<use f='codebrowser/src/scripting.c' l='1367' u='r' c='evalGenericCommand'/>
+<use f='codebrowser/src/server.c' l='1508' u='w' c='initServerConfig'/>

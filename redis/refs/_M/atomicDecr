@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/atomicvar.h' l='78'/>
+<use f='codebrowser/src/lazyfree.c' l='114' u='c'/>
+<use f='codebrowser/src/lazyfree.c' l='126' u='c'/>
+<use f='codebrowser/src/lazyfree.c' l='134' u='c'/>

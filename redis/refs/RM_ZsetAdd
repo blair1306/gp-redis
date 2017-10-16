@@ -1,0 +1,30 @@
+<def f='codebrowser/src/module.c' l='1675' ll='1687' type='int RM_ZsetAdd(RedisModuleKey * key, double score, robj * ele, int * flagsptr)'/>
+<use f='codebrowser/src/module.c' l='3948' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1647'>/* Add a new element into a sorted set, with the specified &apos;score&apos;.
+ * If the element already exists, the score is updated.
+ *
+ * A new sorted set is created at value if the key is an empty open key
+ * setup for writing.
+ *
+ * Additional flags can be passed to the function via a pointer, the flags
+ * are both used to receive input and to communicate state when the function
+ * returns. &apos;flagsptr&apos; can be NULL if no special flags are used.
+ *
+ * The input flags are:
+ *
+ *     REDISMODULE_ZADD_XX: Element must already exist. Do nothing otherwise.
+ *     REDISMODULE_ZADD_NX: Element must not exist. Do nothing otherwise.
+ *
+ * The output flags are:
+ *
+ *     REDISMODULE_ZADD_ADDED: The new element was added to the sorted set.
+ *     REDISMODULE_ZADD_UPDATED: The score of the element was updated.
+ *     REDISMODULE_ZADD_NOP: No operation was performed because XX or NX flags.
+ *
+ * On success the function returns REDISMODULE_OK. On the following errors
+ * REDISMODULE_ERR is returned:
+ *
+ * * The key was not opened for writing.
+ * * The key is of the wrong type.
+ * * &apos;score&apos; double value is not a number (NaN).
+ */</doc>

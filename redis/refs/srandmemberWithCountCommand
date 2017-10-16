@@ -1,0 +1,2 @@
+<def f='codebrowser/src/t_set.c' l='616' ll='749' type='void srandmemberWithCountCommand(client * c)'/>
+<use f='codebrowser/src/t_set.c' l='758' u='c' c='srandmemberCommand'/>

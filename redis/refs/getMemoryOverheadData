@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1636' type='struct redisMemOverhead * getMemoryOverheadData()'/>
+<def f='codebrowser/src/object.c' l='810' ll='908' type='struct redisMemOverhead * getMemoryOverheadData()'/>
+<use f='codebrowser/src/object.c' l='927' u='c' c='getMemoryDoctorReport'/>
+<use f='codebrowser/src/object.c' l='1077' u='c' c='memoryCommand'/>
+<doc f='codebrowser/src/object.c' l='807'>/* Return a struct redisMemOverhead filled with memory overhead
+ * information used for the MEMORY OVERHEAD and INFO command. The returned
+ * structure pointer should be freed calling freeMemoryOverheadData(). */</doc>
+<use f='codebrowser/src/server.c' l='2913' u='c' c='genRedisInfoString'/>

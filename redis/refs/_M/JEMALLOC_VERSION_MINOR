@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='83'/>
+<use f='codebrowser/src/zmalloc.h' l='51' u='c'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='106'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='118' u='c'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='188' u='c'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='248' u='c'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='328' u='c'/>
+<dec f='codebrowser/src/dict.h' l='140'/>
+<use f='codebrowser/src/dict.c' l='209' u='c'/>
+<use f='codebrowser/src/dict.c' l='302' u='c'/>
+<use f='codebrowser/src/dict.c' l='372' u='c'/>
+<use f='codebrowser/src/dict.c' l='483' u='c'/>
+<use f='codebrowser/src/dict.c' l='999' u='c'/>

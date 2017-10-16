@@ -1,0 +1,10 @@
+<def f='codebrowser/src/t_zset.c' l='576' ll='581' type='int sdscmplex(sds a, sds b)'/>
+<use f='codebrowser/src/t_zset.c' l='585' u='c' c='zslLexValueGteMin'/>
+<use f='codebrowser/src/t_zset.c' l='586' u='c' c='zslLexValueGteMin'/>
+<use f='codebrowser/src/t_zset.c' l='591' u='c' c='zslLexValueLteMax'/>
+<use f='codebrowser/src/t_zset.c' l='592' u='c' c='zslLexValueLteMax'/>
+<use f='codebrowser/src/t_zset.c' l='600' u='c' c='zslIsInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='875' u='c' c='zzlIsInLexRange'/>
+<doc f='codebrowser/src/t_zset.c' l='573'>/* This is just a wrapper to sdscmp() that is able to
+ * handle shared.minstring and shared.maxstring as the equivalent of
+ * -inf and +inf for strings */</doc>

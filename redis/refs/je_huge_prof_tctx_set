@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/huge.h' l='28' macro='1' type='void je_huge_prof_tctx_set(const void * ptr, prof_tctx_t * tctx)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1128' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/huge.c' l='418' macro='1' type='void je_huge_prof_tctx_set(const void * ptr, prof_tctx_t * tctx)'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='434' macro='1' u='c'/>

@@ -1,0 +1,22 @@
+<dec f='codebrowser/src/server.h' l='1339' type='void * addDeferredMultiBulkLength(client * c)'/>
+<use f='codebrowser/src/cluster.c' l='3998' u='c' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4018' u='c' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/config.c' l='1205' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/db.c' l='503' u='c' c='keysCommand'/>
+<use f='codebrowser/src/debug.c' l='271' u='c' c='debugCommand'/>
+<use f='codebrowser/src/latency.c' l='478' u='c' c='latencyCommandReplyWithSamples'/>
+<use f='codebrowser/src/module.c' l='1046' u='c' c='RM_ReplyWithArray'/>
+<def f='codebrowser/src/networking.c' l='422' ll='429' type='void * addDeferredMultiBulkLength(client * c)'/>
+<doc f='codebrowser/src/networking.c' l='420'>/* Adds an empty object to the reply list that will contain the multi bulk
+ * length, which is not known when this function is called. */</doc>
+<use f='codebrowser/src/pubsub.c' l='338' u='c' c='pubsubCommand'/>
+<use f='codebrowser/src/replication.c' l='2042' u='c' c='roleCommand'/>
+<use f='codebrowser/src/scripting.c' l='318' u='c' c='luaReplyToRedisReply'/>
+<use f='codebrowser/src/sentinel.c' l='2641' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/server.c' l='2699' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/slowlog.c' l='162' u='c' c='slowlogCommand'/>
+<use f='codebrowser/src/t_set.c' l='832' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2553' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2617' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2905' u='c' c='genericZrangebylexCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2965' u='c' c='genericZrangebylexCommand'/>

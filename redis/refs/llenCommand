@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1860' type='void llenCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='158' u='r'/>
+<use f='codebrowser/src/server.c' l='158' u='r'/>
+<use f='codebrowser/src/server.c' l='158' u='r'/>
+<use f='codebrowser/src/server.c' l='158' u='r'/>
+<def f='codebrowser/src/t_list.c' l='308' ll='312' type='void llenCommand(client * c)'/>

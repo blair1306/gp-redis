@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/quicklist.h' l='79' type='unsigned int'/>
+<offset>240</offset>
+<doc f='codebrowser/src/quicklist.h' l='79'>/* depth of end nodes not to compress;0=off */</doc>
+<use f='codebrowser/src/debug.c' l='392' u='r' c='debugCommand'/>
+<use f='codebrowser/src/quicklist.c' l='101' u='w' c='quicklistCreate'/>
+<use f='codebrowser/src/quicklist.c' l='113' u='w' c='quicklistSetCompressDepth'/>
+<use f='codebrowser/src/quicklist.c' l='259' u='r' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='270' u='r' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='309' u='r' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='1189' u='r' c='quicklistDup'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1932' type='void hmgetCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='205' u='r'/>
+<use f='codebrowser/src/server.c' l='205' u='r'/>
+<use f='codebrowser/src/server.c' l='205' u='r'/>
+<use f='codebrowser/src/server.c' l='205' u='r'/>
+<def f='codebrowser/src/t_hash.c' l='684' ll='700' type='void hmgetCommand(client * c)'/>

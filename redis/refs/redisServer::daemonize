@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='986' type='int'/>
+<offset>13472</offset>
+<doc f='codebrowser/src/server.h' l='986'>/* True if running as a daemon */</doc>
+<use f='codebrowser/src/config.c' l='431' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1290' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1950' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/debug.c' l='1106' u='r' c='sigsegvHandler'/>
+<use f='codebrowser/src/server.c' l='382' u='r' c='serverLogFromHandler'/>
+<use f='codebrowser/src/server.c' l='1379' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2567' u='r' c='prepareForShutdown'/>
+<use f='codebrowser/src/server.c' l='3825' u='r' c='main'/>

@@ -1,0 +1,44 @@
+<dec f='codebrowser/src/server.h' l='1347' type='void addReplyBulk(client * c, robj * obj)'/>
+<use f='codebrowser/src/cluster.c' l='4099' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4395' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4688' u='c' c='dumpCommand'/>
+<use f='codebrowser/src/config.c' l='1402' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/db.c' l='493' u='c' c='randomkeyCommand'/>
+<use f='codebrowser/src/db.c' l='514' u='c' c='keysCommand'/>
+<use f='codebrowser/src/db.c' l='752' u='c' c='scanGenericCommand'/>
+<use f='codebrowser/src/module.c' l='1117' u='c' c='RM_ReplyWithString'/>
+<use f='codebrowser/src/networking.c' l='478' u='c' c='addReplyHumanLongDouble'/>
+<def f='codebrowser/src/networking.c' l='549' ll='553' type='void addReplyBulk(client * c, robj * obj)'/>
+<use f='codebrowser/src/networking.c' l='1694' u='c' c='clientCommand'/>
+<doc f='codebrowser/src/networking.c' l='548'>/* Add a Redis Object as a bulk reply */</doc>
+<use f='codebrowser/src/pubsub.c' l='81' u='c' c='pubsubSubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='117' u='c' c='pubsubUnsubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='143' u='c' c='pubsubSubscribePattern'/>
+<use f='codebrowser/src/pubsub.c' l='168' u='c' c='pubsubUnsubscribePattern'/>
+<use f='codebrowser/src/pubsub.c' l='244' u='c' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/pubsub.c' l='245' u='c' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/pubsub.c' l='262' u='c' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/pubsub.c' l='263' u='c' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/pubsub.c' l='264' u='c' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/pubsub.c' l='346' u='c' c='pubsubCommand'/>
+<use f='codebrowser/src/pubsub.c' l='360' u='c' c='pubsubCommand'/>
+<use f='codebrowser/src/replication.c' l='271' u='c' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/server.c' l='2655' u='c' c='pingCommand'/>
+<use f='codebrowser/src/server.c' l='2660' u='c' c='pingCommand'/>
+<use f='codebrowser/src/server.c' l='2665' u='c' c='echoCommand'/>
+<use f='codebrowser/src/server.c' l='2763' u='c' c='commandCommand'/>
+<use f='codebrowser/src/slowlog.c' l='173' u='c' c='slowlogCommand'/>
+<use f='codebrowser/src/sort.c' l='515' u='c' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='526' u='c' c='sortCommand'/>
+<use f='codebrowser/src/t_list.c' l='331' u='c' c='lindexCommand'/>
+<use f='codebrowser/src/t_list.c' l='377' u='c' c='popGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='562' u='c' c='rpoplpushHandlePush'/>
+<use f='codebrowser/src/t_list.c' l='753' u='c' c='serveClientBlockedOnList'/>
+<use f='codebrowser/src/t_list.c' l='754' u='c' c='serveClientBlockedOnList'/>
+<use f='codebrowser/src/t_list.c' l='902' u='c' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='903' u='c' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='594' u='c' c='spopCommand'/>
+<use f='codebrowser/src/t_set.c' l='745' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_string.c' l='167' u='c' c='getGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='297' u='c' c='mgetCommand'/>
+<use f='codebrowser/src/t_string.c' l='424' u='c' c='incrbyfloatCommand'/>

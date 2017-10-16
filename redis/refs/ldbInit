@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/scripting.c' l='48' type='void ldbInit()'/>
+<use f='codebrowser/src/scripting.c' l='904' u='c' c='scriptingInit'/>
+<def f='codebrowser/src/scripting.c' l='1495' ll='1504' type='void ldbInit()'/>
+<doc f='codebrowser/src/scripting.c' l='1494'>/* Initialize Lua debugger data structures. */</doc>

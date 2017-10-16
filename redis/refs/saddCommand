@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1866' type='void saddCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='165' u='r'/>
+<use f='codebrowser/src/server.c' l='165' u='r'/>
+<use f='codebrowser/src/server.c' l='165' u='r'/>
+<use f='codebrowser/src/server.c' l='165' u='r'/>
+<def f='codebrowser/src/t_set.c' l='264' ll='288' type='void saddCommand(client * c)'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/slowlog.h' l='39' type='time_t'/>
+<offset>256</offset>
+<doc f='codebrowser/src/slowlog.h' l='39'>/* Unix time at which the query was executed. */</doc>
+<use f='codebrowser/src/slowlog.c' l='88' u='w' c='slowlogCreateEntry'/>
+<use f='codebrowser/src/slowlog.c' l='169' u='r' c='slowlogCommand'/>

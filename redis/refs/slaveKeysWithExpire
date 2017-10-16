@@ -1,0 +1,29 @@
+<def f='codebrowser/src/expire.c' l='259' type='dict *'/>
+<use f='codebrowser/src/expire.c' l='264' u='r' c='expireSlaveKeys'/>
+<use f='codebrowser/src/expire.c' l='265' u='r' c='expireSlaveKeys'/>
+<use f='codebrowser/src/expire.c' l='265' u='r' c='expireSlaveKeys'/>
+<use f='codebrowser/src/expire.c' l='270' u='r' c='expireSlaveKeys'/>
+<use f='codebrowser/src/expire.c' l='309' u='r' c='expireSlaveKeys'/>
+<use f='codebrowser/src/expire.c' l='316' u='r' c='expireSlaveKeys'/>
+<use f='codebrowser/src/expire.c' l='316' u='r' c='expireSlaveKeys'/>
+<use f='codebrowser/src/expire.c' l='323' u='r' c='rememberSlaveKeyWithExpire'/>
+<use f='codebrowser/src/expire.c' l='332' u='w' c='rememberSlaveKeyWithExpire'/>
+<use f='codebrowser/src/expire.c' l='336' u='r' c='rememberSlaveKeyWithExpire'/>
+<use f='codebrowser/src/expire.c' l='353' u='r' c='getSlaveKeyWithExpireCount'/>
+<use f='codebrowser/src/expire.c' l='354' u='r' c='getSlaveKeyWithExpireCount'/>
+<use f='codebrowser/src/expire.c' l='354' u='r' c='getSlaveKeyWithExpireCount'/>
+<use f='codebrowser/src/expire.c' l='366' u='r' c='flushSlaveKeysWithExpireList'/>
+<use f='codebrowser/src/expire.c' l='367' u='r' c='flushSlaveKeysWithExpireList'/>
+<use f='codebrowser/src/expire.c' l='368' u='w' c='flushSlaveKeysWithExpireList'/>
+<doc f='codebrowser/src/expire.c' l='247'>/* The dictionary where we remember key names and database ID of keys we may
+ * want to expire from the slave. Since this function is not often used we
+ * don&apos;t even care to initialize the database at startup. We&apos;ll do it once
+ * the feature is used the first time, that is, when rememberSlaveKeyWithExpire()
+ * is called.
+ *
+ * The dictionary has an SDS string representing the key as the hash table
+ * key, while the value is a 64 bit unsigned integer with the bits corresponding
+ * to the DB where the keys may exist set to 1. Currently the keys created
+ * with a DB id &gt; 63 are not expired, but a trivial fix is to set the bitmap
+ * to the max 64 bit unsigned value when we know there is a key with a DB
+ * ID greater than 63, and check all the configured DBs in such a case. */</doc>

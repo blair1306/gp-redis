@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/cluster.h' l='234' type='uint32_t'/>
+<use f='codebrowser/src/cluster.c' l='1609' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2108' u='r' c='clusterReadHandler'/>
+<use f='codebrowser/src/cluster.c' l='2117' u='r' c='clusterReadHandler'/>
+<use f='codebrowser/src/cluster.c' l='2138' u='r' c='clusterReadHandler'/>
+<use f='codebrowser/src/cluster.c' l='2262' u='w' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2418' u='w' c='clusterSendPing'/>
+<use f='codebrowser/src/cluster.c' l='2480' u='w' c='clusterSendPublish'/>
+<use f='codebrowser/src/cluster.c' l='2515' u='r' c='clusterSendFail'/>
+<use f='codebrowser/src/cluster.c' l='2530' u='r' c='clusterSendUpdate'/>
+<use f='codebrowser/src/cluster.c' l='2565' u='w' c='clusterRequestFailoverAuth'/>
+<use f='codebrowser/src/cluster.c' l='2578' u='w' c='clusterSendFailoverAuth'/>
+<use f='codebrowser/src/cluster.c' l='2591' u='w' c='clusterSendMFStart'/>
+<offset>32</offset>
+<doc f='codebrowser/src/cluster.h' l='234'>/* Total length of this message */</doc>

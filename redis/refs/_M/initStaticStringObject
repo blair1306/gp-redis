@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='598'/>
+<use f='codebrowser/src/aof.c' l='1091' u='c'/>
+<doc f='codebrowser/src/server.h' l='594'>/* Macro used to initialize a Redis object allocated on the stack.
+ * Note that this macro is taken near the structure definition to make sure
+ * we&apos;ll update it when the structure is changed, to avoid bugs like
+ * bug #85 introduced exactly in this way. */</doc>
+<use f='codebrowser/src/rdb.c' l='927' u='c'/>

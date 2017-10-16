@@ -1,0 +1,19 @@
+<def f='codebrowser/src/server.h' l='520' ll='523'/>
+<size>16</size>
+<doc f='codebrowser/src/server.h' l='505'>/* In Redis objects &apos;robj&apos; structures of type OBJ_MODULE, the value pointer
+ * is set to the following structure, referencing the moduleType structure
+ * in order to work with the value, and at the same time providing a raw
+ * pointer to the value, as created by the module commands operating with
+ * the module type.
+ *
+ * So for example in order to free such a value, it is possible to use
+ * the following code:
+ *
+ *  if (robj-&gt;type == OBJ_MODULE) {
+ *      moduleValue *mt = robj-&gt;ptr;
+ *      mt-&gt;type-&gt;free(mt-&gt;value);
+ *      zfree(mt); // We need to release this in-the-middle struct as well.
+ *  }
+ */</doc>
+<mbr r='moduleValue::type' o='0' t='moduleType *'/>
+<mbr r='moduleValue::value' o='64' t='void *'/>

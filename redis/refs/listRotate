@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/adlist.h' l='88' type='void listRotate(list * list)'/>
+<def f='codebrowser/src/adlist.c' l='330' ll='343' type='void listRotate(list * list)'/>
+<doc f='codebrowser/src/adlist.c' l='329'>/* Rotate the list removing the tail node and inserting it to the head. */</doc>
+<use f='codebrowser/src/server.c' l='860' u='c' c='clientsCron'/>

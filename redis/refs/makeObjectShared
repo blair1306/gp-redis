@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1432' type='robj * makeObjectShared(robj * o)'/>
+<def f='codebrowser/src/object.c' l='69' ll='73' type='robj * makeObjectShared(robj * o)'/>
+<doc f='codebrowser/src/object.c' l='58'>/* Set a special refcount in the object to make it &quot;shared&quot;:
+ * incrRefCount and decrRefCount() will test for this special refcount
+ * and will not touch the object. This way it is free to access shared
+ * objects such as small integers from different threads without any
+ * mutex.
+ *
+ * A common patter to create shared objects:
+ *
+ * robj *myobject = makeObjectShared(createObject(...));
+ *
+ */</doc>
+<use f='codebrowser/src/server.c' l='1321' u='c' c='createSharedObjects'/>

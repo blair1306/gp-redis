@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/redis-check-rdb.c' l='35' type='void createSharedObjects()'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='348' u='c' c='redis_check_rdb_main'/>
+<def f='codebrowser/src/server.c' l='1246' ll='1336' type='void createSharedObjects()'/>
+<use f='codebrowser/src/server.c' l='1816' u='c' c='initServer'/>
+<doc f='codebrowser/src/server.c' l='1244'>/* =========================== Server initialization ======================== */</doc>

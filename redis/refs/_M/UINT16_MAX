@@ -1,0 +1,5 @@
+<dec f='include/stdint.h' l='167'/>
+<use f='codebrowser/src/ziplist.c' l='899' u='c'/>
+<use f='codebrowser/src/ziplist.c' l='899' u='c'/>
+<use f='codebrowser/src/ziplist.c' l='1170' u='c'/>
+<use f='codebrowser/src/ziplist.c' l='1180' u='c'/>

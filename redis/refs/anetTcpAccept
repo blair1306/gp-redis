@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/anet.h' l='64' type='int anetTcpAccept(char * err, int serversock, char * ip, size_t ip_len, int * port)'/>
+<def f='codebrowser/src/anet.c' l='548' ll='565' type='int anetTcpAccept(char * err, int s, char * ip, size_t ip_len, int * port)'/>
+<use f='codebrowser/src/cluster.c' l='607' u='c' c='clusterAcceptHandler'/>
+<use f='codebrowser/src/networking.c' l='683' u='c' c='acceptTcpHandler'/>

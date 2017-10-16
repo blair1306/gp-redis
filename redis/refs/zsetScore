@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1581' type='int zsetScore(robj * zobj, sds member, double * score)'/>
+<use f='codebrowser/src/geo.c' l='116' u='c' c='longLatFromMember'/>
+<use f='codebrowser/src/geo.c' l='712' u='c' c='geohashCommand'/>
+<use f='codebrowser/src/geo.c' l='765' u='c' c='geoposCommand'/>
+<use f='codebrowser/src/geo.c' l='805' u='c' c='geodistCommand'/>
+<use f='codebrowser/src/geo.c' l='806' u='c' c='geodistCommand'/>
+<use f='codebrowser/src/module.c' l='1762' u='c' c='RM_ZsetScore'/>
+<def f='codebrowser/src/t_zset.c' l='1202' ll='1216' type='int zsetScore(robj * zobj, sds member, double * score)'/>
+<use f='codebrowser/src/t_zset.c' l='3029' u='c' c='zscoreCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='1198'>/* Return (by reference) the score of the specified member of the sorted set
+ * storing it into *score. If the element does not exist C_ERR is returned
+ * otherwise C_OK is returned and *score is correctly populated.
+ * If &apos;zobj&apos; or &apos;member&apos; is NULL, C_ERR is returned. */</doc>

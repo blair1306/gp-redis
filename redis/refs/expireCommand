@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1889' type='void expireCommand(client * c)'/>
+<use f='codebrowser/src/aof.c' l='490' u='r' c='catAppendOnlyExpireAtCommand'/>
+<use f='codebrowser/src/aof.c' l='496' u='r' c='catAppendOnlyExpireAtCommand'/>
+<use f='codebrowser/src/aof.c' l='527' u='r' c='feedAppendOnlyFile'/>
+<def f='codebrowser/src/expire.c' l='431' ll='433' type='void expireCommand(client * c)'/>
+<doc f='codebrowser/src/expire.c' l='430'>/* EXPIRE key seconds */</doc>
+<use f='codebrowser/src/server.c' l='228' u='r'/>
+<use f='codebrowser/src/server.c' l='228' u='r'/>
+<use f='codebrowser/src/server.c' l='228' u='r'/>
+<use f='codebrowser/src/server.c' l='228' u='r'/>

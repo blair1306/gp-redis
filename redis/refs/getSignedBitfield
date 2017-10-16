@@ -1,0 +1,3 @@
+<def f='codebrowser/src/bitops.c' l='243' ll='263' type='int64_t getSignedBitfield(unsigned char * p, uint64_t offset, uint64_t bits)'/>
+<use f='codebrowser/src/bitops.c' l='1026' u='c' c='bitfieldCommand'/>
+<use f='codebrowser/src/bitops.c' l='1108' u='c' c='bitfieldCommand'/>

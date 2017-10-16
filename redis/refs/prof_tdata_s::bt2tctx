@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='209' type='ckh_t'/>
+<offset>512</offset>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='650' u='a' c='prof_tctx_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='772' u='a' c='je_prof_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='808' u='a' c='je_prof_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1244' u='a' c='prof_tdata_merge_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1730' u='a' c='prof_tdata_init_impl'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1768' u='a' c='prof_tdata_should_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1788' u='a' c='prof_tdata_destroy_locked'/>

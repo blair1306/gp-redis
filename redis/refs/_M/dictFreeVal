@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/dict.h' l='104'/>
+<doc f='codebrowser/src/dict.h' l='103'>/* ------------------------------- Macros ------------------------------------*/</doc>
+<use f='codebrowser/src/dict.c' l='344' u='c'/>
+<use f='codebrowser/src/dict.c' l='387' u='c'/>
+<use f='codebrowser/src/dict.c' l='437' u='c'/>
+<use f='codebrowser/src/dict.c' l='455' u='c'/>

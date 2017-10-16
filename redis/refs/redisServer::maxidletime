@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='973' type='int'/>
+<offset>12960</offset>
+<doc f='codebrowser/src/server.h' l='973'>/* Client timeout in seconds */</doc>
+<use f='codebrowser/src/config.c' l='206' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='207' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1046' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1224' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1959' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='781' u='r' c='clientsCronHandleTimeout'/>
+<use f='codebrowser/src/server.c' l='786' u='r' c='clientsCronHandleTimeout'/>
+<use f='codebrowser/src/server.c' l='1363' u='w' c='initServerConfig'/>

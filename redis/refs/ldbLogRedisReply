@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/scripting.c' l='54' type='void ldbLogRedisReply(char * reply)'/>
+<use f='codebrowser/src/scripting.c' l='581' u='c' c='luaRedisGenericCommand'/>
+<def f='codebrowser/src/scripting.c' l='2027' ll='2031' type='void ldbLogRedisReply(char * reply)'/>
+<doc f='codebrowser/src/scripting.c' l='2024'>/* Log a Redis reply as debugger output, in an human readable format.
+ * If the resulting string is longer than &apos;len&apos; plus a few more chars
+ * used as prefix, it gets truncated. */</doc>

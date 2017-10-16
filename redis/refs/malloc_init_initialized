@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/src/jemalloc.c' l='69' type='0'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='252' u='r' c='malloc_initialized'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1306' u='r' c='malloc_init_hard_finish'/>
+<doc f='codebrowser/deps/jemalloc/src/jemalloc.c' l='69'>/* Common case --&gt; jnz. */</doc>

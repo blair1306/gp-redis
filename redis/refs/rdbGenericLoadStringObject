@@ -1,0 +1,27 @@
+<dec f='codebrowser/src/rdb.h' l='144' type='void * rdbGenericLoadStringObject(rio * rdb, int flags, size_t * lenptr)'/>
+<use f='codebrowser/src/module.c' l='3052' u='c' c='moduleLoadString'/>
+<def f='codebrowser/src/rdb.c' l='451' ll='493' type='void * rdbGenericLoadStringObject(rio * rdb, int flags, size_t * lenptr)'/>
+<use f='codebrowser/src/rdb.c' l='496' u='c' c='rdbLoadStringObject'/>
+<use f='codebrowser/src/rdb.c' l='500' u='c' c='rdbLoadEncodedStringObject'/>
+<use f='codebrowser/src/rdb.c' l='1123' u='c' c='rdbLoadCheckModuleValue'/>
+<use f='codebrowser/src/rdb.c' l='1194' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1231' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1269' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1271' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1297' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1299' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1319' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1330' u='c' c='rdbLoadObject'/>
+<doc f='codebrowser/src/rdb.c' l='438'>/* Load a string object from an RDB file according to flags:
+ *
+ * RDB_LOAD_NONE (no flags): load an RDB object, unencoded.
+ * RDB_LOAD_ENC: If the returned type is a Redis object, try to
+ *               encode it in a special way to be more memory
+ *               efficient. When this flag is passed the function
+ *               no longer guarantees that obj-&gt;ptr is an SDS string.
+ * RDB_LOAD_PLAIN: Return a plain string allocated with zmalloc()
+ *                 instead of a Redis object with an sds in it.
+ * RDB_LOAD_SDS: Return an SDS string instead of a Redis object.
+ *
+ * On I/O error NULL is returned.
+ */</doc>

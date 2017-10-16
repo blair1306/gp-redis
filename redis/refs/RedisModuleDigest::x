@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='556' type='unsigned char [20]'/>
+<offset>160</offset>
+<doc f='codebrowser/src/server.h' l='556'>/* Xored elements. */</doc>
+<use f='codebrowser/src/debug.c' l='246' macro='1' u='r'/>
+<use f='codebrowser/src/debug.c' l='246' macro='1' u='r'/>
+<use f='codebrowser/src/debug.c' l='249' u='r' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='249' u='r' c='computeDatasetDigest'/>
+<use f='codebrowser/src/module.c' l='3214' u='r' c='RM_DigestEndSequence'/>

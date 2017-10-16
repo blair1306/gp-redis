@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1338' type='void sendReplyToClient(aeEventLoop * el, int fd, void * privdata, int mask)'/>
+<def f='codebrowser/src/networking.c' l='979' ll='983' type='void sendReplyToClient(aeEventLoop * el, int fd, void * privdata, int mask)'/>
+<use f='codebrowser/src/networking.c' l='1007' u='r' c='handleClientsWithPendingWrites'/>
+<doc f='codebrowser/src/networking.c' l='978'>/* Write event handler. Just send data to the client. */</doc>
+<use f='codebrowser/src/replication.c' l='860' u='r' c='putSlaveOnline'/>
+<use f='codebrowser/src/replication.c' l='2219' u='r' c='replicationResurrectCachedMaster'/>

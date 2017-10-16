@@ -1,0 +1,2 @@
+<def f='codebrowser/src/module.c' l='1612' ll='1623' macro='1' type='robj * RM_ListPop(RedisModuleKey * key, int where)'/>
+<use f='codebrowser/src/module.c' l='3921' macro='1' u='r'/>

@@ -1,0 +1,34 @@
+<dec f='codebrowser/src/util.h' l='42' type='int string2ll(const char * s, size_t slen, long long * value)'/>
+<use f='codebrowser/src/bitops.c' l='421' u='c' c='getBitOffsetFromArgument'/>
+<use f='codebrowser/src/bitops.c' l='461' u='c' c='getBitfieldTypeFromArgument'/>
+<use f='codebrowser/src/module.c' l='881' u='c' c='RM_StringToLongLong'/>
+<use f='codebrowser/src/module.c' l='2322' u='c' c='moduleParseCallReply_Int'/>
+<use f='codebrowser/src/module.c' l='2332' u='c' c='moduleParseCallReply_BulkString'/>
+<use f='codebrowser/src/module.c' l='2360' u='c' c='moduleParseCallReply_Array'/>
+<use f='codebrowser/src/networking.c' l='1175' u='c' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1222' u='c' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/object.c' l='361' u='c' c='isSdsRepresentableAsLongLong'/>
+<use f='codebrowser/src/object.c' l='638' u='c' c='getLongLongFromObject'/>
+<use f='codebrowser/src/scripting.c' l='144' u='c' c='redisProtocolToLuaType_Int'/>
+<use f='codebrowser/src/scripting.c' l='153' u='c' c='redisProtocolToLuaType_Bulk'/>
+<use f='codebrowser/src/scripting.c' l='188' u='c' c='redisProtocolToLuaType_MultiBulk'/>
+<use f='codebrowser/src/scripting.c' l='1987' u='c' c='ldbRedisProtocolToHuman_Bulk'/>
+<use f='codebrowser/src/scripting.c' l='2009' u='c' c='ldbRedisProtocolToHuman_MultiBulk'/>
+<use f='codebrowser/src/t_hash.c' l='570' u='c' c='hincrbyCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1976' u='c' c='zuiLongLongFromValue'/>
+<use f='codebrowser/src/t_zset.c' l='1979' u='c' c='zuiLongLongFromValue'/>
+<def f='codebrowser/src/util.c' l='343' ll='404' type='int string2ll(const char * s, size_t slen, long long * value)'/>
+<use f='codebrowser/src/util.c' l='412' u='c' c='string2l'/>
+<doc f='codebrowser/src/util.c' l='331'>/* Convert a string into a long long. Returns 1 if the string could be parsed
+ * into a (non-overflowing) long long, 0 otherwise. The value will be set to
+ * the parsed value when appropriate.
+ *
+ * Note that this function demands that the string strictly represents
+ * a long long: no spaces or other characters before or after the string
+ * representing the number are accepted, nor zeroes at the start if not
+ * for the string &quot;0&quot; representing the zero number.
+ *
+ * Because of its strictness, it is safe to use this function to check if
+ * you can convert a string into a long long, and obtain back the string
+ * from the number without any loss in the string representation. */</doc>
+<use f='codebrowser/src/ziplist.c' l='484' u='c' c='zipTryEncoding'/>

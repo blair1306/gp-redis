@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/cluster.h' l='145' type='mstime_t'/>
+<use f='codebrowser/src/cluster.c' l='419' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='2836' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2904' u='w' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2913' u='w' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2917' u='w' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2923' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2945' u='w' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2954' u='r' c='clusterHandleSlaveFailover'/>
+<offset>4194688</offset>
+<doc f='codebrowser/src/cluster.h' l='144'>/* The following fields are used to take the slave state on elections. */</doc>
+<doc f='codebrowser/src/cluster.h' l='145'>/* Time of previous or next election. */</doc>

@@ -1,0 +1,37 @@
+<dec f='codebrowser/src/module.c' l='104' type='client *'/>
+<use f='codebrowser/src/module.c' l='437' u='r' c='moduleFreeContext'/>
+<use f='codebrowser/src/module.c' l='443' u='r' c='moduleHandlePropagationAfterCommandCallback'/>
+<use f='codebrowser/src/module.c' l='467' u='w' c='RedisModuleCommandDispatcher'/>
+<use f='codebrowser/src/module.c' l='487' u='w' c='moduleGetCommandKeysViaAPI'/>
+<use f='codebrowser/src/module.c' l='952' u='r' c='RM_WrongArity'/>
+<use f='codebrowser/src/module.c' l='954' u='r' c='RM_WrongArity'/>
+<use f='codebrowser/src/module.c' l='972' u='r' c='moduleGetReplyClient'/>
+<use f='codebrowser/src/module.c' l='973' u='r' c='moduleGetReplyClient'/>
+<use f='codebrowser/src/module.c' l='1173' u='r' c='moduleReplicateMultiIfNeeded'/>
+<use f='codebrowser/src/module.c' l='1213' u='r' c='RM_Replicate'/>
+<use f='codebrowser/src/module.c' l='1234' u='r' c='RM_ReplicateVerbatim'/>
+<use f='codebrowser/src/module.c' l='1234' u='r' c='RM_ReplicateVerbatim'/>
+<use f='codebrowser/src/module.c' l='1235' u='r' c='RM_ReplicateVerbatim'/>
+<use f='codebrowser/src/module.c' l='1235' u='r' c='RM_ReplicateVerbatim'/>
+<use f='codebrowser/src/module.c' l='1256' u='r' c='RM_GetClientId'/>
+<use f='codebrowser/src/module.c' l='1257' u='r' c='RM_GetClientId'/>
+<use f='codebrowser/src/module.c' l='1262' u='r' c='RM_GetSelectedDb'/>
+<use f='codebrowser/src/module.c' l='1297' u='r' c='RM_GetContextFlags'/>
+<use f='codebrowser/src/module.c' l='1298' u='r' c='RM_GetContextFlags'/>
+<use f='codebrowser/src/module.c' l='1300' u='r' c='RM_GetContextFlags'/>
+<use f='codebrowser/src/module.c' l='1344' u='r' c='RM_SelectDb'/>
+<use f='codebrowser/src/module.c' l='1367' u='r' c='RM_OpenKey'/>
+<use f='codebrowser/src/module.c' l='1369' u='r' c='RM_OpenKey'/>
+<use f='codebrowser/src/module.c' l='1378' u='r' c='RM_OpenKey'/>
+<use f='codebrowser/src/module.c' l='1471' u='r' c='RM_SetExpire'/>
+<use f='codebrowser/src/module.c' l='2589' u='r' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='2606' u='r' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='2609' u='r' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='3283' u='w' c='RM_GetContextFromIO'/>
+<use f='codebrowser/src/module.c' l='3402' u='r' c='RM_BlockClient'/>
+<use f='codebrowser/src/module.c' l='3498' u='w' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='3555' u='w' c='moduleBlockedClientTimedOut'/>
+<use f='codebrowser/src/module.c' l='3613' u='w' c='RM_GetThreadSafeContext'/>
+<use f='codebrowser/src/module.c' l='3614' u='r' c='RM_GetThreadSafeContext'/>
+<offset>128</offset>
+<doc f='codebrowser/src/module.c' l='104'>/* Client calling a command. */</doc>

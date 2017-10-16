@@ -1,0 +1,6 @@
+<dec f='include/dlfcn.h' l='92' type='const char *'/>
+<use f='codebrowser/src/debug.c' l='1004' u='r' c='dumpX86Calls'/>
+<use f='codebrowser/src/debug.c' l='1006' u='r' c='dumpX86Calls'/>
+<use f='codebrowser/src/debug.c' l='1079' u='r' c='sigsegvHandler'/>
+<offset>128</offset>
+<doc f='include/dlfcn.h' l='92'>/* Name of nearest symbol.  */</doc>

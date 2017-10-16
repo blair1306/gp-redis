@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1680' type='robj * hashTypeGetValueObject(robj * o, sds field)'/>
+<use f='codebrowser/src/module.c' l='2250' u='c' c='RM_HashGet'/>
+<use f='codebrowser/src/sort.c' l='117' u='c' c='lookupKeyByPattern'/>
+<def f='codebrowser/src/t_hash.c' l='131' ll='139' type='robj * hashTypeGetValueObject(robj * o, sds field)'/>
+<doc f='codebrowser/src/t_hash.c' l='127'>/* Like hashTypeGetValue() but returns a Redis object, which is useful for
+ * interaction with the hash type outside t_hash.c.
+ * The function returns NULL if the field is not found in the hash. Otherwise
+ * a newly allocated string object with the value is returned. */</doc>

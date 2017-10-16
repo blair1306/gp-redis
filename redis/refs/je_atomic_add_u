@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='602' macro='1' type='unsigned int je_atomic_add_u(unsigned int * p, unsigned int x)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='536' macro='1' u='c'/>

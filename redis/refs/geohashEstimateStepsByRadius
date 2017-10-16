@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/geohash_helper.h' l='51' type='uint8_t geohashEstimateStepsByRadius(double range_meters, double lat)'/>
+<def f='codebrowser/src/geohash_helper.c' l='62' ll='83' type='uint8_t geohashEstimateStepsByRadius(double range_meters, double lat)'/>
+<use f='codebrowser/src/geohash_helper.c' l='132' u='c' c='geohashGetAreasByRadius'/>
+<doc f='codebrowser/src/geohash_helper.c' l='60'>/* This function is used in order to estimate the step (bits precision)
+ * of the 9 search area boxes during radius queries. */</doc>

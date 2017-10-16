@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/quicklist.h' l='96' type='unsigned int'/>
+<use f='codebrowser/src/aof.c' l='850' u='r' c='rewriteListObject'/>
+<offset>320</offset>
+<use f='codebrowser/src/quicklist.c' l='81' u='w' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1158' u='a' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='81' u='w' c='quicklistIndex'/>
+<use f='codebrowser/src/quicklist.c' l='1275' u='a' c='quicklistIndex'/>
+<use f='codebrowser/src/t_list.c' l='131' u='r' c='listTypeGet'/>
+<use f='codebrowser/src/t_list.c' l='327' u='r' c='lindexCommand'/>
+<use f='codebrowser/src/t_list.c' l='433' u='r' c='lrangeCommand'/>

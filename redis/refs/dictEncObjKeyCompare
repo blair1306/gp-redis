@@ -1,0 +1,3 @@
+<def f='codebrowser/src/server.c' l='502' ll='518' type='int dictEncObjKeyCompare(void * privdata, const void * key1, const void * key2)'/>
+<use f='codebrowser/src/server.c' l='549'/>
+<use f='codebrowser/src/server.c' l='549'/>

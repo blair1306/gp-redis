@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1629' type='void closeListeningSockets(int unlink_unix_socket)'/>
+<use f='codebrowser/src/aof.c' l='1349' u='c' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/rdb.c' l='1062' u='c' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1869' u='c' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/scripting.c' l='1613' u='c' c='ldbStartSession'/>
+<def f='codebrowser/src/server.c' l='2498' ll='2509' type='void closeListeningSockets(int unlink_unix_socket)'/>
+<use f='codebrowser/src/server.c' l='2577' u='c' c='prepareForShutdown'/>
+<doc f='codebrowser/src/server.c' l='2496'>/* Close listening sockets. Also unlink the unix domain socket if
+ * unlink_unix_socket is non-zero. */</doc>

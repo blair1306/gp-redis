@@ -1,0 +1,5 @@
+<dec f='include/valgrind/valgrind.h' l='6638'/>
+<doc f='include/valgrind/valgrind.h' l='6636'>/* These macros are used by tools -- they must be public, but don&apos;t
+   embed them into other programs. */</doc>
+<use f='include/valgrind/memcheck.h' l='80' u='c'/>
+<use f='include/valgrind/memcheck.h' l='104' u='c'/>

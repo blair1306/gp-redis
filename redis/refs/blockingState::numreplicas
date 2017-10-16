@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='648' type='int'/>
+<offset>192</offset>
+<doc f='codebrowser/src/server.h' l='647'>/* BLOCKED_WAIT */</doc>
+<doc f='codebrowser/src/server.h' l='648'>/* Number of replicas we are waiting for ACK. */</doc>
+<use f='codebrowser/src/networking.c' l='129' u='w' c='createClient'/>
+<use f='codebrowser/src/replication.c' l='2414' u='w' c='waitCommand'/>
+<use f='codebrowser/src/replication.c' l='2451' u='r' c='processClientsWaitingReplicas'/>
+<use f='codebrowser/src/replication.c' l='2458' u='r' c='processClientsWaitingReplicas'/>

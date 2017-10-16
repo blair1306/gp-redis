@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1869' type='void sismemberCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='168' u='r'/>
+<use f='codebrowser/src/server.c' l='168' u='r'/>
+<use f='codebrowser/src/server.c' l='168' u='r'/>
+<use f='codebrowser/src/server.c' l='168' u='r'/>
+<def f='codebrowser/src/t_set.c' l='373' ll='383' type='void sismemberCommand(client * c)'/>

@@ -1,0 +1,11 @@
+<def f='codebrowser/src/bitops.c' l='411' ll='438' type='int getBitOffsetFromArgument(client * c, robj * o, size_t * offset, int hash, int bits)'/>
+<use f='codebrowser/src/bitops.c' l='533' u='c' c='setbitCommand'/>
+<use f='codebrowser/src/bitops.c' l='571' u='c' c='getbitCommand'/>
+<use f='codebrowser/src/bitops.c' l='964' u='c' c='bitfieldCommand'/>
+<doc f='codebrowser/src/bitops.c' l='404'>/* This helper function used by GETBIT / SETBIT parses the bit offset argument
+ * making sure an error is returned if it is negative or if it overflows
+ * Redis 512 MB limit for the string value.
+ *
+ * If the &apos;hash&apos; argument is true, and &apos;bits is positive, then the command
+ * will also parse bit offsets prefixed by &quot;#&quot;. In such a case the offset
+ * is multiplied by &apos;bits&apos;. This is useful for the BITFIELD command. */</doc>

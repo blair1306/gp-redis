@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1834' type='void incrCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='145' u='r'/>
+<use f='codebrowser/src/server.c' l='145' u='r'/>
+<use f='codebrowser/src/server.c' l='145' u='r'/>
+<use f='codebrowser/src/server.c' l='145' u='r'/>
+<def f='codebrowser/src/t_string.c' l='379' ll='381' type='void incrCommand(client * c)'/>

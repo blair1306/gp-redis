@@ -1,0 +1,20 @@
+<def f='codebrowser/src/quicklist.h' l='44' ll='55'/>
+<size>32</size>
+<doc f='codebrowser/src/quicklist.h' l='36'>/* quicklistNode is a 32 byte struct describing a ziplist for a quicklist.
+ * We use bit fields keep the quicklistNode at 32 bytes.
+ * count: 16 bits, max 65536 (max zl bytes is 65k, so max count actually &lt; 32k).
+ * encoding: 2 bits, RAW=1, LZF=2.
+ * container: 2 bits, NONE=1, ZIPLIST=2.
+ * recompress: 1 bit, bool, true if node is temporarry decompressed for usage.
+ * attempted_compress: 1 bit, boolean, used for verifying during testing.
+ * extra: 12 bits, free for future use; pads out the remainder of 32 bits */</doc>
+<mbr r='quicklistNode::prev' o='0' t='struct quicklistNode *'/>
+<mbr r='quicklistNode::next' o='64' t='struct quicklistNode *'/>
+<mbr r='quicklistNode::zl' o='128' t='unsigned char *'/>
+<mbr r='quicklistNode::sz' o='192' t='unsigned int'/>
+<mbr r='quicklistNode::count' o='224' t='unsigned int'/>
+<mbr r='quicklistNode::encoding' o='240' t='unsigned int'/>
+<mbr r='quicklistNode::container' o='242' t='unsigned int'/>
+<mbr r='quicklistNode::recompress' o='244' t='unsigned int'/>
+<mbr r='quicklistNode::attempted_compress' o='245' t='unsigned int'/>
+<mbr r='quicklistNode::extra' o='246' t='unsigned int'/>

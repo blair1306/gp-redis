@@ -1,0 +1,4 @@
+<def f='codebrowser/src/t_zset.c' l='2034' ll='2085' type='int zuiFind(zsetopsrc * op, zsetopval * val, double * score)'/>
+<use f='codebrowser/src/t_zset.c' l='2243' u='c' c='zunionInterGenericCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='2032'>/* Find value pointed to by val in the source pointer to by op. When found,
+ * return 1 and store its score in target. Return 0 otherwise. */</doc>

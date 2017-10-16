@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1602' type='int processCommand(client * c)'/>
+<use f='codebrowser/src/networking.c' l='1330' u='c' c='processInputBuffer'/>
+<def f='codebrowser/src/server.c' l='2308' ll='2492' type='int processCommand(client * c)'/>
+<doc f='codebrowser/src/server.c' l='2300'>/* If this function gets called we already read a whole
+ * command, arguments are in the client argv/argc fields.
+ * processCommand() execute the command or prepare the
+ * server for a bulk read from the client.
+ *
+ * If C_OK is returned the client is still alive and valid and
+ * other operations can be performed by the caller. Otherwise
+ * if C_ERR is returned the client was destroyed (i.e. after QUIT). */</doc>

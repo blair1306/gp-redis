@@ -1,0 +1,25 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='169' type='void lua_pushboolean(lua_State * L, int b)'/>
+<def f='codebrowser/deps/lua/src/lapi.c' l='503' ll='508' macro='1' type='void lua_pushboolean(lua_State * L, int b)'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='164' u='c' c='luaB_rawequal'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='208' u='c' c='luaB_collectgarbage'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='378' u='c' c='luaB_pcall'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='390' u='c' c='luaB_xpcall'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='429' u='c' c='luaB_newproxy'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='549' u='c' c='luaB_coresume'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='554' u='c' c='luaB_coresume'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='42' u='c' c='db_setmetatable'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='33' u='c' c='pushresult'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='236' u='c' c='aux_lines'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='489' u='c' c='ll_require'/>
+<use f='codebrowser/deps/lua/src/loslib.c' l='26' u='c' c='os_pushresult'/>
+<use f='codebrowser/deps/lua/src/loslib.c' l='96' u='c' c='setboolfield'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='257' u='c' c='json_enum_option'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='1235' u='c' c='json_process_value'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='662' u='c' c='mp_decode_to_lua_type'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='666' u='c' c='mp_decode_to_lua_type'/>
+<use f='codebrowser/src/scripting.c' l='155' u='c' c='redisProtocolToLuaType_Bulk'/>
+<use f='codebrowser/src/scripting.c' l='191' u='c' c='redisProtocolToLuaType_MultiBulk'/>
+<use f='codebrowser/src/scripting.c' l='701' u='c' c='luaRedisReplicateCommandsCommand'/>
+<use f='codebrowser/src/scripting.c' l='708' u='c' c='luaRedisReplicateCommandsCommand'/>
+<use f='codebrowser/src/scripting.c' l='721' u='c' c='luaRedisBreakpointCommand'/>
+<use f='codebrowser/src/scripting.c' l='723' u='c' c='luaRedisBreakpointCommand'/>

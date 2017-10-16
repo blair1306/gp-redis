@@ -1,0 +1,9 @@
+<dec f='include/unistd.h' l='1115' type='int fdatasync(int __fildes)'/>
+<doc f='include/unistd.h' l='1113'>/* Synchronize at least the data part of a file with the underlying
+   media.  */</doc>
+<use f='codebrowser/src/aof.c' l='211' macro='1' u='c'/>
+<use f='codebrowser/src/aof.c' l='439' macro='1' u='c'/>
+<use f='codebrowser/src/aof.c' l='1536' macro='1' u='c'/>
+<use f='codebrowser/src/bio.c' l='190' macro='1' u='c'/>
+<use f='codebrowser/src/rio.c' l='119' macro='1' u='c'/>
+<use f='codebrowser/src/server.c' l='2546' macro='1' u='c'/>

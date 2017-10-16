@@ -1,0 +1,24 @@
+<dec f='codebrowser/src/server.h' l='717' type='multiState'/>
+<offset>2752</offset>
+<doc f='codebrowser/src/server.h' l='717'>/* MULTI/EXEC state */</doc>
+<use f='codebrowser/src/cluster.c' l='5230' u='a' c='getNodeByQuery'/>
+<use f='codebrowser/src/multi.c' l='36' u='m' c='initClientMultiState'/>
+<use f='codebrowser/src/multi.c' l='37' u='m' c='initClientMultiState'/>
+<use f='codebrowser/src/multi.c' l='44' u='m' c='freeClientMultiState'/>
+<use f='codebrowser/src/multi.c' l='46' u='m' c='freeClientMultiState'/>
+<use f='codebrowser/src/multi.c' l='52' u='m' c='freeClientMultiState'/>
+<use f='codebrowser/src/multi.c' l='60' u='m' c='queueMultiCommand'/>
+<use f='codebrowser/src/multi.c' l='60' u='m' c='queueMultiCommand'/>
+<use f='codebrowser/src/multi.c' l='61' u='m' c='queueMultiCommand'/>
+<use f='codebrowser/src/multi.c' l='62' u='m' c='queueMultiCommand'/>
+<use f='codebrowser/src/multi.c' l='62' u='m' c='queueMultiCommand'/>
+<use f='codebrowser/src/multi.c' l='69' u='m' c='queueMultiCommand'/>
+<use f='codebrowser/src/multi.c' l='145' u='m' c='execCommand'/>
+<use f='codebrowser/src/multi.c' l='146' u='m' c='execCommand'/>
+<use f='codebrowser/src/multi.c' l='147' u='m' c='execCommand'/>
+<use f='codebrowser/src/multi.c' l='148' u='m' c='execCommand'/>
+<use f='codebrowser/src/multi.c' l='149' u='m' c='execCommand'/>
+<use f='codebrowser/src/multi.c' l='164' u='m' c='execCommand'/>
+<use f='codebrowser/src/multi.c' l='165' u='m' c='execCommand'/>
+<use f='codebrowser/src/multi.c' l='166' u='m' c='execCommand'/>
+<use f='codebrowser/src/networking.c' l='1529' u='m' c='catClientInfoString'/>

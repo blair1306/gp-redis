@@ -1,0 +1,4 @@
+<def f='codebrowser/src/geo.c' l='113' ll='119' type='int longLatFromMember(robj * zobj, robj * member, double * xy)'/>
+<use f='codebrowser/src/geo.c' l='484' u='c' c='georadiusGeneric'/>
+<doc f='codebrowser/src/geo.c' l='111'>/* Decode lat/long from a zset member&apos;s score.
+ * Returns C_OK on successful decoding, otherwise C_ERR is returned. */</doc>

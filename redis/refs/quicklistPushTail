@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/quicklist.h' l='125' type='int quicklistPushTail(quicklist * quicklist, void * value, const size_t sz)'/>
+<def f='codebrowser/src/quicklist.c' l='503' ll='520' type='int quicklistPushTail(quicklist * quicklist, void * value, size_t sz)'/>
+<use f='codebrowser/src/quicklist.c' l='556' u='c' c='quicklistAppendValuesFromZiplist'/>
+<use f='codebrowser/src/quicklist.c' l='1409' u='c' c='quicklistPush'/>
+<doc f='codebrowser/src/quicklist.c' l='499'>/* Add new entry to tail node of quicklist.
+ *
+ * Returns 0 if used existing tail.
+ * Returns 1 if new tail created. */</doc>
+<use f='codebrowser/src/rdb.c' l='1170' u='c' c='rdbLoadObject'/>

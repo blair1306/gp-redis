@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='57'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='54'>/*
+ * Defined if __builtin_clz() and __builtin_clzl() are available.
+ */</doc>

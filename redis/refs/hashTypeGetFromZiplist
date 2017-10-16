@@ -1,0 +1,7 @@
+<def f='codebrowser/src/t_hash.c' l='57' ll='85' type='int hashTypeGetFromZiplist(robj * o, sds field, unsigned char ** vstr, unsigned int * vlen, long long * vll)'/>
+<use f='codebrowser/src/t_hash.c' l='112' u='c' c='hashTypeGetValue'/>
+<use f='codebrowser/src/t_hash.c' l='151' u='c' c='hashTypeGetValueLength'/>
+<use f='codebrowser/src/t_hash.c' l='172' u='c' c='hashTypeExists'/>
+<use f='codebrowser/src/t_hash.c' l='653' u='c' c='addHashFieldToReply'/>
+<doc f='codebrowser/src/t_hash.c' l='55'>/* Get the value from a ziplist encoded hash, identified by field.
+ * Returns -1 when the field cannot be found. */</doc>

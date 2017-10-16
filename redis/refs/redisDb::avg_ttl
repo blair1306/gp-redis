@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='617' type='long long'/>
+<offset>384</offset>
+<doc f='codebrowser/src/server.h' l='617'>/* Average TTL, just for stats */</doc>
+<use f='codebrowser/src/db.c' l='970' u='w' c='dbSwapDatabases'/>
+<use f='codebrowser/src/db.c' l='970' u='r' c='dbSwapDatabases'/>
+<use f='codebrowser/src/db.c' l='974' u='w' c='dbSwapDatabases'/>
+<use f='codebrowser/src/db.c' l='974' u='r' c='dbSwapDatabases'/>
+<use f='codebrowser/src/expire.c' l='161' u='w' c='activeExpireCycle'/>
+<use f='codebrowser/src/expire.c' l='203' u='r' c='activeExpireCycle'/>
+<use f='codebrowser/src/expire.c' l='203' u='w' c='activeExpireCycle'/>
+<use f='codebrowser/src/expire.c' l='204' u='w' c='activeExpireCycle'/>
+<use f='codebrowser/src/expire.c' l='204' u='r' c='activeExpireCycle'/>
+<use f='codebrowser/src/server.c' l='1858' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='3309' u='r' c='genRedisInfoString'/>

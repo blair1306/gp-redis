@@ -1,0 +1,5 @@
+<def f='codebrowser/src/aof.c' l='202' ll='204' type='void aof_background_fsync(int fd)'/>
+<use f='codebrowser/src/aof.c' l='445' u='c' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1538' u='c' c='backgroundRewriteDoneHandler'/>
+<doc f='codebrowser/src/aof.c' l='200'>/* Starts a background task that performs fsync() against the specified
+ * file descriptor (the one of the AOF file) in another thread. */</doc>

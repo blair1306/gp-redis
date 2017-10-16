@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='262'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='414' u='c'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='416' u='c'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='202' u='c'/>
+<use f='codebrowser/src/scripting.c' l='282' u='c'/>

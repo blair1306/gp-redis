@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1737' type='unsigned int delKeysInSlot(unsigned int hashslot)'/>
+<use f='codebrowser/src/cluster.c' l='1594' u='c' c='clusterUpdateSlotsConfigWith'/>
+<def f='codebrowser/src/db.c' l='1415' ll='1434' type='unsigned int delKeysInSlot(unsigned int hashslot)'/>
+<doc f='codebrowser/src/db.c' l='1413'>/* Remove all the keys in the specified hash slot.
+ * The number of removed items is returned. */</doc>

@@ -1,0 +1,6 @@
+<def f='codebrowser/src/ziplist.c' l='397' ll='404' type='int zipStorePrevEntryLengthLarge(unsigned char * p, unsigned int len)'/>
+<use f='codebrowser/src/ziplist.c' l='416' u='c' c='zipStorePrevEntryLength'/>
+<use f='codebrowser/src/ziplist.c' l='665' u='c' c='__ziplistCascadeUpdate'/>
+<use f='codebrowser/src/ziplist.c' l='800' u='c' c='__ziplistInsert'/>
+<doc f='codebrowser/src/ziplist.c' l='395'>/* Encode the length of the previous entry and write it to &quot;p&quot;. This only
+ * uses the larger encoding (required in __ziplistCascadeUpdate). */</doc>

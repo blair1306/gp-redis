@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='693' type='size_t'/>
+<offset>960</offset>
+<doc f='codebrowser/src/server.h' l='693'>/* Amount of bytes already sent in the current
+                               buffer or object being sent. */</doc>
+<use f='codebrowser/src/networking.c' l='107' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='899' u='r' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='899' u='r' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='901' u='w' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='906' u='r' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='908' u='w' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='919' u='r' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='919' u='r' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='921' u='w' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='925' u='r' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='927' u='w' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='966' u='w' c='writeToClient'/>

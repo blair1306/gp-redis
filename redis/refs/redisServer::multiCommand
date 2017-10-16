@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='932' type='struct redisCommand *'/>
+<offset>7040</offset>
+<use f='codebrowser/src/multi.c' l='109' u='r' c='execCommandPropagateMulti'/>
+<use f='codebrowser/src/server.c' l='1503' u='w' c='initServerConfig'/>

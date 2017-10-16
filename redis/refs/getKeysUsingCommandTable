@@ -1,0 +1,4 @@
+<def f='codebrowser/src/db.c' l='1130' ll='1160' type='int * getKeysUsingCommandTable(struct redisCommand * cmd, robj ** argv, int argc, int * numkeys)'/>
+<use f='codebrowser/src/db.c' l='1179' u='c' c='getKeysFromCommand'/>
+<doc f='codebrowser/src/db.c' l='1128'>/* The base case is to use the keys position as given in the command table
+ * (firstkey, lastkey, step). */</doc>

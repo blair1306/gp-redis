@@ -1,0 +1,21 @@
+<dec f='codebrowser/src/server.h' l='921' type='char [256]'/>
+<offset>4480</offset>
+<doc f='codebrowser/src/server.h' l='921'>/* Error buffer for anet.c */</doc>
+<use f='codebrowser/src/cluster.c' l='607' u='r' c='clusterAcceptHandler'/>
+<use f='codebrowser/src/cluster.c' l='611' c='clusterAcceptHandler'/>
+<use f='codebrowser/src/cluster.c' l='3265' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3276' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='4803' u='r' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4808' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4811' u='r' c='migrateGetSocket'/>
+<use f='codebrowser/src/networking.c' l='683' u='r' c='acceptTcpHandler'/>
+<use f='codebrowser/src/networking.c' l='687' c='acceptTcpHandler'/>
+<use f='codebrowser/src/networking.c' l='702' u='r' c='acceptUnixHandler'/>
+<use f='codebrowser/src/networking.c' l='706' c='acceptUnixHandler'/>
+<use f='codebrowser/src/server.c' l='1707' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1719' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1735' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1739' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1746' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1835' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1838' c='initServer'/>

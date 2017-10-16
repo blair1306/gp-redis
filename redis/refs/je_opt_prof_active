@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='247' macro='1' type='_Bool'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1277' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1118' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1118' macro='1' u='w'/>
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='18' macro='1' type='_Bool'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2112' macro='1' u='r'/>

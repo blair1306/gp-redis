@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='51'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='47'>/*
+ * prof_tdata pointers close to NULL are used to encode state information that
+ * is used for cleaning up during thread shutdown.
+ */</doc>

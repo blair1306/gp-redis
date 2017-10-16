@@ -1,0 +1,10 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='660' macro='1' type='uint64_t * tsd_thread_allocatedp_get(tsd_t * tsd)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='660' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1341' u='c' c='thread_allocatedp_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1438' u='c' c='je_malloc'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1536' u='c' c='imemalign'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1677' u='c' c='je_calloc'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1823' u='c' c='je_realloc'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2074' u='c' c='je_mallocx'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2211' u='c' c='je_rallocx'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2332' u='c' c='je_xallocx'/>

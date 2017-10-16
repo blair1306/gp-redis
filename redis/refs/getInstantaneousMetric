@@ -1,0 +1,5 @@
+<def f='codebrowser/src/server.c' l='765' ll='772' type='long long getInstantaneousMetric(int metric)'/>
+<use f='codebrowser/src/server.c' l='3101' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3104' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3105' u='c' c='genRedisInfoString'/>
+<doc f='codebrowser/src/server.c' l='764'>/* Return the mean of all the samples. */</doc>

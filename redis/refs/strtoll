@@ -1,0 +1,24 @@
+<dec f='include/stdlib.h' l='209' type='long long strtoll(const char *restrict __nptr, char **restrict __endptr, int __base)'/>
+<use f='include/stdlib.h' l='294' u='c' c='atoll'/>
+<use f='codebrowser/src/aof.c' l='488' u='c' c='catAppendOnlyExpireAtCommand'/>
+<use f='codebrowser/src/config.c' l='614' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='635' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='639' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='643' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='649' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='907' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='921' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='922' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='968' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='969' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='970' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/rdb.c' l='275' u='c' c='rdbTryIntegerEncoding'/>
+<use f='codebrowser/src/rdb.c' l='1590' u='c' c='rdbLoadRio'/>
+<use f='codebrowser/src/redis-cli.c' l='226' u='c' c='cliVersion'/>
+<use f='codebrowser/src/redis-cli.c' l='228' u='c' c='cliVersion'/>
+<use f='codebrowser/src/redis-cli.c' l='997' u='c' c='parseOptions'/>
+<use f='codebrowser/src/redis-cli.c' l='1023' u='c' c='parseOptions'/>
+<use f='codebrowser/src/replication.c' l='1484' u='c' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/sentinel.c' l='2064' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/util.c' l='224' u='c' c='memtoll'/>
+<use f='codebrowser/src/zmalloc.c' l='265' u='c' c='zmalloc_get_rss'/>

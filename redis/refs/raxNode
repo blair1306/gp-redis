@@ -1,0 +1,7 @@
+<def f='codebrowser/src/rax.h' l='68' ll='101'/>
+<size>4</size>
+<mbr r='raxNode::iskey' o='0' t='uint32_t'/>
+<mbr r='raxNode::isnull' o='1' t='uint32_t'/>
+<mbr r='raxNode::iscompr' o='2' t='uint32_t'/>
+<mbr r='raxNode::size' o='3' t='uint32_t'/>
+<mbr r='raxNode::data' o='32' t='unsigned char []'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/src/t_zset.c' l='1034' ll='1061' type='unsigned char * zzlDeleteRangeByScore(unsigned char * zl, zrangespec * range, unsigned long * deleted)'/>
+<use f='codebrowser/src/t_zset.c' l='1700' u='c' c='zremrangeGenericCommand'/>

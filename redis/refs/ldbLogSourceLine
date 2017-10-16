@@ -1,0 +1,6 @@
+<def f='codebrowser/src/scripting.c' l='1814' ll='1830' type='void ldbLogSourceLine(int lnum)'/>
+<use f='codebrowser/src/scripting.c' l='1842' u='c' c='ldbList'/>
+<use f='codebrowser/src/scripting.c' l='2102' u='c' c='ldbBreak'/>
+<use f='codebrowser/src/scripting.c' l='2198' u='c' c='ldbTrace'/>
+<use f='codebrowser/src/scripting.c' l='2377' u='c' c='luaLdbLineHook'/>
+<doc f='codebrowser/src/scripting.c' l='1813'>/* Log the specified line in the Lua debugger output. */</doc>

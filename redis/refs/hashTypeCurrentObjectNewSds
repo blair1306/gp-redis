@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1678' type='sds hashTypeCurrentObjectNewSds(hashTypeIterator * hi, int what)'/>
+<use f='codebrowser/src/debug.c' l='233' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='236' u='c' c='computeDatasetDigest'/>
+<def f='codebrowser/src/t_hash.c' l='441' ll='449' type='sds hashTypeCurrentObjectNewSds(hashTypeIterator * hi, int what)'/>
+<use f='codebrowser/src/t_hash.c' l='482' u='c' c='hashTypeConvertZiplist'/>
+<use f='codebrowser/src/t_hash.c' l='483' u='c' c='hashTypeConvertZiplist'/>
+<doc f='codebrowser/src/t_hash.c' l='439'>/* Return the key or value at the current iterator position as a new
+ * SDS string. */</doc>

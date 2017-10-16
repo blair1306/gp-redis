@@ -1,0 +1,15 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='114' type='unsigned int dictGenHashFunction(const unsigned char * buf, int len)'/>
+<def f='codebrowser/deps/hiredis/dict.c' l='53' ll='59' type='unsigned int dictGenHashFunction(const unsigned char * buf, int len)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='65' u='c' c='callbackHash'/>
+<doc f='codebrowser/deps/hiredis/dict.c' l='51'>/* Generic hash function (a popular one from Bernstein).
+ * I tested a few and this was the best. */</doc>
+<doc f='codebrowser/deps/hiredis/dict.h' l='113'>/* API */</doc>
+<dec f='codebrowser/src/dict.h' l='171' type='uint64_t dictGenHashFunction(const void * key, int len)'/>
+<def f='codebrowser/src/dict.c' l='90' ll='92' type='uint64_t dictGenHashFunction(const void * key, int len)'/>
+<use f='codebrowser/src/latency.c' l='45' u='c' c='dictStringHash'/>
+<use f='codebrowser/src/module.c' l='3654' u='c' c='dictCStringKeyHash'/>
+<use f='codebrowser/src/server.c' l='491' u='c' c='dictObjHash'/>
+<use f='codebrowser/src/server.c' l='495' u='c' c='dictSdsHash'/>
+<use f='codebrowser/src/server.c' l='524' u='c' c='dictEncObjHash'/>
+<use f='codebrowser/src/server.c' l='531' u='c' c='dictEncObjHash'/>
+<use f='codebrowser/src/server.c' l='536' u='c' c='dictEncObjHash'/>

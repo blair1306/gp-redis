@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1318' type='void moduleBlockedClientPipeReadable(aeEventLoop * el, int fd, void * privdata, int mask)'/>
+<def f='codebrowser/src/module.c' l='3356' ll='3361' type='void moduleBlockedClientPipeReadable(aeEventLoop * el, int fd, void * privdata, int mask)'/>
+<doc f='codebrowser/src/module.c' l='3352'>/* Readable handler for the awake pipe. We do nothing here, the awake bytes
+ * will be actually read in a more appropriate place in the
+ * moduleHandleBlockedClients() function that is where clients are actually
+ * served. */</doc>
+<use f='codebrowser/src/server.c' l='1918' u='r' c='initServer'/>

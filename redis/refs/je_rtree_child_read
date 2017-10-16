@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='172' macro='1' type='rtree_node_elm_t * je_rtree_child_read(rtree_t * rtree, rtree_node_elm_t * elm, unsigned int level)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='285' macro='1' u='c'/>

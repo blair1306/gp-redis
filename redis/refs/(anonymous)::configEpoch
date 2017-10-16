@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/cluster.h' l='202' type='uint64_t'/>
+<dec f='codebrowser/src/cluster.h' l='240' type='uint64_t'/>
+<use f='codebrowser/src/cluster.c' l='1671' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2027' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2240' u='w' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2528' u='w' c='clusterSendUpdate'/>
+<use f='codebrowser/src/cluster.c' l='2599' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<offset>192</offset>
+<doc f='codebrowser/src/cluster.h' l='202'>/* Config epoch of the specified instance. */</doc>
+<doc f='codebrowser/src/cluster.h' l='240'>/* The config epoch if it&apos;s a master, or the last
+                               epoch advertised by its master if it is a
+                               slave. */</doc>

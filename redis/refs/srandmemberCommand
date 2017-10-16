@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1872' type='void srandmemberCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='171' u='r'/>
+<use f='codebrowser/src/server.c' l='171' u='r'/>
+<use f='codebrowser/src/server.c' l='171' u='r'/>
+<use f='codebrowser/src/server.c' l='171' u='r'/>
+<def f='codebrowser/src/t_set.c' l='751' ll='774' type='void srandmemberCommand(client * c)'/>

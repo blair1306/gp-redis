@@ -1,0 +1,25 @@
+<def f='codebrowser/src/config.c' l='1633' ll='1639' type='void rewriteConfigYesNoOption(struct rewriteConfigState * state, char * option, int value, int defvalue)'/>
+<use f='codebrowser/src/config.c' l='1950' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1964' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1969' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1970' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1971' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1978' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1979' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1984' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1985' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2000' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2003' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2007' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2009' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2025' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2026' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2027' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2030' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2031' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2032' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2034' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2035' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2036' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2037' u='c' c='rewriteConfig'/>
+<doc f='codebrowser/src/config.c' l='1632'>/* Rewrite a yes/no option. */</doc>

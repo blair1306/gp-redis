@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='130' type='prof_tctx_state_t'/>
+<offset>736</offset>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='655' u='r' c='prof_tctx_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='685' u='w' c='prof_tctx_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='806' u='w' c='je_prof_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='817' u='w' c='je_prof_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1041' u='r' c='prof_tctx_merge_tdata'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1046' u='w' c='prof_tctx_merge_tdata'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1084' u='r' c='prof_tctx_merge_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1105' u='r' c='prof_tctx_dump_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1131' u='r' c='prof_tctx_finish_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1136' u='w' c='prof_tctx_finish_iter'/>

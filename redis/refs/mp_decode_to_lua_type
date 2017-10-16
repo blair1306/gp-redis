@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='543' type='void mp_decode_to_lua_type(lua_State * L, mp_cur * c)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='552' u='c' c='mp_decode_to_lua_array'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='562' u='c' c='mp_decode_to_lua_hash'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='564' u='c' c='mp_decode_to_lua_hash'/>
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='572' ll='784' type='void mp_decode_to_lua_type(lua_State * L, mp_cur * c)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='810' u='c' c='mp_unpack_full'/>
+<doc f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='541'>/* ------------------------------- Decoding --------------------------------- */</doc>
+<doc f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='570'>/* Decode a Message Pack raw object pointed by the string cursor &apos;c&apos; to
+ * a Lua type, that is left as the only result on the stack. */</doc>

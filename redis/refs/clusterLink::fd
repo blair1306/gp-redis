@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/cluster.h' l='42' type='int'/>
+<use f='codebrowser/src/cluster.c' l='572' u='w' c='createClusterLink'/>
+<use f='codebrowser/src/cluster.c' l='580' u='r' c='freeClusterLink'/>
+<use f='codebrowser/src/cluster.c' l='581' u='r' c='freeClusterLink'/>
+<use f='codebrowser/src/cluster.c' l='582' u='r' c='freeClusterLink'/>
+<use f='codebrowser/src/cluster.c' l='588' u='r' c='freeClusterLink'/>
+<use f='codebrowser/src/cluster.c' l='625' u='w' c='clusterAcceptHandler'/>
+<use f='codebrowser/src/cluster.c' l='1427' u='r' c='nodeIp2String'/>
+<use f='codebrowser/src/cluster.c' l='1719' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2080' u='r' c='clusterWriteHandler'/>
+<use f='codebrowser/src/cluster.c' l='2156' u='r' c='clusterSendMessage'/>
+<use f='codebrowser/src/cluster.c' l='3280' u='w' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3282' u='r' c='clusterCron'/>
+<offset>64</offset>
+<doc f='codebrowser/src/cluster.h' l='42'>/* TCP socket file descriptor */</doc>

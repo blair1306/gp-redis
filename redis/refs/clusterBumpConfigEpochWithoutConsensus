@@ -1,0 +1,34 @@
+<dec f='codebrowser/src/cluster.c' l='77' type='int clusterBumpConfigEpochWithoutConsensus()'/>
+<def f='codebrowser/src/cluster.c' l='990' ll='1007' type='int clusterBumpConfigEpochWithoutConsensus()'/>
+<use f='codebrowser/src/cluster.c' l='4248' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4265' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4531' u='c' c='clusterCommand'/>
+<doc f='codebrowser/src/cluster.c' l='961'>/* If this node epoch is zero or is not already the greatest across the
+ * cluster (from the POV of the local configuration), this function will:
+ *
+ * 1) Generate a new config epoch, incrementing the current epoch.
+ * 2) Assign the new epoch to this node, WITHOUT any consensus.
+ * 3) Persist the configuration on disk before sending packets with the
+ *    new configuration.
+ *
+ * If the new config epoch is generated and assigend, C_OK is returned,
+ * otherwise C_ERR is returned (since the node has already the greatest
+ * configuration around) and no operation is performed.
+ *
+ * Important note: this function violates the principle that config epochs
+ * should be generated with consensus and should be unique across the cluster.
+ * However Redis Cluster uses this auto-generated new config epochs in two
+ * cases:
+ *
+ * 1) When slots are closed after importing. Otherwise resharding would be
+ *    too expensive.
+ * 2) When CLUSTER FAILOVER is called with options that force a slave to
+ *    failover its master even if there is not master majority able to
+ *    create a new configuration epoch.
+ *
+ * Redis Cluster will not explode using this function, even in the case of
+ * a collision between this node and another node, generating the same
+ * configuration epoch unilaterally, because the config epoch conflict
+ * resolution algorithm will eventually move colliding nodes to different
+ * config epochs. However using this function may violate the &quot;last failover
+ * wins&quot; rule, so should only be used with care. */</doc>

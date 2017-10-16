@@ -1,0 +1,4 @@
+<def f='codebrowser/src/config.c' l='1813' ll='1829' type='sds rewriteConfigGetContentFromState(struct rewriteConfigState * state)'/>
+<use f='codebrowser/src/config.c' l='2049' u='c' c='rewriteConfig'/>
+<doc f='codebrowser/src/config.c' l='1811'>/* Glue together the configuration lines in the current configuration
+ * rewrite state into a single string, stripping multiple empty lines. */</doc>

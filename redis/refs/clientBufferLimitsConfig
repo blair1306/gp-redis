@@ -1,0 +1,5 @@
+<def f='codebrowser/src/server.h' l='780' ll='784'/>
+<size>24</size>
+<mbr r='clientBufferLimitsConfig::hard_limit_bytes' o='0' t='unsigned long long'/>
+<mbr r='clientBufferLimitsConfig::soft_limit_bytes' o='64' t='unsigned long long'/>
+<mbr r='clientBufferLimitsConfig::soft_limit_seconds' o='128' t='time_t'/>

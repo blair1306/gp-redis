@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1801' type='void evictionPoolAlloc()'/>
+<doc f='codebrowser/src/server.h' l='1800'>/* evict.c -- maxmemory handling and LRU eviction. */</doc>
+<def f='codebrowser/src/evict.c' l='141' ll='153' type='void evictionPoolAlloc()'/>
+<doc f='codebrowser/src/evict.c' l='140'>/* Create a new eviction pool. */</doc>
+<use f='codebrowser/src/server.c' l='1860' u='c' c='initServer'/>

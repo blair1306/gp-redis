@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/ae.h' l='99' type='int'/>
+<use f='codebrowser/src/ae.c' l='75' u='w' c='aeCreateEventLoop'/>
+<use f='codebrowser/src/ae.c' l='133' u='w' c='aeStop'/>
+<use f='codebrowser/src/ae.c' l='460' u='w' c='aeMain'/>
+<use f='codebrowser/src/ae.c' l='461' u='r' c='aeMain'/>
+<offset>384</offset>

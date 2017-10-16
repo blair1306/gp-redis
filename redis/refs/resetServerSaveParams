@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1698' type='void resetServerSaveParams()'/>
+<def f='codebrowser/src/config.c' l='152' ll='156' type='void resetServerSaveParams()'/>
+<use f='codebrowser/src/config.c' l='255' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='916' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/server.c' l='1446' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3804' u='c' c='main'/>

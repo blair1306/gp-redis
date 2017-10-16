@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/adlist.h' l='89' type='void listJoin(list * l, list * o)'/>
+<def f='codebrowser/src/adlist.c' l='347' ll='362' type='void listJoin(list * l, list * o)'/>
+<doc f='codebrowser/src/adlist.c' l='345'>/* Add all the elements of the list &apos;o&apos; at the end of the
+ * list &apos;l&apos;. The list &apos;other&apos; remains empty but otherwise valid. */</doc>
+<use f='codebrowser/src/module.c' l='3517' u='c' c='moduleHandleBlockedClients'/>

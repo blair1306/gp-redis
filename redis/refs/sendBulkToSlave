@@ -1,0 +1,2 @@
+<def f='codebrowser/src/replication.c' l='870' ll='924' type='void sendBulkToSlave(aeEventLoop * el, int fd, void * privdata, int mask)'/>
+<use f='codebrowser/src/replication.c' l='993' u='r' c='updateSlavesWaitingBgsave'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='40'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='95' u='c'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='142' u='c'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='187' u='c'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='209' u='c'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='325' u='c'/>
+<dec f='codebrowser/src/dict.h' l='42'/>
+<use f='codebrowser/src/dict.c' l='139' u='c'/>
+<use f='codebrowser/src/dict.c' l='155' u='c'/>
+<use f='codebrowser/src/dict.c' l='158' u='c'/>
+<use f='codebrowser/src/dict.c' l='269' u='c'/>
+<use f='codebrowser/src/dict.c' l='404' u='c'/>
+<use f='codebrowser/src/dict.c' l='965' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1304' u='c'/>
+<use f='codebrowser/src/t_set.c' l='690' u='c'/>

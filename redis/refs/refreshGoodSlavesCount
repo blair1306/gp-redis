@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1490' type='void refreshGoodSlavesCount()'/>
+<use f='codebrowser/src/config.c' l='1099' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1102' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/networking.c' l='845' u='c' c='freeClient'/>
+<use f='codebrowser/src/replication.c' l='534' u='c' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='865' u='c' c='putSlaveOnline'/>
+<def f='codebrowser/src/replication.c' l='2231' ll='2248' type='void refreshGoodSlavesCount()'/>
+<use f='codebrowser/src/replication.c' l='2671' u='c' c='replicationCron'/>
+<doc f='codebrowser/src/replication.c' l='2228'>/* This function counts the number of slaves with lag &lt;= min-slaves-max-lag.
+ * If the option is active, the server will prevent writes if there are not
+ * enough connected slaves with the specified lag (or less). */</doc>

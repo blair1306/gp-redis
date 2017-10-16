@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/dict.h' l='72' type='unsigned long'/>
+<offset>128</offset>
+<use f='codebrowser/src/dict.c' l='106' u='w' c='_dictReset'/>
+<use f='codebrowser/src/dict.c' l='162' u='w' c='dictExpand'/>
+<use f='codebrowser/src/dict.c' l='209' u='r' c='dictRehash'/>
+<use f='codebrowser/src/dict.c' l='375' u='r' c='dictGenericDelete'/>
+<use f='codebrowser/src/dict.c' l='485' u='r' c='dictFind'/>
+<use f='codebrowser/src/dict.c' l='630' u='r' c='dictGetRandomKey'/>
+<use f='codebrowser/src/dict.c' l='691' u='r' c='dictGetSomeKeys'/>
+<use f='codebrowser/src/dict.c' l='692' u='r' c='dictGetSomeKeys'/>
+<use f='codebrowser/src/dict.c' l='693' u='r' c='dictGetSomeKeys'/>
+<use f='codebrowser/src/dict.c' l='850' u='r' c='dictScan'/>
+<use f='codebrowser/src/dict.c' l='871' u='r' c='dictScan'/>
+<use f='codebrowser/src/dict.c' l='872' u='r' c='dictScan'/>
+<use f='codebrowser/src/dict.c' l='968' u='r' c='_dictKeyIndex'/>
+<use f='codebrowser/src/dict.c' l='1013' u='r' c='dictFindEntryRefByPtrAndHash'/>

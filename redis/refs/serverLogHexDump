@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='2012' type='void serverLogHexDump(int level, char * descr, void * value, size_t len)'/>
+<use f='codebrowser/src/debug.c' l='1091' u='c' c='sigsegvHandler'/>
+<def f='codebrowser/src/debug.c' l='1120' ll='1140' type='void serverLogHexDump(int level, char * descr, void * value, size_t len)'/>
+<doc f='codebrowser/src/debug.c' l='1118'>/* ==================== Logging functions for debugging ===================== */</doc>
+<use f='codebrowser/src/t_hash.c' l='486' u='c' c='hashTypeConvertZiplist'/>

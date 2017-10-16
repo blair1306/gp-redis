@@ -1,0 +1,2 @@
+<def f='codebrowser/src/module.c' l='1918' ll='1940' macro='1' type='robj * RM_ZsetRangeCurrentElement(RedisModuleKey * key, double * score)'/>
+<use f='codebrowser/src/module.c' l='3957' macro='1' u='r'/>

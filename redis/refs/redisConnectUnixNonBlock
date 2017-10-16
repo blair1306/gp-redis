@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='172' type='redisContext * redisConnectUnixNonBlock(const char * path)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='191' u='c' c='redisAsyncConnectUnix'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='751' ll='761' type='redisContext * redisConnectUnixNonBlock(const char * path)'/>
+<use f='codebrowser/src/redis-benchmark.c' l='323' u='c' c='createClient'/>

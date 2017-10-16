@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1955' type='void unwatchCommand(client * c)'/>
+<def f='codebrowser/src/multi.c' l='334' ll='338' type='void unwatchCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='270' u='r'/>
+<use f='codebrowser/src/server.c' l='270' u='r'/>
+<use f='codebrowser/src/server.c' l='270' u='r'/>
+<use f='codebrowser/src/server.c' l='270' u='r'/>

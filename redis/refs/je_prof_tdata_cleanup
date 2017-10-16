@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='305' macro='1' type='void je_prof_tdata_cleanup(tsd_t * tsd)'/>
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='1889' macro='1' type='void je_prof_tdata_cleanup(tsd_t * tsd)'/>
+<use f='codebrowser/deps/jemalloc/src/tsd.c' l='82' macro='1' u='c'/>

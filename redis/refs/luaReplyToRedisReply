@@ -1,0 +1,6 @@
+<def f='codebrowser/src/scripting.c' l='277' ll='340' type='void luaReplyToRedisReply(client * c, lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='330' u='c' c='luaReplyToRedisReply'/>
+<use f='codebrowser/src/scripting.c' l='1356' u='c' c='evalGenericCommand'/>
+<doc f='codebrowser/src/scripting.c' l='273'>/* ---------------------------------------------------------------------------
+ * Lua reply to Redis reply conversion functions.
+ * ------------------------------------------------------------------------- */</doc>

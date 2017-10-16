@@ -1,0 +1,16 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='117'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='726' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='737' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='738' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='748' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='803' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='826' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='839' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='867' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='403' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='486' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='667' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1423' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1771' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1811' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2705' u='c'/>

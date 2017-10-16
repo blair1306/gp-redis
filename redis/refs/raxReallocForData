@@ -1,0 +1,5 @@
+<def f='codebrowser/src/rax.c' l='179' ll='183' type='raxNode * raxReallocForData(raxNode * n, void * data)'/>
+<use f='codebrowser/src/rax.c' l='430' u='c' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='772' u='c' c='raxInsert'/>
+<doc f='codebrowser/src/rax.c' l='177'>/* realloc the node to make room for auxiliary data in order
+ * to store an item in that node. On out of memory NULL is returned. */</doc>

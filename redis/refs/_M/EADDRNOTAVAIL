@@ -1,0 +1,2 @@
+<dec f='include/asm-generic/errno.h' l='81'/>
+<use f='codebrowser/deps/hiredis/net.c' l='383' u='c'/>

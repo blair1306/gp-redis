@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='899' type='int [2]'/>
+<offset>1536</offset>
+<doc f='codebrowser/src/server.h' l='899'>/* Pipe used to awake the event loop if a
+                                   client blocked on a module command needs
+                                   to be processed. */</doc>
+<use f='codebrowser/src/module.c' l='3450' u='r' c='RM_UnblockClient'/>
+<use f='codebrowser/src/module.c' l='3480' u='r' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='3687' u='r' c='moduleInitModulesSystem'/>
+<use f='codebrowser/src/module.c' l='3695' u='r' c='moduleInitModulesSystem'/>
+<use f='codebrowser/src/module.c' l='3696' u='r' c='moduleInitModulesSystem'/>
+<use f='codebrowser/src/server.c' l='1917' u='r' c='initServer'/>

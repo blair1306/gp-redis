@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/dict.h' l='159' type='void dictFreeUnlinkedEntry(dict * d, dictEntry * he)'/>
+<def f='codebrowser/src/dict.c' l='434' ll='439' type='void dictFreeUnlinkedEntry(dict * d, dictEntry * he)'/>
+<doc f='codebrowser/src/dict.c' l='432'>/* You need to call this function to really free the entry after a call
+ * to dictUnlink(). It&apos;s safe to call this function with &apos;he&apos; = NULL. */</doc>
+<use f='codebrowser/src/lazyfree.c' l='79' u='c' c='dbAsyncDelete'/>
+<use f='codebrowser/src/t_zset.c' l='1400' u='c' c='zsetDel'/>

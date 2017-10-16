@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1611' type='void preventCommandPropagation(client * c)'/>
+<use f='codebrowser/src/module.c' l='447' u='c' c='moduleHandlePropagationAfterCommandCallback'/>
+<use f='codebrowser/src/scripting.c' l='1363' u='c' c='evalGenericCommand'/>
+<def f='codebrowser/src/server.c' l='2133' ll='2135' type='void preventCommandPropagation(client * c)'/>
+<doc f='codebrowser/src/server.c' l='2130'>/* Avoid that the executed command is propagated at all. This way we
+ * are free to just propagate what we want using the alsoPropagate()
+ * API. */</doc>
+<use f='codebrowser/src/t_set.c' l='550' u='c' c='spopWithCountCommand'/>

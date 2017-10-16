@@ -1,0 +1,9 @@
+<def f='codebrowser/src/geo.h' l='8' ll='14'/>
+<size>40</size>
+<doc f='codebrowser/src/geo.h' l='6'>/* Structures used inside geo.c in order to represent points and array of
+ * points on the earth. */</doc>
+<mbr r='geoPoint::longitude' o='0' t='double'/>
+<mbr r='geoPoint::latitude' o='64' t='double'/>
+<mbr r='geoPoint::dist' o='128' t='double'/>
+<mbr r='geoPoint::score' o='192' t='double'/>
+<mbr r='geoPoint::member' o='256' t='char *'/>

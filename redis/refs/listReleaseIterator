@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/adlist.h' l='82' type='void listReleaseIterator(listIter * iter)'/>
+<def f='codebrowser/src/adlist.c' l='200' ll='202' type='void listReleaseIterator(listIter * iter)'/>
+<doc f='codebrowser/src/adlist.c' l='199'>/* Release the iterator memory */</doc>

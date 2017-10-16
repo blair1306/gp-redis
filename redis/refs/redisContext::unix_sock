@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='159' type='struct (anonymous struct at /home/jon/workspace/redis/deps/hiredis/hiredis.h:157:5)'/>
+<offset>1600</offset>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='605' u='m' c='redisContextInit'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='629' u='m' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='630' u='m' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='661' u='m' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/net.c' l='440' u='m' c='redisContextConnectUnix'/>
+<use f='codebrowser/deps/hiredis/net.c' l='441' u='m' c='redisContextConnectUnix'/>

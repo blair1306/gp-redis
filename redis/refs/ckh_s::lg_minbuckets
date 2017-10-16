@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='54' type='unsigned int'/>
+<offset>128</offset>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='384' u='w' c='je_ckh_new'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='503' u='r' c='je_ckh_remove'/>

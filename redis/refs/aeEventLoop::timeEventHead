@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/ae.h' l='98' type='aeTimeEvent *'/>
+<use f='codebrowser/src/ae.c' l='73' u='w' c='aeCreateEventLoop'/>
+<use f='codebrowser/src/ae.c' l='218' u='r' c='aeCreateTimeEvent'/>
+<use f='codebrowser/src/ae.c' l='219' u='w' c='aeCreateTimeEvent'/>
+<use f='codebrowser/src/ae.c' l='225' u='r' c='aeDeleteTimeEvent'/>
+<use f='codebrowser/src/ae.c' l='249' u='r' c='aeSearchNearestTimer'/>
+<use f='codebrowser/src/ae.c' l='278' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='287' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='297' u='w' c='processTimeEvents'/>
+<offset>320</offset>

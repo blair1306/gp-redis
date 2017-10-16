@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1836' type='void incrbyCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='216' u='r'/>
+<use f='codebrowser/src/server.c' l='216' u='r'/>
+<use f='codebrowser/src/server.c' l='216' u='r'/>
+<use f='codebrowser/src/server.c' l='216' u='r'/>
+<def f='codebrowser/src/t_string.c' l='387' ll='392' type='void incrbyCommand(client * c)'/>

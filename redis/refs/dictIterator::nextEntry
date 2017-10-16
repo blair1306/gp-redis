@@ -1,0 +1,13 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='72' type='dictEntry *'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='264' u='w' c='dictGetIterator'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='276' u='r' c='dictNext'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='281' u='w' c='dictNext'/>
+<offset>192</offset>
+<dec f='codebrowser/src/dict.h' l='92' type='dictEntry *'/>
+<offset>256</offset>
+<use f='codebrowser/src/defrag.c' l='145' u='r' c='dictIterDefragEntry'/>
+<use f='codebrowser/src/defrag.c' l='146' u='r' c='dictIterDefragEntry'/>
+<use f='codebrowser/src/defrag.c' l='149' u='w' c='dictIterDefragEntry'/>
+<use f='codebrowser/src/dict.c' l='551' u='w' c='dictGetIterator'/>
+<use f='codebrowser/src/dict.c' l='585' u='r' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='590' u='w' c='dictNext'/>

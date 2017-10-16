@@ -1,0 +1,4 @@
+<def f='codebrowser/src/replication.c' l='344' ll='392' type='long long addReplyReplicationBacklog(client * c, long long offset)'/>
+<use f='codebrowser/src/replication.c' l='525' u='c' c='masterTryPartialResynchronization'/>
+<doc f='codebrowser/src/replication.c' l='342'>/* Feed the slave &apos;c&apos; with the replication backlog starting from the
+ * specified &apos;offset&apos; up to the end of the backlog. */</doc>

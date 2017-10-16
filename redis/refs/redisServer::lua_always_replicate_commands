@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1180' type='int'/>
+<offset>22816</offset>
+<doc f='codebrowser/src/server.h' l='1180'>/* Default replication type. */</doc>
+<use f='codebrowser/src/debug.c' l='511' u='w' c='debugCommand'/>
+<use f='codebrowser/src/scripting.c' l='903' u='w' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='1226' u='r' c='evalGenericCommand'/>

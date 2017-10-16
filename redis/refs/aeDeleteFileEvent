@@ -1,0 +1,28 @@
+<dec f='codebrowser/src/ae.h' l='111' type='void aeDeleteFileEvent(aeEventLoop * eventLoop, int fd, int mask)'/>
+<def f='codebrowser/src/ae.c' l='156' ll='172' type='void aeDeleteFileEvent(aeEventLoop * eventLoop, int fd, int mask)'/>
+<use f='codebrowser/src/aof.c' l='108' u='c' c='aofChildWriteDiffData'/>
+<use f='codebrowser/src/aof.c' l='1274' u='c' c='aofChildPipeReadable'/>
+<use f='codebrowser/src/aof.c' l='1311' u='c' c='aofClosePipes'/>
+<use f='codebrowser/src/aof.c' l='1312' u='c' c='aofClosePipes'/>
+<use f='codebrowser/src/cluster.c' l='581' u='c' c='freeClusterLink'/>
+<use f='codebrowser/src/cluster.c' l='582' u='c' c='freeClusterLink'/>
+<use f='codebrowser/src/cluster.c' l='2080' u='c' c='clusterWriteHandler'/>
+<use f='codebrowser/src/networking.c' l='751' u='c' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='752' u='c' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='967' u='c' c='writeToClient'/>
+<use f='codebrowser/src/redis-benchmark.c' l='127' u='c' c='freeClient'/>
+<use f='codebrowser/src/redis-benchmark.c' l='128' u='c' c='freeClient'/>
+<use f='codebrowser/src/redis-benchmark.c' l='150' u='c' c='resetClient'/>
+<use f='codebrowser/src/redis-benchmark.c' l='151' u='c' c='resetClient'/>
+<use f='codebrowser/src/redis-benchmark.c' l='289' u='c' c='writeHandler'/>
+<use f='codebrowser/src/replication.c' l='921' u='c' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='992' u='c' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='1265' u='c' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1445' u='c' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1460' u='c' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1607' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1841' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1886' u='c' c='undoConnectWithMaster'/>
+<use f='codebrowser/src/scripting.c' l='1196' u='c' c='luaMaskCountHook'/>
+<use f='codebrowser/src/sentinel.c' l='299' u='c' c='redisAeDelRead'/>
+<use f='codebrowser/src/sentinel.c' l='317' u='c' c='redisAeDelWrite'/>

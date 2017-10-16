@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='64' type='void je_sdallocx(void * ptr, size_t size, int flags)'/>
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2395' macro='1' type='void je_sdallocx(void * ptr, size_t size, int flags)'/>

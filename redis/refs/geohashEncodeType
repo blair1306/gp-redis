@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/geohash.h' l='101' type='int geohashEncodeType(double longitude, double latitude, uint8_t step, GeoHashBits * hash)'/>
+<def f='codebrowser/src/geohash.c' l='153' ll='157' type='int geohashEncodeType(double longitude, double latitude, uint8_t step, GeoHashBits * hash)'/>
+<use f='codebrowser/src/geohash.c' l='161' u='c' c='geohashEncodeWGS84'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1069' type='long long'/>
+<offset>18176</offset>
+<doc f='codebrowser/src/server.h' l='1069'>/* Replication &quot;master offset&quot; of first
+                                       byte in the replication backlog buffer.*/</doc>
+<use f='codebrowser/src/replication.c' l='86' u='w' c='createReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='112' u='w' c='resizeReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='147' u='w' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='357' u='r' c='addReplyReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='364' u='r' c='addReplyReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='492' u='r' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='493' u='r' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/server.c' l='1482' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3249' u='r' c='genRedisInfoString'/>

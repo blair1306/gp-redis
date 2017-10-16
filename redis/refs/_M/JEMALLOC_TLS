@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='190'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='102' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='9' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='77' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='112' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='138' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='221' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='520' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='582' u='a'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='189'>/* TLS is used to map arenas and magazine caches to threads. */</doc>
+<use f='codebrowser/deps/jemalloc/src/tsd.c' l='161' u='a'/>

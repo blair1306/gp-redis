@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1861' type='void lindexCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='159' u='r'/>
+<use f='codebrowser/src/server.c' l='159' u='r'/>
+<use f='codebrowser/src/server.c' l='159' u='r'/>
+<use f='codebrowser/src/server.c' l='159' u='r'/>
+<def f='codebrowser/src/t_list.c' l='314' ll='339' type='void lindexCommand(client * c)'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/geohash.h' l='107' type='int geohashDecodeType(const GeoHashBits hash, GeoHashArea * area)'/>
+<def f='codebrowser/src/geohash.c' l='196' ll='200' type='int geohashDecodeType(const GeoHashBits hash, GeoHashArea * area)'/>
+<use f='codebrowser/src/geohash.c' l='203' u='c' c='geohashDecodeWGS84'/>
+<use f='codebrowser/src/geohash.c' l='215' u='c' c='geohashDecodeToLongLatType'/>

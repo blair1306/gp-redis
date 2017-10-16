@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/rax.c' l='52' type='void raxDebugShowNode(const char * msg, raxNode * n)'/>
+<def f='codebrowser/src/rax.c' l='1718' ll='1731' type='void raxDebugShowNode(const char * msg, raxNode * n)'/>
+<doc f='codebrowser/src/rax.c' l='50'>/* -------------------------------- Debugging ------------------------------ */</doc>
+<doc f='codebrowser/src/rax.c' l='1717'>/* Used by debugnode() macro to show info about a given node. */</doc>

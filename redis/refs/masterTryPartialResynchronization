@@ -1,0 +1,7 @@
+<def f='codebrowser/src/replication.c' l='447' ll='543' type='int masterTryPartialResynchronization(client * c)'/>
+<use f='codebrowser/src/replication.c' l='660' u='c' c='syncCommand'/>
+<doc f='codebrowser/src/replication.c' l='442'>/* This function handles the PSYNC command from the point of view of a
+ * master receiving a request for partial resynchronization.
+ *
+ * On success return C_OK, otherwise C_ERR is returned and we proceed
+ * with the usual full resync. */</doc>

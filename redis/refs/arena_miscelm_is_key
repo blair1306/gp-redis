@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='46' ll='51' macro='1' type='_Bool arena_miscelm_is_key(const arena_chunk_map_misc_t * miscelm)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='59' u='c' c='arena_miscelm_key_size_get'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='70' u='c' c='arena_miscelm_size_get'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='176' u='c' c='arena_avail_comp'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='186' u='c' c='arena_avail_comp'/>

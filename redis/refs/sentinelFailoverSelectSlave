@@ -1,0 +1,2 @@
+<def f='codebrowser/src/sentinel.c' l='3988' ll='4005' type='void sentinelFailoverSelectSlave(sentinelRedisInstance * ri)'/>
+<use f='codebrowser/src/sentinel.c' l='4192' u='c' c='sentinelFailoverStateMachine'/>

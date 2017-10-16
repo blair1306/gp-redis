@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rdb.c' l='48' type='void rdbCheckSetError(const char * fmt)'/>
+<use f='codebrowser/src/rdb.c' l='354' u='c' c='rdbLoadLzfStringObject'/>
+<def f='codebrowser/src/redis-check-rdb.c' l='142' ll='149' type='void rdbCheckSetError(const char * fmt)'/>
+<doc f='codebrowser/src/redis-check-rdb.c' l='140'>/* Used inside rdb.c in order to log specific errors happening inside
+ * the RDB loading internals. */</doc>

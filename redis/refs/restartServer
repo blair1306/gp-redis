@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/server.h' l='1642' type='int restartServer(int flags, mstime_t delay)'/>
+<use f='codebrowser/src/debug.c' l='328' u='c' c='debugCommand'/>
+<def f='codebrowser/src/server.c' l='1544' ll='1576' type='int restartServer(int flags, mstime_t delay)'/>
+<doc f='codebrowser/src/server.c' l='1529'>/* Restart the server, executing the same executable that started this
+ * instance, with the same arguments and configuration file.
+ *
+ * The function is designed to directly call execve() so that the new
+ * server instance will retain the PID of the previous one.
+ *
+ * The list of flags, that may be bitwise ORed together, alter the
+ * behavior of this function:
+ *
+ * RESTART_SERVER_NONE              No flags.
+ * RESTART_SERVER_GRACEFULLY        Do a proper shutdown before restarting.
+ * RESTART_SERVER_CONFIG_REWRITE    Rewrite the config file before restarting.
+ *
+ * On success the function does not return, because the process turns into
+ * a different process. On error C_ERR is returned. */</doc>

@@ -1,0 +1,5 @@
+<def f='codebrowser/src/redis-check-rdb.c' l='154' ll='161' type='void rdbCheckHandleCrash(int sig, siginfo_t * info, void * secret)'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='168' u='r' c='rdbCheckSetupSignals'/>
+<doc f='codebrowser/src/redis-check-rdb.c' l='151'>/* During RDB check we setup a special signal handler for memory violations
+ * and similar conditions, so that we can log the offending part of the RDB
+ * if the crash is due to broken content. */</doc>

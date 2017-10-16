@@ -1,0 +1,6 @@
+<def f='codebrowser/src/ziplist.c' l='306' ll='318' type='unsigned int zipIntSize(unsigned char encoding)'/>
+<use f='codebrowser/src/ziplist.c' l='391' u='c' c='zipRawEntryLength'/>
+<use f='codebrowser/src/ziplist.c' l='391' u='c' c='zipEntry'/>
+<use f='codebrowser/src/ziplist.c' l='767' u='c' c='__ziplistInsert'/>
+<use f='codebrowser/src/ziplist.c' l='391' u='c' c='ziplistFind'/>
+<doc f='codebrowser/src/ziplist.c' l='305'>/* Return bytes needed to store integer encoded by &apos;encoding&apos;. */</doc>

@@ -1,0 +1,13 @@
+<def f='codebrowser/src/replication.c' l='1315' ll='1360' type='char * sendSynchronousCommand(int flags, int fd)'/>
+<use f='codebrowser/src/replication.c' l='1441' u='c' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1452' u='c' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1611' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1618' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1643' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1654' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1669' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1680' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1701' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1711' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1729' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1739' u='c' c='syncWithMaster'/>

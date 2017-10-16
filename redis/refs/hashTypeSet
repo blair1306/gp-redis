@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1681' type='int hashTypeSet(robj * o, sds field, sds value, int flags)'/>
+<use f='codebrowser/src/module.c' l='2167' u='c' c='RM_HashSet'/>
+<def f='codebrowser/src/t_hash.c' l='202' ll='275' type='int hashTypeSet(robj * o, sds field, sds value, int flags)'/>
+<use f='codebrowser/src/t_hash.c' l='522' u='c' c='hsetnxCommand'/>
+<use f='codebrowser/src/t_hash.c' l='543' u='c' c='hsetCommand'/>
+<use f='codebrowser/src/t_hash.c' l='587' u='c' c='hincrbyCommand'/>
+<use f='codebrowser/src/t_hash.c' l='622' u='c' c='hincrbyfloatCommand'/>

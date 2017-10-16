@@ -1,0 +1,16 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='35' macro='1' type='uint32_t je_hash_rotl_32(uint32_t x, int8_t r)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='108' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='112' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='126' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='167' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='169' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='172' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='174' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='177' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='179' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='182' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='184' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='201' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='207' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='213' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='219' macro='1' u='c'/>

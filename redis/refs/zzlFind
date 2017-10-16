@@ -1,0 +1,5 @@
+<def f='codebrowser/src/t_zset.c' l='946' ll='963' type='unsigned char * zzlFind(unsigned char * zl, sds ele, double * score)'/>
+<use f='codebrowser/src/t_zset.c' l='1206' u='c' c='zsetScore'/>
+<use f='codebrowser/src/t_zset.c' l='1279' u='c' c='zsetAdd'/>
+<use f='codebrowser/src/t_zset.c' l='1381' u='c' c='zsetDel'/>
+<use f='codebrowser/src/t_zset.c' l='2064' u='c' c='zuiFind'/>

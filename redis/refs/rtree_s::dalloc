@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='83' type='rtree_node_dalloc_t *'/>
+<offset>64</offset>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='31' u='w' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='76' u='r' c='rtree_delete_subtree'/>

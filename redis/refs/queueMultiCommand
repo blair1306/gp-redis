@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1421' type='void queueMultiCommand(client * c)'/>
+<def f='codebrowser/src/multi.c' l='56' ll='70' type='void queueMultiCommand(client * c)'/>
+<doc f='codebrowser/src/multi.c' l='55'>/* Add a new command into the MULTI commands queue */</doc>
+<use f='codebrowser/src/server.c' l='2483' u='c' c='processCommand'/>

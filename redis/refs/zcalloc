@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/zmalloc.h' l='76' type='void * zcalloc(size_t size)'/>
+<use f='codebrowser/src/cluster.c' l='2349' u='c' c='clusterSendPing'/>
+<use f='codebrowser/src/dict.c' l='163' u='c' c='dictExpand'/>
+<use f='codebrowser/src/geo.c' l='416' u='c' c='geoaddCommand'/>
+<use f='codebrowser/src/module.c' l='248' u='c' c='RM_Calloc'/>
+<use f='codebrowser/src/module.c' l='2883' u='c' c='RM_CreateDataType'/>
+<use f='codebrowser/src/object.c' l='815' u='c' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/t_zset.c' l='2155' u='c' c='zunionInterGenericCommand'/>
+<def f='codebrowser/src/zmalloc.c' l='129' ll='141' type='void * zcalloc(size_t size)'/>

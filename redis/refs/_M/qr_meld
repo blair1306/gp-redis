@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/qr.h' l='34'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='223' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='224' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='240' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1358' u='c'/>

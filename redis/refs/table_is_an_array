@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='423' ll='461' type='int table_is_an_array(lua_State * L)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='467' u='c' c='mp_encode_lua_table'/>
+<doc f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='420'>/* Returns true if the Lua table on top of the stack is exclusively composed
+ * of keys from numerical keys from 1 up to N, with N being the total number
+ * of elements, without any hole in the middle. */</doc>

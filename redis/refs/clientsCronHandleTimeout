@@ -1,0 +1,6 @@
+<def f='codebrowser/src/server.c' l='778' ll='808' type='int clientsCronHandleTimeout(client * c, mstime_t now_ms)'/>
+<use f='codebrowser/src/server.c' l='866' u='c' c='clientsCron'/>
+<doc f='codebrowser/src/server.c' l='774'>/* Check for timeouts. Returns non-zero if the client was terminated.
+ * The function gets the current time in milliseconds as argument since
+ * it gets called multiple times in a loop, so calling gettimeofday() for
+ * each iteration would be costly without any actual gain. */</doc>

@@ -1,0 +1,4 @@
+<def f='codebrowser/src/server.h' l='1204' ll='1207'/>
+<size>16</size>
+<mbr r='pubsubPattern::client' o='0' t='client *'/>
+<mbr r='pubsubPattern::pattern' o='64' t='robj *'/>

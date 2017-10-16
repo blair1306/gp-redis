@@ -1,0 +1,35 @@
+<dec f='codebrowser/src/cluster.h' l='128' type='clusterLink *'/>
+<use f='codebrowser/src/cluster.c' l='587' u='w' c='freeClusterLink'/>
+<use f='codebrowser/src/cluster.c' l='689' u='w' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='857' u='r' c='freeClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='857' u='r' c='freeClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='1393' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1393' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1456' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1466' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1466' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1931' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2182' u='r' c='clusterBroadcastMessage'/>
+<use f='codebrowser/src/cluster.c' l='2185' u='r' c='clusterBroadcastMessage'/>
+<use f='codebrowser/src/cluster.c' l='2376' u='r' c='clusterSendPing'/>
+<use f='codebrowser/src/cluster.c' l='2447' u='r' c='clusterBroadcastPong'/>
+<use f='codebrowser/src/cluster.c' l='2455' u='r' c='clusterBroadcastPong'/>
+<use f='codebrowser/src/cluster.c' l='2575' u='r' c='clusterSendFailoverAuth'/>
+<use f='codebrowser/src/cluster.c' l='2579' u='r' c='clusterSendFailoverAuth'/>
+<use f='codebrowser/src/cluster.c' l='2588' u='r' c='clusterSendMFStart'/>
+<use f='codebrowser/src/cluster.c' l='2592' u='r' c='clusterSendMFStart'/>
+<use f='codebrowser/src/cluster.c' l='3260' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3281' u='w' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3324' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3334' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3378' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3379' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3387' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3394' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3398' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3407' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3409' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3883' u='r' c='clusterGenNodeDescription'/>
+<use f='codebrowser/src/cluster.c' l='4516' u='r' c='clusterCommand'/>
+<offset>17984</offset>
+<doc f='codebrowser/src/cluster.h' l='128'>/* TCP/IP link with this node */</doc>

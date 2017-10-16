@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1404' type='listTypeIterator * listTypeInitIterator(robj * subject, long index, unsigned char direction)'/>
+<use f='codebrowser/src/debug.c' l='158' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/sort.c' l='356' u='c' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='372' u='c' c='sortCommand'/>
+<def f='codebrowser/src/t_list.c' l='83' ll='101' type='listTypeIterator * listTypeInitIterator(robj * subject, long index, unsigned char direction)'/>
+<use f='codebrowser/src/t_list.c' l='284' u='c' c='linsertCommand'/>
+<use f='codebrowser/src/t_list.c' l='426' u='c' c='lrangeCommand'/>
+<use f='codebrowser/src/t_list.c' l='505' u='c' c='lremCommand'/>
+<use f='codebrowser/src/t_list.c' l='507' u='c' c='lremCommand'/>
+<doc f='codebrowser/src/t_list.c' l='82'>/* Initialize an iterator at the specified index. */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='531' type='moduleType *'/>
+<use f='codebrowser/src/aof.c' l='1041' macro='1' u='w'/>
+<offset>128</offset>
+<doc f='codebrowser/src/server.h' l='531'>/* Module type doing the operation. */</doc>
+<use f='codebrowser/src/module.c' l='2949' u='r' c='moduleRDBLoadError'/>
+<use f='codebrowser/src/module.c' l='2950' u='r' c='moduleRDBLoadError'/>
+<use f='codebrowser/src/module.c' l='3239' u='r' c='RM_EmitAOF'/>
+<use f='codebrowser/src/module.c' l='3253' u='r' c='RM_EmitAOF'/>
+<use f='codebrowser/src/module.c' l='3282' u='r' c='RM_GetContextFromIO'/>
+<use f='codebrowser/src/module.c' l='3344' u='r' c='RM_LogIOError'/>
+<use f='codebrowser/src/rdb.c' l='770' macro='1' u='w'/>
+<use f='codebrowser/src/rdb.c' l='1411' macro='1' u='w'/>

@@ -1,0 +1,66 @@
+<def f='codebrowser/src/module.c' l='2865' ll='2895' type='moduleType * RM_CreateDataType(RedisModuleCtx * ctx, const char * name, int encver, void * typemethods_ptr)'/>
+<use f='codebrowser/src/module.c' l='3968' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='2801'>/* Register a new data type exported by the module. The parameters are the
+ * following. Please for in depth documentation check the modules API
+ * documentation, especially the TYPES.md file.
+ *
+ * * **name**: A 9 characters data type name that MUST be unique in the Redis
+ *   Modules ecosystem. Be creative... and there will be no collisions. Use
+ *   the charset A-Z a-z 9-0, plus the two &quot;-_&quot; characters. A good
+ *   idea is to use, for example `&lt;typename&gt;-&lt;vendor&gt;`. For example
+ *   &quot;tree-AntZ&quot; may mean &quot;Tree data structure by @antirez&quot;. To use both
+ *   lower case and upper case letters helps in order to prevent collisions.
+ * * **encver**: Encoding version, which is, the version of the serialization
+ *   that a module used in order to persist data. As long as the &quot;name&quot;
+ *   matches, the RDB loading will be dispatched to the type callbacks
+ *   whatever &apos;encver&apos; is used, however the module can understand if
+ *   the encoding it must load are of an older version of the module.
+ *   For example the module &quot;tree-AntZ&quot; initially used encver=0. Later
+ *   after an upgrade, it started to serialize data in a different format
+ *   and to register the type with encver=1. However this module may
+ *   still load old data produced by an older version if the rdb_load
+ *   callback is able to check the encver value and act accordingly.
+ *   The encver must be a positive value between 0 and 1023.
+ * * **typemethods_ptr** is a pointer to a RedisModuleTypeMethods structure
+ *   that should be populated with the methods callbacks and structure
+ *   version, like in the following example:
+ *
+ *      RedisModuleTypeMethods tm = {
+ *          .version = REDISMODULE_TYPE_METHOD_VERSION,
+ *          .rdb_load = myType_RDBLoadCallBack,
+ *          .rdb_save = myType_RDBSaveCallBack,
+ *          .aof_rewrite = myType_AOFRewriteCallBack,
+ *          .free = myType_FreeCallBack,
+ *
+ *          // Optional fields
+ *          .digest = myType_DigestCallBack,
+ *          .mem_usage = myType_MemUsageCallBack,
+ *      }
+ *
+ * * **rdb_load**: A callback function pointer that loads data from RDB files.
+ * * **rdb_save**: A callback function pointer that saves data to RDB files.
+ * * **aof_rewrite**: A callback function pointer that rewrites data as commands.
+ * * **digest**: A callback function pointer that is used for `DEBUG DIGEST`.
+ * * **free**: A callback function pointer that can free a type value.
+ *
+ * The **digest* and **mem_usage** methods should currently be omitted since
+ * they are not yet implemented inside the Redis modules core.
+ *
+ * Note: the module name &quot;AAAAAAAAA&quot; is reserved and produces an error, it
+ * happens to be pretty lame as well.
+ *
+ * If there is already a module registering a type with the same name,
+ * and if the module name or encver is invalid, NULL is returned.
+ * Otherwise the new type is registered into Redis, and a reference of
+ * type RedisModuleType is returned: the caller of the function should store
+ * this reference into a gobal variable to make future use of it in the
+ * modules type API, since a single module may register multiple types.
+ * Example code fragment:
+ *
+ *      static RedisModuleType *BalancedTreeType;
+ *
+ *      int RedisModule_OnLoad(RedisModuleCtx *ctx) {
+ *          // some code here ...
+ *          BalancedTreeType = RM_CreateDataType(...);
+ *      }
+ */</doc>

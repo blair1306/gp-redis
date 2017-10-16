@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1092' type='int'/>
+<offset>19136</offset>
+<doc f='codebrowser/src/server.h' l='1092'>/* Slave -&gt; Master SYNC socket */</doc>
+<use f='codebrowser/src/replication.c' l='1061' u='r' c='replicationSendNewlineToMaster'/>
+<use f='codebrowser/src/replication.c' l='1265' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1279' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1844' u='w' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1874' u='w' c='connectWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1884' u='r' c='undoConnectWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1888' u='w' c='undoConnectWithMaster'/>

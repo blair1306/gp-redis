@@ -1,0 +1,28 @@
+<dec f='codebrowser/src/server.h' l='1807' type='uint64_t dictSdsHash(const void * key)'/>
+<doc f='codebrowser/src/server.h' l='1806'>/* Keys hashing / comparison functions for dict.c hash tables. */</doc>
+<use f='codebrowser/src/expire.c' l='325' u='r' c='rememberSlaveKeyWithExpire'/>
+<use f='codebrowser/src/expire.c' l='325' u='r' c='rememberSlaveKeyWithExpire'/>
+<dec f='codebrowser/src/sentinel.c' l='382' type='uint64_t dictSdsHash(const void * key)'/>
+<use f='codebrowser/src/sentinel.c' l='396' u='r'/>
+<use f='codebrowser/src/sentinel.c' l='396' u='r'/>
+<use f='codebrowser/src/sentinel.c' l='409'/>
+<use f='codebrowser/src/sentinel.c' l='409'/>
+<doc f='codebrowser/src/sentinel.c' l='380'>/* ========================= Dictionary types =============================== */</doc>
+<def f='codebrowser/src/server.c' l='494' ll='496' type='uint64_t dictSdsHash(const void * key)'/>
+<use f='codebrowser/src/server.c' l='556'/>
+<use f='codebrowser/src/server.c' l='556'/>
+<use f='codebrowser/src/server.c' l='566'/>
+<use f='codebrowser/src/server.c' l='566'/>
+<use f='codebrowser/src/server.c' l='576'/>
+<use f='codebrowser/src/server.c' l='576'/>
+<use f='codebrowser/src/server.c' l='596'/>
+<use f='codebrowser/src/server.c' l='596'/>
+<use f='codebrowser/src/server.c' l='616'/>
+<use f='codebrowser/src/server.c' l='616'/>
+<use f='codebrowser/src/server.c' l='639'/>
+<use f='codebrowser/src/server.c' l='639'/>
+<use f='codebrowser/src/server.c' l='673'/>
+<use f='codebrowser/src/server.c' l='673'/>
+<dec f='codebrowser/src/t_zset.c' l='2113' type='uint64_t dictSdsHash(const void * key)'/>
+<use f='codebrowser/src/t_zset.c' l='2117' u='r'/>
+<use f='codebrowser/src/t_zset.c' l='2117' u='r'/>

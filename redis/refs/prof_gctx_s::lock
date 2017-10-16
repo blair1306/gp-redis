@@ -1,0 +1,24 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='142' type='malloc_mutex_t *'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='559' u='w' c='prof_gctx_create'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='588' u='r' c='prof_gctx_try_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='596' u='r' c='prof_gctx_try_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='604' u='r' c='prof_gctx_try_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='654' u='r' c='prof_tctx_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='694' u='r' c='prof_tctx_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='742' u='r' c='prof_lookup_global'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='744' u='r' c='prof_lookup_global'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='816' u='r' c='je_prof_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='820' u='r' c='je_prof_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1039' u='r' c='prof_tctx_merge_tdata'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1043' u='r' c='prof_tctx_merge_tdata'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1047' u='r' c='prof_tctx_merge_tdata'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1156' u='r' c='prof_dump_gctx_prep'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1168' u='r' c='prof_dump_gctx_prep'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1176' u='r' c='prof_gctx_merge_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1180' u='r' c='prof_gctx_merge_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1199' u='r' c='prof_gctx_finish'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1222' u='r' c='prof_gctx_finish'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1225' u='r' c='prof_gctx_finish'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1452' u='r' c='prof_gctx_dump_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1461' u='r' c='prof_gctx_dump_iter'/>

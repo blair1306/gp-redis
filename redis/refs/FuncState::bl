@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/lua/src/lparser.h' l='64' type='struct BlockCnt *'/>
+<offset>320</offset>
+<doc f='codebrowser/deps/lua/src/lparser.h' l='64'>/* chain of current blocks */</doc>
+<use f='codebrowser/deps/lua/src/lparser.c' l='218' u='r' c='markupval'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='290' u='r' c='enterblock'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='291' u='w' c='enterblock'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='297' u='r' c='leaveblock'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='298' u='w' c='leaveblock'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='344' u='w' c='open_func'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='977' u='r' c='breakstat'/>

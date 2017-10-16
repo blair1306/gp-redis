@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1871' type='void spopCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='170' u='r'/>
+<use f='codebrowser/src/server.c' l='170' u='r'/>
+<use f='codebrowser/src/server.c' l='170' u='r'/>
+<use f='codebrowser/src/server.c' l='170' u='r'/>
+<def f='codebrowser/src/t_set.c' l='555' ll='606' type='void spopCommand(client * c)'/>

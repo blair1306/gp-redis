@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1195' type='size_t'/>
+<offset>23360</offset>
+<doc f='codebrowser/src/server.h' l='1194'>/* System hardware info */</doc>
+<doc f='codebrowser/src/server.h' l='1195'>/* Total memory in system as reported by OS */</doc>
+<use f='codebrowser/src/server.c' l='1814' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2910' u='r' c='genRedisInfoString'/>

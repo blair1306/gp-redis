@@ -1,0 +1,25 @@
+<dec f='codebrowser/src/server.h' l='692' type='unsigned long long'/>
+<use f='codebrowser/src/aof.c' l='601' u='w' c='createFakeClient'/>
+<offset>896</offset>
+<doc f='codebrowser/src/server.h' l='692'>/* Tot bytes of objects in reply list. */</doc>
+<use f='codebrowser/src/module.c' l='3518' u='w' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='3518' u='r' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/networking.c' l='121' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='230' u='w' c='_addReplyObjectToList'/>
+<use f='codebrowser/src/networking.c' l='240' u='w' c='_addReplyObjectToList'/>
+<use f='codebrowser/src/networking.c' l='244' u='w' c='_addReplyObjectToList'/>
+<use f='codebrowser/src/networking.c' l='260' u='w' c='_addReplySdsToList'/>
+<use f='codebrowser/src/networking.c' l='270' u='w' c='_addReplySdsToList'/>
+<use f='codebrowser/src/networking.c' l='274' u='w' c='_addReplySdsToList'/>
+<use f='codebrowser/src/networking.c' l='286' u='w' c='_addReplyStringToList'/>
+<use f='codebrowser/src/networking.c' l='296' u='w' c='_addReplyStringToList'/>
+<use f='codebrowser/src/networking.c' l='300' u='w' c='_addReplyStringToList'/>
+<use f='codebrowser/src/networking.c' l='442' u='w' c='setDeferredMultiBulkLength'/>
+<use f='codebrowser/src/networking.c' l='595' u='w' c='copyClientOutputBuffer'/>
+<use f='codebrowser/src/networking.c' l='595' u='r' c='copyClientOutputBuffer'/>
+<use f='codebrowser/src/networking.c' l='928' u='w' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='932' u='r' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='1818' u='r' c='getClientOutputBufferMemoryUsage'/>
+<use f='codebrowser/src/networking.c' l='1908' u='r' c='asyncCloseClientOnOutputBufferLimitReached'/>
+<use f='codebrowser/src/networking.c' l='1909' u='r' c='asyncCloseClientOnOutputBufferLimitReached'/>
+<use f='codebrowser/src/scripting.c' l='591' u='w' c='luaRedisGenericCommand'/>

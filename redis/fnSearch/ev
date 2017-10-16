@@ -1,0 +1,8 @@
+evictPolicyToString|evictPolicyToString
+evalGetKeys|evalGetKeys
+evictionPoolAlloc|evictionPoolAlloc
+evictionPoolPopulate|evictionPoolPopulate
+evalCommand|evalCommand
+evalGenericCommand|evalGenericCommand
+evalGenericCommandWithDebugging|evalGenericCommandWithDebugging
+evalShaCommand|evalShaCommand

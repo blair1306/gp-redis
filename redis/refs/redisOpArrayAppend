@@ -1,0 +1,2 @@
+<def f='codebrowser/src/server.c' l='2015' ll='2029' type='int redisOpArrayAppend(redisOpArray * oa, struct redisCommand * cmd, int dbid, robj ** argv, int argc, int target)'/>
+<use f='codebrowser/src/server.c' l='2119' u='c' c='alsoPropagate'/>

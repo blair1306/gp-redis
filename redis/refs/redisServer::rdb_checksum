@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1032' type='int'/>
+<offset>15968</offset>
+<doc f='codebrowser/src/server.h' l='1032'>/* Use RDB checksum? */</doc>
+<use f='codebrowser/src/config.c' l='403' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1292' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1971' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/rdb.c' l='889' u='r' c='rdbSaveRio'/>
+<use f='codebrowser/src/rdb.c' l='1473' u='r' c='rdbLoadProgressCallback'/>
+<use f='codebrowser/src/rdb.c' l='1626' u='r' c='rdbLoadRio'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='300' u='r' c='redis_check_rdb'/>
+<use f='codebrowser/src/server.c' l='1405' u='w' c='initServerConfig'/>

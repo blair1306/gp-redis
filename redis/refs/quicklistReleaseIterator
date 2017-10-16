@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/quicklist.h' l='145' type='void quicklistReleaseIterator(quicklistIter * iter)'/>
+<use f='codebrowser/src/aof.c' l='857' u='c' c='rewriteListObject'/>
+<def f='codebrowser/src/quicklist.c' l='1089' ll='1094' type='void quicklistReleaseIterator(quicklistIter * iter)'/>
+<doc f='codebrowser/src/quicklist.c' l='1087'>/* Release iterator.
+ * If we still have a valid current node, then re-encode current node. */</doc>

@@ -1,0 +1,19 @@
+<dec f='codebrowser/src/anet.h' l='67' type='int anetNonBlock(char * err, int fd)'/>
+<def f='codebrowser/src/anet.c' l='84' ll='86' type='int anetNonBlock(char * err, int fd)'/>
+<use f='codebrowser/src/anet.c' l='291' u='c' c='anetTcpGenericConnect'/>
+<use f='codebrowser/src/anet.c' l='383' u='c' c='anetUnixGenericConnect'/>
+<use f='codebrowser/src/aof.c' l='1206' u='c' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1290' u='c' c='aofCreatePipes'/>
+<use f='codebrowser/src/aof.c' l='1291' u='c' c='aofCreatePipes'/>
+<use f='codebrowser/src/childinfo.c' l='41' u='c' c='openChildInfoPipe'/>
+<use f='codebrowser/src/cluster.c' l='614' u='c' c='clusterAcceptHandler'/>
+<use f='codebrowser/src/module.c' l='3695' u='c' c='moduleInitModulesSystem'/>
+<use f='codebrowser/src/module.c' l='3696' u='c' c='moduleInitModulesSystem'/>
+<use f='codebrowser/src/networking.c' l='78' u='c' c='createClient'/>
+<use f='codebrowser/src/rdb.c' l='1787' u='c' c='backgroundSaveDoneHandlerSocket'/>
+<use f='codebrowser/src/redis-cli.c' l='1834' u='c' c='pipeMode'/>
+<use f='codebrowser/src/scripting.c' l='1663' u='c' c='ldbEndSession'/>
+<use f='codebrowser/src/server.c' l='1710' u='c' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1722' u='c' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1749' u='c' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1841' u='c' c='initServer'/>

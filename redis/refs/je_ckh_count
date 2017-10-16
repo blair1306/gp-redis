@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='72' macro='1' type='size_t je_ckh_count(ckh_t * ckh)'/>
+<def f='codebrowser/deps/jemalloc/src/ckh.c' l='430' macro='1' type='size_t je_ckh_count(ckh_t * ckh)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1768' macro='1' u='c'/>

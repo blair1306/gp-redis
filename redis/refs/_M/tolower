@@ -1,0 +1,16 @@
+<dec f='include/ctype.h' l='228'/>
+<use f='codebrowser/deps/hiredis/async.c' l='378' u='c'/>
+<use f='codebrowser/deps/hiredis/async.c' l='604' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='744' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='75' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='228' u='c'/>
+<use f='codebrowser/src/sds.c' l='749' u='c'/>
+<use f='codebrowser/src/server.c' l='2468' u='c'/>
+<use f='codebrowser/src/server.c' l='2471' u='c'/>
+<use f='codebrowser/src/util.c' l='108' u='c'/>
+<use f='codebrowser/src/util.c' l='109' u='c'/>
+<use f='codebrowser/src/util.c' l='110' u='c'/>
+<use f='codebrowser/src/util.c' l='121' u='c'/>
+<use f='codebrowser/src/util.c' l='121' u='c'/>
+<use f='codebrowser/src/util.c' l='147' u='c'/>
+<use f='codebrowser/src/util.c' l='147' u='c'/>

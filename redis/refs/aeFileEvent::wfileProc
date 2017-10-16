@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/ae.h' l='69' type='aeFileProc *'/>
+<use f='codebrowser/src/ae.c' l='149' u='w' c='aeCreateFileEvent'/>
+<use f='codebrowser/src/ae.c' l='424' u='r' c='aeProcessEvents'/>
+<use f='codebrowser/src/ae.c' l='425' u='r' c='aeProcessEvents'/>
+<offset>128</offset>

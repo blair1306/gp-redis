@@ -1,0 +1,17 @@
+<dec f='codebrowser/src/server.h' l='765' type='unsigned int'/>
+<offset>64</offset>
+<use f='codebrowser/src/t_zset.c' l='90' u='w' c='zslCreate'/>
+<use f='codebrowser/src/t_zset.c' l='147' u='r' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='161' u='w' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='171' u='w' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='171' u='r' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='172' u='w' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='177' u='w' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='194' u='w' c='zslDeleteNode'/>
+<use f='codebrowser/src/t_zset.c' l='194' u='r' c='zslDeleteNode'/>
+<use f='codebrowser/src/t_zset.c' l='197' u='w' c='zslDeleteNode'/>
+<use f='codebrowser/src/t_zset.c' l='396' u='r' c='zslDeleteRangeByRank'/>
+<use f='codebrowser/src/t_zset.c' l='397' u='r' c='zslDeleteRangeByRank'/>
+<use f='codebrowser/src/t_zset.c' l='432' u='r' c='zslGetRank'/>
+<use f='codebrowser/src/t_zset.c' l='452' u='r' c='zslGetElementByRank'/>
+<use f='codebrowser/src/t_zset.c' l='454' u='r' c='zslGetElementByRank'/>

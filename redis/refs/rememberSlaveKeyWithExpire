@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1796' type='void rememberSlaveKeyWithExpire(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/db.c' l='1045' u='c' c='setExpire'/>
+<def f='codebrowser/src/expire.c' l='322' ll='349' type='void rememberSlaveKeyWithExpire(redisDb * db, robj * key)'/>
+<doc f='codebrowser/src/expire.c' l='320'>/* Track keys that received an EXPIRE or similar command in the context
+ * of a writable slave. */</doc>

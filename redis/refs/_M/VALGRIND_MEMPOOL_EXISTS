@@ -1,0 +1,2 @@
+<dec f='include/valgrind/valgrind.h' l='7041'/>
+<doc f='include/valgrind/valgrind.h' l='7040'>/* Return 1 if a mempool exists, else 0. */</doc>

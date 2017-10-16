@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1818' type='void pingCommand(client * c)'/>
+<use f='codebrowser/src/sentinel.c' l='426'/>
+<use f='codebrowser/src/sentinel.c' l='426'/>
+<use f='codebrowser/src/sentinel.c' l='426'/>
+<use f='codebrowser/src/sentinel.c' l='426'/>
+<use f='codebrowser/src/server.c' l='236' u='r'/>
+<use f='codebrowser/src/server.c' l='236' u='r'/>
+<use f='codebrowser/src/server.c' l='236' u='r'/>
+<use f='codebrowser/src/server.c' l='236' u='r'/>
+<use f='codebrowser/src/server.c' l='2397' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2435' u='r' c='processCommand'/>
+<def f='codebrowser/src/server.c' l='2641' ll='2662' type='void pingCommand(client * c)'/>
+<doc f='codebrowser/src/server.c' l='2639'>/* The PING command. It works in a different way if the client is in
+ * in Pub/Sub mode. */</doc>

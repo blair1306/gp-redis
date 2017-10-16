@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='245' type='void sdstolower(sds s)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='741' ll='745' type='void sdstolower(sds s)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='740'>/* Apply tolower() to every character of the sds string &apos;s&apos;. */</doc>
+<dec f='codebrowser/src/sds.h' l='245' type='void sdstolower(sds s)'/>
+<use f='codebrowser/src/config.c' l='202' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1539' u='c' c='rewriteConfigReadOldFile'/>
+<use f='codebrowser/src/redis-benchmark.c' l='544' u='c' c='parseOptions'/>
+<def f='codebrowser/src/sds.c' l='746' ll='750' type='void sdstolower(sds s)'/>
+<doc f='codebrowser/src/sds.c' l='745'>/* Apply tolower() to every character of the sds string &apos;s&apos;. */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/adlist.h' l='43' type='listNode *'/>
+<use f='codebrowser/src/adlist.c' l='192' u='w' c='listGetIterator'/>
+<use f='codebrowser/src/adlist.c' l='194' u='w' c='listGetIterator'/>
+<use f='codebrowser/src/adlist.c' l='206' u='w' c='listRewind'/>
+<use f='codebrowser/src/adlist.c' l='211' u='w' c='listRewindTail'/>
+<use f='codebrowser/src/adlist.c' l='231' u='r' c='listNext'/>
+<use f='codebrowser/src/adlist.c' l='235' u='w' c='listNext'/>
+<use f='codebrowser/src/adlist.c' l='237' u='w' c='listNext'/>
+<offset>0</offset>

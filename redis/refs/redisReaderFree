@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='99' type='void redisReaderFree(redisReader * r)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='624' u='c' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='652' u='c' c='redisReconnect'/>
+<def f='codebrowser/deps/hiredis/read.c' l='437' ll='443' type='void redisReaderFree(redisReader * r)'/>
+<use f='codebrowser/src/redis-cli.c' l='1966' u='c' c='pipeMode'/>

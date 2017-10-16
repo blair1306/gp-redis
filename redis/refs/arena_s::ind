@@ -1,0 +1,26 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='277' type='unsigned int'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='440' u='r' c='arena_run_split_large_helper'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='528' u='r' c='arena_run_split_small'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='597' u='r' c='arena_chunk_alloc_internal_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='607' u='r' c='arena_chunk_alloc_internal_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='766' u='r' c='arena_chunk_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1020' u='r' c='arena_chunk_ralloc_huge_expand_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1055' u='r' c='je_arena_chunk_ralloc_huge_expand'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1416' u='r' c='arena_purge_stashed'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1672' u='r' c='arena_run_decommit'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3012' u='w' c='je_arena_new'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='253' u='r' c='chunk_recycle'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='272' u='r' c='chunk_recycle'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='298' u='r' c='chunk_recycle'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='458' u='r' c='je_chunk_alloc_wrapper'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='489' u='r' c='chunk_record'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='532' u='r' c='chunk_record'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='585' u='r' c='je_chunk_dalloc_arena'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='590' u='r' c='je_chunk_dalloc_arena'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='593' u='r' c='je_chunk_dalloc_arena'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='614' u='r' c='je_chunk_dalloc_wrapper'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='666' u='r' c='je_chunk_purge_wrapper'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1304' u='r' c='thread_arena_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='206' u='r' c='huge_ralloc_no_move_shrink'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='655' u='r' c='je_arena_cleanup'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='891' type='int'/>
+<offset>864</offset>
+<doc f='codebrowser/src/server.h' l='891'>/* Number of times the cron function run */</doc>
+<use f='codebrowser/src/defrag.c' l='492' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='965' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='1003' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='1019' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='1127' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='1140' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='1143' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='1148' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='1153' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='1175' u='w' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1865' u='w' c='initServer'/>

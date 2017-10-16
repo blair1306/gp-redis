@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/src/ckh.c' l='91' ll='115' macro='1' type='_Bool ckh_try_bucket_insert(ckh_t * ckh, size_t bucket, const void * key, const void * data)'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='188' u='c' c='ckh_evict_reloc_insert'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='204' u='c' c='ckh_try_insert'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='209' u='c' c='ckh_try_insert'/>

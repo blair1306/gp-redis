@@ -1,0 +1,14 @@
+<use f='codebrowser/src/aof.c' l='242' u='c' c='startAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='1453' u='c' c='backgroundRewriteDoneHandler'/>
+<use f='codebrowser/src/aof.c' l='1505' u='c' c='backgroundRewriteDoneHandler'/>
+<use f='codebrowser/src/cluster.c' l='322' u='c' c='clusterSaveConfig'/>
+<use f='codebrowser/src/cluster.c' l='378' u='c' c='clusterLockConfig'/>
+<use f='codebrowser/src/config.c' l='1888' u='c' c='rewriteConfigOverwriteFile'/>
+<use f='codebrowser/src/debug.c' l='845' u='c' c='openDirectLogFiledes'/>
+<use f='codebrowser/src/redis-cli.c' l='1783' u='c' c='getRDB'/>
+<use f='codebrowser/src/replication.c' l='980' u='c' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='1812' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/sentinel.c' l='1855' u='c' c='sentinelFlushConfig'/>
+<use f='codebrowser/src/server.c' l='385' u='c' c='serverLogFromHandler'/>
+<use f='codebrowser/src/server.c' l='1926' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='3384' u='c' c='daemonize'/>

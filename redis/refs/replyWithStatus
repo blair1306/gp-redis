@@ -1,0 +1,6 @@
+<def f='codebrowser/src/module.c' l='991' ll='999' type='int replyWithStatus(RedisModuleCtx * ctx, const char * msg, char * prefix)'/>
+<use f='codebrowser/src/module.c' l='1016' u='c' c='RM_ReplyWithError'/>
+<use f='codebrowser/src/module.c' l='1025' u='c' c='RM_ReplyWithSimpleString'/>
+<doc f='codebrowser/src/module.c' l='988'>/* Reply with an error or simple string (status message). Used to implement
+ * ReplyWithSimpleString() and ReplyWithError().
+ * The function always returns REDISMODULE_OK. */</doc>

@@ -1,0 +1,5 @@
+<def f='codebrowser/src/aof.c' l='174' ll='194' type='ssize_t aofRewriteBufferWrite(int fd)'/>
+<use f='codebrowser/src/aof.c' l='1460' u='c' c='backgroundRewriteDoneHandler'/>
+<doc f='codebrowser/src/aof.c' l='171'>/* Write the buffer (possibly composed of multiple blocks) into the specified
+ * fd. If a short write or any other error happens -1 is returned,
+ * otherwise the number of bytes written is returned. */</doc>

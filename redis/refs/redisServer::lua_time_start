@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1169' type='mstime_t'/>
+<offset>22528</offset>
+<doc f='codebrowser/src/server.h' l='1169'>/* Start time of script, milliseconds time */</doc>
+<use f='codebrowser/src/db.c' l='1101' u='r' c='expireIfNeeded'/>
+<use f='codebrowser/src/scripting.c' l='1187' u='r' c='luaMaskCountHook'/>
+<use f='codebrowser/src/scripting.c' l='1304' u='w' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='2356' u='r' c='luaLdbLineHook'/>
+<use f='codebrowser/src/scripting.c' l='2386' u='w' c='luaLdbLineHook'/>

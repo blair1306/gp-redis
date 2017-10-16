@@ -1,0 +1,4 @@
+<def f='codebrowser/src/cluster.c' l='4832' ll='4849' type='void migrateCloseSocket(robj * host, robj * port)'/>
+<use f='codebrowser/src/cluster.c' l='5070' u='c' c='migrateCommand'/>
+<use f='codebrowser/src/cluster.c' l='5126' u='c' c='migrateCommand'/>
+<doc f='codebrowser/src/cluster.c' l='4831'>/* Free a migrate cached connection. */</doc>

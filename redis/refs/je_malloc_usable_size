@@ -1,0 +1,20 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='70' type='size_t je_malloc_usable_size(void * ptr)'/>
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2473' macro='1' type='size_t je_malloc_usable_size(void * ptr)'/>
+<use f='codebrowser/src/defrag.c' l='71' macro='1' u='c'/>
+<use f='codebrowser/src/networking.c' l='43' macro='1' u='c'/>
+<use f='codebrowser/src/networking.c' l='52' macro='1' u='c'/>
+<use f='codebrowser/src/object.c' l='760' macro='1' u='c'/>
+<use f='codebrowser/src/object.c' l='826' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='102' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='102' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='118' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='118' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='124' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='124' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='134' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='134' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='152' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='157' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='157' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='194' macro='1' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='194' macro='1' u='c'/>

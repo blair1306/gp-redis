@@ -1,0 +1,12 @@
+<dec f='include/x86_64-linux-gnu/bits/string2.h' l='760'/>
+<use f='codebrowser/deps/hiredis/net.c' l='460' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='90' u='c'/>
+<use f='codebrowser/deps/lua/src/lobject.c' l='184' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='740' u='c'/>
+<use f='codebrowser/src/anet.c' l='381' u='c'/>
+<use f='codebrowser/src/anet.c' l='523' u='c'/>
+<use f='codebrowser/src/anet.c' l='593' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2218' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3223' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='1464' u='c'/>
+<use f='codebrowser/src/server.c' l='3625' u='c'/>

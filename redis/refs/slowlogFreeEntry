@@ -1,0 +1,6 @@
+<def f='codebrowser/src/slowlog.c' l='100' ll='110' type='void slowlogFreeEntry(void * septr)'/>
+<use f='codebrowser/src/slowlog.c' l='117' u='r' c='slowlogInit'/>
+<doc f='codebrowser/src/slowlog.c' l='96'>/* Free a slow log entry. The argument is void so that the prototype of this
+ * function matches the one of the &apos;free&apos; method of adlist.c.
+ *
+ * This function will take care to release all the retained object. */</doc>

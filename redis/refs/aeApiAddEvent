@@ -1,0 +1,2 @@
+<def f='codebrowser/src/ae_epoll.c' l='73' ll='88' type='int aeApiAddEvent(aeEventLoop * eventLoop, int fd, int mask)'/>
+<use f='codebrowser/src/ae.c' l='145' u='c' c='aeCreateFileEvent'/>

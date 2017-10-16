@@ -1,0 +1,22 @@
+<dec f='codebrowser/src/server.h' l='466'/>
+<use f='codebrowser/src/aof.c' l='1114' u='c'/>
+<doc f='codebrowser/src/server.h' l='455'>/* The &quot;module&quot; object type is a special one that signals that the object
+ * is one directly managed by a Redis module. In this case the value points
+ * to a moduleValue struct, which contains the object value (which is only
+ * handled by the module itself) and the RedisModuleType struct which lists
+ * function pointers in order to serialize, deserialize, AOF-rewrite and
+ * free the object.
+ *
+ * Inside the RDB file, module types are encoded as OBJ_MODULE followed
+ * by a 64 bit module type ID, which has a 54 bits module-specific signature
+ * in order to dispatch the loading to the right module, plus a 10 bits
+ * encoding version. */</doc>
+<use f='codebrowser/src/db.c' l='791' u='c'/>
+<use f='codebrowser/src/debug.c' l='242' u='c'/>
+<use f='codebrowser/src/defrag.c' l='409' u='c'/>
+<use f='codebrowser/src/module.c' l='1412' u='c'/>
+<use f='codebrowser/src/object.c' l='239' u='c'/>
+<use f='codebrowser/src/object.c' l='318' u='c'/>
+<use f='codebrowser/src/object.c' l='787' u='c'/>
+<use f='codebrowser/src/rdb.c' l='625' u='c'/>
+<use f='codebrowser/src/rdb.c' l='765' u='c'/>

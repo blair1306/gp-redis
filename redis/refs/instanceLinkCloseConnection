@@ -1,0 +1,13 @@
+<def f='codebrowser/src/sentinel.c' l='953' ll='964' type='void instanceLinkCloseConnection(instanceLink * link, redisAsyncContext * c)'/>
+<use f='codebrowser/src/sentinel.c' l='1000' u='c' c='releaseInstanceLink'/>
+<use f='codebrowser/src/sentinel.c' l='1001' u='c' c='releaseInstanceLink'/>
+<use f='codebrowser/src/sentinel.c' l='1071' u='c' c='sentinelUpdateSentinelAddressInAllMasters'/>
+<use f='codebrowser/src/sentinel.c' l='1073' u='c' c='sentinelUpdateSentinelAddressInAllMasters'/>
+<use f='codebrowser/src/sentinel.c' l='1406' u='c' c='sentinelResetMaster'/>
+<use f='codebrowser/src/sentinel.c' l='1407' u='c' c='sentinelResetMaster'/>
+<use f='codebrowser/src/sentinel.c' l='1918' u='c' c='sentinelReconnectInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1941' u='c' c='sentinelReconnectInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1961' u='c' c='sentinelReconnectInstance'/>
+<use f='codebrowser/src/sentinel.c' l='3422' u='c' c='sentinelCheckSubjectivelyDown'/>
+<use f='codebrowser/src/sentinel.c' l='3435' u='c' c='sentinelCheckSubjectivelyDown'/>
+<doc f='codebrowser/src/sentinel.c' l='952'>/* Disconnect an hiredis connection in the context of an instance link. */</doc>

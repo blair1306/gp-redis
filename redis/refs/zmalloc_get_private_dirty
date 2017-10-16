@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/zmalloc.h' l='84' type='size_t zmalloc_get_private_dirty(long pid)'/>
+<use f='codebrowser/src/aof.c' l='1353' u='c' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/rdb.c' l='1066' u='c' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1877' u='c' c='rdbSaveToSlavesSockets'/>
+<def f='codebrowser/src/zmalloc.c' l='351' ll='353' type='size_t zmalloc_get_private_dirty(long pid)'/>

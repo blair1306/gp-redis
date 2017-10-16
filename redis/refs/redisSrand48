@@ -1,0 +1,5 @@
+<def f='codebrowser/src/rand.c' l='76' ll='78' type='void redisSrand48(int32_t seedval)'/>
+<dec f='codebrowser/src/rand.h' l='34' type='void redisSrand48(int32_t seedval)'/>
+<use f='codebrowser/src/scripting.c' l='707' u='c' c='luaRedisReplicateCommandsCommand'/>
+<use f='codebrowser/src/scripting.c' l='1128' u='c' c='redis_math_randomseed'/>
+<use f='codebrowser/src/scripting.c' l='1214' u='c' c='evalGenericCommand'/>

@@ -1,0 +1,33 @@
+<dec f='codebrowser/src/server.h' l='1712' type='robj * lookupKeyReadOrReply(client * c, robj * key, robj * reply)'/>
+<use f='codebrowser/src/bitops.c' l='574' u='c' c='getbitCommand'/>
+<use f='codebrowser/src/bitops.c' l='776' u='c' c='bitcountCommand'/>
+<def f='codebrowser/src/db.c' l='144' ll='148' type='robj * lookupKeyReadOrReply(client * c, robj * key, robj * reply)'/>
+<use f='codebrowser/src/geo.c' l='469' u='c' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='800' u='c' c='geodistCommand'/>
+<use f='codebrowser/src/t_hash.c' l='678' u='c' c='hgetCommand'/>
+<use f='codebrowser/src/t_hash.c' l='733' u='c' c='hlenCommand'/>
+<use f='codebrowser/src/t_hash.c' l='742' u='c' c='hstrlenCommand'/>
+<use f='codebrowser/src/t_hash.c' l='772' u='c' c='genericHgetallCommand'/>
+<use f='codebrowser/src/t_hash.c' l='811' u='c' c='hexistsCommand'/>
+<use f='codebrowser/src/t_hash.c' l='822' u='c' c='hscanCommand'/>
+<use f='codebrowser/src/t_list.c' l='309' u='c' c='llenCommand'/>
+<use f='codebrowser/src/t_list.c' l='315' u='c' c='lindexCommand'/>
+<use f='codebrowser/src/t_list.c' l='405' u='c' c='lrangeCommand'/>
+<use f='codebrowser/src/t_set.c' l='376' u='c' c='sismemberCommand'/>
+<use f='codebrowser/src/t_set.c' l='388' u='c' c='scardCommand'/>
+<use f='codebrowser/src/t_set.c' l='418' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='637' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='765' u='c' c='srandmemberCommand'/>
+<use f='codebrowser/src/t_set.c' l='1108' u='c' c='sscanCommand'/>
+<use f='codebrowser/src/t_string.c' l='160' u='c' c='getGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='254' u='c' c='getrangeCommand'/>
+<use f='codebrowser/src/t_string.c' l='470' u='c' c='strlenCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2379' u='c' c='zrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2522' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2683' u='c' c='zcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2760' u='c' c='zlexcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2870' u='c' c='genericZrangebylexCommand'/>
+<use f='codebrowser/src/t_zset.c' l='3015' u='c' c='zcardCommand'/>
+<use f='codebrowser/src/t_zset.c' l='3026' u='c' c='zscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='3042' u='c' c='zrankGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='3067' u='c' c='zscanCommand'/>

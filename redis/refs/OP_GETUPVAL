@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/lua/src/lopcodes.h' l='158' type='4'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='311' u='r' c='luaK_dischargevars'/>
+<doc f='codebrowser/deps/lua/src/lopcodes.h' l='158'>/*	A B	R(A) := UpValue[B]				*/</doc>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='387' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='457' u='r' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='527' c='getobjname'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='322' u='r' c='pushclosure'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='427' c='luaV_execute'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='732' u='r' c='luaV_execute'/>
+<use f='codebrowser/deps/lua/src/print.c' l='110' c='PrintCode'/>

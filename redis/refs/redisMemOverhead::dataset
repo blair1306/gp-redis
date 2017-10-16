@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='823' type='size_t'/>
+<offset>512</offset>
+<use f='codebrowser/src/object.c' l='896' u='w' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='904' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='1125' u='r' c='memoryCommand'/>
+<use f='codebrowser/src/server.c' l='2963' u='r' c='genRedisInfoString'/>

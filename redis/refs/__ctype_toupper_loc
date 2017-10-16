@@ -1,0 +1,8 @@
+<dec f='include/ctype.h' l='83' type='const __int32_t ** __ctype_toupper_loc()'/>
+<use f='include/ctype.h' l='223' u='c' c='toupper'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='751' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='751' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='88' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='88' macro='1' u='c'/>
+<use f='codebrowser/src/sds.c' l='756' macro='1' u='c'/>
+<use f='codebrowser/src/sds.c' l='756' macro='1' u='c'/>

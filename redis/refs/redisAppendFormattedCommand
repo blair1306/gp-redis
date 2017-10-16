@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='202' type='int redisAppendFormattedCommand(redisContext * c, const char * cmd, size_t len)'/>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='200'>/* Write a formatted command to the output buffer. Use these functions in blocking mode
+ * to get a pipeline of commands. */</doc>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='920' ll='927' type='int redisAppendFormattedCommand(redisContext * c, const char * cmd, size_t len)'/>

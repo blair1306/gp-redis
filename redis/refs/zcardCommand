@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1913' type='void zcardCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='196' u='r'/>
+<use f='codebrowser/src/server.c' l='196' u='r'/>
+<use f='codebrowser/src/server.c' l='196' u='r'/>
+<use f='codebrowser/src/server.c' l='196' u='r'/>
+<def f='codebrowser/src/t_zset.c' l='3011' ll='3019' type='void zcardCommand(client * c)'/>

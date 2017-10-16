@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1883' type='void sortCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='252' u='r'/>
+<use f='codebrowser/src/server.c' l='252' u='r'/>
+<use f='codebrowser/src/server.c' l='252' u='r'/>
+<use f='codebrowser/src/server.c' l='252' u='r'/>
+<def f='codebrowser/src/sort.c' l='189' ll='592' type='void sortCommand(client * c)'/>
+<doc f='codebrowser/src/sort.c' l='187'>/* The SORT command is the most complex command in Redis. Warning: this code
+ * is optimized for speed and a bit less for readability */</doc>

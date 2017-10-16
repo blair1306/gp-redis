@@ -1,0 +1,2 @@
+<dec f='include/linux/version.h' l='1'/>
+<use f='codebrowser/src/config.h' l='101' u='c'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1684' type='int pubsubUnsubscribeAllChannels(client * c, int notify)'/>
+<doc f='codebrowser/src/server.h' l='1683'>/* Pub / Sub */</doc>
+<use f='codebrowser/src/networking.c' l='815' u='c' c='freeClient'/>
+<def f='codebrowser/src/pubsub.c' l='178' ll='198' type='int pubsubUnsubscribeAllChannels(client * c, int notify)'/>
+<use f='codebrowser/src/pubsub.c' l='287' u='c' c='unsubscribeCommand'/>
+<doc f='codebrowser/src/pubsub.c' l='176'>/* Unsubscribe from all the channels. Return the number of channels the
+ * client was subscribed to. */</doc>

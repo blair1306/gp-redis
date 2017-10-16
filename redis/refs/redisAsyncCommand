@@ -1,0 +1,15 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='121' type='int redisAsyncCommand(redisAsyncContext * ac, redisCallbackFn * fn, void * privdata, const char * format)'/>
+<def f='codebrowser/deps/hiredis/async.c' l='665' ll='672' type='int redisAsyncCommand(redisAsyncContext * ac, redisCallbackFn * fn, void * privdata, const char * format)'/>
+<use f='codebrowser/src/sentinel.c' l='1878' u='c' c='sentinelSendAuthIfNeeded'/>
+<use f='codebrowser/src/sentinel.c' l='1893' u='c' c='sentinelSetClientName'/>
+<use f='codebrowser/src/sentinel.c' l='1955' u='c' c='sentinelReconnectInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2289' u='c' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2497' u='c' c='sentinelSendHello'/>
+<use f='codebrowser/src/sentinel.c' l='2543' u='c' c='sentinelSendPing'/>
+<use f='codebrowser/src/sentinel.c' l='2607' u='c' c='sentinelSendPeriodicCommands'/>
+<use f='codebrowser/src/sentinel.c' l='3582' u='c' c='sentinelAskMasterStateToOtherSentinels'/>
+<use f='codebrowser/src/sentinel.c' l='3762' u='c' c='sentinelSendSlaveOf'/>
+<use f='codebrowser/src/sentinel.c' l='3767' u='c' c='sentinelSendSlaveOf'/>
+<use f='codebrowser/src/sentinel.c' l='3772' u='c' c='sentinelSendSlaveOf'/>
+<use f='codebrowser/src/sentinel.c' l='3782' u='c' c='sentinelSendSlaveOf'/>
+<use f='codebrowser/src/sentinel.c' l='3787' u='c' c='sentinelSendSlaveOf'/>

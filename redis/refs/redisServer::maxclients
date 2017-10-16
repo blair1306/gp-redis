@@ -1,0 +1,25 @@
+<dec f='codebrowser/src/server.h' l='1117' type='unsigned int'/>
+<offset>20448</offset>
+<doc f='codebrowser/src/server.h' l='1116'>/* Limits */</doc>
+<doc f='codebrowser/src/server.h' l='1117'>/* Max number of simultaneous clients */</doc>
+<use f='codebrowser/src/config.c' l='312' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='313' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='854' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='859' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='862' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='863' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='864' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='868' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='871' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='874' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1266' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1991' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/networking.c' l='618' u='r' c='acceptCommonHandler'/>
+<use f='codebrowser/src/server.c' l='1410' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1562' u='r' c='restartServer'/>
+<use f='codebrowser/src/server.c' l='1587' u='r' c='adjustOpenFilesLimit'/>
+<use f='codebrowser/src/server.c' l='1593' u='w' c='adjustOpenFilesLimit'/>
+<use f='codebrowser/src/server.c' l='1625' u='r' c='adjustOpenFilesLimit'/>
+<use f='codebrowser/src/server.c' l='1626' u='w' c='adjustOpenFilesLimit'/>
+<use f='codebrowser/src/server.c' l='1650' u='r' c='adjustOpenFilesLimit'/>
+<use f='codebrowser/src/server.c' l='1818' u='r' c='initServer'/>

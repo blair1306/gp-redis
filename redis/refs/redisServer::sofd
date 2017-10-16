@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='911' type='int'/>
+<offset>3392</offset>
+<doc f='codebrowser/src/server.h' l='911'>/* Unix socket file descriptor */</doc>
+<use f='codebrowser/src/server.c' l='1359' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1835' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1837' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1841' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1845' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1911' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1911' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2502' u='r' c='closeListeningSockets'/>
+<use f='codebrowser/src/server.c' l='2502' u='r' c='closeListeningSockets'/>
+<use f='codebrowser/src/server.c' l='3852' u='r' c='main'/>

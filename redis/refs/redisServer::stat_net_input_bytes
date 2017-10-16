@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='959' type='long long'/>
+<offset>9024</offset>
+<doc f='codebrowser/src/server.h' l='959'>/* Bytes read from network. */</doc>
+<use f='codebrowser/src/networking.c' l='1401' u='w' c='readQueryFromClient'/>
+<use f='codebrowser/src/replication.c' l='1190' u='w' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/server.c' l='968' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1784' u='w' c='resetServerStats'/>
+<use f='codebrowser/src/server.c' l='3102' u='r' c='genRedisInfoString'/>

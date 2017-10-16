@@ -1,0 +1,24 @@
+<dec f='codebrowser/src/dict.h' l='162' type='void * dictFetchValue(dict * d, const void * key)'/>
+<use f='codebrowser/src/cluster.c' l='4785' u='c' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4839' u='c' c='migrateCloseSocket'/>
+<use f='codebrowser/src/config.c' l='1471' u='c' c='rewriteConfigAddLineNumberToOption'/>
+<use f='codebrowser/src/config.c' l='1570' u='c' c='rewriteConfigRewriteLine'/>
+<def f='codebrowser/src/dict.c' l='497' ll='502' type='void * dictFetchValue(dict * d, const void * key)'/>
+<use f='codebrowser/src/latency.c' l='99' u='c' c='latencyAddSample'/>
+<use f='codebrowser/src/latency.c' l='160' u='c' c='analyzeLatencyForEvent'/>
+<use f='codebrowser/src/latency.c' l='572' u='c' c='latencyCommand'/>
+<use f='codebrowser/src/module.c' l='3778' u='c' c='moduleUnload'/>
+<use f='codebrowser/src/multi.c' l='231' u='c' c='watchForKey'/>
+<use f='codebrowser/src/multi.c' l='261' u='c' c='unwatchAllKeys'/>
+<use f='codebrowser/src/multi.c' l='282' u='c' c='touchWatchedKey'/>
+<use f='codebrowser/src/pubsub.c' l='358' u='c' c='pubsubCommand'/>
+<use f='codebrowser/src/scripting.c' l='1388' u='c' c='evalGenericCommand'/>
+<use f='codebrowser/src/sentinel.c' l='1276' u='c' c='sentinelRedisInstanceLookupSlave'/>
+<use f='codebrowser/src/sentinel.c' l='1354' u='c' c='sentinelGetMasterByName'/>
+<use f='codebrowser/src/sentinel.c' l='2849' u='c' c='sentinelGetMasterByNameOrReplyError'/>
+<use f='codebrowser/src/server.c' l='2048' u='c' c='lookupCommand'/>
+<use f='codebrowser/src/server.c' l='2055' u='c' c='lookupCommandByCString'/>
+<use f='codebrowser/src/server.c' l='2068' u='c' c='lookupCommandOrOriginal'/>
+<use f='codebrowser/src/server.c' l='2070' u='c' c='lookupCommandOrOriginal'/>
+<use f='codebrowser/src/server.c' l='2743' u='c' c='commandCommand'/>
+<use f='codebrowser/src/t_list.c' l='672' u='c' c='unblockClientWaitingData'/>

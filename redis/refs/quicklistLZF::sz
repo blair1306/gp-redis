@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/quicklist.h' l='63' type='unsigned int'/>
+<offset>0</offset>
+<doc f='codebrowser/src/quicklist.h' l='63'>/* LZF size in bytes*/</doc>
+<use f='codebrowser/src/quicklist.c' l='190' u='w' c='__quicklistCompressNode'/>
+<use f='codebrowser/src/quicklist.c' l='192' u='r' c='__quicklistCompressNode'/>
+<use f='codebrowser/src/quicklist.c' l='197' u='r' c='__quicklistCompressNode'/>
+<use f='codebrowser/src/quicklist.c' l='222' u='r' c='__quicklistDecompressNode'/>
+<use f='codebrowser/src/quicklist.c' l='256' u='r' c='quicklistGetLzf'/>
+<use f='codebrowser/src/quicklist.c' l='1197' u='r' c='quicklistDup'/>

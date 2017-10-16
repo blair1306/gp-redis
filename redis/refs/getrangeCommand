@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1833' type='void getrangeCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='143' u='r'/>
+<use f='codebrowser/src/server.c' l='143' u='r'/>
+<use f='codebrowser/src/server.c' l='144' u='r'/>
+<use f='codebrowser/src/server.c' l='144' u='r'/>
+<use f='codebrowser/src/server.c' l='143' u='r'/>
+<use f='codebrowser/src/server.c' l='143' u='r'/>
+<use f='codebrowser/src/server.c' l='144' u='r'/>
+<use f='codebrowser/src/server.c' l='144' u='r'/>
+<def f='codebrowser/src/t_string.c' l='244' ll='283' type='void getrangeCommand(client * c)'/>

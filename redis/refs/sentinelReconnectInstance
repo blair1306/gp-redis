@@ -1,0 +1,5 @@
+<def f='codebrowser/src/sentinel.c' l='1903' ll='1970' type='void sentinelReconnectInstance(sentinelRedisInstance * ri)'/>
+<use f='codebrowser/src/sentinel.c' l='4233' u='c' c='sentinelHandleRedisInstance'/>
+<doc f='codebrowser/src/sentinel.c' l='1900'>/* Create the async connections for the instance link if the link
+ * is disconnected. Note that link-&gt;disconnected is true even if just
+ * one of the two links (commands and pub/sub) is missing. */</doc>

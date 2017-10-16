@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/rdb.h' l='122' type='int rdbSaveType(rio * rdb, unsigned char type)'/>
+<def f='codebrowser/src/rdb.c' l='77' ll='79' type='int rdbSaveType(rio * rdb, unsigned char type)'/>
+<use f='codebrowser/src/rdb.c' l='598' u='c' c='rdbSaveObjectType'/>
+<use f='codebrowser/src/rdb.c' l='601' u='c' c='rdbSaveObjectType'/>
+<use f='codebrowser/src/rdb.c' l='606' u='c' c='rdbSaveObjectType'/>
+<use f='codebrowser/src/rdb.c' l='608' u='c' c='rdbSaveObjectType'/>
+<use f='codebrowser/src/rdb.c' l='613' u='c' c='rdbSaveObjectType'/>
+<use f='codebrowser/src/rdb.c' l='615' u='c' c='rdbSaveObjectType'/>
+<use f='codebrowser/src/rdb.c' l='620' u='c' c='rdbSaveObjectType'/>
+<use f='codebrowser/src/rdb.c' l='622' u='c' c='rdbSaveObjectType'/>
+<use f='codebrowser/src/rdb.c' l='626' u='c' c='rdbSaveObjectType'/>
+<use f='codebrowser/src/rdb.c' l='816' u='c' c='rdbSaveKeyValuePair'/>
+<use f='codebrowser/src/rdb.c' l='829' u='c' c='rdbSaveAuxField'/>
+<use f='codebrowser/src/rdb.c' l='903' u='c' c='rdbSaveRio'/>
+<use f='codebrowser/src/rdb.c' l='917' u='c' c='rdbSaveRio'/>
+<use f='codebrowser/src/rdb.c' l='946' u='c' c='rdbSaveRio'/>

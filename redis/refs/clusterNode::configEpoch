@@ -1,0 +1,37 @@
+<dec f='codebrowser/src/cluster.h' l='109' type='uint64_t'/>
+<use f='codebrowser/src/cluster.c' l='229' u='w' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='543' u='w' c='clusterReset'/>
+<use f='codebrowser/src/cluster.c' l='680' u='w' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='954' u='r' c='clusterGetMaxEpoch'/>
+<use f='codebrowser/src/cluster.c' l='954' u='r' c='clusterGetMaxEpoch'/>
+<use f='codebrowser/src/cluster.c' l='993' u='r' c='clusterBumpConfigEpochWithoutConsensus'/>
+<use f='codebrowser/src/cluster.c' l='994' u='r' c='clusterBumpConfigEpochWithoutConsensus'/>
+<use f='codebrowser/src/cluster.c' l='997' u='w' c='clusterBumpConfigEpochWithoutConsensus'/>
+<use f='codebrowser/src/cluster.c' l='1002' u='r' c='clusterBumpConfigEpochWithoutConsensus'/>
+<use f='codebrowser/src/cluster.c' l='1057' u='r' c='clusterHandleConfigEpochCollision'/>
+<use f='codebrowser/src/cluster.c' l='1057' u='r' c='clusterHandleConfigEpochCollision'/>
+<use f='codebrowser/src/cluster.c' l='1063' u='w' c='clusterHandleConfigEpochCollision'/>
+<use f='codebrowser/src/cluster.c' l='1069' u='r' c='clusterHandleConfigEpochCollision'/>
+<use f='codebrowser/src/cluster.c' l='1547' u='r' c='clusterUpdateSlotsConfigWith'/>
+<use f='codebrowser/src/cluster.c' l='1675' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1676' u='w' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1924' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1947' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2032' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2038' u='w' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2240' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2528' u='r' c='clusterSendUpdate'/>
+<use f='codebrowser/src/cluster.c' l='2674' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2685' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2987' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2988' u='w' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2991' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='3882' u='r' c='clusterGenNodeDescription'/>
+<use f='codebrowser/src/cluster.c' l='4268' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4292' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4292' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4563' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4566' u='w' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4569' u='r' c='clusterCommand'/>
+<offset>448</offset>
+<doc f='codebrowser/src/cluster.h' l='109'>/* Last configEpoch observed for this node */</doc>

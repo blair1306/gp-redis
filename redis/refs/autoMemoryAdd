@@ -1,0 +1,10 @@
+<def f='codebrowser/src/module.c' l='683' ll='693' type='void autoMemoryAdd(RedisModuleCtx * ctx, int type, void * ptr)'/>
+<use f='codebrowser/src/module.c' l='764' u='c' c='RM_CreateString'/>
+<use f='codebrowser/src/module.c' l='783' u='c' c='RM_CreateStringPrintf'/>
+<use f='codebrowser/src/module.c' l='807' u='c' c='RM_CreateStringFromString'/>
+<use f='codebrowser/src/module.c' l='1385' u='c' c='RM_OpenKey'/>
+<use f='codebrowser/src/module.c' l='1621' u='c' c='RM_ListPop'/>
+<use f='codebrowser/src/module.c' l='1938' u='c' c='RM_ZsetRangeCurrentElement'/>
+<use f='codebrowser/src/module.c' l='2257' u='c' c='RM_HashGet'/>
+<use f='codebrowser/src/module.c' l='2643' u='c' c='RM_Call'/>
+<doc f='codebrowser/src/module.c' l='682'>/* Add a new object to release automatically when the callback returns. */</doc>

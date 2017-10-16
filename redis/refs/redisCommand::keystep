@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1223' type='int'/>
+<offset>448</offset>
+<doc f='codebrowser/src/server.h' l='1223'>/* The step between first and last key */</doc>
+<use f='codebrowser/src/db.c' l='1142' u='r' c='getKeysUsingCommandTable'/>
+<use f='codebrowser/src/module.c' l='641' u='w' c='RM_CreateCommand'/>
+<use f='codebrowser/src/server.c' l='2723' u='r' c='addReplyCommand'/>

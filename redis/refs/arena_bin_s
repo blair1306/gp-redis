@@ -1,0 +1,6 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='247' ll='273'/>
+<size>224</size>
+<mbr r='arena_bin_s::lock' o='0' t='malloc_mutex_t'/>
+<mbr r='arena_bin_s::runcur' o='320' t='arena_run_t *'/>
+<mbr r='arena_bin_s::runs' o='384' t='arena_run_tree_t'/>
+<mbr r='arena_bin_s::stats' o='1216' t='malloc_bin_stats_t'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1006' type='time_t'/>
+<use f='codebrowser/src/aof.c' l='230' u='w' c='stopAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='1383' u='w' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/aof.c' l='1580' u='r' c='backgroundRewriteDoneHandler'/>
+<use f='codebrowser/src/aof.c' l='1581' u='w' c='backgroundRewriteDoneHandler'/>
+<offset>14912</offset>
+<doc f='codebrowser/src/server.h' l='1006'>/* Current AOF rewrite start time. */</doc>
+<use f='codebrowser/src/server.c' l='1391' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3015' u='r' c='genRedisInfoString'/>

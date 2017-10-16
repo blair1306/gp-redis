@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/lmem.h' l='29'/>
+<use f='codebrowser/deps/lua/src/lfunc.c' l='45' u='c'/>
+<use f='codebrowser/deps/lua/src/lfunc.c' l='67' u='c'/>
+<use f='codebrowser/deps/lua/src/lfunc.c' l='116' u='c'/>
+<use f='codebrowser/deps/lua/src/ltable.c' l='359' u='c'/>

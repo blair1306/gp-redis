@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1891' type='void pexpireCommand(client * c)'/>
+<use f='codebrowser/src/aof.c' l='496' u='r' c='catAppendOnlyExpireAtCommand'/>
+<use f='codebrowser/src/aof.c' l='527' u='r' c='feedAppendOnlyFile'/>
+<def f='codebrowser/src/expire.c' l='441' ll='443' type='void pexpireCommand(client * c)'/>
+<doc f='codebrowser/src/expire.c' l='440'>/* PEXPIRE key milliseconds */</doc>
+<use f='codebrowser/src/server.c' l='230' u='r'/>
+<use f='codebrowser/src/server.c' l='230' u='r'/>
+<use f='codebrowser/src/server.c' l='230' u='r'/>
+<use f='codebrowser/src/server.c' l='230' u='r'/>

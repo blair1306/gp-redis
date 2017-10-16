@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='751' type='robj *[10]'/>
+<offset>2752</offset>
+<use f='codebrowser/src/replication.c' l='199' u='r' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/server.c' l='1303' u='w' c='createSharedObjects'/>

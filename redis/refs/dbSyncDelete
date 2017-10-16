@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1724' type='int dbSyncDelete(redisDb * db, robj * key)'/>
+<def f='codebrowser/src/db.c' l='238' ll='248' type='int dbSyncDelete(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/db.c' l='254' u='c' c='dbDelete'/>
+<use f='codebrowser/src/db.c' l='434' u='c' c='delGenericCommand'/>
+<use f='codebrowser/src/db.c' l='1121' u='c' c='expireIfNeeded'/>
+<doc f='codebrowser/src/db.c' l='237'>/* Delete a key, value, and associated expiration entry if any, from the DB */</doc>
+<use f='codebrowser/src/evict.c' l='511' u='c' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/expire.c' l='64' u='c' c='activeExpireCycleTryExpire'/>
+<use f='codebrowser/src/expire.c' l='409' u='c' c='expireGenericCommand'/>

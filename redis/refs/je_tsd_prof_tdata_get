@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='660' macro='1' type='prof_tdata_t * je_tsd_prof_tdata_get(tsd_t * tsd)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='382' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1781' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1896' macro='1' u='c'/>

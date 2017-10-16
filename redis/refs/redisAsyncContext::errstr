@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='67' type='char *'/>
+<use f='codebrowser/deps/hiredis/async.c' l='120' u='w' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='150' u='w' c='__redisAsyncCopyError'/>
+<offset>1728</offset>
+<use f='codebrowser/src/sentinel.c' l='1917' u='r' c='sentinelReconnectInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1940' u='r' c='sentinelReconnectInstance'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/dict.h' l='182' type='dictEntry ** dictFindEntryRefByPtrAndHash(dict * d, const void * oldptr, unsigned int hash)'/>
+<use f='codebrowser/src/defrag.c' l='257' u='c' c='replaceSateliteDictKeyPtrAndOrDefragDictEntry'/>
+<def f='codebrowser/src/dict.c' l='1007' ll='1025' type='dictEntry ** dictFindEntryRefByPtrAndHash(dict * d, const void * oldptr, unsigned int hash)'/>
+<doc f='codebrowser/src/dict.c' l='1002'>/* Finds the dictEntry reference by using pointer and pre-calculated hash.
+ * oldkey is a dead pointer and should not be accessed.
+ * the hash value should be provided using dictGetHash.
+ * no string / key comparison is performed.
+ * return value is the reference to the dictEntry if found, or NULL if not found. */</doc>

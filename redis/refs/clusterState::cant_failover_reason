@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/cluster.h' l='150' type='int'/>
+<use f='codebrowser/src/cluster.c' l='423' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='2754' u='r' c='clusterLogCantFailover'/>
+<use f='codebrowser/src/cluster.c' l='2758' u='w' c='clusterLogCantFailover'/>
+<use f='codebrowser/src/cluster.c' l='2867' u='w' c='clusterHandleSlaveFailover'/>
+<offset>4194944</offset>
+<doc f='codebrowser/src/cluster.h' l='150'>/* Why a slave is currently not able to
+                                   failover. See the CANT_FAILOVER_* macros. */</doc>

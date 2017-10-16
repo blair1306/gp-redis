@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/cluster.h' l='133' type='clusterNode *'/>
+<use f='codebrowser/src/cluster.c' l='188' u='r' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='189' u='w' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='271' u='r' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='411' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='442' u='w' c='clusterInit'/>
+<offset>0</offset>
+<doc f='codebrowser/src/cluster.h' l='133'>/* This node */</doc>
+<use f='codebrowser/src/module.c' l='2611' u='r' c='RM_Call'/>
+<use f='codebrowser/src/scripting.c' l='524' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/server.c' l='2358' u='r' c='processCommand'/>

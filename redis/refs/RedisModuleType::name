@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='502' type='char [10]'/>
+<offset>512</offset>
+<doc f='codebrowser/src/server.h' l='502'>/* 9 bytes name + null term. Charset: A-Z a-z 0-9 _- */</doc>
+<use f='codebrowser/src/db.c' l='793' u='r' c='typeCommand'/>
+<use f='codebrowser/src/module.c' l='2728' u='r' c='moduleTypeLookupModuleByName'/>
+<use f='codebrowser/src/module.c' l='2728' u='r' c='moduleTypeLookupModuleByName'/>
+<use f='codebrowser/src/module.c' l='2892' u='r' c='RM_CreateDataType'/>
+<use f='codebrowser/src/module.c' l='2892' u='r' c='RM_CreateDataType'/>
+<use f='codebrowser/src/module.c' l='2950' c='moduleRDBLoadError'/>
+<use f='codebrowser/src/module.c' l='3239' c='RM_EmitAOF'/>
+<use f='codebrowser/src/module.c' l='3253' c='RM_EmitAOF'/>

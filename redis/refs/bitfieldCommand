@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1831' type='void bitfieldCommand(client * c)'/>
+<def f='codebrowser/src/bitops.c' l='914' ll='1125' type='void bitfieldCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='141' u='r'/>
+<use f='codebrowser/src/server.c' l='141' u='r'/>
+<use f='codebrowser/src/server.c' l='141' u='r'/>
+<use f='codebrowser/src/server.c' l='141' u='r'/>

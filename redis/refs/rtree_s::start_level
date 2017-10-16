@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='89' type='unsigned int [4]'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='137' u='r' c='je_rtree_start_level'/>
+<offset>160</offset>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='55' u='w' c='je_rtree_new'/>

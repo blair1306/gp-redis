@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1183' type='int'/>
+<offset>22880</offset>
+<use f='codebrowser/src/config.c' l='415' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1027' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1309' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2035' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/db.c' l='1117' u='r' c='expireIfNeeded'/>
+<use f='codebrowser/src/db.c' l='1120' u='r' c='expireIfNeeded'/>
+<use f='codebrowser/src/expire.c' l='60' u='r' c='activeExpireCycleTryExpire'/>
+<use f='codebrowser/src/expire.c' l='61' u='r' c='activeExpireCycleTryExpire'/>
+<use f='codebrowser/src/expire.c' l='408' u='r' c='expireGenericCommand'/>
+<use f='codebrowser/src/expire.c' l='414' u='r' c='expireGenericCommand'/>
+<use f='codebrowser/src/server.c' l='1439' u='w' c='initServerConfig'/>

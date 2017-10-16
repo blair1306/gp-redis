@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='940' type='long long'/>
+<offset>7808</offset>
+<doc f='codebrowser/src/server.h' l='940'>/* Number of evicted keys (maxmemory) */</doc>
+<use f='codebrowser/src/evict.c' l='517' u='w' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/server.c' l='1764' u='w' c='resetServerStats'/>
+<use f='codebrowser/src/server.c' l='3111' u='r' c='genRedisInfoString'/>

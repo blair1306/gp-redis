@@ -1,0 +1,17 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='101' ll='136'/>
+<size>120</size>
+<mbr r='arena_stats_s::mapped' o='0' t='size_t'/>
+<mbr r='arena_stats_s::npurge' o='64' t='uint64_t'/>
+<mbr r='arena_stats_s::nmadvise' o='128' t='uint64_t'/>
+<mbr r='arena_stats_s::purged' o='192' t='uint64_t'/>
+<mbr r='arena_stats_s::metadata_mapped' o='256' t='size_t'/>
+<mbr r='arena_stats_s::metadata_allocated' o='320' t='size_t'/>
+<mbr r='arena_stats_s::allocated_large' o='384' t='size_t'/>
+<mbr r='arena_stats_s::nmalloc_large' o='448' t='uint64_t'/>
+<mbr r='arena_stats_s::ndalloc_large' o='512' t='uint64_t'/>
+<mbr r='arena_stats_s::nrequests_large' o='576' t='uint64_t'/>
+<mbr r='arena_stats_s::allocated_huge' o='640' t='size_t'/>
+<mbr r='arena_stats_s::nmalloc_huge' o='704' t='uint64_t'/>
+<mbr r='arena_stats_s::ndalloc_huge' o='768' t='uint64_t'/>
+<mbr r='arena_stats_s::lstats' o='832' t='malloc_large_stats_t *'/>
+<mbr r='arena_stats_s::hstats' o='896' t='malloc_huge_stats_t *'/>

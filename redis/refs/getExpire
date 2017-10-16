@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1707' type='long long getExpire(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/aof.c' l='1093' u='c' c='rewriteAppendOnlyFileRio'/>
+<use f='codebrowser/src/cluster.c' l='4968' u='c' c='migrateCommand'/>
+<use f='codebrowser/src/db.c' l='847' u='c' c='renameGenericCommand'/>
+<use f='codebrowser/src/db.c' l='917' u='c' c='moveCommand'/>
+<def f='codebrowser/src/db.c' l='1050' ll='1061' type='long long getExpire(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/db.c' l='1088' u='c' c='expireIfNeeded'/>
+<doc f='codebrowser/src/db.c' l='1048'>/* Return the expire time of the specified key, or -1 if no expire
+ * is associated with this key (i.e. the key is non volatile) */</doc>
+<use f='codebrowser/src/debug.c' l='152' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/expire.c' l='461' u='c' c='ttlGenericCommand'/>
+<use f='codebrowser/src/module.c' l='1451' u='c' c='RM_GetExpire'/>
+<use f='codebrowser/src/rdb.c' l='928' u='c' c='rdbSaveRio'/>

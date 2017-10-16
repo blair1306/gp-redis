@@ -1,0 +1,3 @@
+<def f='codebrowser/src/quicklist.c' l='388' ll='392' type='void _quicklistInsertNodeBefore(quicklist * quicklist, quicklistNode * old_node, quicklistNode * new_node)'/>
+<use f='codebrowser/src/quicklist.c' l='492' u='c' c='quicklistPushHead'/>
+<doc f='codebrowser/src/quicklist.c' l='387'>/* Wrappers for node inserting around existing node. */</doc>

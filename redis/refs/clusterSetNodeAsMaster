@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/cluster.c' l='73' type='void clusterSetNodeAsMaster(clusterNode * n)'/>
+<use f='codebrowser/src/cluster.c' l='515' u='c' c='clusterReset'/>
+<def f='codebrowser/src/cluster.c' l='1481' ll='1495' type='void clusterSetNodeAsMaster(clusterNode * n)'/>
+<use f='codebrowser/src/cluster.c' l='1843' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2035' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2803' u='c' c='clusterFailoverReplaceYourMaster'/>
+<doc f='codebrowser/src/cluster.c' l='1478'>/* Reconfigure the specified node &apos;n&apos; as a master. This function is called when
+ * a node that we believed to be a slave is now acting as master in order to
+ * update the state of the node. */</doc>

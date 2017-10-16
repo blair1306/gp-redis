@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1212' type='char *'/>
+<offset>0</offset>
+<use f='codebrowser/src/module.c' l='634' u='w' c='RM_CreateCommand'/>
+<use f='codebrowser/src/module.c' l='3798' u='r' c='moduleUnload'/>
+<use f='codebrowser/src/networking.c' l='1536' u='r' c='catClientInfoString'/>
+<use f='codebrowser/src/sentinel.c' l='456' u='r' c='initSentinel'/>
+<use f='codebrowser/src/server.c' l='1985' u='r' c='populateCommandTable'/>
+<use f='codebrowser/src/server.c' l='1988' u='r' c='populateCommandTable'/>
+<use f='codebrowser/src/server.c' l='2331' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2645' u='r' c='pingCommand'/>
+<use f='codebrowser/src/server.c' l='2695' u='r' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='3282' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/t_string.c' l='74' u='r' c='setGenericCommand'/>

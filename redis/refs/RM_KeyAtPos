@@ -1,0 +1,16 @@
+<def f='codebrowser/src/module.c' l='517' ll='522' type='void RM_KeyAtPos(RedisModuleCtx * ctx, int pos)'/>
+<use f='codebrowser/src/module.c' l='3964' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='503'>/* When a module command is called in order to obtain the position of
+ * keys, since it was flagged as &quot;getkeys-api&quot; during the registration,
+ * the command implementation checks for this special call using the
+ * RedisModule_IsKeysPositionRequest() API and uses this function in
+ * order to report keys, like in the following example:
+ *
+ *     if (RedisModule_IsKeysPositionRequest(ctx)) {
+ *         RedisModule_KeyAtPos(ctx,1);
+ *         RedisModule_KeyAtPos(ctx,2);
+ *     }
+ *
+ *  Note: in the example below the get keys API would not be needed since
+ *  keys are at fixed positions. This interface is only used for commands
+ *  with a more complex structure. */</doc>

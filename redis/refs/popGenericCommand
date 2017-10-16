@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1414' type='void popGenericCommand(client * c, int where)'/>
+<def f='codebrowser/src/t_list.c' l='367' ll='388' type='void popGenericCommand(client * c, int where)'/>
+<use f='codebrowser/src/t_list.c' l='391' u='c' c='lpopCommand'/>
+<use f='codebrowser/src/t_list.c' l='395' u='c' c='rpopCommand'/>

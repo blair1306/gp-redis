@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/linenoise/linenoise.c' l='700' ll='720' type='void linenoiseEditHistoryNext(struct linenoiseState * l, int dir)'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='861' u='c' c='linenoiseEdit'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='864' u='c' c='linenoiseEdit'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='888' u='c' c='linenoiseEdit'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='891' u='c' c='linenoiseEdit'/>

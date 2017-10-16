@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='190'/>
+<doc f='codebrowser/src/server.h' l='186'>/* When configuring the server eventloop, we setup it so that the total number
+ * of file descriptors we can handle are server.maxclients + RESERVED_FDS +
+ * a few more to stay safe. Since RESERVED_FDS defaults to 32, we add 96
+ * in order to make sure of not over provisioning more than 128 fds. */</doc>
+<use f='codebrowser/src/config.c' l='868' u='c'/>
+<use f='codebrowser/src/config.c' l='871' u='c'/>
+<use f='codebrowser/src/server.c' l='1818' u='c'/>

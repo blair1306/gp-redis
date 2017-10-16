@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='281'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3005' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3025' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='280'>/* Return the smallest quantum multiple that is &gt;= a. */</doc>

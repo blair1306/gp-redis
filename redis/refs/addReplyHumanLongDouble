@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1357' type='void addReplyHumanLongDouble(client * c, long double d)'/>
+<use f='codebrowser/src/geo.c' l='629' u='c' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='630' u='c' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='775' u='c' c='geoposCommand'/>
+<use f='codebrowser/src/geo.c' l='776' u='c' c='geoposCommand'/>
+<def f='codebrowser/src/networking.c' l='476' ll='480' type='void addReplyHumanLongDouble(client * c, long double d)'/>
+<doc f='codebrowser/src/networking.c' l='473'>/* Add a long double as a bulk reply, but uses a human readable formatting
+ * of the double instead of exposing the crude behavior of doubles to the
+ * dear user. */</doc>

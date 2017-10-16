@@ -1,0 +1,11 @@
+<def f='codebrowser/src/config.c' l='125' ll='128' type='const char * configEnumGetNameOrUnknown(configEnum * ce, int val)'/>
+<use f='codebrowser/src/config.c' l='132' u='c' c='evictPolicyToString'/>
+<use f='codebrowser/src/config.c' l='1198' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1198' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1198' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1198' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1198' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1684' u='c' c='rewriteConfigEnumOption'/>
+<use f='codebrowser/src/config.c' l='1698' u='c' c='rewriteConfigSyslogfacilityOption'/>
+<doc f='codebrowser/src/config.c' l='123'>/* Wrapper for configEnumGetName() returning &quot;unknown&quot; insetad of NULL if
+ * there is no match. */</doc>

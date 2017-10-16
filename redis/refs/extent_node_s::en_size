@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='19' type='size_t'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='114' u='r' c='je_extent_node_size_get'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='164' u='w' c='je_extent_node_size_set'/>
+<offset>128</offset>

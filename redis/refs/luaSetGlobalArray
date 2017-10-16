@@ -1,0 +1,5 @@
+<def f='codebrowser/src/scripting.c' l='1078' ll='1087' type='void luaSetGlobalArray(lua_State * lua, char * var, robj ** elev, int elec)'/>
+<use f='codebrowser/src/scripting.c' l='1290' u='c' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1291' u='c' c='evalGenericCommand'/>
+<doc f='codebrowser/src/scripting.c' l='1076'>/* Set an array of Redis String Objects as a Lua array (table) stored into a
+ * global variable. */</doc>

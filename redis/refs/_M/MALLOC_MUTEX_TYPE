@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/mutex.h' l='15'/>
+<use f='codebrowser/deps/jemalloc/src/mutex.c' l='99' u='c'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='919' type='int'/>
+<offset>4352</offset>
+<doc f='codebrowser/src/server.h' l='919'>/* True if clients are currently paused */</doc>
+<use f='codebrowser/src/networking.c' l='1966' u='r' c='pauseClients'/>
+<use f='codebrowser/src/networking.c' l='1968' u='w' c='pauseClients'/>
+<use f='codebrowser/src/networking.c' l='1974' u='r' c='clientsArePaused'/>
+<use f='codebrowser/src/networking.c' l='1981' u='w' c='clientsArePaused'/>
+<use f='codebrowser/src/networking.c' l='1996' u='r' c='clientsArePaused'/>
+<use f='codebrowser/src/server.c' l='1813' u='w' c='initServer'/>

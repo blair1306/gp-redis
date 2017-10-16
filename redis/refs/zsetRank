@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1584' type='long zsetRank(robj * zobj, sds ele, int reverse)'/>
+<def f='codebrowser/src/t_zset.c' l='1426' ll='1479' type='long zsetRank(robj * zobj, sds ele, int reverse)'/>
+<use f='codebrowser/src/t_zset.c' l='3046' u='c' c='zrankGenericCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='1415'>/* Given a sorted set object returns the 0-based rank of the object or
+ * -1 if the object does not exist.
+ *
+ * For rank we mean the position of the element in the sorted collection
+ * of elements. So the first element has rank 0, the second rank 1, and so
+ * forth up to length-1 elements.
+ *
+ * If &apos;reverse&apos; is false, the rank is returned considering as first element
+ * the one with the lowest score. Otherwise if &apos;reverse&apos; is non-zero
+ * the rank is computed considering as element with rank 0 the one with
+ * the highest score. */</doc>

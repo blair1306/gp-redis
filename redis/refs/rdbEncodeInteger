@@ -1,0 +1,7 @@
+<def f='codebrowser/src/rdb.c' l='204' ll='224' type='int rdbEncodeInteger(long long value, unsigned char * enc)'/>
+<use f='codebrowser/src/rdb.c' l='283' u='c' c='rdbTryIntegerEncoding'/>
+<use f='codebrowser/src/rdb.c' l='411' u='c' c='rdbSaveLongLongAsStringObject'/>
+<doc f='codebrowser/src/rdb.c' l='200'>/* Encodes the &quot;value&quot; argument as integer when it fits in the supported ranges
+ * for encoded types. If the function successfully encodes the integer, the
+ * representation is stored in the buffer pointer to by &quot;enc&quot; and the string
+ * length is returned. Otherwise 0 is returned. */</doc>

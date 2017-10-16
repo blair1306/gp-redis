@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='231' type='socklen_t'/>
+<offset>64</offset>
+<doc f='include/x86_64-linux-gnu/bits/socket.h' l='231'>/* Length of address data.  */</doc>
+<use f='codebrowser/src/server.c' l='3637' u='w' c='redisSupervisedSystemd'/>

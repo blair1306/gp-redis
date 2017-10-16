@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1444' type='int isSdsRepresentableAsLongLong(sds s, long long * llval)'/>
+<def f='codebrowser/src/object.c' l='360' ll='362' type='int isSdsRepresentableAsLongLong(sds s, long long * llval)'/>
+<use f='codebrowser/src/object.c' l='370' u='c' c='isObjectRepresentableAsLongLong'/>
+<use f='codebrowser/src/rdb.c' l='1199' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_set.c' l='43' u='c' c='setTypeCreate'/>
+<use f='codebrowser/src/t_set.c' l='63' u='c' c='setTypeAdd'/>
+<use f='codebrowser/src/t_set.c' l='96' u='c' c='setTypeRemove'/>
+<use f='codebrowser/src/t_set.c' l='112' u='c' c='setTypeIsMember'/>

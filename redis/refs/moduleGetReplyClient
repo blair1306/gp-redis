@@ -1,0 +1,23 @@
+<def f='codebrowser/src/module.c' l='971' ll='977' type='client * moduleGetReplyClient(RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/module.c' l='982' u='c' c='RM_ReplyWithLongLong'/>
+<use f='codebrowser/src/module.c' l='992' u='c' c='replyWithStatus'/>
+<use f='codebrowser/src/module.c' l='1040' u='c' c='RM_ReplyWithArray'/>
+<use f='codebrowser/src/module.c' l='1081' u='c' c='RM_ReplySetArrayLength'/>
+<use f='codebrowser/src/module.c' l='1105' u='c' c='RM_ReplyWithStringBuffer'/>
+<use f='codebrowser/src/module.c' l='1115' u='c' c='RM_ReplyWithString'/>
+<use f='codebrowser/src/module.c' l='1126' u='c' c='RM_ReplyWithNull'/>
+<use f='codebrowser/src/module.c' l='1139' u='c' c='RM_ReplyWithCallReply'/>
+<use f='codebrowser/src/module.c' l='1153' u='c' c='RM_ReplyWithDouble'/>
+<doc f='codebrowser/src/module.c' l='958'>/* Return the client object the `RM_Reply*` functions should target.
+ * Normally this is just `ctx-&gt;client`, that is the client that called
+ * the module command, however in the case of thread safe contexts there
+ * is no directly associated client (since it would not be safe to access
+ * the client from a thread), so instead the blocked client object referenced
+ * in the thread safe context, has a fake client that we just use to accumulate
+ * the replies. Later, when the client is unblocked, the accumulated replies
+ * are appended to the actual client.
+ *
+ * The function returns the client pointer depending on the context, or
+ * NULL if there is no potential client. This happens when we are in the
+ * context of a thread safe context that was not initialized with a blocked
+ * client object. */</doc>

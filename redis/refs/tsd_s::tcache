@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='535' type='tcache_t *'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='660' macro='1' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='660' macro='1' u='w'/>
+<offset>64</offset>

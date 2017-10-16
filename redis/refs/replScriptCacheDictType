@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1299' type='dictType'/>
+<use f='codebrowser/src/replication.c' l='2284' u='a' c='replicationScriptCacheInit'/>
+<def f='codebrowser/src/server.c' l='684' ll='691' type='dictType'/>
+<doc f='codebrowser/src/server.c' l='681'>/* Replication cached script dict (server.repl_scriptcache_dict).
+ * Keys are sds SHA1 strings, while values are not used at all in the current
+ * implementation. */</doc>

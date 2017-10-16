@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='74' macro='1' type='_Bool je_ckh_insert(tsd_t * tsd, ckh_t * ckh, const void * key, const void * data)'/>
+<def f='codebrowser/deps/jemalloc/src/ckh.c' l='459' macro='1' type='_Bool je_ckh_insert(tsd_t * tsd, ckh_t * ckh, const void * key, const void * data)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='730' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='808' macro='1' u='c'/>

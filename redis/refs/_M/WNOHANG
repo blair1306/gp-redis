@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/waitflags.h' l='25'/>
+<doc f='include/x86_64-linux-gnu/bits/waitflags.h' l='24'>/* Bits in the third argument to `waitpid&apos;.  */</doc>
+<use f='codebrowser/src/sentinel.c' l='799' u='c'/>
+<use f='codebrowser/src/server.c' l='1049' u='c'/>

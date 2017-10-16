@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='828' type='float'/>
+<offset>768</offset>
+<use f='codebrowser/src/object.c' l='820' u='w' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='940' u='r' c='getMemoryDoctorReport'/>
+<use f='codebrowser/src/object.c' l='1134' u='r' c='memoryCommand'/>
+<use f='codebrowser/src/server.c' l='2972' u='r' c='genRedisInfoString'/>

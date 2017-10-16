@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/geohash.h' l='97' type='void geohashGetCoordRange(GeoHashRange * long_range, GeoHashRange * lat_range)'/>
+<use f='codebrowser/src/geo.c' l='352' u='c' c='membersOfAllNeighbors'/>
+<doc f='codebrowser/src/geohash.h' l='93'>/*
+ * 0:success
+ * -1:failed
+ */</doc>
+<def f='codebrowser/src/geohash.c' l='112' ll='119' type='void geohashGetCoordRange(GeoHashRange * long_range, GeoHashRange * lat_range)'/>
+<use f='codebrowser/src/geohash.c' l='155' u='c' c='geohashEncodeType'/>
+<use f='codebrowser/src/geohash.c' l='198' u='c' c='geohashDecodeType'/>
+<use f='codebrowser/src/geohash_helper.c' l='134' u='c' c='geohashGetAreasByRadius'/>

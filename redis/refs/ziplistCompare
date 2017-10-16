@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/ziplist.h' l='47' type='unsigned int ziplistCompare(unsigned char * p, unsigned char * s, unsigned int slen)'/>
+<use f='codebrowser/src/quicklist.c' l='1043' u='c' c='quicklistCompare'/>
+<use f='codebrowser/src/t_zset.c' l='953' u='c' c='zzlFind'/>
+<use f='codebrowser/src/t_zset.c' l='1443' u='c' c='zsetRank'/>
+<def f='codebrowser/src/ziplist.c' l='1081' ll='1104' type='unsigned int ziplistCompare(unsigned char * p, unsigned char * sstr, unsigned int slen)'/>
+<doc f='codebrowser/src/ziplist.c' l='1080'>/* Return 1 if equal. */</doc>

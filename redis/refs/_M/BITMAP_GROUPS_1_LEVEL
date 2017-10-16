@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='39'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='35'>/*
+ * Assuming the number of levels, number of groups required for a given number
+ * of bits.
+ */</doc>

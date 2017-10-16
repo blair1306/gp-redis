@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='301' macro='1' type='void je_prof_gdump()'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='162' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='305' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='1642' macro='1' type='void je_prof_gdump()'/>

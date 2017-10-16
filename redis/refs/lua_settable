@@ -1,0 +1,31 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='190' type='void lua_settable(lua_State * L, int idx)'/>
+<def f='codebrowser/deps/lua/src/lapi.c' l='645' ll='654' macro='1' type='void lua_settable(lua_State * L, int idx)'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='371' u='c' c='luaL_findtable'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='276' u='c' c='ll_register'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='554' u='c' c='mp_decode_to_lua_array'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='566' u='c' c='mp_decode_to_lua_hash'/>
+<use f='codebrowser/src/scripting.c' l='169' u='c' c='redisProtocolToLuaType_Status'/>
+<use f='codebrowser/src/scripting.c' l='179' u='c' c='redisProtocolToLuaType_Error'/>
+<use f='codebrowser/src/scripting.c' l='198' u='c' c='redisProtocolToLuaType_MultiBulk'/>
+<use f='codebrowser/src/scripting.c' l='229' u='c' c='luaPushError'/>
+<use f='codebrowser/src/scripting.c' l='679' u='c' c='luaRedisReturnSingleFieldTable'/>
+<use f='codebrowser/src/scripting.c' l='921' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='926' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='931' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='935' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='939' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='943' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='947' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='952' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='957' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='960' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='965' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='970' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='974' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='978' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='982' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='986' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='991' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='996' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='1006' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='1010' u='c' c='scriptingInit'/>

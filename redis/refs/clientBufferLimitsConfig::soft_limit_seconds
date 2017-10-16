@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='783' type='time_t'/>
+<offset>128</offset>
+<use f='codebrowser/src/config.c' l='671' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='974' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1369' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1772' u='r' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/config.c' l='1773' u='r' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/config.c' l='1784' u='r' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/networking.c' l='1888' u='r' c='checkClientOutputBufferLimits'/>

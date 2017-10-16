@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1579' type='void zsetConvert(robj * zobj, int encoding)'/>
+<use f='codebrowser/src/rdb.c' l='1250' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1385' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/sort.c' l='306' u='c' c='sortCommand'/>
+<def f='codebrowser/src/t_zset.c' l='1115' ll='1184' type='void zsetConvert(robj * zobj, int encoding)'/>
+<use f='codebrowser/src/t_zset.c' l='1195' u='c' c='zsetConvertToZiplistIfNeeded'/>
+<use f='codebrowser/src/t_zset.c' l='1308' u='c' c='zsetAdd'/>
+<use f='codebrowser/src/t_zset.c' l='1310' u='c' c='zsetAdd'/>

@@ -1,0 +1,46 @@
+<dec f='include/stdio.h' l='237' type='int fclose(FILE * __stream)'/>
+<doc f='include/stdio.h' l='233'>/* Close STREAM.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1174' u='c' c='linenoiseHistorySave'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1197' u='c' c='linenoiseHistoryLoad'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='583' u='c' c='luaL_loadfile'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='121' u='c' c='io_fclose'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='335' u='c' c='readable'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='181' u='c' c='pmain'/>
+<use f='codebrowser/src/aof.c' l='649' u='c' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='762' u='c' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1228' u='c' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1242' u='c' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/cluster.c' l='109' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='274' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='290' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/config.c' l='284' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='780' u='c' c='loadServerConfig'/>
+<use f='codebrowser/src/config.c' l='1548' u='c' c='rewriteConfigReadOldFile'/>
+<use f='codebrowser/src/debug.c' l='982' u='c' c='memtest_test_linux_anonymous_maps'/>
+<use f='codebrowser/src/geo.c' l='345' macro='1' u='c'/>
+<use f='codebrowser/src/geo.c' l='357' macro='1' u='c'/>
+<use f='codebrowser/src/geo.c' l='358' macro='1' u='c'/>
+<use f='codebrowser/src/geo.c' l='359' macro='1' u='c'/>
+<use f='codebrowser/src/geo.c' l='360' macro='1' u='c'/>
+<use f='codebrowser/src/geo.c' l='361' macro='1' u='c'/>
+<use f='codebrowser/src/geo.c' l='362' macro='1' u='c'/>
+<use f='codebrowser/src/geo.c' l='374' macro='1' u='c'/>
+<use f='codebrowser/src/latency.c' l='70' u='c' c='THPIsEnabled'/>
+<use f='codebrowser/src/latency.c' l='73' u='c' c='THPIsEnabled'/>
+<use f='codebrowser/src/rdb.c' l='1017' u='c' c='rdbSave'/>
+<use f='codebrowser/src/rdb.c' l='1042' u='c' c='rdbSave'/>
+<use f='codebrowser/src/rdb.c' l='1662' u='c' c='rdbLoad'/>
+<use f='codebrowser/src/redis-check-aof.c' l='231' u='c' c='redis_check_aof_main'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='315' u='c' c='redis_check_rdb'/>
+<use f='codebrowser/src/redis-cli.c' l='1269' u='c' c='cliLoadPreferences'/>
+<use f='codebrowser/src/redis-cli.c' l='1428' u='c' c='evalMode'/>
+<use f='codebrowser/src/server.c' l='351' u='c' c='serverLogRaw'/>
+<use f='codebrowser/src/server.c' l='1674' u='c' c='checkTcpBacklogSettings'/>
+<use f='codebrowser/src/server.c' l='3344' u='c' c='linuxOvercommitMemoryValue'/>
+<use f='codebrowser/src/server.c' l='3347' u='c' c='linuxOvercommitMemoryValue'/>
+<use f='codebrowser/src/server.c' l='3371' u='c' c='createPidFile'/>
+<use f='codebrowser/src/util.c' l='560' u='c' c='getRandomHexChars'/>
+<use f='codebrowser/src/zmalloc.c' l='340' u='c' c='zmalloc_get_smap_bytes_by_field'/>

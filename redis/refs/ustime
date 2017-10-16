@@ -1,0 +1,24 @@
+<dec f='codebrowser/src/server.h' l='1324' type='long long ustime()'/>
+<use f='codebrowser/src/aof.c' l='1344' u='c' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/aof.c' l='1369' u='c' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/aof.c' l='1442' u='c' c='backgroundRewriteDoneHandler'/>
+<use f='codebrowser/src/aof.c' l='1560' u='c' c='backgroundRewriteDoneHandler'/>
+<doc f='codebrowser/src/server.h' l='1323'>/* Utils */</doc>
+<use f='codebrowser/src/defrag.c' l='525' u='c' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='533' u='c' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='549' u='c' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='563' u='c' c='activeDefragCycle'/>
+<use f='codebrowser/src/expire.c' l='106' u='c' c='activeExpireCycle'/>
+<use f='codebrowser/src/expire.c' l='212' u='c' c='activeExpireCycle'/>
+<use f='codebrowser/src/rdb.c' l='1057' u='c' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1080' u='c' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1860' u='c' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/rdb.c' l='1955' u='c' c='rdbSaveToSlavesSockets'/>
+<def f='codebrowser/src/server.c' l='400' ll='408' type='long long ustime()'/>
+<use f='codebrowser/src/server.c' l='412' u='c' c='mstime'/>
+<use f='codebrowser/src/server.c' l='2205' u='c' c='call'/>
+<use f='codebrowser/src/server.c' l='2207' u='c' c='call'/>
+<use f='codebrowser/src/server.c' l='3524' u='c' c='loadDataFromDisk'/>
+<use f='codebrowser/src/server.c' l='3527' u='c' c='loadDataFromDisk'/>
+<use f='codebrowser/src/server.c' l='3532' u='c' c='loadDataFromDisk'/>
+<doc f='codebrowser/src/server.c' l='399'>/* Return the UNIX time in microseconds */</doc>

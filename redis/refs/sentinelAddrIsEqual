@@ -1,0 +1,5 @@
+<def f='codebrowser/src/sentinel.c' l='552' ll='554' type='int sentinelAddrIsEqual(sentinelAddr * a, sentinelAddr * b)'/>
+<use f='codebrowser/src/sentinel.c' l='1476' u='c' c='sentinelResetMasterAndChangeAddress'/>
+<use f='codebrowser/src/sentinel.c' l='1486' u='c' c='sentinelResetMasterAndChangeAddress'/>
+<use f='codebrowser/src/sentinel.c' l='1794' u='c' c='rewriteConfigSentinelOption'/>
+<doc f='codebrowser/src/sentinel.c' l='551'>/* Return non-zero if two addresses are equal. */</doc>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='251' type='sds sdsjoin(char ** argv, int argc, char * sep)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='1066' ll='1075' type='sds sdsjoin(char ** argv, int argc, char * sep)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='1064'>/* Join an array of C strings using the specified separator (also a C string).
+ * Returns the result as an sds string. */</doc>
+<dec f='codebrowser/src/sds.h' l='251' type='sds sdsjoin(char ** argv, int argc, char * sep)'/>
+<use f='codebrowser/src/config.c' l='1407' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1802' u='c' c='rewriteConfigBindOption'/>
+<def f='codebrowser/src/sds.c' l='1071' ll='1080' type='sds sdsjoin(char ** argv, int argc, char * sep)'/>
+<doc f='codebrowser/src/sds.c' l='1069'>/* Join an array of C strings using the specified separator (also a C string).
+ * Returns the result as an sds string. */</doc>

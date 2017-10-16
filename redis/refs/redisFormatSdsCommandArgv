@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='130' type='int redisFormatSdsCommandArgv(sds * target, int argc, const char ** argv, const size_t * argvlen)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='678' u='c' c='redisAsyncCommandArgv'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='477' ll='519' type='int redisFormatSdsCommandArgv(sds * target, int argc, const char ** argv, const size_t * argvlen)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='965' u='c' c='redisAppendCommandArgv'/>
+<doc f='codebrowser/deps/hiredis/hiredis.c' l='471'>/* Format a command according to the Redis protocol using an sds string and
+ * sdscatfmt for the processing of arguments. This function takes the
+ * number of arguments, an array with arguments and an array with their
+ * lengths. If the latter is set to NULL, strlen will be used to compute the
+ * argument lengths.
+ */</doc>

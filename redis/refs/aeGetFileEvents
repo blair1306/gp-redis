@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/ae.h' l='112' type='int aeGetFileEvents(aeEventLoop * eventLoop, int fd)'/>
+<def f='codebrowser/src/ae.c' l='174' ll='179' type='int aeGetFileEvents(aeEventLoop * eventLoop, int fd)'/>
+<use f='codebrowser/src/aof.c' l='165' u='c' c='aofRewriteBufferAppend'/>
+<use f='codebrowser/src/networking.c' l='1512' u='c' c='catClientInfoString'/>
+<use f='codebrowser/src/networking.c' l='1938' u='c' c='flushSlavesOutputBuffers'/>

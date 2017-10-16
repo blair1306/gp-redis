@@ -1,0 +1,14 @@
+<def f='codebrowser/src/server.h' l='845' ll='853'/>
+<size>64</size>
+<doc f='codebrowser/src/server.h' l='837'>/* This structure can be optionally passed to RDB save/load functions in
+ * order to implement additional functionalities, by storing and loading
+ * metadata to the RDB file.
+ *
+ * Currently the only use is to select a DB at load time, useful in
+ * replication in order to make sure that chained slaves (slaves of slaves)
+ * select the correct DB and are able to accept the stream coming from the
+ * top-level master. */</doc>
+<mbr r='rdbSaveInfo::repl_stream_db' o='0' t='int'/>
+<mbr r='rdbSaveInfo::repl_id_is_set' o='32' t='int'/>
+<mbr r='rdbSaveInfo::repl_id' o='64' t='char [41]'/>
+<mbr r='rdbSaveInfo::repl_offset' o='448' t='long long'/>

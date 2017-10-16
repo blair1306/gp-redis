@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/quicklist.h' l='159' type='size_t quicklistGetLzf(const quicklistNode * node, void ** data)'/>
+<def f='codebrowser/src/quicklist.c' l='253' ll='257' type='size_t quicklistGetLzf(const quicklistNode * node, void ** data)'/>
+<doc f='codebrowser/src/quicklist.c' l='250'>/* Extract the raw LZF data from this quicklistNode.
+ * Pointer to LZF data is assigned to &apos;*data&apos;.
+ * Return value is the length of compressed LZF data. */</doc>
+<use f='codebrowser/src/rdb.c' l='662' u='c' c='rdbSaveObject'/>

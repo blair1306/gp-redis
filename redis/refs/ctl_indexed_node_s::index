@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='30' type='const ctl_named_node_t *(*)(const size_t *, size_t, size_t)'/>
+<offset>64</offset>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='853' u='r' c='ctl_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='973' u='r' c='je_ctl_bymib'/>

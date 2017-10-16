@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='1652' type='sds setTypeNextObject(setTypeIterator * si)'/>
+<use f='codebrowser/src/debug.c' l='169' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/sort.c' l='384' u='c' c='sortCommand'/>
+<def f='codebrowser/src/t_set.c' l='177' ll='193' type='sds setTypeNextObject(setTypeIterator * si)'/>
+<use f='codebrowser/src/t_set.c' l='996' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1012' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1038' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1058' u='c' c='sunionDiffGenericCommand'/>
+<doc f='codebrowser/src/t_set.c' l='170'>/* The not copy on write friendly version but easy to use version
+ * of setTypeNext() is setTypeNextObject(), returning new SDS
+ * strings. So if you don&apos;t retain a pointer to this object you should call
+ * sdsfree() against it.
+ *
+ * This function is the way to go for write operations where COW is not
+ * an issue. */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1384' type='int handleClientsWithPendingWrites()'/>
+<def f='codebrowser/src/networking.c' l='989' ll='1013' type='int handleClientsWithPendingWrites()'/>
+<use f='codebrowser/src/networking.c' l='2017' u='c' c='processEventsWhileBlocked'/>
+<doc f='codebrowser/src/networking.c' l='985'>/* This function is called just before entering the event loop, in the hope
+ * we can just write the replies to the client output buffer without any
+ * need to use a syscall in order to install the writable event handler,
+ * get it called, and so forth. */</doc>
+<use f='codebrowser/src/server.c' l='1228' u='c' c='beforeSleep'/>

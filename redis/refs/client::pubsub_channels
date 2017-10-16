@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/server.h' l='722' type='dict *'/>
+<offset>3520</offset>
+<doc f='codebrowser/src/server.h' l='722'>/* channels a client is interested in (SUBSCRIBE) */</doc>
+<use f='codebrowser/src/networking.c' l='133' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='817' u='r' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='1527' u='r' c='catClientInfoString'/>
+<use f='codebrowser/src/networking.c' l='1527' u='r' c='catClientInfoString'/>
+<use f='codebrowser/src/pubsub.c' l='52' u='r' c='clientSubscriptionsCount'/>
+<use f='codebrowser/src/pubsub.c' l='52' u='r' c='clientSubscriptionsCount'/>
+<use f='codebrowser/src/pubsub.c' l='64' u='r' c='pubsubSubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='97' u='r' c='pubsubUnsubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='118' u='r' c='pubsubUnsubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='118' u='r' c='pubsubUnsubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='169' u='r' c='pubsubUnsubscribePattern'/>
+<use f='codebrowser/src/pubsub.c' l='169' u='r' c='pubsubUnsubscribePattern'/>
+<use f='codebrowser/src/pubsub.c' l='179' u='r' c='pubsubUnsubscribeAllChannels'/>
+<use f='codebrowser/src/pubsub.c' l='193' u='r' c='pubsubUnsubscribeAllChannels'/>
+<use f='codebrowser/src/pubsub.c' l='193' u='r' c='pubsubUnsubscribeAllChannels'/>
+<use f='codebrowser/src/pubsub.c' l='218' u='r' c='pubsubUnsubscribeAllPatterns'/>
+<use f='codebrowser/src/pubsub.c' l='218' u='r' c='pubsubUnsubscribeAllPatterns'/>

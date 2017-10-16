@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='498' type='moduleTypeRewriteFunc'/>
+<use f='codebrowser/src/aof.c' l='1042' u='r' c='rewriteModuleObject'/>
+<offset>256</offset>
+<use f='codebrowser/src/module.c' l='2888' u='w' c='RM_CreateDataType'/>

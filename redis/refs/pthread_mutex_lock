@@ -1,0 +1,13 @@
+<dec f='include/pthread.h' l='762' type='int pthread_mutex_lock(pthread_mutex_t * __mutex)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/mutex.h' l='85' u='c' c='je_malloc_mutex_lock'/>
+<doc f='include/pthread.h' l='761'>/* Lock a mutex.  */</doc>
+<use f='codebrowser/src/bio.c' l='138' u='c' c='bioCreateBackgroundJob'/>
+<use f='codebrowser/src/bio.c' l='162' u='c' c='bioProcessBackgroundJobs'/>
+<use f='codebrowser/src/bio.c' l='212' u='c' c='bioProcessBackgroundJobs'/>
+<use f='codebrowser/src/bio.c' l='221' u='c' c='bioPendingJobsOfType'/>
+<use f='codebrowser/src/bio.c' l='239' u='c' c='bioWaitStepOfType'/>
+<use f='codebrowser/src/module.c' l='3447' u='c' c='RM_UnblockClient'/>
+<use f='codebrowser/src/module.c' l='3476' u='c' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='3541' u='c' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='3639' u='c' c='moduleAcquireGIL'/>
+<use f='codebrowser/src/module.c' l='3700' u='c' c='moduleInitModulesSystem'/>

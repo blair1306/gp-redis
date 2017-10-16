@@ -1,0 +1,36 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='238' type='sds sdstrim(sds s, const char * cset)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='681' ll='694' type='sds sdstrim(sds s, const char * cset)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='667'>/* Remove the part of the string from left and from right composed just of
+ * contiguous characters found in &apos;cset&apos;, that is a null terminted C string.
+ *
+ * After the call, the modified sds string is no longer valid and all the
+ * references must be substituted with the new pointer returned by the call.
+ *
+ * Example:
+ *
+ * s = sdsnew(&quot;AA...AA.a.aa.aHelloWorld     :::&quot;);
+ * s = sdstrim(s,&quot;Aa. :&quot;);
+ * printf(&quot;%s\n&quot;, s);
+ *
+ * Output will be just &quot;Hello World&quot;.
+ */</doc>
+<dec f='codebrowser/src/sds.h' l='238' type='sds sdstrim(sds s, const char * cset)'/>
+<use f='codebrowser/src/config.c' l='185' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1514' u='c' c='rewriteConfigReadOldFile'/>
+<use f='codebrowser/src/hyperloglog.c' l='1516' u='c' c='pfdebugCommand'/>
+<def f='codebrowser/src/sds.c' l='686' ll='699' type='sds sdstrim(sds s, const char * cset)'/>
+<doc f='codebrowser/src/sds.c' l='672'>/* Remove the part of the string from left and from right composed just of
+ * contiguous characters found in &apos;cset&apos;, that is a null terminted C string.
+ *
+ * After the call, the modified sds string is no longer valid and all the
+ * references must be substituted with the new pointer returned by the call.
+ *
+ * Example:
+ *
+ * s = sdsnew(&quot;AA...AA.a.aa.aHelloWorld     :::&quot;);
+ * s = sdstrim(s,&quot;Aa. :&quot;);
+ * printf(&quot;%s\n&quot;, s);
+ *
+ * Output will be just &quot;Hello World&quot;.
+ */</doc>
+<use f='codebrowser/src/util.c' l='628' u='c' c='getAbsolutePath'/>

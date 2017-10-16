@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/server.h' l='529' type='size_t'/>
+<use f='codebrowser/src/aof.c' l='1041' macro='1' u='w'/>
+<offset>0</offset>
+<doc f='codebrowser/src/server.h' l='529'>/* Bytes read / written so far. */</doc>
+<use f='codebrowser/src/module.c' l='2951' u='r' c='moduleRDBLoadError'/>
+<use f='codebrowser/src/module.c' l='2963' u='w' c='RM_SaveUnsigned'/>
+<use f='codebrowser/src/module.c' l='2967' u='w' c='RM_SaveUnsigned'/>
+<use f='codebrowser/src/module.c' l='3017' u='w' c='RM_SaveString'/>
+<use f='codebrowser/src/module.c' l='3021' u='w' c='RM_SaveString'/>
+<use f='codebrowser/src/module.c' l='3035' u='w' c='RM_SaveStringBuffer'/>
+<use f='codebrowser/src/module.c' l='3039' u='w' c='RM_SaveStringBuffer'/>
+<use f='codebrowser/src/module.c' l='3094' u='w' c='RM_SaveDouble'/>
+<use f='codebrowser/src/module.c' l='3098' u='w' c='RM_SaveDouble'/>
+<use f='codebrowser/src/module.c' l='3130' u='w' c='RM_SaveFloat'/>
+<use f='codebrowser/src/module.c' l='3134' u='w' c='RM_SaveFloat'/>
+<use f='codebrowser/src/rdb.c' l='770' macro='1' u='w'/>
+<use f='codebrowser/src/rdb.c' l='776' u='w' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='782' u='w' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='788' u='r' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='1411' macro='1' u='w'/>

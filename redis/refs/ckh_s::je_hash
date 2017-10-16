@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='58' macro='1' type='ckh_hash_t *'/>
+<offset>192</offset>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='77' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='158' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='200' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='386' macro='1' u='w'/>

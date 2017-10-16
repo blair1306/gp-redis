@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/anet.h' l='53' type='int anetTcpNonBlockConnect(char * err, char * addr, int port)'/>
+<def f='codebrowser/src/anet.c' l='353' ll='356' type='int anetTcpNonBlockConnect(char * err, char * addr, int port)'/>
+<use f='codebrowser/src/cluster.c' l='4803' u='c' c='migrateGetSocket'/>

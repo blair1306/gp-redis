@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/hiredis/net.h' l='47' type='int redisContextConnectBindTcp(redisContext * c, const char * addr, int port, const struct timeval * timeout, const char * source_addr)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='658' u='c' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='714' u='c' c='redisConnectBindNonBlock'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='723' u='c' c='redisConnectBindNonBlockWithReuse'/>
+<def f='codebrowser/deps/hiredis/net.c' l='423' ll='427' type='int redisContextConnectBindTcp(redisContext * c, const char * addr, int port, const struct timeval * timeout, const char * source_addr)'/>

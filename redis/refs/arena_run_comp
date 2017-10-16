@@ -1,0 +1,10 @@
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='78' ll='88' macro='1' type='int arena_run_comp(arena_chunk_map_misc_t * a, arena_chunk_map_misc_t * b)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='92' u='c' c='arena_run_tree_next'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='92' u='c' c='arena_run_tree_prev'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='92' u='c' c='arena_run_tree_search'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='92' u='c' c='arena_run_tree_nsearch'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='92' u='c' c='arena_run_tree_psearch'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='92' u='c' c='arena_run_tree_insert'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='92' u='c' c='arena_run_tree_remove'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='92' u='c' c='arena_run_tree_iter_start'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='92' u='c' c='arena_run_tree_reverse_iter_start'/>

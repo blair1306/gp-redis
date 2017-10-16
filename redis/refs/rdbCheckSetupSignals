@@ -1,0 +1,2 @@
+<def f='codebrowser/src/redis-check-rdb.c' l='163' ll='173' type='void rdbCheckSetupSignals()'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='352' u='c' c='redis_check_rdb_main'/>

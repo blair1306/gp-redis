@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/rdb.h' l='143' type='ssize_t rdbSaveRawString(rio * rdb, unsigned char * s, size_t len)'/>
+<use f='codebrowser/src/module.c' l='3037' u='c' c='RM_SaveStringBuffer'/>
+<def f='codebrowser/src/rdb.c' l='375' ll='405' type='ssize_t rdbSaveRawString(rio * rdb, unsigned char * s, size_t len)'/>
+<use f='codebrowser/src/rdb.c' l='434' u='c' c='rdbSaveStringObject'/>
+<use f='codebrowser/src/rdb.c' l='666' u='c' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='685' u='c' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='693' u='c' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='703' u='c' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='720' u='c' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='739' u='c' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='753' u='c' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='756' u='c' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='830' u='c' c='rdbSaveAuxField'/>
+<use f='codebrowser/src/rdb.c' l='831' u='c' c='rdbSaveAuxField'/>
+<doc f='codebrowser/src/rdb.c' l='373'>/* Save a string object as [len][data] on disk. If the object is a string
+ * representation of an integer value we try to save it in a special form */</doc>

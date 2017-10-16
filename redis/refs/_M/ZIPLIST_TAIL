@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/ziplist.h' l='35'/>
+<use f='codebrowser/src/quicklist.c' l='508' u='c'/>
+<use f='codebrowser/src/quicklist.c' l='512' u='c'/>
+<use f='codebrowser/src/quicklist.c' l='881' u='c'/>
+<use f='codebrowser/src/quicklist.c' l='911' u='c'/>
+<use f='codebrowser/src/quicklist.c' l='932' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1276' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1278' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1354' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1355' u='c'/>
+<use f='codebrowser/src/t_hash.c' l='230' u='c'/>
+<use f='codebrowser/src/t_hash.c' l='232' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='984' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='985' u='c'/>

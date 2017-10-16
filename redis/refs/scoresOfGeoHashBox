@@ -1,0 +1,5 @@
+<def f='codebrowser/src/geo.c' l='289' ll='313' type='void scoresOfGeoHashBox(GeoHashBits hash, GeoHashFix52Bits * min, GeoHashFix52Bits * max)'/>
+<use f='codebrowser/src/geo.c' l='321' u='c' c='membersOfGeoHashBox'/>
+<doc f='codebrowser/src/geo.c' l='286'>/* Compute the sorted set scores min (inclusive), max (exclusive) we should
+ * query in order to retrieve all the elements inside the specified area
+ * &apos;hash&apos;. The two scores are returned by reference in *min and *max. */</doc>

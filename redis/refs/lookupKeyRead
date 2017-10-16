@@ -1,0 +1,23 @@
+<dec f='codebrowser/src/server.h' l='1710' type='robj * lookupKeyRead(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/bitops.c' l='628' u='c' c='bitopCommand'/>
+<use f='codebrowser/src/bitops.c' l='837' u='c' c='bitposCommand'/>
+<use f='codebrowser/src/bitops.c' l='996' u='c' c='bitfieldCommand'/>
+<use f='codebrowser/src/cluster.c' l='4678' u='c' c='dumpCommand'/>
+<use f='codebrowser/src/cluster.c' l='4933' u='c' c='migrateCommand'/>
+<use f='codebrowser/src/cluster.c' l='5310' u='c' c='getNodeByQuery'/>
+<def f='codebrowser/src/db.c' l='130' ll='132' type='robj * lookupKeyRead(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/db.c' l='145' u='c' c='lookupKeyReadOrReply'/>
+<doc f='codebrowser/src/db.c' l='128'>/* Like lookupKeyReadWithFlags(), but does not use any flag, which is the
+ * common case. */</doc>
+<use f='codebrowser/src/expire.c' l='501' u='c' c='touchCommand'/>
+<use f='codebrowser/src/geo.c' l='704' u='c' c='geohashCommand'/>
+<use f='codebrowser/src/geo.c' l='757' u='c' c='geoposCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1209' u='c' c='pfcountCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1290' u='c' c='pfmergeCommand'/>
+<use f='codebrowser/src/module.c' l='1369' u='c' c='RM_OpenKey'/>
+<use f='codebrowser/src/sort.c' l='109' u='c' c='lookupKeyByPattern'/>
+<use f='codebrowser/src/sort.c' l='202' u='c' c='sortCommand'/>
+<use f='codebrowser/src/t_hash.c' l='690' u='c' c='hmgetCommand'/>
+<use f='codebrowser/src/t_set.c' l='802' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='939' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='290' u='c' c='mgetCommand'/>

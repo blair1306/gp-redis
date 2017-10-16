@@ -1,0 +1,10 @@
+<def f='codebrowser/src/module.c' l='2305' ll='2316' type='void moduleParseCallReply(RedisModuleCallReply * reply)'/>
+<use f='codebrowser/src/module.c' l='2377' u='c' c='moduleParseCallReply_Array'/>
+<use f='codebrowser/src/module.c' l='2429' u='c' c='RM_CallReplyLength'/>
+<use f='codebrowser/src/module.c' l='2443' u='c' c='RM_CallReplyArrayElement'/>
+<use f='codebrowser/src/module.c' l='2451' u='c' c='RM_CallReplyInteger'/>
+<use f='codebrowser/src/module.c' l='2458' u='c' c='RM_CallReplyStringPtr'/>
+<use f='codebrowser/src/module.c' l='2468' u='c' c='RM_CreateStringFromCallReply'/>
+<doc f='codebrowser/src/module.c' l='2302'>/* Do nothing if REDISMODULE_REPLYFLAG_TOPARSE is false, otherwise
+ * use the protcol of the reply in reply-&gt;proto in order to fill the
+ * reply with parsed data according to the reply type. */</doc>

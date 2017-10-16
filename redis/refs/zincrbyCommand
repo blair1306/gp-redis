@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1904' type='void zincrbyCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='181' u='r'/>
+<use f='codebrowser/src/server.c' l='181' u='r'/>
+<use f='codebrowser/src/server.c' l='181' u='r'/>
+<use f='codebrowser/src/server.c' l='181' u='r'/>
+<def f='codebrowser/src/t_zset.c' l='1612' ll='1614' type='void zincrbyCommand(client * c)'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='99' type='struct dict *'/>
+<use f='codebrowser/deps/hiredis/async.c' l='138' u='w' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='296' u='r' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='300' u='r' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='381' u='r' c='__redisGetSubscribeCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='615' u='r' c='__redisAsyncCommand'/>
+<offset>192</offset>

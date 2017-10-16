@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1598' type='int zslLexValueLteMax(sds value, zlexrangespec * spec)'/>
+<use f='codebrowser/src/module.c' l='1992' u='c' c='RM_ZsetRangeNext'/>
+<dec f='codebrowser/src/t_zset.c' l='67' type='int zslLexValueLteMax(sds value, zlexrangespec * spec)'/>
+<use f='codebrowser/src/t_zset.c' l='376' u='c' c='zslDeleteRangeByLex'/>
+<def f='codebrowser/src/t_zset.c' l='589' ll='593' type='int zslLexValueLteMax(sds value, zlexrangespec * spec)'/>
+<use f='codebrowser/src/t_zset.c' l='608' u='c' c='zslIsInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='635' u='c' c='zslFirstInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='652' u='c' c='zslLastInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='864' u='c' c='zzlLexValueLteMax'/>
+<use f='codebrowser/src/t_zset.c' l='2982' u='c' c='genericZrangebylexCommand'/>

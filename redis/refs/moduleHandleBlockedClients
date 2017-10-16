@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1316' type='void moduleHandleBlockedClients()'/>
+<def f='codebrowser/src/module.c' l='3472' ll='3544' type='void moduleHandleBlockedClients()'/>
+<doc f='codebrowser/src/module.c' l='3464'>/* This function will check the moduleUnblockedClients queue in order to
+ * call the reply callback and really unblock the client.
+ *
+ * Clients end into this list because of calls to RM_UnblockClient(),
+ * however it is possible that while the module was doing work for the
+ * blocked client, it was terminated by Redis (for timeout or other reasons).
+ * When this happens the RedisModuleBlockedClient structure in the queue
+ * will have the &apos;client&apos; field set to NULL. */</doc>
+<use f='codebrowser/src/server.c' l='1218' u='c' c='beforeSleep'/>

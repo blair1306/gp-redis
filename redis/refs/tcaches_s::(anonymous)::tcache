@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='93' type='tcache_t *'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='419' u='r' c='je_tcaches_get'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='420' u='w' c='je_tcaches_get'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='421' u='r' c='je_tcaches_get'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='455' u='w' c='je_tcaches_create'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='459' u='w' c='je_tcaches_create'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='471' u='r' c='tcaches_elm_flush'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='473' u='r' c='tcaches_elm_flush'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='474' u='w' c='tcaches_elm_flush'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/slowlog.h' l='45' type='void slowlogInit()'/>
+<use f='codebrowser/src/server.c' l='1948' u='c' c='initServer'/>
+<doc f='codebrowser/src/slowlog.h' l='44'>/* Exported API */</doc>
+<def f='codebrowser/src/slowlog.c' l='114' ll='118' type='void slowlogInit()'/>
+<doc f='codebrowser/src/slowlog.c' l='112'>/* Initialize the slow log. This function should be called a single time
+ * at server startup. */</doc>

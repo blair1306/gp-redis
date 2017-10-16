@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='66'/>
+<use f='codebrowser/deps/hiredis/async.c' l='268' u='c'/>
+<use f='codebrowser/deps/hiredis/async.c' l='270' u='c'/>
+<use f='codebrowser/deps/hiredis/async.c' l='326' u='c'/>
+<use f='codebrowser/deps/hiredis/async.c' l='360' u='c'/>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='65'>/* Flag that is set when an async callback is executed. */</doc>

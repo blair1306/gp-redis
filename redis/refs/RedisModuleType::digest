@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='500' type='moduleTypeDigestFunc'/>
+<offset>384</offset>
+<use f='codebrowser/src/debug.c' l='247' u='r' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='248' u='r' c='computeDatasetDigest'/>
+<use f='codebrowser/src/module.c' l='2890' u='w' c='RM_CreateDataType'/>

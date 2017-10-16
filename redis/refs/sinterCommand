@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1873' type='void sinterCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='172' u='r'/>
+<use f='codebrowser/src/server.c' l='172' u='r'/>
+<use f='codebrowser/src/server.c' l='178' u='r'/>
+<use f='codebrowser/src/server.c' l='178' u='r'/>
+<use f='codebrowser/src/server.c' l='172' u='r'/>
+<use f='codebrowser/src/server.c' l='172' u='r'/>
+<use f='codebrowser/src/server.c' l='178' u='r'/>
+<use f='codebrowser/src/server.c' l='178' u='r'/>
+<def f='codebrowser/src/t_set.c' l='915' ll='917' type='void sinterCommand(client * c)'/>

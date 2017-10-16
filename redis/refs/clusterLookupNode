@@ -1,0 +1,19 @@
+<dec f='codebrowser/src/cluster.c' l='59' type='clusterNode * clusterLookupNode(char * name)'/>
+<use f='codebrowser/src/cluster.c' l='161' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='215' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='247' u='c' c='clusterLoadConfig'/>
+<def f='codebrowser/src/cluster.c' l='913' ll='921' type='clusterNode * clusterLookupNode(char * name)'/>
+<use f='codebrowser/src/cluster.c' l='1319' u='c' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1338' u='c' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1667' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1846' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1958' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2030' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='4186' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4198' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4210' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4401' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4420' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4457' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4481' u='c' c='clusterCommand'/>
+<doc f='codebrowser/src/cluster.c' l='912'>/* Node lookup by name */</doc>

@@ -1,0 +1,5 @@
+<def f='codebrowser/src/quicklist.c' l='579' ll='603' type='void __quicklistDelNode(quicklist * quicklist, quicklistNode * node)'/>
+<use f='codebrowser/src/quicklist.c' l='621' u='c' c='quicklistDelIndex'/>
+<use f='codebrowser/src/quicklist.c' l='716' u='c' c='_quicklistZiplistMerge'/>
+<use f='codebrowser/src/quicklist.c' l='1020' u='c' c='quicklistDelRange'/>
+<use f='codebrowser/src/quicklist.c' l='574' u='c' c='quicklistDelRange'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/cluster.c' l='60' type='int clusterNodeAddSlave(clusterNode * master, clusterNode * slave)'/>
+<use f='codebrowser/src/cluster.c' l='221' u='c' c='clusterLoadConfig'/>
+<def f='codebrowser/src/cluster.c' l='816' ll='828' type='int clusterNodeAddSlave(clusterNode * master, clusterNode * slave)'/>
+<use f='codebrowser/src/cluster.c' l='1864' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='3815' u='c' c='clusterSetMaster'/>

@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='896' ll='898' type='int RM_StringCompare(robj * a, robj * b)'/>
+<use f='codebrowser/src/module.c' l='3989' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='893'>/* Compare two string objects, returning -1, 0 or 1 respectively if
+ * a &lt; b, a == b, a &gt; b. Strings are compared byte by byte as two
+ * binary blobs without any encoding care / collation attempt. */</doc>

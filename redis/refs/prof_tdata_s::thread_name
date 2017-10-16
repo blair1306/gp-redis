@@ -1,0 +1,16 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='189' type='char *'/>
+<offset>192</offset>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1274' u='r' c='prof_tdata_dump_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1275' u='r' c='prof_tdata_dump_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1275' u='r' c='prof_tdata_dump_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1725' u='w' c='prof_tdata_init_impl'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1786' u='r' c='prof_tdata_destroy_locked'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1787' u='r' c='prof_tdata_destroy_locked'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1828' u='r' c='je_prof_tdata_reinit'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1829' u='r' c='je_prof_tdata_reinit'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1934' u='r' c='je_prof_thread_name_get'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1934' u='r' c='je_prof_thread_name_get'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1981' u='r' c='je_prof_thread_name_set'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1982' u='r' c='je_prof_thread_name_set'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1984' u='w' c='je_prof_thread_name_set'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1987' u='w' c='je_prof_thread_name_set'/>

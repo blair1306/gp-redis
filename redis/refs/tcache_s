@@ -1,0 +1,7 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='76' ll='88'/>
+<size>64</size>
+<mbr r='tcache_s::link' o='0' t='struct (anonymous struct at /home/jon/workspace/redis/deps/jemalloc/include/jemalloc/internal/tcache.h:77:2)'/>
+<mbr r='tcache_s::prof_accumbytes' o='128' t='uint64_t'/>
+<mbr r='tcache_s::ev_cnt' o='192' t='unsigned int'/>
+<mbr r='tcache_s::next_gc_bin' o='224' t='szind_t'/>
+<mbr r='tcache_s::tbins' o='256' t='tcache_bin_t [1]'/>

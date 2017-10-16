@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/geohash_helper.h' l='54' type='GeoHashRadius geohashGetAreasByRadius(double longitude, double latitude, double radius_meters)'/>
+<def f='codebrowser/src/geohash_helper.c' l='116' ll='197' type='GeoHashRadius geohashGetAreasByRadius(double longitude, double latitude, double radius_meters)'/>
+<use f='codebrowser/src/geohash_helper.c' l='201' u='c' c='geohashGetAreasByRadiusWGS84'/>
+<doc f='codebrowser/src/geohash_helper.c' l='114'>/* Return a set of areas (center + 8) that are able to cover a range query
+ * for the specified position and radius. */</doc>

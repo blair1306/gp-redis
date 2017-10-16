@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='45' ll='49' type='const _Bool'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1247' u='r' c='config_lazy_lock_ctl'/>

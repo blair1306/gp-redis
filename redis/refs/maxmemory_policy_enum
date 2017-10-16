@@ -1,0 +1,6 @@
+<def f='codebrowser/src/config.c' l='46' ll='56' type='configEnum [9]'/>
+<use f='codebrowser/src/config.c' l='132' u='r' c='evictPolicyToString'/>
+<use f='codebrowser/src/config.c' l='320' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1145' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1317' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1993' u='r' c='rewriteConfig'/>

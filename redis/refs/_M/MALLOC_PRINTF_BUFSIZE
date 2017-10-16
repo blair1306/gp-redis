@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='41'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='37'>/*
+ * Size of stack-allocated buffer used by malloc_{,v,vc}printf().  This must be
+ * large enough for all possible uses within jemalloc.
+ */</doc>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='607' u='c'/>

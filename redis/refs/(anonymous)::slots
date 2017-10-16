@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/cluster.h' l='204' type='unsigned char [2048]'/>
+<use f='codebrowser/src/cluster.c' l='2045' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2529' u='r' c='clusterSendUpdate'/>
+<offset>384</offset>
+<doc f='codebrowser/src/cluster.h' l='204'>/* Slots bitmap. */</doc>

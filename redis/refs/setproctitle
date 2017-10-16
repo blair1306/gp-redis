@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/config.h' l='128' type='void setproctitle(const char * fmt)'/>
+<use f='codebrowser/src/server.c' l='3569' u='c' c='redisSetProcTitle'/>
+<def f='codebrowser/src/setproctitle.c' l='216' ll='257' type='void setproctitle(const char * fmt)'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/src/server.c' l='3375' ll='3390' type='void daemonize()'/>
+<use f='codebrowser/src/server.c' l='3826' u='c' c='main'/>

@@ -1,0 +1,18 @@
+<dec f='include/stdlib.h' l='468' type='void * calloc(size_t __nmemb, size_t __size)'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='100' u='c' c='dictExpand'/>
+<doc f='include/stdlib.h' l='467'>/* Allocate NMEMB elements of SIZE bytes each, all initialized to 0.  */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='64' u='c' c='createReplyObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='142' u='c' c='createArrayObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='595' u='c' c='redisContextInit'/>
+<use f='codebrowser/deps/hiredis/net.c' l='291' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='317' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='441' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/read.c' l='419' u='c' c='redisReaderCreateWithFunctions'/>
+<dec f='codebrowser/src/server.h' l='1995' type='void * calloc(size_t count, size_t size)'/>
+<use f='codebrowser/src/redis-benchmark.c' l='499' macro='1' u='c'/>
+<use f='codebrowser/src/redis-benchmark.c' l='505' macro='1' u='c'/>
+<use f='codebrowser/src/redis-benchmark.c' l='508' macro='1' u='c'/>
+<use f='codebrowser/src/setproctitle.c' l='138' macro='1' u='c'/>
+<use f='codebrowser/src/setproctitle.c' l='173' macro='1' u='c'/>
+<use f='codebrowser/src/setproctitle.c' l='177' macro='1' u='c'/>
+<use f='codebrowser/src/setproctitle.c' l='182' macro='1' u='c'/>

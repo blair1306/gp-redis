@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1582' type='unsigned long zslGetRank(zskiplist * zsl, double score, sds o)'/>
+<def f='codebrowser/src/t_zset.c' l='421' ll='442' type='unsigned long zslGetRank(zskiplist * zsl, double score, sds ele)'/>
+<use f='codebrowser/src/t_zset.c' l='1466' u='c' c='zsetRank'/>
+<use f='codebrowser/src/t_zset.c' l='2728' u='c' c='zcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2736' u='c' c='zcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2806' u='c' c='zlexcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2814' u='c' c='zlexcountCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='417'>/* Find the rank for an element by both score and key.
+ * Returns 0 when the element cannot be found, rank otherwise.
+ * Note that the rank is 1-based due to the span of zsl-&gt;header to the
+ * first element. */</doc>

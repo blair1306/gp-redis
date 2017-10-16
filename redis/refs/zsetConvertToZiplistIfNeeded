@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1580' type='void zsetConvertToZiplistIfNeeded(robj * zobj, size_t maxelelen)'/>
+<use f='codebrowser/src/geo.c' l='659' u='c' c='georadiusGeneric'/>
+<def f='codebrowser/src/t_zset.c' l='1189' ll='1196' type='void zsetConvertToZiplistIfNeeded(robj * zobj, size_t maxelelen)'/>
+<use f='codebrowser/src/t_zset.c' l='2332' u='c' c='zunionInterGenericCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='1186'>/* Convert the sorted set object into a ziplist if it is not already a ziplist
+ * and if the number of elements and the maximum element size is within the
+ * expected ranges. */</doc>

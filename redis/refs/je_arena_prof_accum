@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='920' macro='1' type='_Bool je_arena_prof_accum(arena_t * arena, uint64_t accumbytes)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1997' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2177' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='110' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='379' macro='1' u='c'/>

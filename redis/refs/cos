@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/bits/mathcalls.h' l='63' type='double cos(double __x)'/>
+<use f='codebrowser/deps/lua/src/lmathlib.c' l='42' u='c' c='math_cos'/>
+<use f='codebrowser/src/geohash_helper.c' l='107' u='c' c='geohashBoundingBox'/>
+<use f='codebrowser/src/geohash_helper.c' l='108' u='c' c='geohashBoundingBox'/>
+<use f='codebrowser/src/geohash_helper.c' l='220' u='c' c='geohashGetDistance'/>
+<use f='codebrowser/src/geohash_helper.c' l='220' u='c' c='geohashGetDistance'/>

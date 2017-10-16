@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1828' type='void existsCommand(client * c)'/>
+<def f='codebrowser/src/db.c' l='456' ll='465' type='void existsCommand(client * c)'/>
+<doc f='codebrowser/src/db.c' l='454'>/* EXISTS key1 key2 ... key_N.
+ * Return value is the number of keys existing. */</doc>
+<use f='codebrowser/src/server.c' l='138' u='r'/>
+<use f='codebrowser/src/server.c' l='138' u='r'/>
+<use f='codebrowser/src/server.c' l='138' u='r'/>
+<use f='codebrowser/src/server.c' l='138' u='r'/>

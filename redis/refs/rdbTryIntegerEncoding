@@ -1,0 +1,5 @@
+<def f='codebrowser/src/rdb.c' l='270' ll='284' type='int rdbTryIntegerEncoding(char * s, size_t len, unsigned char * enc)'/>
+<use f='codebrowser/src/rdb.c' l='382' u='c' c='rdbSaveRawString'/>
+<doc f='codebrowser/src/rdb.c' l='267'>/* String objects in the form &quot;2391&quot; &quot;-100&quot; without any space and with a
+ * range of values that can fit in an 8, 16 or 32 bit signed value can be
+ * encoded as integers to save space */</doc>

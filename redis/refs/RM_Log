@@ -1,0 +1,16 @@
+<def f='codebrowser/src/module.c' l='3327' ll='3334' type='void RM_Log(RedisModuleCtx * ctx, const char * levelstr, const char * fmt)'/>
+<use f='codebrowser/src/module.c' l='3985' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3313'>/* Produces a log message to the standard Redis log, the format accepts
+ * printf-alike specifiers, while level is a string describing the log
+ * level to use when emitting the log, and must be one of the following:
+ *
+ * * &quot;debug&quot;
+ * * &quot;verbose&quot;
+ * * &quot;notice&quot;
+ * * &quot;warning&quot;
+ *
+ * If the specified log level is invalid, verbose is used by default.
+ * There is a fixed limit to the length of the log line this function is able
+ * to emit, this limti is not specified but is guaranteed to be more than
+ * a few lines of text.
+ */</doc>

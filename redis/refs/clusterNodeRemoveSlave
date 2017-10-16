@@ -1,0 +1,5 @@
+<def f='codebrowser/src/cluster.c' l='797' ll='814' type='int clusterNodeRemoveSlave(clusterNode * master, clusterNode * slave)'/>
+<use f='codebrowser/src/cluster.c' l='849' u='c' c='freeClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='1485' u='c' c='clusterSetNodeAsMaster'/>
+<use f='codebrowser/src/cluster.c' l='1863' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='3812' u='c' c='clusterSetMaster'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1122' type='unsigned int'/>
+<offset>20640</offset>
+<doc f='codebrowser/src/server.h' l='1122'>/* LFU counter decay factor. */</doc>
+<use f='codebrowser/src/config.c' l='338' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1044' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/evict.c' l='337' u='r' c='LFUDecrAndReturn'/>
+<use f='codebrowser/src/server.c' l='1416' u='w' c='initServerConfig'/>

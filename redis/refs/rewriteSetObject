@@ -1,0 +1,4 @@
+<def f='codebrowser/src/aof.c' l='866' ll='909' type='int rewriteSetObject(rio * r, robj * key, robj * o)'/>
+<use f='codebrowser/src/aof.c' l='1109' u='c' c='rewriteAppendOnlyFileRio'/>
+<doc f='codebrowser/src/aof.c' l='864'>/* Emit the commands needed to rebuild a set object.
+ * The function returns 0 on error, 1 on success. */</doc>

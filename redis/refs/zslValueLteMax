@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/server.h' l='1588' type='int zslValueLteMax(double value, zrangespec * spec)'/>
+<dec f='codebrowser/src/geo.c' l='38' type='int zslValueLteMax(double value, zrangespec * spec)'/>
+<use f='codebrowser/src/geo.c' l='250' u='c' c='geoGetPointsInRange'/>
+<use f='codebrowser/src/geo.c' l='274' u='c' c='geoGetPointsInRange'/>
+<use f='codebrowser/src/module.c' l='1965' u='c' c='RM_ZsetRangeNext'/>
+<use f='codebrowser/src/module.c' l='1987' u='c' c='RM_ZsetRangeNext'/>
+<def f='codebrowser/src/t_zset.c' l='251' ll='253' type='int zslValueLteMax(double value, zrangespec * spec)'/>
+<use f='codebrowser/src/t_zset.c' l='267' u='c' c='zslIsInRange'/>
+<use f='codebrowser/src/t_zset.c' l='294' u='c' c='zslFirstInRange'/>
+<use f='codebrowser/src/t_zset.c' l='311' u='c' c='zslLastInRange'/>
+<use f='codebrowser/src/t_zset.c' l='788' u='c' c='zzlIsInRange'/>
+<use f='codebrowser/src/t_zset.c' l='810' u='c' c='zzlFirstInRange'/>
+<use f='codebrowser/src/t_zset.c' l='836' u='c' c='zzlLastInRange'/>
+<use f='codebrowser/src/t_zset.c' l='1048' u='c' c='zzlDeleteRangeByScore'/>
+<use f='codebrowser/src/t_zset.c' l='2572' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2634' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2703' u='c' c='zcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2710' u='c' c='zcountCommand'/>

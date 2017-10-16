@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/dict.h' l='52' type='int64_t'/>
+<offset>0</offset>
+<use f='codebrowser/src/db.c' l='1041' macro='1' u='w'/>
+<use f='codebrowser/src/db.c' l='1060' macro='1' u='r'/>
+<use f='codebrowser/src/expire.c' l='55' macro='1' u='r'/>
+<use f='codebrowser/src/expire.c' l='187' macro='1' u='r'/>

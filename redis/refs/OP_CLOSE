@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/lopcodes.h' l='204' type='35'/>
+<doc f='codebrowser/deps/lua/src/lopcodes.h' l='204'>/*	A 	close all variables in the stack up to (&gt;=) R(A)*/</doc>
+<use f='codebrowser/deps/lua/src/lparser.c' l='301' u='r' c='leaveblock'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='986' u='r' c='breakstat'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='719' c='luaV_execute'/>

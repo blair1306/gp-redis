@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='825' type='size_t'/>
+<offset>640</offset>
+<use f='codebrowser/src/object.c' l='905' u='w' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='1122' u='r' c='memoryCommand'/>

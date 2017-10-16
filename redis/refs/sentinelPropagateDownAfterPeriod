@@ -1,0 +1,5 @@
+<def f='codebrowser/src/sentinel.c' l='1548' ll='1562' type='void sentinelPropagateDownAfterPeriod(sentinelRedisInstance * master)'/>
+<use f='codebrowser/src/sentinel.c' l='1596' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='3314' u='c' c='sentinelSetCommand'/>
+<doc f='codebrowser/src/sentinel.c' l='1546'>/* This function sets the down_after_period field value in &apos;master&apos; to all
+ * the slaves and sentinel instances connected to this master. */</doc>

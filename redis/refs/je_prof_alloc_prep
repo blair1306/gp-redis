@@ -1,0 +1,8 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='461' macro='1' type='prof_tctx_t * je_prof_alloc_prep(tsd_t * tsd, size_t usize, _Bool prof_active, _Bool update)'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1381' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1471' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1602' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1712' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2009' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2122' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2272' macro='1' u='c'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/geohash.h' l='105' type='int geohashDecode(const GeoHashRange long_range, const GeoHashRange lat_range, const GeoHashBits hash, GeoHashArea * area)'/>
+<use f='codebrowser/src/geo.c' l='354' u='c' c='membersOfAllNeighbors'/>
+<def f='codebrowser/src/geohash.c' l='164' ll='194' type='int geohashDecode(const GeoHashRange long_range, const GeoHashRange lat_range, const GeoHashBits hash, GeoHashArea * area)'/>
+<use f='codebrowser/src/geohash.c' l='199' u='c' c='geohashDecodeType'/>
+<use f='codebrowser/src/geohash_helper.c' l='137' u='c' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='148' u='c' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='149' u='c' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='150' u='c' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='151' u='c' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='167' u='c' c='geohashGetAreasByRadius'/>

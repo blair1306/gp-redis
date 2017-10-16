@@ -1,0 +1,12 @@
+<dec f='include/x86_64-linux-gnu/bits/mathcalls.h' l='184' type='double floor(double __x)'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='641' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lmathlib.c' l='87' u='c' c='math_floor'/>
+<use f='codebrowser/deps/lua/src/lmathlib.c' l='193' u='c' c='math_random'/>
+<use f='codebrowser/deps/lua/src/lmathlib.c' l='200' u='c' c='math_random'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='509' u='c' c='lua_array_length'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='329' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='491' macro='1' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2333' u='c' c='clusterSendPing'/>
+<use f='codebrowser/src/rax.c' l='1582' u='c' c='raxRandomWalk'/>
+<use f='codebrowser/src/scripting.c' l='1112' u='c' c='redis_math_random'/>
+<use f='codebrowser/src/scripting.c' l='1119' u='c' c='redis_math_random'/>

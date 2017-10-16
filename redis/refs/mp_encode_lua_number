@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='367' ll='375' type='void mp_encode_lua_number(lua_State * L, mp_buf * buf)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='491' u='c' c='mp_encode_lua_type'/>
+<doc f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='364'>/* Lua 5.2 and lower only has 64-bit doubles, so we need to
+ * detect if the double may be representable as an int
+ * for Lua &lt; 5.3 */</doc>

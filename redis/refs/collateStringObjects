@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1469' type='int collateStringObjects(robj * a, robj * b)'/>
+<def f='codebrowser/src/object.c' l='522' ll='524' type='int collateStringObjects(robj * a, robj * b)'/>
+<doc f='codebrowser/src/object.c' l='521'>/* Wrapper for compareStringObjectsWithFlags() using collation. */</doc>
+<use f='codebrowser/src/sort.c' l='180' u='c' c='sortCompare'/>

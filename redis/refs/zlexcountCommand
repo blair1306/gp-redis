@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1911' type='void zlexcountCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='194' u='r'/>
+<use f='codebrowser/src/server.c' l='194' u='r'/>
+<use f='codebrowser/src/server.c' l='194' u='r'/>
+<use f='codebrowser/src/server.c' l='194' u='r'/>
+<def f='codebrowser/src/t_zset.c' l='2747' ll='2824' type='void zlexcountCommand(client * c)'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='992' type='int'/>
+<use f='codebrowser/src/aof.c' l='430' u='r' c='flushAppendOnlyFile'/>
+<offset>14208</offset>
+<doc f='codebrowser/src/server.h' l='992'>/* Don&apos;t fsync if a rewrite is in prog. */</doc>
+<use f='codebrowser/src/config.c' l='454' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1033' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1283' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2003' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='1384' u='w' c='initServerConfig'/>

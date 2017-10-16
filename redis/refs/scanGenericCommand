@@ -1,0 +1,17 @@
+<dec f='codebrowser/src/server.h' l='1739' type='void scanGenericCommand(client * c, robj * o, unsigned long cursor)'/>
+<def f='codebrowser/src/db.c' l='585' ll='760' type='void scanGenericCommand(client * c, robj * o, unsigned long cursor)'/>
+<use f='codebrowser/src/db.c' l='766' u='c' c='scanCommand'/>
+<doc f='codebrowser/src/db.c' l='574'>/* This command implements SCAN, HSCAN and SSCAN commands.
+ * If object &apos;o&apos; is passed, then it must be a Hash or Set object, otherwise
+ * if &apos;o&apos; is NULL the command will operate on the dictionary associated with
+ * the current database.
+ *
+ * When &apos;o&apos; is not NULL the function assumes that the first argument in
+ * the client arguments vector is a key so it skips it before iterating
+ * in order to parse options.
+ *
+ * In the case of a Hash object the function returns both the field and value
+ * of every element on the Hash. */</doc>
+<use f='codebrowser/src/t_hash.c' l='824' u='c' c='hscanCommand'/>
+<use f='codebrowser/src/t_set.c' l='1110' u='c' c='sscanCommand'/>
+<use f='codebrowser/src/t_zset.c' l='3069' u='c' c='zscanCommand'/>

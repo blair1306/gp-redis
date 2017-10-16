@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='885' type='int'/>
+<offset>608</offset>
+<doc f='codebrowser/src/server.h' l='885'>/* SHUTDOWN needed ASAP */</doc>
+<use f='codebrowser/src/server.c' l='996' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='999' u='w' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1425' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3474' u='r' c='sigShutdownHandler'/>
+<use f='codebrowser/src/server.c' l='3483' u='w' c='sigShutdownHandler'/>

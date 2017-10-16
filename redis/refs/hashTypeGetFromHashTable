@@ -1,0 +1,8 @@
+<def f='codebrowser/src/t_hash.c' l='90' ll='98' type='sds hashTypeGetFromHashTable(robj * o, sds field)'/>
+<use f='codebrowser/src/t_hash.c' l='116' u='c' c='hashTypeGetValue'/>
+<use f='codebrowser/src/t_hash.c' l='156' u='c' c='hashTypeGetValueLength'/>
+<use f='codebrowser/src/t_hash.c' l='174' u='c' c='hashTypeExists'/>
+<use f='codebrowser/src/t_hash.c' l='665' u='c' c='addHashFieldToReply'/>
+<doc f='codebrowser/src/t_hash.c' l='87'>/* Get the value from a hash table encoded hash, identified by field.
+ * Returns NULL when the field cannot be found, otherwise the SDS value
+ * is returned. */</doc>

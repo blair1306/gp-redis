@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='298' type='chunk_alloc_t *'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='99' u='a' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='99' u='r' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='457' u='r' c='je_chunk_alloc_wrapper'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='461' u='r' c='je_chunk_alloc_wrapper'/>

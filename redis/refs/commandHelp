@@ -1,0 +1,12 @@
+<def f='codebrowser/src/help.h' l='23' ll='29'/>
+<def f='codebrowser/src/help.h' l='23' ll='1015' type='struct commandHelp [197]'/>
+<use f='codebrowser/src/redis-cli.c' l='236' u='r' c='cliInitHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='255' u='m' c='cliInitHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='256' u='m' c='cliInitHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='258' u='a' c='cliInitHelp'/>
+<size>40</size>
+<mbr r='commandHelp::name' o='0' t='char *'/>
+<mbr r='commandHelp::params' o='64' t='char *'/>
+<mbr r='commandHelp::summary' o='128' t='char *'/>
+<mbr r='commandHelp::group' o='192' t='int'/>
+<mbr r='commandHelp::since' o='256' t='char *'/>

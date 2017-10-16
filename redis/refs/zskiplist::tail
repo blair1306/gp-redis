@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='770' type='struct zskiplistNode *'/>
+<offset>64</offset>
+<use f='codebrowser/src/defrag.c' l='202' u='r' c='zslUpdateNode'/>
+<use f='codebrowser/src/defrag.c' l='203' u='w' c='zslUpdateNode'/>
+<use f='codebrowser/src/rdb.c' l='718' u='r' c='rdbSaveObject'/>
+<use f='codebrowser/src/sort.c' l='409' u='r' c='sortCommand'/>
+<use f='codebrowser/src/t_zset.c' l='93' u='w' c='zslCreate'/>
+<use f='codebrowser/src/t_zset.c' l='184' u='w' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='203' u='w' c='zslDeleteNode'/>
+<use f='codebrowser/src/t_zset.c' l='263' u='r' c='zslIsInRange'/>
+<use f='codebrowser/src/t_zset.c' l='604' u='r' c='zslIsInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='2440' u='r' c='zrangeGenericCommand'/>

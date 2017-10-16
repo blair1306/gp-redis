@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/module.c' l='105' type='struct RedisModuleBlockedClient *'/>
+<use f='codebrowser/src/module.c' l='974' u='r' c='moduleGetReplyClient'/>
+<use f='codebrowser/src/module.c' l='975' u='r' c='moduleGetReplyClient'/>
+<use f='codebrowser/src/module.c' l='3605' u='w' c='RM_GetThreadSafeContext'/>
+<offset>192</offset>
+<doc f='codebrowser/src/module.c' l='105'>/* Blocked client for
+                                                        thread safe context. */</doc>

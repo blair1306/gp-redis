@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/anet.h' l='77' type='int anetFormatPeer(int fd, char * fmt, size_t fmt_len)'/>
+<def f='codebrowser/src/anet.c' l='622' ll='628' type='int anetFormatPeer(int fd, char * buf, size_t buf_len)'/>
+<doc f='codebrowser/src/anet.c' l='621'>/* Like anetFormatAddr() but extract ip and port from the socket&apos;s peer. */</doc>
+<use f='codebrowser/src/networking.c' l='1469' u='c' c='genClientPeerId'/>

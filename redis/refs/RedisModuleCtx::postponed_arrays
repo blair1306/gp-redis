@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/module.c' l='111' type='void **'/>
+<use f='codebrowser/src/module.c' l='427' u='r' c='moduleFreeContext'/>
+<use f='codebrowser/src/module.c' l='428' u='r' c='moduleFreeContext'/>
+<use f='codebrowser/src/module.c' l='1043' u='w' c='RM_ReplyWithArray'/>
+<use f='codebrowser/src/module.c' l='1043' u='r' c='RM_ReplyWithArray'/>
+<use f='codebrowser/src/module.c' l='1045' u='r' c='RM_ReplyWithArray'/>
+<use f='codebrowser/src/module.c' l='1093' u='r' c='RM_ReplySetArrayLength'/>
+<use f='codebrowser/src/module.c' l='1096' u='r' c='RM_ReplySetArrayLength'/>
+<use f='codebrowser/src/module.c' l='1097' u='w' c='RM_ReplySetArrayLength'/>
+<offset>448</offset>
+<doc f='codebrowser/src/module.c' l='111'>/* To set with RM_ReplySetArrayLength(). */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/rdb.h' l='135' type='int rdbSave(char * filename, rdbSaveInfo * rsi)'/>
+<use f='codebrowser/src/db.c' l='421' u='c' c='flushallCommand'/>
+<use f='codebrowser/src/debug.c' l='340' u='c' c='debugCommand'/>
+<def f='codebrowser/src/rdb.c' l='988' ll='1045' type='int rdbSave(char * filename, rdbSaveInfo * rsi)'/>
+<use f='codebrowser/src/rdb.c' l='1064' u='c' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1980' u='c' c='saveCommand'/>
+<doc f='codebrowser/src/rdb.c' l='987'>/* Save the DB on disk. Return C_ERR on error, C_OK on success. */</doc>
+<use f='codebrowser/src/server.c' l='2555' u='c' c='prepareForShutdown'/>

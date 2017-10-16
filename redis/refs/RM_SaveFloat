@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='3125' ll='3139' type='void RM_SaveFloat(RedisModuleIO * io, float value)'/>
+<use f='codebrowser/src/module.c' l='3982' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3122'>/* In the context of the rdb_save method of a module data type, saves a float
+ * value to the RDB file. The float can be a valid number, a NaN or infinity.
+ * It is possible to load back the value with RedisModule_LoadFloat(). */</doc>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='1780' type='void scriptingInit(int setup)'/>
+<doc f='codebrowser/src/server.h' l='1779'>/* Scripting */</doc>
+<def f='codebrowser/src/scripting.c' l='896' ll='1062' type='void scriptingInit(int setup)'/>
+<use f='codebrowser/src/scripting.c' l='1073' u='c' c='scriptingReset'/>
+<doc f='codebrowser/src/scripting.c' l='886'>/* Initialize the scripting environment.
+ *
+ * This function is called the first time at server startup with
+ * the &apos;setup&apos; argument set to 1.
+ *
+ * It can be called again multiple times during the lifetime of the Redis
+ * process, with &apos;setup&apos; set to 0, and following a scriptingRelease() call,
+ * in order to reset the Lua scripting environment.
+ *
+ * However it is simpler to just call scriptingReset() that does just that. */</doc>
+<use f='codebrowser/src/server.c' l='1947' u='c' c='initServer'/>

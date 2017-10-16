@@ -1,0 +1,33 @@
+<dec f='codebrowser/src/server.h' l='1248' type='unsigned char'/>
+<dec f='codebrowser/src/server.h' l='1262' type='int'/>
+<dec f='codebrowser/src/server.h' l='1273' type='int'/>
+<use f='codebrowser/src/aof.c' l='987' u='r' c='rioWriteHashIteratorCursor'/>
+<use f='codebrowser/src/aof.c' l='997' u='r' c='rioWriteHashIteratorCursor'/>
+<offset>64</offset>
+<use f='codebrowser/src/t_hash.c' l='327' u='w' c='hashTypeInitIterator'/>
+<use f='codebrowser/src/t_hash.c' l='329' u='r' c='hashTypeInitIterator'/>
+<use f='codebrowser/src/t_hash.c' l='332' u='r' c='hashTypeInitIterator'/>
+<use f='codebrowser/src/t_hash.c' l='341' u='r' c='hashTypeReleaseIterator'/>
+<use f='codebrowser/src/t_hash.c' l='349' u='r' c='hashTypeNext'/>
+<use f='codebrowser/src/t_hash.c' l='375' u='r' c='hashTypeNext'/>
+<use f='codebrowser/src/t_hash.c' l='392' u='r' c='hashTypeCurrentFromZiplist'/>
+<use f='codebrowser/src/t_hash.c' l='407' u='r' c='hashTypeCurrentFromHashTable'/>
+<use f='codebrowser/src/t_hash.c' l='427' u='r' c='hashTypeCurrentObject'/>
+<use f='codebrowser/src/t_hash.c' l='430' u='r' c='hashTypeCurrentObject'/>
+<use f='codebrowser/src/t_hash.c' l='748' u='r' c='addHashIteratorCursorToReply'/>
+<use f='codebrowser/src/t_hash.c' l='758' u='r' c='addHashIteratorCursorToReply'/>
+<use f='codebrowser/src/t_list.c' l='87' u='w' c='listTypeInitIterator'/>
+<use f='codebrowser/src/t_list.c' l='94' u='r' c='listTypeInitIterator'/>
+<use f='codebrowser/src/t_list.c' l='114' u='r' c='listTypeNext'/>
+<use f='codebrowser/src/t_list.c' l='117' u='r' c='listTypeNext'/>
+<use f='codebrowser/src/t_list.c' l='128' u='r' c='listTypeGet'/>
+<use f='codebrowser/src/t_list.c' l='142' u='r' c='listTypeInsert'/>
+<use f='codebrowser/src/t_list.c' l='161' u='r' c='listTypeEqual'/>
+<use f='codebrowser/src/t_list.c' l='171' u='r' c='listTypeDelete'/>
+<use f='codebrowser/src/t_set.c' l='124' u='w' c='setTypeInitIterator'/>
+<use f='codebrowser/src/t_set.c' l='125' u='r' c='setTypeInitIterator'/>
+<use f='codebrowser/src/t_set.c' l='127' u='r' c='setTypeInitIterator'/>
+<use f='codebrowser/src/t_set.c' l='136' u='r' c='setTypeReleaseIterator'/>
+<use f='codebrowser/src/t_set.c' l='155' u='r' c='setTypeNext'/>
+<use f='codebrowser/src/t_set.c' l='160' u='r' c='setTypeNext'/>
+<use f='codebrowser/src/t_set.c' l='167' u='r' c='setTypeNext'/>

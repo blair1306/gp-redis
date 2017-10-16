@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1148' type='list *'/>
+<offset>21632</offset>
+<doc f='codebrowser/src/server.h' l='1148'>/* A list of pubsub_patterns */</doc>
+<use f='codebrowser/src/cluster.c' l='1983' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/pubsub.c' l='138' u='r' c='pubsubSubscribePattern'/>
+<use f='codebrowser/src/pubsub.c' l='161' u='r' c='pubsubUnsubscribePattern'/>
+<use f='codebrowser/src/pubsub.c' l='162' u='r' c='pubsubUnsubscribePattern'/>
+<use f='codebrowser/src/pubsub.c' l='250' u='r' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/pubsub.c' l='251' u='r' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/pubsub.c' l='365' u='r' c='pubsubCommand'/>
+<use f='codebrowser/src/server.c' l='1862' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1863' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1864' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='3115' u='r' c='genRedisInfoString'/>

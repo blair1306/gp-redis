@@ -1,0 +1,5 @@
+<def f='codebrowser/src/scripting.c' l='1729' ll='1735' type='int ldbIsBreakpoint(int line)'/>
+<use f='codebrowser/src/scripting.c' l='1742' u='c' c='ldbAddBreakpoint'/>
+<use f='codebrowser/src/scripting.c' l='1817' u='c' c='ldbLogSourceLine'/>
+<use f='codebrowser/src/scripting.c' l='2348' u='c' c='luaLdbLineHook'/>
+<doc f='codebrowser/src/scripting.c' l='1728'>/* Return true if there is a breakpoint in the specified line. */</doc>

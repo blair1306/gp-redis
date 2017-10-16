@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1112' type='unsigned int'/>
+<offset>20288</offset>
+<doc f='codebrowser/src/server.h' l='1112'>/* Max number of elements. */</doc>
+<use f='codebrowser/src/replication.c' l='2283' u='w' c='replicationScriptCacheInit'/>
+<use f='codebrowser/src/replication.c' l='2312' u='r' c='replicationScriptCacheAdd'/>

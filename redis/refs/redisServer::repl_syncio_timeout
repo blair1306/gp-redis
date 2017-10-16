@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1087' type='int'/>
+<offset>18880</offset>
+<doc f='codebrowser/src/server.h' l='1087'>/* Timeout for synchronous I/O calls */</doc>
+<use f='codebrowser/src/replication.c' l='1123' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1335' u='r' c='sendSynchronousCommand'/>
+<use f='codebrowser/src/replication.c' l='1350' u='r' c='sendSynchronousCommand'/>
+<use f='codebrowser/src/replication.c' l='1801' u='r' c='syncWithMaster'/>
+<use f='codebrowser/src/server.c' l='1460' u='w' c='initServerConfig'/>

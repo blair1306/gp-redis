@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='746' type='robj *'/>
+<offset>1280</offset>
+<use f='codebrowser/src/server.c' l='1274' u='w' c='createSharedObjects'/>
+<use f='codebrowser/src/server.c' l='2458' u='r' c='processCommand'/>

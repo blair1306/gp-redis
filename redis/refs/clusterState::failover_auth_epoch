@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/cluster.h' l='149' type='uint64_t'/>
+<use f='codebrowser/src/cluster.c' l='422' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='2005' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2968' u='w' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2987' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2988' u='r' c='clusterHandleSlaveFailover'/>
+<offset>4194880</offset>
+<doc f='codebrowser/src/cluster.h' l='149'>/* Epoch of the current election. */</doc>

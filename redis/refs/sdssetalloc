@@ -1,0 +1,6 @@
+<def f='codebrowser/deps/hiredis/sds.h' l='196' ll='215' type='void sdssetalloc(sds s, size_t newlen)'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='235' u='c' c='sdsMakeRoomFor'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='267' u='c' c='sdsRemoveFreeSpace'/>
+<def f='codebrowser/src/sds.h' l='196' ll='215' type='void sdssetalloc(sds s, size_t newlen)'/>
+<use f='codebrowser/src/sds.c' l='238' u='c' c='sdsMakeRoomFor'/>
+<use f='codebrowser/src/sds.c' l='270' u='c' c='sdsRemoveFreeSpace'/>

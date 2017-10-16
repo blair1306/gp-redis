@@ -1,0 +1,23 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='265' type='void * sds_malloc(size_t size)'/>
+<doc f='codebrowser/deps/hiredis/sds.h' l='261'>/* Export the allocator used by SDS to the program using SDS.
+ * Sometimes the program SDS is linked to, may use a different set of
+ * allocators, but may want to allocate or free things that SDS will
+ * respectively free or allocate. */</doc>
+<def f='codebrowser/deps/hiredis/sds.c' l='1094' type='void * sds_malloc(size_t size)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='1089'>/* Wrappers to the allocators used by SDS. Note that SDS will actually
+ * just use the macros defined into sdsalloc.h in order to avoid to pay
+ * the overhead of function calls. Here we define these wrappers only for
+ * the programs SDS is linked to, if they want to touch the SDS internals
+ * even if they use a different allocator. */</doc>
+<dec f='codebrowser/src/sds.h' l='265' type='void * sds_malloc(size_t size)'/>
+<doc f='codebrowser/src/sds.h' l='261'>/* Export the allocator used by SDS to the program using SDS.
+ * Sometimes the program SDS is linked to, may use a different set of
+ * allocators, but may want to allocate or free things that SDS will
+ * respectively free or allocate. */</doc>
+<use f='codebrowser/src/redis-cli.c' l='1222' u='c' c='cliSplitArgs'/>
+<def f='codebrowser/src/sds.c' l='1099' type='void * sds_malloc(size_t size)'/>
+<doc f='codebrowser/src/sds.c' l='1094'>/* Wrappers to the allocators used by SDS. Note that SDS will actually
+ * just use the macros defined into sdsalloc.h in order to avoid to pay
+ * the overhead of function calls. Here we define these wrappers only for
+ * the programs SDS is linked to, if they want to touch the SDS internals
+ * even if they use a different allocator. */</doc>

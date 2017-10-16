@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='104'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='103'>/* Non-empty if the tls_model attribute is supported. */</doc>

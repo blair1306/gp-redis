@@ -1,0 +1,3 @@
+<def f='codebrowser/src/defrag.c' l='191' ll='205' type='void zslUpdateNode(zskiplist * zsl, zskiplistNode * oldnode, zskiplistNode * newnode, zskiplistNode ** update)'/>
+<use f='codebrowser/src/defrag.c' l='243' u='c' c='zslDefrag'/>
+<doc f='codebrowser/src/defrag.c' l='190'>/* Internal function used by zslDefrag */</doc>

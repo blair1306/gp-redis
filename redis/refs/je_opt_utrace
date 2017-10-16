@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='422' macro='1' type='_Bool'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1271' macro='1' u='r'/>
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='40' macro='1' type='_Bool'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1091' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1091' macro='1' u='w'/>

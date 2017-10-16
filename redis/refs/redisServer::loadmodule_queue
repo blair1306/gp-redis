@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='898' type='list *'/>
+<offset>1472</offset>
+<doc f='codebrowser/src/server.h' l='898'>/* List of modules to load at startup. */</doc>
+<use f='codebrowser/src/config.c' l='169' u='r' c='queueLoadModule'/>
+<use f='codebrowser/src/module.c' l='3684' u='w' c='moduleInitModulesSystem'/>
+<use f='codebrowser/src/module.c' l='3716' u='r' c='moduleLoadFromQueue'/>

@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='89' ll='99'/>
+<size>24</size>
+<mbr r='malloc_huge_stats_s::nmalloc' o='0' t='uint64_t'/>
+<mbr r='malloc_huge_stats_s::ndalloc' o='64' t='uint64_t'/>
+<mbr r='malloc_huge_stats_s::curhchunks' o='128' t='size_t'/>

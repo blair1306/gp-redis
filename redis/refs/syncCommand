@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1880' type='void syncCommand(client * c)'/>
+<def f='codebrowser/src/replication.c' l='627' ll='762' type='void syncCommand(client * c)'/>
+<doc f='codebrowser/src/replication.c' l='626'>/* SYNC and PSYNC command implemenation. */</doc>
+<use f='codebrowser/src/server.c' l='247' u='r'/>
+<use f='codebrowser/src/server.c' l='247' u='r'/>
+<use f='codebrowser/src/server.c' l='248' u='r'/>
+<use f='codebrowser/src/server.c' l='248' u='r'/>
+<use f='codebrowser/src/server.c' l='247' u='r'/>
+<use f='codebrowser/src/server.c' l='247' u='r'/>
+<use f='codebrowser/src/server.c' l='248' u='r'/>
+<use f='codebrowser/src/server.c' l='248' u='r'/>

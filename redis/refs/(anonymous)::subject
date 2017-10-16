@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1247' type='robj *'/>
+<dec f='codebrowser/src/server.h' l='1261' type='robj *'/>
+<dec f='codebrowser/src/server.h' l='1272' type='robj *'/>
+<offset>0</offset>
+<use f='codebrowser/src/t_hash.c' l='326' u='w' c='hashTypeInitIterator'/>
+<use f='codebrowser/src/t_hash.c' l='353' u='r' c='hashTypeNext'/>
+<use f='codebrowser/src/t_list.c' l='86' u='w' c='listTypeInitIterator'/>
+<use f='codebrowser/src/t_list.c' l='95' u='r' c='listTypeInitIterator'/>
+<use f='codebrowser/src/t_list.c' l='114' u='r' c='listTypeNext'/>
+<use f='codebrowser/src/t_set.c' l='123' u='w' c='setTypeInitIterator'/>
+<use f='codebrowser/src/t_set.c' l='161' u='r' c='setTypeNext'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='135' macro='1' type='void je_bitmap_set(bitmap_t * bitmap, const bitmap_info_t * binfo, size_t bit)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='186' macro='1' u='c'/>

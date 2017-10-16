@@ -1,0 +1,6 @@
+<def f='codebrowser/src/redis-cli.c' l='1237' ll='1251' type='void cliSetPreferences(char ** argv, int argc, int interactive)'/>
+<use f='codebrowser/src/redis-cli.c' l='1266' u='c' c='cliLoadPreferences'/>
+<use f='codebrowser/src/redis-cli.c' l='1319' u='c' c='repl'/>
+<doc f='codebrowser/src/redis-cli.c' l='1234'>/* Set the CLI preferences. This function is invoked when an interactive
+ * &quot;:command&quot; is called, or when reading ~/.redisclirc file, in order to
+ * set user preferences. */</doc>

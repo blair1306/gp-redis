@@ -1,0 +1,2 @@
+<def f='codebrowser/src/sentinel.c' l='2240' ll='2251' type='void sentinelInfoReplyCallback(redisAsyncContext * c, void * reply, void * privdata)'/>
+<use f='codebrowser/src/sentinel.c' l='2608' u='r' c='sentinelSendPeriodicCommands'/>

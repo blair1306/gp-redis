@@ -1,0 +1,27 @@
+<dec f='codebrowser/src/rio.h' l='69' type='struct (anonymous struct at /home/jon/workspace/redis/deps/lua/src/../../../src/rio.h:66:9)'/>
+<offset>0</offset>
+<doc f='codebrowser/src/rio.h' l='65'>/* In-memory buffer target. */</doc>
+<use f='codebrowser/src/cluster.c' l='4638' u='m' c='createDumpPayload'/>
+<use f='codebrowser/src/cluster.c' l='4638' u='m' c='createDumpPayload'/>
+<use f='codebrowser/src/cluster.c' l='4641' u='m' c='createDumpPayload'/>
+<use f='codebrowser/src/cluster.c' l='4642' u='m' c='createDumpPayload'/>
+<use f='codebrowser/src/cluster.c' l='4644' u='m' c='createDumpPayload'/>
+<use f='codebrowser/src/cluster.c' l='4644' u='m' c='createDumpPayload'/>
+<use f='codebrowser/src/cluster.c' l='4687' u='m' c='dumpCommand'/>
+<use f='codebrowser/src/cluster.c' l='4989' u='m' c='migrateCommand'/>
+<use f='codebrowser/src/cluster.c' l='4990' u='m' c='migrateCommand'/>
+<use f='codebrowser/src/cluster.c' l='4991' u='m' c='migrateCommand'/>
+<use f='codebrowser/src/cluster.c' l='5002' u='m' c='migrateCommand'/>
+<use f='codebrowser/src/cluster.c' l='5110' u='m' c='migrateCommand'/>
+<use f='codebrowser/src/cluster.c' l='5120' u='m' c='migrateCommand'/>
+<use f='codebrowser/src/rio.c' l='62' u='m' c='rioBufferWrite'/>
+<use f='codebrowser/src/rio.c' l='62' u='m' c='rioBufferWrite'/>
+<use f='codebrowser/src/rio.c' l='63' u='m' c='rioBufferWrite'/>
+<use f='codebrowser/src/rio.c' l='69' u='m' c='rioBufferRead'/>
+<use f='codebrowser/src/rio.c' l='69' u='m' c='rioBufferRead'/>
+<use f='codebrowser/src/rio.c' l='71' u='m' c='rioBufferRead'/>
+<use f='codebrowser/src/rio.c' l='71' u='m' c='rioBufferRead'/>
+<use f='codebrowser/src/rio.c' l='72' u='m' c='rioBufferRead'/>
+<use f='codebrowser/src/rio.c' l='78' u='m' c='rioBufferTell'/>
+<use f='codebrowser/src/rio.c' l='102' u='m' c='rioInitWithBuffer'/>
+<use f='codebrowser/src/rio.c' l='103' u='m' c='rioInitWithBuffer'/>

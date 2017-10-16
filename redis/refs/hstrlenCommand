@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1935' type='void hstrlenCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='210' u='r'/>
+<use f='codebrowser/src/server.c' l='210' u='r'/>
+<use f='codebrowser/src/server.c' l='210' u='r'/>
+<use f='codebrowser/src/server.c' l='210' u='r'/>
+<def f='codebrowser/src/t_hash.c' l='739' ll='745' type='void hstrlenCommand(client * c)'/>

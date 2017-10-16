@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/quicklist.h' l='104'/>
+<doc f='codebrowser/src/quicklist.h' l='103'>/* quicklist node encodings */</doc>
+<use f='codebrowser/src/quicklist.c' l='145' u='c'/>
+<use f='codebrowser/src/quicklist.c' l='229' u='c'/>
+<use f='codebrowser/src/quicklist.c' l='1200' u='c'/>

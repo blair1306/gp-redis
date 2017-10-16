@@ -1,0 +1,19 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='73' type='void **'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='261' u='r' c='je_tcache_alloc_easy'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='380' u='r' c='je_tcache_dalloc_small'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='409' u='r' c='je_tcache_dalloc_large'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2017' u='r' c='je_arena_tcache_fill_small'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2017' u='r' c='je_arena_tcache_fill_small'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2027' u='r' c='je_arena_tcache_fill_small'/>
+<offset>192</offset>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='105' u='r' c='je_tcache_bin_flush_small'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='125' u='r' c='je_tcache_bin_flush_small'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='142' u='r' c='je_tcache_bin_flush_small'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='161' u='r' c='je_tcache_bin_flush_small'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='161' u='r' c='je_tcache_bin_flush_small'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='185' u='r' c='je_tcache_bin_flush_large'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='209' u='r' c='je_tcache_bin_flush_large'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='223' u='r' c='je_tcache_bin_flush_large'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='244' u='r' c='je_tcache_bin_flush_large'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='244' u='r' c='je_tcache_bin_flush_large'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='336' u='w' c='je_tcache_create'/>

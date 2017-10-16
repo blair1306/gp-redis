@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/cluster.h' l='129' type='list *'/>
+<use f='codebrowser/src/cluster.c' l='693' u='w' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='698' u='r' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='713' u='r' c='clusterNodeAddFailureReport'/>
+<use f='codebrowser/src/cluster.c' l='743' u='r' c='clusterNodeCleanupFailureReports'/>
+<use f='codebrowser/src/cluster.c' l='770' u='r' c='clusterNodeDelFailureReport'/>
+<use f='codebrowser/src/cluster.c' l='794' u='r' c='clusterNodeFailureReportsCount'/>
+<use f='codebrowser/src/cluster.c' l='858' u='r' c='freeClusterNode'/>
+<offset>18048</offset>
+<doc f='codebrowser/src/cluster.h' l='129'>/* List of nodes signaling this as failing */</doc>

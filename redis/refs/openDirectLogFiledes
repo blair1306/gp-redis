@@ -1,0 +1,9 @@
+<def f='codebrowser/src/debug.c' l='841' ll='847' type='int openDirectLogFiledes()'/>
+<use f='codebrowser/src/debug.c' l='859' u='c' c='logStackTrace'/>
+<use f='codebrowser/src/debug.c' l='935' u='c' c='memtest_test_linux_anonymous_maps'/>
+<doc f='codebrowser/src/debug.c' l='835'>/* Return a file descriptor to write directly to the Redis log with the
+ * write(2) syscall, that can be used in critical sections of the code
+ * where the rest of Redis can&apos;t be trusted (for example during the memory
+ * test) or when an API call requires a raw fd.
+ *
+ * Close it with closeDirectLogFiledes(). */</doc>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1605' type='struct redisCommand * lookupCommandByCString(char * s)'/>
+<use f='codebrowser/src/module.c' l='1202' u='c' c='RM_Replicate'/>
+<use f='codebrowser/src/module.c' l='2574' u='c' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='3234' u='c' c='RM_EmitAOF'/>
+<use f='codebrowser/src/server.c' l='1502' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1503' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1504' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1505' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1506' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1507' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1508' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1509' u='c' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1510' u='c' c='initServerConfig'/>
+<def f='codebrowser/src/server.c' l='2051' ll='2058' type='struct redisCommand * lookupCommandByCString(char * s)'/>

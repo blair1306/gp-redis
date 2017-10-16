@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1503' type='void changeReplicationId()'/>
+<use f='codebrowser/src/replication.c' l='696' u='c' c='syncCommand'/>
+<def f='codebrowser/src/replication.c' l='1007' ll='1010' type='void changeReplicationId()'/>
+<use f='codebrowser/src/replication.c' l='1036' u='c' c='shiftReplicationId'/>
+<doc f='codebrowser/src/replication.c' l='1003'>/* Change the current instance replication ID with a new, random one.
+ * This will prevent successful PSYNCs between this master and other
+ * slaves, so the command should be called when something happens that
+ * alters the current story of the dataset. */</doc>
+<use f='codebrowser/src/server.c' l='1347' u='c' c='initServerConfig'/>

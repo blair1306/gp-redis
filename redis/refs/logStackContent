@@ -1,0 +1,2 @@
+<def f='codebrowser/src/debug.c' l='693' ll='704' type='void logStackContent(void ** sp)'/>
+<use f='codebrowser/src/debug.c' l='827' u='c' c='logRegisters'/>

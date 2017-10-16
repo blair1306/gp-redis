@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/size_classes.h' l='188'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3223' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='77' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='149' u='c'/>

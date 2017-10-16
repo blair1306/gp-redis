@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1516' type='int rdbSaveRio(rio * rdb, int * error, int flags, rdbSaveInfo * rsi)'/>
+<use f='codebrowser/src/aof.c' l='1172' u='c' c='rewriteAppendOnlyFile'/>
+<def f='codebrowser/src/rdb.c' l='880' ll='959' type='int rdbSaveRio(rio * rdb, int * error, int flags, rdbSaveInfo * rsi)'/>
+<use f='codebrowser/src/rdb.c' l='977' u='c' c='rdbSaveRioWithEOFMark'/>
+<use f='codebrowser/src/rdb.c' l='1009' u='c' c='rdbSave'/>
+<doc f='codebrowser/src/rdb.c' l='872'>/* Produces a dump of the database in RDB format sending it to the specified
+ * Redis I/O channel. On success C_OK is returned, otherwise C_ERR
+ * is returned and part of the output, or all the output, can be
+ * missing because of I/O errors.
+ *
+ * When the function returns C_ERR and if &apos;error&apos; is not NULL, the
+ * integer pointed by &apos;error&apos; is set to the value of errno just after the I/O
+ * error. */</doc>

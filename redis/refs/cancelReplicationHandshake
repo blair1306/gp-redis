@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/replication.c' l='44' type='int cancelReplicationHandshake()'/>
+<use f='codebrowser/src/replication.c' l='1187' u='c' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1249' u='c' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1270' u='c' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1302' u='c' c='readSyncBulkPayload'/>
+<def f='codebrowser/src/replication.c' l='1910' ll='1923' type='int cancelReplicationHandshake()'/>
+<use f='codebrowser/src/replication.c' l='1940' u='c' c='replicationSetMaster'/>
+<use f='codebrowser/src/replication.c' l='1960' u='c' c='replicationUnsetMaster'/>
+<use f='codebrowser/src/replication.c' l='2501' u='c' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2509' u='c' c='replicationCron'/>
+<doc f='codebrowser/src/replication.c' l='1902'>/* This function aborts a non blocking replication attempt if there is one
+ * in progress, by canceling the non-blocking connect attempt or
+ * the initial bulk transfer.
+ *
+ * If there was a replication handshake in progress 1 is returned and
+ * the replication state (server.repl_state) set to REPL_STATE_CONNECT.
+ *
+ * Otherwise zero is returned and no operation is perforemd at all. */</doc>

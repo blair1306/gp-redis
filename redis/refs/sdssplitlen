@@ -1,0 +1,43 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='243' type='sds * sdssplitlen(const char * s, int len, const char * sep, int seplen, int * count)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='793' ll='840' type='sds * sdssplitlen(const char * s, int len, const char * sep, int seplen, int * count)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='777'>/* Split &apos;s&apos; with separator in &apos;sep&apos;. An array
+ * of sds strings is returned. *count will be set
+ * by reference to the number of tokens returned.
+ *
+ * On out of memory, zero length string, zero length
+ * separator, NULL is returned.
+ *
+ * Note that &apos;sep&apos; is able to split a string using
+ * a multi-character separator. For example
+ * sdssplit(&quot;foo_-_bar&quot;,&quot;_-_&quot;); will return two
+ * elements &quot;foo&quot; and &quot;bar&quot;.
+ *
+ * This version of the function is binary-safe but
+ * requires length arguments. sdssplit() is just the
+ * same function but for zero-terminated strings.
+ */</doc>
+<dec f='codebrowser/src/sds.h' l='243' type='sds * sdssplitlen(const char * s, int len, const char * sep, int seplen, int * count)'/>
+<use f='codebrowser/src/config.c' l='178' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='894' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='933' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/module.c' l='531' u='c' c='commandFlagsFromString'/>
+<use f='codebrowser/src/scripting.c' l='1640' u='c' c='ldbStartSession'/>
+<def f='codebrowser/src/sds.c' l='798' ll='845' type='sds * sdssplitlen(const char * s, int len, const char * sep, int seplen, int * count)'/>
+<doc f='codebrowser/src/sds.c' l='782'>/* Split &apos;s&apos; with separator in &apos;sep&apos;. An array
+ * of sds strings is returned. *count will be set
+ * by reference to the number of tokens returned.
+ *
+ * On out of memory, zero length string, zero length
+ * separator, NULL is returned.
+ *
+ * Note that &apos;sep&apos; is able to split a string using
+ * a multi-character separator. For example
+ * sdssplit(&quot;foo_-_bar&quot;,&quot;_-_&quot;); will return two
+ * elements &quot;foo&quot; and &quot;bar&quot;.
+ *
+ * This version of the function is binary-safe but
+ * requires length arguments. sdssplit() is just the
+ * same function but for zero-terminated strings.
+ */</doc>
+<use f='codebrowser/src/sentinel.c' l='2002' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2328' u='c' c='sentinelProcessHelloMessage'/>

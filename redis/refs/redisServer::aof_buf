@@ -1,0 +1,22 @@
+<dec f='codebrowser/src/server.h' l='1000' type='sds'/>
+<use f='codebrowser/src/aof.c' l='293' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='326' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='326' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='345' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='368' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='404' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='421' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='421' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='422' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='424' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='425' u='w' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='566' u='w' c='feedAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='566' u='r' c='feedAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1545' u='r' c='backgroundRewriteDoneHandler'/>
+<use f='codebrowser/src/aof.c' l='1546' u='w' c='backgroundRewriteDoneHandler'/>
+<offset>14592</offset>
+<doc f='codebrowser/src/server.h' l='1000'>/* AOF buffer, written before entering the event loop */</doc>
+<use f='codebrowser/src/evict.c' l='372' u='r' c='freeMemoryGetNotCountedMemory'/>
+<use f='codebrowser/src/object.c' l='866' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/server.c' l='1874' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='3032' u='r' c='genRedisInfoString'/>

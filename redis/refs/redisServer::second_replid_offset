@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1061' type='long long'/>
+<offset>17792</offset>
+<doc f='codebrowser/src/server.h' l='1061'>/* Accept offsets up to this for replid2. */</doc>
+<use f='codebrowser/src/replication.c' l='467' u='r' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='481' u='r' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1018' u='w' c='clearReplicationId2'/>
+<use f='codebrowser/src/replication.c' l='1035' u='w' c='shiftReplicationId'/>
+<use f='codebrowser/src/replication.c' l='1037' u='r' c='shiftReplicationId'/>
+<use f='codebrowser/src/replication.c' l='1520' u='w' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/server.c' l='3246' u='r' c='genRedisInfoString'/>

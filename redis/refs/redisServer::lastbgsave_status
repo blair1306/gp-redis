@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1039' type='int'/>
+<offset>16320</offset>
+<doc f='codebrowser/src/server.h' l='1039'>/* C_OK or C_ERR */</doc>
+<use f='codebrowser/src/rdb.c' l='1037' u='w' c='rdbSave'/>
+<use f='codebrowser/src/rdb.c' l='1085' u='w' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1675' u='w' c='backgroundSaveDoneHandlerDisk'/>
+<use f='codebrowser/src/rdb.c' l='1678' u='w' c='backgroundSaveDoneHandlerDisk'/>
+<use f='codebrowser/src/rdb.c' l='1691' u='w' c='backgroundSaveDoneHandlerDisk'/>
+<use f='codebrowser/src/scripting.c' l='491' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/server.c' l='1091' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1167' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1887' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2393' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='3005' u='r' c='genRedisInfoString'/>

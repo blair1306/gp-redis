@@ -1,0 +1,6 @@
+<def f='codebrowser/src/replication.c' l='1044' ll='1047' type='int slaveIsInHandshakeState()'/>
+<use f='codebrowser/src/replication.c' l='1915' u='c' c='cancelReplicationHandshake'/>
+<use f='codebrowser/src/replication.c' l='2068' u='c' c='roleCommand'/>
+<use f='codebrowser/src/replication.c' l='2497' u='c' c='replicationCron'/>
+<doc f='codebrowser/src/replication.c' l='1042'>/* Returns 1 if the given replication state is a handshake state,
+ * 0 otherwise. */</doc>

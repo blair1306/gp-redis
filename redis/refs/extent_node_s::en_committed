@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='32' type='_Bool'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='129' u='r' c='extent_node_committed_get'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='178' u='w' c='extent_node_committed_set'/>
+<offset>200</offset>

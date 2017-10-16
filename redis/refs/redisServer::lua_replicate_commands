@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='1174' type='int'/>
+<offset>22656</offset>
+<doc f='codebrowser/src/server.h' l='1174'>/* True if we are doing single commands repl. */</doc>
+<use f='codebrowser/src/scripting.c' l='479' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='536' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='547' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='586' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='703' u='w' c='luaRedisReplicateCommandsCommand'/>
+<use f='codebrowser/src/scripting.c' l='753' u='r' c='luaRedisSetReplCommand'/>
+<use f='codebrowser/src/scripting.c' l='1226' u='w' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1362' u='r' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1383' u='r' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='2171' u='r' c='ldbRedis'/>
+<use f='codebrowser/src/scripting.c' l='2179' u='w' c='ldbRedis'/>
+<use f='codebrowser/src/scripting.c' l='2182' u='w' c='ldbRedis'/>

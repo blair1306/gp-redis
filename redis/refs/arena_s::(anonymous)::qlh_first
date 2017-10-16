@@ -1,0 +1,45 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='300' macro='1' type='tcache_t *'/>
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='379' macro='1' type='extent_node_t *'/>
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='397' macro='1' type='extent_node_t *'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='855' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='855' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='871' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='871' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='871' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='871' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='871' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3029' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3060' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3070' macro='1' u='w'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='93' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='93' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='93' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='93' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='93' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='368' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='368' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='368' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='368' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='368' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='710' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='710' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='282' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='282' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' macro='1' u='w'/>

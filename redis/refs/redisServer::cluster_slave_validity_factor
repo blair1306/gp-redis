@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1157' type='int'/>
+<offset>21984</offset>
+<doc f='codebrowser/src/server.h' l='1157'>/* Slave max data age for failover. */</doc>
+<use f='codebrowser/src/cluster.c' l='2890' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2893' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/config.c' l='629' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='630' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1112' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1275' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2012' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='1429' u='w' c='initServerConfig'/>

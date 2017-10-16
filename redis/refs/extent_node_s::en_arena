@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='13' type='arena_t *'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='100' u='r' c='je_extent_node_arena_get'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='150' u='w' c='je_extent_node_arena_set'/>
+<offset>0</offset>

@@ -1,0 +1,6 @@
+<def f='codebrowser/src/sentinel.c' l='408' ll='415' type='dictType'/>
+<use f='codebrowser/src/sentinel.c' l='3675' u='a' c='sentinelGetLeader'/>
+<doc f='codebrowser/src/sentinel.c' l='404'>/* Instance runid (sds) -&gt; votes (long casted to void*)
+ *
+ * This is useful into sentinelGetObjectiveLeader() function in order to
+ * count the votes and understand who is the leader. */</doc>

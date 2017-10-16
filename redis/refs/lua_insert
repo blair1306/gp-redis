@@ -1,0 +1,22 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='124' type='void lua_insert(lua_State * L, int idx)'/>
+<def f='codebrowser/deps/lua/src/lapi.c' l='191' ll='200' macro='1' type='void lua_insert(lua_State * L, int idx)'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='258' u='c' c='luaL_openlib'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='465' u='c' c='luaL_addvalue'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='150' u='c' c='luaB_setfenv'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='271' u='c' c='load_aux'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='379' u='c' c='luaB_pcall'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='388' u='c' c='luaB_xpcall'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='550' u='c' c='luaB_coresume'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='555' u='c' c='luaB_coresume'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='567' u='c' c='luaB_auxwrap'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='187' u='c' c='auxupvalue'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='317' u='c' c='ll_loadlib'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='100' u='c' c='docall'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='207' u='c' c='loadline'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='225' u='c' c='dotty'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='248' u='c' c='handle_script'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='1327' u='c' c='json_protect_conversion'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='1334' u='c' c='json_protect_conversion'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='832' u='c' c='mp_unpack_full'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='867' u='c' c='mp_safe'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='876' u='c' c='mp_safe'/>

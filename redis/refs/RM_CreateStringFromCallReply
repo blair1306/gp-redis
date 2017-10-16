@@ -1,0 +1,2 @@
+<def f='codebrowser/src/module.c' l='2467' ll='2480' macro='1' type='robj * RM_CreateStringFromCallReply(RedisModuleCallReply * reply)'/>
+<use f='codebrowser/src/module.c' l='3932' macro='1' u='r'/>

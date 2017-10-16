@@ -1,0 +1,6 @@
+<def f='codebrowser/src/module.c' l='880' ll='883' type='int RM_StringToLongLong(const robj * str, long long * ll)'/>
+<use f='codebrowser/src/module.c' l='3922' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='876'>/* Convert the string into a long long integer, storing it at `*ll`.
+ * Returns REDISMODULE_OK on success. If the string can&apos;t be parsed
+ * as a valid, strict long long (no spaces before/after), REDISMODULE_ERR
+ * is returned. */</doc>

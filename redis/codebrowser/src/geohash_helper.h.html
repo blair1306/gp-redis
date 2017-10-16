@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>geohash_helper.h source code [codebrowser/src/geohash_helper.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/geohash_helper.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>src</a>/<a href='geohash_helper.h.html'>geohash_helper.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (c) 2013-2014, yinqiwen &lt;yinqiwen@gmail.com&gt;</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (c) 2014, Matt Stancliff &lt;matt@genges.com&gt;.</i></td></tr>
+<tr><th id="4">4</th><td><i> * Copyright (c) 2015, Salvatore Sanfilippo &lt;antirez@gmail.com&gt;.</i></td></tr>
+<tr><th id="5">5</th><td><i> * All rights reserved.</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="8">8</th><td><i> * modification, are permitted provided that the following conditions are met:</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> *  * Redistributions of source code must retain the above copyright notice,</i></td></tr>
+<tr><th id="11">11</th><td><i> *    this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="12">12</th><td><i> *  * Redistributions in binary form must reproduce the above copyright</i></td></tr>
+<tr><th id="13">13</th><td><i> *    notice, this list of conditions and the following disclaimer in the</i></td></tr>
+<tr><th id="14">14</th><td><i> *    documentation and/or other materials provided with the distribution.</i></td></tr>
+<tr><th id="15">15</th><td><i> *  * Neither the name of Redis nor the names of its contributors may be used</i></td></tr>
+<tr><th id="16">16</th><td><i> *    to endorse or promote products derived from this software without</i></td></tr>
+<tr><th id="17">17</th><td><i> *    specific prior written permission.</i></td></tr>
+<tr><th id="18">18</th><td><i> *</i></td></tr>
+<tr><th id="19">19</th><td><i> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"</i></td></tr>
+<tr><th id="20">20</th><td><i> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</i></td></tr>
+<tr><th id="21">21</th><td><i> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</i></td></tr>
+<tr><th id="22">22</th><td><i> * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS</i></td></tr>
+<tr><th id="23">23</th><td><i> * BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</i></td></tr>
+<tr><th id="24">24</th><td><i> * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</i></td></tr>
+<tr><th id="25">25</th><td><i> * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</i></td></tr>
+<tr><th id="26">26</th><td><i> * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</i></td></tr>
+<tr><th id="27">27</th><td><i> * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</i></td></tr>
+<tr><th id="28">28</th><td><i> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF</i></td></tr>
+<tr><th id="29">29</th><td><i> * THE POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="30">30</th><td><i> */</i></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="32">ifndef</span> <span class="macro" data-ref="_M/GEOHASH_HELPER_HPP_">GEOHASH_HELPER_HPP_</span></u></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/GEOHASH_HELPER_HPP_" data-ref="_M/GEOHASH_HELPER_HPP_">GEOHASH_HELPER_HPP_</dfn></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="geohash.h.html">"geohash.h"</a></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/GZERO" data-ref="_M/GZERO">GZERO</dfn>(s) s.bits = s.step = 0;</u></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/GISZERO" data-ref="_M/GISZERO">GISZERO</dfn>(s) (!s.bits &amp;&amp; !s.step)</u></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/GISNOTZERO" data-ref="_M/GISNOTZERO">GISNOTZERO</dfn>(s) (s.bits || s.step)</u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><b>typedef</b> <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="typedef" id="GeoHashFix52Bits" title='GeoHashFix52Bits' data-type='uint64_t' data-ref="GeoHashFix52Bits">GeoHashFix52Bits</dfn>;</td></tr>
+<tr><th id="42">42</th><td><b>typedef</b> <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="typedef" id="GeoHashVarBits" title='GeoHashVarBits' data-type='uint64_t' data-ref="GeoHashVarBits">GeoHashVarBits</dfn>;</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><b>typedef</b> <b>struct</b> {</td></tr>
+<tr><th id="45">45</th><td>    <a class="typedef" href="geohash.h.html#GeoHashBits" title='GeoHashBits' data-type='struct GeoHashBits' data-ref="GeoHashBits">GeoHashBits</a> <dfn class="decl" id="(anonymous)::hash" title='(anonymous struct)::hash' data-ref="(anonymous)::hash">hash</dfn>;</td></tr>
+<tr><th id="46">46</th><td>    <a class="typedef" href="geohash.h.html#GeoHashArea" title='GeoHashArea' data-type='struct GeoHashArea' data-ref="GeoHashArea">GeoHashArea</a> <dfn class="decl" id="(anonymous)::area" title='(anonymous struct)::area' data-ref="(anonymous)::area">area</dfn>;</td></tr>
+<tr><th id="47">47</th><td>    <a class="typedef" href="geohash.h.html#GeoHashNeighbors" title='GeoHashNeighbors' data-type='struct GeoHashNeighbors' data-ref="GeoHashNeighbors">GeoHashNeighbors</a> <dfn class="decl" id="(anonymous)::neighbors" title='(anonymous struct)::neighbors' data-ref="(anonymous)::neighbors">neighbors</dfn>;</td></tr>
+<tr><th id="48">48</th><td>} <dfn class="typedef" id="GeoHashRadius" title='GeoHashRadius' data-type='struct GeoHashRadius' data-ref="GeoHashRadius">GeoHashRadius</dfn>;</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><em>int</em> <dfn class="decl" id="GeoHashBitsComparator" title='GeoHashBitsComparator' data-ref="GeoHashBitsComparator">GeoHashBitsComparator</dfn>(<em>const</em> <a class="typedef" href="geohash.h.html#GeoHashBits" title='GeoHashBits' data-type='struct GeoHashBits' data-ref="GeoHashBits">GeoHashBits</a> *<dfn class="local col5 decl" id="35a" title='a' data-type='const GeoHashBits *' data-ref="35a">a</dfn>, <em>const</em> <a class="typedef" href="geohash.h.html#GeoHashBits" title='GeoHashBits' data-type='struct GeoHashBits' data-ref="GeoHashBits">GeoHashBits</a> *<dfn class="local col6 decl" id="36b" title='b' data-type='const GeoHashBits *' data-ref="36b">b</dfn>);</td></tr>
+<tr><th id="51">51</th><td><a class="typedef" href="../../include/stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> <dfn class="decl" id="geohashEstimateStepsByRadius" title='geohashEstimateStepsByRadius' data-ref="geohashEstimateStepsByRadius">geohashEstimateStepsByRadius</dfn>(<em>double</em> <dfn class="local col7 decl" id="37range_meters" title='range_meters' data-type='double' data-ref="37range_meters">range_meters</dfn>, <em>double</em> <dfn class="local col8 decl" id="38lat" title='lat' data-type='double' data-ref="38lat">lat</dfn>);</td></tr>
+<tr><th id="52">52</th><td><em>int</em> <dfn class="decl" id="geohashBoundingBox" title='geohashBoundingBox' data-ref="geohashBoundingBox">geohashBoundingBox</dfn>(<em>double</em> <dfn class="local col9 decl" id="39longitude" title='longitude' data-type='double' data-ref="39longitude">longitude</dfn>, <em>double</em> <dfn class="local col0 decl" id="40latitude" title='latitude' data-type='double' data-ref="40latitude">latitude</dfn>, <em>double</em> <dfn class="local col1 decl" id="41radius_meters" title='radius_meters' data-type='double' data-ref="41radius_meters">radius_meters</dfn>,</td></tr>
+<tr><th id="53">53</th><td>                        <em>double</em> *<dfn class="local col2 decl" id="42bounds" title='bounds' data-type='double *' data-ref="42bounds">bounds</dfn>);</td></tr>
+<tr><th id="54">54</th><td><a class="typedef" href="#GeoHashRadius" title='GeoHashRadius' data-type='struct GeoHashRadius' data-ref="GeoHashRadius">GeoHashRadius</a> <dfn class="decl" id="geohashGetAreasByRadius" title='geohashGetAreasByRadius' data-ref="geohashGetAreasByRadius">geohashGetAreasByRadius</dfn>(<em>double</em> <dfn class="local col3 decl" id="43longitude" title='longitude' data-type='double' data-ref="43longitude">longitude</dfn>,</td></tr>
+<tr><th id="55">55</th><td>                                      <em>double</em> <dfn class="local col4 decl" id="44latitude" title='latitude' data-type='double' data-ref="44latitude">latitude</dfn>, <em>double</em> <dfn class="local col5 decl" id="45radius_meters" title='radius_meters' data-type='double' data-ref="45radius_meters">radius_meters</dfn>);</td></tr>
+<tr><th id="56">56</th><td><a class="typedef" href="#GeoHashRadius" title='GeoHashRadius' data-type='struct GeoHashRadius' data-ref="GeoHashRadius">GeoHashRadius</a> <dfn class="decl" id="geohashGetAreasByRadiusWGS84" title='geohashGetAreasByRadiusWGS84' data-ref="geohashGetAreasByRadiusWGS84">geohashGetAreasByRadiusWGS84</dfn>(<em>double</em> <dfn class="local col6 decl" id="46longitude" title='longitude' data-type='double' data-ref="46longitude">longitude</dfn>, <em>double</em> <dfn class="local col7 decl" id="47latitude" title='latitude' data-type='double' data-ref="47latitude">latitude</dfn>,</td></tr>
+<tr><th id="57">57</th><td>                                           <em>double</em> <dfn class="local col8 decl" id="48radius_meters" title='radius_meters' data-type='double' data-ref="48radius_meters">radius_meters</dfn>);</td></tr>
+<tr><th id="58">58</th><td><a class="typedef" href="#GeoHashRadius" title='GeoHashRadius' data-type='struct GeoHashRadius' data-ref="GeoHashRadius">GeoHashRadius</a> <dfn class="decl" id="geohashGetAreasByRadiusMercator" title='geohashGetAreasByRadiusMercator' data-ref="geohashGetAreasByRadiusMercator">geohashGetAreasByRadiusMercator</dfn>(<em>double</em> <dfn class="local col9 decl" id="49longitude" title='longitude' data-type='double' data-ref="49longitude">longitude</dfn>, <em>double</em> <dfn class="local col0 decl" id="50latitude" title='latitude' data-type='double' data-ref="50latitude">latitude</dfn>,</td></tr>
+<tr><th id="59">59</th><td>                                              <em>double</em> <dfn class="local col1 decl" id="51radius_meters" title='radius_meters' data-type='double' data-ref="51radius_meters">radius_meters</dfn>);</td></tr>
+<tr><th id="60">60</th><td><a class="typedef" href="#GeoHashFix52Bits" title='GeoHashFix52Bits' data-type='uint64_t' data-ref="GeoHashFix52Bits">GeoHashFix52Bits</a> <dfn class="decl" id="geohashAlign52Bits" title='geohashAlign52Bits' data-ref="geohashAlign52Bits">geohashAlign52Bits</dfn>(<em>const</em> <a class="typedef" href="geohash.h.html#GeoHashBits" title='GeoHashBits' data-type='struct GeoHashBits' data-ref="GeoHashBits">GeoHashBits</a> <dfn class="local col2 decl" id="52hash" title='hash' data-type='const GeoHashBits' data-ref="52hash">hash</dfn>);</td></tr>
+<tr><th id="61">61</th><td><em>double</em> <dfn class="decl" id="geohashGetDistance" title='geohashGetDistance' data-ref="geohashGetDistance">geohashGetDistance</dfn>(<em>double</em> <dfn class="local col3 decl" id="53lon1d" title='lon1d' data-type='double' data-ref="53lon1d">lon1d</dfn>, <em>double</em> <dfn class="local col4 decl" id="54lat1d" title='lat1d' data-type='double' data-ref="54lat1d">lat1d</dfn>,</td></tr>
+<tr><th id="62">62</th><td>                          <em>double</em> <dfn class="local col5 decl" id="55lon2d" title='lon2d' data-type='double' data-ref="55lon2d">lon2d</dfn>, <em>double</em> <dfn class="local col6 decl" id="56lat2d" title='lat2d' data-type='double' data-ref="56lat2d">lat2d</dfn>);</td></tr>
+<tr><th id="63">63</th><td><em>int</em> <dfn class="decl" id="geohashGetDistanceIfInRadius" title='geohashGetDistanceIfInRadius' data-ref="geohashGetDistanceIfInRadius">geohashGetDistanceIfInRadius</dfn>(<em>double</em> <dfn class="local col7 decl" id="57x1" title='x1' data-type='double' data-ref="57x1">x1</dfn>, <em>double</em> <dfn class="local col8 decl" id="58y1" title='y1' data-type='double' data-ref="58y1">y1</dfn>,</td></tr>
+<tr><th id="64">64</th><td>                                 <em>double</em> <dfn class="local col9 decl" id="59x2" title='x2' data-type='double' data-ref="59x2">x2</dfn>, <em>double</em> <dfn class="local col0 decl" id="60y2" title='y2' data-type='double' data-ref="60y2">y2</dfn>, <em>double</em> <dfn class="local col1 decl" id="61radius" title='radius' data-type='double' data-ref="61radius">radius</dfn>,</td></tr>
+<tr><th id="65">65</th><td>                                 <em>double</em> *<dfn class="local col2 decl" id="62distance" title='distance' data-type='double *' data-ref="62distance">distance</dfn>);</td></tr>
+<tr><th id="66">66</th><td><em>int</em> <dfn class="decl" id="geohashGetDistanceIfInRadiusWGS84" title='geohashGetDistanceIfInRadiusWGS84' data-ref="geohashGetDistanceIfInRadiusWGS84">geohashGetDistanceIfInRadiusWGS84</dfn>(<em>double</em> <dfn class="local col3 decl" id="63x1" title='x1' data-type='double' data-ref="63x1">x1</dfn>, <em>double</em> <dfn class="local col4 decl" id="64y1" title='y1' data-type='double' data-ref="64y1">y1</dfn>, <em>double</em> <dfn class="local col5 decl" id="65x2" title='x2' data-type='double' data-ref="65x2">x2</dfn>,</td></tr>
+<tr><th id="67">67</th><td>                                      <em>double</em> <dfn class="local col6 decl" id="66y2" title='y2' data-type='double' data-ref="66y2">y2</dfn>, <em>double</em> <dfn class="local col7 decl" id="67radius" title='radius' data-type='double' data-ref="67radius">radius</dfn>,</td></tr>
+<tr><th id="68">68</th><td>                                      <em>double</em> *<dfn class="local col8 decl" id="68distance" title='distance' data-type='double *' data-ref="68distance">distance</dfn>);</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><u>#<span data-ppcond="32">endif</span> /* GEOHASH_HELPER_HPP_ */</u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='geo.c.html'>codebrowser/src/geo.c</a><br/>Generated on <em>2017-Oct-16</em> from project codebrowser revision <em>with-deprecated-diskstore-4466-g2bf8c2c</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='206' type='int redisvAppendCommand(redisContext * c, const char * format, struct __va_list_tag * ap)'/>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='204'>/* Write a command to the output buffer. Use these functions in blocking mode
+ * to get a pipeline of commands. */</doc>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='929' ll='949' type='int redisvAppendCommand(redisContext * c, const char * format, struct __va_list_tag * ap)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='956' u='c' c='redisAppendCommand'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='1003' u='c' c='redisvCommand'/>

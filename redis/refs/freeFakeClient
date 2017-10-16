@@ -1,0 +1,5 @@
+<def f='codebrowser/src/aof.c' l='619' ll='625' type='void freeFakeClient(struct client * c)'/>
+<use f='codebrowser/src/aof.c' l='763' u='c' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='772' u='c' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='802' u='c' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='807' u='c' c='loadAppendOnlyFile'/>

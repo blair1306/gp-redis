@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='966' type='long long'/>
+<offset>0</offset>
+<doc f='codebrowser/src/server.h' l='966'>/* Timestamp of last sample in ms */</doc>
+<use f='codebrowser/src/server.c' l='749' u='r' c='trackInstantaneousMetric'/>
+<use f='codebrowser/src/server.c' l='760' u='w' c='trackInstantaneousMetric'/>
+<use f='codebrowser/src/server.c' l='1779' u='w' c='resetServerStats'/>

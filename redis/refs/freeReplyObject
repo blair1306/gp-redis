@@ -1,0 +1,24 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='124' type='void freeReplyObject(void * reply)'/>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='123'>/* Function to free the reply objects hiredis returns by default. */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='59' u='r'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='59' u='r'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='74' ll='100' type='void freeReplyObject(void * reply)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='88' u='c' c='freeReplyObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='112' u='c' c='createStringObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='144' u='c' c='createArrayObject'/>
+<doc f='codebrowser/deps/hiredis/hiredis.c' l='73'>/* Free a reply object */</doc>
+<use f='codebrowser/src/redis-benchmark.c' l='226' u='c' c='readHandler'/>
+<use f='codebrowser/src/redis-cli.c' l='319' u='c' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='489' u='c' c='cliAuth'/>
+<use f='codebrowser/src/redis-cli.c' l='504' u='c' c='cliSelect'/>
+<use f='codebrowser/src/redis-cli.c' l='829' u='c' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='1435' u='c' c='evalMode'/>
+<use f='codebrowser/src/redis-cli.c' l='1521' u='c' c='latencyMode'/>
+<use f='codebrowser/src/redis-cli.c' l='1674' u='c' c='latencyDistMode'/>
+<use f='codebrowser/src/redis-cli.c' l='1888' u='c' c='pipeMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2026' u='c' c='getDbSize'/>
+<use f='codebrowser/src/redis-cli.c' l='2077' u='c' c='getKeyTypes'/>
+<use f='codebrowser/src/redis-cli.c' l='2122' u='c' c='getKeySizes'/>
+<use f='codebrowser/src/redis-cli.c' l='2218' u='c' c='findBigKeys'/>
+<use f='codebrowser/src/redis-cli.c' l='2399' u='c' c='statMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2431' u='c' c='scanMode'/>

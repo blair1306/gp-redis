@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='687' type='struct redisCommand *'/>
+<offset>640</offset>
+<use f='codebrowser/src/module.c' l='2592' u='w' c='RM_Call'/>
+<use f='codebrowser/src/networking.c' l='104' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='1536' u='r' c='catClientInfoString'/>
+<use f='codebrowser/src/networking.c' l='1536' u='r' c='catClientInfoString'/>
+<use f='codebrowser/src/scripting.c' l='467' u='w' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/server.c' l='2235' u='r' c='call'/>
+<use f='codebrowser/src/server.c' l='2236' u='r' c='call'/>
+<use f='codebrowser/src/server.c' l='2321' u='w' c='processCommand'/>
+<use f='codebrowser/src/t_list.c' l='834' u='r' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_list.c' l='835' u='r' c='handleClientsBlockedOnLists'/>

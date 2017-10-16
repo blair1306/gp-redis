@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='850' type='int'/>
+<offset>32</offset>
+<doc f='codebrowser/src/server.h' l='849'>/* Used only loading. */</doc>
+<doc f='codebrowser/src/server.h' l='850'>/* True if repl_id field is set. */</doc>
+<use f='codebrowser/src/rdb.c' l='1587' u='w' c='rdbLoadRio'/>
+<use f='codebrowser/src/server.c' l='3536' u='r' c='loadDataFromDisk'/>

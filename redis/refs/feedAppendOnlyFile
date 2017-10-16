@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1520' type='void feedAppendOnlyFile(struct redisCommand * cmd, int dictid, robj ** argv, int argc)'/>
+<def f='codebrowser/src/aof.c' l='512' ll='576' type='void feedAppendOnlyFile(struct redisCommand * cmd, int dictid, robj ** argv, int argc)'/>
+<use f='codebrowser/src/db.c' l='1080' u='c' c='propagateExpire'/>
+<use f='codebrowser/src/server.c' l='2089' u='c' c='propagate'/>

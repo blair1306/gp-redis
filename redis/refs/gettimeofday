@@ -1,0 +1,17 @@
+<dec f='include/x86_64-linux-gnu/sys/time.h' l='71' type='int gettimeofday(struct timeval *restrict __tv, __timezone_ptr_t __tz)'/>
+<doc f='include/x86_64-linux-gnu/sys/time.h' l='66'>/* Get the current time of day and timezone information,
+   putting it into *TV and *TZ.  If TZ is NULL, *TZ is not filled.
+   Returns 0 on success, -1 on errors.
+   NOTE: This form of timezone information is obsolete.
+   Use the functions and variables declared in &lt;time.h&gt; instead.  */</doc>
+<use f='codebrowser/src/ae.c' l='185' u='c' c='aeGetTime'/>
+<use f='codebrowser/src/dict.c' l='236' u='c' c='timeInMilliseconds'/>
+<use f='codebrowser/src/redis-benchmark.c' l='109' u='c' c='ustime'/>
+<use f='codebrowser/src/redis-benchmark.c' l='119' u='c' c='mstime'/>
+<use f='codebrowser/src/redis-cli.c' l='143' u='c' c='ustime'/>
+<use f='codebrowser/src/replication.c' l='311' u='c' c='replicationFeedMonitors'/>
+<use f='codebrowser/src/server.c' l='336' u='c' c='serverLogRaw'/>
+<use f='codebrowser/src/server.c' l='404' u='c' c='ustime'/>
+<use f='codebrowser/src/server.c' l='2673' u='c' c='timeCommand'/>
+<use f='codebrowser/src/server.c' l='3712' u='c' c='main'/>
+<use f='codebrowser/src/util.c' l='591' u='c' c='getRandomHexChars'/>

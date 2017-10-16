@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='746' type='robj *'/>
+<offset>1152</offset>
+<use f='codebrowser/src/db.c' l='898' u='r' c='moveCommand'/>
+<use f='codebrowser/src/server.c' l='1270' u='w' c='createSharedObjects'/>
+<use f='codebrowser/src/t_list.c' l='355' u='r' c='lsetCommand'/>
+<use f='codebrowser/src/t_set.c' l='412' u='r' c='spopWithCountCommand'/>

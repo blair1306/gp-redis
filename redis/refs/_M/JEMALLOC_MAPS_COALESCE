@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='180'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='74' u='a'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='173'>/*
+ * If defined, adjacent virtual memory mappings with identical attributes
+ * automatically coalesce, and they fragment when changes are made to subranges.
+ * This is the normal order of things for mmap()/munmap(), but on Windows
+ * VirtualAlloc()/VirtualFree() operations must be precisely matched, i.e.
+ * mappings do *not* coalesce/fragment.
+ */</doc>

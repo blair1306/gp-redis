@@ -1,0 +1,1 @@
+<dec f='codebrowser/src/server.h' l='1342' type='void acceptHandler(aeEventLoop * el, int fd, void * privdata, int mask)'/>

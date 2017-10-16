@@ -1,0 +1,13 @@
+<def f='codebrowser/src/module.c' l='378' ll='398' type='int moduleDelKeyIfEmpty(RedisModuleKey * key)'/>
+<use f='codebrowser/src/module.c' l='1620' u='c' c='RM_ListPop'/>
+<use f='codebrowser/src/module.c' l='2177' u='c' c='RM_HashSet'/>
+<doc f='codebrowser/src/module.c' l='368'>/* This function is called in low-level API implementation functions in order
+ * to check if the value associated with the key remained empty after an
+ * operation that removed elements from an aggregate data type.
+ *
+ * If this happens, the key is deleted from the DB and the key object state
+ * is set to the right one in order to be targeted again by write operations
+ * possibly recreating the key if needed.
+ *
+ * The function returns 1 if the key value object is found empty and is
+ * deleted, otherwise 0 is returned. */</doc>

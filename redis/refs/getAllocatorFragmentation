@@ -1,0 +1,9 @@
+<def f='codebrowser/src/defrag.c' l='447' ll='470' type='float getAllocatorFragmentation(size_t * out_frag_bytes)'/>
+<use f='codebrowser/src/defrag.c' l='494' u='c' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='535' u='c' c='activeDefragCycle'/>
+<doc f='codebrowser/src/defrag.c' l='441'>/* Utility function to get the fragmentation ratio from jemalloc.
+ * It is critical to do that by comparing only heap maps that belown to
+ * jemalloc, and skip ones the jemalloc keeps as spare. Since we use this
+ * fragmentation ratio in order to decide if a defrag action should be taken
+ * or not, a false detection can cause the defragmenter to waste a lot of CPU
+ * without the possibility of getting any results. */</doc>

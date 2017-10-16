@@ -1,0 +1,48 @@
+<def f='codebrowser/src/config.c' l='139' ll='143' type='int yesnotoi(char * s)'/>
+<use f='codebrowser/src/config.c' l='216' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='287' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='291' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='361' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='365' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='391' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='395' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='399' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='403' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='407' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='411' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='415' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='419' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='423' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='427' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='431' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='441' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='454' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='479' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='483' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='487' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='581' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='609' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='674' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='880' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='797' u='c' c='configSetCommand'/>
+<doc f='codebrowser/src/config.c' l='135'>/*-----------------------------------------------------------------------------
+ * Config file parsing
+ *----------------------------------------------------------------------------*/</doc>
+<dec f='codebrowser/src/sentinel.c' l='362' type='int yesnotoi(char * s)'/>

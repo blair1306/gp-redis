@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='660' macro='1' type='arena_t ** tsd_arenas_cache_get(tsd_t * tsd)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='780' u='c' c='je_arena_get'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='505' u='c' c='je_arena_get_hard'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='663' u='c' c='je_arenas_cache_cleanup'/>

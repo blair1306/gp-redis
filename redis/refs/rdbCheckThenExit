@@ -1,0 +1,13 @@
+<def f='codebrowser/src/rdb.c' l='50' ll='69' type='void rdbCheckThenExit(int linenum, char * reason)'/>
+<use f='codebrowser/src/rdb.c' l='44' u='c' c='rdbLoadLenByRef'/>
+<use f='codebrowser/src/rdb.c' l='44' u='c' c='rdbLoadIntegerObject'/>
+<use f='codebrowser/src/rdb.c' l='44' u='c' c='rdbGenericLoadStringObject'/>
+<use f='codebrowser/src/rdb.c' l='44' u='c' c='rdbLoadCheckModuleValue'/>
+<use f='codebrowser/src/rdb.c' l='44' u='c' c='rdbLoadCheckModuleValue'/>
+<use f='codebrowser/src/rdb.c' l='44' u='c' c='rdbLoadCheckModuleValue'/>
+<use f='codebrowser/src/rdb.c' l='44' u='c' c='rdbLoadCheckModuleValue'/>
+<use f='codebrowser/src/rdb.c' l='44' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='44' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='44' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='44' u='c' c='rdbLoadRio'/>
+<use f='codebrowser/src/rdb.c' l='44' u='c' c='rdbLoadRio'/>

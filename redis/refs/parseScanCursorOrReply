@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1740' type='int parseScanCursorOrReply(client * c, robj * o, unsigned long * cursor)'/>
+<def f='codebrowser/src/db.c' l='559' ll='572' type='int parseScanCursorOrReply(client * c, robj * o, unsigned long * cursor)'/>
+<use f='codebrowser/src/db.c' l='765' u='c' c='scanCommand'/>
+<doc f='codebrowser/src/db.c' l='555'>/* Try to parse a SCAN cursor stored at object &apos;o&apos;:
+ * if the cursor is valid, store it as unsigned integer into *cursor and
+ * returns C_OK. Otherwise return C_ERR and send an error to the
+ * client. */</doc>
+<use f='codebrowser/src/t_hash.c' l='821' u='c' c='hscanCommand'/>
+<use f='codebrowser/src/t_set.c' l='1107' u='c' c='sscanCommand'/>
+<use f='codebrowser/src/t_zset.c' l='3066' u='c' c='zscanCommand'/>

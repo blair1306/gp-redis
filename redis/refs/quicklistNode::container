@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/quicklist.h' l='51' type='unsigned int'/>
+<offset>242</offset>
+<doc f='codebrowser/src/quicklist.h' l='51'>/* NONE==1 or ZIPLIST==2 */</doc>
+<use f='codebrowser/src/quicklist.c' l='146' u='w' c='quicklistCreateNode'/>

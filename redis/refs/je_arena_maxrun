@@ -1,0 +1,19 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='426' macro='1' type='size_t'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='722' macro='1' u='r'/>
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='13' macro='1' type='size_t'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='559' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='561' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='669' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='695' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='726' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='728' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1100' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1144' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1735' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1737' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3165' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3262' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3263' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3265' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3271' macro='1' u='r'/>
+<doc f='codebrowser/deps/jemalloc/src/arena.c' l='13'>/* Max run size for arenas. */</doc>

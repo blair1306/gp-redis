@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='78' type='void (*)(void *)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='124' u='w' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='45' u='r' c='redisAsyncHandleRead'/>
+<use f='codebrowser/deps/hiredis/async.c' l='45' u='r' c='redisAsyncHandleRead'/>
+<use f='codebrowser/deps/hiredis/async.c' l='45' u='r' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='45' u='r' c='redisAsyncHandleWrite'/>
+<offset>64</offset>
+<doc f='codebrowser/deps/hiredis/async.h' l='76'>/* Hooks that are called when the library expects to start
+         * reading/writing. These functions should be idempotent. */</doc>
+<use f='codebrowser/src/sentinel.c' l='344' u='w' c='redisAeAttach'/>

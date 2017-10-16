@@ -1,0 +1,16 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='70' type='uint64_t'/>
+<use f='codebrowser/deps/hiredis/sds.h' l='123' u='r' c='sdsavail'/>
+<use f='codebrowser/deps/hiredis/sds.h' l='191' u='r' c='sdsalloc'/>
+<use f='codebrowser/deps/hiredis/sds.h' l='212' u='w' c='sdssetalloc'/>
+<offset>64</offset>
+<doc f='codebrowser/deps/hiredis/sds.h' l='70'>/* excluding the header and null terminator */</doc>
+<use f='codebrowser/deps/hiredis/sds.c' l='126' u='w' c='sdsnewlen'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='344' u='r' c='sdsIncrLen'/>
+<dec f='codebrowser/src/sds.h' l='70' type='uint64_t'/>
+<use f='codebrowser/src/sds.h' l='123' u='r' c='sdsavail'/>
+<use f='codebrowser/src/sds.h' l='191' u='r' c='sdsalloc'/>
+<use f='codebrowser/src/sds.h' l='212' u='w' c='sdssetalloc'/>
+<offset>64</offset>
+<doc f='codebrowser/src/sds.h' l='70'>/* excluding the header and null terminator */</doc>
+<use f='codebrowser/src/sds.c' l='129' u='w' c='sdsnewlen'/>
+<use f='codebrowser/src/sds.c' l='347' u='r' c='sdsIncrLen'/>

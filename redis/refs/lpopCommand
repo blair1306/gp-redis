@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1858' type='void lpopCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='154' u='r'/>
+<use f='codebrowser/src/server.c' l='154' u='r'/>
+<use f='codebrowser/src/server.c' l='154' u='r'/>
+<use f='codebrowser/src/server.c' l='154' u='r'/>
+<def f='codebrowser/src/t_list.c' l='390' ll='392' type='void lpopCommand(client * c)'/>

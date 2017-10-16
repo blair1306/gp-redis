@@ -1,0 +1,4 @@
+<dec f='include/valgrind/memcheck.h' l='134'/>
+<doc f='include/valgrind/memcheck.h' l='131'>/* Similar to VALGRIND_MAKE_MEM_DEFINED except that addressability is
+   not altered: bytes which are addressable are marked as defined,
+   but those which are not addressable are left unchanged. */</doc>

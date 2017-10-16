@@ -1,0 +1,16 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='92'/>
+<use f='codebrowser/deps/hiredis/net.c' l='94' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='322' u='c'/>
+<use f='codebrowser/src/anet.c' l='218' u='c'/>
+<use f='codebrowser/src/anet.c' l='220' u='c'/>
+<use f='codebrowser/src/anet.c' l='505' u='c'/>
+<use f='codebrowser/src/anet.c' l='555' u='c'/>
+<use f='codebrowser/src/anet.c' l='557' u='c'/>
+<use f='codebrowser/src/anet.c' l='584' u='c'/>
+<use f='codebrowser/src/anet.c' l='586' u='c'/>
+<use f='codebrowser/src/anet.c' l='640' u='c'/>
+<use f='codebrowser/src/anet.c' l='642' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1265' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1268' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1287' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1288' u='c'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1715' type='robj * objectCommandLookup(client * c, robj * key)'/>
+<def f='codebrowser/src/object.c' l='996' ll='1001' type='robj * objectCommandLookup(client * c, robj * key)'/>
+<use f='codebrowser/src/object.c' l='1004' u='c' c='objectCommandLookupOrReply'/>
+<doc f='codebrowser/src/object.c' l='994'>/* This is a helper function for the OBJECT command. We need to lookup keys
+ * without any modification of LRU or other parameters. */</doc>

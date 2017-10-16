@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1788' type='void unblockClient(client * c)'/>
+<def f='codebrowser/src/blocked.c' l='134' ll='155' type='void unblockClient(client * c)'/>
+<use f='codebrowser/src/blocked.c' l='191' u='c' c='disconnectAllBlockedClients'/>
+<doc f='codebrowser/src/blocked.c' l='132'>/* Unblock a client calling the right function depending on the kind
+ * of operation the client is blocking for. */</doc>
+<use f='codebrowser/src/module.c' l='3523' u='c' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/networking.c' l='807' u='c' c='freeClient'/>
+<use f='codebrowser/src/replication.c' l='2453' u='c' c='processClientsWaitingReplicas'/>
+<use f='codebrowser/src/replication.c' l='2461' u='c' c='processClientsWaitingReplicas'/>
+<use f='codebrowser/src/server.c' l='799' u='c' c='clientsCronHandleTimeout'/>
+<use f='codebrowser/src/server.c' l='804' u='c' c='clientsCronHandleTimeout'/>
+<use f='codebrowser/src/t_list.c' l='844' u='c' c='handleClientsBlockedOnLists'/>

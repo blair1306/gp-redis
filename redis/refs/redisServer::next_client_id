@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='923' type='uint64_t'/>
+<offset>6592</offset>
+<doc f='codebrowser/src/server.h' l='923'>/* Next client unique ID. Incremental. */</doc>
+<use f='codebrowser/src/networking.c' l='93' u='a' c='createClient'/>
+<use f='codebrowser/src/server.c' l='1436' u='w' c='initServerConfig'/>

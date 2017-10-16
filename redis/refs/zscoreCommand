@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1915' type='void zscoreCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='197' u='r'/>
+<use f='codebrowser/src/server.c' l='197' u='r'/>
+<use f='codebrowser/src/server.c' l='197' u='r'/>
+<use f='codebrowser/src/server.c' l='197' u='r'/>
+<def f='codebrowser/src/t_zset.c' l='3021' ll='3034' type='void zscoreCommand(client * c)'/>

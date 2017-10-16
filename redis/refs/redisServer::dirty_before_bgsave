@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1026' type='long long'/>
+<offset>15616</offset>
+<doc f='codebrowser/src/server.h' l='1026'>/* Used to restore dirty on failed BGSAVE */</doc>
+<use f='codebrowser/src/rdb.c' l='1053' u='w' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1673' u='r' c='backgroundSaveDoneHandlerDisk'/>

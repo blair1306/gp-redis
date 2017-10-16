@@ -1,0 +1,15 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='21'/>
+<use f='codebrowser/deps/lua/src/lua_bit.c' l='61' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_bit.c' l='85' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_bit.c' l='182' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='1295' u='a'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='1295' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='356' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='381' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='425' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='441' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='490' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='642' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='916' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='937' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_struct.c' l='40' u='c'/>

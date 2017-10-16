@@ -1,0 +1,15 @@
+<def f='codebrowser/src/sentinel.c' l='1018' ll='1046' type='int sentinelTryConnectionSharing(sentinelRedisInstance * ri)'/>
+<use f='codebrowser/src/sentinel.c' l='1678' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='2377' u='c' c='sentinelProcessHelloMessage'/>
+<doc f='codebrowser/src/sentinel.c' l='1006'>/* This function will attempt to share the instance link we already have
+ * for the same Sentinel in the context of a different master, with the
+ * instance we are passing as argument.
+ *
+ * This way multiple Sentinel objects that refer all to the same physical
+ * Sentinel instance but in the context of different masters will use
+ * a single connection, will send a single PING per second for failure
+ * detection and so forth.
+ *
+ * Return C_OK if a matching Sentinel was found in the context of a
+ * different master and sharing was performed. Otherwise C_ERR
+ * is returned. */</doc>

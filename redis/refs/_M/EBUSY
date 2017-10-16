@@ -1,0 +1,6 @@
+<dec f='include/asm-generic/errno-base.h' l='19'/>
+<use f='codebrowser/src/module.c' l='3786' u='c'/>
+<use f='codebrowser/src/module.c' l='3858' u='c'/>
+<use f='codebrowser/src/sentinel.c' l='1175' u='c'/>
+<use f='codebrowser/src/sentinel.c' l='1584' u='c'/>
+<use f='codebrowser/src/sentinel.c' l='3039' u='c'/>

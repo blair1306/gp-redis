@@ -1,0 +1,7 @@
+<def f='codebrowser/src/quicklist.h' l='82' ll='88'/>
+<size>40</size>
+<mbr r='quicklistIter::quicklist' o='0' t='const quicklist *'/>
+<mbr r='quicklistIter::current' o='64' t='quicklistNode *'/>
+<mbr r='quicklistIter::zi' o='128' t='unsigned char *'/>
+<mbr r='quicklistIter::offset' o='192' t='long'/>
+<mbr r='quicklistIter::direction' o='256' t='int'/>

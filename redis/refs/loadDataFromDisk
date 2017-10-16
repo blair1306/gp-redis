@@ -1,0 +1,3 @@
+<def f='codebrowser/src/server.c' l='3523' ll='3555' type='void loadDataFromDisk()'/>
+<use f='codebrowser/src/server.c' l='3841' u='c' c='main'/>
+<doc f='codebrowser/src/server.c' l='3522'>/* Function called at startup to load RDB or AOF file in memory. */</doc>

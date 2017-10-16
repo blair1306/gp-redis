@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/quicklist.h' l='146' type='quicklist * quicklistDup(quicklist * orig)'/>
+<def f='codebrowser/src/quicklist.c' l='1186' ll='1215' type='quicklist * quicklistDup(quicklist * orig)'/>
+<doc f='codebrowser/src/quicklist.c' l='1180'>/* Duplicate the quicklist.
+ * On success a copy of the original quicklist is returned.
+ *
+ * The original quicklist both on success or error is never modified.
+ *
+ * Returns newly allocated quicklist. */</doc>

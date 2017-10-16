@@ -1,0 +1,5 @@
+<dec f='include/features.h' l='361'/>
+<use f='codebrowser/src/config.h' l='100' u='a'/>
+<use f='codebrowser/src/config.h' l='101' u='c'/>
+<use f='codebrowser/src/config.h' l='202' u='a'/>
+<use f='codebrowser/src/config.h' l='203' u='c'/>

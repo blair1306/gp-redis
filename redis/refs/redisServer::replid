@@ -1,0 +1,26 @@
+<dec f='codebrowser/src/server.h' l='1058' type='char [41]'/>
+<offset>17056</offset>
+<doc f='codebrowser/src/server.h' l='1057'>/* Replication (master) */</doc>
+<doc f='codebrowser/src/server.h' l='1058'>/* My current replication ID. */</doc>
+<use f='codebrowser/src/rdb.c' l='863' u='r' c='rdbSaveInfoAuxFields'/>
+<use f='codebrowser/src/replication.c' l='433' c='replicationSetupSlaveForFullResync'/>
+<use f='codebrowser/src/replication.c' l='465' u='r' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='471' u='r' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='477' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='517' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1008' u='r' c='changeReplicationId'/>
+<use f='codebrowser/src/replication.c' l='1009' u='w' c='changeReplicationId'/>
+<use f='codebrowser/src/replication.c' l='1016' u='r' c='clearReplicationId2'/>
+<use f='codebrowser/src/replication.c' l='1027' u='r' c='shiftReplicationId'/>
+<use f='codebrowser/src/replication.c' l='1027' u='r' c='shiftReplicationId'/>
+<use f='codebrowser/src/replication.c' l='1037' c='shiftReplicationId'/>
+<use f='codebrowser/src/replication.c' l='1284' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1284' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1524' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1524' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1525' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='2172' u='r' c='replicationCacheMasterUsingMyself'/>
+<use f='codebrowser/src/replication.c' l='2172' u='r' c='replicationCacheMasterUsingMyself'/>
+<use f='codebrowser/src/server.c' l='3243' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3542' u='r' c='loadDataFromDisk'/>
+<use f='codebrowser/src/server.c' l='3542' u='r' c='loadDataFromDisk'/>

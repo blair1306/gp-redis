@@ -1,0 +1,5 @@
+<def f='codebrowser/src/t_zset.c' l='71' ll='77' type='zskiplistNode * zslCreateNode(int level, double score, sds ele)'/>
+<use f='codebrowser/src/t_zset.c' l='87' u='c' c='zslCreate'/>
+<use f='codebrowser/src/t_zset.c' l='165' u='c' c='zslInsert'/>
+<doc f='codebrowser/src/t_zset.c' l='69'>/* Create a skiplist node with the specified number of levels.
+ * The SDS string &apos;ele&apos; is referenced by the node after the call. */</doc>

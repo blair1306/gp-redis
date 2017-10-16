@@ -1,0 +1,3 @@
+<def f='codebrowser/src/t_list.c' l='234' ll='254' type='void pushxGenericCommand(client * c, int where)'/>
+<use f='codebrowser/src/t_list.c' l='257' u='c' c='lpushxCommand'/>
+<use f='codebrowser/src/t_list.c' l='261' u='c' c='rpushxCommand'/>

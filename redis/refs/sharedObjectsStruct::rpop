@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='750' type='robj *'/>
+<offset>2496</offset>
+<use f='codebrowser/src/server.c' l='1316' u='w' c='createSharedObjects'/>
+<use f='codebrowser/src/t_list.c' l='745' u='r' c='serveClientBlockedOnList'/>
+<use f='codebrowser/src/t_list.c' l='763' u='r' c='serveClientBlockedOnList'/>
+<use f='codebrowser/src/t_list.c' l='917' u='r' c='blockingPopGenericCommand'/>

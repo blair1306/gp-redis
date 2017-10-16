@@ -1,0 +1,4 @@
+<dec f='include/valgrind/memcheck.h' l='203'/>
+<doc f='include/valgrind/memcheck.h' l='200'>/* Same as VALGRIND_DO_ADDED_LEAK_CHECK but showing entries with
+   increased or decreased leaked bytes/blocks since previous leak
+   search. */</doc>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1097' type='int'/>
+<offset>19360</offset>
+<doc f='codebrowser/src/server.h' l='1097'>/* Slave is read only? */</doc>
+<use f='codebrowser/src/config.c' l='395' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1005' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1287' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1979' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/db.c' l='1043' u='r' c='setExpire'/>
+<use f='codebrowser/src/module.c' l='1326' u='r' c='RM_GetContextFlags'/>
+<use f='codebrowser/src/scripting.c' l='483' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/server.c' l='1462' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2425' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='3176' u='r' c='genRedisInfoString'/>

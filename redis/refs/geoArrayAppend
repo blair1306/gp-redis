@@ -1,0 +1,4 @@
+<def f='codebrowser/src/geo.c' l='64' ll='72' type='geoPoint * geoArrayAppend(geoArray * ga)'/>
+<use f='codebrowser/src/geo.c' l='204' u='c' c='geoAppendIfWithinRadius'/>
+<doc f='codebrowser/src/geo.c' l='62'>/* Add a new entry and return its pointer so that the caller can populate
+ * it with data. */</doc>

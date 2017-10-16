@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='522' type='void *'/>
+<use f='codebrowser/src/aof.c' l='1042' u='r' c='rewriteModuleObject'/>
+<offset>64</offset>
+<use f='codebrowser/src/debug.c' l='248' u='r' c='computeDatasetDigest'/>
+<use f='codebrowser/src/module.c' l='2935' u='r' c='RM_ModuleTypeGetValue'/>
+<use f='codebrowser/src/object.c' l='238' u='w' c='createModuleObject'/>
+<use f='codebrowser/src/object.c' l='302' u='r' c='freeModuleObject'/>
+<use f='codebrowser/src/object.c' l='791' u='r' c='objectComputeSize'/>
+<use f='codebrowser/src/rdb.c' l='779' u='r' c='rdbSaveObject'/>

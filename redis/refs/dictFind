@@ -1,0 +1,49 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='121' type='dictEntry * dictFind(dict * ht, const void * key)'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='168' u='c' c='dictReplace'/>
+<def f='codebrowser/deps/hiredis/dict.c' l='243' ll='256' type='dictEntry * dictFind(dict * ht, const void * key)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='388' u='c' c='__redisGetSubscribeCallback'/>
+<dec f='codebrowser/src/dict.h' l='161' type='dictEntry * dictFind(dict * d, const void * key)'/>
+<use f='codebrowser/src/cluster.c' l='917' u='c' c='clusterLookupNode'/>
+<use f='codebrowser/src/cluster.c' l='1128' u='c' c='clusterBlacklistAddNode'/>
+<use f='codebrowser/src/cluster.c' l='1141' u='c' c='clusterBlacklistExists'/>
+<use f='codebrowser/src/config.c' l='1857' u='c' c='rewriteConfigRemoveOrphaned'/>
+<use f='codebrowser/src/db.c' l='45' u='c' c='lookupKey'/>
+<use f='codebrowser/src/db.c' l='175' u='c' c='dbOverwrite'/>
+<use f='codebrowser/src/db.c' l='208' u='c' c='dbExists'/>
+<use f='codebrowser/src/db.c' l='227' u='c' c='dbRandomKey'/>
+<use f='codebrowser/src/db.c' l='1026' u='c' c='removeExpire'/>
+<use f='codebrowser/src/db.c' l='1038' u='c' c='setExpire'/>
+<use f='codebrowser/src/db.c' l='1055' u='c' c='getExpire'/>
+<use f='codebrowser/src/db.c' l='1059' u='c' c='getExpire'/>
+<use f='codebrowser/src/debug.c' l='366' u='c' c='debugCommand'/>
+<use f='codebrowser/src/debug.c' l='418' u='c' c='debugCommand'/>
+<use f='codebrowser/src/debug.c' l='911' u='c' c='logCurrentClient'/>
+<def f='codebrowser/src/dict.c' l='476' ll='495' type='dictEntry * dictFind(dict * d, const void * key)'/>
+<use f='codebrowser/src/dict.c' l='500' u='c' c='dictFetchValue'/>
+<use f='codebrowser/src/evict.c' l='182' u='c' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='447' u='c' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='450' u='c' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/expire.c' l='281' u='c' c='expireSlaveKeys'/>
+<use f='codebrowser/src/latency.c' l='584' u='c' c='latencyCommand'/>
+<use f='codebrowser/src/module.c' l='417' u='c' c='RM_GetApi'/>
+<use f='codebrowser/src/multi.c' l='315' u='c' c='touchWatchedKeysOnFlush'/>
+<use f='codebrowser/src/object.c' l='999' u='c' c='objectCommandLookup'/>
+<use f='codebrowser/src/pubsub.c' l='68' u='c' c='pubsubSubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='100' u='c' c='pubsubUnsubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='232' u='c' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/replication.c' l='2331' u='c' c='replicationScriptCacheExists'/>
+<use f='codebrowser/src/scripting.c' l='1435' u='c' c='scriptCommand'/>
+<use f='codebrowser/src/scripting.c' l='1448' u='c' c='scriptCommand'/>
+<use f='codebrowser/src/sentinel.c' l='1172' u='c' c='createSentinelRedisInstance'/>
+<use f='codebrowser/src/t_hash.c' l='95' u='c' c='hashTypeGetFromHashTable'/>
+<use f='codebrowser/src/t_hash.c' l='240' u='c' c='hashTypeSet'/>
+<use f='codebrowser/src/t_list.c' l='641' u='c' c='blockForKeys'/>
+<use f='codebrowser/src/t_list.c' l='700' u='c' c='signalListAsReady'/>
+<use f='codebrowser/src/t_list.c' l='703' u='c' c='signalListAsReady'/>
+<use f='codebrowser/src/t_list.c' l='825' u='c' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_set.c' l='110' u='c' c='setTypeIsMember'/>
+<use f='codebrowser/src/t_zset.c' l='1209' u='c' c='zsetScore'/>
+<use f='codebrowser/src/t_zset.c' l='1323' u='c' c='zsetAdd'/>
+<use f='codebrowser/src/t_zset.c' l='1463' u='c' c='zsetRank'/>
+<use f='codebrowser/src/t_zset.c' l='2051' u='c' c='zuiFind'/>
+<use f='codebrowser/src/t_zset.c' l='2073' u='c' c='zuiFind'/>

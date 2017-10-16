@@ -1,0 +1,9 @@
+<def f='codebrowser/src/rax.c' l='141' ll='152' type='raxNode * raxNewNode(size_t children, int datafield)'/>
+<use f='codebrowser/src/rax.c' l='161' u='c' c='raxNew'/>
+<use f='codebrowser/src/rax.c' l='225' u='c' c='raxAddChild'/>
+<use f='codebrowser/src/rax.c' l='320' u='c' c='raxCompressNode'/>
+<use f='codebrowser/src/rax.c' l='598' u='c' c='raxInsert'/>
+<doc f='codebrowser/src/rax.c' l='137'>/* Allocate a new non compressed node with the specified number of children.
+ * If datafiled is true, the allocation is made large enough to hold the
+ * associated data pointer.
+ * Returns the new node pointer. On out of memory NULL is returned. */</doc>

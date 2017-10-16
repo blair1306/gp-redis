@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='105' type='redisAsyncContext * redisAsyncConnectBind(const char * ip, int port, const char * source_addr)'/>
+<def f='codebrowser/deps/hiredis/async.c' l='171' ll='177' type='redisAsyncContext * redisAsyncConnectBind(const char * ip, int port, const char * source_addr)'/>
+<use f='codebrowser/src/sentinel.c' l='1914' u='c' c='sentinelReconnectInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1937' u='c' c='sentinelReconnectInstance'/>

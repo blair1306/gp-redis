@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1356' type='void addReplyDouble(client * c, double d)'/>
+<use f='codebrowser/src/module.c' l='1155' u='c' c='RM_ReplyWithDouble'/>
+<def f='codebrowser/src/networking.c' l='459' ll='471' type='void addReplyDouble(client * c, double d)'/>
+<doc f='codebrowser/src/networking.c' l='458'>/* Add a double as a bulk reply */</doc>
+<use f='codebrowser/src/object.c' l='1128' u='c' c='memoryCommand'/>
+<use f='codebrowser/src/object.c' l='1131' u='c' c='memoryCommand'/>
+<use f='codebrowser/src/object.c' l='1134' u='c' c='memoryCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1592' u='c' c='zaddGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2424' u='c' c='zrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2454' u='c' c='zrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2586' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2641' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='3032' u='c' c='zscoreCommand'/>

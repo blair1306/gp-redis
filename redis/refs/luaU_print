@@ -1,0 +1,3 @@
+<use f='codebrowser/deps/lua/src/luac.c' l='172' u='c' c='pmain'/>
+<def f='codebrowser/deps/lua/src/print.c' l='215' ll='227' type='void luaU_print(const Proto * f, int full)'/>
+<use f='codebrowser/deps/lua/src/print.c' l='18' u='c' c='luaU_print'/>

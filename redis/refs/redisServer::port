@@ -1,0 +1,25 @@
+<dec f='codebrowser/src/server.h' l='903' type='int'/>
+<offset>1600</offset>
+<doc f='codebrowser/src/server.h' l='902'>/* Networking */</doc>
+<doc f='codebrowser/src/server.h' l='903'>/* TCP listening port */</doc>
+<use f='codebrowser/src/cluster.c' l='457' u='r' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='466' u='r' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='488' u='r' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='489' u='r' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='2224' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2227' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/config.c' l='220' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='221' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='221' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1257' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1952' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/replication.c' l='1668' u='r' c='syncWithMaster'/>
+<use f='codebrowser/src/sentinel.c' l='442' u='w' c='initSentinelConfig'/>
+<use f='codebrowser/src/sentinel.c' l='2486' u='r' c='sentinelSendHello'/>
+<use f='codebrowser/src/server.c' l='1353' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1828' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1829' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2878' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3440' u='r' c='redisAsciiArt'/>
+<use f='codebrowser/src/server.c' l='3448' u='r' c='redisAsciiArt'/>
+<use f='codebrowser/src/server.c' l='3572' u='r' c='redisSetProcTitle'/>

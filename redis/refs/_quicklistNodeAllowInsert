@@ -1,0 +1,6 @@
+<def f='codebrowser/src/quicklist.c' l='420' ll='450' type='int _quicklistNodeAllowInsert(const quicklistNode * node, const int fill, const size_t sz)'/>
+<use f='codebrowser/src/quicklist.c' l='483' u='c' c='quicklistPushHead'/>
+<use f='codebrowser/src/quicklist.c' l='506' u='c' c='quicklistPushTail'/>
+<use f='codebrowser/src/quicklist.c' l='851' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='860' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='869' u='c' c='_quicklistInsert'/>

@@ -1,0 +1,13 @@
+<def f='codebrowser/src/sentinel.c' l='1300' ll='1318' type='int removeMatchingSentinelFromMaster(sentinelRedisInstance * master, char * runid)'/>
+<use f='codebrowser/src/sentinel.c' l='2348' u='c' c='sentinelProcessHelloMessage'/>
+<doc f='codebrowser/src/sentinel.c' l='1289'>/* This function remove the Sentinel with the specified ID from the
+ * specified master.
+ *
+ * If &quot;runid&quot; is NULL the function returns ASAP.
+ *
+ * This function is useful because on Sentinels address switch, we want to
+ * remove our old entry and add a new one for the same ID but with the new
+ * address.
+ *
+ * The function returns 1 if the matching Sentinel was removed, otherwise
+ * 0 if there was no Sentinel with this ID. */</doc>

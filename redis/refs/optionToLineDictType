@@ -1,0 +1,2 @@
+<def f='codebrowser/src/config.c' l='1435' ll='1442' type='dictType'/>
+<use f='codebrowser/src/config.c' l='1503' u='a' c='rewriteConfigReadOldFile'/>

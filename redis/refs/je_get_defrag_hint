@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2600' ll='2625' macro='1' type='int je_get_defrag_hint(void * ptr, int * bin_util, int * run_util)'/>
+<dec f='codebrowser/src/defrag.c' l='46' type='int je_get_defrag_hint(void * ptr, int * bin_util, int * run_util)'/>
+<use f='codebrowser/src/defrag.c' l='57' u='c' c='activeDefragAlloc'/>
+<doc f='codebrowser/src/defrag.c' l='44'>/* this method was added to jemalloc in order to help us understand which
+ * pointers are worthwhile moving and which aren&apos;t */</doc>

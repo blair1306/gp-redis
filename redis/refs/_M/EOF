@@ -1,0 +1,13 @@
+<dec f='include/libio.h' l='62'/>
+<use f='include/stdio.h' l='133' u='a'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1018' u='c'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1019' u='c'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='570' u='c'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='577' u='c'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='290' u='c'/>
+<use f='codebrowser/src/aof.c' l='1182' u='c'/>
+<use f='codebrowser/src/aof.c' l='1226' u='c'/>
+<use f='codebrowser/src/aof.c' l='1228' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1015' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1017' u='c'/>
+<use f='codebrowser/src/sentinel.c' l='1857' u='c'/>

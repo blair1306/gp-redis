@@ -1,0 +1,8 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='924' macro='1' type='void * je_ipallocztm(tsd_t * tsd, size_t usize, size_t alignment, _Bool zero, tcache_t * tcache, _Bool is_metadata, arena_t * arena)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='946' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='953' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='273' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='317' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='394' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='65' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='327' macro='1' u='c'/>

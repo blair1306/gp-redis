@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1656' type='void setTypeConvert(robj * subject, int enc)'/>
+<use f='codebrowser/src/rdb.c' l='1202' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1379' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_set.c' l='70' u='c' c='setTypeAdd'/>
+<use f='codebrowser/src/t_set.c' l='75' u='c' c='setTypeAdd'/>
+<def f='codebrowser/src/t_set.c' l='235' ll='262' type='void setTypeConvert(robj * setobj, int enc)'/>
+<doc f='codebrowser/src/t_set.c' l='232'>/* Convert the set to specified encoding. The resulting dict (when converting
+ * to a hash table) is presized to hold the number of elements in the original
+ * set. */</doc>

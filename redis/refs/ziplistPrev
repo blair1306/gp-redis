@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/ziplist.h' l='42' type='unsigned char * ziplistPrev(unsigned char * zl, unsigned char * p)'/>
+<use f='codebrowser/src/module.c' l='2015' u='c' c='RM_ZsetRangePrev'/>
+<use f='codebrowser/src/module.c' l='2016' u='c' c='RM_ZsetRangePrev'/>
+<use f='codebrowser/src/quicklist.c' l='1146' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/t_zset.c' l='755' u='c' c='zzlPrev'/>
+<use f='codebrowser/src/t_zset.c' l='757' u='c' c='zzlPrev'/>
+<use f='codebrowser/src/t_zset.c' l='845' u='c' c='zzlLastInRange'/>
+<use f='codebrowser/src/t_zset.c' l='847' u='c' c='zzlLastInRange'/>
+<use f='codebrowser/src/t_zset.c' l='936' u='c' c='zzlLastInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='938' u='c' c='zzlLastInLexRange'/>
+<def f='codebrowser/src/ziplist.c' l='1012' ll='1028' type='unsigned char * ziplistPrev(unsigned char * zl, unsigned char * p)'/>
+<doc f='codebrowser/src/ziplist.c' l='1011'>/* Return pointer to previous entry in ziplist. */</doc>

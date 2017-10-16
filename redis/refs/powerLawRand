@@ -1,0 +1,8 @@
+<def f='codebrowser/src/redis-cli.c' l='2447' ll='2456' type='long long powerLawRand(long long min, long long max, double alpha)'/>
+<use f='codebrowser/src/redis-cli.c' l='2462' u='c' c='LRUTestGenKey'/>
+<doc f='codebrowser/src/redis-cli.c' l='2441'>/* Return an integer from min to max (both inclusive) using a power-law
+ * distribution, depending on the value of alpha: the greater the alpha
+ * the more bias towards lower values.
+ *
+ * With alpha = 6.2 the output follows the 80-20 rule where 20% of
+ * the returned numbers will account for 80% of the frequency. */</doc>

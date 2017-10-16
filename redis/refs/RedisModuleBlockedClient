@@ -1,0 +1,4 @@
+<def f='codebrowser/src/module.c' l='197' ll='210'/>
+<size>64</size>
+<doc f='codebrowser/src/module.c' l='195'>/* Structure representing a blocked client. We get a pointer to such
+ * an object when blocking from modules. */</doc>

@@ -1,0 +1,2 @@
+<def f='codebrowser/src/server.c' l='2031' ll='2043' type='void redisOpArrayFree(redisOpArray * oa)'/>
+<use f='codebrowser/src/server.c' l='2294' u='c' c='call'/>

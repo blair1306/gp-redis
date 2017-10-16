@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='496' type='moduleTypeLoadFunc'/>
+<offset>128</offset>
+<use f='codebrowser/src/module.c' l='2886' u='w' c='RM_CreateDataType'/>
+<use f='codebrowser/src/rdb.c' l='1415' u='r' c='rdbLoadObject'/>

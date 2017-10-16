@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='70' type='dict *'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='261' u='w' c='dictGetIterator'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='273' u='r' c='dictNext'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='274' u='r' c='dictNext'/>
+<offset>0</offset>

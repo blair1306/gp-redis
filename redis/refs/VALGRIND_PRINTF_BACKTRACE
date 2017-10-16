@@ -1,0 +1,2 @@
+<dec f='include/valgrind/valgrind.h' l='6790' type='int VALGRIND_PRINTF_BACKTRACE(const char * format)'/>
+<def f='include/valgrind/valgrind.h' l='6793' ll='6825' type='int VALGRIND_PRINTF_BACKTRACE(const char * format)'/>

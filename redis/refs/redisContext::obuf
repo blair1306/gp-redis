@@ -1,0 +1,20 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='145' type='char *'/>
+<use f='codebrowser/deps/hiredis/async.c' l='421' u='r' c='redisProcessCallbacks'/>
+<offset>1152</offset>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='145'>/* Write buffer */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='601' u='w' c='redisContextInit'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='608' u='r' c='redisContextInit'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='621' u='r' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='622' u='r' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='651' u='r' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='654' u='w' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='838' u='r' c='redisBufferWrite'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='839' u='r' c='redisBufferWrite'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='839' u='r' c='redisBufferWrite'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='848' u='r' c='redisBufferWrite'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='849' u='r' c='redisBufferWrite'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='850' u='w' c='redisBufferWrite'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='852' u='r' c='redisBufferWrite'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='856' u='r' c='redisBufferWrite'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='910' u='r' c='__redisAppendCommand'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='916' u='w' c='__redisAppendCommand'/>

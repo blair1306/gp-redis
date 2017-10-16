@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='708' type='long long'/>
+<offset>1728</offset>
+<doc f='codebrowser/src/server.h' l='708'>/* Replication ack offset, if this is a slave. */</doc>
+<use f='codebrowser/src/networking.c' l='115' u='w' c='createClient'/>
+<use f='codebrowser/src/replication.c' l='819' u='r' c='replconfCommand'/>
+<use f='codebrowser/src/replication.c' l='820' u='w' c='replconfCommand'/>
+<use f='codebrowser/src/replication.c' l='2057' u='r' c='roleCommand'/>
+<use f='codebrowser/src/replication.c' l='2380' u='r' c='replicationCountAcksByOffset'/>
+<use f='codebrowser/src/server.c' l='3230' u='r' c='genRedisInfoString'/>

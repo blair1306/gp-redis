@@ -1,0 +1,21 @@
+<dec f='codebrowser/src/cluster.h' l='118' type='mstime_t'/>
+<use f='codebrowser/src/cluster.c' l='225' u='w' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='687' u='w' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='1364' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1820' u='w' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2284' u='r' c='clusterSetGossipEntry'/>
+<use f='codebrowser/src/cluster.c' l='2354' u='w' c='clusterSendPing'/>
+<use f='codebrowser/src/cluster.c' l='3273' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3273' u='w' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3290' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3297' u='w' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3324' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3381' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3382' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3384' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3395' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3414' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3419' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3880' u='r' c='clusterGenNodeDescription'/>
+<offset>17088</offset>
+<doc f='codebrowser/src/cluster.h' l='118'>/* Unix time we sent latest ping */</doc>

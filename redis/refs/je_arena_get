@@ -1,0 +1,12 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='776' macro='1' type='arena_t * je_arena_get(tsd_t * tsd, unsigned int ind, _Bool init_if_missing, _Bool refresh_if_missing)'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='422' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='696' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='698' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1317' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1550' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1552' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1618' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1651' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1687' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1937' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2175' macro='1' u='c'/>

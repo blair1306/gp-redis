@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='14'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='51' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='53' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='129' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='143' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='155' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='183' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='200' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='213' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='13'>/* Number of bits per group. */</doc>

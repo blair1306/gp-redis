@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1191' type='int'/>
+<offset>23232</offset>
+<use f='codebrowser/src/debug.c' l='567' u='w' c='_serverAssert'/>
+<use f='codebrowser/src/debug.c' l='1034' u='r' c='sigsegvHandler'/>
+<use f='codebrowser/src/server.c' l='1522' u='w' c='initServerConfig'/>

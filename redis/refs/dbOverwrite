@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1720' type='void dbOverwrite(redisDb * db, robj * key, robj * val)'/>
+<def f='codebrowser/src/db.c' l='174' ll='186' type='void dbOverwrite(redisDb * db, robj * key, robj * val)'/>
+<use f='codebrowser/src/db.c' l='200' u='c' c='setKey'/>
+<use f='codebrowser/src/db.c' l='290' u='c' c='dbUnshareStringValue'/>
+<doc f='codebrowser/src/db.c' l='169'>/* Overwrite an existing key with a new value. Incrementing the reference
+ * count of the new value is up to the caller.
+ * This function does not modify the expire time of the existing key.
+ *
+ * The program is aborted if the key was not already present. */</doc>
+<use f='codebrowser/src/t_set.c' l='521' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_string.c' l='366' u='c' c='incrDecrCommand'/>
+<use f='codebrowser/src/t_string.c' l='418' u='c' c='incrbyfloatCommand'/>

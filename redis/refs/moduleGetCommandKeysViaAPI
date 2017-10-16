@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1311' type='int * moduleGetCommandKeysViaAPI(struct redisCommand * cmd, robj ** argv, int argc, int * numkeys)'/>
+<use f='codebrowser/src/db.c' l='1175' u='c' c='getKeysFromCommand'/>
+<def f='codebrowser/src/module.c' l='482' ll='494' type='int * moduleGetCommandKeysViaAPI(struct redisCommand * cmd, robj ** argv, int argc, int * numkeys)'/>
+<doc f='codebrowser/src/module.c' l='473'>/* This function returns the list of keys, with the same interface as the
+ * &apos;getkeys&apos; function of the native commands, for module commands that exported
+ * the &quot;getkeys-api&quot; flag during the registration. This is done when the
+ * list of keys are not at fixed positions, so that first/last/step cannot
+ * be used.
+ *
+ * In order to accomplish its work, the module command is called, flagging
+ * the context in a way that the command can recognize this is a special
+ * &quot;get keys&quot; call by calling RedisModule_IsKeysPositionRequest(ctx). */</doc>

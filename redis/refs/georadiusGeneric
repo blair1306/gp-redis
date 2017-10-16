@@ -1,0 +1,8 @@
+<def f='codebrowser/src/geo.c' l='462' ll='673' type='void georadiusGeneric(client * c, int flags)'/>
+<use f='codebrowser/src/geo.c' l='677' u='c' c='georadiusCommand'/>
+<use f='codebrowser/src/geo.c' l='682' u='c' c='georadiusbymemberCommand'/>
+<use f='codebrowser/src/geo.c' l='687' u='c' c='georadiusroCommand'/>
+<use f='codebrowser/src/geo.c' l='692' u='c' c='georadiusbymemberroCommand'/>
+<doc f='codebrowser/src/geo.c' l='459'>/* GEORADIUS key x y radius unit [WITHDIST] [WITHHASH] [WITHCOORD] [ASC|DESC]
+ *                               [COUNT count] [STORE key] [STOREDIST key]
+ * GEORADIUSBYMEMBER key member radius unit ... options ... */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/cluster.c' l='75' type='sds representClusterNodeFlags(sds ci, uint16_t flags)'/>
+<use f='codebrowser/src/cluster.c' l='1327' u='c' c='clusterProcessGossipSection'/>
+<def f='codebrowser/src/cluster.c' l='3841' ll='3852' type='sds representClusterNodeFlags(sds ci, uint16_t flags)'/>
+<use f='codebrowser/src/cluster.c' l='3870' u='c' c='clusterGenNodeDescription'/>
+<doc f='codebrowser/src/cluster.c' l='3839'>/* Concatenate the comma separated list of node flags to the given SDS
+ * string &apos;ci&apos;. */</doc>

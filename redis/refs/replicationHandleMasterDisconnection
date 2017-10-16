@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1485' type='void replicationHandleMasterDisconnection()'/>
+<use f='codebrowser/src/networking.c' l='850' u='c' c='freeClient'/>
+<def f='codebrowser/src/replication.c' l='1977' ll='1984' type='void replicationHandleMasterDisconnection()'/>
+<use f='codebrowser/src/replication.c' l='2153' u='c' c='replicationCacheMaster'/>
+<doc f='codebrowser/src/replication.c' l='1975'>/* This function is called when the slave lose the connection with the
+ * master into an unexpected way. */</doc>

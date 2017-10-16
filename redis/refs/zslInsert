@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1568' type='zskiplistNode * zslInsert(zskiplist * zsl, double score, sds ele)'/>
+<use f='codebrowser/src/geo.c' l='653' u='c' c='georadiusGeneric'/>
+<use f='codebrowser/src/rdb.c' l='1243' u='c' c='rdbLoadObject'/>
+<def f='codebrowser/src/t_zset.c' l='132' ll='187' type='zskiplistNode * zslInsert(zskiplist * zsl, double score, sds ele)'/>
+<use f='codebrowser/src/t_zset.c' l='1149' u='c' c='zsetConvert'/>
+<use f='codebrowser/src/t_zset.c' l='1346' u='c' c='zsetAdd'/>
+<use f='codebrowser/src/t_zset.c' l='1360' u='c' c='zsetAdd'/>
+<use f='codebrowser/src/t_zset.c' l='2254' u='c' c='zunionInterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2320' u='c' c='zunionInterGenericCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='129'>/* Insert a new node in the skiplist. Assumes the element does not already
+ * exist (up to the caller to enforce that). The skiplist takes ownership
+ * of the passed SDS string &apos;ele&apos;. */</doc>

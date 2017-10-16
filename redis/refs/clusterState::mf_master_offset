@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/cluster.h' l='158' type='long long'/>
+<use f='codebrowser/src/cluster.c' l='1689' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1691' u='w' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1695' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='3154' u='w' c='resetManualFailover'/>
+<use f='codebrowser/src/cluster.c' l='3175' u='r' c='clusterHandleManualFailover'/>
+<use f='codebrowser/src/cluster.c' l='3177' u='r' c='clusterHandleManualFailover'/>
+<offset>4195136</offset>
+<doc f='codebrowser/src/cluster.h' l='157'>/* Manual failover state of slave. */</doc>
+<doc f='codebrowser/src/cluster.h' l='158'>/* Master offset the slave needs to start MF
+                                   or zero if stil not received. */</doc>

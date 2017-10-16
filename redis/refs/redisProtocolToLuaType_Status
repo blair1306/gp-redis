@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/scripting.c' l='43' type='char * redisProtocolToLuaType_Status(lua_State * lua, char * reply)'/>
+<use f='codebrowser/src/scripting.c' l='133' u='c' c='redisProtocolToLuaType'/>
+<def f='codebrowser/src/scripting.c' l='163' ll='171' type='char * redisProtocolToLuaType_Status(lua_State * lua, char * reply)'/>

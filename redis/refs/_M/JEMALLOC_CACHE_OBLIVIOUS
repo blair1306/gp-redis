@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='209'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='137' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='413' u='a'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='205'>/*
+ * If defined, explicitly attempt to more uniformly distribute large allocation
+ * pointer alignments across all cache indices.
+ */</doc>

@@ -1,0 +1,29 @@
+<dec f='codebrowser/src/server.h' l='2014' type='void mixDigest(unsigned char * digest, void * ptr, size_t len)'/>
+<def f='codebrowser/src/debug.c' l='93' ll='101' type='void mixDigest(unsigned char * digest, void * ptr, size_t len)'/>
+<use f='codebrowser/src/debug.c' l='105' u='c' c='mixObjectDigest'/>
+<use f='codebrowser/src/debug.c' l='134' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='146' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='151' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='196' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='199' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='203' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='218' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='219' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='234' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='237' u='c' c='computeDatasetDigest'/>
+<doc f='codebrowser/src/debug.c' l='79'>/* This function instead of just computing the SHA1 and xoring it
+ * against digest, also perform the digest of &quot;digest&quot; itself and
+ * replace the old value with the new one.
+ *
+ * So the final digest will be:
+ *
+ * digest = SHA1(digest xor SHA1(data))
+ *
+ * This function is used every time we want to preserve the order so
+ * that digest(a,b,c,d) will be different than digest(b,c,d,a)
+ *
+ * Also note that mixdigest(&quot;foo&quot;) followed by mixdigest(&quot;bar&quot;)
+ * will lead to a different digest compared to &quot;fo&quot;, &quot;obar&quot;.
+ */</doc>
+<use f='codebrowser/src/module.c' l='3201' u='c' c='RM_DigestAddStringBuffer'/>
+<use f='codebrowser/src/module.c' l='3209' u='c' c='RM_DigestAddLongLong'/>

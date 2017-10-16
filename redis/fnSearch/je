@@ -1,0 +1,4 @@
+jemalloc_ffs|jemalloc_ffs
+jemalloc_ffsl|jemalloc_ffsl
+je_get_defrag_hint|je_get_defrag_hint
+jemalloc_constructor|jemalloc_constructor

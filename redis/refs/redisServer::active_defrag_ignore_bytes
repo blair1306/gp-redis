@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='977' type='size_t'/>
+<offset>13120</offset>
+<doc f='codebrowser/src/server.h' l='977'>/* minimum amount of fragmentation waste to start active defrag */</doc>
+<use f='codebrowser/src/config.c' l='519' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='520' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1052' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1227' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1997' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/defrag.c' l='497' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/server.c' l='1367' u='w' c='initServerConfig'/>

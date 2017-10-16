@@ -1,0 +1,12 @@
+<def f='codebrowser/src/defrag.c' l='83' ll='92' type='sds activeDefragSds(sds sdsptr)'/>
+<use f='codebrowser/src/defrag.c' l='115' u='c' c='activeDefragStringOb'/>
+<use f='codebrowser/src/defrag.c' l='285' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='340' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='374' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='397' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='400' u='c' c='defragKey'/>
+<doc f='codebrowser/src/defrag.c' l='78'>/*Defrag helper for sds strings
+ *
+ * returns NULL in case the allocatoin wasn&apos;t moved.
+ * when it returns a non-null value, the old pointer was already released
+ * and should NOT be accessed. */</doc>

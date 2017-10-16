@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1468' type='int compareStringObjects(robj * a, robj * b)'/>
+<use f='codebrowser/src/module.c' l='897' u='c' c='RM_StringCompare'/>
+<def f='codebrowser/src/object.c' l='517' ll='519' type='int compareStringObjects(robj * a, robj * b)'/>
+<use f='codebrowser/src/object.c' l='537' u='c' c='equalStringObjects'/>
+<doc f='codebrowser/src/object.c' l='516'>/* Wrapper for compareStringObjectsWithFlags() using binary comparison. */</doc>
+<use f='codebrowser/src/sort.c' l='152' u='c' c='sortCompare'/>
+<use f='codebrowser/src/sort.c' l='168' u='c' c='sortCompare'/>
+<use f='codebrowser/src/sort.c' l='178' u='c' c='sortCompare'/>

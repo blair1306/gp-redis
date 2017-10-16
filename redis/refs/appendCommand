@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1924' type='void appendCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='134' u='r'/>
+<use f='codebrowser/src/server.c' l='134' u='r'/>
+<use f='codebrowser/src/server.c' l='134' u='r'/>
+<use f='codebrowser/src/server.c' l='134' u='r'/>
+<def f='codebrowser/src/t_string.c' l='435' ll='466' type='void appendCommand(client * c)'/>

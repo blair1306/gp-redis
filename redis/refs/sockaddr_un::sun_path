@@ -1,0 +1,15 @@
+<dec f='include/x86_64-linux-gnu/sys/un.h' l='32' type='char [108]'/>
+<use f='codebrowser/deps/hiredis/net.c' l='460' u='r' c='redisContextConnectUnix'/>
+<use f='codebrowser/deps/hiredis/net.c' l='460' u='r' c='redisContextConnectUnix'/>
+<offset>16</offset>
+<doc f='include/x86_64-linux-gnu/sys/un.h' l='32'>/* Path name.  */</doc>
+<use f='codebrowser/src/anet.c' l='381' u='r' c='anetUnixGenericConnect'/>
+<use f='codebrowser/src/anet.c' l='381' u='r' c='anetUnixGenericConnect'/>
+<use f='codebrowser/src/anet.c' l='523' u='r' c='anetUnixServer'/>
+<use f='codebrowser/src/anet.c' l='523' u='r' c='anetUnixServer'/>
+<use f='codebrowser/src/anet.c' l='527' u='r' c='anetUnixServer'/>
+<use f='codebrowser/src/server.c' l='3625' u='r' c='redisSupervisedSystemd'/>
+<use f='codebrowser/src/server.c' l='3625' u='r' c='redisSupervisedSystemd'/>
+<use f='codebrowser/src/server.c' l='3626' u='w' c='redisSupervisedSystemd'/>
+<use f='codebrowser/src/server.c' l='3626' u='r' c='redisSupervisedSystemd'/>
+<use f='codebrowser/src/server.c' l='3629' u='w' c='redisSupervisedSystemd'/>

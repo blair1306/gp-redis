@@ -1,0 +1,13 @@
+<dec f='include/stdlib.h' l='214' type='unsigned long long strtoull(const char *restrict __nptr, char **restrict __endptr, int __base)'/>
+<use f='codebrowser/src/cluster.c' l='143' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='146' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='229' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/redis-cli.c' l='1733' u='c' c='sendSync'/>
+<use f='codebrowser/src/redis-cli.c' l='2008' u='c' c='sendScan'/>
+<use f='codebrowser/src/redis-cli.c' l='2427' u='c' c='scanMode'/>
+<use f='codebrowser/src/sentinel.c' l='1631' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='1642' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='1652' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='2107' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2341' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='2342' u='c' c='sentinelProcessHelloMessage'/>

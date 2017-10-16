@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='425' macro='1' type='size_t'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1264' macro='1' u='r'/>
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='43' macro='1' type='size_t'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1055' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1055' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1055' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1055' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1271' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1277' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1279' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1281' macro='1' u='r'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='1256' type='quicklistEntry'/>
+<offset>64</offset>
+<doc f='codebrowser/src/server.h' l='1256'>/* Entry in quicklist */</doc>
+<use f='codebrowser/src/t_list.c' l='118' u='a' c='listTypeNext'/>
+<use f='codebrowser/src/t_list.c' l='129' u='m' c='listTypeGet'/>
+<use f='codebrowser/src/t_list.c' l='130' u='m' c='listTypeGet'/>
+<use f='codebrowser/src/t_list.c' l='131' u='m' c='listTypeGet'/>
+<use f='codebrowser/src/t_list.c' l='133' u='m' c='listTypeGet'/>
+<use f='codebrowser/src/t_list.c' l='147' u='m' c='listTypeInsert'/>
+<use f='codebrowser/src/t_list.c' l='148' u='a' c='listTypeInsert'/>
+<use f='codebrowser/src/t_list.c' l='150' u='m' c='listTypeInsert'/>
+<use f='codebrowser/src/t_list.c' l='151' u='a' c='listTypeInsert'/>
+<use f='codebrowser/src/t_list.c' l='163' u='m' c='listTypeEqual'/>
+<use f='codebrowser/src/t_list.c' l='172' u='a' c='listTypeDelete'/>
+<use f='codebrowser/src/t_list.c' l='431' u='a' c='lrangeCommand'/>

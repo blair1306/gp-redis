@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='54'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='93' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='117' u='c'/>
+<use f='codebrowser/deps/hiredis/read.c' l='379' u='c'/>
+<use f='codebrowser/deps/hiredis/read.c' l='403' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='561' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='678' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='680' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='726' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='2065' u='c'/>
+<use f='codebrowser/src/sentinel.c' l='2272' u='c'/>

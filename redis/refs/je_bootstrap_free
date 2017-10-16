@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='449' macro='1' type='void je_bootstrap_free(void * ptr)'/>
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='367' macro='1' type='void je_bootstrap_free(void * ptr)'/>

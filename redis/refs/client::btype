@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='718' type='int'/>
+<use f='codebrowser/src/aof.c' l='596' u='w' c='createFakeClient'/>
+<offset>2944</offset>
+<doc f='codebrowser/src/server.h' l='718'>/* Type of blocking op if CLIENT_BLOCKED. */</doc>
+<use f='codebrowser/src/blocked.c' l='102' u='w' c='blockClient'/>
+<use f='codebrowser/src/blocked.c' l='135' u='r' c='unblockClient'/>
+<use f='codebrowser/src/blocked.c' l='137' u='r' c='unblockClient'/>
+<use f='codebrowser/src/blocked.c' l='139' u='r' c='unblockClient'/>
+<use f='codebrowser/src/blocked.c' l='147' u='w' c='unblockClient'/>
+<use f='codebrowser/src/blocked.c' l='161' u='r' c='replyToBlockedClientTimedOut'/>
+<use f='codebrowser/src/blocked.c' l='163' u='r' c='replyToBlockedClientTimedOut'/>
+<use f='codebrowser/src/blocked.c' l='165' u='r' c='replyToBlockedClientTimedOut'/>
+<use f='codebrowser/src/cluster.c' l='5419' u='r' c='clusterRedirectBlockedClientIfNeeded'/>
+<use f='codebrowser/src/networking.c' l='125' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='1340' u='r' c='processInputBuffer'/>

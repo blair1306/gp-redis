@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/mathcalls.h' l='156' type='double sqrt(double __x)'/>
+<use f='codebrowser/deps/lua/src/lmathlib.c' l='105' u='c' c='math_sqrt'/>
+<use f='codebrowser/src/geohash_helper.c' l='220' u='c' c='geohashGetDistance'/>
+<use f='codebrowser/src/hyperloglog.c' l='1391' u='c' c='pfselftestCommand'/>

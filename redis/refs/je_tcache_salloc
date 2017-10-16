@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='126' macro='1' type='size_t je_tcache_salloc(const void * ptr)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='284' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='368' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='394' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='395' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/tcache.c' l='26' macro='1' type='size_t je_tcache_salloc(const void * ptr)'/>
+<doc f='codebrowser/deps/jemalloc/src/tcache.c' l='24'>/******************************************************************************/</doc>

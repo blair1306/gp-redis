@@ -1,0 +1,10 @@
+<def f='codebrowser/src/quicklist.c' l='352' ll='385' type='void __quicklistInsertNode(quicklist * quicklist, quicklistNode * old_node, quicklistNode * new_node, int after)'/>
+<use f='codebrowser/src/quicklist.c' l='391' u='c' c='_quicklistInsertNodeBefore'/>
+<use f='codebrowser/src/quicklist.c' l='397' u='c' c='_quicklistInsertNodeAfter'/>
+<use f='codebrowser/src/quicklist.c' l='844' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='924' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='935' u='c' c='_quicklistInsert'/>
+<doc f='codebrowser/src/quicklist.c' l='348'>/* Insert &apos;new_node&apos; after &apos;old_node&apos; if &apos;after&apos; is 1.
+ * Insert &apos;new_node&apos; before &apos;old_node&apos; if &apos;after&apos; is 0.
+ * Note: &apos;new_node&apos; is *always* uncompressed, so if we assign it to
+ *       head or tail, we do not need to uncompress it. */</doc>

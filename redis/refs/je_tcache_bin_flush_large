@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='132' macro='1' type='void je_tcache_bin_flush_large(tsd_t * tsd, tcache_bin_t * tbin, szind_t binind, unsigned int rem, tcache_t * tcache)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='405' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='48' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/tcache.c' l='169' macro='1' type='void je_tcache_bin_flush_large(tsd_t * tsd, tcache_bin_t * tbin, szind_t binind, unsigned int rem, tcache_t * tcache)'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='367' macro='1' u='c'/>

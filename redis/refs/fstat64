@@ -1,0 +1,8 @@
+<use f='codebrowser/src/aof.c' l='647' macro='1' u='c'/>
+<use f='codebrowser/src/aof.c' l='1426' macro='1' u='c'/>
+<use f='codebrowser/src/cluster.c' l='108' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='326' u='c' c='clusterSaveConfig'/>
+<use f='codebrowser/src/config.c' l='1896' u='c' c='rewriteConfigOverwriteFile'/>
+<use f='codebrowser/src/rdb.c' l='1451' u='c' c='startLoading'/>
+<use f='codebrowser/src/redis-check-aof.c' l='172' macro='1' u='c'/>
+<use f='codebrowser/src/replication.c' l='981' macro='1' u='c'/>

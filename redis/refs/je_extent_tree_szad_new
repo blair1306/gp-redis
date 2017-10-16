@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='64' macro='1' type='void je_extent_tree_szad_new(extent_tree_t * rbtree)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3064' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3066' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='149' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/extent.c' l='40' macro='1' type='void je_extent_tree_szad_new(extent_tree_t * rbtree)'/>

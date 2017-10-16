@@ -1,0 +1,23 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='216' type='void * redisCommand(redisContext * c, const char * format)'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='1008' ll='1015' type='void * redisCommand(redisContext * c, const char * format)'/>
+<def f='codebrowser/src/server.h' l='1211' ll='1225'/>
+<size>80</size>
+<mbr r='redisCommand::name' o='0' t='char *'/>
+<mbr r='redisCommand::proc' o='64' t='redisCommandProc *'/>
+<mbr r='redisCommand::arity' o='128' t='int'/>
+<mbr r='redisCommand::sflags' o='192' t='char *'/>
+<mbr r='redisCommand::flags' o='256' t='int'/>
+<mbr r='redisCommand::getkeys_proc' o='320' t='redisGetKeysProc *'/>
+<mbr r='redisCommand::firstkey' o='384' t='int'/>
+<mbr r='redisCommand::lastkey' o='416' t='int'/>
+<mbr r='redisCommand::keystep' o='448' t='int'/>
+<mbr r='redisCommand::microseconds' o='512' t='long long'/>
+<mbr r='redisCommand::calls' o='576' t='long long'/>
+<use f='codebrowser/src/redis-cli.c' l='271' u='c' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='487' u='c' c='cliAuth'/>
+<use f='codebrowser/src/redis-cli.c' l='500' u='c' c='cliSelect'/>
+<use f='codebrowser/src/redis-cli.c' l='1432' u='c' c='evalMode'/>
+<use f='codebrowser/src/redis-cli.c' l='1986' u='c' c='sendScan'/>
+<use f='codebrowser/src/redis-cli.c' l='2017' u='c' c='getDbSize'/>
+<use f='codebrowser/src/redis-cli.c' l='2414' u='c' c='scanMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2417' u='c' c='scanMode'/>

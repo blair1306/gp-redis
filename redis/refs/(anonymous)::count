@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/sha1.h' l='12' type='uint32_t [2]'/>
+<offset>160</offset>
+<dec f='codebrowser/src/cluster.h' l='238' type='uint16_t'/>
+<use f='codebrowser/src/cluster.c' l='1317' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1633' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2417' u='w' c='clusterSendPing'/>
+<offset>112</offset>
+<doc f='codebrowser/src/cluster.h' l='238'>/* Only used for some kind of messages. */</doc>
+<use f='codebrowser/src/sha1.c' l='125' u='w' c='SHA1Init'/>
+<use f='codebrowser/src/sha1.c' l='125' u='w' c='SHA1Init'/>
+<use f='codebrowser/src/sha1.c' l='135' u='r' c='SHA1Update'/>
+<use f='codebrowser/src/sha1.c' l='136' u='w' c='SHA1Update'/>
+<use f='codebrowser/src/sha1.c' l='137' u='w' c='SHA1Update'/>
+<use f='codebrowser/src/sha1.c' l='138' u='w' c='SHA1Update'/>
+<use f='codebrowser/src/sha1.c' l='179' u='r' c='SHA1Final'/>
+<use f='codebrowser/src/sha1.c' l='185' u='r' c='SHA1Final'/>

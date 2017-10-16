@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/bio.c' l='87' type='void lazyfreeFreeObjectFromBioThread(robj * o)'/>
+<use f='codebrowser/src/bio.c' l='197' u='c' c='bioProcessBackgroundJobs'/>
+<def f='codebrowser/src/lazyfree.c' l='112' ll='115' type='void lazyfreeFreeObjectFromBioThread(robj * o)'/>
+<doc f='codebrowser/src/lazyfree.c' l='110'>/* Release objects from the lazyfree thread. It&apos;s just decrRefCount()
+ * updating the count of objects to release. */</doc>

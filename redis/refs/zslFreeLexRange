@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='1589' type='void zslFreeLexRange(zlexrangespec * spec)'/>
+<use f='codebrowser/src/module.c' l='1780' u='c' c='RM_ZsetRangeStop'/>
+<def f='codebrowser/src/t_zset.c' l='545' ll='550' type='void zslFreeLexRange(zlexrangespec * spec)'/>
+<use f='codebrowser/src/t_zset.c' l='566' u='c' c='zslParseLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='1744' u='c' c='zremrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2763' u='c' c='zlexcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2776' u='c' c='zlexcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2822' u='c' c='zlexcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2862' u='c' c='genericZrangebylexCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2873' u='c' c='genericZrangebylexCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2894' u='c' c='genericZrangebylexCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2958' u='c' c='genericZrangebylexCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2999' u='c' c='genericZrangebylexCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='543'>/* Free a lex range structure, must be called only after zelParseLexRange()
+ * populated the structure with success (C_OK returned). */</doc>

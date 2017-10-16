@@ -1,0 +1,9 @@
+<def f='codebrowser/src/module.c' l='3082' ll='3084' type='char * RM_LoadStringBuffer(RedisModuleIO * io, size_t * lenptr)'/>
+<use f='codebrowser/src/module.c' l='3979' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3075'>/* Like RedisModule_LoadString() but returns an heap allocated string that
+ * was allocated with RedisModule_Alloc(), and can be resized or freed with
+ * RedisModule_Realloc() or RedisModule_Free().
+ *
+ * The size of the string is stored at &apos;*lenptr&apos; if not NULL.
+ * The returned string is not automatically NULL termianted, it is loaded
+ * exactly as it was stored inisde the RDB file. */</doc>

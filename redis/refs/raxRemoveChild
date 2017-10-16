@@ -1,0 +1,6 @@
+<def f='codebrowser/src/rax.c' l='830' ll='890' type='raxNode * raxRemoveChild(raxNode * parent, raxNode * child)'/>
+<use f='codebrowser/src/rax.c' l='936' u='c' c='raxRemove'/>
+<doc f='codebrowser/src/rax.c' l='826'>/* Low level child removal from node. The new node pointer (after the child
+ * removal) is returned. Note that this function does not fix the pointer
+ * of the parent node in its parent, so this task is up to the caller.
+ * The function never fails for out of memory. */</doc>

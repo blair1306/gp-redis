@@ -1,0 +1,2 @@
+<dec f='include/x86_64-linux-gnu/sys/syslog.h' l='112'/>
+<use f='codebrowser/src/config.c' l='65' u='c'/>

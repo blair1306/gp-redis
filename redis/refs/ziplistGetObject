@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1586' type='sds ziplistGetObject(unsigned char * sptr)'/>
+<use f='codebrowser/src/module.c' l='1925' u='c' c='RM_ZsetRangeCurrentElement'/>
+<def f='codebrowser/src/t_zset.c' l='690' ll='703' type='sds ziplistGetObject(unsigned char * sptr)'/>
+<use f='codebrowser/src/t_zset.c' l='856' u='c' c='zzlLexValueGteMin'/>
+<use f='codebrowser/src/t_zset.c' l='863' u='c' c='zzlLexValueLteMax'/>
+<doc f='codebrowser/src/t_zset.c' l='689'>/* Return a ziplist element as an SDS string. */</doc>

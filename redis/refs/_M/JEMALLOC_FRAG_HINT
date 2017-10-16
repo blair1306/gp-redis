@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='180'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='178'>/* This version of Jemalloc, modified for Redis, has the je_get_defrag_hint()
+ * function. */</doc>
+<use f='codebrowser/src/zmalloc.h' l='71' u='a'/>

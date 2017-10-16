@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/quicklist.h' l='93' type='unsigned char *'/>
+<offset>128</offset>
+<use f='codebrowser/src/quicklist.c' l='638' u='a' c='quicklistDelEntry'/>
+<use f='codebrowser/src/quicklist.c' l='672' u='a' c='quicklistReplaceAtIndex'/>
+<use f='codebrowser/src/quicklist.c' l='673' u='r' c='quicklistReplaceAtIndex'/>
+<use f='codebrowser/src/quicklist.c' l='879' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='891' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='76' u='w' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1153' u='w' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1158' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='76' u='w' c='quicklistIndex'/>
+<use f='codebrowser/src/quicklist.c' l='1274' u='w' c='quicklistIndex'/>
+<use f='codebrowser/src/quicklist.c' l='1275' u='r' c='quicklistIndex'/>
+<use f='codebrowser/src/t_list.c' l='163' u='r' c='listTypeEqual'/>

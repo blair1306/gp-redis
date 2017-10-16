@@ -1,0 +1,7 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='68' ll='74'/>
+<size>32</size>
+<mbr r='tcache_bin_s::tstats' o='0' t='tcache_bin_stats_t'/>
+<mbr r='tcache_bin_s::low_water' o='64' t='int'/>
+<mbr r='tcache_bin_s::lg_fill_div' o='96' t='unsigned int'/>
+<mbr r='tcache_bin_s::ncached' o='128' t='unsigned int'/>
+<mbr r='tcache_bin_s::avail' o='192' t='void **'/>

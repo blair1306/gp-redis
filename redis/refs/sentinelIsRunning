@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1772' type='void sentinelIsRunning()'/>
+<def f='codebrowser/src/sentinel.c' l='476' ll='508' type='void sentinelIsRunning()'/>
+<doc f='codebrowser/src/sentinel.c' l='474'>/* This function gets called when the server is in Sentinel mode, started,
+ * loaded the configuration, and is ready for normal operations. */</doc>
+<use f='codebrowser/src/server.c' l='3855' u='c' c='main'/>

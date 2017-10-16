@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/cluster.h' l='110' type='unsigned char [2048]'/>
+<use f='codebrowser/src/cluster.c' l='682' u='r' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='682' u='r' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='1888' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2229' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2529' u='r' c='clusterSendUpdate'/>
+<use f='codebrowser/src/cluster.c' l='2529' u='r' c='clusterSendUpdate'/>
+<use f='codebrowser/src/cluster.c' l='3540' u='r' c='clusterNodeSetSlotBit'/>
+<use f='codebrowser/src/cluster.c' l='3541' u='r' c='clusterNodeSetSlotBit'/>
+<use f='codebrowser/src/cluster.c' l='3565' u='r' c='clusterNodeClearSlotBit'/>
+<use f='codebrowser/src/cluster.c' l='3566' u='r' c='clusterNodeClearSlotBit'/>
+<use f='codebrowser/src/cluster.c' l='3573' u='r' c='clusterNodeGetSlotBit'/>
+<offset>512</offset>
+<doc f='codebrowser/src/cluster.h' l='110'>/* slots handled by this node */</doc>

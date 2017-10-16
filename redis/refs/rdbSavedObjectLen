@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/rdb.h' l='137' type='size_t rdbSavedObjectLen(robj * o)'/>
+<use f='codebrowser/src/debug.c' l='411' u='c' c='debugCommand'/>
+<def f='codebrowser/src/rdb.c' l='799' ll='803' type='size_t rdbSavedObjectLen(robj * o)'/>
+<doc f='codebrowser/src/rdb.c' l='795'>/* Return the length the object will have on disk if saved with
+ * the rdbSaveObject() function. Currently we use a trick to get
+ * this length with very little changes to the code. In the future
+ * we could switch to a faster solution. */</doc>

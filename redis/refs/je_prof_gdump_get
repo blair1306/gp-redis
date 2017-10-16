@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='314' macro='1' type='_Bool je_prof_gdump_get()'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1954' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='2042' macro='1' type='_Bool je_prof_gdump_get()'/>

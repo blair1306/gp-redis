@@ -1,0 +1,6 @@
+<def f='codebrowser/src/cluster.c' l='1422' ll='1429' type='void nodeIp2String(char * buf, clusterLink * link, char * announced_ip)'/>
+<use f='codebrowser/src/cluster.c' l='1458' u='c' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1737' u='c' c='clusterProcessPacket'/>
+<doc f='codebrowser/src/cluster.c' l='1419'>/* IP -&gt; string conversion. &apos;buf&apos; is supposed to at least be 46 bytes.
+ * If &apos;announced_ip&apos; length is non-zero, it is used instead of extracting
+ * the IP from the socket peer address. */</doc>

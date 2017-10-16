@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='895' type='int'/>
+<offset>1344</offset>
+<doc f='codebrowser/src/server.h' l='895'>/* Show logo even for non-stdout logging. */</doc>
+<use f='codebrowser/src/config.c' l='287' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/server.c' l='1441' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3435' u='r' c='redisAsciiArt'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1455' type='robj * createHashObject()'/>
+<use f='codebrowser/src/module.c' l='359' u='c' c='moduleCreateEmptyKey'/>
+<def f='codebrowser/src/object.c' l='210' ll='215' type='robj * createHashObject()'/>
+<use f='codebrowser/src/rdb.c' l='1259' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_hash.c' l='454' u='c' c='hashTypeLookupWriteOrCreate'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='676' type='uint64_t'/>
+<offset>0</offset>
+<doc f='codebrowser/src/server.h' l='676'>/* Client incremental unique ID. */</doc>
+<use f='codebrowser/src/module.c' l='1257' u='r' c='RM_GetClientId'/>
+<use f='codebrowser/src/networking.c' l='94' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='1519' u='r' c='catClientInfoString'/>
+<use f='codebrowser/src/networking.c' l='1639' u='r' c='clientCommand'/>
+<use f='codebrowser/src/rdb.c' l='1770' u='r' c='backgroundSaveDoneHandlerSocket'/>
+<use f='codebrowser/src/rdb.c' l='1847' u='r' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/rdb.c' l='1945' u='r' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/replication.c' l='70' u='r' c='replicationGetSlaveName'/>

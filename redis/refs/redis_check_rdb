@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1775' type='int redis_check_rdb(char * rdbfilename, FILE * fp)'/>
+<doc f='codebrowser/src/server.h' l='1774'>/* redis-check-rdb &amp; aof */</doc>
+<def f='codebrowser/src/redis-check-rdb.c' l='179' ll='325' type='int redis_check_rdb(char * rdbfilename, FILE * fp)'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='353' u='c' c='redis_check_rdb_main'/>
+<doc f='codebrowser/src/redis-check-rdb.c' l='175'>/* Check the specified RDB file. Return 0 if the RDB looks sane, otherwise
+ * 1 is returned.
+ * The file is specified as a filename in &apos;rdbfilename&apos; if &apos;fp&apos; is not NULL,
+ * otherwise the already open file &apos;fp&apos; is checked. */</doc>

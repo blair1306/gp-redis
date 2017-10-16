@@ -1,0 +1,3 @@
+<def f='codebrowser/src/memtest.c' l='138' ll='159' type='void memtest_fill_random(unsigned long * l, size_t bytes, int interactive)'/>
+<use f='codebrowser/src/memtest.c' l='249' u='c' c='memtest_test'/>
+<use f='codebrowser/src/memtest.c' l='309' u='c' c='memtest_preserving_test'/>

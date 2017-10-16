@@ -1,0 +1,8 @@
+<def f='codebrowser/src/scripting.c' l='1946' ll='1950' type='void ldbLogStackValue(lua_State * lua, char * prefix)'/>
+<use f='codebrowser/src/scripting.c' l='2047' u='c' c='ldbPrint'/>
+<use f='codebrowser/src/scripting.c' l='2059' u='c' c='ldbPrint'/>
+<use f='codebrowser/src/scripting.c' l='2079' u='c' c='ldbPrintAll'/>
+<use f='codebrowser/src/scripting.c' l='2162' u='c' c='ldbEval'/>
+<doc f='codebrowser/src/scripting.c' l='1943'>/* Produce a debugger log entry representing the value of the Lua object
+ * currently on the top of the stack. The element is ot popped nor modified.
+ * Check ldbCatStackValue() for the actual implementation. */</doc>

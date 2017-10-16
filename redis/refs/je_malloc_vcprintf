@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='155' macro='1' type='void je_malloc_vcprintf(void (*)(void *, const char *) write_cb, void * cbopaque, const char * format, struct __va_list_tag * ap)'/>
+<def f='codebrowser/deps/jemalloc/src/util.c' l='604' macro='1' type='void je_malloc_vcprintf(void (*)(void *, const char *) write_cb, void * cbopaque, const char * format, struct __va_list_tag * ap)'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='636' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='648' macro='1' u='c'/>

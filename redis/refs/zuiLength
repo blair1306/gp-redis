@@ -1,0 +1,6 @@
+<def f='codebrowser/src/t_zset.c' l='1881' ll='1906' type='int zuiLength(zsetopsrc * op)'/>
+<use f='codebrowser/src/t_zset.c' l='2088' u='c' c='zuiCompareByCardinality'/>
+<use f='codebrowser/src/t_zset.c' l='2088' u='c' c='zuiCompareByCardinality'/>
+<use f='codebrowser/src/t_zset.c' l='2227' u='c' c='zunionInterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2270' u='c' c='zunionInterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2276' u='c' c='zunionInterGenericCommand'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/src/aof.c' l='913' ll='978' type='int rewriteSortedSetObject(rio * r, robj * key, robj * o)'/>
+<use f='codebrowser/src/aof.c' l='1111' u='c' c='rewriteAppendOnlyFileRio'/>
+<doc f='codebrowser/src/aof.c' l='911'>/* Emit the commands needed to rebuild a sorted set object.
+ * The function returns 0 on error, 1 on success. */</doc>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1121' type='unsigned int'/>
+<offset>20608</offset>
+<doc f='codebrowser/src/server.h' l='1121'>/* LFU logarithmic counter factor. */</doc>
+<use f='codebrowser/src/config.c' l='332' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1042' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/evict.c' l='322' u='r' c='LFULogIncr'/>
+<use f='codebrowser/src/server.c' l='1415' u='w' c='initServerConfig'/>

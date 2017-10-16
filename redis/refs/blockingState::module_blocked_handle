@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='652' type='void *'/>
+<offset>320</offset>
+<doc f='codebrowser/src/server.h' l='651'>/* BLOCKED_MODULE */</doc>
+<doc f='codebrowser/src/server.h' l='652'>/* RedisModuleBlockedClient structure.
+                                    which is opaque for the Redis core, only
+                                    handled in module.c. */</doc>
+<use f='codebrowser/src/module.c' l='3376' u='r' c='unblockClientFromModule'/>
+<use f='codebrowser/src/module.c' l='3406' u='w' c='RM_BlockClient'/>
+<use f='codebrowser/src/module.c' l='3407' u='r' c='RM_BlockClient'/>
+<use f='codebrowser/src/module.c' l='3425' u='w' c='RM_BlockClient'/>
+<use f='codebrowser/src/module.c' l='3551' u='r' c='moduleBlockedClientTimedOut'/>

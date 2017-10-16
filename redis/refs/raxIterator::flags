@@ -1,0 +1,25 @@
+<dec f='codebrowser/src/rax.h' l='131' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/src/rax.c' l='1123' u='w' c='raxStart'/>
+<use f='codebrowser/src/rax.c' l='1177' u='r' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1179' u='r' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1180' u='w' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1192' u='w' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1223' u='w' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1293' u='r' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1295' u='r' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1296' u='w' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1311' u='w' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1373' u='w' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1374' u='w' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1399' u='w' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1475' u='w' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1478' u='w' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1485' u='w' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1511' u='w' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1520' u='w' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1523' u='w' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1527' u='w' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1541' u='r' c='raxNext'/>
+<use f='codebrowser/src/rax.c' l='1556' u='r' c='raxPrev'/>
+<use f='codebrowser/src/rax.c' l='1577' u='w' c='raxRandomWalk'/>

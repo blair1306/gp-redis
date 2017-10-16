@@ -1,0 +1,52 @@
+<def f='codebrowser/src/module.c' l='2122' ll='2179' type='int RM_HashSet(RedisModuleKey * key, int flags)'/>
+<use f='codebrowser/src/module.c' l='3961' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='2072'>/* Set the field of the specified hash field to the specified value.
+ * If the key is an empty key open for writing, it is created with an empty
+ * hash value, in order to set the specified field.
+ *
+ * The function is variadic and the user must specify pairs of field
+ * names and values, both as RedisModuleString pointers (unless the
+ * CFIELD option is set, see later).
+ *
+ * Example to set the hash argv[1] to the value argv[2]:
+ *
+ *      RedisModule_HashSet(key,REDISMODULE_HASH_NONE,argv[1],argv[2],NULL);
+ *
+ * The function can also be used in order to delete fields (if they exist)
+ * by setting them to the specified value of REDISMODULE_HASH_DELETE:
+ *
+ *      RedisModule_HashSet(key,REDISMODULE_HASH_NONE,argv[1],
+ *                          REDISMODULE_HASH_DELETE,NULL);
+ *
+ * The behavior of the command changes with the specified flags, that can be
+ * set to REDISMODULE_HASH_NONE if no special behavior is needed.
+ *
+ *     REDISMODULE_HASH_NX: The operation is performed only if the field was not
+ *                          already existing in the hash.
+ *     REDISMODULE_HASH_XX: The operation is performed only if the field was
+ *                          already existing, so that a new value could be
+ *                          associated to an existing filed, but no new fields
+ *                          are created.
+ *     REDISMODULE_HASH_CFIELDS: The field names passed are null terminated C
+ *                               strings instead of RedisModuleString objects.
+ *
+ * Unless NX is specified, the command overwrites the old field value with
+ * the new one.
+ *
+ * When using REDISMODULE_HASH_CFIELDS, field names are reported using
+ * normal C strings, so for example to delete the field &quot;foo&quot; the following
+ * code can be used:
+ *
+ *      RedisModule_HashSet(key,REDISMODULE_HASH_CFIELDS,&quot;foo&quot;,
+ *                          REDISMODULE_HASH_DELETE,NULL);
+ *
+ * Return value:
+ *
+ * The number of fields updated (that may be less than the number of fields
+ * specified because of the XX or NX options).
+ *
+ * In the following case the return value is always zero:
+ *
+ * * The key was not open for writing.
+ * * The key was associated with a non Hash value.
+ */</doc>

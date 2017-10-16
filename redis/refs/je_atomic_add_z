@@ -1,0 +1,11 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='554' macro='1' type='size_t je_atomic_add_z(size_t * p, size_t x)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='164' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='171' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='876' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='890' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2918' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='152' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='153' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='159' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='178' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/stats.c' l='582' macro='1' u='c'/>

@@ -1,0 +1,3 @@
+<dec f='include/string.h' l='128' type='char * strncpy(char *restrict __dest, const char *restrict __src, size_t __n)'/>
+<doc f='include/string.h' l='127'>/* Copy no more than N characters of SRC to DEST.  */</doc>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='715' u='c' c='linenoiseEditHistoryNext'/>

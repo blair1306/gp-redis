@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='928' type='off_t'/>
+<offset>6784</offset>
+<use f='codebrowser/src/rdb.c' l='1450' u='w' c='startLoading'/>
+<use f='codebrowser/src/rdb.c' l='1460' u='w' c='loadingProgress'/>
+<use f='codebrowser/src/server.c' l='3042' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3044' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3052' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3063' u='r' c='genRedisInfoString'/>

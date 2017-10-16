@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='239' type='int lua_next(lua_State * L, int idx)'/>
+<def f='codebrowser/deps/lua/src/lapi.c' l='973' ll='987' macro='1' type='int lua_next(lua_State * L, int idx)'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='229' u='c' c='luaB_next'/>
+<use f='codebrowser/deps/lua/src/ltablib.c' l='43' u='c' c='foreach'/>
+<use f='codebrowser/deps/lua/src/ltablib.c' l='60' u='c' c='maxn'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='504' u='c' c='lua_array_length'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='629' u='c' c='json_append_object'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='404' u='c' c='mp_encode_lua_table_as_map'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='412' u='c' c='mp_encode_lua_table_as_map'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='437' u='c' c='table_is_an_array'/>
+<use f='codebrowser/src/scripting.c' l='1887' u='c' c='ldbCatStackValueRec'/>

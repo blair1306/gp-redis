@@ -1,0 +1,2 @@
+<dec f='codebrowser/src/server.h' l='1445' type='int isObjectRepresentableAsLongLong(robj * o, long long * llongval)'/>
+<def f='codebrowser/src/object.c' l='364' ll='372' type='int isObjectRepresentableAsLongLong(robj * o, long long * llval)'/>

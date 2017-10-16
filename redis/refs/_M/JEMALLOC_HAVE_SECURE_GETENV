@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='73'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='70'>/*
+ * Defined if secure_getenv(3) is available.
+ */</doc>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='728' u='a'/>

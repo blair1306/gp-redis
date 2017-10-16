@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='84' type='unsigned int'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='135' u='r' c='je_rtree_start_level'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='139' u='r' c='je_rtree_start_level'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='248' u='r' c='je_rtree_get'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='256' u='r' c='je_rtree_get'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='276' u='r' c='je_rtree_set'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='284' u='r' c='je_rtree_set'/>
+<offset>128</offset>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='32' u='w' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='66' u='r' c='rtree_delete_subtree'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='84' u='r' c='je_rtree_delete'/>

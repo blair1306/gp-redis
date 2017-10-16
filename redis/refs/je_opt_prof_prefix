@@ -1,0 +1,15 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='255' macro='1' type='char [1]'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1276' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1116' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1116' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1116' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1116' macro='1' u='w'/>
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='26' macro='1' type='char [1]'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1557' macro='1' c='prof_dump_filename'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1562' macro='1' c='prof_dump_filename'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1575' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1606' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1630' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1660' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2070' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2144' macro='1' u='r'/>

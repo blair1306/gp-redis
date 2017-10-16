@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/anet.h' l='61' type='int anetTcpServer(char * err, int port, char * bindaddr, int backlog)'/>
+<def f='codebrowser/src/anet.c' l='503' ll='506' type='int anetTcpServer(char * err, int port, char * bindaddr, int backlog)'/>
+<use f='codebrowser/src/server.c' l='1719' u='c' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1739' u='c' c='listenToPort'/>

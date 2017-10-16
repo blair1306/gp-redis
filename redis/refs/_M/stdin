@@ -1,0 +1,14 @@
+<dec f='include/stdio.h' l='172'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='46' u='c'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='72' u='c'/>
+<doc f='include/stdio.h' l='171'>/* C89/C99 say they&apos;re macros.  Make them happy.  */</doc>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1017' u='c'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1051' u='c'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='560' u='c'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='306' u='c'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='546' u='c'/>
+<use f='codebrowser/src/config.c' l='770' u='c'/>
+<use f='codebrowser/src/config.c' l='780' u='c'/>
+<use f='codebrowser/src/redis-check-aof.c' l='211' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='1090' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='1293' u='c'/>

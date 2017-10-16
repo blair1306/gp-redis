@@ -1,0 +1,9 @@
+<def f='codebrowser/src/cluster.c' l='2796' ll='2824' type='void clusterFailoverReplaceYourMaster()'/>
+<use f='codebrowser/src/cluster.c' l='2995' u='c' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='4532' u='c' c='clusterCommand'/>
+<doc f='codebrowser/src/cluster.c' l='2790'>/* This function implements the final part of automatic and manual failovers,
+ * where the slave grabs its master&apos;s hash slots, and propagates the new
+ * configuration.
+ *
+ * Note that it&apos;s up to the caller to be sure that the node got a new
+ * configuration epoch already. */</doc>

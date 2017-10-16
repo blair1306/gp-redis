@@ -1,0 +1,2 @@
+<def f='codebrowser/src/object.c' l='300' ll='304' type='void freeModuleObject(robj * o)'/>
+<use f='codebrowser/src/object.c' l='318' u='c' c='decrRefCount'/>

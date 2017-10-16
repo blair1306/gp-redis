@@ -1,0 +1,18 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='63' type='redisContext'/>
+<use f='codebrowser/deps/hiredis/async.c' l='112' u='a' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='148' u='a' c='__redisAsyncCopyError'/>
+<use f='codebrowser/deps/hiredis/async.c' l='266' u='a' c='__redisRunCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='276' u='a' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='324' u='a' c='redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='332' u='a' c='__redisAsyncDisconnect'/>
+<use f='codebrowser/deps/hiredis/async.c' l='358' u='a' c='redisAsyncDisconnect'/>
+<use f='codebrowser/deps/hiredis/async.c' l='365' u='a' c='__redisGetSubscribeCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='412' u='a' c='redisProcessCallbacks'/>
+<use f='codebrowser/deps/hiredis/async.c' l='495' u='a' c='__redisAsyncHandleConnect'/>
+<use f='codebrowser/deps/hiredis/async.c' l='517' u='a' c='redisAsyncHandleRead'/>
+<use f='codebrowser/deps/hiredis/async.c' l='538' u='a' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='584' u='a' c='__redisAsyncCommand'/>
+<offset>0</offset>
+<doc f='codebrowser/deps/hiredis/async.h' l='62'>/* Hold the regular context, so it can be realloc&apos;ed. */</doc>
+<use f='codebrowser/src/sentinel.c' l='329' u='a' c='redisAeAttach'/>
+<use f='codebrowser/src/sentinel.c' l='2481' u='m' c='sentinelSendHello'/>

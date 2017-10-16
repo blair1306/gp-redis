@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1929' type='void hsetnxCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='202' u='r'/>
+<use f='codebrowser/src/server.c' l='202' u='r'/>
+<use f='codebrowser/src/server.c' l='202' u='r'/>
+<use f='codebrowser/src/server.c' l='202' u='r'/>
+<def f='codebrowser/src/t_hash.c' l='514' ll='528' type='void hsetnxCommand(client * c)'/>
+<doc f='codebrowser/src/t_hash.c' l='510'>/*-----------------------------------------------------------------------------
+ * Hash type commands
+ *----------------------------------------------------------------------------*/</doc>

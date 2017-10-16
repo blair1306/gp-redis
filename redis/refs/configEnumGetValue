@@ -1,0 +1,10 @@
+<def f='codebrowser/src/config.c' l='106' ll='112' type='int configEnumGetValue(configEnum * ce, char * name)'/>
+<use f='codebrowser/src/config.c' l='264' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='299' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='320' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='458' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='709' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='816' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='816' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='816' u='c' c='configSetCommand'/>
+<doc f='codebrowser/src/config.c' l='105'>/* Get enum value from name. If there is no match INT_MIN is returned. */</doc>

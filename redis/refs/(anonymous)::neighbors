@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/geohash_helper.h' l='47' type='GeoHashNeighbors'/>
+<use f='codebrowser/src/geo.c' l='332' u='m' c='membersOfAllNeighbors'/>
+<use f='codebrowser/src/geo.c' l='333' u='m' c='membersOfAllNeighbors'/>
+<use f='codebrowser/src/geo.c' l='334' u='m' c='membersOfAllNeighbors'/>
+<use f='codebrowser/src/geo.c' l='335' u='m' c='membersOfAllNeighbors'/>
+<use f='codebrowser/src/geo.c' l='336' u='m' c='membersOfAllNeighbors'/>
+<use f='codebrowser/src/geo.c' l='337' u='m' c='membersOfAllNeighbors'/>
+<use f='codebrowser/src/geo.c' l='338' u='m' c='membersOfAllNeighbors'/>
+<use f='codebrowser/src/geo.c' l='339' u='m' c='membersOfAllNeighbors'/>
+<offset>512</offset>
+<use f='codebrowser/src/geohash_helper.c' l='194' u='w' c='geohashGetAreasByRadius'/>

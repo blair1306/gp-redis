@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='98' ll='105' type='void * mp_realloc(lua_State * L, void * target, size_t osize, size_t nsize)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='111' u='c' c='mp_buf_new'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='122' u='c' c='mp_buf_append'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='131' u='c' c='mp_buf_free'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='132' u='c' c='mp_buf_free'/>

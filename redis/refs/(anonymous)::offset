@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/cluster.h' l='243' type='uint64_t'/>
+<use f='codebrowser/src/cluster.c' l='1681' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2247' u='w' c='clusterBuildMessageHdr'/>
+<offset>256</offset>
+<doc f='codebrowser/src/cluster.h' l='243'>/* Master replication offset if node is a master or
+                           processed replication offset if node is a slave. */</doc>

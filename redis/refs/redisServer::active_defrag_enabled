@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='976' type='int'/>
+<offset>13056</offset>
+<use f='codebrowser/src/config.c' l='427' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1009' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1294' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2026' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='884' u='r' c='databasesCron'/>
+<use f='codebrowser/src/server.c' l='1366' u='w' c='initServerConfig'/>

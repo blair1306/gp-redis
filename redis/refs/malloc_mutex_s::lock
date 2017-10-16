@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/mutex.h' l='40' type='pthread_mutex_t'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/mutex.h' l='85' u='a' c='je_malloc_mutex_lock'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/mutex.h' l='104' u='a' c='je_malloc_mutex_unlock'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/mutex.c' l='100' u='a' c='je_malloc_mutex_init'/>

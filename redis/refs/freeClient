@@ -1,0 +1,29 @@
+<dec f='codebrowser/src/server.h' l='1335' type='void freeClient(client * c)'/>
+<use f='codebrowser/src/module.c' l='437' u='c' c='moduleFreeContext'/>
+<use f='codebrowser/src/module.c' l='2646' u='c' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='3520' u='c' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/networking.c' l='626' u='c' c='acceptCommonHandler'/>
+<use f='codebrowser/src/networking.c' l='666' u='c' c='acceptCommonHandler'/>
+<use f='codebrowser/src/networking.c' l='728' u='c' c='disconnectSlaves'/>
+<def f='codebrowser/src/networking.c' l='775' ll='867' type='void freeClient(client * c)'/>
+<use f='codebrowser/src/networking.c' l='885' u='c' c='freeClientsInAsyncFreeQueue'/>
+<use f='codebrowser/src/networking.c' l='954' u='c' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='971' u='c' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='1383' u='c' c='readQueryFromClient'/>
+<use f='codebrowser/src/networking.c' l='1388' u='c' c='readQueryFromClient'/>
+<use f='codebrowser/src/networking.c' l='1409' u='c' c='readQueryFromClient'/>
+<use f='codebrowser/src/networking.c' l='1646' u='c' c='clientCommand'/>
+<use f='codebrowser/src/rdb.c' l='1781' u='c' c='backgroundSaveDoneHandlerSocket'/>
+<use f='codebrowser/src/replication.c' l='862' u='c' c='putSlaveOnline'/>
+<use f='codebrowser/src/replication.c' l='885' u='c' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='905' u='c' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='912' u='c' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='976' u='c' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='982' u='c' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='994' u='c' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='1933' u='c' c='replicationSetMaster'/>
+<use f='codebrowser/src/replication.c' l='1958' u='c' c='replicationUnsetMaster'/>
+<use f='codebrowser/src/replication.c' l='2188' u='c' c='replicationDiscardCachedMaster'/>
+<use f='codebrowser/src/replication.c' l='2517' u='c' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2599' u='c' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='789' u='c' c='clientsCronHandleTimeout'/>

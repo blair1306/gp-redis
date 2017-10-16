@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='41' type='prof_tctx_t *'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='143' u='r' c='je_extent_node_prof_tctx_get'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='192' u='w' c='je_extent_node_prof_tctx_set'/>
+<offset>256</offset>

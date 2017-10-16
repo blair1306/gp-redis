@@ -1,0 +1,6 @@
+<def f='codebrowser/src/scripting.c' l='749' ll='768' type='int luaRedisSetReplCommand(lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='969' u='r' c='scriptingInit'/>
+<doc f='codebrowser/src/scripting.c' l='745'>/* redis.set_repl()
+ *
+ * Set the propagation of write commands executed in the context of the
+ * script to on/off for AOF and slaves. */</doc>

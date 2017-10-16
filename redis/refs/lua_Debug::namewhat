@@ -1,0 +1,29 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='349' type='const char *'/>
+<offset>128</offset>
+<doc f='codebrowser/deps/lua/src/lua.h' l='349'>/* (n) `global&apos;, `local&apos;, `field&apos;, `method&apos; */</doc>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='48' u='r' c='luaL_argerror'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='134' u='r' c='db_getinfo'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='357' u='r' c='db_errorfb'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='168' u='w' c='info_tailcall'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='215' u='w' c='auxgetinfo'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='216' u='r' c='auxgetinfo'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='217' u='w' c='auxgetinfo'/>

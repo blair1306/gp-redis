@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/lua/src/lstate.h' l='52' type='const Instruction *'/>
+<offset>192</offset>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='39' u='w' c='currentpc'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='40' u='r' c='currentpc'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='272' u='w' c='luaD_precall'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='353' u='r' c='luaD_poscall'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='472' u='r' c='luaD_pcall'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='625' u='w' c='luaV_execute'/>

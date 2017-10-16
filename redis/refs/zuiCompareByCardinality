@@ -1,0 +1,2 @@
+<def f='codebrowser/src/t_zset.c' l='2087' ll='2089' type='int zuiCompareByCardinality(const void * s1, const void * s2)'/>
+<use f='codebrowser/src/t_zset.c' l='2219' u='r' c='zunionInterGenericCommand'/>

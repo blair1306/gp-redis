@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1914' type='void zremCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='182' u='r'/>
+<use f='codebrowser/src/server.c' l='182' u='r'/>
+<use f='codebrowser/src/server.c' l='182' u='r'/>
+<use f='codebrowser/src/server.c' l='182' u='r'/>
+<def f='codebrowser/src/t_zset.c' l='1616' ll='1641' type='void zremCommand(client * c)'/>

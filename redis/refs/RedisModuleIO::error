@@ -1,0 +1,25 @@
+<dec f='codebrowser/src/server.h' l='532' type='int'/>
+<use f='codebrowser/src/aof.c' l='1041' macro='1' u='w'/>
+<use f='codebrowser/src/aof.c' l='1047' u='r' c='rewriteModuleObject'/>
+<offset>192</offset>
+<doc f='codebrowser/src/server.h' l='532'>/* True if error condition happened. */</doc>
+<use f='codebrowser/src/module.c' l='2959' u='r' c='RM_SaveUnsigned'/>
+<use f='codebrowser/src/module.c' l='2971' u='w' c='RM_SaveUnsigned'/>
+<use f='codebrowser/src/module.c' l='3013' u='r' c='RM_SaveString'/>
+<use f='codebrowser/src/module.c' l='3025' u='w' c='RM_SaveString'/>
+<use f='codebrowser/src/module.c' l='3031' u='r' c='RM_SaveStringBuffer'/>
+<use f='codebrowser/src/module.c' l='3043' u='w' c='RM_SaveStringBuffer'/>
+<use f='codebrowser/src/module.c' l='3090' u='r' c='RM_SaveDouble'/>
+<use f='codebrowser/src/module.c' l='3102' u='w' c='RM_SaveDouble'/>
+<use f='codebrowser/src/module.c' l='3126' u='r' c='RM_SaveFloat'/>
+<use f='codebrowser/src/module.c' l='3138' u='w' c='RM_SaveFloat'/>
+<use f='codebrowser/src/module.c' l='3228' u='r' c='RM_EmitAOF'/>
+<use f='codebrowser/src/module.c' l='3240' u='w' c='RM_EmitAOF'/>
+<use f='codebrowser/src/module.c' l='3254' u='w' c='RM_EmitAOF'/>
+<use f='codebrowser/src/module.c' l='3260' u='r' c='RM_EmitAOF'/>
+<use f='codebrowser/src/module.c' l='3261' u='w' c='RM_EmitAOF'/>
+<use f='codebrowser/src/module.c' l='3265' u='r' c='RM_EmitAOF'/>
+<use f='codebrowser/src/module.c' l='3266' u='w' c='RM_EmitAOF'/>
+<use f='codebrowser/src/rdb.c' l='770' macro='1' u='w'/>
+<use f='codebrowser/src/rdb.c' l='788' u='r' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='1411' macro='1' u='w'/>

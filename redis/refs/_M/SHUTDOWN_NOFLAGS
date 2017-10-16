@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='391'/>
+<doc f='codebrowser/src/server.h' l='390'>/* SHUTDOWN flags */</doc>
+<use f='codebrowser/src/server.c' l='997' u='c'/>
+<use f='codebrowser/src/server.c' l='1558' u='c'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/cluster.h' l='166' type='long long [9]'/>
+<use f='codebrowser/src/cluster.c' l='426' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='2165' u='w' c='clusterSendMessage'/>
+<use f='codebrowser/src/cluster.c' l='4320' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4321' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4325' u='r' c='clusterCommand'/>
+<offset>4195392</offset>
+<doc f='codebrowser/src/cluster.h' l='165'>/* Messages received and sent by type. */</doc>

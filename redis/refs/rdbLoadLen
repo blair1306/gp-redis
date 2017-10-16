@@ -1,0 +1,27 @@
+<dec f='codebrowser/src/rdb.h' l='127' type='uint64_t rdbLoadLen(rio * rdb, int * isencoded)'/>
+<use f='codebrowser/src/module.c' l='2979' u='c' c='RM_LoadUnsigned'/>
+<use f='codebrowser/src/module.c' l='3049' u='c' c='moduleLoadString'/>
+<use f='codebrowser/src/module.c' l='3109' u='c' c='RM_LoadDouble'/>
+<use f='codebrowser/src/module.c' l='3145' u='c' c='RM_LoadFloat'/>
+<def f='codebrowser/src/rdb.c' l='193' ll='198' type='uint64_t rdbLoadLen(rio * rdb, int * isencoded)'/>
+<use f='codebrowser/src/rdb.c' l='339' u='c' c='rdbLoadLzfStringObject'/>
+<use f='codebrowser/src/rdb.c' l='340' u='c' c='rdbLoadLzfStringObject'/>
+<use f='codebrowser/src/rdb.c' l='458' u='c' c='rdbGenericLoadStringObject'/>
+<use f='codebrowser/src/rdb.c' l='1113' u='c' c='rdbLoadCheckModuleValue'/>
+<use f='codebrowser/src/rdb.c' l='1159' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1176' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1221' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1256' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1312' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1398' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1423' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1543' u='c' c='rdbLoadRio'/>
+<use f='codebrowser/src/rdb.c' l='1558' u='c' c='rdbLoadRio'/>
+<use f='codebrowser/src/rdb.c' l='1560' u='c' c='rdbLoadRio'/>
+<doc f='codebrowser/src/rdb.c' l='189'>/* This is like rdbLoadLenByRef() but directly returns the value read
+ * from the RDB stream, signaling an error by returning RDB_LENERR
+ * (since it is a too large count to be applicable in any Redis data
+ * structure). */</doc>
+<use f='codebrowser/src/redis-check-rdb.c' l='240' u='c' c='redis_check_rdb'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='249' u='c' c='redis_check_rdb'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='251' u='c' c='redis_check_rdb'/>

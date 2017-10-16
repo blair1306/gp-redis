@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rdb.h' l='148' type='int rdbLoadBinaryFloatValue(rio * rdb, float * val)'/>
+<use f='codebrowser/src/module.c' l='3149' u='c' c='RM_LoadFloat'/>
+<def f='codebrowser/src/rdb.c' l='588' ll='592' type='int rdbLoadBinaryFloatValue(rio * rdb, float * val)'/>
+<use f='codebrowser/src/rdb.c' l='1131' u='c' c='rdbLoadCheckModuleValue'/>
+<doc f='codebrowser/src/rdb.c' l='587'>/* Like rdbLoadBinaryDoubleValue() but single precision. */</doc>

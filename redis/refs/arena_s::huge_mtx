@@ -1,0 +1,24 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='381' type='malloc_mutex_t'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3061' u='a' c='je_arena_new'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3287' u='a' c='je_arena_prefork'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3303' u='a' c='je_arena_postfork_parent'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3316' u='a' c='je_arena_postfork_child'/>
+<offset>3776</offset>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='91' u='a' c='je_huge_palloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='94' u='a' c='je_huge_palloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='163' u='a' c='huge_ralloc_no_move_similar'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='169' u='a' c='huge_ralloc_no_move_similar'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='224' u='a' c='huge_ralloc_no_move_shrink'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='229' u='a' c='huge_ralloc_no_move_shrink'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='245' u='a' c='huge_ralloc_no_move_expand'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='247' u='a' c='huge_ralloc_no_move_expand'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='259' u='a' c='huge_ralloc_no_move_expand'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='262' u='a' c='huge_ralloc_no_move_expand'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='367' u='a' c='je_huge_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='369' u='a' c='je_huge_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='394' u='a' c='je_huge_salloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='396' u='a' c='je_huge_salloc'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='410' u='a' c='je_huge_prof_tctx_get'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='412' u='a' c='je_huge_prof_tctx_get'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='425' u='a' c='je_huge_prof_tctx_set'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='427' u='a' c='je_huge_prof_tctx_set'/>

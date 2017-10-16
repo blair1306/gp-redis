@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='229' type='sds sdscatvprintf(sds s, const char * fmt, struct __va_list_tag * ap)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='361' u='c' c='redisvFormatCommand'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='501' ll='536' type='sds sdscatvprintf(sds s, const char * fmt, struct __va_list_tag * ap)'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='558' u='c' c='sdscatprintf'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='500'>/* Like sdscatprintf() but gets va_list instead of being variadic. */</doc>
+<dec f='codebrowser/src/sds.h' l='229' type='sds sdscatvprintf(sds s, const char * fmt, struct __va_list_tag * ap)'/>
+<use f='codebrowser/src/module.c' l='779' u='c' c='RM_CreateStringPrintf'/>
+<use f='codebrowser/src/networking.c' l='389' u='c' c='addReplyErrorFormat'/>
+<use f='codebrowser/src/networking.c' l='414' u='c' c='addReplyStatusFormat'/>
+<def f='codebrowser/src/sds.c' l='504' ll='539' type='sds sdscatvprintf(sds s, const char * fmt, struct __va_list_tag * ap)'/>
+<use f='codebrowser/src/sds.c' l='561' u='c' c='sdscatprintf'/>
+<doc f='codebrowser/src/sds.c' l='503'>/* Like sdscatprintf() but gets va_list instead of being variadic. */</doc>

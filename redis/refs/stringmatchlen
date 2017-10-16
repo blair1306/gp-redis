@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/util.h' l='36' type='int stringmatchlen(const char * p, int plen, const char * s, int slen, int nocase)'/>
+<use f='codebrowser/src/db.c' l='511' u='c' c='keysCommand'/>
+<use f='codebrowser/src/db.c' l='709' u='c' c='scanGenericCommand'/>
+<use f='codebrowser/src/db.c' l='717' u='c' c='scanGenericCommand'/>
+<use f='codebrowser/src/pubsub.c' l='256' u='c' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/pubsub.c' l='343' u='c' c='pubsubCommand'/>
+<def f='codebrowser/src/util.c' l='47' ll='167' type='int stringmatchlen(const char * pattern, int patternLen, const char * string, int stringLen, int nocase)'/>
+<use f='codebrowser/src/util.c' l='60' u='c' c='stringmatchlen'/>
+<use f='codebrowser/src/util.c' l='170' u='c' c='stringmatch'/>
+<doc f='codebrowser/src/util.c' l='46'>/* Glob-style pattern matching. */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/ae.h' l='81' type='struct aeTimeEvent *'/>
+<use f='codebrowser/src/ae.c' l='218' u='w' c='aeCreateTimeEvent'/>
+<use f='codebrowser/src/ae.c' l='231' u='r' c='aeDeleteTimeEvent'/>
+<use f='codebrowser/src/ae.c' l='257' u='r' c='aeSearchNearestTimer'/>
+<use f='codebrowser/src/ae.c' l='281' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='295' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='297' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='299' u='w' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='299' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='313' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='332' u='r' c='processTimeEvents'/>
+<offset>384</offset>

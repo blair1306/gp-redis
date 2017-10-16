@@ -1,0 +1,5 @@
+<def f='codebrowser/src/scripting.c' l='1767' ll='1811' type='sds * ldbReplParseCommand(int * argcp)'/>
+<use f='codebrowser/src/scripting.c' l='2233' u='c' c='ldbRepl'/>
+<doc f='codebrowser/src/scripting.c' l='1764'>/* Expect a valid multi-bulk command in the debugging client query buffer.
+ * On success the command is parsed and returned as an array of SDS strings,
+ * otherwise NULL is returned and there is to read more buffer. */</doc>

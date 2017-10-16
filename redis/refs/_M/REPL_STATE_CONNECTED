@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='292'/>
+<use f='codebrowser/src/cluster.c' l='2873' u='c'/>
+<use f='codebrowser/src/replication.c' l='633' u='c'/>
+<use f='codebrowser/src/replication.c' l='1280' u='c'/>
+<use f='codebrowser/src/replication.c' l='2076' u='c'/>
+<use f='codebrowser/src/replication.c' l='2205' u='c'/>
+<use f='codebrowser/src/replication.c' l='2513' u='c'/>
+<use f='codebrowser/src/server.c' l='2446' u='c'/>
+<use f='codebrowser/src/server.c' l='3149' u='c'/>
+<use f='codebrowser/src/server.c' l='3167' u='c'/>

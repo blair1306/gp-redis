@@ -1,0 +1,8 @@
+<def f='codebrowser/src/module.c' l='1152' ll='1157' type='int RM_ReplyWithDouble(RedisModuleCtx * ctx, double d)'/>
+<use f='codebrowser/src/module.c' l='3913' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1146'>/* Send a string reply obtained converting the double &apos;d&apos; into a bulk string.
+ * This function is basically equivalent to converting a double into
+ * a string into a C buffer, and then calling the function
+ * RedisModule_ReplyWithStringBuffer() with the buffer and length.
+ *
+ * The function always returns REDISMODULE_OK. */</doc>

@@ -1,0 +1,586 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>evict.c source code [codebrowser/src/evict.c] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="evictionPoolEntry "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/evict.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>src</a>/<a href='evict.c.html'>evict.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Maxmemory directive handling (LRU eviction and other policies).</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * ----------------------------------------------------------------------------</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Copyright (c) 2009-2016, Salvatore Sanfilippo &lt;antirez at gmail dot com&gt;</i></td></tr>
+<tr><th id="6">6</th><td><i> * All rights reserved.</i></td></tr>
+<tr><th id="7">7</th><td><i> *</i></td></tr>
+<tr><th id="8">8</th><td><i> * Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="9">9</th><td><i> * modification, are permitted provided that the following conditions are met:</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> *   * Redistributions of source code must retain the above copyright notice,</i></td></tr>
+<tr><th id="12">12</th><td><i> *     this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="13">13</th><td><i> *   * Redistributions in binary form must reproduce the above copyright</i></td></tr>
+<tr><th id="14">14</th><td><i> *     notice, this list of conditions and the following disclaimer in the</i></td></tr>
+<tr><th id="15">15</th><td><i> *     documentation and/or other materials provided with the distribution.</i></td></tr>
+<tr><th id="16">16</th><td><i> *   * Neither the name of Redis nor the names of its contributors may be used</i></td></tr>
+<tr><th id="17">17</th><td><i> *     to endorse or promote products derived from this software without</i></td></tr>
+<tr><th id="18">18</th><td><i> *     specific prior written permission.</i></td></tr>
+<tr><th id="19">19</th><td><i> *</i></td></tr>
+<tr><th id="20">20</th><td><i> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"</i></td></tr>
+<tr><th id="21">21</th><td><i> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</i></td></tr>
+<tr><th id="22">22</th><td><i> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</i></td></tr>
+<tr><th id="23">23</th><td><i> * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE</i></td></tr>
+<tr><th id="24">24</th><td><i> * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</i></td></tr>
+<tr><th id="25">25</th><td><i> * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</i></td></tr>
+<tr><th id="26">26</th><td><i> * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</i></td></tr>
+<tr><th id="27">27</th><td><i> * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</i></td></tr>
+<tr><th id="28">28</th><td><i> * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</i></td></tr>
+<tr><th id="29">29</th><td><i> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</i></td></tr>
+<tr><th id="30">30</th><td><i> * POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="31">31</th><td><i> */</i></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="server.h.html">"server.h"</a></u></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="bio.h.html">"bio.h"</a></u></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="atomicvar.h.html">"atomicvar.h"</a></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i>/* ----------------------------------------------------------------------------</i></td></tr>
+<tr><th id="38">38</th><td><i> * Data structures</i></td></tr>
+<tr><th id="39">39</th><td><i> * --------------------------------------------------------------------------*/</i></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><i>/* To improve the quality of the LRU approximation we take a set of keys</i></td></tr>
+<tr><th id="42">42</th><td><i> * that are good candidate for eviction across freeMemoryIfNeeded() calls.</i></td></tr>
+<tr><th id="43">43</th><td><i> *</i></td></tr>
+<tr><th id="44">44</th><td><i> * Entries inside the eviciton pool are taken ordered by idle time, putting</i></td></tr>
+<tr><th id="45">45</th><td><i> * greater idle times to the right (ascending order).</i></td></tr>
+<tr><th id="46">46</th><td><i> *</i></td></tr>
+<tr><th id="47">47</th><td><i> * When an LFU policy is used instead, a reverse frequency indication is used</i></td></tr>
+<tr><th id="48">48</th><td><i> * instead of the idle time, so that we still evict by larger value (larger</i></td></tr>
+<tr><th id="49">49</th><td><i> * inverse frequency means to evict keys with the least frequent accesses).</i></td></tr>
+<tr><th id="50">50</th><td><i> *</i></td></tr>
+<tr><th id="51">51</th><td><i> * Empty entries have the key pointer set to NULL. */</i></td></tr>
+<tr><th id="52">52</th><td><u>#define <dfn class="macro" id="_M/EVPOOL_SIZE" data-ref="_M/EVPOOL_SIZE">EVPOOL_SIZE</dfn> 16</u></td></tr>
+<tr><th id="53">53</th><td><u>#define <dfn class="macro" id="_M/EVPOOL_CACHED_SDS_SIZE" data-ref="_M/EVPOOL_CACHED_SDS_SIZE">EVPOOL_CACHED_SDS_SIZE</dfn> 255</u></td></tr>
+<tr><th id="54">54</th><td><b>struct</b> <dfn class="type def" id="evictionPoolEntry" title='evictionPoolEntry' data-ref="evictionPoolEntry">evictionPoolEntry</dfn> {</td></tr>
+<tr><th id="55">55</th><td>    <em>unsigned</em> <em>long</em> <em>long</em> <dfn class="decl" id="evictionPoolEntry::idle" title='evictionPoolEntry::idle' data-ref="evictionPoolEntry::idle">idle</dfn>;    <i>/* Object idle time (inverse frequency for LFU) */</i></td></tr>
+<tr><th id="56">56</th><td>    <a class="typedef" href="sds.h.html#sds" title='sds' data-type='char *' data-ref="sds">sds</a> <dfn class="decl" id="evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</dfn>;                    <i>/* Key name. */</i></td></tr>
+<tr><th id="57">57</th><td>    <a class="typedef" href="sds.h.html#sds" title='sds' data-type='char *' data-ref="sds">sds</a> <dfn class="decl" id="evictionPoolEntry::cached" title='evictionPoolEntry::cached' data-ref="evictionPoolEntry::cached">cached</dfn>;                 <i>/* Cached SDS object for key name. */</i></td></tr>
+<tr><th id="58">58</th><td>    <em>int</em> <dfn class="decl" id="evictionPoolEntry::dbid" title='evictionPoolEntry::dbid' data-ref="evictionPoolEntry::dbid">dbid</dfn>;                   <i>/* Key DB number. */</i></td></tr>
+<tr><th id="59">59</th><td>};</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><em>static</em> <b>struct</b> <a class="type" href="#evictionPoolEntry" title='evictionPoolEntry' data-ref="evictionPoolEntry">evictionPoolEntry</a> *<dfn class="tu decl def" id="EvictionPoolLRU" title='EvictionPoolLRU' data-type='struct evictionPoolEntry *' data-ref="EvictionPoolLRU">EvictionPoolLRU</dfn>;</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><em>unsigned</em> <em>long</em> <a class="decl" href="#LFUDecrAndReturn" title='LFUDecrAndReturn' data-ref="LFUDecrAndReturn">LFUDecrAndReturn</a>(<a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="local col1 decl" id="1o" title='o' data-type='robj *' data-ref="1o">o</dfn>);</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><i>/* ----------------------------------------------------------------------------</i></td></tr>
+<tr><th id="66">66</th><td><i> * Implementation of eviction, aging and LRU</i></td></tr>
+<tr><th id="67">67</th><td><i> * --------------------------------------------------------------------------*/</i></td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><i>/* Return the LRU clock, based on the clock resolution. This is a time</i></td></tr>
+<tr><th id="70">70</th><td><i> * in a reduced-bits format that can be used to set and check the</i></td></tr>
+<tr><th id="71">71</th><td><i> * object-&gt;lru field of redisObject structures. */</i></td></tr>
+<tr><th id="72">72</th><td><em>unsigned</em> <em>int</em> <dfn class="decl def" id="getLRUClock" title='getLRUClock' data-ref="getLRUClock">getLRUClock</dfn>(<em>void</em>) {</td></tr>
+<tr><th id="73">73</th><td>    <b>return</b> (<a class="ref" href="server.h.html#mstime" title='mstime' data-ref="mstime">mstime</a>()/<a class="macro" href="server.h.html#581" title="1000" data-ref="_M/LRU_CLOCK_RESOLUTION">LRU_CLOCK_RESOLUTION</a>) &amp; <a class="macro" href="server.h.html#580" title="((1&lt;&lt;24)-1)" data-ref="_M/LRU_CLOCK_MAX">LRU_CLOCK_MAX</a>;</td></tr>
+<tr><th id="74">74</th><td>}</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><i>/* This function is used to obtain the current LRU clock.</i></td></tr>
+<tr><th id="77">77</th><td><i> * If the current resolution is lower than the frequency we refresh the</i></td></tr>
+<tr><th id="78">78</th><td><i> * LRU clock (as it should be in production servers) we return the</i></td></tr>
+<tr><th id="79">79</th><td><i> * precomputed value, otherwise we need to resort to a system call. */</i></td></tr>
+<tr><th id="80">80</th><td><em>unsigned</em> <em>int</em> <dfn class="decl def" id="LRU_CLOCK" title='LRU_CLOCK' data-ref="LRU_CLOCK">LRU_CLOCK</dfn>(<em>void</em>) {</td></tr>
+<tr><th id="81">81</th><td>    <em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="2lruclock" title='lruclock' data-type='unsigned int' data-ref="2lruclock">lruclock</dfn>;</td></tr>
+<tr><th id="82">82</th><td>    <b>if</b> (<var>1000</var>/<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::hz" title='redisServer::hz' data-ref="redisServer::hz">hz</a> &lt;= <a class="macro" href="server.h.html#581" title="1000" data-ref="_M/LRU_CLOCK_RESOLUTION">LRU_CLOCK_RESOLUTION</a>) {</td></tr>
+<tr><th id="83">83</th><td>        <a class="macro" href="atomicvar.h.html#79" title="do { lruclock = __atomic_load_n(&amp;server.lruclock,0); } while(0)" data-ref="_M/atomicGet">atomicGet</a>(<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::lruclock" title='redisServer::lruclock' data-ref="redisServer::lruclock">lruclock</a>,<a class="local col2 ref" href="#2lruclock" title='lruclock' data-ref="2lruclock">lruclock</a>);</td></tr>
+<tr><th id="84">84</th><td>    } <b>else</b> {</td></tr>
+<tr><th id="85">85</th><td>        <a class="local col2 ref" href="#2lruclock" title='lruclock' data-ref="2lruclock">lruclock</a> = <a class="ref" href="#getLRUClock" title='getLRUClock' data-ref="getLRUClock">getLRUClock</a>();</td></tr>
+<tr><th id="86">86</th><td>    }</td></tr>
+<tr><th id="87">87</th><td>    <b>return</b> <a class="local col2 ref" href="#2lruclock" title='lruclock' data-ref="2lruclock">lruclock</a>;</td></tr>
+<tr><th id="88">88</th><td>}</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><i>/* Given an object returns the min number of milliseconds the object was never</i></td></tr>
+<tr><th id="91">91</th><td><i> * requested, using an approximated LRU algorithm. */</i></td></tr>
+<tr><th id="92">92</th><td><em>unsigned</em> <em>long</em> <em>long</em> <dfn class="decl def" id="estimateObjectIdleTime" title='estimateObjectIdleTime' data-ref="estimateObjectIdleTime">estimateObjectIdleTime</dfn>(<a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="local col3 decl" id="3o" title='o' data-type='robj *' data-ref="3o">o</dfn>) {</td></tr>
+<tr><th id="93">93</th><td>    <em>unsigned</em> <em>long</em> <em>long</em> <dfn class="local col4 decl" id="4lruclock" title='lruclock' data-type='unsigned long long' data-ref="4lruclock">lruclock</dfn> = <a class="ref" href="#LRU_CLOCK" title='LRU_CLOCK' data-ref="LRU_CLOCK">LRU_CLOCK</a>();</td></tr>
+<tr><th id="94">94</th><td>    <b>if</b> (<a class="local col4 ref" href="#4lruclock" title='lruclock' data-ref="4lruclock">lruclock</a> &gt;= <a class="local col3 ref" href="#3o" title='o' data-ref="3o">o</a>-&gt;<a class="ref" href="server.h.html#redisObject::lru" title='redisObject::lru' data-ref="redisObject::lru">lru</a>) {</td></tr>
+<tr><th id="95">95</th><td>        <b>return</b> (<a class="local col4 ref" href="#4lruclock" title='lruclock' data-ref="4lruclock">lruclock</a> - <a class="local col3 ref" href="#3o" title='o' data-ref="3o">o</a>-&gt;<a class="ref" href="server.h.html#redisObject::lru" title='redisObject::lru' data-ref="redisObject::lru">lru</a>) * <a class="macro" href="server.h.html#581" title="1000" data-ref="_M/LRU_CLOCK_RESOLUTION">LRU_CLOCK_RESOLUTION</a>;</td></tr>
+<tr><th id="96">96</th><td>    } <b>else</b> {</td></tr>
+<tr><th id="97">97</th><td>        <b>return</b> (<a class="local col4 ref" href="#4lruclock" title='lruclock' data-ref="4lruclock">lruclock</a> + (<a class="macro" href="server.h.html#580" title="((1&lt;&lt;24)-1)" data-ref="_M/LRU_CLOCK_MAX">LRU_CLOCK_MAX</a> - <a class="local col3 ref" href="#3o" title='o' data-ref="3o">o</a>-&gt;<a class="ref" href="server.h.html#redisObject::lru" title='redisObject::lru' data-ref="redisObject::lru">lru</a>)) *</td></tr>
+<tr><th id="98">98</th><td>                    <a class="macro" href="server.h.html#581" title="1000" data-ref="_M/LRU_CLOCK_RESOLUTION">LRU_CLOCK_RESOLUTION</a>;</td></tr>
+<tr><th id="99">99</th><td>    }</td></tr>
+<tr><th id="100">100</th><td>}</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><i>/* freeMemoryIfNeeded() gets called when 'maxmemory' is set on the config</i></td></tr>
+<tr><th id="103">103</th><td><i> * file to limit the max memory used by the server, before processing a</i></td></tr>
+<tr><th id="104">104</th><td><i> * command.</i></td></tr>
+<tr><th id="105">105</th><td><i> *</i></td></tr>
+<tr><th id="106">106</th><td><i> * The goal of the function is to free enough memory to keep Redis under the</i></td></tr>
+<tr><th id="107">107</th><td><i> * configured memory limit.</i></td></tr>
+<tr><th id="108">108</th><td><i> *</i></td></tr>
+<tr><th id="109">109</th><td><i> * The function starts calculating how many bytes should be freed to keep</i></td></tr>
+<tr><th id="110">110</th><td><i> * Redis under the limit, and enters a loop selecting the best keys to</i></td></tr>
+<tr><th id="111">111</th><td><i> * evict accordingly to the configured policy.</i></td></tr>
+<tr><th id="112">112</th><td><i> *</i></td></tr>
+<tr><th id="113">113</th><td><i> * If all the bytes needed to return back under the limit were freed the</i></td></tr>
+<tr><th id="114">114</th><td><i> * function returns C_OK, otherwise C_ERR is returned, and the caller</i></td></tr>
+<tr><th id="115">115</th><td><i> * should block the execution of commands that will result in more memory</i></td></tr>
+<tr><th id="116">116</th><td><i> * used by the server.</i></td></tr>
+<tr><th id="117">117</th><td><i> *</i></td></tr>
+<tr><th id="118">118</th><td><i> * ------------------------------------------------------------------------</i></td></tr>
+<tr><th id="119">119</th><td><i> *</i></td></tr>
+<tr><th id="120">120</th><td><i> * LRU approximation algorithm</i></td></tr>
+<tr><th id="121">121</th><td><i> *</i></td></tr>
+<tr><th id="122">122</th><td><i> * Redis uses an approximation of the LRU algorithm that runs in constant</i></td></tr>
+<tr><th id="123">123</th><td><i> * memory. Every time there is a key to expire, we sample N keys (with</i></td></tr>
+<tr><th id="124">124</th><td><i> * N very small, usually in around 5) to populate a pool of best keys to</i></td></tr>
+<tr><th id="125">125</th><td><i> * evict of M keys (the pool size is defined by EVPOOL_SIZE).</i></td></tr>
+<tr><th id="126">126</th><td><i> *</i></td></tr>
+<tr><th id="127">127</th><td><i> * The N keys sampled are added in the pool of good keys to expire (the one</i></td></tr>
+<tr><th id="128">128</th><td><i> * with an old access time) if they are better than one of the current keys</i></td></tr>
+<tr><th id="129">129</th><td><i> * in the pool.</i></td></tr>
+<tr><th id="130">130</th><td><i> *</i></td></tr>
+<tr><th id="131">131</th><td><i> * After the pool is populated, the best key we have in the pool is expired.</i></td></tr>
+<tr><th id="132">132</th><td><i> * However note that we don't remove keys from the pool when they are deleted</i></td></tr>
+<tr><th id="133">133</th><td><i> * so the pool may contain keys that no longer exist.</i></td></tr>
+<tr><th id="134">134</th><td><i> *</i></td></tr>
+<tr><th id="135">135</th><td><i> * When we try to evict a key, and all the entries in the pool don't exist</i></td></tr>
+<tr><th id="136">136</th><td><i> * we populate it again. This time we'll be sure that the pool has at least</i></td></tr>
+<tr><th id="137">137</th><td><i> * one key that can be evicted, if there is at least one key that can be</i></td></tr>
+<tr><th id="138">138</th><td><i> * evicted in the whole database. */</i></td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td><i>/* Create a new eviction pool. */</i></td></tr>
+<tr><th id="141">141</th><td><em>void</em> <dfn class="decl def" id="evictionPoolAlloc" title='evictionPoolAlloc' data-ref="evictionPoolAlloc">evictionPoolAlloc</dfn>(<em>void</em>) {</td></tr>
+<tr><th id="142">142</th><td>    <b>struct</b> <a class="type" href="#evictionPoolEntry" title='evictionPoolEntry' data-ref="evictionPoolEntry">evictionPoolEntry</a> *<dfn class="local col5 decl" id="5ep" title='ep' data-type='struct evictionPoolEntry *' data-ref="5ep">ep</dfn>;</td></tr>
+<tr><th id="143">143</th><td>    <em>int</em> <dfn class="local col6 decl" id="6j" title='j' data-type='int' data-ref="6j">j</dfn>;</td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td>    <a class="local col5 ref" href="#5ep" title='ep' data-ref="5ep">ep</a> = <a class="ref" href="zmalloc.h.html#zmalloc" title='zmalloc' data-ref="zmalloc">zmalloc</a>(<b>sizeof</b>(*<a class="local col5 ref" href="#5ep" title='ep' data-ref="5ep">ep</a>)*<a class="macro" href="#52" title="16" data-ref="_M/EVPOOL_SIZE">EVPOOL_SIZE</a>);</td></tr>
+<tr><th id="146">146</th><td>    <b>for</b> (<a class="local col6 ref" href="#6j" title='j' data-ref="6j">j</a> = <var>0</var>; <a class="local col6 ref" href="#6j" title='j' data-ref="6j">j</a> &lt; <a class="macro" href="#52" title="16" data-ref="_M/EVPOOL_SIZE">EVPOOL_SIZE</a>; <a class="local col6 ref" href="#6j" title='j' data-ref="6j">j</a>++) {</td></tr>
+<tr><th id="147">147</th><td>        <a class="local col5 ref" href="#5ep" title='ep' data-ref="5ep">ep</a>[<a class="local col6 ref" href="#6j" title='j' data-ref="6j">j</a>].<a class="ref" href="#evictionPoolEntry::idle" title='evictionPoolEntry::idle' data-ref="evictionPoolEntry::idle">idle</a> = <var>0</var>;</td></tr>
+<tr><th id="148">148</th><td>        <a class="local col5 ref" href="#5ep" title='ep' data-ref="5ep">ep</a>[<a class="local col6 ref" href="#6j" title='j' data-ref="6j">j</a>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="149">149</th><td>        <a class="local col5 ref" href="#5ep" title='ep' data-ref="5ep">ep</a>[<a class="local col6 ref" href="#6j" title='j' data-ref="6j">j</a>].<a class="ref" href="#evictionPoolEntry::cached" title='evictionPoolEntry::cached' data-ref="evictionPoolEntry::cached">cached</a> = <a class="ref" href="sds.h.html#sdsnewlen" title='sdsnewlen' data-ref="sdsnewlen">sdsnewlen</a>(<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>,<a class="macro" href="#53" title="255" data-ref="_M/EVPOOL_CACHED_SDS_SIZE">EVPOOL_CACHED_SDS_SIZE</a>);</td></tr>
+<tr><th id="150">150</th><td>        <a class="local col5 ref" href="#5ep" title='ep' data-ref="5ep">ep</a>[<a class="local col6 ref" href="#6j" title='j' data-ref="6j">j</a>].<a class="ref" href="#evictionPoolEntry::dbid" title='evictionPoolEntry::dbid' data-ref="evictionPoolEntry::dbid">dbid</a> = <var>0</var>;</td></tr>
+<tr><th id="151">151</th><td>    }</td></tr>
+<tr><th id="152">152</th><td>    <a class="tu ref" href="#EvictionPoolLRU" title='EvictionPoolLRU' data-use='w' data-ref="EvictionPoolLRU">EvictionPoolLRU</a> = <a class="local col5 ref" href="#5ep" title='ep' data-ref="5ep">ep</a>;</td></tr>
+<tr><th id="153">153</th><td>}</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><i>/* This is an helper function for freeMemoryIfNeeded(), it is used in order</i></td></tr>
+<tr><th id="156">156</th><td><i> * to populate the evictionPool with a few entries every time we want to</i></td></tr>
+<tr><th id="157">157</th><td><i> * expire a key. Keys with idle time smaller than one of the current</i></td></tr>
+<tr><th id="158">158</th><td><i> * keys are added. Keys are always added if there are free entries.</i></td></tr>
+<tr><th id="159">159</th><td><i> *</i></td></tr>
+<tr><th id="160">160</th><td><i> * We insert keys on place in ascending order, so keys with the smaller</i></td></tr>
+<tr><th id="161">161</th><td><i> * idle time are on the left, and keys with the higher idle time on the</i></td></tr>
+<tr><th id="162">162</th><td><i> * right. */</i></td></tr>
+<tr><th id="163">163</th><td></td></tr>
+<tr><th id="164">164</th><td><em>void</em> <dfn class="decl def" id="evictionPoolPopulate" title='evictionPoolPopulate' data-ref="evictionPoolPopulate">evictionPoolPopulate</dfn>(<em>int</em> <dfn class="local col7 decl" id="7dbid" title='dbid' data-type='int' data-ref="7dbid">dbid</dfn>, <a class="typedef" href="dict.h.html#dict" title='dict' data-type='struct dict' data-ref="dict">dict</a> *<dfn class="local col8 decl" id="8sampledict" title='sampledict' data-type='dict *' data-ref="8sampledict">sampledict</dfn>, <a class="typedef" href="dict.h.html#dict" title='dict' data-type='struct dict' data-ref="dict">dict</a> *<dfn class="local col9 decl" id="9keydict" title='keydict' data-type='dict *' data-ref="9keydict">keydict</dfn>, <b>struct</b> <a class="type" href="#evictionPoolEntry" title='evictionPoolEntry' data-ref="evictionPoolEntry">evictionPoolEntry</a> *<dfn class="local col0 decl" id="10pool" title='pool' data-type='struct evictionPoolEntry *' data-ref="10pool">pool</dfn>) {</td></tr>
+<tr><th id="165">165</th><td>    <em>int</em> <dfn class="local col1 decl" id="11j" title='j' data-type='int' data-ref="11j">j</dfn>, <dfn class="local col2 decl" id="12k" title='k' data-type='int' data-ref="12k">k</dfn>, <dfn class="local col3 decl" id="13count" title='count' data-type='int' data-ref="13count">count</dfn>;</td></tr>
+<tr><th id="166">166</th><td>    <a class="typedef" href="dict.h.html#dictEntry" title='dictEntry' data-type='struct dictEntry' data-ref="dictEntry">dictEntry</a> *<dfn class="local col4 decl" id="14samples" title='samples' data-type='dictEntry *[server.maxmemory_samples]' data-ref="14samples">samples</dfn>[<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_samples" title='redisServer::maxmemory_samples' data-ref="redisServer::maxmemory_samples">maxmemory_samples</a>];</td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td>    <a class="local col3 ref" href="#13count" title='count' data-ref="13count">count</a> = <a class="ref" href="dict.h.html#dictGetSomeKeys" title='dictGetSomeKeys' data-ref="dictGetSomeKeys">dictGetSomeKeys</a>(<a class="local col8 ref" href="#8sampledict" title='sampledict' data-ref="8sampledict">sampledict</a>,<a class="local col4 ref" href="#14samples" title='samples' data-ref="14samples">samples</a>,<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_samples" title='redisServer::maxmemory_samples' data-ref="redisServer::maxmemory_samples">maxmemory_samples</a>);</td></tr>
+<tr><th id="169">169</th><td>    <b>for</b> (<a class="local col1 ref" href="#11j" title='j' data-ref="11j">j</a> = <var>0</var>; <a class="local col1 ref" href="#11j" title='j' data-ref="11j">j</a> &lt; <a class="local col3 ref" href="#13count" title='count' data-ref="13count">count</a>; <a class="local col1 ref" href="#11j" title='j' data-ref="11j">j</a>++) {</td></tr>
+<tr><th id="170">170</th><td>        <em>unsigned</em> <em>long</em> <em>long</em> <dfn class="local col5 decl" id="15idle" title='idle' data-type='unsigned long long' data-ref="15idle">idle</dfn>;</td></tr>
+<tr><th id="171">171</th><td>        <a class="typedef" href="sds.h.html#sds" title='sds' data-type='char *' data-ref="sds">sds</a> <dfn class="local col6 decl" id="16key" title='key' data-type='sds' data-ref="16key">key</dfn>;</td></tr>
+<tr><th id="172">172</th><td>        <a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="local col7 decl" id="17o" title='o' data-type='robj *' data-ref="17o">o</dfn>;</td></tr>
+<tr><th id="173">173</th><td>        <a class="typedef" href="dict.h.html#dictEntry" title='dictEntry' data-type='struct dictEntry' data-ref="dictEntry">dictEntry</a> *<dfn class="local col8 decl" id="18de" title='de' data-type='dictEntry *' data-ref="18de">de</dfn>;</td></tr>
+<tr><th id="174">174</th><td></td></tr>
+<tr><th id="175">175</th><td>        <a class="local col8 ref" href="#18de" title='de' data-ref="18de">de</a> = <a class="local col4 ref" href="#14samples" title='samples' data-ref="14samples">samples</a>[<a class="local col1 ref" href="#11j" title='j' data-ref="11j">j</a>];</td></tr>
+<tr><th id="176">176</th><td>        <a class="local col6 ref" href="#16key" title='key' data-ref="16key">key</a> = <a class="macro" href="dict.h.html#141" title="((de)-&gt;key)" data-ref="_M/dictGetKey">dictGetKey</a>(<a class="local col8 ref" href="#18de" title='de' data-ref="18de">de</a>);</td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td>        <i>/* If the dictionary we are sampling from is not the main</i></td></tr>
+<tr><th id="179">179</th><td><i>         * dictionary (but the expires one) we need to lookup the key</i></td></tr>
+<tr><th id="180">180</th><td><i>         * again in the key dictionary to obtain the value object. */</i></td></tr>
+<tr><th id="181">181</th><td>        <b>if</b> (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_policy" title='redisServer::maxmemory_policy' data-ref="redisServer::maxmemory_policy">maxmemory_policy</a> != <a class="macro" href="server.h.html#374" title="(2&lt;&lt;8)" data-ref="_M/MAXMEMORY_VOLATILE_TTL">MAXMEMORY_VOLATILE_TTL</a>) {</td></tr>
+<tr><th id="182">182</th><td>            <b>if</b> (<a class="local col8 ref" href="#8sampledict" title='sampledict' data-ref="8sampledict">sampledict</a> != <a class="local col9 ref" href="#9keydict" title='keydict' data-ref="9keydict">keydict</a>) <a class="local col8 ref" href="#18de" title='de' data-ref="18de">de</a> = <a class="ref" href="dict.h.html#dictFind" title='dictFind' data-ref="dictFind">dictFind</a>(<a class="local col9 ref" href="#9keydict" title='keydict' data-ref="9keydict">keydict</a>, <a class="local col6 ref" href="#16key" title='key' data-ref="16key">key</a>);</td></tr>
+<tr><th id="183">183</th><td>            <a class="local col7 ref" href="#17o" title='o' data-ref="17o">o</a> = <a class="macro" href="dict.h.html#142" title="((de)-&gt;v.val)" data-ref="_M/dictGetVal">dictGetVal</a>(<a class="local col8 ref" href="#18de" title='de' data-ref="18de">de</a>);</td></tr>
+<tr><th id="184">184</th><td>        }</td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td>        <i>/* Calculate the idle time according to the policy. This is called</i></td></tr>
+<tr><th id="187">187</th><td><i>         * idle just because the code initially handled LRU, but is in fact</i></td></tr>
+<tr><th id="188">188</th><td><i>         * just a score where an higher score means better candidate. */</i></td></tr>
+<tr><th id="189">189</th><td>        <b>if</b> (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_policy" title='redisServer::maxmemory_policy' data-ref="redisServer::maxmemory_policy">maxmemory_policy</a> &amp; <a class="macro" href="server.h.html#366" title="(1&lt;&lt;0)" data-ref="_M/MAXMEMORY_FLAG_LRU">MAXMEMORY_FLAG_LRU</a>) {</td></tr>
+<tr><th id="190">190</th><td>            <a class="local col5 ref" href="#15idle" title='idle' data-ref="15idle">idle</a> = <a class="ref" href="#estimateObjectIdleTime" title='estimateObjectIdleTime' data-ref="estimateObjectIdleTime">estimateObjectIdleTime</a>(<a class="local col7 ref" href="#17o" title='o' data-ref="17o">o</a>);</td></tr>
+<tr><th id="191">191</th><td>        } <b>else</b> <b>if</b> (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_policy" title='redisServer::maxmemory_policy' data-ref="redisServer::maxmemory_policy">maxmemory_policy</a> &amp; <a class="macro" href="server.h.html#367" title="(1&lt;&lt;1)" data-ref="_M/MAXMEMORY_FLAG_LFU">MAXMEMORY_FLAG_LFU</a>) {</td></tr>
+<tr><th id="192">192</th><td>            <i>/* When we use an LRU policy, we sort the keys by idle time</i></td></tr>
+<tr><th id="193">193</th><td><i>             * so that we expire keys starting from greater idle time.</i></td></tr>
+<tr><th id="194">194</th><td><i>             * However when the policy is an LFU one, we have a frequency</i></td></tr>
+<tr><th id="195">195</th><td><i>             * estimation, and we want to evict keys with lower frequency</i></td></tr>
+<tr><th id="196">196</th><td><i>             * first. So inside the pool we put objects using the inverted</i></td></tr>
+<tr><th id="197">197</th><td><i>             * frequency subtracting the actual frequency to the maximum</i></td></tr>
+<tr><th id="198">198</th><td><i>             * frequency of 255. */</i></td></tr>
+<tr><th id="199">199</th><td>            <a class="local col5 ref" href="#15idle" title='idle' data-ref="15idle">idle</a> = <var>255</var>-<a class="ref" href="#LFUDecrAndReturn" title='LFUDecrAndReturn' data-ref="LFUDecrAndReturn">LFUDecrAndReturn</a>(<a class="local col7 ref" href="#17o" title='o' data-ref="17o">o</a>);</td></tr>
+<tr><th id="200">200</th><td>        } <b>else</b> <b>if</b> (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_policy" title='redisServer::maxmemory_policy' data-ref="redisServer::maxmemory_policy">maxmemory_policy</a> == <a class="macro" href="server.h.html#374" title="(2&lt;&lt;8)" data-ref="_M/MAXMEMORY_VOLATILE_TTL">MAXMEMORY_VOLATILE_TTL</a>) {</td></tr>
+<tr><th id="201">201</th><td>            <i>/* In this case the sooner the expire the better. */</i></td></tr>
+<tr><th id="202">202</th><td>            <a class="local col5 ref" href="#15idle" title='idle' data-ref="15idle">idle</a> = <span class="macro" title="(9223372036854775807LL*2ULL+1ULL)" data-ref="_M/ULLONG_MAX">ULLONG_MAX</span> - (<em>long</em>)<a class="macro" href="dict.h.html#142" title="((de)-&gt;v.val)" data-ref="_M/dictGetVal">dictGetVal</a>(<a class="local col8 ref" href="#18de" title='de' data-ref="18de">de</a>);</td></tr>
+<tr><th id="203">203</th><td>        } <b>else</b> {</td></tr>
+<tr><th id="204">204</th><td>            <a class="macro" href="server.h.html#440" title="_serverPanic(&quot;/home/jon/workspace/redis/src/evict.c&quot;,204,&quot;Unknown eviction policy in evictionPoolPopulate()&quot;),_exit(1)" data-ref="_M/serverPanic">serverPanic</a>(<q>"Unknown eviction policy in evictionPoolPopulate()"</q>);</td></tr>
+<tr><th id="205">205</th><td>        }</td></tr>
+<tr><th id="206">206</th><td></td></tr>
+<tr><th id="207">207</th><td>        <i>/* Insert the element inside the pool.</i></td></tr>
+<tr><th id="208">208</th><td><i>         * First, find the first empty bucket or the first populated</i></td></tr>
+<tr><th id="209">209</th><td><i>         * bucket that has an idle time smaller than our idle time. */</i></td></tr>
+<tr><th id="210">210</th><td>        <a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a> = <var>0</var>;</td></tr>
+<tr><th id="211">211</th><td>        <b>while</b> (<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a> &lt; <a class="macro" href="#52" title="16" data-ref="_M/EVPOOL_SIZE">EVPOOL_SIZE</a> &amp;&amp;</td></tr>
+<tr><th id="212">212</th><td>               <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a> &amp;&amp;</td></tr>
+<tr><th id="213">213</th><td>               <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>].<a class="ref" href="#evictionPoolEntry::idle" title='evictionPoolEntry::idle' data-ref="evictionPoolEntry::idle">idle</a> &lt; <a class="local col5 ref" href="#15idle" title='idle' data-ref="15idle">idle</a>) <a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>++;</td></tr>
+<tr><th id="214">214</th><td>        <b>if</b> (<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a> == <var>0</var> &amp;&amp; <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="macro" href="#52" title="16" data-ref="_M/EVPOOL_SIZE">EVPOOL_SIZE</a>-<var>1</var>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a> != <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="215">215</th><td>            <i>/* Can't insert if the element is &lt; the worst element we have</i></td></tr>
+<tr><th id="216">216</th><td><i>             * and there are no empty buckets. */</i></td></tr>
+<tr><th id="217">217</th><td>            <b>continue</b>;</td></tr>
+<tr><th id="218">218</th><td>        } <b>else</b> <b>if</b> (<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a> &lt; <a class="macro" href="#52" title="16" data-ref="_M/EVPOOL_SIZE">EVPOOL_SIZE</a> &amp;&amp; <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="219">219</th><td>            <i>/* Inserting into empty position. No setup needed before insert. */</i></td></tr>
+<tr><th id="220">220</th><td>        } <b>else</b> {</td></tr>
+<tr><th id="221">221</th><td>            <i>/* Inserting in the middle. Now k points to the first element</i></td></tr>
+<tr><th id="222">222</th><td><i>             * greater than the element to insert.  */</i></td></tr>
+<tr><th id="223">223</th><td>            <b>if</b> (<a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="macro" href="#52" title="16" data-ref="_M/EVPOOL_SIZE">EVPOOL_SIZE</a>-<var>1</var>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="224">224</th><td>                <i>/* Free space on the right? Insert at k shifting</i></td></tr>
+<tr><th id="225">225</th><td><i>                 * all the elements from k to end to the right. */</i></td></tr>
+<tr><th id="226">226</th><td></td></tr>
+<tr><th id="227">227</th><td>                <i>/* Save SDS before overwriting. */</i></td></tr>
+<tr><th id="228">228</th><td>                <a class="typedef" href="sds.h.html#sds" title='sds' data-type='char *' data-ref="sds">sds</a> <dfn class="local col9 decl" id="19cached" title='cached' data-type='sds' data-ref="19cached">cached</dfn> = <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="macro" href="#52" title="16" data-ref="_M/EVPOOL_SIZE">EVPOOL_SIZE</a>-<var>1</var>].<a class="ref" href="#evictionPoolEntry::cached" title='evictionPoolEntry::cached' data-ref="evictionPoolEntry::cached">cached</a>;</td></tr>
+<tr><th id="229">229</th><td>                <a class="ref" href="../../include/string.h.html#memmove" title='memmove' data-ref="memmove">memmove</a>(<a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>+<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>+<var>1</var>,<a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>+<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>,</td></tr>
+<tr><th id="230">230</th><td>                    <b>sizeof</b>(<a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<var>0</var>])*(<a class="macro" href="#52" title="16" data-ref="_M/EVPOOL_SIZE">EVPOOL_SIZE</a>-<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>-<var>1</var>));</td></tr>
+<tr><th id="231">231</th><td>                <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>].<a class="ref" href="#evictionPoolEntry::cached" title='evictionPoolEntry::cached' data-ref="evictionPoolEntry::cached">cached</a> = <a class="local col9 ref" href="#19cached" title='cached' data-ref="19cached">cached</a>;</td></tr>
+<tr><th id="232">232</th><td>            } <b>else</b> {</td></tr>
+<tr><th id="233">233</th><td>                <i>/* No free space on right? Insert at k-1 */</i></td></tr>
+<tr><th id="234">234</th><td>                <a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>--;</td></tr>
+<tr><th id="235">235</th><td>                <i>/* Shift all elements on the left of k (included) to the</i></td></tr>
+<tr><th id="236">236</th><td><i>                 * left, so we discard the element with smaller idle time. */</i></td></tr>
+<tr><th id="237">237</th><td>                <a class="typedef" href="sds.h.html#sds" title='sds' data-type='char *' data-ref="sds">sds</a> <dfn class="local col0 decl" id="20cached" title='cached' data-type='sds' data-ref="20cached">cached</dfn> = <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<var>0</var>].<a class="ref" href="#evictionPoolEntry::cached" title='evictionPoolEntry::cached' data-ref="evictionPoolEntry::cached">cached</a>; <i>/* Save SDS before overwriting. */</i></td></tr>
+<tr><th id="238">238</th><td>                <b>if</b> (<a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<var>0</var>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a> != <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<var>0</var>].<a class="ref" href="#evictionPoolEntry::cached" title='evictionPoolEntry::cached' data-ref="evictionPoolEntry::cached">cached</a>) <a class="ref" href="sds.h.html#sdsfree" title='sdsfree' data-ref="sdsfree">sdsfree</a>(<a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<var>0</var>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a>);</td></tr>
+<tr><th id="239">239</th><td>                <a class="ref" href="../../include/string.h.html#memmove" title='memmove' data-ref="memmove">memmove</a>(<a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>,<a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>+<var>1</var>,<b>sizeof</b>(<a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<var>0</var>])*<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>);</td></tr>
+<tr><th id="240">240</th><td>                <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>].<a class="ref" href="#evictionPoolEntry::cached" title='evictionPoolEntry::cached' data-ref="evictionPoolEntry::cached">cached</a> = <a class="local col0 ref" href="#20cached" title='cached' data-ref="20cached">cached</a>;</td></tr>
+<tr><th id="241">241</th><td>            }</td></tr>
+<tr><th id="242">242</th><td>        }</td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td>        <i>/* Try to reuse the cached SDS string allocated in the pool entry,</i></td></tr>
+<tr><th id="245">245</th><td><i>         * because allocating and deallocating this object is costly</i></td></tr>
+<tr><th id="246">246</th><td><i>         * (according to the profiler, not my fantasy. Remember:</i></td></tr>
+<tr><th id="247">247</th><td><i>         * premature optimizbla bla bla bla. */</i></td></tr>
+<tr><th id="248">248</th><td>        <em>int</em> <dfn class="local col1 decl" id="21klen" title='klen' data-type='int' data-ref="21klen">klen</dfn> = <a class="ref" href="sds.h.html#sdslen" title='sdslen' data-ref="sdslen">sdslen</a>(<a class="local col6 ref" href="#16key" title='key' data-ref="16key">key</a>);</td></tr>
+<tr><th id="249">249</th><td>        <b>if</b> (<a class="local col1 ref" href="#21klen" title='klen' data-ref="21klen">klen</a> &gt; <a class="macro" href="#53" title="255" data-ref="_M/EVPOOL_CACHED_SDS_SIZE">EVPOOL_CACHED_SDS_SIZE</a>) {</td></tr>
+<tr><th id="250">250</th><td>            <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a> = <a class="ref" href="sds.h.html#sdsdup" title='sdsdup' data-ref="sdsdup">sdsdup</a>(<a class="local col6 ref" href="#16key" title='key' data-ref="16key">key</a>);</td></tr>
+<tr><th id="251">251</th><td>        } <b>else</b> {</td></tr>
+<tr><th id="252">252</th><td>            <a class="ref" href="../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>].<a class="ref" href="#evictionPoolEntry::cached" title='evictionPoolEntry::cached' data-ref="evictionPoolEntry::cached">cached</a>,<a class="local col6 ref" href="#16key" title='key' data-ref="16key">key</a>,<a class="local col1 ref" href="#21klen" title='klen' data-ref="21klen">klen</a>+<var>1</var>);</td></tr>
+<tr><th id="253">253</th><td>            <a class="ref" href="sds.h.html#sdssetlen" title='sdssetlen' data-ref="sdssetlen">sdssetlen</a>(<a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>].<a class="ref" href="#evictionPoolEntry::cached" title='evictionPoolEntry::cached' data-ref="evictionPoolEntry::cached">cached</a>,<a class="local col1 ref" href="#21klen" title='klen' data-ref="21klen">klen</a>);</td></tr>
+<tr><th id="254">254</th><td>            <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a> = <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>].<a class="ref" href="#evictionPoolEntry::cached" title='evictionPoolEntry::cached' data-ref="evictionPoolEntry::cached">cached</a>;</td></tr>
+<tr><th id="255">255</th><td>        }</td></tr>
+<tr><th id="256">256</th><td>        <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>].<a class="ref" href="#evictionPoolEntry::idle" title='evictionPoolEntry::idle' data-ref="evictionPoolEntry::idle">idle</a> = <a class="local col5 ref" href="#15idle" title='idle' data-ref="15idle">idle</a>;</td></tr>
+<tr><th id="257">257</th><td>        <a class="local col0 ref" href="#10pool" title='pool' data-ref="10pool">pool</a>[<a class="local col2 ref" href="#12k" title='k' data-ref="12k">k</a>].<a class="ref" href="#evictionPoolEntry::dbid" title='evictionPoolEntry::dbid' data-ref="evictionPoolEntry::dbid">dbid</a> = <a class="local col7 ref" href="#7dbid" title='dbid' data-ref="7dbid">dbid</a>;</td></tr>
+<tr><th id="258">258</th><td>    }</td></tr>
+<tr><th id="259">259</th><td>}</td></tr>
+<tr><th id="260">260</th><td></td></tr>
+<tr><th id="261">261</th><td><i>/* ----------------------------------------------------------------------------</i></td></tr>
+<tr><th id="262">262</th><td><i> * LFU (Least Frequently Used) implementation.</i></td></tr>
+<tr><th id="263">263</th><td><i></i></td></tr>
+<tr><th id="264">264</th><td><i> * We have 24 total bits of space in each object in order to implement</i></td></tr>
+<tr><th id="265">265</th><td><i> * an LFU (Least Frequently Used) eviction policy, since we re-use the</i></td></tr>
+<tr><th id="266">266</th><td><i> * LRU field for this purpose.</i></td></tr>
+<tr><th id="267">267</th><td><i> *</i></td></tr>
+<tr><th id="268">268</th><td><i> * We split the 24 bits into two fields:</i></td></tr>
+<tr><th id="269">269</th><td><i> *</i></td></tr>
+<tr><th id="270">270</th><td><i> *          16 bits      8 bits</i></td></tr>
+<tr><th id="271">271</th><td><i> *     +----------------+--------+</i></td></tr>
+<tr><th id="272">272</th><td><i> *     + Last decr time | LOG_C  |</i></td></tr>
+<tr><th id="273">273</th><td><i> *     +----------------+--------+</i></td></tr>
+<tr><th id="274">274</th><td><i> *</i></td></tr>
+<tr><th id="275">275</th><td><i> * LOG_C is a logarithmic counter that provides an indication of the access</i></td></tr>
+<tr><th id="276">276</th><td><i> * frequency. However this field must also be decremented otherwise what used</i></td></tr>
+<tr><th id="277">277</th><td><i> * to be a frequently accessed key in the past, will remain ranked like that</i></td></tr>
+<tr><th id="278">278</th><td><i> * forever, while we want the algorithm to adapt to access pattern changes.</i></td></tr>
+<tr><th id="279">279</th><td><i> *</i></td></tr>
+<tr><th id="280">280</th><td><i> * So the remaining 16 bits are used in order to store the "decrement time",</i></td></tr>
+<tr><th id="281">281</th><td><i> * a reduced-precision Unix time (we take 16 bits of the time converted</i></td></tr>
+<tr><th id="282">282</th><td><i> * in minutes since we don't care about wrapping around) where the LOG_C</i></td></tr>
+<tr><th id="283">283</th><td><i> * counter is halved if it has an high value, or just decremented if it</i></td></tr>
+<tr><th id="284">284</th><td><i> * has a low value.</i></td></tr>
+<tr><th id="285">285</th><td><i> *</i></td></tr>
+<tr><th id="286">286</th><td><i> * New keys don't start at zero, in order to have the ability to collect</i></td></tr>
+<tr><th id="287">287</th><td><i> * some accesses before being trashed away, so they start at COUNTER_INIT_VAL.</i></td></tr>
+<tr><th id="288">288</th><td><i> * The logarithmic increment performed on LOG_C takes care of COUNTER_INIT_VAL</i></td></tr>
+<tr><th id="289">289</th><td><i> * when incrementing the key, so that keys starting at COUNTER_INIT_VAL</i></td></tr>
+<tr><th id="290">290</th><td><i> * (or having a smaller value) have a very high chance of being incremented</i></td></tr>
+<tr><th id="291">291</th><td><i> * on access.</i></td></tr>
+<tr><th id="292">292</th><td><i> *</i></td></tr>
+<tr><th id="293">293</th><td><i> * During decrement, the value of the logarithmic counter is halved if</i></td></tr>
+<tr><th id="294">294</th><td><i> * its current value is greater than two times the COUNTER_INIT_VAL, otherwise</i></td></tr>
+<tr><th id="295">295</th><td><i> * it is just decremented by one.</i></td></tr>
+<tr><th id="296">296</th><td><i> * --------------------------------------------------------------------------*/</i></td></tr>
+<tr><th id="297">297</th><td></td></tr>
+<tr><th id="298">298</th><td><i>/* Return the current time in minutes, just taking the least significant</i></td></tr>
+<tr><th id="299">299</th><td><i> * 16 bits. The returned time is suitable to be stored as LDT (last decrement</i></td></tr>
+<tr><th id="300">300</th><td><i> * time) for the LFU implementation. */</i></td></tr>
+<tr><th id="301">301</th><td><em>unsigned</em> <em>long</em> <dfn class="decl def" id="LFUGetTimeInMinutes" title='LFUGetTimeInMinutes' data-ref="LFUGetTimeInMinutes">LFUGetTimeInMinutes</dfn>(<em>void</em>) {</td></tr>
+<tr><th id="302">302</th><td>    <b>return</b> (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::unixtime" title='redisServer::unixtime' data-ref="redisServer::unixtime">unixtime</a>/<var>60</var>) &amp; <var>65535</var>;</td></tr>
+<tr><th id="303">303</th><td>}</td></tr>
+<tr><th id="304">304</th><td></td></tr>
+<tr><th id="305">305</th><td><i>/* Given an object last decrement time, compute the minimum number of minutes</i></td></tr>
+<tr><th id="306">306</th><td><i> * that elapsed since the last decrement. Handle overflow (ldt greater than</i></td></tr>
+<tr><th id="307">307</th><td><i> * the current 16 bits minutes time) considering the time as wrapping</i></td></tr>
+<tr><th id="308">308</th><td><i> * exactly once. */</i></td></tr>
+<tr><th id="309">309</th><td><em>unsigned</em> <em>long</em> <dfn class="decl def" id="LFUTimeElapsed" title='LFUTimeElapsed' data-ref="LFUTimeElapsed">LFUTimeElapsed</dfn>(<em>unsigned</em> <em>long</em> <dfn class="local col2 decl" id="22ldt" title='ldt' data-type='unsigned long' data-ref="22ldt">ldt</dfn>) {</td></tr>
+<tr><th id="310">310</th><td>    <em>unsigned</em> <em>long</em> <dfn class="local col3 decl" id="23now" title='now' data-type='unsigned long' data-ref="23now">now</dfn> = <a class="ref" href="#LFUGetTimeInMinutes" title='LFUGetTimeInMinutes' data-ref="LFUGetTimeInMinutes">LFUGetTimeInMinutes</a>();</td></tr>
+<tr><th id="311">311</th><td>    <b>if</b> (<a class="local col3 ref" href="#23now" title='now' data-ref="23now">now</a> &gt;= <a class="local col2 ref" href="#22ldt" title='ldt' data-ref="22ldt">ldt</a>) <b>return</b> <a class="local col3 ref" href="#23now" title='now' data-ref="23now">now</a>-<a class="local col2 ref" href="#22ldt" title='ldt' data-ref="22ldt">ldt</a>;</td></tr>
+<tr><th id="312">312</th><td>    <b>return</b> <var>65535</var>-<a class="local col2 ref" href="#22ldt" title='ldt' data-ref="22ldt">ldt</a>+<a class="local col3 ref" href="#23now" title='now' data-ref="23now">now</a>;</td></tr>
+<tr><th id="313">313</th><td>}</td></tr>
+<tr><th id="314">314</th><td></td></tr>
+<tr><th id="315">315</th><td><i>/* Logarithmically increment a counter. The greater is the current counter value</i></td></tr>
+<tr><th id="316">316</th><td><i> * the less likely is that it gets really implemented. Saturate it at 255. */</i></td></tr>
+<tr><th id="317">317</th><td><a class="typedef" href="../../include/stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> <dfn class="decl def" id="LFULogIncr" title='LFULogIncr' data-ref="LFULogIncr">LFULogIncr</dfn>(<a class="typedef" href="../../include/stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> <dfn class="local col4 decl" id="24counter" title='counter' data-type='uint8_t' data-ref="24counter">counter</dfn>) {</td></tr>
+<tr><th id="318">318</th><td>    <b>if</b> (<a class="local col4 ref" href="#24counter" title='counter' data-ref="24counter">counter</a> == <var>255</var>) <b>return</b> <var>255</var>;</td></tr>
+<tr><th id="319">319</th><td>    <em>double</em> <dfn class="local col5 decl" id="25r" title='r' data-type='double' data-ref="25r">r</dfn> = (<em>double</em>)<a class="ref" href="../../include/stdlib.h.html#rand" title='rand' data-ref="rand">rand</a>()/<a class="macro" href="../../include/stdlib.h.html#128" title="2147483647" data-ref="_M/RAND_MAX">RAND_MAX</a>;</td></tr>
+<tr><th id="320">320</th><td>    <em>double</em> <dfn class="local col6 decl" id="26baseval" title='baseval' data-type='double' data-ref="26baseval">baseval</dfn> = <a class="local col4 ref" href="#24counter" title='counter' data-ref="24counter">counter</a> - <a class="macro" href="server.h.html#1802" title="5" data-ref="_M/LFU_INIT_VAL">LFU_INIT_VAL</a>;</td></tr>
+<tr><th id="321">321</th><td>    <b>if</b> (<a class="local col6 ref" href="#26baseval" title='baseval' data-ref="26baseval">baseval</a> &lt; <var>0</var>) <a class="local col6 ref" href="#26baseval" title='baseval' data-ref="26baseval">baseval</a> = <var>0</var>;</td></tr>
+<tr><th id="322">322</th><td>    <em>double</em> <dfn class="local col7 decl" id="27p" title='p' data-type='double' data-ref="27p">p</dfn> = <var>1.0</var>/(<a class="local col6 ref" href="#26baseval" title='baseval' data-ref="26baseval">baseval</a>*<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::lfu_log_factor" title='redisServer::lfu_log_factor' data-ref="redisServer::lfu_log_factor">lfu_log_factor</a>+<var>1</var>);</td></tr>
+<tr><th id="323">323</th><td>    <b>if</b> (<a class="local col5 ref" href="#25r" title='r' data-ref="25r">r</a> &lt; <a class="local col7 ref" href="#27p" title='p' data-ref="27p">p</a>) <a class="local col4 ref" href="#24counter" title='counter' data-ref="24counter">counter</a>++;</td></tr>
+<tr><th id="324">324</th><td>    <b>return</b> <a class="local col4 ref" href="#24counter" title='counter' data-ref="24counter">counter</a>;</td></tr>
+<tr><th id="325">325</th><td>}</td></tr>
+<tr><th id="326">326</th><td></td></tr>
+<tr><th id="327">327</th><td><i>/* If the object decrement time is reached, decrement the LFU counter and</i></td></tr>
+<tr><th id="328">328</th><td><i> * update the decrement time field. Return the object frequency counter.</i></td></tr>
+<tr><th id="329">329</th><td><i> *</i></td></tr>
+<tr><th id="330">330</th><td><i> * This function is used in order to scan the dataset for the best object</i></td></tr>
+<tr><th id="331">331</th><td><i> * to fit: as we check for the candidate, we incrementally decrement the</i></td></tr>
+<tr><th id="332">332</th><td><i> * counter of the scanned objects if needed. */</i></td></tr>
+<tr><th id="333">333</th><td><u>#define <dfn class="macro" id="_M/LFU_DECR_INTERVAL" data-ref="_M/LFU_DECR_INTERVAL">LFU_DECR_INTERVAL</dfn> 1</u></td></tr>
+<tr><th id="334">334</th><td><em>unsigned</em> <em>long</em> <dfn class="decl def" id="LFUDecrAndReturn" title='LFUDecrAndReturn' data-ref="LFUDecrAndReturn">LFUDecrAndReturn</dfn>(<a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="local col8 decl" id="28o" title='o' data-type='robj *' data-ref="28o">o</dfn>) {</td></tr>
+<tr><th id="335">335</th><td>    <em>unsigned</em> <em>long</em> <dfn class="local col9 decl" id="29ldt" title='ldt' data-type='unsigned long' data-ref="29ldt">ldt</dfn> = <a class="local col8 ref" href="#28o" title='o' data-ref="28o">o</a>-&gt;<a class="ref" href="server.h.html#redisObject::lru" title='redisObject::lru' data-ref="redisObject::lru">lru</a> &gt;&gt; <var>8</var>;</td></tr>
+<tr><th id="336">336</th><td>    <em>unsigned</em> <em>long</em> <dfn class="local col0 decl" id="30counter" title='counter' data-type='unsigned long' data-ref="30counter">counter</dfn> = <a class="local col8 ref" href="#28o" title='o' data-ref="28o">o</a>-&gt;<a class="ref" href="server.h.html#redisObject::lru" title='redisObject::lru' data-ref="redisObject::lru">lru</a> &amp; <var>255</var>;</td></tr>
+<tr><th id="337">337</th><td>    <b>if</b> (<a class="ref" href="#LFUTimeElapsed" title='LFUTimeElapsed' data-ref="LFUTimeElapsed">LFUTimeElapsed</a>(<a class="local col9 ref" href="#29ldt" title='ldt' data-ref="29ldt">ldt</a>) &gt;= <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::lfu_decay_time" title='redisServer::lfu_decay_time' data-ref="redisServer::lfu_decay_time">lfu_decay_time</a> &amp;&amp; <a class="local col0 ref" href="#30counter" title='counter' data-ref="30counter">counter</a>) {</td></tr>
+<tr><th id="338">338</th><td>        <b>if</b> (<a class="local col0 ref" href="#30counter" title='counter' data-ref="30counter">counter</a> &gt; <a class="macro" href="server.h.html#1802" title="5" data-ref="_M/LFU_INIT_VAL">LFU_INIT_VAL</a>*<var>2</var>) {</td></tr>
+<tr><th id="339">339</th><td>            <a class="local col0 ref" href="#30counter" title='counter' data-ref="30counter">counter</a> /= <var>2</var>;</td></tr>
+<tr><th id="340">340</th><td>            <b>if</b> (<a class="local col0 ref" href="#30counter" title='counter' data-ref="30counter">counter</a> &lt; <a class="macro" href="server.h.html#1802" title="5" data-ref="_M/LFU_INIT_VAL">LFU_INIT_VAL</a>*<var>2</var>) <a class="local col0 ref" href="#30counter" title='counter' data-ref="30counter">counter</a> = <a class="macro" href="server.h.html#1802" title="5" data-ref="_M/LFU_INIT_VAL">LFU_INIT_VAL</a>*<var>2</var>;</td></tr>
+<tr><th id="341">341</th><td>        } <b>else</b> {</td></tr>
+<tr><th id="342">342</th><td>            <a class="local col0 ref" href="#30counter" title='counter' data-ref="30counter">counter</a>--;</td></tr>
+<tr><th id="343">343</th><td>        }</td></tr>
+<tr><th id="344">344</th><td>        <a class="local col8 ref" href="#28o" title='o' data-ref="28o">o</a>-&gt;<a class="ref" href="server.h.html#redisObject::lru" title='redisObject::lru' data-ref="redisObject::lru">lru</a> = (<a class="ref" href="#LFUGetTimeInMinutes" title='LFUGetTimeInMinutes' data-ref="LFUGetTimeInMinutes">LFUGetTimeInMinutes</a>()&lt;&lt;<var>8</var>) | <a class="local col0 ref" href="#30counter" title='counter' data-ref="30counter">counter</a>;</td></tr>
+<tr><th id="345">345</th><td>    }</td></tr>
+<tr><th id="346">346</th><td>    <b>return</b> <a class="local col0 ref" href="#30counter" title='counter' data-ref="30counter">counter</a>;</td></tr>
+<tr><th id="347">347</th><td>}</td></tr>
+<tr><th id="348">348</th><td></td></tr>
+<tr><th id="349">349</th><td><i>/* ----------------------------------------------------------------------------</i></td></tr>
+<tr><th id="350">350</th><td><i> * The external API for eviction: freeMemroyIfNeeded() is called by the</i></td></tr>
+<tr><th id="351">351</th><td><i> * server when there is data to add in order to make space if needed.</i></td></tr>
+<tr><th id="352">352</th><td><i> * --------------------------------------------------------------------------*/</i></td></tr>
+<tr><th id="353">353</th><td></td></tr>
+<tr><th id="354">354</th><td><i>/* We don't want to count AOF buffers and slaves output buffers as</i></td></tr>
+<tr><th id="355">355</th><td><i> * used memory: the eviction should use mostly data size. This function</i></td></tr>
+<tr><th id="356">356</th><td><i> * returns the sum of AOF and slaves buffer. */</i></td></tr>
+<tr><th id="357">357</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="freeMemoryGetNotCountedMemory" title='freeMemoryGetNotCountedMemory' data-ref="freeMemoryGetNotCountedMemory">freeMemoryGetNotCountedMemory</dfn>(<em>void</em>) {</td></tr>
+<tr><th id="358">358</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="31overhead" title='overhead' data-type='size_t' data-ref="31overhead">overhead</dfn> = <var>0</var>;</td></tr>
+<tr><th id="359">359</th><td>    <em>int</em> <dfn class="local col2 decl" id="32slaves" title='slaves' data-type='int' data-ref="32slaves">slaves</dfn> = <a class="macro" href="adlist.h.html#57" title="((server.slaves)-&gt;len)" data-ref="_M/listLength">listLength</a>(<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::slaves" title='redisServer::slaves' data-ref="redisServer::slaves">slaves</a>);</td></tr>
+<tr><th id="360">360</th><td></td></tr>
+<tr><th id="361">361</th><td>    <b>if</b> (<a class="local col2 ref" href="#32slaves" title='slaves' data-ref="32slaves">slaves</a>) {</td></tr>
+<tr><th id="362">362</th><td>        <a class="typedef" href="adlist.h.html#listIter" title='listIter' data-type='struct listIter' data-ref="listIter">listIter</a> <dfn class="local col3 decl" id="33li" title='li' data-type='listIter' data-ref="33li">li</dfn>;</td></tr>
+<tr><th id="363">363</th><td>        <a class="typedef" href="adlist.h.html#listNode" title='listNode' data-type='struct listNode' data-ref="listNode">listNode</a> *<dfn class="local col4 decl" id="34ln" title='ln' data-type='listNode *' data-ref="34ln">ln</dfn>;</td></tr>
+<tr><th id="364">364</th><td></td></tr>
+<tr><th id="365">365</th><td>        <a class="ref" href="adlist.h.html#listRewind" title='listRewind' data-ref="listRewind">listRewind</a>(<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::slaves" title='redisServer::slaves' data-ref="redisServer::slaves">slaves</a>,&amp;<a class="local col3 ref" href="#33li" title='li' data-ref="33li">li</a>);</td></tr>
+<tr><th id="366">366</th><td>        <b>while</b>((<a class="local col4 ref" href="#34ln" title='ln' data-ref="34ln">ln</a> = <a class="ref" href="adlist.h.html#listNext" title='listNext' data-ref="listNext">listNext</a>(&amp;<a class="local col3 ref" href="#33li" title='li' data-ref="33li">li</a>))) {</td></tr>
+<tr><th id="367">367</th><td>            <a class="typedef" href="server.h.html#client" title='client' data-type='struct client' data-ref="client">client</a> *<dfn class="local col5 decl" id="35slave" title='slave' data-type='client *' data-ref="35slave">slave</dfn> = <a class="macro" href="adlist.h.html#62" title="((ln)-&gt;value)" data-ref="_M/listNodeValue">listNodeValue</a>(<a class="local col4 ref" href="#34ln" title='ln' data-ref="34ln">ln</a>);</td></tr>
+<tr><th id="368">368</th><td>            <a class="local col1 ref" href="#31overhead" title='overhead' data-ref="31overhead">overhead</a> += <a class="ref" href="server.h.html#getClientOutputBufferMemoryUsage" title='getClientOutputBufferMemoryUsage' data-ref="getClientOutputBufferMemoryUsage">getClientOutputBufferMemoryUsage</a>(<a class="local col5 ref" href="#35slave" title='slave' data-ref="35slave">slave</a>);</td></tr>
+<tr><th id="369">369</th><td>        }</td></tr>
+<tr><th id="370">370</th><td>    }</td></tr>
+<tr><th id="371">371</th><td>    <b>if</b> (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::aof_state" title='redisServer::aof_state' data-ref="redisServer::aof_state">aof_state</a> != <a class="macro" href="server.h.html#215" title="0" data-ref="_M/AOF_OFF">AOF_OFF</a>) {</td></tr>
+<tr><th id="372">372</th><td>        <a class="local col1 ref" href="#31overhead" title='overhead' data-ref="31overhead">overhead</a> += <a class="ref" href="sds.h.html#sdslen" title='sdslen' data-ref="sdslen">sdslen</a>(<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::aof_buf" title='redisServer::aof_buf' data-ref="redisServer::aof_buf">aof_buf</a>)+<a class="ref" href="server.h.html#aofRewriteBufferSize" title='aofRewriteBufferSize' data-ref="aofRewriteBufferSize">aofRewriteBufferSize</a>();</td></tr>
+<tr><th id="373">373</th><td>    }</td></tr>
+<tr><th id="374">374</th><td>    <b>return</b> <a class="local col1 ref" href="#31overhead" title='overhead' data-ref="31overhead">overhead</a>;</td></tr>
+<tr><th id="375">375</th><td>}</td></tr>
+<tr><th id="376">376</th><td></td></tr>
+<tr><th id="377">377</th><td><em>int</em> <dfn class="decl def" id="freeMemoryIfNeeded" title='freeMemoryIfNeeded' data-ref="freeMemoryIfNeeded">freeMemoryIfNeeded</dfn>(<em>void</em>) {</td></tr>
+<tr><th id="378">378</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="36mem_reported" title='mem_reported' data-type='size_t' data-ref="36mem_reported">mem_reported</dfn>, <dfn class="local col7 decl" id="37mem_used" title='mem_used' data-type='size_t' data-ref="37mem_used">mem_used</dfn>, <dfn class="local col8 decl" id="38mem_tofree" title='mem_tofree' data-type='size_t' data-ref="38mem_tofree">mem_tofree</dfn>, <dfn class="local col9 decl" id="39mem_freed" title='mem_freed' data-type='size_t' data-ref="39mem_freed">mem_freed</dfn>;</td></tr>
+<tr><th id="379">379</th><td>    <a class="typedef" href="server.h.html#mstime_t" title='mstime_t' data-type='long long' data-ref="mstime_t">mstime_t</a> <dfn class="local col0 decl" id="40latency" title='latency' data-type='mstime_t' data-ref="40latency">latency</dfn>, <dfn class="local col1 decl" id="41eviction_latency" title='eviction_latency' data-type='mstime_t' data-ref="41eviction_latency">eviction_latency</dfn>;</td></tr>
+<tr><th id="380">380</th><td>    <em>long</em> <em>long</em> <dfn class="local col2 decl" id="42delta" title='delta' data-type='long long' data-ref="42delta">delta</dfn>;</td></tr>
+<tr><th id="381">381</th><td>    <em>int</em> <dfn class="local col3 decl" id="43slaves" title='slaves' data-type='int' data-ref="43slaves">slaves</dfn> = <a class="macro" href="adlist.h.html#57" title="((server.slaves)-&gt;len)" data-ref="_M/listLength">listLength</a>(<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::slaves" title='redisServer::slaves' data-ref="redisServer::slaves">slaves</a>);</td></tr>
+<tr><th id="382">382</th><td></td></tr>
+<tr><th id="383">383</th><td>    <i>/* When clients are paused the dataset should be static not just from the</i></td></tr>
+<tr><th id="384">384</th><td><i>     * POV of clients not being able to write, but also from the POV of</i></td></tr>
+<tr><th id="385">385</th><td><i>     * expires and evictions of keys not being performed. */</i></td></tr>
+<tr><th id="386">386</th><td>    <b>if</b> (<a class="ref" href="server.h.html#clientsArePaused" title='clientsArePaused' data-ref="clientsArePaused">clientsArePaused</a>()) <b>return</b> <a class="macro" href="server.h.html#77" title="0" data-ref="_M/C_OK">C_OK</a>;</td></tr>
+<tr><th id="387">387</th><td></td></tr>
+<tr><th id="388">388</th><td>    <i>/* Check if we are over the memory usage limit. If we are not, no need</i></td></tr>
+<tr><th id="389">389</th><td><i>     * to subtract the slaves output buffers. We can just return ASAP. */</i></td></tr>
+<tr><th id="390">390</th><td>    <a class="local col6 ref" href="#36mem_reported" title='mem_reported' data-ref="36mem_reported">mem_reported</a> = <a class="ref" href="zmalloc.h.html#zmalloc_used_memory" title='zmalloc_used_memory' data-ref="zmalloc_used_memory">zmalloc_used_memory</a>();</td></tr>
+<tr><th id="391">391</th><td>    <b>if</b> (<a class="local col6 ref" href="#36mem_reported" title='mem_reported' data-ref="36mem_reported">mem_reported</a> &lt;= <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory" title='redisServer::maxmemory' data-ref="redisServer::maxmemory">maxmemory</a>) <b>return</b> <a class="macro" href="server.h.html#77" title="0" data-ref="_M/C_OK">C_OK</a>;</td></tr>
+<tr><th id="392">392</th><td></td></tr>
+<tr><th id="393">393</th><td>    <i>/* Remove the size of slaves output buffers and AOF buffer from the</i></td></tr>
+<tr><th id="394">394</th><td><i>     * count of used memory. */</i></td></tr>
+<tr><th id="395">395</th><td>    <a class="local col7 ref" href="#37mem_used" title='mem_used' data-ref="37mem_used">mem_used</a> = <a class="local col6 ref" href="#36mem_reported" title='mem_reported' data-ref="36mem_reported">mem_reported</a>;</td></tr>
+<tr><th id="396">396</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="44overhead" title='overhead' data-type='size_t' data-ref="44overhead">overhead</dfn> = <a class="ref" href="#freeMemoryGetNotCountedMemory" title='freeMemoryGetNotCountedMemory' data-ref="freeMemoryGetNotCountedMemory">freeMemoryGetNotCountedMemory</a>();</td></tr>
+<tr><th id="397">397</th><td>    <a class="local col7 ref" href="#37mem_used" title='mem_used' data-ref="37mem_used">mem_used</a> = (<a class="local col7 ref" href="#37mem_used" title='mem_used' data-ref="37mem_used">mem_used</a> &gt; <a class="local col4 ref" href="#44overhead" title='overhead' data-ref="44overhead">overhead</a>) ? <a class="local col7 ref" href="#37mem_used" title='mem_used' data-ref="37mem_used">mem_used</a>-<a class="local col4 ref" href="#44overhead" title='overhead' data-ref="44overhead">overhead</a> : <var>0</var>;</td></tr>
+<tr><th id="398">398</th><td></td></tr>
+<tr><th id="399">399</th><td>    <i>/* Check if we are still over the memory limit. */</i></td></tr>
+<tr><th id="400">400</th><td>    <b>if</b> (<a class="local col7 ref" href="#37mem_used" title='mem_used' data-ref="37mem_used">mem_used</a> &lt;= <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory" title='redisServer::maxmemory' data-ref="redisServer::maxmemory">maxmemory</a>) <b>return</b> <a class="macro" href="server.h.html#77" title="0" data-ref="_M/C_OK">C_OK</a>;</td></tr>
+<tr><th id="401">401</th><td></td></tr>
+<tr><th id="402">402</th><td>    <i>/* Compute how much memory we need to free. */</i></td></tr>
+<tr><th id="403">403</th><td>    <a class="local col8 ref" href="#38mem_tofree" title='mem_tofree' data-ref="38mem_tofree">mem_tofree</a> = <a class="local col7 ref" href="#37mem_used" title='mem_used' data-ref="37mem_used">mem_used</a> - <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory" title='redisServer::maxmemory' data-ref="redisServer::maxmemory">maxmemory</a>;</td></tr>
+<tr><th id="404">404</th><td>    <a class="local col9 ref" href="#39mem_freed" title='mem_freed' data-ref="39mem_freed">mem_freed</a> = <var>0</var>;</td></tr>
+<tr><th id="405">405</th><td></td></tr>
+<tr><th id="406">406</th><td>    <b>if</b> (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_policy" title='redisServer::maxmemory_policy' data-ref="redisServer::maxmemory_policy">maxmemory_policy</a> == <a class="macro" href="server.h.html#379" title="(7&lt;&lt;8)" data-ref="_M/MAXMEMORY_NO_EVICTION">MAXMEMORY_NO_EVICTION</a>)</td></tr>
+<tr><th id="407">407</th><td>        <b>goto</b> <a class="lbl" href="#45cant_free" data-ref="45cant_free">cant_free</a>; <i>/* We need to free memory, but policy forbids. */</i></td></tr>
+<tr><th id="408">408</th><td></td></tr>
+<tr><th id="409">409</th><td>    <a class="macro" href="latency.h.html#71" title="if (server.latency_monitor_threshold) { latency = mstime(); } else { latency = 0; }" data-ref="_M/latencyStartMonitor">latencyStartMonitor</a>(<a class="local col0 ref" href="#40latency" title='latency' data-ref="40latency">latency</a>);</td></tr>
+<tr><th id="410">410</th><td>    <b>while</b> (<a class="local col9 ref" href="#39mem_freed" title='mem_freed' data-ref="39mem_freed">mem_freed</a> &lt; <a class="local col8 ref" href="#38mem_tofree" title='mem_tofree' data-ref="38mem_tofree">mem_tofree</a>) {</td></tr>
+<tr><th id="411">411</th><td>        <em>int</em> <dfn class="local col6 decl" id="46j" title='j' data-type='int' data-ref="46j">j</dfn>, <dfn class="local col7 decl" id="47k" title='k' data-type='int' data-ref="47k">k</dfn>, <dfn class="local col8 decl" id="48i" title='i' data-type='int' data-ref="48i">i</dfn>, <dfn class="local col9 decl" id="49keys_freed" title='keys_freed' data-type='int' data-ref="49keys_freed">keys_freed</dfn> = <var>0</var>;</td></tr>
+<tr><th id="412">412</th><td>        <em>static</em> <em>int</em> <dfn class="local col0 decl" id="50next_db" title='next_db' data-type='int' data-ref="50next_db">next_db</dfn> = <var>0</var>;</td></tr>
+<tr><th id="413">413</th><td>        <a class="typedef" href="sds.h.html#sds" title='sds' data-type='char *' data-ref="sds">sds</a> <dfn class="local col1 decl" id="51bestkey" title='bestkey' data-type='sds' data-ref="51bestkey">bestkey</dfn> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="414">414</th><td>        <em>int</em> <dfn class="local col2 decl" id="52bestdbid" title='bestdbid' data-type='int' data-ref="52bestdbid">bestdbid</dfn>;</td></tr>
+<tr><th id="415">415</th><td>        <a class="typedef" href="server.h.html#redisDb" title='redisDb' data-type='struct redisDb' data-ref="redisDb">redisDb</a> *<dfn class="local col3 decl" id="53db" title='db' data-type='redisDb *' data-ref="53db">db</dfn>;</td></tr>
+<tr><th id="416">416</th><td>        <a class="typedef" href="dict.h.html#dict" title='dict' data-type='struct dict' data-ref="dict">dict</a> *<dfn class="local col4 decl" id="54dict" title='dict' data-type='dict *' data-ref="54dict">dict</dfn>;</td></tr>
+<tr><th id="417">417</th><td>        <a class="typedef" href="dict.h.html#dictEntry" title='dictEntry' data-type='struct dictEntry' data-ref="dictEntry">dictEntry</a> *<dfn class="local col5 decl" id="55de" title='de' data-type='dictEntry *' data-ref="55de">de</dfn>;</td></tr>
+<tr><th id="418">418</th><td></td></tr>
+<tr><th id="419">419</th><td>        <b>if</b> (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_policy" title='redisServer::maxmemory_policy' data-ref="redisServer::maxmemory_policy">maxmemory_policy</a> &amp; (<a class="macro" href="server.h.html#366" title="(1&lt;&lt;0)" data-ref="_M/MAXMEMORY_FLAG_LRU">MAXMEMORY_FLAG_LRU</a>|<a class="macro" href="server.h.html#367" title="(1&lt;&lt;1)" data-ref="_M/MAXMEMORY_FLAG_LFU">MAXMEMORY_FLAG_LFU</a>) ||</td></tr>
+<tr><th id="420">420</th><td>            <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_policy" title='redisServer::maxmemory_policy' data-ref="redisServer::maxmemory_policy">maxmemory_policy</a> == <a class="macro" href="server.h.html#374" title="(2&lt;&lt;8)" data-ref="_M/MAXMEMORY_VOLATILE_TTL">MAXMEMORY_VOLATILE_TTL</a>)</td></tr>
+<tr><th id="421">421</th><td>        {</td></tr>
+<tr><th id="422">422</th><td>            <b>struct</b> <a class="type" href="#evictionPoolEntry" title='evictionPoolEntry' data-ref="evictionPoolEntry">evictionPoolEntry</a> *<dfn class="local col6 decl" id="56pool" title='pool' data-type='struct evictionPoolEntry *' data-ref="56pool">pool</dfn> = <a class="tu ref" href="#EvictionPoolLRU" title='EvictionPoolLRU' data-use='r' data-ref="EvictionPoolLRU">EvictionPoolLRU</a>;</td></tr>
+<tr><th id="423">423</th><td></td></tr>
+<tr><th id="424">424</th><td>            <b>while</b>(<a class="local col1 ref" href="#51bestkey" title='bestkey' data-ref="51bestkey">bestkey</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="425">425</th><td>                <em>unsigned</em> <em>long</em> <dfn class="local col7 decl" id="57total_keys" title='total_keys' data-type='unsigned long' data-ref="57total_keys">total_keys</dfn> = <var>0</var>, <dfn class="local col8 decl" id="58keys" title='keys' data-type='unsigned long' data-ref="58keys">keys</dfn>;</td></tr>
+<tr><th id="426">426</th><td></td></tr>
+<tr><th id="427">427</th><td>                <i>/* We don't want to make local-db choices when expiring keys,</i></td></tr>
+<tr><th id="428">428</th><td><i>                 * so to start populate the eviction pool sampling keys from</i></td></tr>
+<tr><th id="429">429</th><td><i>                 * every DB. */</i></td></tr>
+<tr><th id="430">430</th><td>                <b>for</b> (<a class="local col8 ref" href="#48i" title='i' data-ref="48i">i</a> = <var>0</var>; <a class="local col8 ref" href="#48i" title='i' data-ref="48i">i</a> &lt; <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::dbnum" title='redisServer::dbnum' data-ref="redisServer::dbnum">dbnum</a>; <a class="local col8 ref" href="#48i" title='i' data-ref="48i">i</a>++) {</td></tr>
+<tr><th id="431">431</th><td>                    <a class="local col3 ref" href="#53db" title='db' data-ref="53db">db</a> = <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::db" title='redisServer::db' data-ref="redisServer::db">db</a>+<a class="local col8 ref" href="#48i" title='i' data-ref="48i">i</a>;</td></tr>
+<tr><th id="432">432</th><td>                    <a class="local col4 ref" href="#54dict" title='dict' data-ref="54dict">dict</a> = (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_policy" title='redisServer::maxmemory_policy' data-ref="redisServer::maxmemory_policy">maxmemory_policy</a> &amp; <a class="macro" href="server.h.html#368" title="(1&lt;&lt;2)" data-ref="_M/MAXMEMORY_FLAG_ALLKEYS">MAXMEMORY_FLAG_ALLKEYS</a>) ?</td></tr>
+<tr><th id="433">433</th><td>                            <a class="local col3 ref" href="#53db" title='db' data-ref="53db">db</a>-&gt;<a class="ref" href="server.h.html#redisDb::dict" title='redisDb::dict' data-ref="redisDb::dict">dict</a> : <a class="local col3 ref" href="#53db" title='db' data-ref="53db">db</a>-&gt;<a class="ref" href="server.h.html#redisDb::expires" title='redisDb::expires' data-ref="redisDb::expires">expires</a>;</td></tr>
+<tr><th id="434">434</th><td>                    <b>if</b> ((<a class="local col8 ref" href="#58keys" title='keys' data-ref="58keys">keys</a> = <a class="macro" href="dict.h.html#147" title="((dict)-&gt;ht[0].used+(dict)-&gt;ht[1].used)" data-ref="_M/dictSize">dictSize</a>(<a class="local col4 ref" href="#54dict" title='dict' data-ref="54dict">dict</a>)) != <var>0</var>) {</td></tr>
+<tr><th id="435">435</th><td>                        <a class="ref" href="#evictionPoolPopulate" title='evictionPoolPopulate' data-ref="evictionPoolPopulate">evictionPoolPopulate</a>(<a class="local col8 ref" href="#48i" title='i' data-ref="48i">i</a>, <a class="local col4 ref" href="#54dict" title='dict' data-ref="54dict">dict</a>, <a class="local col3 ref" href="#53db" title='db' data-ref="53db">db</a>-&gt;<a class="ref" href="server.h.html#redisDb::dict" title='redisDb::dict' data-ref="redisDb::dict">dict</a>, <a class="local col6 ref" href="#56pool" title='pool' data-ref="56pool">pool</a>);</td></tr>
+<tr><th id="436">436</th><td>                        <a class="local col7 ref" href="#57total_keys" title='total_keys' data-ref="57total_keys">total_keys</a> += <a class="local col8 ref" href="#58keys" title='keys' data-ref="58keys">keys</a>;</td></tr>
+<tr><th id="437">437</th><td>                    }</td></tr>
+<tr><th id="438">438</th><td>                }</td></tr>
+<tr><th id="439">439</th><td>                <b>if</b> (!<a class="local col7 ref" href="#57total_keys" title='total_keys' data-ref="57total_keys">total_keys</a>) <b>break</b>; <i>/* No keys to evict. */</i></td></tr>
+<tr><th id="440">440</th><td></td></tr>
+<tr><th id="441">441</th><td>                <i>/* Go backward from best to worst element to evict. */</i></td></tr>
+<tr><th id="442">442</th><td>                <b>for</b> (<a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a> = <a class="macro" href="#52" title="16" data-ref="_M/EVPOOL_SIZE">EVPOOL_SIZE</a>-<var>1</var>; <a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a> &gt;= <var>0</var>; <a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a>--) {</td></tr>
+<tr><th id="443">443</th><td>                    <b>if</b> (<a class="local col6 ref" href="#56pool" title='pool' data-ref="56pool">pool</a>[<a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) <b>continue</b>;</td></tr>
+<tr><th id="444">444</th><td>                    <a class="local col2 ref" href="#52bestdbid" title='bestdbid' data-ref="52bestdbid">bestdbid</a> = <a class="local col6 ref" href="#56pool" title='pool' data-ref="56pool">pool</a>[<a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a>].<a class="ref" href="#evictionPoolEntry::dbid" title='evictionPoolEntry::dbid' data-ref="evictionPoolEntry::dbid">dbid</a>;</td></tr>
+<tr><th id="445">445</th><td></td></tr>
+<tr><th id="446">446</th><td>                    <b>if</b> (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_policy" title='redisServer::maxmemory_policy' data-ref="redisServer::maxmemory_policy">maxmemory_policy</a> &amp; <a class="macro" href="server.h.html#368" title="(1&lt;&lt;2)" data-ref="_M/MAXMEMORY_FLAG_ALLKEYS">MAXMEMORY_FLAG_ALLKEYS</a>) {</td></tr>
+<tr><th id="447">447</th><td>                        <a class="local col5 ref" href="#55de" title='de' data-ref="55de">de</a> = <a class="ref" href="dict.h.html#dictFind" title='dictFind' data-ref="dictFind">dictFind</a>(<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::db" title='redisServer::db' data-ref="redisServer::db">db</a>[<a class="local col6 ref" href="#56pool" title='pool' data-ref="56pool">pool</a>[<a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a>].<a class="ref" href="#evictionPoolEntry::dbid" title='evictionPoolEntry::dbid' data-ref="evictionPoolEntry::dbid">dbid</a>].<a class="ref" href="server.h.html#redisDb::dict" title='redisDb::dict' data-ref="redisDb::dict">dict</a>,</td></tr>
+<tr><th id="448">448</th><td>                            <a class="local col6 ref" href="#56pool" title='pool' data-ref="56pool">pool</a>[<a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a>);</td></tr>
+<tr><th id="449">449</th><td>                    } <b>else</b> {</td></tr>
+<tr><th id="450">450</th><td>                        <a class="local col5 ref" href="#55de" title='de' data-ref="55de">de</a> = <a class="ref" href="dict.h.html#dictFind" title='dictFind' data-ref="dictFind">dictFind</a>(<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::db" title='redisServer::db' data-ref="redisServer::db">db</a>[<a class="local col6 ref" href="#56pool" title='pool' data-ref="56pool">pool</a>[<a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a>].<a class="ref" href="#evictionPoolEntry::dbid" title='evictionPoolEntry::dbid' data-ref="evictionPoolEntry::dbid">dbid</a>].<a class="ref" href="server.h.html#redisDb::expires" title='redisDb::expires' data-ref="redisDb::expires">expires</a>,</td></tr>
+<tr><th id="451">451</th><td>                            <a class="local col6 ref" href="#56pool" title='pool' data-ref="56pool">pool</a>[<a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a>);</td></tr>
+<tr><th id="452">452</th><td>                    }</td></tr>
+<tr><th id="453">453</th><td></td></tr>
+<tr><th id="454">454</th><td>                    <i>/* Remove the entry from the pool. */</i></td></tr>
+<tr><th id="455">455</th><td>                    <b>if</b> (<a class="local col6 ref" href="#56pool" title='pool' data-ref="56pool">pool</a>[<a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a> != <a class="local col6 ref" href="#56pool" title='pool' data-ref="56pool">pool</a>[<a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a>].<a class="ref" href="#evictionPoolEntry::cached" title='evictionPoolEntry::cached' data-ref="evictionPoolEntry::cached">cached</a>)</td></tr>
+<tr><th id="456">456</th><td>                        <a class="ref" href="sds.h.html#sdsfree" title='sdsfree' data-ref="sdsfree">sdsfree</a>(<a class="local col6 ref" href="#56pool" title='pool' data-ref="56pool">pool</a>[<a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a>);</td></tr>
+<tr><th id="457">457</th><td>                    <a class="local col6 ref" href="#56pool" title='pool' data-ref="56pool">pool</a>[<a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a>].<a class="ref" href="#evictionPoolEntry::key" title='evictionPoolEntry::key' data-ref="evictionPoolEntry::key">key</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="458">458</th><td>                    <a class="local col6 ref" href="#56pool" title='pool' data-ref="56pool">pool</a>[<a class="local col7 ref" href="#47k" title='k' data-ref="47k">k</a>].<a class="ref" href="#evictionPoolEntry::idle" title='evictionPoolEntry::idle' data-ref="evictionPoolEntry::idle">idle</a> = <var>0</var>;</td></tr>
+<tr><th id="459">459</th><td></td></tr>
+<tr><th id="460">460</th><td>                    <i>/* If the key exists, is our pick. Otherwise it is</i></td></tr>
+<tr><th id="461">461</th><td><i>                     * a ghost and we need to try the next element. */</i></td></tr>
+<tr><th id="462">462</th><td>                    <b>if</b> (<a class="local col5 ref" href="#55de" title='de' data-ref="55de">de</a>) {</td></tr>
+<tr><th id="463">463</th><td>                        <a class="local col1 ref" href="#51bestkey" title='bestkey' data-ref="51bestkey">bestkey</a> = <a class="macro" href="dict.h.html#141" title="((de)-&gt;key)" data-ref="_M/dictGetKey">dictGetKey</a>(<a class="local col5 ref" href="#55de" title='de' data-ref="55de">de</a>);</td></tr>
+<tr><th id="464">464</th><td>                        <b>break</b>;</td></tr>
+<tr><th id="465">465</th><td>                    } <b>else</b> {</td></tr>
+<tr><th id="466">466</th><td>                        <i>/* Ghost... Iterate again. */</i></td></tr>
+<tr><th id="467">467</th><td>                    }</td></tr>
+<tr><th id="468">468</th><td>                }</td></tr>
+<tr><th id="469">469</th><td>            }</td></tr>
+<tr><th id="470">470</th><td>        }</td></tr>
+<tr><th id="471">471</th><td></td></tr>
+<tr><th id="472">472</th><td>        <i>/* volatile-random and allkeys-random policy */</i></td></tr>
+<tr><th id="473">473</th><td>        <b>else</b> <b>if</b> (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_policy" title='redisServer::maxmemory_policy' data-ref="redisServer::maxmemory_policy">maxmemory_policy</a> == <a class="macro" href="server.h.html#378" title="((6&lt;&lt;8)|(1&lt;&lt;2))" data-ref="_M/MAXMEMORY_ALLKEYS_RANDOM">MAXMEMORY_ALLKEYS_RANDOM</a> ||</td></tr>
+<tr><th id="474">474</th><td>                 <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_policy" title='redisServer::maxmemory_policy' data-ref="redisServer::maxmemory_policy">maxmemory_policy</a> == <a class="macro" href="server.h.html#375" title="(3&lt;&lt;8)" data-ref="_M/MAXMEMORY_VOLATILE_RANDOM">MAXMEMORY_VOLATILE_RANDOM</a>)</td></tr>
+<tr><th id="475">475</th><td>        {</td></tr>
+<tr><th id="476">476</th><td>            <i>/* When evicting a random key, we try to evict a key for</i></td></tr>
+<tr><th id="477">477</th><td><i>             * each DB, so we use the static 'next_db' variable to</i></td></tr>
+<tr><th id="478">478</th><td><i>             * incrementally visit all DBs. */</i></td></tr>
+<tr><th id="479">479</th><td>            <b>for</b> (<a class="local col8 ref" href="#48i" title='i' data-ref="48i">i</a> = <var>0</var>; <a class="local col8 ref" href="#48i" title='i' data-ref="48i">i</a> &lt; <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::dbnum" title='redisServer::dbnum' data-ref="redisServer::dbnum">dbnum</a>; <a class="local col8 ref" href="#48i" title='i' data-ref="48i">i</a>++) {</td></tr>
+<tr><th id="480">480</th><td>                <a class="local col6 ref" href="#46j" title='j' data-ref="46j">j</a> = (++<a class="local col0 ref" href="#50next_db" title='next_db' data-ref="50next_db">next_db</a>) % <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::dbnum" title='redisServer::dbnum' data-ref="redisServer::dbnum">dbnum</a>;</td></tr>
+<tr><th id="481">481</th><td>                <a class="local col3 ref" href="#53db" title='db' data-ref="53db">db</a> = <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::db" title='redisServer::db' data-ref="redisServer::db">db</a>+<a class="local col6 ref" href="#46j" title='j' data-ref="46j">j</a>;</td></tr>
+<tr><th id="482">482</th><td>                <a class="local col4 ref" href="#54dict" title='dict' data-ref="54dict">dict</a> = (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory_policy" title='redisServer::maxmemory_policy' data-ref="redisServer::maxmemory_policy">maxmemory_policy</a> == <a class="macro" href="server.h.html#378" title="((6&lt;&lt;8)|(1&lt;&lt;2))" data-ref="_M/MAXMEMORY_ALLKEYS_RANDOM">MAXMEMORY_ALLKEYS_RANDOM</a>) ?</td></tr>
+<tr><th id="483">483</th><td>                        <a class="local col3 ref" href="#53db" title='db' data-ref="53db">db</a>-&gt;<a class="ref" href="server.h.html#redisDb::dict" title='redisDb::dict' data-ref="redisDb::dict">dict</a> : <a class="local col3 ref" href="#53db" title='db' data-ref="53db">db</a>-&gt;<a class="ref" href="server.h.html#redisDb::expires" title='redisDb::expires' data-ref="redisDb::expires">expires</a>;</td></tr>
+<tr><th id="484">484</th><td>                <b>if</b> (<a class="macro" href="dict.h.html#147" title="((dict)-&gt;ht[0].used+(dict)-&gt;ht[1].used)" data-ref="_M/dictSize">dictSize</a>(<a class="local col4 ref" href="#54dict" title='dict' data-ref="54dict">dict</a>) != <var>0</var>) {</td></tr>
+<tr><th id="485">485</th><td>                    <a class="local col5 ref" href="#55de" title='de' data-ref="55de">de</a> = <a class="ref" href="dict.h.html#dictGetRandomKey" title='dictGetRandomKey' data-ref="dictGetRandomKey">dictGetRandomKey</a>(<a class="local col4 ref" href="#54dict" title='dict' data-ref="54dict">dict</a>);</td></tr>
+<tr><th id="486">486</th><td>                    <a class="local col1 ref" href="#51bestkey" title='bestkey' data-ref="51bestkey">bestkey</a> = <a class="macro" href="dict.h.html#141" title="((de)-&gt;key)" data-ref="_M/dictGetKey">dictGetKey</a>(<a class="local col5 ref" href="#55de" title='de' data-ref="55de">de</a>);</td></tr>
+<tr><th id="487">487</th><td>                    <a class="local col2 ref" href="#52bestdbid" title='bestdbid' data-ref="52bestdbid">bestdbid</a> = <a class="local col6 ref" href="#46j" title='j' data-ref="46j">j</a>;</td></tr>
+<tr><th id="488">488</th><td>                    <b>break</b>;</td></tr>
+<tr><th id="489">489</th><td>                }</td></tr>
+<tr><th id="490">490</th><td>            }</td></tr>
+<tr><th id="491">491</th><td>        }</td></tr>
+<tr><th id="492">492</th><td></td></tr>
+<tr><th id="493">493</th><td>        <i>/* Finally remove the selected key. */</i></td></tr>
+<tr><th id="494">494</th><td>        <b>if</b> (<a class="local col1 ref" href="#51bestkey" title='bestkey' data-ref="51bestkey">bestkey</a>) {</td></tr>
+<tr><th id="495">495</th><td>            <a class="local col3 ref" href="#53db" title='db' data-ref="53db">db</a> = <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::db" title='redisServer::db' data-ref="redisServer::db">db</a>+<a class="local col2 ref" href="#52bestdbid" title='bestdbid' data-ref="52bestdbid">bestdbid</a>;</td></tr>
+<tr><th id="496">496</th><td>            <a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="local col9 decl" id="59keyobj" title='keyobj' data-type='robj *' data-ref="59keyobj">keyobj</dfn> = <a class="ref" href="server.h.html#createStringObject" title='createStringObject' data-ref="createStringObject">createStringObject</a>(<a class="local col1 ref" href="#51bestkey" title='bestkey' data-ref="51bestkey">bestkey</a>,<a class="ref" href="sds.h.html#sdslen" title='sdslen' data-ref="sdslen">sdslen</a>(<a class="local col1 ref" href="#51bestkey" title='bestkey' data-ref="51bestkey">bestkey</a>));</td></tr>
+<tr><th id="497">497</th><td>            <a class="ref" href="server.h.html#propagateExpire" title='propagateExpire' data-ref="propagateExpire">propagateExpire</a>(<a class="local col3 ref" href="#53db" title='db' data-ref="53db">db</a>,<a class="local col9 ref" href="#59keyobj" title='keyobj' data-ref="59keyobj">keyobj</a>,<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::lazyfree_lazy_eviction" title='redisServer::lazyfree_lazy_eviction' data-ref="redisServer::lazyfree_lazy_eviction">lazyfree_lazy_eviction</a>);</td></tr>
+<tr><th id="498">498</th><td>            <i>/* We compute the amount of memory freed by db*Delete() alone.</i></td></tr>
+<tr><th id="499">499</th><td><i>             * It is possible that actually the memory needed to propagate</i></td></tr>
+<tr><th id="500">500</th><td><i>             * the DEL in AOF and replication link is greater than the one</i></td></tr>
+<tr><th id="501">501</th><td><i>             * we are freeing removing the key, but we can't account for</i></td></tr>
+<tr><th id="502">502</th><td><i>             * that otherwise we would never exit the loop.</i></td></tr>
+<tr><th id="503">503</th><td><i>             *</i></td></tr>
+<tr><th id="504">504</th><td><i>             * AOF and Output buffer memory will be freed eventually so</i></td></tr>
+<tr><th id="505">505</th><td><i>             * we only care about memory used by the key space. */</i></td></tr>
+<tr><th id="506">506</th><td>            <a class="local col2 ref" href="#42delta" title='delta' data-ref="42delta">delta</a> = (<em>long</em> <em>long</em>) <a class="ref" href="zmalloc.h.html#zmalloc_used_memory" title='zmalloc_used_memory' data-ref="zmalloc_used_memory">zmalloc_used_memory</a>();</td></tr>
+<tr><th id="507">507</th><td>            <a class="macro" href="latency.h.html#71" title="if (server.latency_monitor_threshold) { eviction_latency = mstime(); } else { eviction_latency = 0; }" data-ref="_M/latencyStartMonitor">latencyStartMonitor</a>(<a class="local col1 ref" href="#41eviction_latency" title='eviction_latency' data-ref="41eviction_latency">eviction_latency</a>);</td></tr>
+<tr><th id="508">508</th><td>            <b>if</b> (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::lazyfree_lazy_eviction" title='redisServer::lazyfree_lazy_eviction' data-ref="redisServer::lazyfree_lazy_eviction">lazyfree_lazy_eviction</a>)</td></tr>
+<tr><th id="509">509</th><td>                <a class="ref" href="server.h.html#dbAsyncDelete" title='dbAsyncDelete' data-ref="dbAsyncDelete">dbAsyncDelete</a>(<a class="local col3 ref" href="#53db" title='db' data-ref="53db">db</a>,<a class="local col9 ref" href="#59keyobj" title='keyobj' data-ref="59keyobj">keyobj</a>);</td></tr>
+<tr><th id="510">510</th><td>            <b>else</b></td></tr>
+<tr><th id="511">511</th><td>                <a class="ref" href="server.h.html#dbSyncDelete" title='dbSyncDelete' data-ref="dbSyncDelete">dbSyncDelete</a>(<a class="local col3 ref" href="#53db" title='db' data-ref="53db">db</a>,<a class="local col9 ref" href="#59keyobj" title='keyobj' data-ref="59keyobj">keyobj</a>);</td></tr>
+<tr><th id="512">512</th><td>            <a class="macro" href="latency.h.html#79" title="if (server.latency_monitor_threshold) { eviction_latency = mstime() - eviction_latency; }" data-ref="_M/latencyEndMonitor">latencyEndMonitor</a>(<a class="local col1 ref" href="#41eviction_latency" title='eviction_latency' data-ref="41eviction_latency">eviction_latency</a>);</td></tr>
+<tr><th id="513">513</th><td>            <a class="macro" href="latency.h.html#84" title="if (server.latency_monitor_threshold &amp;&amp; (eviction_latency) &gt;= server.latency_monitor_threshold) latencyAddSample((&quot;eviction-del&quot;),(eviction_latency));" data-ref="_M/latencyAddSampleIfNeeded">latencyAddSampleIfNeeded</a>(<q>"eviction-del"</q>,<a class="local col1 ref" href="#41eviction_latency" title='eviction_latency' data-ref="41eviction_latency">eviction_latency</a>);</td></tr>
+<tr><th id="514">514</th><td>            <a class="macro" href="latency.h.html#90" title="latency += eviction_latency;" data-ref="_M/latencyRemoveNestedEvent">latencyRemoveNestedEvent</a>(<a class="local col0 ref" href="#40latency" title='latency' data-ref="40latency">latency</a>,<a class="local col1 ref" href="#41eviction_latency" title='eviction_latency' data-ref="41eviction_latency">eviction_latency</a>);</td></tr>
+<tr><th id="515">515</th><td>            <a class="local col2 ref" href="#42delta" title='delta' data-ref="42delta">delta</a> -= (<em>long</em> <em>long</em>) <a class="ref" href="zmalloc.h.html#zmalloc_used_memory" title='zmalloc_used_memory' data-ref="zmalloc_used_memory">zmalloc_used_memory</a>();</td></tr>
+<tr><th id="516">516</th><td>            <a class="local col9 ref" href="#39mem_freed" title='mem_freed' data-ref="39mem_freed">mem_freed</a> += <a class="local col2 ref" href="#42delta" title='delta' data-ref="42delta">delta</a>;</td></tr>
+<tr><th id="517">517</th><td>            <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::stat_evictedkeys" title='redisServer::stat_evictedkeys' data-ref="redisServer::stat_evictedkeys">stat_evictedkeys</a>++;</td></tr>
+<tr><th id="518">518</th><td>            <a class="ref" href="server.h.html#notifyKeyspaceEvent" title='notifyKeyspaceEvent' data-ref="notifyKeyspaceEvent">notifyKeyspaceEvent</a>(<a class="macro" href="server.h.html#426" title="(1&lt;&lt;9)" data-ref="_M/NOTIFY_EVICTED">NOTIFY_EVICTED</a>, <q>"evicted"</q>,</td></tr>
+<tr><th id="519">519</th><td>                <a class="local col9 ref" href="#59keyobj" title='keyobj' data-ref="59keyobj">keyobj</a>, <a class="local col3 ref" href="#53db" title='db' data-ref="53db">db</a>-&gt;<a class="ref" href="server.h.html#redisDb::id" title='redisDb::id' data-ref="redisDb::id">id</a>);</td></tr>
+<tr><th id="520">520</th><td>            <a class="ref" href="server.h.html#decrRefCount" title='decrRefCount' data-ref="decrRefCount">decrRefCount</a>(<a class="local col9 ref" href="#59keyobj" title='keyobj' data-ref="59keyobj">keyobj</a>);</td></tr>
+<tr><th id="521">521</th><td>            <a class="local col9 ref" href="#49keys_freed" title='keys_freed' data-ref="49keys_freed">keys_freed</a>++;</td></tr>
+<tr><th id="522">522</th><td></td></tr>
+<tr><th id="523">523</th><td>            <i>/* When the memory to free starts to be big enough, we may</i></td></tr>
+<tr><th id="524">524</th><td><i>             * start spending so much time here that is impossible to</i></td></tr>
+<tr><th id="525">525</th><td><i>             * deliver data to the slaves fast enough, so we force the</i></td></tr>
+<tr><th id="526">526</th><td><i>             * transmission here inside the loop. */</i></td></tr>
+<tr><th id="527">527</th><td>            <b>if</b> (<a class="local col3 ref" href="#43slaves" title='slaves' data-ref="43slaves">slaves</a>) <a class="ref" href="server.h.html#flushSlavesOutputBuffers" title='flushSlavesOutputBuffers' data-ref="flushSlavesOutputBuffers">flushSlavesOutputBuffers</a>();</td></tr>
+<tr><th id="528">528</th><td></td></tr>
+<tr><th id="529">529</th><td>            <i>/* Normally our stop condition is the ability to release</i></td></tr>
+<tr><th id="530">530</th><td><i>             * a fixed, pre-computed amount of memory. However when we</i></td></tr>
+<tr><th id="531">531</th><td><i>             * are deleting objects in another thread, it's better to</i></td></tr>
+<tr><th id="532">532</th><td><i>             * check, from time to time, if we already reached our target</i></td></tr>
+<tr><th id="533">533</th><td><i>             * memory, since the "mem_freed" amount is computed only</i></td></tr>
+<tr><th id="534">534</th><td><i>             * across the dbAsyncDelete() call, while the thread can</i></td></tr>
+<tr><th id="535">535</th><td><i>             * release the memory all the time. */</i></td></tr>
+<tr><th id="536">536</th><td>            <b>if</b> (<a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::lazyfree_lazy_eviction" title='redisServer::lazyfree_lazy_eviction' data-ref="redisServer::lazyfree_lazy_eviction">lazyfree_lazy_eviction</a> &amp;&amp; !(<a class="local col9 ref" href="#49keys_freed" title='keys_freed' data-ref="49keys_freed">keys_freed</a> % <var>16</var>)) {</td></tr>
+<tr><th id="537">537</th><td>                <a class="local col4 ref" href="#44overhead" title='overhead' data-ref="44overhead">overhead</a> = <a class="ref" href="#freeMemoryGetNotCountedMemory" title='freeMemoryGetNotCountedMemory' data-ref="freeMemoryGetNotCountedMemory">freeMemoryGetNotCountedMemory</a>();</td></tr>
+<tr><th id="538">538</th><td>                <a class="local col7 ref" href="#37mem_used" title='mem_used' data-ref="37mem_used">mem_used</a> = <a class="ref" href="zmalloc.h.html#zmalloc_used_memory" title='zmalloc_used_memory' data-ref="zmalloc_used_memory">zmalloc_used_memory</a>();</td></tr>
+<tr><th id="539">539</th><td>                <a class="local col7 ref" href="#37mem_used" title='mem_used' data-ref="37mem_used">mem_used</a> = (<a class="local col7 ref" href="#37mem_used" title='mem_used' data-ref="37mem_used">mem_used</a> &gt; <a class="local col4 ref" href="#44overhead" title='overhead' data-ref="44overhead">overhead</a>) ? <a class="local col7 ref" href="#37mem_used" title='mem_used' data-ref="37mem_used">mem_used</a>-<a class="local col4 ref" href="#44overhead" title='overhead' data-ref="44overhead">overhead</a> : <var>0</var>;</td></tr>
+<tr><th id="540">540</th><td>                <b>if</b> (<a class="local col7 ref" href="#37mem_used" title='mem_used' data-ref="37mem_used">mem_used</a> &lt;= <a class="ref" href="server.h.html#server" title='server' data-ref="server">server</a>.<a class="ref" href="server.h.html#redisServer::maxmemory" title='redisServer::maxmemory' data-ref="redisServer::maxmemory">maxmemory</a>) {</td></tr>
+<tr><th id="541">541</th><td>                    <a class="local col9 ref" href="#39mem_freed" title='mem_freed' data-ref="39mem_freed">mem_freed</a> = <a class="local col8 ref" href="#38mem_tofree" title='mem_tofree' data-ref="38mem_tofree">mem_tofree</a>;</td></tr>
+<tr><th id="542">542</th><td>                }</td></tr>
+<tr><th id="543">543</th><td>            }</td></tr>
+<tr><th id="544">544</th><td>        }</td></tr>
+<tr><th id="545">545</th><td></td></tr>
+<tr><th id="546">546</th><td>        <b>if</b> (!<a class="local col9 ref" href="#49keys_freed" title='keys_freed' data-ref="49keys_freed">keys_freed</a>) {</td></tr>
+<tr><th id="547">547</th><td>            <a class="macro" href="latency.h.html#79" title="if (server.latency_monitor_threshold) { latency = mstime() - latency; }" data-ref="_M/latencyEndMonitor">latencyEndMonitor</a>(<a class="local col0 ref" href="#40latency" title='latency' data-ref="40latency">latency</a>);</td></tr>
+<tr><th id="548">548</th><td>            <a class="macro" href="latency.h.html#84" title="if (server.latency_monitor_threshold &amp;&amp; (latency) &gt;= server.latency_monitor_threshold) latencyAddSample((&quot;eviction-cycle&quot;),(latency));" data-ref="_M/latencyAddSampleIfNeeded">latencyAddSampleIfNeeded</a>(<q>"eviction-cycle"</q>,<a class="local col0 ref" href="#40latency" title='latency' data-ref="40latency">latency</a>);</td></tr>
+<tr><th id="549">549</th><td>            <b>goto</b> <a class="lbl" href="#45cant_free" data-ref="45cant_free">cant_free</a>; <i>/* nothing to free... */</i></td></tr>
+<tr><th id="550">550</th><td>        }</td></tr>
+<tr><th id="551">551</th><td>    }</td></tr>
+<tr><th id="552">552</th><td>    <a class="macro" href="latency.h.html#79" title="if (server.latency_monitor_threshold) { latency = mstime() - latency; }" data-ref="_M/latencyEndMonitor">latencyEndMonitor</a>(<a class="local col0 ref" href="#40latency" title='latency' data-ref="40latency">latency</a>);</td></tr>
+<tr><th id="553">553</th><td>    <a class="macro" href="latency.h.html#84" title="if (server.latency_monitor_threshold &amp;&amp; (latency) &gt;= server.latency_monitor_threshold) latencyAddSample((&quot;eviction-cycle&quot;),(latency));" data-ref="_M/latencyAddSampleIfNeeded">latencyAddSampleIfNeeded</a>(<q>"eviction-cycle"</q>,<a class="local col0 ref" href="#40latency" title='latency' data-ref="40latency">latency</a>);</td></tr>
+<tr><th id="554">554</th><td>    <b>return</b> <a class="macro" href="server.h.html#77" title="0" data-ref="_M/C_OK">C_OK</a>;</td></tr>
+<tr><th id="555">555</th><td></td></tr>
+<tr><th id="556">556</th><td><dfn class="lbl" id="45cant_free" data-ref="45cant_free">cant_free</dfn>:</td></tr>
+<tr><th id="557">557</th><td>    <i>/* We are here if we are not able to reclaim memory. There is only one</i></td></tr>
+<tr><th id="558">558</th><td><i>     * last thing we can try: check if the lazyfree thread has jobs in queue</i></td></tr>
+<tr><th id="559">559</th><td><i>     * and wait... */</i></td></tr>
+<tr><th id="560">560</th><td>    <b>while</b>(<a class="ref" href="bio.h.html#bioPendingJobsOfType" title='bioPendingJobsOfType' data-ref="bioPendingJobsOfType">bioPendingJobsOfType</a>(<a class="macro" href="bio.h.html#41" title="2" data-ref="_M/BIO_LAZY_FREE">BIO_LAZY_FREE</a>)) {</td></tr>
+<tr><th id="561">561</th><td>        <b>if</b> (((<a class="local col6 ref" href="#36mem_reported" title='mem_reported' data-ref="36mem_reported">mem_reported</a> - <a class="ref" href="zmalloc.h.html#zmalloc_used_memory" title='zmalloc_used_memory' data-ref="zmalloc_used_memory">zmalloc_used_memory</a>()) + <a class="local col9 ref" href="#39mem_freed" title='mem_freed' data-ref="39mem_freed">mem_freed</a>) &gt;= <a class="local col8 ref" href="#38mem_tofree" title='mem_tofree' data-ref="38mem_tofree">mem_tofree</a>)</td></tr>
+<tr><th id="562">562</th><td>            <b>break</b>;</td></tr>
+<tr><th id="563">563</th><td>        <a class="ref" href="../../include/unistd.h.html#usleep" title='usleep' data-ref="usleep">usleep</a>(<var>1000</var>);</td></tr>
+<tr><th id="564">564</th><td>    }</td></tr>
+<tr><th id="565">565</th><td>    <b>return</b> <a class="macro" href="server.h.html#78" title="-1" data-ref="_M/C_ERR">C_ERR</a>;</td></tr>
+<tr><th id="566">566</th><td>}</td></tr>
+<tr><th id="567">567</th><td></td></tr>
+<tr><th id="568">568</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Oct-16</em> from project codebrowser revision <em>with-deprecated-diskstore-4466-g2bf8c2c</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

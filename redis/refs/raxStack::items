@@ -1,0 +1,17 @@
+<dec f='codebrowser/src/rax.h' l='115' type='size_t'/>
+<offset>64</offset>
+<use f='codebrowser/src/rax.c' l='80' u='w' c='raxStackInit'/>
+<use f='codebrowser/src/rax.c' l='87' u='r' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='108' u='r' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='109' u='w' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='116' u='r' c='raxStackPop'/>
+<use f='codebrowser/src/rax.c' l='117' u='w' c='raxStackPop'/>
+<use f='codebrowser/src/rax.c' l='118' u='r' c='raxStackPop'/>
+<use f='codebrowser/src/rax.c' l='124' u='r' c='raxStackPeek'/>
+<use f='codebrowser/src/rax.c' l='125' u='r' c='raxStackPeek'/>
+<use f='codebrowser/src/rax.c' l='1187' u='r' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1224' u='w' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1303' u='r' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1312' u='w' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1372' u='w' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1440' u='r' c='raxSeek'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1875' type='void sunionCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='174' u='r'/>
+<use f='codebrowser/src/server.c' l='174' u='r'/>
+<use f='codebrowser/src/server.c' l='174' u='r'/>
+<use f='codebrowser/src/server.c' l='174' u='r'/>
+<def f='codebrowser/src/t_set.c' l='1087' ll='1089' type='void sunionCommand(client * c)'/>

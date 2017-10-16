@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/quicklist.h' l='138' type='int quicklistReplaceAtIndex(quicklist * quicklist, long index, void * data, int sz)'/>
+<def f='codebrowser/src/quicklist.c' l='667' ll='680' type='int quicklistReplaceAtIndex(quicklist * quicklist, long index, void * data, int sz)'/>
+<doc f='codebrowser/src/quicklist.c' l='663'>/* Replace quicklist entry at offset &apos;index&apos; by &apos;data&apos; with length &apos;sz&apos;.
+ *
+ * Returns 1 if replace happened.
+ * Returns 0 if replace failed and no changes happened. */</doc>
+<use f='codebrowser/src/t_list.c' l='352' u='c' c='lsetCommand'/>

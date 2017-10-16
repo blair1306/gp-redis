@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/sentinel.c' l='368' type='void sentinelScheduleScriptExecution(char * path)'/>
+<use f='codebrowser/src/sentinel.c' l='633' u='c' c='sentinelEvent'/>
+<def f='codebrowser/src/sentinel.c' l='667' ll='711' type='void sentinelScheduleScriptExecution(char * path)'/>
+<use f='codebrowser/src/sentinel.c' l='920' u='c' c='sentinelCallClientReconfScript'/>

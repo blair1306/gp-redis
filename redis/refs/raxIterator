@@ -1,0 +1,11 @@
+<def f='codebrowser/src/rax.h' l='130' ll='140'/>
+<size>472</size>
+<mbr r='raxIterator::flags' o='0' t='int'/>
+<mbr r='raxIterator::rt' o='64' t='rax *'/>
+<mbr r='raxIterator::key' o='128' t='unsigned char *'/>
+<mbr r='raxIterator::data' o='192' t='void *'/>
+<mbr r='raxIterator::key_len' o='256' t='size_t'/>
+<mbr r='raxIterator::key_max' o='320' t='size_t'/>
+<mbr r='raxIterator::key_static_string' o='384' t='unsigned char [128]'/>
+<mbr r='raxIterator::node' o='1408' t='raxNode *'/>
+<mbr r='raxIterator::stack' o='1472' t='raxStack'/>

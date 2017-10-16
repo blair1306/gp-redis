@@ -1,0 +1,20 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='428' type='unsigned int'/>
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='17' type='unsigned int'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='783' u='r' c='arena_huge_malloc_stats_update'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='796' u='r' c='arena_huge_malloc_stats_update_undo'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='809' u='r' c='arena_huge_dalloc_stats_update'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='822' u='r' c='arena_huge_dalloc_stats_update_undo'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2959' u='r' c='je_arena_stats_merge'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3005' u='r' c='je_arena_new'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3021' u='r' c='je_arena_new'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3025' u='r' c='je_arena_new'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3274' u='w' c='je_arena_boot'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3275' u='r' c='je_arena_boot'/>
+<doc f='codebrowser/deps/jemalloc/src/arena.c' l='17'>/* Number of large size classes. */</doc>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='502' u='r' c='ctl_arena_init'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='533' u='r' c='ctl_arena_clear'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='603' u='r' c='ctl_arena_stats_smerge'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1818' u='r' c='arenas_nlruns_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1824' u='r' c='arenas_lrun_i_index'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1830' u='r' c='arenas_hchunk_i_size_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='2084' u='r' c='stats_arenas_i_lruns_j_index'/>

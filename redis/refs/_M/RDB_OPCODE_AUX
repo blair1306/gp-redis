@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rdb.h' l='98'/>
+<doc f='codebrowser/src/rdb.h' l='97'>/* Special RDB opcodes (saved/loaded with rdbSaveType/rdbLoadType). */</doc>
+<use f='codebrowser/src/rdb.c' l='829' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1565' u='c'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='254' u='c'/>

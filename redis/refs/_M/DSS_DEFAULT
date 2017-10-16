@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk_dss.h' l='12'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='7' u='c'/>

@@ -1,0 +1,11 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='302' macro='1' type='int je_get_errno()'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1028' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1055' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1057' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1085' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1110' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1122' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1127' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/pages.c' l='56' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='444' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='467' macro='1' u='c'/>

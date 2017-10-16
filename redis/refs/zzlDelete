@@ -1,0 +1,5 @@
+<def f='codebrowser/src/t_zset.c' l='967' ll='974' type='unsigned char * zzlDelete(unsigned char * zl, unsigned char * eptr)'/>
+<use f='codebrowser/src/t_zset.c' l='1298' u='c' c='zsetAdd'/>
+<use f='codebrowser/src/t_zset.c' l='1382' u='c' c='zsetDel'/>
+<doc f='codebrowser/src/t_zset.c' l='965'>/* Delete (element,score) pair from ziplist. Use local copy of eptr because we
+ * don&apos;t want to modify the one given as argument. */</doc>

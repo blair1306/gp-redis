@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='748' type='robj *'/>
+<offset>1984</offset>
+<use f='codebrowser/src/pubsub.c' l='243' u='r' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/server.c' l='1308' u='w' c='createSharedObjects'/>

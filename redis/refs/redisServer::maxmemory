@@ -1,0 +1,27 @@
+<dec f='codebrowser/src/server.h' l='1118' type='unsigned long long'/>
+<offset>20480</offset>
+<doc f='codebrowser/src/server.h' l='1118'>/* Max number of memory bytes to use */</doc>
+<use f='codebrowser/src/config.c' l='317' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1128' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1129' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1130' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1222' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1992' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/evict.c' l='391' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='400' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='403' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='540' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/module.c' l='1308' u='r' c='RM_GetContextFlags'/>
+<use f='codebrowser/src/networking.c' l='944' u='r' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='945' u='r' c='writeToClient'/>
+<use f='codebrowser/src/object.c' l='405' u='r' c='tryObjectEncoding'/>
+<use f='codebrowser/src/scripting.c' l='502' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/server.c' l='1412' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1939' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1941' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2374' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2927' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2969' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3859' u='r' c='main'/>
+<use f='codebrowser/src/server.c' l='3859' u='r' c='main'/>
+<use f='codebrowser/src/server.c' l='3860' u='r' c='main'/>

@@ -1,0 +1,39 @@
+<dec f='include/string.h' l='46' type='void * memmove(void * __dest, const void * __src, size_t __n)'/>
+<doc f='include/string.h' l='44'>/* Copy N bytes of SRC to DEST, guaranteeing
+   correct behavior for overlapping strings.  */</doc>
+<use f='codebrowser/deps/hiredis/sds.c' l='690' u='c' c='sdstrim'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='735' u='c' c='sdsrange'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2017' u='c' c='je_arena_tcache_fill_small'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='161' u='c' c='je_tcache_bin_flush_small'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='244' u='c' c='je_tcache_bin_flush_large'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='653' u='c' c='linenoiseEditInsert'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='726' u='c' c='linenoiseEditDelete'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='736' u='c' c='linenoiseEditBackspace'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='755' u='c' c='linenoiseEditDeletePrevWord'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='968' u='c' c='linenoisePrintKeyCodes'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1121' u='c' c='linenoiseHistoryAdd'/>
+<use f='codebrowser/src/aof.c' l='116' u='c' c='aofChildWriteDiffData'/>
+<use f='codebrowser/src/cluster.c' l='804' u='c' c='clusterNodeRemoveSlave'/>
+<use f='codebrowser/src/evict.c' l='229' u='c' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='239' u='c' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/hyperloglog.c' l='824' u='c' c='hllSparseAdd'/>
+<use f='codebrowser/src/hyperloglog.c' l='854' u='c' c='hllSparseAdd'/>
+<use f='codebrowser/src/intset.c' l='200' u='c' c='intsetMoveTail'/>
+<use f='codebrowser/src/rax.c' l='259' u='c' c='raxAddChild'/>
+<use f='codebrowser/src/rax.c' l='269' u='c' c='raxAddChild'/>
+<use f='codebrowser/src/rax.c' l='277' u='c' c='raxAddChild'/>
+<use f='codebrowser/src/rax.c' l='869' u='c' c='raxRemoveChild'/>
+<use f='codebrowser/src/rax.c' l='873' u='c' c='raxRemoveChild'/>
+<use f='codebrowser/src/rax.c' l='876' u='c' c='raxRemoveChild'/>
+<use f='codebrowser/src/rax.c' l='1151' u='c' c='raxIteratorAddChars'/>
+<use f='codebrowser/src/replication.c' l='1202' u='c' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/scripting.c' l='1757' u='c' c='ldbDelBreakpoint'/>
+<use f='codebrowser/src/sds.c' l='695' u='c' c='sdstrim'/>
+<use f='codebrowser/src/sds.c' l='740' u='c' c='sdsrange'/>
+<use f='codebrowser/src/ziplist.c' l='653' u='c' c='__ziplistCascadeUpdate'/>
+<use f='codebrowser/src/ziplist.c' l='720' u='c' c='__ziplistDelete'/>
+<use f='codebrowser/src/ziplist.c' l='796' u='c' c='__ziplistInsert'/>
+<use f='codebrowser/src/ziplist.c' l='919' u='c' c='ziplistMerge'/>
+<use f='codebrowser/src/zipmap.c' l='243' u='c' c='zipmapSet'/>
+<use f='codebrowser/src/zipmap.c' l='258' u='c' c='zipmapSet'/>
+<use f='codebrowser/src/zipmap.c' l='286' u='c' c='zipmapDel'/>

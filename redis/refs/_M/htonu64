@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/endianconv.h' l='70'/>
+<use f='codebrowser/src/cluster.c' l='2239' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2240' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2247' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2528' u='c'/>
+<use f='codebrowser/src/rdb.c' l='136' u='c'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='55' type='unsigned int'/>
+<offset>160</offset>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='80' u='r' c='ckh_isearch'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='86' u='r' c='ckh_isearch'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='159' u='r' c='ckh_evict_reloc_insert'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='161' u='r' c='ckh_evict_reloc_insert'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='203' u='r' c='ckh_try_insert'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='208' u='r' c='ckh_try_insert'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='262' u='r' c='ckh_grow'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='263' u='r' c='ckh_grow'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='283' u='w' c='ckh_grow'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='293' u='w' c='ckh_grow'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='312' u='r' c='ckh_shrink'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='313' u='r' c='ckh_shrink'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='330' u='w' c='ckh_shrink'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='343' u='w' c='ckh_shrink'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='385' u='w' c='je_ckh_new'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='443' u='r' c='je_ckh_iter'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='501' u='r' c='je_ckh_remove'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='502' u='r' c='je_ckh_remove'/>

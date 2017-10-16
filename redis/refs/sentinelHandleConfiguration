@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1771' type='char * sentinelHandleConfiguration(char ** argv, int argc)'/>
+<use f='codebrowser/src/config.c' l='726' u='c' c='loadServerConfigFromString'/>
+<def f='codebrowser/src/sentinel.c' l='1572' ll='1691' type='char * sentinelHandleConfiguration(char ** argv, int argc)'/>
+<doc f='codebrowser/src/sentinel.c' l='1571'>/* ============================ Config handling ============================= */</doc>

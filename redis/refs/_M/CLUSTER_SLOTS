@@ -1,0 +1,36 @@
+<dec f='codebrowser/src/cluster.h' l='8'/>
+<use f='codebrowser/src/cluster.h' l='110' u='c'/>
+<use f='codebrowser/src/cluster.h' l='139' u='c'/>
+<use f='codebrowser/src/cluster.h' l='140' u='c'/>
+<use f='codebrowser/src/cluster.h' l='141' u='c'/>
+<use f='codebrowser/src/cluster.h' l='142' u='c'/>
+<use f='codebrowser/src/cluster.h' l='204' u='c'/>
+<use f='codebrowser/src/cluster.h' l='246' u='c'/>
+<use f='codebrowser/src/cluster.c' l='120' u='c'/>
+<use f='codebrowser/src/cluster.c' l='525' u='c'/>
+<use f='codebrowser/src/cluster.c' l='889' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1518' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1531' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1920' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2671' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2807' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3604' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3659' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3767' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3888' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3894' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3895' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3910' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3977' u='c'/>
+<use f='codebrowser/src/cluster.c' l='4010' u='c'/>
+<use f='codebrowser/src/cluster.c' l='4016' u='c'/>
+<use f='codebrowser/src/cluster.c' l='4020' u='c'/>
+<use f='codebrowser/src/cluster.c' l='4122' u='c'/>
+<use f='codebrowser/src/cluster.c' l='4125' u='c'/>
+<use f='codebrowser/src/cluster.c' l='4149' u='c'/>
+<use f='codebrowser/src/cluster.c' l='4277' u='c'/>
+<use f='codebrowser/src/cluster.c' l='4365' u='c'/>
+<use f='codebrowser/src/cluster.c' l='4381' u='c'/>
+<doc f='codebrowser/src/cluster.h' l='4'>/*-----------------------------------------------------------------------------
+ * Redis cluster data structures, defines, exported API.
+ *----------------------------------------------------------------------------*/</doc>

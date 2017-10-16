@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/module.c' l='227' type='void moduleReplicateMultiIfNeeded(RedisModuleCtx * ctx)'/>
+<def f='codebrowser/src/module.c' l='1166' ll='1175' type='void moduleReplicateMultiIfNeeded(RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/module.c' l='1212' u='c' c='RM_Replicate'/>
+<use f='codebrowser/src/module.c' l='2621' u='c' c='RM_Call'/>
+<doc f='codebrowser/src/module.c' l='1163'>/* Helper function to replicate MULTI the first time we replicate something
+ * in the context of a command execution. EXEC will be handled by the
+ * RedisModuleCommandDispatcher() function. */</doc>

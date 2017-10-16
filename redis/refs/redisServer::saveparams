@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='1028' type='struct saveparam *'/>
+<offset>15744</offset>
+<doc f='codebrowser/src/server.h' l='1028'>/* Save points array for RDB */</doc>
+<use f='codebrowser/src/config.c' l='146' u='w' c='appendServerSaveParams'/>
+<use f='codebrowser/src/config.c' l='146' u='r' c='appendServerSaveParams'/>
+<use f='codebrowser/src/config.c' l='147' u='r' c='appendServerSaveParams'/>
+<use f='codebrowser/src/config.c' l='148' u='r' c='appendServerSaveParams'/>
+<use f='codebrowser/src/config.c' l='153' u='r' c='resetServerSaveParams'/>
+<use f='codebrowser/src/config.c' l='154' u='w' c='resetServerSaveParams'/>
+<use f='codebrowser/src/config.c' l='1350' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1351' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1713' u='r' c='rewriteConfigSaveOption'/>
+<use f='codebrowser/src/config.c' l='1713' u='r' c='rewriteConfigSaveOption'/>
+<use f='codebrowser/src/server.c' l='1081' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1373' u='w' c='initServerConfig'/>

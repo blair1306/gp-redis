@@ -1,0 +1,34 @@
+<dec f='codebrowser/src/quicklist.h' l='45' type='struct quicklistNode *'/>
+<offset>0</offset>
+<use f='codebrowser/src/defrag.c' l='313' u='r' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='314' u='r' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='318' u='w' c='defragKey'/>
+<use f='codebrowser/src/quicklist.c' l='144' u='w' c='quicklistCreateNode'/>
+<use f='codebrowser/src/quicklist.c' l='320' u='r' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='356' u='w' c='__quicklistInsertNode'/>
+<use f='codebrowser/src/quicklist.c' l='360' u='w' c='__quicklistInsertNode'/>
+<use f='codebrowser/src/quicklist.c' l='368' u='w' c='__quicklistInsertNode'/>
+<use f='codebrowser/src/quicklist.c' l='368' u='r' c='__quicklistInsertNode'/>
+<use f='codebrowser/src/quicklist.c' l='369' u='r' c='__quicklistInsertNode'/>
+<use f='codebrowser/src/quicklist.c' l='370' u='r' c='__quicklistInsertNode'/>
+<use f='codebrowser/src/quicklist.c' l='371' u='w' c='__quicklistInsertNode'/>
+<use f='codebrowser/src/quicklist.c' l='582' u='w' c='__quicklistDelNode'/>
+<use f='codebrowser/src/quicklist.c' l='582' u='r' c='__quicklistDelNode'/>
+<use f='codebrowser/src/quicklist.c' l='583' u='r' c='__quicklistDelNode'/>
+<use f='codebrowser/src/quicklist.c' l='584' u='r' c='__quicklistDelNode'/>
+<use f='codebrowser/src/quicklist.c' l='587' u='r' c='__quicklistDelNode'/>
+<use f='codebrowser/src/quicklist.c' l='635' u='r' c='quicklistDelEntry'/>
+<use f='codebrowser/src/quicklist.c' l='739' u='r' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='740' u='r' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='741' u='r' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='741' u='r' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='742' u='r' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='742' u='r' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='764' u='r' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='765' u='r' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='869' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='905' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='909' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='916' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='1172' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1253' u='r' c='quicklistIndex'/>

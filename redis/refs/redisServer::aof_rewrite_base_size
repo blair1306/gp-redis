@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='995' type='off_t'/>
+<use f='codebrowser/src/aof.c' l='767' u='w' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1541' u='w' c='backgroundRewriteDoneHandler'/>
+<offset>14336</offset>
+<doc f='codebrowser/src/server.h' l='995'>/* AOF size on latest startup or rewrite. */</doc>
+<use f='codebrowser/src/server.c' l='1108' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1109' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1387' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3030' u='r' c='genRedisInfoString'/>

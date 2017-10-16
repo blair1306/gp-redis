@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/replication.c' l='40' type='void replicationDiscardCachedMaster()'/>
+<use f='codebrowser/src/replication.c' l='1490' u='c' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1570' u='c' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1959' u='c' c='replicationUnsetMaster'/>
+<def f='codebrowser/src/replication.c' l='2183' ll='2190' type='void replicationDiscardCachedMaster()'/>
+<doc f='codebrowser/src/replication.c' l='2181'>/* Free a cached master, called when there are no longer the conditions for
+ * a partial resync on reconnection. */</doc>

@@ -1,0 +1,21 @@
+<def f='codebrowser/src/quicklist.c' l='797' ll='826' type='quicklistNode * _quicklistSplitNode(quicklistNode * node, int offset, int after)'/>
+<use f='codebrowser/src/quicklist.c' l='930' u='c' c='_quicklistInsert'/>
+<doc f='codebrowser/src/quicklist.c' l='778'>/* Split &apos;node&apos; into two parts, parameterized by &apos;offset&apos; and &apos;after&apos;.
+ *
+ * The &apos;after&apos; argument controls which quicklistNode gets returned.
+ * If &apos;after&apos;==1, returned node has elements after &apos;offset&apos;.
+ *                input node keeps elements up to &apos;offset&apos;, including &apos;offset&apos;.
+ * If &apos;after&apos;==0, returned node has elements up to &apos;offset&apos;, including &apos;offset&apos;.
+ *                input node keeps elements after &apos;offset&apos;.
+ *
+ * If &apos;after&apos;==1, returned node will have elements _after_ &apos;offset&apos;.
+ *                The returned node will have elements [OFFSET+1, END].
+ *                The input node keeps elements [0, OFFSET].
+ *
+ * If &apos;after&apos;==0, returned node will keep elements up to and including &apos;offset&apos;.
+ *                The returned node will have elements [0, OFFSET].
+ *                The input node keeps elements [OFFSET+1, END].
+ *
+ * The input node keeps all elements not taken by the returned node.
+ *
+ * Returns newly created node or NULL if split not possible. */</doc>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='104' type='redisAsyncContext * redisAsyncConnect(const char * ip, int port)'/>
+<def f='codebrowser/deps/hiredis/async.c' l='153' ll='169' type='redisAsyncContext * redisAsyncConnect(const char * ip, int port)'/>
+<doc f='codebrowser/deps/hiredis/async.h' l='103'>/* Functions that proxy to hiredis */</doc>

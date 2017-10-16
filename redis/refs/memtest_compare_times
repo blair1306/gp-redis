@@ -1,0 +1,13 @@
+<def f='codebrowser/src/memtest.c' l='218' ll='230' type='int memtest_compare_times(unsigned long * m, size_t bytes, int pass, int times, int interactive)'/>
+<use f='codebrowser/src/memtest.c' l='251' u='c' c='memtest_test'/>
+<use f='codebrowser/src/memtest.c' l='256' u='c' c='memtest_test'/>
+<use f='codebrowser/src/memtest.c' l='261' u='c' c='memtest_test'/>
+<use f='codebrowser/src/memtest.c' l='311' u='c' c='memtest_preserving_test'/>
+<use f='codebrowser/src/memtest.c' l='312' u='c' c='memtest_preserving_test'/>
+<use f='codebrowser/src/memtest.c' l='314' u='c' c='memtest_preserving_test'/>
+<use f='codebrowser/src/memtest.c' l='317' u='c' c='memtest_preserving_test'/>
+<use f='codebrowser/src/memtest.c' l='318' u='c' c='memtest_preserving_test'/>
+<use f='codebrowser/src/memtest.c' l='320' u='c' c='memtest_preserving_test'/>
+<use f='codebrowser/src/memtest.c' l='323' u='c' c='memtest_preserving_test'/>
+<use f='codebrowser/src/memtest.c' l='324' u='c' c='memtest_preserving_test'/>
+<use f='codebrowser/src/memtest.c' l='326' u='c' c='memtest_preserving_test'/>

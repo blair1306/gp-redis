@@ -1,0 +1,22 @@
+<dec f='include/x86_64-linux-gnu/bits/mathcalls.h' l='234' macro='1' type='int __isnanl(long double __value)'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='596' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='601' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='607' macro='1' u='c'/>
+<use f='codebrowser/src/object.c' l='566' macro='1' u='c'/>
+<use f='codebrowser/src/object.c' l='604' macro='1' u='c'/>
+<use f='codebrowser/src/rdb.c' l='515' macro='1' u='c'/>
+<use f='codebrowser/src/sort.c' l='470' macro='1' u='c'/>
+<use f='codebrowser/src/t_string.c' l='412' macro='1' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='137' macro='1' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='478' macro='1' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='482' macro='1' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='490' macro='1' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='494' macro='1' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='1270' macro='1' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='1289' macro='1' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='1335' macro='1' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='2102' macro='1' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='2235' macro='1' u='c'/>
+<use f='codebrowser/src/t_zset.c' l='2282' macro='1' u='c'/>
+<use f='codebrowser/src/util.c' l='444' macro='1' u='c'/>
+<use f='codebrowser/src/util.c' l='457' macro='1' u='c'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/private_namespace.h' l='313'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/mutex.h' l='59' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1268' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/mutex.c' l='140' u='c'/>

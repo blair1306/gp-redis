@@ -1,0 +1,6 @@
+<def f='codebrowser/src/module.c' l='2901' ll='2909' type='int RM_ModuleTypeSetValue(RedisModuleKey * key, moduleType * mt, void * value)'/>
+<use f='codebrowser/src/module.c' l='3969' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='2897'>/* If the key is open for writing, set the specified module type object
+ * as the value of the key, deleting the old value if any.
+ * On success REDISMODULE_OK is returned. If the key is not open for
+ * writing or there is an active iterator, REDISMODULE_ERR is returned. */</doc>

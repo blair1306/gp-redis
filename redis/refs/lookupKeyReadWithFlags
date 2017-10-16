@@ -1,0 +1,26 @@
+<dec f='codebrowser/src/server.h' l='1714' type='robj * lookupKeyReadWithFlags(redisDb * db, robj * key, int flags)'/>
+<def f='codebrowser/src/db.c' l='91' ll='126' type='robj * lookupKeyReadWithFlags(redisDb * db, robj * key, int flags)'/>
+<use f='codebrowser/src/db.c' l='131' u='c' c='lookupKeyRead'/>
+<use f='codebrowser/src/db.c' l='781' u='c' c='typeCommand'/>
+<doc f='codebrowser/src/db.c' l='70'>/* Lookup a key for read operations, or return NULL if the key is not found
+ * in the specified DB.
+ *
+ * As a side effect of calling this function:
+ * 1. A key gets expired if it reached it&apos;s TTL.
+ * 2. The key last access time is updated.
+ * 3. The global keys hits/misses stats are updated (reported in INFO).
+ *
+ * This API should not be used when we write to the key after obtaining
+ * the object linked to the key, but only for read only operations.
+ *
+ * Flags change the behavior of this command:
+ *
+ *  LOOKUP_NONE (or zero): no special flags are passed.
+ *  LOOKUP_NOTOUCH: don&apos;t alter the last access time of the key.
+ *
+ * Note: this function also returns NULL is the key is logically expired
+ * but still existing, in case this is a slave, since this API is called only
+ * for read operations. Even if the key expiry is master-driven, we can
+ * correctly report a key is expired on slaves even if the master is lagging
+ * expiring our key via DELs in the replication link. */</doc>
+<use f='codebrowser/src/expire.c' l='455' u='c' c='ttlGenericCommand'/>

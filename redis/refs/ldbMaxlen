@@ -1,0 +1,4 @@
+<def f='codebrowser/src/scripting.c' l='2209' ll='2221' type='void ldbMaxlen(sds * argv, int argc)'/>
+<use f='codebrowser/src/scripting.c' l='2293' u='c' c='ldbRepl'/>
+<doc f='codebrowser/src/scripting.c' l='2207'>/* Impleemnts the debugger &quot;maxlen&quot; command. It just queries or sets the
+ * ldb.maxlen variable. */</doc>

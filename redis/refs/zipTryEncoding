@@ -1,0 +1,6 @@
+<def f='codebrowser/src/ziplist.c' l='480' ll='504' type='int zipTryEncoding(unsigned char * entry, unsigned int entrylen, long long * v, unsigned char * encoding)'/>
+<use f='codebrowser/src/ziplist.c' l='765' u='c' c='__ziplistInsert'/>
+<use f='codebrowser/src/ziplist.c' l='1098' u='c' c='ziplistCompare'/>
+<use f='codebrowser/src/ziplist.c' l='1132' u='c' c='ziplistFind'/>
+<doc f='codebrowser/src/ziplist.c' l='478'>/* Check if string pointed to by &apos;entry&apos; can be encoded as an integer.
+ * Stores the integer value in &apos;v&apos; and its encoding in &apos;encoding&apos;. */</doc>

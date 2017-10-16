@@ -1,0 +1,22 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='260' type='arena_run_t *'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1948' u='w' c='arena_bin_malloc_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1950' u='r' c='arena_bin_malloc_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1950' u='r' c='arena_bin_malloc_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1956' u='r' c='arena_bin_malloc_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1957' u='r' c='arena_bin_malloc_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1981' u='w' c='arena_bin_malloc_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1983' u='r' c='arena_bin_malloc_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1985' u='r' c='arena_bin_malloc_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2005' u='r' c='je_arena_tcache_fill_small'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2161' u='r' c='je_arena_malloc_small'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2414' u='r' c='arena_dissociate_bin_run'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2415' u='w' c='arena_dissociate_bin_run'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2437' u='r' c='arena_dalloc_bin_run'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2462' u='r' c='arena_bin_lower_run'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2464' u='r' c='arena_bin_lower_run'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2465' u='r' c='arena_bin_lower_run'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2466' u='w' c='arena_bin_lower_run'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2497' u='r' c='arena_dalloc_bin_locked_impl'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3081' u='w' c='je_arena_new'/>
+<offset>320</offset>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2614' u='r' c='je_get_defrag_hint'/>

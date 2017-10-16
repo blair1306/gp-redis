@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1297' type='double'/>
+<use f='codebrowser/src/rdb.c' l='554' u='r' c='rdbLoadDoubleValue'/>
+<def f='codebrowser/src/server.c' l='67' type='double'/>
+<use f='codebrowser/src/server.c' l='1494' u='w' c='initServerConfig'/>

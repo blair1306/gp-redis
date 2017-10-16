@@ -1,0 +1,11 @@
+<def f='codebrowser/src/hyperloglog.c' l='572' ll='624' type='int hllSparseToDense(robj * o)'/>
+<use f='codebrowser/src/hyperloglog.c' l='873' u='c' c='hllSparseAdd'/>
+<use f='codebrowser/src/hyperloglog.c' l='1318' u='c' c='pfmergeCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1469' u='c' c='pfdebugCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1533' u='c' c='pfdebugCommand'/>
+<doc f='codebrowser/src/hyperloglog.c' l='566'>/* Convert the HLL with sparse representation given as input in its dense
+ * representation. Both representations are represented by SDS strings, and
+ * the input representation is freed as a side effect.
+ *
+ * The function returns C_OK if the sparse representation was valid,
+ * otherwise C_ERR is returned if the representation was corrupted. */</doc>

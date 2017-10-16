@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/cluster.c' l='54' type='void clusterSendFail(char * nodename)'/>
+<use f='codebrowser/src/cluster.c' l='1193' u='c' c='markNodeAsFailingIfNeeded'/>
+<def f='codebrowser/src/cluster.c' l='2509' ll='2516' type='void clusterSendFail(char * nodename)'/>
+<doc f='codebrowser/src/cluster.c' l='2504'>/* Send a FAIL message to all the nodes we are able to contact.
+ * The FAIL message is sent when we detect that a node is failing
+ * (CLUSTER_NODE_PFAIL) and we also receive a gossip confirmation of this:
+ * we switch the node state to CLUSTER_NODE_FAIL and ask all the other
+ * nodes to do the same ASAP. */</doc>

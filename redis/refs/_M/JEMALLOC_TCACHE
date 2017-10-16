@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='138'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='95' u='a'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='133'>/*
+ * JEMALLOC_TCACHE enables a thread-specific caching layer for small objects.
+ * This makes it possible to allocate/deallocate objects without any locking
+ * when the cache is in the steady state.
+ */</doc>

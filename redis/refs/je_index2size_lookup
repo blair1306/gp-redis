@@ -1,0 +1,3 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='612' macro='1' type='size_t je_index2size_lookup(szind_t index)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='624' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='655' macro='1' u='c'/>

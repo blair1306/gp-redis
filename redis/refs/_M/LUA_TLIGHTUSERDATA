@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='76'/>
+<use f='codebrowser/deps/lua/src/lapi.c' l='389' u='c'/>
+<use f='codebrowser/deps/lua/src/lapi.c' l='408' u='c'/>
+<use f='codebrowser/deps/lua/src/lobject.c' l='81' u='c'/>
+<use f='codebrowser/deps/lua/src/ltable.c' l='108' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='690' u='c'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='262' u='c'/>
+<use f='codebrowser/src/scripting.c' l='1919' u='c'/>
+<use f='codebrowser/src/scripting.c' l='1926' u='c'/>

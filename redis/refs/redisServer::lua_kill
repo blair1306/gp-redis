@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1179' type='int'/>
+<offset>22784</offset>
+<doc f='codebrowser/src/server.h' l='1179'>/* Kill the script if true. */</doc>
+<use f='codebrowser/src/scripting.c' l='1199' u='r' c='luaMaskCountHook'/>
+<use f='codebrowser/src/scripting.c' l='1305' u='w' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1464' u='w' c='scriptCommand'/>

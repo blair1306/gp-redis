@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/rdb.h' l='139' type='void backgroundSaveDoneHandler(int exitcode, int bysignal)'/>
+<def f='codebrowser/src/rdb.c' l='1798' ll='1810' type='void backgroundSaveDoneHandler(int exitcode, int bysignal)'/>
+<doc f='codebrowser/src/rdb.c' l='1797'>/* When a background RDB saving/transfer terminates, call the right handler. */</doc>
+<use f='codebrowser/src/server.c' l='1062' u='c' c='serverCron'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='638' type='mstime_t'/>
+<offset>0</offset>
+<doc f='codebrowser/src/server.h' l='637'>/* Generic fields. */</doc>
+<doc f='codebrowser/src/server.h' l='638'>/* Blocking operation timeout. If UNIX current time
+                             * is &gt; timeout then the operation timed out. */</doc>
+<use f='codebrowser/src/module.c' l='3422' u='w' c='RM_BlockClient'/>
+<use f='codebrowser/src/networking.c' l='126' u='w' c='createClient'/>
+<use f='codebrowser/src/replication.c' l='2412' u='w' c='waitCommand'/>
+<use f='codebrowser/src/server.c' l='796' u='r' c='clientsCronHandleTimeout'/>
+<use f='codebrowser/src/server.c' l='796' u='r' c='clientsCronHandleTimeout'/>
+<use f='codebrowser/src/t_list.c' l='630' u='w' c='blockForKeys'/>

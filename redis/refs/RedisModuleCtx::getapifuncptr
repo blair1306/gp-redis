@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/module.c' l='102' type='void *'/>
+<offset>0</offset>
+<doc f='codebrowser/src/module.c' l='102'>/* NOTE: Must be the first field. */</doc>

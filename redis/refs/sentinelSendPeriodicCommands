@@ -1,0 +1,4 @@
+<def f='codebrowser/src/sentinel.c' l='2561' ll='2618' type='void sentinelSendPeriodicCommands(sentinelRedisInstance * ri)'/>
+<use f='codebrowser/src/sentinel.c' l='4234' u='c' c='sentinelHandleRedisInstance'/>
+<doc f='codebrowser/src/sentinel.c' l='2559'>/* Send periodic PING, INFO, and PUBLISH to the Hello channel to
+ * the specified master or slave instance. */</doc>

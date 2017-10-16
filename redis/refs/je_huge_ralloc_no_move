@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/huge.h' l='16' macro='1' type='_Bool je_huge_ralloc_no_move(void * ptr, size_t oldsize, size_t usize_min, size_t usize_max, _Bool zero)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2829' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/huge.c' l='283' macro='1' type='_Bool je_huge_ralloc_no_move(void * ptr, size_t oldsize, size_t usize_min, size_t usize_max, _Bool zero)'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='339' macro='1' u='c'/>

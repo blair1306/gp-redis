@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/bits/resource.h' l='142' type='rlim_t'/>
+<offset>0</offset>
+<doc f='include/x86_64-linux-gnu/bits/resource.h' l='141'>/* The current (soft) limit.  */</doc>
+<use f='codebrowser/src/server.c' l='1595' u='r' c='adjustOpenFilesLimit'/>
+<use f='codebrowser/src/server.c' l='1609' u='w' c='adjustOpenFilesLimit'/>

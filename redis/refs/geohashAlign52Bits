@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/geohash_helper.h' l='60' type='GeoHashFix52Bits geohashAlign52Bits(const GeoHashBits hash)'/>
+<use f='codebrowser/src/geo.c' l='310' u='c' c='scoresOfGeoHashBox'/>
+<use f='codebrowser/src/geo.c' l='312' u='c' c='scoresOfGeoHashBox'/>
+<use f='codebrowser/src/geo.c' l='438' u='c' c='geoaddCommand'/>
+<def f='codebrowser/src/geohash_helper.c' l='204' ll='208' type='GeoHashFix52Bits geohashAlign52Bits(const GeoHashBits hash)'/>

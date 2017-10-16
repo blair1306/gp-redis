@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/siginfo.h' l='109' type='void *'/>
+<offset>0</offset>
+<doc f='include/x86_64-linux-gnu/bits/siginfo.h' l='109'>/* Faulting insn/memory ref.  */</doc>
+<use f='codebrowser/src/debug.c' l='1030' macro='1' u='r'/>

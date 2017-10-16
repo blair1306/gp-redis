@@ -1,0 +1,7 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='81' ll='91'/>
+<size>104</size>
+<mbr r='rtree_s::alloc' o='0' t='rtree_node_alloc_t *'/>
+<mbr r='rtree_s::dalloc' o='64' t='rtree_node_dalloc_t *'/>
+<mbr r='rtree_s::height' o='128' t='unsigned int'/>
+<mbr r='rtree_s::start_level' o='160' t='unsigned int [4]'/>
+<mbr r='rtree_s::levels' o='320' t='rtree_level_t [4]'/>

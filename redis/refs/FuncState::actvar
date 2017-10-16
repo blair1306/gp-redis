@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/lua/src/lparser.h' l='74' type='unsigned short [200]'/>
+<offset>1568</offset>
+<doc f='codebrowser/deps/lua/src/lparser.h' l='74'>/* declared-variable stack */</doc>
+<use f='codebrowser/deps/lua/src/lparser.c' l='163' u='w' c='new_localvar'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='32' u='r' c='adjustlocalvars'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='32' u='r' c='removevars'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='32' u='r' c='searchvar'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='32' u='r' c='localfunc'/>

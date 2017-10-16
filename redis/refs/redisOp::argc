@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='796' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/src/server.c' l='2025' u='w' c='redisOpArrayAppend'/>
+<use f='codebrowser/src/server.c' l='2038' u='r' c='redisOpArrayFree'/>
+<use f='codebrowser/src/server.c' l='2291' u='r' c='call'/>

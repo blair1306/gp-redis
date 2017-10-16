@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='92'/>
+<use f='codebrowser/src/server.h' l='752' u='c'/>
+<use f='codebrowser/src/object.c' l='126' u='c'/>
+<use f='codebrowser/src/object.c' l='408' u='c'/>
+<use f='codebrowser/src/server.c' l='1319' u='c'/>
+<use f='codebrowser/src/t_string.c' l='358' u='c'/>

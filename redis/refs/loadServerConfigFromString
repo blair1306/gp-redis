@@ -1,0 +1,2 @@
+<def f='codebrowser/src/config.c' l='172' ll='752' type='void loadServerConfigFromString(char * config)'/>
+<use f='codebrowser/src/config.c' l='787' u='c' c='loadServerConfig'/>

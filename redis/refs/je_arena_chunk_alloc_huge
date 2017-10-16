@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='437' macro='1' type='void * je_arena_chunk_alloc_huge(arena_t * arena, size_t usize, size_t alignment, _Bool * zero)'/>
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='899' macro='1' type='void * je_arena_chunk_alloc_huge(arena_t * arena, size_t usize, size_t alignment, _Bool * zero)'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='76' macro='1' u='c'/>

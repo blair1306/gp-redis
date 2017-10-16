@@ -1,0 +1,3 @@
+<def f='codebrowser/src/config.c' l='1704' ll='1718' type='void rewriteConfigSaveOption(struct rewriteConfigState * state)'/>
+<use f='codebrowser/src/config.c' l='1967' u='c' c='rewriteConfig'/>
+<doc f='codebrowser/src/config.c' l='1703'>/* Rewrite the save option. */</doc>

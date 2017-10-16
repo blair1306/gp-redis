@@ -1,0 +1,5 @@
+<def f='codebrowser/src/memtest.c' l='60' type='size_t'/>
+<use f='codebrowser/src/memtest.c' l='73' u='w' c='memtest_progress_start'/>
+<use f='codebrowser/src/memtest.c' l='85' u='r' c='memtest_progress_step'/>
+<use f='codebrowser/src/memtest.c' l='86' u='w' c='memtest_progress_step'/>
+<doc f='codebrowser/src/memtest.c' l='60'>/* Printed chars in screen-wide progress bar. */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1576' type='unsigned char * zzlFirstInRange(unsigned char * zl, zrangespec * range)'/>
+<dec f='codebrowser/src/geo.c' l='37' type='unsigned char * zzlFirstInRange(unsigned char * zl, zrangespec * range)'/>
+<use f='codebrowser/src/geo.c' l='240' u='c' c='geoGetPointsInRange'/>
+<doc f='codebrowser/src/geo.c' l='35'>/* Things exported from t_zset.c only for geo.c, since it is the only other
+ * part of Redis that requires close zset introspection. */</doc>
+<use f='codebrowser/src/module.c' l='1814' u='c' c='zsetInitScoreRange'/>
+<def f='codebrowser/src/t_zset.c' l='796' ll='820' type='unsigned char * zzlFirstInRange(unsigned char * zl, zrangespec * range)'/>
+<use f='codebrowser/src/t_zset.c' l='1041' u='c' c='zzlDeleteRangeByScore'/>
+<use f='codebrowser/src/t_zset.c' l='2537' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2692' u='c' c='zcountCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='794'>/* Find pointer to the first element contained in the specified range.
+ * Returns NULL when no element is contained in the range. */</doc>

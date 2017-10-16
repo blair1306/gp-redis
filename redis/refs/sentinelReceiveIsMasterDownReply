@@ -1,0 +1,4 @@
+<def f='codebrowser/src/sentinel.c' l='3508' ll='3544' type='void sentinelReceiveIsMasterDownReply(redisAsyncContext * c, void * reply, void * privdata)'/>
+<use f='codebrowser/src/sentinel.c' l='3583' u='r' c='sentinelAskMasterStateToOtherSentinels'/>
+<doc f='codebrowser/src/sentinel.c' l='3506'>/* Receive the SENTINEL is-master-down-by-addr reply, see the
+ * sentinelAskMasterStateToOtherSentinels() function for more information. */</doc>

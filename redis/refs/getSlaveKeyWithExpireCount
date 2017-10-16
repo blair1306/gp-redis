@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1798' type='size_t getSlaveKeyWithExpireCount()'/>
+<def f='codebrowser/src/expire.c' l='352' ll='355' type='size_t getSlaveKeyWithExpireCount()'/>
+<doc f='codebrowser/src/expire.c' l='351'>/* Return the number of keys we are tracking. */</doc>
+<use f='codebrowser/src/server.c' l='3118' u='c' c='genRedisInfoString'/>

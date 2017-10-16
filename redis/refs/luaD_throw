@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/lua/src/ldo.h' l='51' type='void luaD_throw(lua_State * L, int errcode)'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='621' u='c' c='luaG_errormsg'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='627' u='c' c='luaG_errormsg'/>
+<def f='codebrowser/deps/lua/src/ldo.c' l='94' ll='108' type='void luaD_throw(lua_State * L, int errcode)'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='171' u='c' c='growCI'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='375' u='c' c='luaD_call'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='108' u='c' c='luaX_lexerror'/>
+<use f='codebrowser/deps/lua/src/lmem.c' l='81' u='c' c='luaM_realloc_'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='39' u='c' c='error'/>

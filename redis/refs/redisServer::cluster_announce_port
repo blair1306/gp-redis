@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1161' type='int'/>
+<offset>22144</offset>
+<doc f='codebrowser/src/server.h' l='1161'>/* base port to announce on cluster bus. */</doc>
+<use f='codebrowser/src/cluster.c' l='490' u='r' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='491' u='r' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='2223' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2224' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/config.c' l='591' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='592' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='593' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1106' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1258' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1953' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='1433' u='w' c='initServerConfig'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='877' type='char *'/>
+<offset>128</offset>
+<doc f='codebrowser/src/server.h' l='877'>/* Absolute executable file path. */</doc>
+<use f='codebrowser/src/server.c' l='1350' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1549' u='r' c='restartServer'/>
+<use f='codebrowser/src/server.c' l='1570' u='r' c='restartServer'/>
+<use f='codebrowser/src/server.c' l='2883' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2883' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3722' u='w' c='main'/>

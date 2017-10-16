@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/bio.c' l='88' type='void lazyfreeFreeDatabaseFromBioThread(dict * ht1, dict * ht2)'/>
+<use f='codebrowser/src/bio.c' l='199' u='c' c='bioProcessBackgroundJobs'/>
+<def f='codebrowser/src/lazyfree.c' l='122' ll='127' type='void lazyfreeFreeDatabaseFromBioThread(dict * ht1, dict * ht2)'/>
+<doc f='codebrowser/src/lazyfree.c' l='117'>/* Release a database from the lazyfree thread. The &apos;db&apos; pointer is the
+ * database which was substitutied with a fresh one in the main thread
+ * when the database was logically deleted. &apos;sl&apos; is a skiplist used by
+ * Redis Cluster in order to take the hash slots -&gt; keys mapping. This
+ * may be NULL if Redis Cluster is disabled. */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/scripting.c' l='52' type='void luaLdbLineHook(lua_State * lua, lua_Debug * ar)'/>
+<use f='codebrowser/src/scripting.c' l='1312' u='r' c='evalGenericCommand'/>
+<def f='codebrowser/src/scripting.c' l='2343' ll='2388' type='void luaLdbLineHook(lua_State * lua, lua_Debug * ar)'/>
+<doc f='codebrowser/src/scripting.c' l='2341'>/* This is the core of our Lua debugger, called each time Lua is about
+ * to start executing a new line. */</doc>

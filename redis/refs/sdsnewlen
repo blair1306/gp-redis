@@ -1,0 +1,96 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='217' type='sds sdsnewlen(const void * init, size_t initlen)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='387' u='c' c='__redisGetSubscribeCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='613' u='c' c='__redisAsyncCommand'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='81' ll='135' type='sds sdsnewlen(const void * init, size_t initlen)'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='140' u='c' c='sdsempty'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='146' u='c' c='sdsnew'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='151' u='c' c='sdsdup'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='497' u='c' c='sdsfromlonglong'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='818' u='c' c='sdssplitlen'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='826' u='c' c='sdssplitlen'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='69'>/* Create a new sds string with the content specified by the &apos;init&apos; pointer
+ * and &apos;initlen&apos;.
+ * If NULL is used for &apos;init&apos; the string is initialized with zero bytes.
+ *
+ * The string is always null-termined (all the sds strings are, always) so
+ * even if you create an sds string with:
+ *
+ * mystring = sdsnewlen(&quot;abc&quot;,3);
+ *
+ * You can print the string with printf() as there is an implicit \0 at the
+ * end of the string. However the string is binary safe and can contain
+ * \0 characters in the middle, as the length is stored in the sds header. */</doc>
+<dec f='codebrowser/src/sds.h' l='217' type='sds sdsnewlen(const void * init, size_t initlen)'/>
+<use f='codebrowser/src/aof.c' l='719' u='c' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/bitops.c' l='483' u='c' c='lookupStringForBitCommand'/>
+<use f='codebrowser/src/bitops.c' l='658' u='c' c='bitopCommand'/>
+<use f='codebrowser/src/cluster.c' l='548' u='c' c='clusterReset'/>
+<use f='codebrowser/src/cluster.c' l='852' u='c' c='freeClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='868' u='c' c='clusterAddNode'/>
+<use f='codebrowser/src/cluster.c' l='914' u='c' c='clusterLookupNode'/>
+<use f='codebrowser/src/cluster.c' l='929' u='c' c='clusterRenameNode'/>
+<use f='codebrowser/src/cluster.c' l='1120' u='c' c='clusterBlacklistAddNode'/>
+<use f='codebrowser/src/cluster.c' l='1137' u='c' c='clusterBlacklistExists'/>
+<use f='codebrowser/src/debug.c' l='514' u='c' c='debugCommand'/>
+<use f='codebrowser/src/evict.c' l='149' u='c' c='evictionPoolAlloc'/>
+<use f='codebrowser/src/geo.c' l='256' u='c' c='geoGetPointsInRange'/>
+<use f='codebrowser/src/hyperloglog.c' l='585' u='c' c='hllSparseToDense'/>
+<use f='codebrowser/src/hyperloglog.c' l='1095' u='c' c='createHLLObject'/>
+<use f='codebrowser/src/hyperloglog.c' l='1347' u='c' c='pfselftestCommand'/>
+<use f='codebrowser/src/module.c' l='913' u='c' c='moduleAssertUnsharedString'/>
+<use f='codebrowser/src/module.c' l='994' u='c' c='replyWithStatus'/>
+<use f='codebrowser/src/module.c' l='1141' u='c' c='RM_ReplyWithCallReply'/>
+<use f='codebrowser/src/module.c' l='1568' u='c' c='RM_StringTruncate'/>
+<use f='codebrowser/src/module.c' l='2634' u='c' c='RM_Call'/>
+<use f='codebrowser/src/networking.c' l='284' u='c' c='_addReplyStringToList'/>
+<use f='codebrowser/src/networking.c' l='298' u='c' c='_addReplyStringToList'/>
+<use f='codebrowser/src/networking.c' l='440' u='c' c='setDeferredMultiBulkLength'/>
+<use f='codebrowser/src/networking.c' l='1070' u='c' c='processInlineBuffer'/>
+<use f='codebrowser/src/networking.c' l='1264' u='c' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1543' u='c' c='getAllClientsInfoString'/>
+<use f='codebrowser/src/notify.c' l='108' u='c' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/notify.c' l='120' u='c' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/object.c' l='78' u='c' c='createRawStringObject'/>
+<use f='codebrowser/src/rdb.c' l='257' u='c' c='rdbLoadIntegerObject'/>
+<use f='codebrowser/src/rdb.c' l='348' u='c' c='rdbLoadLzfStringObject'/>
+<use f='codebrowser/src/rdb.c' l='474' u='c' c='rdbGenericLoadStringObject'/>
+<use f='codebrowser/src/redis-cli.c' l='418' u='c' c='completionCallback'/>
+<use f='codebrowser/src/redis-cli.c' l='460' u='c' c='hintsCallback'/>
+<use f='codebrowser/src/redis-cli.c' l='1226' u='c' c='cliSplitArgs'/>
+<use f='codebrowser/src/redis-cli.c' l='1227' u='c' c='cliSplitArgs'/>
+<use f='codebrowser/src/replication.c' l='387' u='c' c='addReplyReplicationBacklog'/>
+<use f='codebrowser/src/scripting.c' l='567' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1174' u='c' c='luaCreateFunction'/>
+<use f='codebrowser/src/scripting.c' l='1447' u='c' c='scriptCommand'/>
+<use f='codebrowser/src/scripting.c' l='1799' u='c' c='ldbReplParseCommand'/>
+<def f='codebrowser/src/sds.c' l='84' ll='138' type='sds sdsnewlen(const void * init, size_t initlen)'/>
+<use f='codebrowser/src/sds.c' l='143' u='c' c='sdsempty'/>
+<use f='codebrowser/src/sds.c' l='149' u='c' c='sdsnew'/>
+<use f='codebrowser/src/sds.c' l='154' u='c' c='sdsdup'/>
+<use f='codebrowser/src/sds.c' l='500' u='c' c='sdsfromlonglong'/>
+<use f='codebrowser/src/sds.c' l='823' u='c' c='sdssplitlen'/>
+<use f='codebrowser/src/sds.c' l='831' u='c' c='sdssplitlen'/>
+<doc f='codebrowser/src/sds.c' l='72'>/* Create a new sds string with the content specified by the &apos;init&apos; pointer
+ * and &apos;initlen&apos;.
+ * If NULL is used for &apos;init&apos; the string is initialized with zero bytes.
+ *
+ * The string is always null-termined (all the sds strings are, always) so
+ * even if you create an sds string with:
+ *
+ * mystring = sdsnewlen(&quot;abc&quot;,3);
+ *
+ * You can print the string with printf() as there is an implicit \0 at the
+ * end of the string. However the string is binary safe and can contain
+ * \0 characters in the middle, as the length is stored in the sds header. */</doc>
+<use f='codebrowser/src/sentinel.c' l='2010' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2015' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/slowlog.c' l='69' u='c' c='slowlogCreateEntry'/>
+<use f='codebrowser/src/t_hash.c' l='447' u='c' c='hashTypeCurrentObjectNewSds'/>
+<use f='codebrowser/src/t_hash.c' l='621' u='c' c='hincrbyfloatCommand'/>
+<use f='codebrowser/src/t_string.c' l='209' u='c' c='setrangeCommand'/>
+<use f='codebrowser/src/t_zset.c' l='532' u='c' c='zslParseLexRangeItem'/>
+<use f='codebrowser/src/t_zset.c' l='536' u='c' c='zslParseLexRangeItem'/>
+<use f='codebrowser/src/t_zset.c' l='699' u='c' c='ziplistGetObject'/>
+<use f='codebrowser/src/t_zset.c' l='1147' u='c' c='zsetConvert'/>
+<use f='codebrowser/src/t_zset.c' l='1992' u='c' c='zuiSdsFromValue'/>
+<use f='codebrowser/src/t_zset.c' l='2013' u='c' c='zuiNewSdsFromValue'/>

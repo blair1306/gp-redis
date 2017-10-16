@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/bio.h' l='31' type='void bioInit()'/>
+<doc f='codebrowser/src/bio.h' l='30'>/* Exported API */</doc>
+<def f='codebrowser/src/bio.c' l='96' ll='129' type='void bioInit()'/>
+<doc f='codebrowser/src/bio.c' l='95'>/* Initialize the background system, spawning the thread. */</doc>
+<use f='codebrowser/src/server.c' l='1950' u='c' c='initServer'/>

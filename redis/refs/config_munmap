@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='80' ll='84' type='const _Bool'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_mmap.c' l='76' u='r' c='je_chunk_dalloc_mmap'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_mmap.c' l='79' u='r' c='je_chunk_dalloc_mmap'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1248' u='r' c='config_munmap_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='118' u='r' c='je_huge_dalloc_junk'/>

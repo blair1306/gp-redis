@@ -1,0 +1,8 @@
+<dec f='include/math.h' l='311'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='60' u='a'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='596' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='607' u='c'/>
+<use f='codebrowser/src/networking.c' l='462' u='c'/>
+<use f='codebrowser/src/t_string.c' l='412' u='c'/>
+<use f='codebrowser/src/util.c' l='459' u='c'/>
+<use f='codebrowser/src/util.c' l='503' u='c'/>

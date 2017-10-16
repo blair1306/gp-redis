@@ -1,0 +1,5 @@
+<def f='codebrowser/src/cluster.c' l='4618' ll='4645' type='void createDumpPayload(rio * payload, robj * o)'/>
+<use f='codebrowser/src/cluster.c' l='4684' u='c' c='dumpCommand'/>
+<use f='codebrowser/src/cluster.c' l='4987' u='c' c='migrateCommand'/>
+<doc f='codebrowser/src/cluster.c' l='4616'>/* Generates a DUMP-format representation of the object &apos;o&apos;, adding it to the
+ * io stream pointed by &apos;rio&apos;. This function can&apos;t fail. */</doc>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='101' type='int redisReaderGetReply(redisReader * r, void ** reply)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='863' u='c' c='redisGetReplyFromReader'/>
+<def f='codebrowser/deps/hiredis/read.c' l='477' ll='525' type='int redisReaderGetReply(redisReader * r, void ** reply)'/>
+<use f='codebrowser/src/redis-cli.c' l='1868' u='c' c='pipeMode'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/src/server.c' l='1789' ll='1952' type='void initServer()'/>
+<use f='codebrowser/src/server.c' l='3828' u='c' c='main'/>

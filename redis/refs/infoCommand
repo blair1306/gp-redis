@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1886' type='void infoCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='253' u='r'/>
+<use f='codebrowser/src/server.c' l='253' u='r'/>
+<use f='codebrowser/src/server.c' l='253' u='r'/>
+<use f='codebrowser/src/server.c' l='253' u='r'/>
+<def f='codebrowser/src/server.c' l='3316' ll='3324' type='void infoCommand(client * c)'/>

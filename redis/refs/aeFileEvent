@@ -1,0 +1,7 @@
+<def f='codebrowser/src/ae.h' l='66' ll='71'/>
+<size>32</size>
+<doc f='codebrowser/src/ae.h' l='65'>/* File event structure */</doc>
+<mbr r='aeFileEvent::mask' o='0' t='int'/>
+<mbr r='aeFileEvent::rfileProc' o='64' t='aeFileProc *'/>
+<mbr r='aeFileEvent::wfileProc' o='128' t='aeFileProc *'/>
+<mbr r='aeFileEvent::clientData' o='192' t='void *'/>

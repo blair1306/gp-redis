@@ -1,0 +1,15 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='376' macro='1' type='prof_tdata_t * je_prof_tdata_get(tsd_t * tsd, _Bool create)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='438' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='210' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='273' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='288' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='696' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='767' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1188' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1480' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1598' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1652' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1931' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1964' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1998' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2011' macro='1' u='c'/>

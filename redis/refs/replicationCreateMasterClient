@@ -1,0 +1,6 @@
+<def f='codebrowser/src/replication.c' l='1077' ll='1090' type='void replicationCreateMasterClient(int fd, int dbid)'/>
+<use f='codebrowser/src/replication.c' l='1279' u='c' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='2169' u='c' c='replicationCacheMasterUsingMyself'/>
+<doc f='codebrowser/src/replication.c' l='1074'>/* Once we have a link with the master and the synchroniziation was
+ * performed, this function materializes the master client we store
+ * at server.master, starting from the specified file descriptor. */</doc>

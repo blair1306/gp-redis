@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1817' type='void authCommand(client * c)'/>
+<doc f='codebrowser/src/server.h' l='1816'>/* Commands prototypes */</doc>
+<use f='codebrowser/src/server.c' l='235' u='r'/>
+<use f='codebrowser/src/server.c' l='235' u='r'/>
+<use f='codebrowser/src/server.c' l='235' u='r'/>
+<use f='codebrowser/src/server.c' l='235' u='r'/>
+<use f='codebrowser/src/server.c' l='2336' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2464' u='r' c='processCommand'/>
+<def f='codebrowser/src/server.c' l='2627' ll='2637' type='void authCommand(client * c)'/>

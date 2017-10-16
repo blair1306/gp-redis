@@ -1,0 +1,12 @@
+<def f='codebrowser/deps/hiredis/sds.h' l='56' ll='61'/>
+<size>5</size>
+<mbr r='sdshdr16::len' o='0' t='uint16_t'/>
+<mbr r='sdshdr16::alloc' o='16' t='uint16_t'/>
+<mbr r='sdshdr16::flags' o='32' t='unsigned char'/>
+<mbr r='sdshdr16::buf' o='40' t='char []'/>
+<def f='codebrowser/src/sds.h' l='56' ll='61'/>
+<size>5</size>
+<mbr r='sdshdr16::len' o='0' t='uint16_t'/>
+<mbr r='sdshdr16::alloc' o='16' t='uint16_t'/>
+<mbr r='sdshdr16::flags' o='32' t='unsigned char'/>
+<mbr r='sdshdr16::buf' o='40' t='char []'/>

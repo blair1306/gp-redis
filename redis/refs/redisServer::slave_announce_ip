@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1102' type='char *'/>
+<offset>19584</offset>
+<doc f='codebrowser/src/server.h' l='1102'>/* Give the master this ip address. */</doc>
+<use f='codebrowser/src/config.c' l='680' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='681' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='983' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='984' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1219' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1219' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1975' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/replication.c' l='1693' u='r' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1702' u='r' c='syncWithMaster'/>
+<use f='codebrowser/src/server.c' l='1473' u='w' c='initServerConfig'/>

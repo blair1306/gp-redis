@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='99' macro='1' type='void je_rtree_delete(rtree_t * rtree)'/>
+<def f='codebrowser/deps/jemalloc/src/rtree.c' l='80' macro='1' type='void je_rtree_delete(rtree_t * rtree)'/>

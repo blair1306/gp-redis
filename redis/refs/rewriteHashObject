@@ -1,0 +1,4 @@
+<def f='codebrowser/src/aof.c' l='1008' ll='1032' type='int rewriteHashObject(rio * r, robj * key, robj * o)'/>
+<use f='codebrowser/src/aof.c' l='1113' u='c' c='rewriteAppendOnlyFileRio'/>
+<doc f='codebrowser/src/aof.c' l='1006'>/* Emit the commands needed to rebuild a hash object.
+ * The function returns 0 on error, 1 on success. */</doc>

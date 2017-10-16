@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/zmalloc.h' l='49'/>
+<use f='codebrowser/src/zmalloc.h' l='64' u='a'/>
+<use f='codebrowser/src/object.c' l='978' u='c'/>
+<use f='codebrowser/src/server.c' l='2973' u='c'/>
+<use f='codebrowser/src/server.c' l='3397' u='c'/>

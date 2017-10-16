@@ -1,0 +1,15 @@
+<def f='codebrowser/src/module.c' l='1702' ll='1720' type='int RM_ZsetIncrby(RedisModuleKey * key, double score, robj * ele, int * flagsptr, double * newscore)'/>
+<use f='codebrowser/src/module.c' l='3949' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1689'>/* This function works exactly like RM_ZsetAdd(), but instead of setting
+ * a new score, the score of the existing element is incremented, or if the
+ * element does not already exist, it is added assuming the old score was
+ * zero.
+ *
+ * The input and output flags, and the return value, have the same exact
+ * meaning, with the only difference that this function will return
+ * REDISMODULE_ERR even when &apos;score&apos; is a valid double number, but adding it
+ * to the existing score resuts into a NaN (not a number) condition.
+ *
+ * This function has an additional field &apos;newscore&apos;, if not NULL is filled
+ * with the new score of the element after the increment, if no error
+ * is returned. */</doc>

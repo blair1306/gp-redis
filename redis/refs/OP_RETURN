@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/lua/src/lopcodes.h' l='194' type='30'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='70' u='r' c='luaK_ret'/>
+<doc f='codebrowser/deps/lua/src/lopcodes.h' l='194'>/*	A B	return R(A), ... ,R(A+B-2)	(see note)	*/</doc>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='283' u='r' c='precheck'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='294' c='luaG_checkopenop'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='437' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='142' u='r' c='combine'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='639' c='luaV_execute'/>

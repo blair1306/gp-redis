@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1787' type='void blockClient(client * c, int btype)'/>
+<def f='codebrowser/src/blocked.c' l='100' ll='104' type='void blockClient(client * c, int btype)'/>
+<doc f='codebrowser/src/blocked.c' l='97'>/* Block a client for the specific operation type. Once the CLIENT_BLOCKED
+ * flag is set client query buffer is not longer processed, but accumulated,
+ * and will be processed when the client is unblocked. */</doc>
+<use f='codebrowser/src/module.c' l='3430' u='c' c='RM_BlockClient'/>
+<use f='codebrowser/src/replication.c' l='2416' u='c' c='waitCommand'/>
+<use f='codebrowser/src/t_list.c' l='655' u='c' c='blockForKeys'/>

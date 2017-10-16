@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='177' type='void lua_gettable(lua_State * L, int idx)'/>
+<def f='codebrowser/deps/lua/src/lapi.c' l='534' ll='541' macro='1' type='void lua_gettable(lua_State * L, int idx)'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='265' u='c' c='ll_register'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='630' u='c' c='add_value'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='390' u='c' c='mp_encode_lua_table_as_array'/>
+<use f='codebrowser/src/scripting.c' l='238' u='c' c='luaRaiseError'/>
+<use f='codebrowser/src/scripting.c' l='252' u='c' c='luaSortArray'/>
+<use f='codebrowser/src/scripting.c' l='263' u='c' c='luaSortArray'/>
+<use f='codebrowser/src/scripting.c' l='296' u='c' c='luaReplyToRedisReply'/>
+<use f='codebrowser/src/scripting.c' l='309' u='c' c='luaReplyToRedisReply'/>
+<use f='codebrowser/src/scripting.c' l='324' u='c' c='luaReplyToRedisReply'/>
+<use f='codebrowser/src/scripting.c' l='2175' u='c' c='ldbRedis'/>

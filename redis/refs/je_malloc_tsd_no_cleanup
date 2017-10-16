@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='578' macro='1' type='void je_malloc_tsd_no_cleanup(void * arg)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='609' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='609' macro='1' u='r'/>
+<def f='codebrowser/deps/jemalloc/src/tsd.c' l='29' macro='1' type='void je_malloc_tsd_no_cleanup(void * arg)'/>

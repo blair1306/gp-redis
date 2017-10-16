@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/linenoise/linenoise.c' l='476' ll='496' type='void refreshShowHints(struct abuf * ab, struct linenoiseState * l, int plen)'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='528' u='c' c='refreshSingleLine'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='583' u='c' c='refreshMultiLine'/>
+<doc f='codebrowser/deps/linenoise/linenoise.c' l='474'>/* Helper of refreshSingleLine() and refreshMultiLine() to show hints
+ * to the right of the prompt. */</doc>

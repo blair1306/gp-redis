@@ -1,0 +1,5 @@
+<def f='codebrowser/src/t_zset.c' l='2003' ll='2017' type='sds zuiNewSdsFromValue(zsetopval * val)'/>
+<use f='codebrowser/src/t_zset.c' l='2253' u='c' c='zunionInterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2288' u='c' c='zunionInterGenericCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='2001'>/* This is different from zuiSdsFromValue since returns a new SDS string
+ * which is up to the caller to free. */</doc>

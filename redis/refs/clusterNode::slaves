@@ -1,0 +1,26 @@
+<dec f='codebrowser/src/cluster.h' l='113' type='struct clusterNode **'/>
+<use f='codebrowser/src/cluster.c' l='685' u='w' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='801' u='r' c='clusterNodeRemoveSlave'/>
+<use f='codebrowser/src/cluster.c' l='804' u='r' c='clusterNodeRemoveSlave'/>
+<use f='codebrowser/src/cluster.c' l='804' u='r' c='clusterNodeRemoveSlave'/>
+<use f='codebrowser/src/cluster.c' l='805' u='r' c='clusterNodeRemoveSlave'/>
+<use f='codebrowser/src/cluster.c' l='821' u='r' c='clusterNodeAddSlave'/>
+<use f='codebrowser/src/cluster.c' l='822' u='w' c='clusterNodeAddSlave'/>
+<use f='codebrowser/src/cluster.c' l='822' u='r' c='clusterNodeAddSlave'/>
+<use f='codebrowser/src/cluster.c' l='824' u='r' c='clusterNodeAddSlave'/>
+<use f='codebrowser/src/cluster.c' l='834' u='r' c='clusterCountNonFailingSlaves'/>
+<use f='codebrowser/src/cluster.c' l='846' u='r' c='freeClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='859' u='r' c='freeClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='2721' u='r' c='clusterGetSlaveRank'/>
+<use f='codebrowser/src/cluster.c' l='2722' u='r' c='clusterGetSlaveRank'/>
+<use f='codebrowser/src/cluster.c' l='3041' u='r' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/cluster.c' l='3042' u='r' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/cluster.c' l='3087' u='r' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/cluster.c' l='3091' u='r' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/cluster.c' l='4043' u='r' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4045' u='r' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4046' u='r' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4047' u='r' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4473' u='r' c='clusterCommand'/>
+<offset>16960</offset>
+<doc f='codebrowser/src/cluster.h' l='113'>/* pointers to slave nodes */</doc>

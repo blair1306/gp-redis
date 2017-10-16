@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk.h' l='41' macro='1' type='const char *'/>
+<def f='codebrowser/deps/jemalloc/src/chunk.c' l='7' macro='1' type='const char *'/>
+<doc f='codebrowser/deps/jemalloc/src/chunk.c' l='5'>/* Data. */</doc>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1262' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1042' macro='1' u='w'/>

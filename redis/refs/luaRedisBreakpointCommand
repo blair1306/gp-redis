@@ -1,0 +1,7 @@
+<def f='codebrowser/src/scripting.c' l='718' ll='726' type='int luaRedisBreakpointCommand(lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='990' u='r' c='scriptingInit'/>
+<doc f='codebrowser/src/scripting.c' l='713'>/* redis.breakpoint()
+ *
+ * Allows to stop execution during a debuggign session from within
+ * the Lua code implementation, like if a breakpoint was set in the code
+ * immediately after the function. */</doc>

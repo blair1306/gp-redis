@@ -1,0 +1,9 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='32' ll='63'/>
+<size>48</size>
+<mbr r='ckh_s::prng_state' o='0' t='uint32_t'/>
+<mbr r='ckh_s::count' o='64' t='size_t'/>
+<mbr r='ckh_s::lg_minbuckets' o='128' t='unsigned int'/>
+<mbr r='ckh_s::lg_curbuckets' o='160' t='unsigned int'/>
+<mbr r='ckh_s::je_hash' o='192' t='ckh_hash_t *'/>
+<mbr r='ckh_s::keycomp' o='256' t='ckh_keycomp_t *'/>
+<mbr r='ckh_s::tab' o='320' t='ckhc_t *'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1622' type='void serverLogFromHandler(int level, const char * msg)'/>
+<use f='codebrowser/src/debug.c' l='1152' u='c' c='watchdogSignalHandler'/>
+<use f='codebrowser/src/debug.c' l='1158' u='c' c='watchdogSignalHandler'/>
+<def f='codebrowser/src/server.c' l='377' ll='397' type='void serverLogFromHandler(int level, const char * msg)'/>
+<use f='codebrowser/src/server.c' l='3475' u='c' c='sigShutdownHandler'/>
+<use f='codebrowser/src/server.c' l='3482' u='c' c='sigShutdownHandler'/>
+<doc f='codebrowser/src/server.c' l='371'>/* Log a fixed message without printf-alike capabilities, in a way that is
+ * safe to call from a signal handler.
+ *
+ * We actually use this only for signals that are not fatal from the point
+ * of view of Redis. Signals that are going to kill the server anyway and
+ * where we need printf-alike features are served by serverLog(). */</doc>

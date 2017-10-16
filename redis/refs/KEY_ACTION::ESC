@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/linenoise/linenoise.c' l='171' type='27'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='279' u='r' c='getCursorPosition'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='866' c='linenoiseEdit'/>
+<doc f='codebrowser/deps/linenoise/linenoise.c' l='171'>/* Escape */</doc>

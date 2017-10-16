@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1319' type='size_t moduleCount()'/>
+<def f='codebrowser/src/module.c' l='3888' ll='3890' type='size_t moduleCount()'/>
+<doc f='codebrowser/src/module.c' l='3887'>/* Return the number of registered modules. */</doc>
+<use f='codebrowser/src/server.c' l='1233' u='c' c='beforeSleep'/>
+<use f='codebrowser/src/server.c' l='1241' u='c' c='afterSleep'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/lauxlib.h' l='82' type='lua_State * luaL_newstate()'/>
+<def f='codebrowser/deps/lua/src/lauxlib.c' l='647' ll='651' macro='1' type='lua_State * luaL_newstate()'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='380' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='193' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='897' macro='1' u='c'/>

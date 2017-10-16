@@ -1,0 +1,5 @@
+<def f='codebrowser/src/t_zset.c' l='726' ll='728' type='unsigned int zzlLength(unsigned char * zl)'/>
+<use f='codebrowser/src/t_zset.c' l='1106' u='c' c='zsetLength'/>
+<use f='codebrowser/src/t_zset.c' l='1307' u='c' c='zsetAdd'/>
+<use f='codebrowser/src/t_zset.c' l='1706' u='c' c='zremrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1896' u='c' c='zuiLength'/>

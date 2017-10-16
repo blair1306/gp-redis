@@ -1,0 +1,13 @@
+<dec f='include/unistd.h' l='213'/>
+<doc f='include/unistd.h' l='212'>/* Standard file descriptors.  */</doc>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='221' u='c'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='960' u='c'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='966' u='c'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='977' u='c'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='990' u='c'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='991' u='c'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='992' u='c'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1042' u='c'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1089' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='1918' u='c'/>
+<use f='codebrowser/src/server.c' l='3385' u='c'/>

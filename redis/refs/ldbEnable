@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/scripting.c' l='50' type='void ldbEnable(client * c)'/>
+<use f='codebrowser/src/scripting.c' l='1476' u='c' c='scriptCommand'/>
+<use f='codebrowser/src/scripting.c' l='1479' u='c' c='scriptCommand'/>
+<def f='codebrowser/src/scripting.c' l='1515' ll='1526' type='void ldbEnable(client * c)'/>
+<doc f='codebrowser/src/scripting.c' l='1514'>/* Enable debug mode of Lua scripts for this client. */</doc>

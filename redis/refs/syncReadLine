@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1477' type='ssize_t syncReadLine(int fd, char * ptr, ssize_t size, long long timeout)'/>
+<use f='codebrowser/src/cluster.c' l='5021' u='c' c='migrateCommand'/>
+<use f='codebrowser/src/cluster.c' l='5032' u='c' c='migrateCommand'/>
+<use f='codebrowser/src/replication.c' l='1123' u='c' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1350' u='c' c='sendSynchronousCommand'/>
+<def f='codebrowser/src/syncio.c' l='125' ll='145' type='ssize_t syncReadLine(int fd, char * ptr, ssize_t size, long long timeout)'/>
+<doc f='codebrowser/src/syncio.c' l='120'>/* Read a line making sure that every char will not require more than &apos;timeout&apos;
+ * milliseconds to be read.
+ *
+ * On success the number of bytes read is returned, otherwise -1.
+ * On success the string is always correctly terminated with a 0 byte. */</doc>

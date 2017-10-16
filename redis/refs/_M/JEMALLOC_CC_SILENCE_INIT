@@ -1,0 +1,16 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='55'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1422' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1624' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1731' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1752' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1773' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1774' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1776' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1857' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1871' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2161' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2295' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='501' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='511' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='520' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='529' u='c'/>

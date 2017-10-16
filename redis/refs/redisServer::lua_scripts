@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1167' type='dict *'/>
+<offset>22400</offset>
+<doc f='codebrowser/src/server.h' l='1167'>/* A dictionary of SHA1 -&gt; Lua scripts */</doc>
+<use f='codebrowser/src/scripting.c' l='913' u='w' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='1067' u='r' c='scriptingRelease'/>
+<use f='codebrowser/src/scripting.c' l='1173' u='r' c='luaCreateFunction'/>
+<use f='codebrowser/src/scripting.c' l='1388' u='r' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1435' u='r' c='scriptCommand'/>
+<use f='codebrowser/src/scripting.c' l='1448' u='r' c='scriptCommand'/>

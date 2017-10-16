@@ -1,0 +1,5 @@
+<dec f='include/valgrind/memcheck.h' l='172'/>
+<doc f='include/valgrind/memcheck.h' l='168'>/* Check that memory at _qzz_addr is addressable and defined for
+   _qzz_len bytes.  If suitable addressibility and definedness are not
+   established, Valgrind prints an error message and returns the
+   address of the first offending byte.  Otherwise it returns zero. */</doc>

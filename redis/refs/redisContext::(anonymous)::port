@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='154' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='658' u='r' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/net.c' l='278' u='w' c='_redisContextConnectTcp'/>

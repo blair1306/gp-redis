@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='267' type='void sds_free(void * ptr)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='1096' type='void sds_free(void * ptr)'/>
+<dec f='codebrowser/src/sds.h' l='267' type='void sds_free(void * ptr)'/>
+<def f='codebrowser/src/sds.c' l='1101' type='void sds_free(void * ptr)'/>

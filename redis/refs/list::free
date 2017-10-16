@@ -1,0 +1,19 @@
+<dec f='codebrowser/src/adlist.h' l='51' type='void (*)(void *)'/>
+<use f='codebrowser/src/adlist.c' l='50' u='w' c='listCreate'/>
+<use f='codebrowser/src/adlist.c' l='65' u='r' c='listEmpty'/>
+<use f='codebrowser/src/adlist.c' l='65' u='r' c='listEmpty'/>
+<use f='codebrowser/src/adlist.c' l='177' u='r' c='listDelNode'/>
+<use f='codebrowser/src/adlist.c' l='177' u='r' c='listDelNode'/>
+<use f='codebrowser/src/adlist.c' l='259' u='w' c='listDup'/>
+<use f='codebrowser/src/adlist.c' l='259' u='r' c='listDup'/>
+<offset>192</offset>
+<use f='codebrowser/src/aof.c' l='75' macro='1' u='w'/>
+<use f='codebrowser/src/aof.c' l='605' macro='1' u='w'/>
+<use f='codebrowser/src/cluster.c' l='698' macro='1' u='w'/>
+<use f='codebrowser/src/db.c' l='758' macro='1' u='w'/>
+<use f='codebrowser/src/networking.c' l='123' macro='1' u='w'/>
+<use f='codebrowser/src/networking.c' l='136' macro='1' u='w'/>
+<use f='codebrowser/src/scripting.c' l='1499' macro='1' u='w'/>
+<use f='codebrowser/src/server.c' l='1863' macro='1' u='w'/>
+<use f='codebrowser/src/slowlog.c' l='117' macro='1' u='w'/>
+<use f='codebrowser/src/sort.c' l='214' macro='1' u='w'/>

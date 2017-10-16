@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='892' type='char [41]'/>
+<offset>896</offset>
+<doc f='codebrowser/src/server.h' l='892'>/* ID always different at every exec. */</doc>
+<use f='codebrowser/src/server.c' l='1345' u='r' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1346' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2877' c='genRedisInfoString'/>

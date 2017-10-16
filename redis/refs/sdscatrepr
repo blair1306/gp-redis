@@ -1,0 +1,30 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='248' type='sds sdscatrepr(sds s, const char * p, size_t len)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='856' ll='879' type='sds sdscatrepr(sds s, const char * p, size_t len)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='850'>/* Append to the sds string &quot;s&quot; an escaped string representation where
+ * all the non-printable characters (tested with isprint()) are turned into
+ * escapes in the form &quot;\n\r\a....&quot; or &quot;\x&lt;hex-number&gt;&quot;.
+ *
+ * After the call, the modified sds string is no longer valid and all the
+ * references must be substituted with the new pointer returned by the call. */</doc>
+<dec f='codebrowser/src/sds.h' l='248' type='sds sdscatrepr(sds s, const char * p, size_t len)'/>
+<use f='codebrowser/src/config.c' l='1658' u='c' c='rewriteConfigStringOption'/>
+<use f='codebrowser/src/config.c' l='1757' u='c' c='rewriteConfigNotifykeyspaceeventsOption'/>
+<use f='codebrowser/src/debug.c' l='604' u='c' c='serverLogObjectDebugInfo'/>
+<use f='codebrowser/src/networking.c' l='1405' u='c' c='readQueryFromClient'/>
+<use f='codebrowser/src/redis-cli.c' l='571' u='c' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='724' u='c' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='727' u='c' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='733' u='c' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/replication.c' l='325' u='c' c='replicationFeedMonitors'/>
+<use f='codebrowser/src/scripting.c' l='1865' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1992' u='c' c='ldbRedisProtocolToHuman_Bulk'/>
+<use f='codebrowser/src/scripting.c' l='2000' u='c' c='ldbRedisProtocolToHuman_Status'/>
+<def f='codebrowser/src/sds.c' l='861' ll='884' type='sds sdscatrepr(sds s, const char * p, size_t len)'/>
+<doc f='codebrowser/src/sds.c' l='855'>/* Append to the sds string &quot;s&quot; an escaped string representation where
+ * all the non-printable characters (tested with isprint()) are turned into
+ * escapes in the form &quot;\n\r\a....&quot; or &quot;\x&lt;hex-number&gt;&quot;.
+ *
+ * After the call, the modified sds string is no longer valid and all the
+ * references must be substituted with the new pointer returned by the call. */</doc>
+<use f='codebrowser/src/sentinel.c' l='1824' u='c' c='rewriteConfigSentinelOption'/>
+<use f='codebrowser/src/server.c' l='3792' u='c' c='main'/>

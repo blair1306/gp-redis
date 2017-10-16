@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1953' type='void pubsubCommand(client * c)'/>
+<def f='codebrowser/src/pubsub.c' l='327' ll='371' type='void pubsubCommand(client * c)'/>
+<doc f='codebrowser/src/pubsub.c' l='326'>/* PUBSUB command for Pub/Sub introspection. */</doc>
+<use f='codebrowser/src/server.c' l='268' u='r'/>
+<use f='codebrowser/src/server.c' l='268' u='r'/>
+<use f='codebrowser/src/server.c' l='268' u='r'/>
+<use f='codebrowser/src/server.c' l='268' u='r'/>

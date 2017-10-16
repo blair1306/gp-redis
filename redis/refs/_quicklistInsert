@@ -1,0 +1,7 @@
+<def f='codebrowser/src/quicklist.c' l='832' ll='940' type='void _quicklistInsert(quicklist * quicklist, quicklistEntry * entry, void * value, const size_t sz, int after)'/>
+<use f='codebrowser/src/quicklist.c' l='944' u='c' c='quicklistInsertBefore'/>
+<use f='codebrowser/src/quicklist.c' l='949' u='c' c='quicklistInsertAfter'/>
+<doc f='codebrowser/src/quicklist.c' l='828'>/* Insert a new entry before or after existing entry &apos;entry&apos;.
+ *
+ * If after==1, the new value is inserted after &apos;entry&apos;, otherwise
+ * the new value is inserted before &apos;entry&apos;. */</doc>

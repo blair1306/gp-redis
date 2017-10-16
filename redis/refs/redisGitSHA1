@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1812' type='char * redisGitSHA1()'/>
+<doc f='codebrowser/src/server.h' l='1811'>/* Git SHA1 */</doc>
+<dec f='codebrowser/src/redis-cli.c' l='131' type='char * redisGitSHA1()'/>
+<use f='codebrowser/src/redis-cli.c' l='226' u='c' c='cliVersion'/>
+<use f='codebrowser/src/redis-cli.c' l='227' u='c' c='cliVersion'/>
+<def f='codebrowser/src/release.c' l='40' ll='42' type='char * redisGitSHA1()'/>
+<use f='codebrowser/src/server.c' l='2863' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3395' u='c' c='version'/>
+<use f='codebrowser/src/server.c' l='3445' u='c' c='redisAsciiArt'/>
+<use f='codebrowser/src/server.c' l='3814' u='c' c='main'/>

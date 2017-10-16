@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='283' macro='1' type='void je_prof_alloc_rollback(tsd_t * tsd, prof_tctx_t * tctx, _Bool updated)'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1387' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1477' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1608' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1718' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2018' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2131' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2281' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='197' macro='1' type='void je_prof_alloc_rollback(tsd_t * tsd, prof_tctx_t * tctx, _Bool updated)'/>
+<doc f='codebrowser/deps/jemalloc/src/prof.c' l='194'>/******************************************************************************/</doc>

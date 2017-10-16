@@ -1,0 +1,26 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='94' ll='96' type='const _Bool'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='176' u='r' c='je_tcache_flush'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='188' u='r' c='je_tcache_enabled_get'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='206' u='r' c='je_tcache_enabled_set'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='222' u='r' c='je_tcache_get'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2981' u='r' c='je_arena_stats_merge'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3028' u='r' c='je_arena_new'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='593' u='r' c='ctl_arena_stats_smerge'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1253' u='r' c='config_tcache_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1273' u='r' c='opt_tcache_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1274' u='r' c='opt_lg_tcache_max_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1324' u='r' c='thread_arena_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1355' u='r' c='thread_tcache_enabled_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1379' u='r' c='thread_tcache_flush_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1464' u='r' c='tcache_create_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1491' u='r' c='tcache_flush_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1518' u='r' c='tcache_destroy_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1803' u='r' c='arenas_tcache_max_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1805' u='r' c='arenas_nhbins_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='2051' u='r' c='stats_arenas_i_bins_j_nfills_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='2053' u='r' c='stats_arenas_i_bins_j_nflushes_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='688' u='r' c='stats_print_atexit'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='863' u='r' c='malloc_conf_init'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1096' u='r' c='malloc_conf_init'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1204' u='r' c='malloc_init_hard_a0_locked'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='390' u='r' c='je_tcache_cleanup'/>

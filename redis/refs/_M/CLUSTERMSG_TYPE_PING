@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/cluster.h' l='88'/>
+<use f='codebrowser/src/cluster.c' l='1630' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1700' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1755' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1759' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1809' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2353' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3292' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3334' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3398' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3409' u='c'/>
+<use f='codebrowser/src/cluster.c' l='3960' u='c'/>
+<doc f='codebrowser/src/cluster.h' l='82'>/* Message types.
+ *
+ * Note that the PING, PONG and MEET messages are actually the same exact
+ * kind of packet. PONG is the reply to ping, in the exact format as a PING,
+ * while MEET is a special PING that forces the receiver to add the sender
+ * as a node (if it is not already in the list). */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1570' type='int zslDelete(zskiplist * zsl, double score, sds ele, zskiplistNode ** node)'/>
+<def f='codebrowser/src/t_zset.c' l='218' ll='245' type='int zslDelete(zskiplist * zsl, double score, sds ele, zskiplistNode ** node)'/>
+<use f='codebrowser/src/t_zset.c' l='1345' u='c' c='zsetAdd'/>
+<use f='codebrowser/src/t_zset.c' l='1403' u='c' c='zsetDel'/>
+<doc f='codebrowser/src/t_zset.c' l='210'>/* Delete an element with matching score/element from the skiplist.
+ * The function returns 1 if the node was found and deleted, otherwise
+ * 0 is returned.
+ *
+ * If &apos;node&apos; is NULL the deleted node is freed by zslFreeNode(), otherwise
+ * it is not freed (but just unlinked) and *node is set to the node pointer,
+ * so that it is possible for the caller to reuse the node (including the
+ * referenced SDS string at node-&gt;ele). */</doc>

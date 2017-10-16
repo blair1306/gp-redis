@@ -1,0 +1,5 @@
+<def f='codebrowser/src/cluster.c' l='1200' ll='1230' type='void clearNodeFailureIfNeeded(clusterNode * node)'/>
+<use f='codebrowser/src/cluster.c' l='1833' u='c' c='clusterProcessPacket'/>
+<doc f='codebrowser/src/cluster.c' l='1197'>/* This function is called only if a node is marked as FAIL, but we are able
+ * to reach it again. It checks if there are the conditions to undo the FAIL
+ * state. */</doc>

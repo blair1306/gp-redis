@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1367' type='sds catClientInfoString(sds s, client * client)'/>
+<use f='codebrowser/src/debug.c' l='893' u='c' c='logCurrentClient'/>
+<use f='codebrowser/src/networking.c' l='1112' u='c' c='setProtocolError'/>
+<use f='codebrowser/src/networking.c' l='1403' u='c' c='readQueryFromClient'/>
+<def f='codebrowser/src/networking.c' l='1489' ll='1537' type='sds catClientInfoString(sds s, client * client)'/>
+<use f='codebrowser/src/networking.c' l='1548' u='c' c='getAllClientsInfoString'/>
+<use f='codebrowser/src/networking.c' l='1911' u='c' c='asyncCloseClientOnOutputBufferLimitReached'/>
+<doc f='codebrowser/src/networking.c' l='1487'>/* Concatenate a string representing the state of a client in an human
+ * readable format, into the sds string &apos;s&apos;. */</doc>
+<use f='codebrowser/src/replication.c' l='2000' u='c' c='slaveofCommand'/>
+<use f='codebrowser/src/replication.c' l='2021' u='c' c='slaveofCommand'/>

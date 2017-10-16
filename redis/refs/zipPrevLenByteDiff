@@ -1,0 +1,18 @@
+<def f='codebrowser/src/ziplist.c' l='464' ll='468' type='int zipPrevLenByteDiff(unsigned char * p, unsigned int len)'/>
+<use f='codebrowser/src/ziplist.c' l='697' u='c' c='__ziplistDelete'/>
+<use f='codebrowser/src/ziplist.c' l='782' u='c' c='__ziplistInsert'/>
+<doc f='codebrowser/src/ziplist.c' l='449'>/* Given a pointer &apos;p&apos; to the prevlen info that prefixes an entry, this
+ * function returns the difference in number of bytes needed to encode
+ * the prevlen if the previous entry changes of size.
+ *
+ * So if A is the number of bytes used right now to encode the &apos;prevlen&apos;
+ * field.
+ *
+ * And B is the number of bytes that are needed in order to encode the
+ * &apos;prevlen&apos; if the previous element will be updated to one of size &apos;len&apos;.
+ *
+ * Then the function returns B - A
+ *
+ * So the function returns a positive number if more space is needed,
+ * a negative number if less space is needed, or zero if the same space
+ * is needed. */</doc>

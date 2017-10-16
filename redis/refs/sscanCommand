@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1879' type='void sscanCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='179' u='r'/>
+<use f='codebrowser/src/server.c' l='179' u='r'/>
+<use f='codebrowser/src/server.c' l='179' u='r'/>
+<use f='codebrowser/src/server.c' l='179' u='r'/>
+<def f='codebrowser/src/t_set.c' l='1103' ll='1111' type='void sscanCommand(client * c)'/>

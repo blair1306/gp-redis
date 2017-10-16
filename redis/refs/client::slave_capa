@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='716' type='int'/>
+<offset>2688</offset>
+<doc f='codebrowser/src/server.h' l='716'>/* Slave capabilities: SLAVE_CAPA_* bitwise OR. */</doc>
+<use f='codebrowser/src/networking.c' l='119' u='w' c='createClient'/>
+<use f='codebrowser/src/replication.c' l='516' u='r' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='719' u='r' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='719' u='r' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='719' u='r' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='742' u='r' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='753' u='r' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='807' u='w' c='replconfCommand'/>
+<use f='codebrowser/src/replication.c' l='809' u='w' c='replconfCommand'/>
+<use f='codebrowser/src/replication.c' l='952' u='r' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='953' u='r' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='2654' u='r' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2655' u='r' c='replicationCron'/>

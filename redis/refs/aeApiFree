@@ -1,0 +1,2 @@
+<def f='codebrowser/src/ae_epoll.c' l='65' ll='71' type='void aeApiFree(aeEventLoop * eventLoop)'/>
+<use f='codebrowser/src/ae.c' l='126' u='c' c='aeDeleteEventLoop'/>

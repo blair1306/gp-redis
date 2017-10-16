@@ -1,0 +1,6 @@
+<dec f='include/netinet/in.h' l='242' type='in_port_t'/>
+<offset>16</offset>
+<doc f='include/netinet/in.h' l='242'>/* Port number.  */</doc>
+<use f='codebrowser/src/anet.c' l='558' u='r' c='anetTcpAccept'/>
+<use f='codebrowser/src/anet.c' l='587' u='r' c='anetPeerToString'/>
+<use f='codebrowser/src/anet.c' l='643' u='r' c='anetSockName'/>

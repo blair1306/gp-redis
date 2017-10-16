@@ -1,0 +1,2 @@
+<def f='codebrowser/src/server.c' l='3557' ll='3561' type='void redisOutOfMemoryHandler(size_t allocation_size)'/>
+<use f='codebrowser/src/server.c' l='3710' u='r' c='main'/>

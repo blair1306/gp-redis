@@ -1,0 +1,26 @@
+<dec f='codebrowser/src/quicklist.h' l='144' type='int quicklistNext(quicklistIter * iter, quicklistEntry * node)'/>
+<use f='codebrowser/src/aof.c' l='840' u='c' c='rewriteListObject'/>
+<def f='codebrowser/src/quicklist.c' l='1117' ll='1178' type='int quicklistNext(quicklistIter * iter, quicklistEntry * entry)'/>
+<use f='codebrowser/src/quicklist.c' l='1176' u='c' c='quicklistNext'/>
+<doc f='codebrowser/src/quicklist.c' l='1096'>/* Get next element in iterator.
+ *
+ * Note: You must NOT insert into the list while iterating over it.
+ * You *may* delete from the list while iterating using the
+ * quicklistDelEntry() function.
+ * If you insert into the quicklist while iterating, you should
+ * re-create the iterator after your addition.
+ *
+ * iter = quicklistGetIterator(quicklist,&lt;direction&gt;);
+ * quicklistEntry entry;
+ * while (quicklistNext(iter, &amp;entry)) {
+ *     if (entry.value)
+ *          [[ use entry.value with entry.sz ]]
+ *     else
+ *          [[ use entry.longval ]]
+ * }
+ *
+ * Populates &apos;entry&apos; with values for this iteration.
+ * Returns 0 when iteration is complete or if iteration not possible.
+ * If return value is 0, the contents of &apos;entry&apos; are not valid.
+ */</doc>
+<use f='codebrowser/src/t_list.c' l='118' u='c' c='listTypeNext'/>

@@ -1,0 +1,12 @@
+<def f='codebrowser/src/expire.c' l='383' ll='428' type='void expireGenericCommand(client * c, long long basetime, int unit)'/>
+<use f='codebrowser/src/expire.c' l='432' u='c' c='expireCommand'/>
+<use f='codebrowser/src/expire.c' l='437' u='c' c='expireatCommand'/>
+<use f='codebrowser/src/expire.c' l='442' u='c' c='pexpireCommand'/>
+<use f='codebrowser/src/expire.c' l='447' u='c' c='pexpireatCommand'/>
+<doc f='codebrowser/src/expire.c' l='376'>/* This is the generic command implementation for EXPIRE, PEXPIRE, EXPIREAT
+ * and PEXPIREAT. Because the commad second argument may be relative or absolute
+ * the &quot;basetime&quot; argument is used to signal what the base time is (either 0
+ * for *AT variants of the command, or the current time for relative expires).
+ *
+ * unit is either UNIT_SECONDS or UNIT_MILLISECONDS, and is only used for
+ * the argv[2] parameter. The basetime is always specified in milliseconds. */</doc>

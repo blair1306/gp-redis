@@ -1,0 +1,2 @@
+<def f='codebrowser/src/object.c' l='700' ll='799' type='size_t objectComputeSize(robj * o, size_t sample_size)'/>
+<use f='codebrowser/src/object.c' l='1072' u='c' c='memoryCommand'/>

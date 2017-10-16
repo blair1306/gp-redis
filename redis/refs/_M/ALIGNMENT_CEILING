@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='333'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='702' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2295' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='332'>/* Return the smallest alignment multiple that is &gt;= s. */</doc>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='238' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='118' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_mmap.c' l='22' u='c'/>

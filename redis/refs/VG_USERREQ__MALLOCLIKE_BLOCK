@@ -1,0 +1,13 @@
+<dec f='include/valgrind/valgrind.h' l='6672' type='4865'/>
+<doc f='include/valgrind/valgrind.h' l='6670'>/* These are useful and can be interpreted by any tool that
+             tracks malloc() et al, by using vg_replace_malloc.c. */</doc>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1441' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1556' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1573' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1680' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1827' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1860' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1874' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2077' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2215' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2335' macro='1' u='r'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/cluster.h' l='261'/>
+<use f='codebrowser/src/cluster.c' l='1688' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2251' u='c'/>
+<doc f='codebrowser/src/cluster.h' l='259'>/* Message flags better specify the packet content or are used to
+ * provide some information about the node state. */</doc>

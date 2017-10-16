@@ -1,0 +1,15 @@
+<dec f='include/stdio.h' l='272' type='FILE * fopen(const char *restrict __filename, const char *restrict __modes)'/>
+<doc f='include/stdio.h' l='268'>/* Open a file and create a new stream for it.
+
+   This function is a possible cancellation point and therefore not
+   marked with __THROW.  */</doc>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1168' u='c' c='linenoiseHistorySave'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1184' u='c' c='linenoiseHistoryLoad'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='564' u='c' c='luaL_loadfile'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='165' u='c' c='io_open'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='205' u='c' c='g_iofile'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='257' u='c' c='io_lines'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='333' u='c' c='readable'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='175' u='c' c='pmain'/>
+<use f='codebrowser/src/zmalloc.c' l='323' u='c' c='zmalloc_get_smap_bytes_by_field'/>
+<use f='codebrowser/src/zmalloc.c' l='327' u='c' c='zmalloc_get_smap_bytes_by_field'/>

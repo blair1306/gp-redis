@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='248'/>
+<use f='codebrowser/src/scripting.c' l='1401' u='c'/>
+<use f='codebrowser/src/scripting.c' l='1416' u='c'/>
+<use f='codebrowser/src/scripting.c' l='1516' u='c'/>
+<use f='codebrowser/src/scripting.c' l='1532' u='c'/>

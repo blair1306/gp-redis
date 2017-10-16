@@ -1,0 +1,5 @@
+<def f='codebrowser/src/scripting.c' l='1854' ll='1935' type='sds ldbCatStackValueRec(sds s, lua_State * lua, int idx, int level)'/>
+<use f='codebrowser/src/scripting.c' l='1894' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1898' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1900' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1940' u='c' c='ldbCatStackValue'/>

@@ -1,0 +1,13 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='620' macro='1' type='size_t je_index2size(szind_t index)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='277' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='320' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1245' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='111' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='134' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2158' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2671' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3264' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='551' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1819' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1830' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='14' macro='1' u='c'/>

@@ -1,0 +1,27 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='111' macro='1' type='size_t je_extent_node_size_get(const extent_node_t * node)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='265' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1248' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1318' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1324' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1397' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1479' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='109' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='111' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='150' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='176' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='233' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='241' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='242' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='253' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='488' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='498' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='529' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='532' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='544' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='545' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='21' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='22' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='165' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='372' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='374' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='395' macro='1' u='c'/>

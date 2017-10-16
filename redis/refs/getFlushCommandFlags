@@ -1,0 +1,11 @@
+<def f='codebrowser/src/db.c' l='375' ll='387' type='int getFlushCommandFlags(client * c, int * flags)'/>
+<use f='codebrowser/src/db.c' l='395' u='c' c='flushdbCommand'/>
+<use f='codebrowser/src/db.c' l='407' u='c' c='flushallCommand'/>
+<doc f='codebrowser/src/db.c' l='367'>/* Return the set of flags to use for the emptyDb() call for FLUSHALL
+ * and FLUSHDB commands.
+ *
+ * Currently the command just attempts to parse the &quot;ASYNC&quot; option. It
+ * also checks if the command arity is wrong.
+ *
+ * On success C_OK is returned and the flags are stored in *flags, otherwise
+ * C_ERR is returned and the function sends an error to the client. */</doc>

@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1465' ll='1483' macro='1' type='void * imemalign_prof(tsd_t * tsd, size_t alignment, size_t usize)'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1524' u='c' c='imemalign'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='488' macro='1' type='_Bool je_arena_ralloc_no_move(void * ptr, size_t oldsize, size_t size, size_t extra, _Bool zero)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='1126' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='2799' macro='1' type='_Bool je_arena_ralloc_no_move(void * ptr, size_t oldsize, size_t size, size_t extra, _Bool zero)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2862' macro='1' u='c'/>

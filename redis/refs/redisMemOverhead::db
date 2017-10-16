@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='834' type='struct (anonymous struct at /home/jon/workspace/redis/deps/lua/src/../../../src/server.h:830:5) *'/>
+<offset>896</offset>
+<use f='codebrowser/src/object.c' l='803' u='r' c='freeMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='878' u='w' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='878' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='878' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='879' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='884' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='889' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='1104' u='r' c='memoryCommand'/>
+<use f='codebrowser/src/object.c' l='1109' u='r' c='memoryCommand'/>
+<use f='codebrowser/src/object.c' l='1112' u='r' c='memoryCommand'/>

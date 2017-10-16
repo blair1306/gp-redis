@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='642' type='dict *'/>
+<offset>64</offset>
+<doc f='codebrowser/src/server.h' l='641'>/* BLOCKED_LIST */</doc>
+<doc f='codebrowser/src/server.h' l='642'>/* The keys we are waiting to terminate a blocking
+                             * operation such as BLPOP. Otherwise NULL. */</doc>
+<use f='codebrowser/src/cluster.c' l='5430' u='r' c='clusterRedirectBlockedClientIfNeeded'/>
+<use f='codebrowser/src/networking.c' l='127' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='808' u='r' c='freeClient'/>
+<use f='codebrowser/src/t_list.c' l='637' u='r' c='blockForKeys'/>
+<use f='codebrowser/src/t_list.c' l='665' u='r' c='unblockClientWaitingData'/>
+<use f='codebrowser/src/t_list.c' l='665' u='r' c='unblockClientWaitingData'/>
+<use f='codebrowser/src/t_list.c' l='666' u='r' c='unblockClientWaitingData'/>
+<use f='codebrowser/src/t_list.c' l='682' u='r' c='unblockClientWaitingData'/>

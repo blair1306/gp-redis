@@ -1,0 +1,3 @@
+<def f='codebrowser/src/module.c' l='163' ll='167'/>
+<size>24</size>
+<doc f='codebrowser/src/module.c' l='162'>/* This struct holds the information about a command registered by a module.*/</doc>

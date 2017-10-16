@@ -1,0 +1,7 @@
+<def f='codebrowser/src/module.c' l='1024' ll='1026' type='int RM_ReplyWithSimpleString(RedisModuleCtx * ctx, const char * msg)'/>
+<use f='codebrowser/src/module.c' l='3906' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1019'>/* Reply with a simple string (+... \r\n in RESP protocol). This replies
+ * are suitable only when sending a small non-binary string with small
+ * overhead, like &quot;OK&quot; or similar replies.
+ *
+ * The function always returns REDISMODULE_OK. */</doc>

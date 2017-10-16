@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1012' type='int'/>
+<use f='codebrowser/src/aof.c' l='754' u='r' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='778' u='r' c='loadAppendOnlyFile'/>
+<offset>15200</offset>
+<doc f='codebrowser/src/server.h' l='1012'>/* Don&apos;t stop on unexpected AOF EOF. */</doc>
+<use f='codebrowser/src/config.c' l='483' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='999' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1303' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2031' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='1398' u='w' c='initServerConfig'/>

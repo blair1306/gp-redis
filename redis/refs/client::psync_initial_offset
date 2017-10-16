@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='710' type='long long'/>
+<offset>1856</offset>
+<doc f='codebrowser/src/server.h' l='710'>/* FULLRESYNC reply offset other slaves
+                                       copying this slave output buffer
+                                       should use. */</doc>
+<use f='codebrowser/src/replication.c' l='422' u='w' c='replicationSetupSlaveForFullResync'/>
+<use f='codebrowser/src/replication.c' l='723' u='r' c='syncCommand'/>

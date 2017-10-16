@@ -1,0 +1,30 @@
+<dec f='codebrowser/src/cluster.c' l='69' type='void clusterDoBeforeSleep(int flags)'/>
+<use f='codebrowser/src/cluster.c' l='557' u='c' c='clusterReset'/>
+<use f='codebrowser/src/cluster.c' l='998' u='c' c='clusterBumpConfigEpochWithoutConsensus'/>
+<use f='codebrowser/src/cluster.c' l='1194' u='c' c='markNodeAsFailingIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1213' u='c' c='clearNodeFailureIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1228' u='c' c='clearNodeFailureIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1493' u='c' c='clusterSetNodeAsMaster'/>
+<use f='codebrowser/src/cluster.c' l='1563' u='c' c='clusterUpdateSlotsConfigWith'/>
+<use f='codebrowser/src/cluster.c' l='1582' u='c' c='clusterUpdateSlotsConfigWith'/>
+<use f='codebrowser/src/cluster.c' l='1677' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1725' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1741' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1771' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1787' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1803' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1813' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1830' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1856' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1868' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1968' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2010' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2039' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2973' u='c' c='clusterHandleSlaveFailover'/>
+<def f='codebrowser/src/cluster.c' l='3491' ll='3493' type='void clusterDoBeforeSleep(int flags)'/>
+<use f='codebrowser/src/cluster.c' l='4114' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4164' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4261' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4415' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4453' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4576' u='c' c='clusterCommand'/>

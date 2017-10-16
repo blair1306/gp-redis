@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/cluster.c' l='52' type='void clusterReadHandler(aeEventLoop * el, int fd, void * privdata, int mask)'/>
+<use f='codebrowser/src/cluster.c' l='626' u='r' c='clusterAcceptHandler'/>
+<def f='codebrowser/src/cluster.c' l='2086' ll='2147' type='void clusterReadHandler(aeEventLoop * el, int fd, void * privdata, int mask)'/>
+<use f='codebrowser/src/cluster.c' l='3283' u='r' c='clusterCron'/>
+<doc f='codebrowser/src/cluster.c' l='2083'>/* Read data. Try to read the first field of the header first to check the
+ * full length of the packet. When a whole packet is in memory this function
+ * will call the function to process the packet. And so forth. */</doc>

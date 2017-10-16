@@ -1,0 +1,12 @@
+<def f='codebrowser/src/quicklist.c' l='613' ll='628' type='int quicklistDelIndex(quicklist * quicklist, quicklistNode * node, unsigned char ** p)'/>
+<use f='codebrowser/src/quicklist.c' l='637' u='c' c='quicklistDelEntry'/>
+<use f='codebrowser/src/quicklist.c' l='1312' u='c' c='quicklistRotate'/>
+<use f='codebrowser/src/quicklist.c' l='1365' u='c' c='quicklistPopCustom'/>
+<doc f='codebrowser/src/quicklist.c' l='605'>/* Delete one entry from list given the node for the entry and a pointer
+ * to the entry in the node.
+ *
+ * Note: quicklistDelIndex() *requires* uncompressed nodes because you
+ *       already had to get *p from an uncompressed node somewhere.
+ *
+ * Returns 1 if the entire node was deleted, 0 if node still exists.
+ * Also updates in/out param &apos;p&apos; with the next offset in the ziplist. */</doc>

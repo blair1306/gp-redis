@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='81' type='void (*)(void *)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='127' u='w' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='54' u='r' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='54' u='r' c='redisAsyncHandleWrite'/>
+<offset>256</offset>
+<use f='codebrowser/src/sentinel.c' l='347' u='w' c='redisAeAttach'/>

@@ -1,0 +1,17 @@
+<dec f='include/ctype.h' l='205'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='939' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='975' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='990' u='c'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='69' u='c'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='413' u='c'/>
+<use f='codebrowser/deps/lua/src/lobject.c' l='97' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='234' u='c'/>
+<use f='codebrowser/src/db.c' l='566' u='c'/>
+<use f='codebrowser/src/object.c' l='561' u='c'/>
+<use f='codebrowser/src/object.c' l='603' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='407' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='432' u='c'/>
+<use f='codebrowser/src/sds.c' l='944' u='c'/>
+<use f='codebrowser/src/sds.c' l='980' u='c'/>
+<use f='codebrowser/src/sds.c' l='995' u='c'/>
+<use f='codebrowser/src/util.c' l='440' u='c'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='322' type='arena_chunk_t *'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='552' u='r' c='arena_chunk_init_spare'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='554' u='r' c='arena_chunk_init_spare'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='555' u='w' c='arena_chunk_init_spare'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='654' u='r' c='arena_chunk_init_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='706' u='r' c='arena_chunk_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='741' u='r' c='arena_chunk_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='742' u='r' c='arena_chunk_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='746' u='w' c='arena_chunk_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='777' u='w' c='arena_chunk_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1346' u='r' c='arena_stash_dirty'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3049' u='w' c='je_arena_new'/>
+<offset>1600</offset>

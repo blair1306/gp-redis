@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1071' type='time_t'/>
+<offset>18240</offset>
+<doc f='codebrowser/src/server.h' l='1071'>/* Time without slaves after the backlog
+                                       gets released. */</doc>
+<use f='codebrowser/src/config.c' l='382' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='383' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1090' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1265' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1983' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/replication.c' l='2610' u='r' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2615' u='r' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2620' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='1483' u='w' c='initServerConfig'/>

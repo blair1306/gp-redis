@@ -1,0 +1,48 @@
+<dec f='codebrowser/src/server.h' l='1583' type='int zsetAdd(robj * zobj, double score, sds ele, int * flags, double * newscore)'/>
+<use f='codebrowser/src/module.c' l='1681' u='c' c='RM_ZsetAdd'/>
+<use f='codebrowser/src/module.c' l='1709' u='c' c='RM_ZsetIncrby'/>
+<def f='codebrowser/src/t_zset.c' l='1261' ll='1373' type='int zsetAdd(robj * zobj, double score, sds ele, int * flags, double * newscore)'/>
+<use f='codebrowser/src/t_zset.c' l='1577' u='c' c='zaddGenericCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='1218'>/* Add a new element or update the score of an existing element in a sorted
+ * set, regardless of its encoding.
+ *
+ * The set of flags change the command behavior. They are passed with an integer
+ * pointer since the function will clear the flags and populate them with
+ * other flags to indicate different conditions.
+ *
+ * The input flags are the following:
+ *
+ * ZADD_INCR: Increment the current element score by &apos;score&apos; instead of updating
+ *            the current element score. If the element does not exist, we
+ *            assume 0 as previous score.
+ * ZADD_NX:   Perform the operation only if the element does not exist.
+ * ZADD_XX:   Perform the operation only if the element already exist.
+ *
+ * When ZADD_INCR is used, the new score of the element is stored in
+ * &apos;*newscore&apos; if &apos;newscore&apos; is not NULL.
+ *
+ * The returned flags are the following:
+ *
+ * ZADD_NAN:     The resulting score is not a number.
+ * ZADD_ADDED:   The element was added (not present before the call).
+ * ZADD_UPDATED: The element score was updated.
+ * ZADD_NOP:     No operation was performed because of NX or XX.
+ *
+ * Return value:
+ *
+ * The function returns 1 on success, and sets the appropriate flags
+ * ADDED or UPDATED to signal what happened during the operation (note that
+ * none could be set if we re-added an element using the same score it used
+ * to have, or in the case a zero increment is used).
+ *
+ * The function returns 0 on erorr, currently only when the increment
+ * produces a NAN condition, or when the &apos;score&apos; value is NAN since the
+ * start.
+ *
+ * The commad as a side effect of adding a new element may convert the sorted
+ * set internal encoding from ziplist to hashtable+skiplist.
+ *
+ * Memory managemnet of &apos;ele&apos;:
+ *
+ * The function does not take ownership of the &apos;ele&apos; SDS string, but copies
+ * it if needed. */</doc>

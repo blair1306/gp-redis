@@ -1,0 +1,5 @@
+<def f='codebrowser/src/server.c' l='874' ll='921' type='void databasesCron()'/>
+<use f='codebrowser/src/server.c' l='1032' u='c' c='serverCron'/>
+<doc f='codebrowser/src/server.c' l='871'>/* This function handles &apos;background&apos; operations we are required to do
+ * incrementally in Redis databases, such as active key expiring, resizing,
+ * rehashing. */</doc>

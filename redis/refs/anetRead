@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/anet.h' l='58' type='int anetRead(int fd, char * buf, int count)'/>
+<def f='codebrowser/src/anet.c' l='412' ll='423' type='int anetRead(int fd, char * buf, int count)'/>
+<doc f='codebrowser/src/anet.c' l='410'>/* Like read(2) but make sure &apos;count&apos; is read before to return
+ * (unless error or EOF condition is encountered) */</doc>

@@ -1,0 +1,10 @@
+<def f='codebrowser/src/quicklist.c' l='733' ll='776' type='void _quicklistMergeNodes(quicklist * quicklist, quicklistNode * center)'/>
+<use f='codebrowser/src/quicklist.c' l='936' u='c' c='_quicklistInsert'/>
+<doc f='codebrowser/src/quicklist.c' l='725'>/* Attempt to merge ziplists within two nodes on either side of &apos;center&apos;.
+ *
+ * We attempt to merge:
+ *   - (center-&gt;prev-&gt;prev, center-&gt;prev)
+ *   - (center-&gt;next, center-&gt;next-&gt;next)
+ *   - (center-&gt;prev, center)
+ *   - (center, center-&gt;next)
+ */</doc>

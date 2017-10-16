@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/scripting.c' l='1952' type='char * ldbRedisProtocolToHuman_Int(sds * o, char * reply)'/>
+<use f='codebrowser/src/scripting.c' l='1965' u='c' c='ldbRedisProtocolToHuman'/>
+<def f='codebrowser/src/scripting.c' l='1977' ll='1981' type='char * ldbRedisProtocolToHuman_Int(sds * o, char * reply)'/>
+<doc f='codebrowser/src/scripting.c' l='1974'>/* The following functions are helpers for ldbRedisProtocolToHuman(), each
+ * take care of a given Redis return type. */</doc>

@@ -1,0 +1,4 @@
+<def f='codebrowser/src/scripting.c' l='646' ll='661' type='int luaRedisSha1hexCommand(lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='951' u='r' c='scriptingInit'/>
+<doc f='codebrowser/src/scripting.c' l='644'>/* This adds redis.sha1hex(string) to Lua scripts using the same hashing
+ * function used for sha1ing lua scripts. */</doc>

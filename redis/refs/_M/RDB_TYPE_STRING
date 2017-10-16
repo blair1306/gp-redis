@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rdb.h' l='74'/>
+<doc f='codebrowser/src/rdb.h' l='72'>/* Dup object types to RDB object types. Only reason is readability (are we
+ * dealing with RDB types or with in-memory object types?). */</doc>
+<use f='codebrowser/src/rdb.c' l='598' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1153' u='c'/>

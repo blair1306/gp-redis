@@ -1,0 +1,38 @@
+<dec f='codebrowser/src/dict.h' l='80' type='long'/>
+<offset>640</offset>
+<doc f='codebrowser/src/dict.h' l='80'>/* rehashing not in progress if rehashidx == -1 */</doc>
+<use f='codebrowser/src/dict.c' l='128' u='w' c='_dictInit'/>
+<use f='codebrowser/src/dict.c' l='139' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='154' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='175' u='w' c='dictExpand'/>
+<use f='codebrowser/src/dict.c' l='190' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='197' u='r' c='dictRehash'/>
+<use f='codebrowser/src/dict.c' l='198' u='r' c='dictRehash'/>
+<use f='codebrowser/src/dict.c' l='199' u='w' c='dictRehash'/>
+<use f='codebrowser/src/dict.c' l='202' u='r' c='dictRehash'/>
+<use f='codebrowser/src/dict.c' l='216' u='r' c='dictRehash'/>
+<use f='codebrowser/src/dict.c' l='217' u='w' c='dictRehash'/>
+<use f='codebrowser/src/dict.c' l='225' u='w' c='dictRehash'/>
+<use f='codebrowser/src/dict.c' l='298' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='309' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='371' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='396' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='482' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='492' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='575' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='617' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='618' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='622' u='r' c='dictGetRandomKey'/>
+<use f='codebrowser/src/dict.c' l='624' u='r' c='dictGetRandomKey'/>
+<use f='codebrowser/src/dict.c' l='684' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='690' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='703' u='r' c='dictGetSomeKeys'/>
+<use f='codebrowser/src/dict.c' l='708' u='r' c='dictGetSomeKeys'/>
+<use f='codebrowser/src/dict.c' l='848' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='920' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='978' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='986' u='w' c='dictEmpty'/>
+<use f='codebrowser/src/dict.c' l='1022' macro='1' u='r'/>
+<use f='codebrowser/src/dict.c' l='1099' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='720' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='725' macro='1' u='r'/>

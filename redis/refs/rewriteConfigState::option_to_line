@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/config.c' l='1455' type='dict *'/>
+<use f='codebrowser/src/config.c' l='1471' u='r' c='rewriteConfigAddLineNumberToOption'/>
+<use f='codebrowser/src/config.c' l='1475' u='r' c='rewriteConfigAddLineNumberToOption'/>
+<use f='codebrowser/src/config.c' l='1503' u='w' c='rewriteConfigReadOldFile'/>
+<use f='codebrowser/src/config.c' l='1570' u='r' c='rewriteConfigRewriteLine'/>
+<use f='codebrowser/src/config.c' l='1588' u='r' c='rewriteConfigRewriteLine'/>
+<use f='codebrowser/src/config.c' l='1834' u='r' c='rewriteConfigReleaseState'/>
+<use f='codebrowser/src/config.c' l='1848' u='r' c='rewriteConfigRemoveOrphaned'/>
+<offset>0</offset>
+<doc f='codebrowser/src/config.c' l='1455'>/* Option -&gt; list of config file lines map */</doc>

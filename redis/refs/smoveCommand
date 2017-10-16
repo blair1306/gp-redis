@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1868' type='void smoveCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='167' u='r'/>
+<use f='codebrowser/src/server.c' l='167' u='r'/>
+<use f='codebrowser/src/server.c' l='167' u='r'/>
+<use f='codebrowser/src/server.c' l='167' u='r'/>
+<def f='codebrowser/src/t_set.c' l='318' ll='371' type='void smoveCommand(client * c)'/>

@@ -1,0 +1,8 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='639' macro='1' type='size_t * je_arena_mapbitsp_get(arena_chunk_t * chunk, size_t pageind)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='656' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='798' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='812' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='824' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='834' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='849' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='863' macro='1' u='c'/>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/src/endianconv.h' l='42' type='uint16_t intrev16(uint16_t v)'/>
+<def f='codebrowser/src/endianconv.c' l='89' ll='92' type='uint16_t intrev16(uint16_t v)'/>

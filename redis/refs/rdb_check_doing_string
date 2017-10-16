@@ -1,0 +1,2 @@
+<def f='codebrowser/src/redis-check-rdb.c' l='63' ll='72' type='char *[8]'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='113' u='r' c='rdbCheckError'/>

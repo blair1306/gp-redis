@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1877' type='void sdiffCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='176' u='r'/>
+<use f='codebrowser/src/server.c' l='176' u='r'/>
+<use f='codebrowser/src/server.c' l='176' u='r'/>
+<use f='codebrowser/src/server.c' l='176' u='r'/>
+<def f='codebrowser/src/t_set.c' l='1095' ll='1097' type='void sdiffCommand(client * c)'/>

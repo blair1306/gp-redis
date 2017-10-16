@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1525' type='int startAppendOnly()'/>
+<def f='codebrowser/src/aof.c' l='238' ll='267' type='int startAppendOnly()'/>
+<doc f='codebrowser/src/aof.c' l='236'>/* Called when the user switches from &quot;appendonly no&quot; to &quot;appendonly yes&quot;
+ * at runtime using the CONFIG command. */</doc>
+<use f='codebrowser/src/config.c' l='886' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/replication.c' l='1094' u='c' c='restartAOF'/>

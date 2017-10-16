@@ -1,0 +1,6 @@
+<def f='codebrowser/src/sentinel.c' l='795' ll='838' type='void sentinelCollectTerminatedScripts()'/>
+<use f='codebrowser/src/sentinel.c' l='4325' u='c' c='sentinelTimer'/>
+<doc f='codebrowser/src/sentinel.c' l='791'>/* Check for scripts that terminated, and remove them from the queue if the
+ * script terminated successfully. If instead the script was terminated by
+ * a signal, or returned exit code &quot;1&quot;, it is scheduled to run again if
+ * the max number of retries did not already elapsed. */</doc>

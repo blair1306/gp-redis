@@ -1,0 +1,2 @@
+<def f='codebrowser/src/redis-check-aof.c' l='96' ll='98' type='int readArgc(FILE * fp, long * target)'/>
+<use f='codebrowser/src/redis-check-aof.c' l='108' u='c' c='process'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1446' type='robj * tryObjectEncoding(robj * o)'/>
+<use f='codebrowser/src/debug.c' l='335' u='c' c='debugCommand'/>
+<def f='codebrowser/src/object.c' l='375' ll='451' type='robj * tryObjectEncoding(robj * o)'/>
+<doc f='codebrowser/src/object.c' l='374'>/* Try to encode a string object in order to save space */</doc>
+<use f='codebrowser/src/rdb.c' l='1156' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_string.c' l='138' u='c' c='setCommand'/>
+<use f='codebrowser/src/t_string.c' l='143' u='c' c='setnxCommand'/>
+<use f='codebrowser/src/t_string.c' l='148' u='c' c='setexCommand'/>
+<use f='codebrowser/src/t_string.c' l='153' u='c' c='psetexCommand'/>
+<use f='codebrowser/src/t_string.c' l='178' u='c' c='getsetCommand'/>
+<use f='codebrowser/src/t_string.c' l='325' u='c' c='msetGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='442' u='c' c='appendCommand'/>

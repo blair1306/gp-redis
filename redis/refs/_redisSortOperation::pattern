@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1242' type='robj *'/>
+<offset>64</offset>
+<use f='codebrowser/src/sort.c' l='41' u='w' c='createSortOperation'/>
+<use f='codebrowser/src/sort.c' l='519' u='r' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='549' u='r' c='sortCommand'/>

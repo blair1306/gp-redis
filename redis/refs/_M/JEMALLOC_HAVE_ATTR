@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='8'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='113' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_macros.h' l='19' u='a'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='7'>/* Defined if __attribute__((...)) syntax is supported. */</doc>

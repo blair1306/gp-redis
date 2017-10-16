@@ -1,0 +1,3 @@
+<def f='codebrowser/src/aof.c' l='125' ll='169' type='void aofRewriteBufferAppend(unsigned char * s, unsigned long len)'/>
+<use f='codebrowser/src/aof.c' l='573' u='c' c='feedAppendOnlyFile'/>
+<doc f='codebrowser/src/aof.c' l='124'>/* Append data to the AOF rewrite buffer, allocating new blocks if needed. */</doc>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/net.h' l='44' type='int redisCheckSocketError(redisContext * c)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='497' u='c' c='__redisAsyncHandleConnect'/>
+<use f='codebrowser/deps/hiredis/net.c' l='224' u='c' c='redisContextWaitReady'/>
+<def f='codebrowser/deps/hiredis/net.c' l='235' ll='251' type='int redisCheckSocketError(redisContext * c)'/>

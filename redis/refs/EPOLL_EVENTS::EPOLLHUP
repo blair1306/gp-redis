@@ -1,0 +1,2 @@
+<dec f='include/x86_64-linux-gnu/sys/epoll.h' l='60' type='16'/>
+<use f='codebrowser/src/ae_epoll.c' l='125' macro='1' u='r'/>

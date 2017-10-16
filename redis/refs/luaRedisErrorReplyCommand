@@ -1,0 +1,3 @@
+<def f='codebrowser/src/scripting.c' l='684' ll='686' type='int luaRedisErrorReplyCommand(lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='956' u='r' c='scriptingInit'/>
+<doc f='codebrowser/src/scripting.c' l='683'>/* redis.error_reply() */</doc>

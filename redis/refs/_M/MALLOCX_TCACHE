@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='100'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='96'>/*
+ * Bias tcache index bits so that 0 encodes &quot;automatic tcache management&quot;, and 1
+ * encodes MALLOCX_TCACHE_NONE.
+ */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/geohash.h' l='77' type='GeoHashBits'/>
+<dec f='codebrowser/src/geohash_helper.h' l='45' type='GeoHashBits'/>
+<use f='codebrowser/src/geo.c' l='331' u='r' c='membersOfAllNeighbors'/>
+<offset>0</offset>
+<use f='codebrowser/src/geohash.c' l='171' u='w' c='geohashDecode'/>
+<use f='codebrowser/src/geohash_helper.c' l='193' u='w' c='geohashGetAreasByRadius'/>

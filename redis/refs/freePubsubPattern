@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1686' type='void freePubsubPattern(void * p)'/>
+<def f='codebrowser/src/pubsub.c' l='36' ll='41' type='void freePubsubPattern(void * p)'/>
+<doc f='codebrowser/src/pubsub.c' l='32'>/*-----------------------------------------------------------------------------
+ * Pubsub low level API
+ *----------------------------------------------------------------------------*/</doc>
+<use f='codebrowser/src/server.c' l='1863' u='r' c='initServer'/>

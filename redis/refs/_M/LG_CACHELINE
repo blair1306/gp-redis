@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='305'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2222' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2225' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='298'>/*
+ * Maximum size of L1 cache line.  This is used to avoid cache line aliasing.
+ * In addition, this controls the spacing of cacheline-spaced size classes.
+ *
+ * CACHELINE cannot be based on LG_CACHELINE because __declspec(align()) can
+ * only handle raw constants.
+ */</doc>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/server.h' l='762' type='struct zskiplistNode *'/>
+<offset>128</offset>
+<use f='codebrowser/src/defrag.c' l='199' u='r' c='zslUpdateNode'/>
+<use f='codebrowser/src/defrag.c' l='200' u='w' c='zslUpdateNode'/>
+<use f='codebrowser/src/module.c' l='2043' u='r' c='RM_ZsetRangePrev'/>
+<use f='codebrowser/src/rdb.c' l='729' u='r' c='rdbSaveObject'/>
+<use f='codebrowser/src/sort.c' l='425' u='r' c='sortCommand'/>
+<use f='codebrowser/src/t_zset.c' l='92' u='w' c='zslCreate'/>
+<use f='codebrowser/src/t_zset.c' l='180' u='w' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='182' u='w' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='201' u='w' c='zslDeleteNode'/>
+<use f='codebrowser/src/t_zset.c' l='201' u='r' c='zslDeleteNode'/>
+<use f='codebrowser/src/t_zset.c' l='203' u='r' c='zslDeleteNode'/>
+<use f='codebrowser/src/t_zset.c' l='2455' u='r' c='zrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2623' u='r' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2646' u='r' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2971' u='r' c='genericZrangebylexCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2990' u='r' c='genericZrangebylexCommand'/>

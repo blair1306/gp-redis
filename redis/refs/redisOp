@@ -1,0 +1,13 @@
+<def f='codebrowser/src/server.h' l='794' ll='798'/>
+<size>32</size>
+<doc f='codebrowser/src/server.h' l='788'>/* The redisOp structure defines a Redis Operation, that is an instance of
+ * a command with an argument vector, database ID, propagation target
+ * (PROPAGATE_*), and command pointer.
+ *
+ * Currently only used to additionally propagate more commands to AOF/Replication
+ * after the propagation of the executed command. */</doc>
+<mbr r='redisOp::argv' o='0' t='robj **'/>
+<mbr r='redisOp::argc' o='64' t='int'/>
+<mbr r='redisOp::dbid' o='96' t='int'/>
+<mbr r='redisOp::target' o='128' t='int'/>
+<mbr r='redisOp::cmd' o='192' t='struct redisCommand *'/>

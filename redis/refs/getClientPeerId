@@ -1,0 +1,29 @@
+<dec f='codebrowser/src/server.h' l='1366' type='char * getClientPeerId(client * client)'/>
+<def f='codebrowser/src/networking.c' l='1477' ll='1485' type='char * getClientPeerId(client * c)'/>
+<use f='codebrowser/src/networking.c' l='1520' u='c' c='catClientInfoString'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1637' u='c' c='clientCommand'/>
+<doc f='codebrowser/src/networking.c' l='1473'>/* This function returns the client peer id, by creating and caching it
+ * if client-&gt;peerid is NULL, otherwise returning the cached value.
+ * The Peer ID never changes during the life of the client, however it
+ * is expensive to compute. */</doc>
+<use f='codebrowser/src/replication.c' l='318' u='c' c='replicationFeedMonitors'/>
+<use f='codebrowser/src/slowlog.c' l='91' u='c' c='slowlogCreateEntry'/>

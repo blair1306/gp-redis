@@ -1,0 +1,21 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='90' type='rtree_level_t [4]'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='148' u='m' c='je_rtree_subkey'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='149' u='m' c='je_rtree_subkey'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='217' u='m' c='je_rtree_subtree_tryread'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='219' u='m' c='je_rtree_subtree_tryread'/>
+<offset>320</offset>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='35' u='m' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='36' u='m' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='38' u='m' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='38' u='m' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='41' u='m' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='42' u='m' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='43' u='m' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='43' u='m' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='48' u='m' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='49' u='m' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='50' u='m' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='69' u='m' c='rtree_delete_subtree'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='85' u='m' c='je_rtree_delete'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='106' u='m' c='rtree_node_init'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='119' u='m' c='je_rtree_subtree_read_hard'/>

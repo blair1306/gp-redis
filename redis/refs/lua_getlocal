@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='335' type='const char * lua_getlocal(lua_State * L, const lua_Debug * ar, int n)'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='151' u='c' c='db_getlocal'/>
+<def f='codebrowser/deps/lua/src/ldebug.c' l='127' ll='135' macro='1' type='const char * lua_getlocal(lua_State * L, const lua_Debug * ar, int n)'/>
+<use f='codebrowser/src/scripting.c' l='2044' u='c' c='ldbPrint'/>
+<use f='codebrowser/src/scripting.c' l='2075' u='c' c='ldbPrintAll'/>

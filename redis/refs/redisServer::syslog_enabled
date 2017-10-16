@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1054' type='int'/>
+<offset>16896</offset>
+<doc f='codebrowser/src/server.h' l='1054'>/* Is syslog enabled? */</doc>
+<use f='codebrowser/src/config.c' l='291' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1964' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='352' u='r' c='serverLogRaw'/>
+<use f='codebrowser/src/server.c' l='1376' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1796' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='3432' u='r' c='redisAsciiArt'/>

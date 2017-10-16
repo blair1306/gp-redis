@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/rdb.h' l='95'/>
+<doc f='codebrowser/src/rdb.h' l='94'>/* Test if a type is an object type. */</doc>
+<use f='codebrowser/src/rdb.c' l='638' u='c'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='271' u='c'/>

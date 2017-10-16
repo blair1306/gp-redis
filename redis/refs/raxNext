@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/rax.h' l='153' type='int raxNext(raxIterator * it)'/>
+<use f='codebrowser/src/db.c' l='1405' u='c' c='getKeysInSlot'/>
+<use f='codebrowser/src/db.c' l='1425' u='c' c='delKeysInSlot'/>
+<def f='codebrowser/src/rax.c' l='1536' ll='1546' type='int raxNext(raxIterator * it)'/>
+<doc f='codebrowser/src/rax.c' l='1533'>/* Go to the next element in the scope of the iterator &apos;it&apos;.
+ * If EOF (or out of memory) is reached, 0 is returned, otherwise 1 is
+ * returned. In case 0 is returned because of OOM, errno is set to ENOMEM. */</doc>

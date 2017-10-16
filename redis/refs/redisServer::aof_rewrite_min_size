@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='994' type='off_t'/>
+<offset>14272</offset>
+<doc f='codebrowser/src/server.h' l='994'>/* the AOF file is at least N bytes. */</doc>
+<use f='codebrowser/src/config.c' l='474' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1138' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1233' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2005' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='1106' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1386' u='w' c='initServerConfig'/>

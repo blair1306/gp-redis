@@ -1,0 +1,9 @@
+imalloc_body|imalloc_body
+imalloc_prof|imalloc_prof
+imallocx_flags|imallocx_flags
+imallocx_flags_decode|imallocx_flags_decode
+imallocx_flags_decode_hard|imallocx_flags_decode_hard
+imallocx_no_prof|imallocx_no_prof
+imallocx_prof|imallocx_prof
+imemalign|imemalign
+imemalign_prof|imemalign_prof

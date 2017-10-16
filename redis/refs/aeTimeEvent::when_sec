@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/ae.h' l='76' type='long'/>
+<use f='codebrowser/src/ae.c' l='214' u='a' c='aeCreateTimeEvent'/>
+<use f='codebrowser/src/ae.c' l='253' u='r' c='aeSearchNearestTimer'/>
+<use f='codebrowser/src/ae.c' l='253' u='r' c='aeSearchNearestTimer'/>
+<use f='codebrowser/src/ae.c' l='254' u='r' c='aeSearchNearestTimer'/>
+<use f='codebrowser/src/ae.c' l='254' u='r' c='aeSearchNearestTimer'/>
+<use f='codebrowser/src/ae.c' l='280' u='w' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='317' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='318' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='326' u='a' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='379' u='r' c='aeProcessEvents'/>
+<offset>64</offset>
+<doc f='codebrowser/src/ae.h' l='76'>/* seconds */</doc>

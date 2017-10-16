@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1848' type='void bgrewriteaofCommand(client * c)'/>
+<def f='codebrowser/src/aof.c' l='1397' ll='1408' type='void bgrewriteaofCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='240' u='r'/>
+<use f='codebrowser/src/server.c' l='240' u='r'/>
+<use f='codebrowser/src/server.c' l='240' u='r'/>
+<use f='codebrowser/src/server.c' l='240' u='r'/>

@@ -1,0 +1,23 @@
+<def f='codebrowser/deps/hiredis/sds.h' l='129' ll='151' type='void sdssetlen(sds s, size_t newlen)'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='176' u='c' c='sdsupdatelen'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='184' u='c' c='sdsclear'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='233' u='c' c='sdsMakeRoomFor'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='265' u='c' c='sdsRemoveFreeSpace'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='367' u='c' c='sdsgrowzero'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='382' u='c' c='sdscatlen'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='412' u='c' c='sdscpylen'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='692' u='c' c='sdstrim'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='737' u='c' c='sdsrange'/>
+<def f='codebrowser/src/sds.h' l='129' ll='151' type='void sdssetlen(sds s, size_t newlen)'/>
+<use f='codebrowser/src/evict.c' l='253' u='c' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/scripting.c' l='414' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1639' u='c' c='ldbStartSession'/>
+<use f='codebrowser/src/sds.c' l='179' u='c' c='sdsupdatelen'/>
+<use f='codebrowser/src/sds.c' l='187' u='c' c='sdsclear'/>
+<use f='codebrowser/src/sds.c' l='236' u='c' c='sdsMakeRoomFor'/>
+<use f='codebrowser/src/sds.c' l='268' u='c' c='sdsRemoveFreeSpace'/>
+<use f='codebrowser/src/sds.c' l='370' u='c' c='sdsgrowzero'/>
+<use f='codebrowser/src/sds.c' l='385' u='c' c='sdscatlen'/>
+<use f='codebrowser/src/sds.c' l='415' u='c' c='sdscpylen'/>
+<use f='codebrowser/src/sds.c' l='697' u='c' c='sdstrim'/>
+<use f='codebrowser/src/sds.c' l='742' u='c' c='sdsrange'/>

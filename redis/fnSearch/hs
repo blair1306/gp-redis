@@ -1,0 +1,4 @@
+hscanCommand|hscanCommand
+hsetCommand|hsetCommand
+hsetnxCommand|hsetnxCommand
+hstrlenCommand|hstrlenCommand

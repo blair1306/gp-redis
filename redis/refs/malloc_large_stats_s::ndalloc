@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='73' type='uint64_t'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2582' u='w' c='arena_dalloc_large_locked_impl'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2630' u='w' c='arena_ralloc_large_shrink'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2719' u='w' c='arena_ralloc_large_grow'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2961' u='w' c='je_arena_stats_merge'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2961' u='r' c='je_arena_stats_merge'/>
+<offset>64</offset>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='605' u='w' c='ctl_arena_stats_smerge'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='605' u='r' c='ctl_arena_stats_smerge'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='2074' u='r' c='stats_arenas_i_lruns_j_ndalloc_ctl'/>

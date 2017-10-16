@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='227'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='217'>/*
+ * Methods for purging unused pages differ between operating systems.
+ *
+ *   madvise(..., MADV_DONTNEED) : On Linux, this immediately discards pages,
+ *                                 such that new pages will be demand-zeroed if
+ *                                 the address region is later touched.
+ *   madvise(..., MADV_FREE) : On FreeBSD and Darwin, this marks pages as being
+ *                             unused, such that they will be discarded rather
+ *                             than swapped out.
+ */</doc>
+<use f='codebrowser/deps/jemalloc/src/pages.c' l='154' u='a'/>

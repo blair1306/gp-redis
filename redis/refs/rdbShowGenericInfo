@@ -1,0 +1,4 @@
+<def f='codebrowser/src/redis-check-rdb.c' l='92' ll='96' type='void rdbShowGenericInfo()'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='123' u='c' c='rdbCheckError'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='356' u='c' c='redis_check_rdb_main'/>
+<doc f='codebrowser/src/redis-check-rdb.c' l='91'>/* Show a few stats collected into &apos;rdbstate&apos; */</doc>

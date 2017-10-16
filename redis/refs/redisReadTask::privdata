@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='69' type='void *'/>
+<offset>256</offset>
+<doc f='codebrowser/deps/hiredis/read.h' l='69'>/* user-settable arbitrary field */</doc>
+<use f='codebrowser/deps/hiredis/read.c' l='353' u='w' c='processMultiBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='497' u='w' c='redisReaderGetReply'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/src/networking.c' l='280' ll='304' type='void _addReplyStringToList(client * c, const char * s, size_t len)'/>
+<use f='codebrowser/src/networking.c' l='372' u='c' c='addReplyString'/>

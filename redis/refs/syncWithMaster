@@ -1,0 +1,4 @@
+<def f='codebrowser/src/replication.c' l='1576' ll='1852' type='void syncWithMaster(aeEventLoop * el, int fd, void * privdata, int mask)'/>
+<use f='codebrowser/src/replication.c' l='1865' u='r' c='connectWithMaster'/>
+<doc f='codebrowser/src/replication.c' l='1574'>/* This handler fires when the non blocking connect was able to
+ * establish a connection with the master. */</doc>

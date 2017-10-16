@@ -1,0 +1,24 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='77' type='struct (anonymous struct at /home/jon/workspace/redis/deps/jemalloc/include/jemalloc/internal/tcache.h:77:2)'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='710' u='m' c='stats_print_atexit'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='710' u='m' c='stats_print_atexit'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='258' u='m' c='je_tcache_arena_associate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='258' u='m' c='je_tcache_arena_associate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' u='m' c='je_tcache_arena_associate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' u='m' c='je_tcache_arena_associate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' u='m' c='je_tcache_arena_associate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' u='m' c='je_tcache_arena_associate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' u='m' c='je_tcache_arena_associate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' u='m' c='je_tcache_arena_associate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' u='m' c='je_tcache_arena_associate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='282' u='m' c='je_tcache_arena_dissociate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='282' u='m' c='je_tcache_arena_dissociate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' u='m' c='je_tcache_arena_dissociate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' u='m' c='je_tcache_arena_dissociate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' u='m' c='je_tcache_arena_dissociate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' u='m' c='je_tcache_arena_dissociate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' u='m' c='je_tcache_arena_dissociate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' u='m' c='je_tcache_arena_dissociate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' u='m' c='je_tcache_arena_dissociate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' u='m' c='je_tcache_arena_dissociate'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' u='m' c='je_tcache_arena_dissociate'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/evict.c' l='57' type='sds'/>
+<use f='codebrowser/src/evict.c' l='149' u='w' c='evictionPoolAlloc'/>
+<use f='codebrowser/src/evict.c' l='228' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='231' u='w' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='237' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='238' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='240' u='w' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='252' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='253' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='254' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='455' u='r' c='freeMemoryIfNeeded'/>
+<offset>128</offset>
+<doc f='codebrowser/src/evict.c' l='57'>/* Cached SDS object for key name. */</doc>

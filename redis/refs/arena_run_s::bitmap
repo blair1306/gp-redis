@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='48' type='bitmap_t [9]'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='300' u='r' c='arena_run_reg_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='302' u='r' c='arena_run_reg_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='331' u='r' c='arena_run_reg_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='333' u='r' c='arena_run_reg_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1913' u='r' c='arena_bin_nonfull_run_get'/>
+<offset>64</offset>

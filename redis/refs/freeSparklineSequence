@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/sparkline.h' l='52' type='void freeSparklineSequence(struct sequence * seq)'/>
+<use f='codebrowser/src/latency.c' l='556' u='c' c='latencyCommandGenSparkeline'/>
+<def f='codebrowser/src/sparkline.c' l='81' ll='88' type='void freeSparklineSequence(struct sequence * seq)'/>
+<doc f='codebrowser/src/sparkline.c' l='80'>/* Free a sequence. */</doc>

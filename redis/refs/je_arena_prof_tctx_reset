@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1132' macro='1' type='void je_arena_prof_tctx_reset(const void * ptr, size_t usize, const void * old_ptr, prof_tctx_t * old_tctx)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='427' macro='1' u='c'/>

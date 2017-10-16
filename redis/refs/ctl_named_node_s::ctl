@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='24' type='int (*)(const size_t *, size_t, void *, size_t *, void *, size_t)'/>
+<offset>256</offset>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='864' u='r' c='ctl_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='917' u='r' c='je_ctl_byname'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='918' u='r' c='je_ctl_byname'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='982' u='r' c='je_ctl_bymib'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='983' u='r' c='je_ctl_bymib'/>

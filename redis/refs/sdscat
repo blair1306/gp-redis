@@ -1,0 +1,112 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='224' type='sds sdscat(sds s, const char * t)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='273' u='c' c='redisvFormatCommand'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='391' ll='393' type='sds sdscat(sds s, const char * t)'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='533' u='c' c='sdscatvprintf'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='1071' u='c' c='sdsjoin'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='1072' u='c' c='sdsjoin'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='387'>/* Append the specified null termianted C string to the sds string &apos;s&apos;.
+ *
+ * After the call, the passed sds string is no longer valid and all the
+ * references must be substituted with the new pointer returned by the call. */</doc>
+<dec f='codebrowser/src/sds.h' l='224' type='sds sdscat(sds s, const char * t)'/>
+<use f='codebrowser/src/cluster.c' l='3846' u='c' c='representClusterNodeFlags'/>
+<use f='codebrowser/src/cluster.c' l='3849' u='c' c='representClusterNodeFlags'/>
+<use f='codebrowser/src/config.c' l='779' u='c' c='loadServerConfig'/>
+<use f='codebrowser/src/config.c' l='784' u='c' c='loadServerConfig'/>
+<use f='codebrowser/src/config.c' l='785' u='c' c='loadServerConfig'/>
+<use f='codebrowser/src/debug.c' l='545' u='c' c='debugCommand'/>
+<use f='codebrowser/src/debug.c' l='549' u='c' c='debugCommand'/>
+<use f='codebrowser/src/latency.c' l='241' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='260' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='389' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='391' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='396' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='398' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='411' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='416' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='426' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='430' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='434' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='438' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='442' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='446' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='450' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='454' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='458' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='462' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='466' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/module.c' l='995' u='c' c='replyWithStatus'/>
+<use f='codebrowser/src/object.c' l='915' u='c' c='inputCatSds'/>
+<use f='codebrowser/src/object.c' l='975' u='c' c='getMemoryDoctorReport'/>
+<use f='codebrowser/src/object.c' l='981' u='c' c='getMemoryDoctorReport'/>
+<use f='codebrowser/src/object.c' l='984' u='c' c='getMemoryDoctorReport'/>
+<use f='codebrowser/src/object.c' l='986' u='c' c='getMemoryDoctorReport'/>
+<use f='codebrowser/src/redis-benchmark.c' l='542' u='c' c='parseOptions'/>
+<use f='codebrowser/src/redis-benchmark.c' l='543' u='c' c='parseOptions'/>
+<use f='codebrowser/src/redis-cli.c' l='230' u='c' c='cliVersion'/>
+<use f='codebrowser/src/redis-cli.c' l='308' u='c' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='311' u='c' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='313' u='c' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='419' u='c' c='completionCallback'/>
+<use f='codebrowser/src/redis-cli.c' l='562' u='c' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='563' u='c' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='572' u='c' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='575' u='c' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='579' u='c' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='597' u='c' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='644' u='c' c='sdscatcolor'/>
+<use f='codebrowser/src/redis-cli.c' l='704' u='c' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='723' u='c' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='736' u='c' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='742' u='c' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='818' u='c' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='823' u='c' c='cliReadReply'/>
+<use f='codebrowser/src/replication.c' l='1330' u='c' c='sendSynchronousCommand'/>
+<use f='codebrowser/src/scripting.c' l='1148' u='c' c='luaCreateFunction'/>
+<use f='codebrowser/src/scripting.c' l='1858' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1869' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1931' u='c' c='ldbCatStackValueRec'/>
+<def f='codebrowser/src/sds.c' l='394' ll='396' type='sds sdscat(sds s, const char * t)'/>
+<use f='codebrowser/src/sds.c' l='536' u='c' c='sdscatvprintf'/>
+<use f='codebrowser/src/sds.c' l='1076' u='c' c='sdsjoin'/>
+<use f='codebrowser/src/sds.c' l='1077' u='c' c='sdsjoin'/>
+<doc f='codebrowser/src/sds.c' l='390'>/* Append the specified null termianted C string to the sds string &apos;s&apos;.
+ *
+ * After the call, the passed sds string is no longer valid and all the
+ * references must be substituted with the new pointer returned by the call. */</doc>
+<use f='codebrowser/src/sentinel.c' l='2660' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2661' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2662' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2663' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2664' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2665' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2666' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2668' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2669' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2670' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2671' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2672' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='3087' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3090' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3091' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3094' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3203' u='c' c='sentinelInfoCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3203' u='c' c='sentinelInfoCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3203' u='c' c='sentinelInfoCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3203' u='c' c='sentinelInfoCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3239' u='c' c='sentinelInfoCommand'/>
+<use f='codebrowser/src/server.c' l='2831' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2889' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2929' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2982' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3072' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3127' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3255' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3270' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3290' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3299' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3787' u='c' c='main'/>
+<use f='codebrowser/src/server.c' l='3788' u='c' c='main'/>
+<use f='codebrowser/src/server.c' l='3789' u='c' c='main'/>
+<use f='codebrowser/src/server.c' l='3793' u='c' c='main'/>
+<use f='codebrowser/src/util.c' l='638' u='c' c='getAbsolutePath'/>

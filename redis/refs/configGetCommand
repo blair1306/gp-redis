@@ -1,0 +1,2 @@
+<def f='codebrowser/src/config.c' l='1203' ll='1415' type='void configGetCommand(client * c)'/>
+<use f='codebrowser/src/config.c' l='2073' u='c' c='configCommand'/>

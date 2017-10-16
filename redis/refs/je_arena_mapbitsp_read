@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='646' macro='1' type='size_t je_arena_mapbitsp_read(size_t * mapbitsp)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='656' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='813' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='850' macro='1' u='c'/>

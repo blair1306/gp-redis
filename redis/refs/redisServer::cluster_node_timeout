@@ -1,0 +1,24 @@
+<dec f='codebrowser/src/server.h' l='1153' type='mstime_t'/>
+<offset>21760</offset>
+<doc f='codebrowser/src/server.h' l='1153'>/* Cluster node timeout. */</doc>
+<use f='codebrowser/src/cluster.c' l='747' u='r' c='clusterNodeCleanupFailureReports'/>
+<use f='codebrowser/src/cluster.c' l='1222' u='r' c='clearNodeFailureIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2657' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2663' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2751' u='r' c='clusterLogCantFailover'/>
+<use f='codebrowser/src/cluster.c' l='2851' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2883' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2884' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2893' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='3235' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3380' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3384' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3396' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3421' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3705' u='r' c='clusterUpdateState'/>
+<use f='codebrowser/src/config.c' l='614' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='615' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1104' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1273' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2010' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='1427' u='w' c='initServerConfig'/>

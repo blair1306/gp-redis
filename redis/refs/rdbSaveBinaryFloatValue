@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/rdb.h' l='147' type='int rdbSaveBinaryFloatValue(rio * rdb, float val)'/>
+<use f='codebrowser/src/module.c' l='3132' u='c' c='RM_SaveFloat'/>
+<def f='codebrowser/src/rdb.c' l='582' ll='585' type='int rdbSaveBinaryFloatValue(rio * rdb, float val)'/>
+<doc f='codebrowser/src/rdb.c' l='581'>/* Like rdbSaveBinaryDoubleValue() but single precision. */</doc>

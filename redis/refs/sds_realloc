@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='266' type='void * sds_realloc(void * ptr, size_t size)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='1095' type='void * sds_realloc(void * ptr, size_t size)'/>
+<dec f='codebrowser/src/sds.h' l='266' type='void * sds_realloc(void * ptr, size_t size)'/>
+<def f='codebrowser/src/sds.c' l='1100' type='void * sds_realloc(void * ptr, size_t size)'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1625' type='int htNeedsResize(dict * dict)'/>
+<def f='codebrowser/src/server.c' l='693' ll='700' type='int htNeedsResize(dict * dict)'/>
+<use f='codebrowser/src/server.c' l='705' u='c' c='tryResizeHashTables'/>
+<use f='codebrowser/src/server.c' l='707' u='c' c='tryResizeHashTables'/>
+<use f='codebrowser/src/t_hash.c' l='301' u='c' c='hashTypeDelete'/>
+<use f='codebrowser/src/t_set.c' l='92' u='c' c='setTypeRemove'/>
+<use f='codebrowser/src/t_zset.c' l='1406' u='c' c='zsetDel'/>
+<use f='codebrowser/src/t_zset.c' l='1723' u='c' c='zremrangeGenericCommand'/>

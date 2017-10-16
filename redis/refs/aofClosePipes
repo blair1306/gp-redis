@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/aof.c' l='44' type='void aofClosePipes()'/>
+<use f='codebrowser/src/aof.c' l='232' u='c' c='stopAppendOnly'/>
+<def f='codebrowser/src/aof.c' l='1310' ll='1319' type='void aofClosePipes()'/>
+<use f='codebrowser/src/aof.c' l='1377' u='c' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/aof.c' l='1576' u='c' c='backgroundRewriteDoneHandler'/>

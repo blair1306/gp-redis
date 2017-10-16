@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='286' macro='1' type='void je_prof_free_sampled_object(tsd_t * tsd, size_t usize, prof_tctx_t * tctx)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='528' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='540' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='243' macro='1' type='void je_prof_free_sampled_object(tsd_t * tsd, size_t usize, prof_tctx_t * tctx)'/>

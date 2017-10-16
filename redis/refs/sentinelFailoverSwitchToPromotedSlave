@@ -1,0 +1,5 @@
+<def f='codebrowser/src/sentinel.c' l='4171' ll='4180' type='void sentinelFailoverSwitchToPromotedSlave(sentinelRedisInstance * master)'/>
+<use f='codebrowser/src/sentinel.c' l='4286' u='c' c='sentinelHandleDictOfRedisInstances'/>
+<doc f='codebrowser/src/sentinel.c' l='4168'>/* This function is called when the slave is in
+ * SENTINEL_FAILOVER_STATE_UPDATE_CONFIG state. In this state we need
+ * to remove it from the master table and add the promoted slave instead. */</doc>

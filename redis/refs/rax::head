@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/rax.h' l='104' type='raxNode *'/>
+<offset>0</offset>
+<use f='codebrowser/src/rax.c' l='161' u='w' c='raxNew'/>
+<use f='codebrowser/src/rax.c' l='162' u='r' c='raxNew'/>
+<use f='codebrowser/src/rax.c' l='364' u='r' c='raxLowWalk'/>
+<use f='codebrowser/src/rax.c' l='365' u='a' c='raxLowWalk'/>
+<use f='codebrowser/src/rax.c' l='922' u='r' c='raxRemove'/>
+<use f='codebrowser/src/rax.c' l='941' u='a' c='raxRemove'/>
+<use f='codebrowser/src/rax.c' l='1082' u='w' c='raxRemove'/>
+<use f='codebrowser/src/rax.c' l='1112' u='r' c='raxFree'/>
+<use f='codebrowser/src/rax.c' l='1222' u='r' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1310' u='r' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1412' u='r' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1590' u='r' c='raxRandomWalk'/>
+<use f='codebrowser/src/rax.c' l='1713' u='r' c='raxShow'/>

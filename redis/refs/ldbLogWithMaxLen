@@ -1,0 +1,7 @@
+<def f='codebrowser/src/scripting.c' l='1544' ll='1557' type='void ldbLogWithMaxLen(sds entry)'/>
+<use f='codebrowser/src/scripting.c' l='1949' u='c' c='ldbLogStackValue'/>
+<use f='codebrowser/src/scripting.c' l='2030' u='c' c='ldbLogRedisReply'/>
+<doc f='codebrowser/src/scripting.c' l='1540'>/* A version of ldbLog() which prevents producing logs greater than
+ * ldb.maxlen. The first time the limit is reached an hint is generated
+ * to inform the user that reply trimming can be disabled using the
+ * debugger &quot;maxlen&quot; command. */</doc>

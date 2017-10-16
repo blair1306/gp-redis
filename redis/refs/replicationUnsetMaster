@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1489' type='void replicationUnsetMaster()'/>
+<use f='codebrowser/src/cluster.c' l='516' u='c' c='clusterReset'/>
+<use f='codebrowser/src/cluster.c' l='2804' u='c' c='clusterFailoverReplaceYourMaster'/>
+<def f='codebrowser/src/replication.c' l='1949' ll='1973' type='void replicationUnsetMaster()'/>
+<use f='codebrowser/src/replication.c' l='1999' u='c' c='slaveofCommand'/>
+<doc f='codebrowser/src/replication.c' l='1948'>/* Cancel replication, setting the instance as a master itself. */</doc>

@@ -1,0 +1,5 @@
+<def f='codebrowser/src/debug.c' l='885' ll='919' type='void logCurrentClient()'/>
+<use f='codebrowser/src/debug.c' l='1051' u='c' c='sigsegvHandler'/>
+<doc f='codebrowser/src/debug.c' l='882'>/* Log information about the &quot;current&quot; client, that is, the client that is
+ * currently being served by Redis. May be NULL if Redis is not serving a
+ * client right now. */</doc>

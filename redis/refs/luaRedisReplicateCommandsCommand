@@ -1,0 +1,8 @@
+<def f='codebrowser/src/scripting.c' l='699' ll='711' type='int luaRedisReplicateCommandsCommand(lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='964' u='r' c='scriptingInit'/>
+<doc f='codebrowser/src/scripting.c' l='693'>/* redis.replicate_commands()
+ *
+ * Turn on single commands replication if the script never called
+ * a write command so far, and returns true. Otherwise if the script
+ * already started to write, returns false and stick to whole scripts
+ * replication, which is our default. */</doc>

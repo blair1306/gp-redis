@@ -1,0 +1,25 @@
+<dec f='codebrowser/src/module.c' l='103' type='struct RedisModule *'/>
+<use f='codebrowser/src/module.c' l='435' u='r' c='moduleFreeContext'/>
+<use f='codebrowser/src/module.c' l='466' u='w' c='RedisModuleCommandDispatcher'/>
+<use f='codebrowser/src/module.c' l='486' u='w' c='moduleGetCommandKeysViaAPI'/>
+<use f='codebrowser/src/module.c' l='631' u='r' c='RM_CreateCommand'/>
+<use f='codebrowser/src/module.c' l='656' u='r' c='RM_SetModuleAttribs'/>
+<use f='codebrowser/src/module.c' l='662' u='w' c='RM_SetModuleAttribs'/>
+<use f='codebrowser/src/module.c' l='1088' u='r' c='RM_ReplySetArrayLength'/>
+<use f='codebrowser/src/module.c' l='2885' u='r' c='RM_CreateDataType'/>
+<use f='codebrowser/src/module.c' l='2893' u='r' c='RM_CreateDataType'/>
+<use f='codebrowser/src/module.c' l='3282' u='w' c='RM_GetContextFromIO'/>
+<use f='codebrowser/src/module.c' l='3328' u='r' c='RM_Log'/>
+<use f='codebrowser/src/module.c' l='3332' u='r' c='RM_Log'/>
+<use f='codebrowser/src/module.c' l='3414' u='r' c='RM_BlockClient'/>
+<use f='codebrowser/src/module.c' l='3497' u='w' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='3554' u='w' c='moduleBlockedClientTimedOut'/>
+<use f='codebrowser/src/module.c' l='3606' u='w' c='RM_GetThreadSafeContext'/>
+<use f='codebrowser/src/module.c' l='3756' u='r' c='moduleLoad'/>
+<use f='codebrowser/src/module.c' l='3756' u='r' c='moduleLoad'/>
+<use f='codebrowser/src/module.c' l='3764' u='r' c='moduleLoad'/>
+<use f='codebrowser/src/module.c' l='3764' u='r' c='moduleLoad'/>
+<use f='codebrowser/src/module.c' l='3765' u='r' c='moduleLoad'/>
+<use f='codebrowser/src/module.c' l='3766' u='r' c='moduleLoad'/>
+<offset>64</offset>
+<doc f='codebrowser/src/module.c' l='103'>/* Module reference. */</doc>

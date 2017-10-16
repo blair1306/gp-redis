@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1426' type='void execCommandPropagateMulti(client * c)'/>
+<use f='codebrowser/src/module.c' l='1173' u='c' c='moduleReplicateMultiIfNeeded'/>
+<def f='codebrowser/src/multi.c' l='106' ll='112' type='void execCommandPropagateMulti(client * c)'/>
+<use f='codebrowser/src/multi.c' l='157' u='c' c='execCommand'/>
+<doc f='codebrowser/src/multi.c' l='104'>/* Send a MULTI command to all the slaves and AOF file. Check the execCommand
+ * implementation for more information. */</doc>
+<use f='codebrowser/src/scripting.c' l='541' u='c' c='luaRedisGenericCommand'/>

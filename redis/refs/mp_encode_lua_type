@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='377' type='void mp_encode_lua_type(lua_State * L, mp_buf * buf, int level)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='391' u='c' c='mp_encode_lua_table_as_array'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='415' u='c' c='mp_encode_lua_table_as_map'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='416' u='c' c='mp_encode_lua_table_as_map'/>
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='480' ll='504' type='void mp_encode_lua_type(lua_State * L, mp_buf * buf, int level)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='524' u='c' c='mp_pack'/>

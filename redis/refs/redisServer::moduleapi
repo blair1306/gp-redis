@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='897' type='dict *'/>
+<offset>1408</offset>
+<doc f='codebrowser/src/server.h' l='896'>/* Modules */</doc>
+<doc f='codebrowser/src/server.h' l='897'>/* Exported APIs dictionary for modules. */</doc>
+<use f='codebrowser/src/module.c' l='417' u='r' c='RM_GetApi'/>
+<use f='codebrowser/src/module.c' l='3672' u='r' c='moduleRegisterApi'/>
+<use f='codebrowser/src/module.c' l='3895' u='w' c='moduleRegisterCoreAPI'/>

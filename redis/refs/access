@@ -1,0 +1,8 @@
+<dec f='include/unistd.h' l='290' type='int access(const char * __name, int __type)'/>
+<doc f='include/unistd.h' l='289'>/* Test for access to NAME using the real UID and real GID.  */</doc>
+<use f='codebrowser/src/sentinel.c' l='483' u='c' c='sentinelIsRunning'/>
+<use f='codebrowser/src/sentinel.c' l='1613' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='1620' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='3330' u='c' c='sentinelSetCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3341' u='c' c='sentinelSetCommand'/>
+<use f='codebrowser/src/server.c' l='1549' u='c' c='restartServer'/>

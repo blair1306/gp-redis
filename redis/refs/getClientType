@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1375' type='int getClientType(client * c)'/>
+<use f='codebrowser/src/networking.c' l='1638' u='c' c='clientCommand'/>
+<def f='codebrowser/src/networking.c' l='1830' ll='1836' type='int getClientType(client * c)'/>
+<use f='codebrowser/src/networking.c' l='1866' u='c' c='checkClientOutputBufferLimits'/>
+<doc f='codebrowser/src/networking.c' l='1821'>/* Get the class of a client, used in order to enforce limits to different
+ * classes of clients.
+ *
+ * The function will return one of the following:
+ * CLIENT_TYPE_NORMAL -&gt; Normal client
+ * CLIENT_TYPE_SLAVE  -&gt; Slave or client executing MONITOR command
+ * CLIENT_TYPE_PUBSUB -&gt; Client subscribed to Pub/Sub channels
+ * CLIENT_TYPE_MASTER -&gt; The client representing our replication master.
+ */</doc>

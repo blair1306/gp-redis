@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='192' type='_Bool'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='389' u='r' c='je_prof_tdata_get'/>
+<offset>264</offset>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1235' u='r' c='prof_tdata_merge_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1727' u='w' c='prof_tdata_init_impl'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1843' u='r' c='prof_tdata_expire'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1844' u='w' c='prof_tdata_expire'/>

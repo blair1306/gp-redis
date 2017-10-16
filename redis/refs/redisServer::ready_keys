@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1126' type='list *'/>
+<offset>20800</offset>
+<doc f='codebrowser/src/server.h' l='1126'>/* List of readyList structures for BLPOP &amp; co */</doc>
+<use f='codebrowser/src/server.c' l='1810' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2488' u='r' c='processCommand'/>
+<use f='codebrowser/src/t_list.c' l='710' u='r' c='signalListAsReady'/>
+<use f='codebrowser/src/t_list.c' l='799' u='r' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_list.c' l='806' u='r' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_list.c' l='807' u='w' c='handleClientsBlockedOnLists'/>

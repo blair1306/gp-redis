@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1941' type='void hvalsCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='212' u='r'/>
+<use f='codebrowser/src/server.c' l='212' u='r'/>
+<use f='codebrowser/src/server.c' l='212' u='r'/>
+<use f='codebrowser/src/server.c' l='212' u='r'/>
+<def f='codebrowser/src/t_hash.c' l='801' ll='803' type='void hvalsCommand(client * c)'/>

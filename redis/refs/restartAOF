@@ -1,0 +1,3 @@
+<def f='codebrowser/src/replication.c' l='1092' ll='1102' type='void restartAOF()'/>
+<use f='codebrowser/src/replication.c' l='1273' u='c' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1297' u='c' c='readSyncBulkPayload'/>

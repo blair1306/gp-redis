@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='649' type='long long'/>
+<offset>256</offset>
+<doc f='codebrowser/src/server.h' l='649'>/* Replication offset to reach. */</doc>
+<use f='codebrowser/src/blocked.c' l='164' u='r' c='replyToBlockedClientTimedOut'/>
+<use f='codebrowser/src/networking.c' l='130' u='w' c='createClient'/>
+<use f='codebrowser/src/replication.c' l='2413' u='w' c='waitCommand'/>
+<use f='codebrowser/src/replication.c' l='2450' u='r' c='processClientsWaitingReplicas'/>
+<use f='codebrowser/src/replication.c' l='2456' u='r' c='processClientsWaitingReplicas'/>
+<use f='codebrowser/src/replication.c' l='2459' u='r' c='processClientsWaitingReplicas'/>

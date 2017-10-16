@@ -1,0 +1,6 @@
+<def f='codebrowser/src/rax.c' l='1158' ll='1160' type='void raxIteratorDelChars(raxIterator * it, size_t count)'/>
+<use f='codebrowser/src/rax.c' l='1240' u='c' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1328' u='c' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1596' u='c' c='raxRandomWalk'/>
+<doc f='codebrowser/src/rax.c' l='1156'>/* Remove the specified number of chars from the right of the current
+ * iterator key. */</doc>

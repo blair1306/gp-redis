@@ -1,0 +1,62 @@
+<dec f='codebrowser/src/cluster.h' l='114' type='struct clusterNode *'/>
+<use f='codebrowser/src/cluster.c' l='220' u='w' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='686' u='w' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='846' u='w' c='freeClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='849' u='r' c='freeClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='849' u='r' c='freeClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='1473' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1484' u='r' c='clusterSetNodeAsMaster'/>
+<use f='codebrowser/src/cluster.c' l='1485' u='r' c='clusterSetNodeAsMaster'/>
+<use f='codebrowser/src/cluster.c' l='1490' u='w' c='clusterSetNodeAsMaster'/>
+<use f='codebrowser/src/cluster.c' l='1524' u='r' c='clusterUpdateSlotsConfigWith'/>
+<use f='codebrowser/src/cluster.c' l='1687' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1861' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1862' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1863' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1865' u='w' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1886' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2015' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2201' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2202' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2231' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2232' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2451' u='r' c='clusterBroadcastPong'/>
+<use f='codebrowser/src/cluster.c' l='2452' u='r' c='clusterBroadcastPong'/>
+<use f='codebrowser/src/cluster.c' l='2452' u='r' c='clusterBroadcastPong'/>
+<use f='codebrowser/src/cluster.c' l='2452' u='r' c='clusterBroadcastPong'/>
+<use f='codebrowser/src/cluster.c' l='2597' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2657' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2664' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2693' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2716' u='r' c='clusterGetSlaveRank'/>
+<use f='codebrowser/src/cluster.c' l='2763' u='r' c='clusterLogCantFailover'/>
+<use f='codebrowser/src/cluster.c' l='2764' u='r' c='clusterLogCantFailover'/>
+<use f='codebrowser/src/cluster.c' l='2765' u='r' c='clusterLogCantFailover'/>
+<use f='codebrowser/src/cluster.c' l='2798' u='r' c='clusterFailoverReplaceYourMaster'/>
+<use f='codebrowser/src/cluster.c' l='2861' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2862' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2863' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='3030' u='r' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/cluster.c' l='3371' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3439' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3440' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3442' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3442' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3811' u='r' c='clusterSetMaster'/>
+<use f='codebrowser/src/cluster.c' l='3812' u='r' c='clusterSetMaster'/>
+<use f='codebrowser/src/cluster.c' l='3814' u='w' c='clusterSetMaster'/>
+<use f='codebrowser/src/cluster.c' l='3873' u='r' c='clusterGenNodeDescription'/>
+<use f='codebrowser/src/cluster.c' l='3874' u='r' c='clusterGenNodeDescription'/>
+<use f='codebrowser/src/cluster.c' l='4291' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4292' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4409' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4511' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4515' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4516' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4541' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='5365' u='r' c='getNodeByQuery'/>
+<offset>17024</offset>
+<doc f='codebrowser/src/cluster.h' l='114'>/* pointer to the master node. Note that it
+                                    may be NULL even if the node is a slave
+                                    if we don&apos;t have the master node in our
+                                    tables. */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/qr.h' l='47'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/qr.h' l='43'>/*
+ * qr_meld() and qr_split() are functionally equivalent, so there&apos;s no need to
+ * have two copies of the code.
+ */</doc>

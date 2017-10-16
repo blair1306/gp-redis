@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/lua/src/lparser.h' l='25' type='5'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='31' u='r' c='isnumeral'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='358' c='discharge2reg'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='447' c='luaK_exp2RK'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='453' u='r' c='luaK_exp2RK'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='543' c='luaK_goiftrue'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='593' c='codenot'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='691' u='r' c='luaK_prefix'/>
+<doc f='codebrowser/deps/lua/src/lparser.h' l='25'>/* nval = numerical value */</doc>
+<use f='codebrowser/deps/lua/src/lparser.c' l='732' u='r' c='simpleexp'/>

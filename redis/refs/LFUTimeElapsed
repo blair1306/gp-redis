@@ -1,0 +1,6 @@
+<def f='codebrowser/src/evict.c' l='309' ll='313' type='unsigned long LFUTimeElapsed(unsigned long ldt)'/>
+<use f='codebrowser/src/evict.c' l='337' u='c' c='LFUDecrAndReturn'/>
+<doc f='codebrowser/src/evict.c' l='305'>/* Given an object last decrement time, compute the minimum number of minutes
+ * that elapsed since the last decrement. Handle overflow (ldt greater than
+ * the current 16 bits minutes time) considering the time as wrapping
+ * exactly once. */</doc>

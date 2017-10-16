@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='311' ll='335' macro='1' type='void arena_run_reg_dalloc(arena_run_t * run, void * ptr)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2493' u='c' c='arena_dalloc_bin_locked_impl'/>

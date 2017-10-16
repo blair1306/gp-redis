@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='468' macro='1' type='void je_arena_prof_promoted(const void * ptr, size_t size)'/>
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='2385' macro='1' type='void je_arena_prof_promoted(const void * ptr, size_t size)'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1368' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1458' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1589' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1696' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1989' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2102' macro='1' u='c'/>

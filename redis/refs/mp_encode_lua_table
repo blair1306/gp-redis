@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='466' ll='471' type='void mp_encode_lua_table(lua_State * L, mp_buf * buf, int level)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='500' u='c' c='mp_encode_lua_type'/>
+<doc f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='463'>/* If the length operator returns non-zero, that is, there is at least
+ * an object at key &apos;1&apos;, we serialize to message pack list. Otherwise
+ * we use a map. */</doc>

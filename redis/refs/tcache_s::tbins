@@ -1,0 +1,13 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='81' type='tcache_bin_t [1]'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='276' u='a' c='je_tcache_alloc_small'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='323' u='a' c='je_tcache_alloc_large'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='373' u='a' c='je_tcache_dalloc_small'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='402' u='a' c='je_tcache_dalloc_large'/>
+<offset>256</offset>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='36' u='a' c='je_tcache_event_hard'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='335' u='m' c='je_tcache_create'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='336' u='m' c='je_tcache_create'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='354' u='a' c='tcache_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='366' u='a' c='tcache_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='417' u='a' c='je_tcache_stats_merge'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='426' u='a' c='je_tcache_stats_merge'/>

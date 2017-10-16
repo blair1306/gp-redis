@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>rax.h source code [codebrowser/src/rax.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="rax,raxIterator,raxNode,raxStack "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/rax.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>src</a>/<a href='rax.h.html'>rax.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/RAX_H">RAX_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/RAX_H" data-ref="_M/RAX_H">RAX_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include &lt;stdint.h&gt;</u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i>/* Representation of a radix tree as implemented in this file, that contains</i></td></tr>
+<tr><th id="7">7</th><td><i> * the strings "foo", "foobar" and "footer" after the insertion of each</i></td></tr>
+<tr><th id="8">8</th><td><i> * word. When the node represents a key inside the radix tree, we write it</i></td></tr>
+<tr><th id="9">9</th><td><i> * between [], otherwise it is written between ().</i></td></tr>
+<tr><th id="10">10</th><td><i> *</i></td></tr>
+<tr><th id="11">11</th><td><i> * This is the vanilla representation:</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> *              (f) ""</i></td></tr>
+<tr><th id="14">14</th><td><i> *                \</i></td></tr>
+<tr><th id="15">15</th><td><i> *                (o) "f"</i></td></tr>
+<tr><th id="16">16</th><td><i> *                  \</i></td></tr>
+<tr><th id="17">17</th><td><i> *                  (o) "fo"</i></td></tr>
+<tr><th id="18">18</th><td><i> *                    \</i></td></tr>
+<tr><th id="19">19</th><td><i> *                  [t   b] "foo"</i></td></tr>
+<tr><th id="20">20</th><td><i> *                  /     \</i></td></tr>
+<tr><th id="21">21</th><td><i> *         "foot" (e)     (a) "foob"</i></td></tr>
+<tr><th id="22">22</th><td><i> *                /         \</i></td></tr>
+<tr><th id="23">23</th><td><i> *      "foote" (r)         (r) "fooba"</i></td></tr>
+<tr><th id="24">24</th><td><i> *              /             \</i></td></tr>
+<tr><th id="25">25</th><td><i> *    "footer" []             [] "foobar"</i></td></tr>
+<tr><th id="26">26</th><td><i> *</i></td></tr>
+<tr><th id="27">27</th><td><i> * However, this implementation implements a very common optimization where</i></td></tr>
+<tr><th id="28">28</th><td><i> * successive nodes having a single child are "compressed" into the node</i></td></tr>
+<tr><th id="29">29</th><td><i> * itself as a string of characters, each representing a next-level child,</i></td></tr>
+<tr><th id="30">30</th><td><i> * and only the link to the node representing the last character node is</i></td></tr>
+<tr><th id="31">31</th><td><i> * provided inside the representation. So the above representation is turend</i></td></tr>
+<tr><th id="32">32</th><td><i> * into:</i></td></tr>
+<tr><th id="33">33</th><td><i> *</i></td></tr>
+<tr><th id="34">34</th><td><i> *                  ["foo"] ""</i></td></tr>
+<tr><th id="35">35</th><td><i> *                     |</i></td></tr>
+<tr><th id="36">36</th><td><i> *                  [t   b] "foo"</i></td></tr>
+<tr><th id="37">37</th><td><i> *                  /     \</i></td></tr>
+<tr><th id="38">38</th><td><i> *        "foot" ("er")    ("ar") "foob"</i></td></tr>
+<tr><th id="39">39</th><td><i> *                 /          \</i></td></tr>
+<tr><th id="40">40</th><td><i> *       "footer" []          [] "foobar"</i></td></tr>
+<tr><th id="41">41</th><td><i> *</i></td></tr>
+<tr><th id="42">42</th><td><i> * However this optimization makes the implementation a bit more complex.</i></td></tr>
+<tr><th id="43">43</th><td><i> * For instance if a key "first" is added in the above radix tree, a</i></td></tr>
+<tr><th id="44">44</th><td><i> * "node splitting" operation is needed, since the "foo" prefix is no longer</i></td></tr>
+<tr><th id="45">45</th><td><i> * composed of nodes having a single child one after the other. This is the</i></td></tr>
+<tr><th id="46">46</th><td><i> * above tree and the resulting node splitting after this event happens:</i></td></tr>
+<tr><th id="47">47</th><td><i> *</i></td></tr>
+<tr><th id="48">48</th><td><i> *</i></td></tr>
+<tr><th id="49">49</th><td><i> *                    (f) ""</i></td></tr>
+<tr><th id="50">50</th><td><i> *                    /</i></td></tr>
+<tr><th id="51">51</th><td><i> *                 (i o) "f"</i></td></tr>
+<tr><th id="52">52</th><td><i> *                 /   \</i></td></tr>
+<tr><th id="53">53</th><td><i> *    "firs"  ("rst")  (o) "fo"</i></td></tr>
+<tr><th id="54">54</th><td><i> *              /        \</i></td></tr>
+<tr><th id="55">55</th><td><i> *    "first" []       [t   b] "foo"</i></td></tr>
+<tr><th id="56">56</th><td><i> *                     /     \</i></td></tr>
+<tr><th id="57">57</th><td><i> *           "foot" ("er")    ("ar") "foob"</i></td></tr>
+<tr><th id="58">58</th><td><i> *                    /          \</i></td></tr>
+<tr><th id="59">59</th><td><i> *          "footer" []          [] "foobar"</i></td></tr>
+<tr><th id="60">60</th><td><i> *</i></td></tr>
+<tr><th id="61">61</th><td><i> * Similarly after deletion, if a new chain of nodes having a single child</i></td></tr>
+<tr><th id="62">62</th><td><i> * is created (the chain must also not include nodes that represent keys),</i></td></tr>
+<tr><th id="63">63</th><td><i> * it must be compressed back into a single node.</i></td></tr>
+<tr><th id="64">64</th><td><i> *</i></td></tr>
+<tr><th id="65">65</th><td><i> */</i></td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><u>#define <dfn class="macro" id="_M/RAX_NODE_MAX_SIZE" data-ref="_M/RAX_NODE_MAX_SIZE">RAX_NODE_MAX_SIZE</dfn> ((1&lt;&lt;29)-1)</u></td></tr>
+<tr><th id="68">68</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="raxNode" title='raxNode' data-ref="raxNode"><a class="type" href="#raxNode" title='raxNode' data-ref="raxNode">raxNode</a></dfn> {</td></tr>
+<tr><th id="69">69</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="raxNode::iskey" title='raxNode::iskey' data-ref="raxNode::iskey">iskey</dfn>:<var>1</var>;     <i>/* Does this node contain a key? */</i></td></tr>
+<tr><th id="70">70</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="raxNode::isnull" title='raxNode::isnull' data-ref="raxNode::isnull">isnull</dfn>:<var>1</var>;    <i>/* Associated value is NULL (don't store it). */</i></td></tr>
+<tr><th id="71">71</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="raxNode::iscompr" title='raxNode::iscompr' data-ref="raxNode::iscompr">iscompr</dfn>:<var>1</var>;   <i>/* Node is compressed. */</i></td></tr>
+<tr><th id="72">72</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint32_t" title='uint32_t' data-type='unsigned int' data-ref="uint32_t">uint32_t</a> <dfn class="decl" id="raxNode::size" title='raxNode::size' data-ref="raxNode::size">size</dfn>:<var>29</var>;     <i>/* Number of children, or compressed string len. */</i></td></tr>
+<tr><th id="73">73</th><td>    <i>/* Data layout is as follows:</i></td></tr>
+<tr><th id="74">74</th><td><i>     *</i></td></tr>
+<tr><th id="75">75</th><td><i>     * If node is not compressed we have 'size' bytes, one for each children</i></td></tr>
+<tr><th id="76">76</th><td><i>     * character, and 'size' raxNode pointers, point to each child node.</i></td></tr>
+<tr><th id="77">77</th><td><i>     * Note how the character is not stored in the children but in the</i></td></tr>
+<tr><th id="78">78</th><td><i>     * edge of the parents:</i></td></tr>
+<tr><th id="79">79</th><td><i>     *</i></td></tr>
+<tr><th id="80">80</th><td><i>     * [header strlen=0][abc][a-ptr][b-ptr][c-ptr](value-ptr?)</i></td></tr>
+<tr><th id="81">81</th><td><i>     *</i></td></tr>
+<tr><th id="82">82</th><td><i>     * if node is compressed (strlen != 0) the node has 1 children.</i></td></tr>
+<tr><th id="83">83</th><td><i>     * In that case the 'size' bytes of the string stored immediately at</i></td></tr>
+<tr><th id="84">84</th><td><i>     * the start of the data section, represent a sequence of successive</i></td></tr>
+<tr><th id="85">85</th><td><i>     * nodes linked one after the other, for which only the last one in</i></td></tr>
+<tr><th id="86">86</th><td><i>     * the sequence is actually represented as a node, and pointed to by</i></td></tr>
+<tr><th id="87">87</th><td><i>     * the current compressed node.</i></td></tr>
+<tr><th id="88">88</th><td><i>     *</i></td></tr>
+<tr><th id="89">89</th><td><i>     * [header strlen=3][xyz][z-ptr](value-ptr?)</i></td></tr>
+<tr><th id="90">90</th><td><i>     *</i></td></tr>
+<tr><th id="91">91</th><td><i>     * Both compressed and not compressed nodes can represent a key</i></td></tr>
+<tr><th id="92">92</th><td><i>     * with associated data in the radix tree at any level (not just terminal</i></td></tr>
+<tr><th id="93">93</th><td><i>     * nodes).</i></td></tr>
+<tr><th id="94">94</th><td><i>     *</i></td></tr>
+<tr><th id="95">95</th><td><i>     * If the node has an associated key (iskey=1) and is not NULL</i></td></tr>
+<tr><th id="96">96</th><td><i>     * (isnull=0), then after the raxNode pointers poiting to the</i></td></tr>
+<tr><th id="97">97</th><td><i>     * childen, an additional value pointer is present (as you can see</i></td></tr>
+<tr><th id="98">98</th><td><i>     * in the representation above as "value-ptr" field).</i></td></tr>
+<tr><th id="99">99</th><td><i>     */</i></td></tr>
+<tr><th id="100">100</th><td>    <em>unsigned</em> <em>char</em> <dfn class="decl" id="raxNode::data" title='raxNode::data' data-ref="raxNode::data">data</dfn>[];</td></tr>
+<tr><th id="101">101</th><td>} <dfn class="typedef" id="raxNode" title='raxNode' data-type='struct raxNode' data-ref="raxNode">raxNode</dfn>;</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="rax" title='rax' data-ref="rax"><a class="type" href="#rax" title='rax' data-ref="rax">rax</a></dfn> {</td></tr>
+<tr><th id="104">104</th><td>    <a class="typedef" href="#raxNode" title='raxNode' data-type='struct raxNode' data-ref="raxNode">raxNode</a> *<dfn class="decl" id="rax::head" title='rax::head' data-ref="rax::head">head</dfn>;</td></tr>
+<tr><th id="105">105</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="decl" id="rax::numele" title='rax::numele' data-ref="rax::numele">numele</dfn>;</td></tr>
+<tr><th id="106">106</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="decl" id="rax::numnodes" title='rax::numnodes' data-ref="rax::numnodes">numnodes</dfn>;</td></tr>
+<tr><th id="107">107</th><td>} <dfn class="typedef" id="rax" title='rax' data-type='struct rax' data-ref="rax">rax</dfn>;</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><i>/* Stack data structure used by raxLowWalk() in order to, optionally, return</i></td></tr>
+<tr><th id="110">110</th><td><i> * a list of parent nodes to the caller. The nodes do not have a "parent"</i></td></tr>
+<tr><th id="111">111</th><td><i> * field for space concerns, so we use the auxiliary stack when needed. */</i></td></tr>
+<tr><th id="112">112</th><td><u>#define <dfn class="macro" id="_M/RAX_STACK_STATIC_ITEMS" data-ref="_M/RAX_STACK_STATIC_ITEMS">RAX_STACK_STATIC_ITEMS</dfn> 32</u></td></tr>
+<tr><th id="113">113</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="raxStack" title='raxStack' data-ref="raxStack"><a class="type" href="#raxStack" title='raxStack' data-ref="raxStack">raxStack</a></dfn> {</td></tr>
+<tr><th id="114">114</th><td>    <em>void</em> **<dfn class="decl" id="raxStack::stack" title='raxStack::stack' data-ref="raxStack::stack">stack</dfn>; <i>/* Points to static_items or an heap allocated array. */</i></td></tr>
+<tr><th id="115">115</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="raxStack::items" title='raxStack::items' data-ref="raxStack::items">items</dfn>, <dfn class="decl" id="raxStack::maxitems" title='raxStack::maxitems' data-ref="raxStack::maxitems">maxitems</dfn>; <i>/* Number of items contained and total space. */</i></td></tr>
+<tr><th id="116">116</th><td>    <i>/* Up to RAXSTACK_STACK_ITEMS items we avoid to allocate on the heap</i></td></tr>
+<tr><th id="117">117</th><td><i>     * and use this static array of pointers instead. */</i></td></tr>
+<tr><th id="118">118</th><td>    <em>void</em> *<dfn class="decl" id="raxStack::static_items" title='raxStack::static_items' data-ref="raxStack::static_items">static_items</dfn>[<a class="macro" href="#112" title="32" data-ref="_M/RAX_STACK_STATIC_ITEMS">RAX_STACK_STATIC_ITEMS</a>];</td></tr>
+<tr><th id="119">119</th><td>    <em>int</em> <dfn class="decl" id="raxStack::oom" title='raxStack::oom' data-ref="raxStack::oom">oom</dfn>; <i>/* True if pushing into this stack failed for OOM at some point. */</i></td></tr>
+<tr><th id="120">120</th><td>} <dfn class="typedef" id="raxStack" title='raxStack' data-type='struct raxStack' data-ref="raxStack">raxStack</dfn>;</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><i>/* Radix tree iterator state is encapsulated into this data structure. */</i></td></tr>
+<tr><th id="123">123</th><td><u>#define <dfn class="macro" id="_M/RAX_ITER_STATIC_LEN" data-ref="_M/RAX_ITER_STATIC_LEN">RAX_ITER_STATIC_LEN</dfn> 128</u></td></tr>
+<tr><th id="124">124</th><td><u>#define <dfn class="macro" id="_M/RAX_ITER_JUST_SEEKED" data-ref="_M/RAX_ITER_JUST_SEEKED">RAX_ITER_JUST_SEEKED</dfn> (1&lt;&lt;0) /* Iterator was just seeked. Return current</u></td></tr>
+<tr><th id="125">125</th><td><u>                                       element for the first iteration and</u></td></tr>
+<tr><th id="126">126</th><td><u>                                       clear the flag. */</u></td></tr>
+<tr><th id="127">127</th><td><u>#define <dfn class="macro" id="_M/RAX_ITER_EOF" data-ref="_M/RAX_ITER_EOF">RAX_ITER_EOF</dfn> (1&lt;&lt;1)    /* End of iteration reached. */</u></td></tr>
+<tr><th id="128">128</th><td><u>#define <dfn class="macro" id="_M/RAX_ITER_SAFE" data-ref="_M/RAX_ITER_SAFE">RAX_ITER_SAFE</dfn> (1&lt;&lt;2)   /* Safe iterator, allows operations while</u></td></tr>
+<tr><th id="129">129</th><td><u>                                  iterating. But it is slower. */</u></td></tr>
+<tr><th id="130">130</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="raxIterator" title='raxIterator' data-ref="raxIterator"><a class="type" href="#raxIterator" title='raxIterator' data-ref="raxIterator">raxIterator</a></dfn> {</td></tr>
+<tr><th id="131">131</th><td>    <em>int</em> <dfn class="decl" id="raxIterator::flags" title='raxIterator::flags' data-ref="raxIterator::flags">flags</dfn>;</td></tr>
+<tr><th id="132">132</th><td>    <a class="typedef" href="#rax" title='rax' data-type='struct rax' data-ref="rax">rax</a> *<dfn class="decl" id="raxIterator::rt" title='raxIterator::rt' data-ref="raxIterator::rt">rt</dfn>;                <i>/* Radix tree we are iterating. */</i></td></tr>
+<tr><th id="133">133</th><td>    <em>unsigned</em> <em>char</em> *<dfn class="decl" id="raxIterator::key" title='raxIterator::key' data-ref="raxIterator::key">key</dfn>;     <i>/* The current string. */</i></td></tr>
+<tr><th id="134">134</th><td>    <em>void</em> *<dfn class="decl" id="raxIterator::data" title='raxIterator::data' data-ref="raxIterator::data">data</dfn>;             <i>/* Data associated to this key. */</i></td></tr>
+<tr><th id="135">135</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="raxIterator::key_len" title='raxIterator::key_len' data-ref="raxIterator::key_len">key_len</dfn>;         <i>/* Current key length. */</i></td></tr>
+<tr><th id="136">136</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="raxIterator::key_max" title='raxIterator::key_max' data-ref="raxIterator::key_max">key_max</dfn>;         <i>/* Max key len the current key buffer can hold. */</i></td></tr>
+<tr><th id="137">137</th><td>    <em>unsigned</em> <em>char</em> <dfn class="decl" id="raxIterator::key_static_string" title='raxIterator::key_static_string' data-ref="raxIterator::key_static_string">key_static_string</dfn>[<a class="macro" href="#123" title="128" data-ref="_M/RAX_ITER_STATIC_LEN">RAX_ITER_STATIC_LEN</a>];</td></tr>
+<tr><th id="138">138</th><td>    <a class="typedef" href="#raxNode" title='raxNode' data-type='struct raxNode' data-ref="raxNode">raxNode</a> *<dfn class="decl" id="raxIterator::node" title='raxIterator::node' data-ref="raxIterator::node">node</dfn>;          <i>/* Current node. Only for unsafe iteration. */</i></td></tr>
+<tr><th id="139">139</th><td>    <a class="typedef" href="#raxStack" title='raxStack' data-type='struct raxStack' data-ref="raxStack">raxStack</a> <dfn class="decl" id="raxIterator::stack" title='raxIterator::stack' data-ref="raxIterator::stack">stack</dfn>;         <i>/* Stack used for unsafe iteration. */</i></td></tr>
+<tr><th id="140">140</th><td>} <dfn class="typedef" id="raxIterator" title='raxIterator' data-type='struct raxIterator' data-ref="raxIterator">raxIterator</dfn>;</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><i>/* A special pointer returned for not found items. */</i></td></tr>
+<tr><th id="143">143</th><td><b>extern</b> <em>void</em> *<dfn class="decl" id="raxNotFound" title='raxNotFound' data-ref="raxNotFound">raxNotFound</dfn>;</td></tr>
+<tr><th id="144">144</th><td></td></tr>
+<tr><th id="145">145</th><td><i>/* Exported API. */</i></td></tr>
+<tr><th id="146">146</th><td><a class="typedef" href="#rax" title='rax' data-type='struct rax' data-ref="rax">rax</a> *<dfn class="decl" id="raxNew" title='raxNew' data-ref="raxNew">raxNew</dfn>(<em>void</em>);</td></tr>
+<tr><th id="147">147</th><td><em>int</em> <dfn class="decl" id="raxInsert" title='raxInsert' data-ref="raxInsert">raxInsert</dfn>(<a class="typedef" href="#rax" title='rax' data-type='struct rax' data-ref="rax">rax</a> *<dfn class="local col9 decl" id="399rax" title='rax' data-type='rax *' data-ref="399rax">rax</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col0 decl" id="400s" title='s' data-type='unsigned char *' data-ref="400s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="401len" title='len' data-type='size_t' data-ref="401len">len</dfn>, <em>void</em> *<dfn class="local col2 decl" id="402data" title='data' data-type='void *' data-ref="402data">data</dfn>, <em>void</em> **<dfn class="local col3 decl" id="403old" title='old' data-type='void **' data-ref="403old">old</dfn>);</td></tr>
+<tr><th id="148">148</th><td><em>int</em> <dfn class="decl" id="raxRemove" title='raxRemove' data-ref="raxRemove">raxRemove</dfn>(<a class="typedef" href="#rax" title='rax' data-type='struct rax' data-ref="rax">rax</a> *<dfn class="local col4 decl" id="404rax" title='rax' data-type='rax *' data-ref="404rax">rax</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col5 decl" id="405s" title='s' data-type='unsigned char *' data-ref="405s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="406len" title='len' data-type='size_t' data-ref="406len">len</dfn>, <em>void</em> **<dfn class="local col7 decl" id="407old" title='old' data-type='void **' data-ref="407old">old</dfn>);</td></tr>
+<tr><th id="149">149</th><td><em>void</em> *<dfn class="decl" id="raxFind" title='raxFind' data-ref="raxFind">raxFind</dfn>(<a class="typedef" href="#rax" title='rax' data-type='struct rax' data-ref="rax">rax</a> *<dfn class="local col8 decl" id="408rax" title='rax' data-type='rax *' data-ref="408rax">rax</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col9 decl" id="409s" title='s' data-type='unsigned char *' data-ref="409s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="410len" title='len' data-type='size_t' data-ref="410len">len</dfn>);</td></tr>
+<tr><th id="150">150</th><td><em>void</em> <dfn class="decl" id="raxFree" title='raxFree' data-ref="raxFree">raxFree</dfn>(<a class="typedef" href="#rax" title='rax' data-type='struct rax' data-ref="rax">rax</a> *<dfn class="local col1 decl" id="411rax" title='rax' data-type='rax *' data-ref="411rax">rax</dfn>);</td></tr>
+<tr><th id="151">151</th><td><em>void</em> <dfn class="decl" id="raxStart" title='raxStart' data-ref="raxStart">raxStart</dfn>(<a class="typedef" href="#raxIterator" title='raxIterator' data-type='struct raxIterator' data-ref="raxIterator">raxIterator</a> *<dfn class="local col2 decl" id="412it" title='it' data-type='raxIterator *' data-ref="412it">it</dfn>, <a class="typedef" href="#rax" title='rax' data-type='struct rax' data-ref="rax">rax</a> *<dfn class="local col3 decl" id="413rt" title='rt' data-type='rax *' data-ref="413rt">rt</dfn>);</td></tr>
+<tr><th id="152">152</th><td><em>int</em> <dfn class="decl" id="raxSeek" title='raxSeek' data-ref="raxSeek">raxSeek</dfn>(<a class="typedef" href="#raxIterator" title='raxIterator' data-type='struct raxIterator' data-ref="raxIterator">raxIterator</a> *<dfn class="local col4 decl" id="414it" title='it' data-type='raxIterator *' data-ref="414it">it</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="415op" title='op' data-type='const char *' data-ref="415op">op</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col6 decl" id="416ele" title='ele' data-type='unsigned char *' data-ref="416ele">ele</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="417len" title='len' data-type='size_t' data-ref="417len">len</dfn>);</td></tr>
+<tr><th id="153">153</th><td><em>int</em> <dfn class="decl" id="raxNext" title='raxNext' data-ref="raxNext">raxNext</dfn>(<a class="typedef" href="#raxIterator" title='raxIterator' data-type='struct raxIterator' data-ref="raxIterator">raxIterator</a> *<dfn class="local col8 decl" id="418it" title='it' data-type='raxIterator *' data-ref="418it">it</dfn>);</td></tr>
+<tr><th id="154">154</th><td><em>int</em> <dfn class="decl" id="raxPrev" title='raxPrev' data-ref="raxPrev">raxPrev</dfn>(<a class="typedef" href="#raxIterator" title='raxIterator' data-type='struct raxIterator' data-ref="raxIterator">raxIterator</a> *<dfn class="local col9 decl" id="419it" title='it' data-type='raxIterator *' data-ref="419it">it</dfn>);</td></tr>
+<tr><th id="155">155</th><td><em>int</em> <dfn class="decl" id="raxRandomWalk" title='raxRandomWalk' data-ref="raxRandomWalk">raxRandomWalk</dfn>(<a class="typedef" href="#raxIterator" title='raxIterator' data-type='struct raxIterator' data-ref="raxIterator">raxIterator</a> *<dfn class="local col0 decl" id="420it" title='it' data-type='raxIterator *' data-ref="420it">it</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="421steps" title='steps' data-type='size_t' data-ref="421steps">steps</dfn>);</td></tr>
+<tr><th id="156">156</th><td><em>int</em> <dfn class="decl" id="raxCompare" title='raxCompare' data-ref="raxCompare">raxCompare</dfn>(<a class="typedef" href="#raxIterator" title='raxIterator' data-type='struct raxIterator' data-ref="raxIterator">raxIterator</a> *<dfn class="local col2 decl" id="422iter" title='iter' data-type='raxIterator *' data-ref="422iter">iter</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="423op" title='op' data-type='const char *' data-ref="423op">op</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="424key" title='key' data-type='unsigned char *' data-ref="424key">key</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="425key_len" title='key_len' data-type='size_t' data-ref="425key_len">key_len</dfn>);</td></tr>
+<tr><th id="157">157</th><td><em>void</em> <dfn class="decl" id="raxStop" title='raxStop' data-ref="raxStop">raxStop</dfn>(<a class="typedef" href="#raxIterator" title='raxIterator' data-type='struct raxIterator' data-ref="raxIterator">raxIterator</a> *<dfn class="local col6 decl" id="426it" title='it' data-type='raxIterator *' data-ref="426it">it</dfn>);</td></tr>
+<tr><th id="158">158</th><td><em>void</em> <dfn class="decl" id="raxShow" title='raxShow' data-ref="raxShow">raxShow</dfn>(<a class="typedef" href="#rax" title='rax' data-type='struct rax' data-ref="rax">rax</a> *<dfn class="local col7 decl" id="427rax" title='rax' data-type='rax *' data-ref="427rax">rax</dfn>);</td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><u>#<span data-ppcond="1">endif</span></u></td></tr>
+<tr><th id="161">161</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='aof.c.html'>codebrowser/src/aof.c</a><br/>Generated on <em>2017-Oct-16</em> from project codebrowser revision <em>with-deprecated-diskstore-4466-g2bf8c2c</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

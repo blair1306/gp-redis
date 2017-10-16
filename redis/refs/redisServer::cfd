@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='912' type='int [16]'/>
+<offset>3424</offset>
+<doc f='codebrowser/src/server.h' l='912'>/* Cluster bus listening socket */</doc>
+<use f='codebrowser/src/cluster.c' l='467' u='r' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='474' u='r' c='clusterInit'/>
+<use f='codebrowser/src/server.c' l='2504' u='r' c='closeListeningSockets'/>

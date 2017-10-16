@@ -1,0 +1,11 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='23' ll='63'/>
+<size>72</size>
+<mbr r='malloc_bin_stats_s::nmalloc' o='0' t='uint64_t'/>
+<mbr r='malloc_bin_stats_s::ndalloc' o='64' t='uint64_t'/>
+<mbr r='malloc_bin_stats_s::nrequests' o='128' t='uint64_t'/>
+<mbr r='malloc_bin_stats_s::curregs' o='192' t='size_t'/>
+<mbr r='malloc_bin_stats_s::nfills' o='256' t='uint64_t'/>
+<mbr r='malloc_bin_stats_s::nflushes' o='320' t='uint64_t'/>
+<mbr r='malloc_bin_stats_s::nruns' o='384' t='uint64_t'/>
+<mbr r='malloc_bin_stats_s::reruns' o='448' t='uint64_t'/>
+<mbr r='malloc_bin_stats_s::curruns' o='512' t='size_t'/>

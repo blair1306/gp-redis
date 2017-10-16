@@ -1,0 +1,12 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='11' ll='57'/>
+<size>104</size>
+<mbr r='extent_node_s::en_arena' o='0' t='arena_t *'/>
+<mbr r='extent_node_s::en_addr' o='64' t='void *'/>
+<mbr r='extent_node_s::en_size' o='128' t='size_t'/>
+<mbr r='extent_node_s::en_zeroed' o='192' t='_Bool'/>
+<mbr r='extent_node_s::en_committed' o='200' t='_Bool'/>
+<mbr r='extent_node_s::en_achunk' o='208' t='_Bool'/>
+<mbr r='extent_node_s::en_prof_tctx' o='256' t='prof_tctx_t *'/>
+<mbr r='extent_node_s::rd' o='320' t='arena_runs_dirty_link_t'/>
+<mbr r='extent_node_s::cc_link' o='448' t='struct (anonymous struct at /home/jon/workspace/redis/deps/jemalloc/include/jemalloc/internal/extent.h:45:2)'/>
+<mbr r='extent_node_s::ad_link' o='704' t='struct (anonymous struct at /home/jon/workspace/redis/deps/jemalloc/include/jemalloc/internal/extent.h:56:2)'/>

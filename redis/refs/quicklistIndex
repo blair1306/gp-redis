@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/quicklist.h' l='147' type='int quicklistIndex(const quicklist * quicklist, const long long index, quicklistEntry * entry)'/>
+<use f='codebrowser/src/quicklist.c' l='670' u='c' c='quicklistReplaceAtIndex'/>
+<use f='codebrowser/src/quicklist.c' l='974' u='c' c='quicklistDelRange'/>
+<use f='codebrowser/src/quicklist.c' l='1076' u='c' c='quicklistGetIteratorAtIdx'/>
+<def f='codebrowser/src/quicklist.c' l='1225' ll='1279' type='int quicklistIndex(const quicklist * quicklist, const long long idx, quicklistEntry * entry)'/>
+<doc f='codebrowser/src/quicklist.c' l='1217'>/* Populate &apos;entry&apos; with the element at the specified zero-based index
+ * where 0 is the head, 1 is the element next to head
+ * and so on. Negative integers are used in order to count
+ * from the tail, -1 is the last element, -2 the penultimate
+ * and so on. If the index is out of range 0 is returned.
+ *
+ * Returns 1 if element found
+ * Returns 0 if element not found */</doc>
+<use f='codebrowser/src/t_list.c' l='325' u='c' c='lindexCommand'/>

@@ -1,0 +1,3 @@
+<def f='codebrowser/src/cluster.c' l='839' ll='861' type='void freeClusterNode(clusterNode * n)'/>
+<use f='codebrowser/src/cluster.c' l='909' u='c' c='clusterDelNode'/>
+<doc f='codebrowser/src/cluster.c' l='838'>/* Low level cleanup of the node structure. Only called by clusterDelNode(). */</doc>

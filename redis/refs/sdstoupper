@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='246' type='void sdstoupper(sds s)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='748' ll='752' type='void sdstoupper(sds s)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='747'>/* Apply toupper() to every character of the sds string &apos;s&apos;. */</doc>
+<dec f='codebrowser/src/sds.h' l='246' type='void sdstoupper(sds s)'/>
+<use f='codebrowser/src/redis-cli.c' l='301' u='c' c='cliIntegrateHelp'/>
+<def f='codebrowser/src/sds.c' l='753' ll='757' type='void sdstoupper(sds s)'/>
+<doc f='codebrowser/src/sds.c' l='752'>/* Apply toupper() to every character of the sds string &apos;s&apos;. */</doc>

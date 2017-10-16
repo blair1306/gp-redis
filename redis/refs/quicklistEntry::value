@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/quicklist.h' l='94' type='unsigned char *'/>
+<use f='codebrowser/src/aof.c' l='849' u='r' c='rewriteListObject'/>
+<use f='codebrowser/src/aof.c' l='850' u='r' c='rewriteListObject'/>
+<offset>192</offset>
+<use f='codebrowser/src/quicklist.c' l='76' u='w' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1158' u='a' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='76' u='w' c='quicklistIndex'/>
+<use f='codebrowser/src/quicklist.c' l='1275' u='a' c='quicklistIndex'/>
+<use f='codebrowser/src/t_list.c' l='129' u='r' c='listTypeGet'/>
+<use f='codebrowser/src/t_list.c' l='130' u='r' c='listTypeGet'/>
+<use f='codebrowser/src/t_list.c' l='326' u='r' c='lindexCommand'/>
+<use f='codebrowser/src/t_list.c' l='327' u='r' c='lindexCommand'/>
+<use f='codebrowser/src/t_list.c' l='432' u='r' c='lrangeCommand'/>
+<use f='codebrowser/src/t_list.c' l='433' u='r' c='lrangeCommand'/>

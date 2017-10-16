@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='129' type='int redisFormatCommandArgv(char ** target, int argc, const char ** argv, const size_t * argvlen)'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='530' ll='566' type='int redisFormatCommandArgv(char ** target, int argc, const char ** argv, const size_t * argvlen)'/>
+<doc f='codebrowser/deps/hiredis/hiredis.c' l='525'>/* Format a command according to the Redis protocol. This function takes the
+ * number of arguments, an array with arguments and an array with their
+ * lengths. If the latter is set to NULL, strlen will be used to compute the
+ * argument lengths.
+ */</doc>
+<use f='codebrowser/src/redis-benchmark.c' l='710' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='837' u='c' c='main'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/cluster.h' l='102' type='mstime_t'/>
+<use f='codebrowser/src/cluster.c' l='724' u='w' c='clusterNodeAddFailureReport'/>
+<use f='codebrowser/src/cluster.c' l='732' u='w' c='clusterNodeAddFailureReport'/>
+<use f='codebrowser/src/cluster.c' l='754' u='r' c='clusterNodeCleanupFailureReports'/>
+<offset>64</offset>
+<doc f='codebrowser/src/cluster.h' l='102'>/* Time of the last report from this node. */</doc>

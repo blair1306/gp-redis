@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='16' type='void *'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='107' u='r' c='je_extent_node_addr_get'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='157' u='w' c='je_extent_node_addr_set'/>
+<offset>64</offset>

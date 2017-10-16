@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/dict.h' l='170' type='void dictGetStats(char * buf, size_t bufsize, dict * d)'/>
+<use f='codebrowser/src/debug.c' l='544' u='c' c='debugCommand'/>
+<use f='codebrowser/src/debug.c' l='548' u='c' c='debugCommand'/>
+<def f='codebrowser/src/dict.c' l='1091' ll='1104' type='void dictGetStats(char * buf, size_t bufsize, dict * d)'/>

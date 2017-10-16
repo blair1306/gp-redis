@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/cluster.h' l='41' type='mstime_t'/>
+<use f='codebrowser/src/cluster.c' l='568' u='w' c='createClusterLink'/>
+<use f='codebrowser/src/cluster.c' l='3379' u='r' c='clusterCron'/>
+<offset>0</offset>
+<doc f='codebrowser/src/cluster.h' l='41'>/* Link creation time */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='993' type='int'/>
+<offset>14240</offset>
+<doc f='codebrowser/src/server.h' l='993'>/* Rewrite AOF if % growth is &gt; M and... */</doc>
+<use f='codebrowser/src/config.c' l='466' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='467' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1058' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1231' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2004' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='1105' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1111' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1385' u='w' c='initServerConfig'/>

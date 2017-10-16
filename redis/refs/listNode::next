@@ -1,0 +1,30 @@
+<dec f='codebrowser/src/adlist.h' l='38' type='struct listNode *'/>
+<use f='codebrowser/src/adlist.c' l='64' u='r' c='listEmpty'/>
+<use f='codebrowser/src/adlist.c' l='97' u='w' c='listAddNodeHead'/>
+<use f='codebrowser/src/adlist.c' l='100' u='w' c='listAddNodeHead'/>
+<use f='codebrowser/src/adlist.c' l='123' u='w' c='listAddNodeTail'/>
+<use f='codebrowser/src/adlist.c' l='126' u='w' c='listAddNodeTail'/>
+<use f='codebrowser/src/adlist.c' l='127' u='w' c='listAddNodeTail'/>
+<use f='codebrowser/src/adlist.c' l='142' u='w' c='listInsertNode'/>
+<use f='codebrowser/src/adlist.c' l='142' u='r' c='listInsertNode'/>
+<use f='codebrowser/src/adlist.c' l='147' u='w' c='listInsertNode'/>
+<use f='codebrowser/src/adlist.c' l='154' u='w' c='listInsertNode'/>
+<use f='codebrowser/src/adlist.c' l='156' u='r' c='listInsertNode'/>
+<use f='codebrowser/src/adlist.c' l='157' u='r' c='listInsertNode'/>
+<use f='codebrowser/src/adlist.c' l='170' u='w' c='listDelNode'/>
+<use f='codebrowser/src/adlist.c' l='170' u='r' c='listDelNode'/>
+<use f='codebrowser/src/adlist.c' l='172' u='r' c='listDelNode'/>
+<use f='codebrowser/src/adlist.c' l='173' u='r' c='listDelNode'/>
+<use f='codebrowser/src/adlist.c' l='174' u='r' c='listDelNode'/>
+<use f='codebrowser/src/adlist.c' l='235' u='r' c='listNext'/>
+<use f='codebrowser/src/adlist.c' l='324' u='r' c='listIndex'/>
+<use f='codebrowser/src/adlist.c' l='337' u='w' c='listRotate'/>
+<use f='codebrowser/src/adlist.c' l='341' u='w' c='listRotate'/>
+<use f='codebrowser/src/adlist.c' l='352' u='w' c='listJoin'/>
+<offset>64</offset>
+<use f='codebrowser/src/db.c' l='703' macro='1' u='r'/>
+<use f='codebrowser/src/db.c' l='735' macro='1' u='r'/>
+<use f='codebrowser/src/networking.c' l='443' u='r' c='setDeferredMultiBulkLength'/>
+<use f='codebrowser/src/networking.c' l='444' u='r' c='setDeferredMultiBulkLength'/>
+<use f='codebrowser/src/networking.c' l='449' u='r' c='setDeferredMultiBulkLength'/>
+<use f='codebrowser/src/redis-benchmark.c' l='143' u='r' c='freeAllClients'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/src/redis-cli.c' l='629' ll='646' type='sds sdscatcolor(sds o, char * s, size_t len, char * color)'/>
+<use f='codebrowser/src/redis-cli.c' l='663' u='c' c='sdsCatColorizedLdbReply'/>
+<doc f='codebrowser/src/redis-cli.c' l='627'>/* Helpe  function for sdsCatColorizedLdbReply() appending colorize strings
+ * to an SDS string. */</doc>

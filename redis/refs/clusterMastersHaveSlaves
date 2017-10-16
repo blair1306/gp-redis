@@ -1,0 +1,5 @@
+<def f='codebrowser/src/cluster.c' l='3524' ll='3536' type='int clusterMastersHaveSlaves()'/>
+<use f='codebrowser/src/cluster.c' l='3557' u='c' c='clusterNodeSetSlotBit'/>
+<doc f='codebrowser/src/cluster.c' l='3521'>/* Return non-zero if there is at least one master with slaves in the cluster.
+ * Otherwise zero is returned. Used by clusterNodeSetSlotBit() to set the
+ * MIGRATE_TO flag the when a master gets the first slot. */</doc>

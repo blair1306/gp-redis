@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='39' type='void *'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='167' u='a' c='je_rtree_child_tryread'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='200' u='a' c='je_rtree_val_read'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='208' u='a' c='je_rtree_val_write'/>
+<offset>0</offset>

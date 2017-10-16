@@ -1,0 +1,22 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='43'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='89' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/size_classes.h' l='33' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/size_classes.h' l='187' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='206' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='69' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='509' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='520' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='533' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='544' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='557' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='568' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='581' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='592' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='147' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='543' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='543' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='641' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='641' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='324' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='42'>/* sizeof(void *) == 2^LG_SIZEOF_PTR. */</doc>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='735' u='c'/>

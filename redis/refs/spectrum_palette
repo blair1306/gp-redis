@@ -1,0 +1,6 @@
+<def f='codebrowser/src/redis-cli.c' l='77' type='int *'/>
+<use f='codebrowser/src/redis-cli.c' l='1016' u='w' c='parseOptions'/>
+<use f='codebrowser/src/redis-cli.c' l='1591' u='r' c='showLatencyDistSamples'/>
+<use f='codebrowser/src/redis-cli.c' l='1613' u='r' c='showLatencyDistLegend'/>
+<use f='codebrowser/src/redis-cli.c' l='2645' u='w' c='main'/>
+<doc f='codebrowser/src/redis-cli.c' l='76'>/* The actual palette in use. */</doc>

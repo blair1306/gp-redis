@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/anet.h' l='54' type='int anetTcpNonBlockBindConnect(char * err, char * addr, int port, char * source_addr)'/>
+<def f='codebrowser/src/anet.c' l='358' ll='363' type='int anetTcpNonBlockBindConnect(char * err, char * addr, int port, char * source_addr)'/>
+<use f='codebrowser/src/cluster.c' l='3265' u='c' c='clusterCron'/>

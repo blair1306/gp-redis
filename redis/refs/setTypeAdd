@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1646' type='int setTypeAdd(robj * subject, sds value)'/>
+<def f='codebrowser/src/t_set.c' l='52' ll='86' type='int setTypeAdd(robj * subject, sds value)'/>
+<use f='codebrowser/src/t_set.c' l='280' u='c' c='saddCommand'/>
+<use f='codebrowser/src/t_set.c' l='366' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='514' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='881' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='884' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='997' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1020' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1040' u='c' c='sunionDiffGenericCommand'/>
+<doc f='codebrowser/src/t_set.c' l='48'>/* Add the specified value into a set.
+ *
+ * If the value was already member of the set, nothing is done and 0 is
+ * returned, otherwise the new element is added and 1 is returned. */</doc>

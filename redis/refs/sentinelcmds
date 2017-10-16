@@ -1,0 +1,4 @@
+<def f='codebrowser/src/sentinel.c' l='425' ll='437' type='struct redisCommand [11]'/>
+<use f='codebrowser/src/sentinel.c' l='452' u='r' c='initSentinel'/>
+<use f='codebrowser/src/sentinel.c' l='452' u='r' c='initSentinel'/>
+<use f='codebrowser/src/sentinel.c' l='454' u='r' c='initSentinel'/>

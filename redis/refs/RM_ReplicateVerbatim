@@ -1,0 +1,13 @@
+<def f='codebrowser/src/module.c' l='1233' ll='1238' type='int RM_ReplicateVerbatim(RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/module.c' l='3941' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1222'>/* This function will replicate the command exactly as it was invoked
+ * by the client. Note that this function will not wrap the command into
+ * a MULTI/EXEC stanza, so it should not be mixed with other replication
+ * commands.
+ *
+ * Basically this form of replication is useful when you want to propagate
+ * the command to the slaves and AOF file exactly as it was called, since
+ * the command can just be re-executed to deterministically re-create the
+ * new state starting from the old one.
+ *
+ * The function always returns REDISMODULE_OK. */</doc>

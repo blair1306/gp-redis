@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/server.h' l='568'/>
+<doc f='codebrowser/src/server.h' l='565'>/* Objects encoding. Some kind of objects like Strings and Hashes can be
+ * internally represented in multiple ways. The &apos;encoding&apos; field of the object
+ * is set to one of this fields for this object. */</doc>
+<use f='codebrowser/src/db.c' l='286' u='c'/>
+<use f='codebrowser/src/defrag.c' l='114' u='c'/>
+<use f='codebrowser/src/module.c' l='914' u='c'/>
+<use f='codebrowser/src/module.c' l='918' u='c'/>
+<use f='codebrowser/src/module.c' l='1538' u='c'/>
+<use f='codebrowser/src/networking.c' l='51' u='c'/>
+<use f='codebrowser/src/object.c' l='44' u='c'/>
+<use f='codebrowser/src/object.c' l='167' u='c'/>
+<use f='codebrowser/src/object.c' l='243' u='c'/>
+<use f='codebrowser/src/object.c' l='414' u='c'/>
+<use f='codebrowser/src/object.c' l='443' u='c'/>
+<use f='codebrowser/src/object.c' l='681' u='c'/>
+<use f='codebrowser/src/object.c' l='710' u='c'/>
+<use f='codebrowser/src/scripting.c' l='604' u='c'/>

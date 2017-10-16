@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1585' type='int zsetDel(robj * zobj, sds ele)'/>
+<use f='codebrowser/src/module.c' l='1743' u='c' c='RM_ZsetRem'/>
+<def f='codebrowser/src/t_zset.c' l='1377' ll='1413' type='int zsetDel(robj * zobj, sds ele)'/>
+<use f='codebrowser/src/t_zset.c' l='1625' u='c' c='zremCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='1375'>/* Delete the element &apos;ele&apos; from the sorted set, returning 1 if the element
+ * existed and was deleted, 0 otherwise (the element was not there). */</doc>

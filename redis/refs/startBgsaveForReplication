@@ -1,0 +1,22 @@
+<def f='codebrowser/src/replication.c' l='563' ll='624' type='int startBgsaveForReplication(int mincapa)'/>
+<use f='codebrowser/src/replication.c' l='753' u='c' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='1000' u='c' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='2666' u='c' c='replicationCron'/>
+<doc f='codebrowser/src/replication.c' l='545'>/* Start a BGSAVE for replication goals, which is, selecting the disk or
+ * socket target depending on the configuration, and making sure that
+ * the script cache is flushed before to start.
+ *
+ * The mincapa argument is the bitwise AND among all the slaves capabilities
+ * of the slaves waiting for this BGSAVE, so represents the slave capabilities
+ * all the slaves support. Can be tested via SLAVE_CAPA_* macros.
+ *
+ * Side effects, other than starting a BGSAVE:
+ *
+ * 1) Handle the slaves in WAIT_START state, by preparing them for a full
+ *    sync if the BGSAVE was succesfully started, or sending them an error
+ *    and dropping them from the list of slaves.
+ *
+ * 2) Flush the Lua scripting script cache if the BGSAVE was actually
+ *    started.
+ *
+ * Returns C_OK on success or C_ERR otherwise. */</doc>

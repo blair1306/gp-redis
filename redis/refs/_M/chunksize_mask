@@ -1,0 +1,14 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/private_namespace.h' l='166'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk.h' l='46' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='18' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='338' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='340' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='400' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='402' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='566' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='581' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='730' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='73' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='74' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='111' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_mmap.c' l='54' u='c'/>

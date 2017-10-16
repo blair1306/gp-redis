@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='40'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='107' u='a'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='35'>/*
+ * If defined, specify throw() for the public function prototypes when compiling
+ * with C++.  The only justification for this is to match the prototypes that
+ * glibc defines.
+ */</doc>

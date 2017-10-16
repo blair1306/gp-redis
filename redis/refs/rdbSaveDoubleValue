@@ -1,0 +1,9 @@
+<def f='codebrowser/src/rdb.c' l='511' ll='543' type='int rdbSaveDoubleValue(rio * rdb, double val)'/>
+<doc f='codebrowser/src/rdb.c' l='503'>/* Save a double value. Doubles are saved as strings prefixed by an unsigned
+ * 8 bit integer specifying the length of the representation.
+ * This 8 bit integer has special values in order to specify the following
+ * conditions:
+ * 253: not a number
+ * 254: + inf
+ * 255: - inf
+ */</doc>

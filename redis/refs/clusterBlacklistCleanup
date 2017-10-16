@@ -1,0 +1,9 @@
+<def f='codebrowser/src/cluster.c' l='1103' ll='1115' type='void clusterBlacklistCleanup()'/>
+<use f='codebrowser/src/cluster.c' l='1122' u='c' c='clusterBlacklistAddNode'/>
+<use f='codebrowser/src/cluster.c' l='1140' u='c' c='clusterBlacklistExists'/>
+<doc f='codebrowser/src/cluster.c' l='1097'>/* Before of the addNode() or Exists() operations we always remove expired
+ * entries from the black list. This is an O(N) operation but it is not a
+ * problem since add / exists operations are called very infrequently and
+ * the hash table is supposed to contain very little elements at max.
+ * However without the cleanup during long uptimes and with some automated
+ * node add/removal procedures, entries could accumulate. */</doc>

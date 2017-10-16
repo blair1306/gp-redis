@@ -1,0 +1,7 @@
+<def f='codebrowser/src/rax.h' l='113' ll='120'/>
+<size>288</size>
+<mbr r='raxStack::stack' o='0' t='void **'/>
+<mbr r='raxStack::items' o='64' t='size_t'/>
+<mbr r='raxStack::maxitems' o='128' t='size_t'/>
+<mbr r='raxStack::static_items' o='192' t='void *[32]'/>
+<mbr r='raxStack::oom' o='2240' t='int'/>

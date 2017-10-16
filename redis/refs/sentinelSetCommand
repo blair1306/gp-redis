@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/sentinel.c' l='421' type='void sentinelSetCommand(client * c)'/>
+<use f='codebrowser/src/sentinel.c' l='3099' u='c' c='sentinelCommand'/>
+<def f='codebrowser/src/sentinel.c' l='3294' ll='3379' type='void sentinelSetCommand(client * c)'/>
+<doc f='codebrowser/src/sentinel.c' l='3293'>/* SENTINEL SET &lt;mastername&gt; [&lt;option&gt; &lt;value&gt; ...] */</doc>

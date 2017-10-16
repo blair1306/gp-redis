@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='384'/>
+<doc f='codebrowser/src/server.h' l='383'>/* Scripting */</doc>
+<use f='codebrowser/src/config.c' l='2006' u='c'/>
+<use f='codebrowser/src/server.c' l='1442' u='c'/>

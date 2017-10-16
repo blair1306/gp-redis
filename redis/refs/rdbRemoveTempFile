@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/rdb.h' l='134' type='void rdbRemoveTempFile(pid_t childpid)'/>
+<use f='codebrowser/src/db.c' l='413' u='c' c='flushallCommand'/>
+<def f='codebrowser/src/rdb.c' l='1100' ll='1105' type='void rdbRemoveTempFile(pid_t childpid)'/>
+<use f='codebrowser/src/rdb.c' l='1685' u='c' c='backgroundSaveDoneHandlerDisk'/>
+<use f='codebrowser/src/server.c' l='2526' u='c' c='prepareForShutdown'/>
+<use f='codebrowser/src/server.c' l='3476' u='c' c='sigShutdownHandler'/>

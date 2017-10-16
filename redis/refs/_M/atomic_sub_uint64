@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/private_namespace.h' l='114'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='86' u='c'/>

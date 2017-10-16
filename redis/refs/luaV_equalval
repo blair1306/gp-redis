@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/lua/src/lvm.h' l='26' type='int luaV_equalval(lua_State * L, const TValue * t1, const TValue * t2)'/>
+<use f='codebrowser/deps/lua/src/lapi.c' l='293' macro='1' u='c'/>
+<def f='codebrowser/deps/lua/src/lvm.c' l='255' ll='279' type='int luaV_equalval(lua_State * L, const TValue * t1, const TValue * t2)'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='548' macro='1' u='c'/>

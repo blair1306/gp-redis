@@ -1,0 +1,18 @@
+<def f='codebrowser/src/t_list.c' l='550' ll='563' type='void rpoplpushHandlePush(client * c, robj * dstkey, robj * dstobj, robj * value)'/>
+<use f='codebrowser/src/t_list.c' l='584' u='c' c='rpoplpushCommand'/>
+<use f='codebrowser/src/t_list.c' l='769' u='c' c='serveClientBlockedOnList'/>
+<doc f='codebrowser/src/t_list.c' l='534'>/* This is the semantic of this command:
+ *  RPOPLPUSH srclist dstlist:
+ *    IF LLEN(srclist) &gt; 0
+ *      element = RPOP srclist
+ *      LPUSH dstlist element
+ *      RETURN element
+ *    ELSE
+ *      RETURN nil
+ *    END
+ *  END
+ *
+ * The idea is to be able to get an element from a list in a reliable way
+ * since the element is not just returned but pushed against another list
+ * as well. This command was originally proposed by Ezra Zygmuntowicz.
+ */</doc>

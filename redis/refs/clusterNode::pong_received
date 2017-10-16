@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/cluster.h' l='119' type='mstime_t'/>
+<use f='codebrowser/src/cluster.c' l='226' u='w' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='687' u='w' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='1375' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1377' u='w' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1819' u='w' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2285' u='r' c='clusterSetGossipEntry'/>
+<use f='codebrowser/src/cluster.c' l='3327' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3329' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3382' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3396' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3881' u='r' c='clusterGenNodeDescription'/>
+<offset>17152</offset>
+<doc f='codebrowser/src/cluster.h' l='119'>/* Unix time we received the pong */</doc>

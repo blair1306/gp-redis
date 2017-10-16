@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/server.h' l='1060' type='long long'/>
+<offset>17728</offset>
+<doc f='codebrowser/src/server.h' l='1060'>/* My current replication offset */</doc>
+<use f='codebrowser/src/cluster.c' l='2246' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/rdb.c' l='865' u='r' c='rdbSaveInfoAuxFields'/>
+<use f='codebrowser/src/replication.c' l='86' u='r' c='createReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='112' u='r' c='resizeReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='129' u='w' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='147' u='r' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='399' u='r' c='getPsyncInitialOffset'/>
+<use f='codebrowser/src/replication.c' l='497' u='r' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1035' u='r' c='shiftReplicationId'/>
+<use f='codebrowser/src/replication.c' l='1285' u='w' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1520' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='2041' u='r' c='roleCommand'/>
+<use f='codebrowser/src/replication.c' l='2168' u='r' c='replicationCacheMasterUsingMyself'/>
+<use f='codebrowser/src/server.c' l='1475' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2487' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='3245' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3543' u='w' c='loadDataFromDisk'/>

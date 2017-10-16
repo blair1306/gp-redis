@@ -1,0 +1,4 @@
+<def f='codebrowser/src/server.c' l='605' ll='612' type='dictType'/>
+<use f='codebrowser/src/server.c' l='1499' u='a' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1500' u='a' c='initServerConfig'/>
+<doc f='codebrowser/src/server.c' l='604'>/* Command table. sds string -&gt; command struct pointer. */</doc>

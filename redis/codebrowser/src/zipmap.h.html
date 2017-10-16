@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>zipmap.h source code [codebrowser/src/zipmap.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/zipmap.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>src</a>/<a href='zipmap.h.html'>zipmap.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* String -&gt; String Map data structure optimized for size.</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * See zipmap.c for more info.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * --------------------------------------------------------------------------</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> * Copyright (c) 2009-2010, Salvatore Sanfilippo &lt;antirez at gmail dot com&gt;</i></td></tr>
+<tr><th id="8">8</th><td><i> * All rights reserved.</i></td></tr>
+<tr><th id="9">9</th><td><i> *</i></td></tr>
+<tr><th id="10">10</th><td><i> * Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="11">11</th><td><i> * modification, are permitted provided that the following conditions are met:</i></td></tr>
+<tr><th id="12">12</th><td><i> *</i></td></tr>
+<tr><th id="13">13</th><td><i> *   * Redistributions of source code must retain the above copyright notice,</i></td></tr>
+<tr><th id="14">14</th><td><i> *     this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="15">15</th><td><i> *   * Redistributions in binary form must reproduce the above copyright</i></td></tr>
+<tr><th id="16">16</th><td><i> *     notice, this list of conditions and the following disclaimer in the</i></td></tr>
+<tr><th id="17">17</th><td><i> *     documentation and/or other materials provided with the distribution.</i></td></tr>
+<tr><th id="18">18</th><td><i> *   * Neither the name of Redis nor the names of its contributors may be used</i></td></tr>
+<tr><th id="19">19</th><td><i> *     to endorse or promote products derived from this software without</i></td></tr>
+<tr><th id="20">20</th><td><i> *     specific prior written permission.</i></td></tr>
+<tr><th id="21">21</th><td><i> *</i></td></tr>
+<tr><th id="22">22</th><td><i> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"</i></td></tr>
+<tr><th id="23">23</th><td><i> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</i></td></tr>
+<tr><th id="24">24</th><td><i> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</i></td></tr>
+<tr><th id="25">25</th><td><i> * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE</i></td></tr>
+<tr><th id="26">26</th><td><i> * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</i></td></tr>
+<tr><th id="27">27</th><td><i> * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</i></td></tr>
+<tr><th id="28">28</th><td><i> * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</i></td></tr>
+<tr><th id="29">29</th><td><i> * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</i></td></tr>
+<tr><th id="30">30</th><td><i> * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</i></td></tr>
+<tr><th id="31">31</th><td><i> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</i></td></tr>
+<tr><th id="32">32</th><td><i> * POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="33">33</th><td><i> */</i></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="35">ifndef</span> <span class="macro" data-ref="_M/_ZIPMAP_H">_ZIPMAP_H</span></u></td></tr>
+<tr><th id="36">36</th><td><u>#define <dfn class="macro" id="_M/_ZIPMAP_H" data-ref="_M/_ZIPMAP_H">_ZIPMAP_H</dfn></u></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><em>unsigned</em> <em>char</em> *<dfn class="decl" id="zipmapNew" title='zipmapNew' data-ref="zipmapNew">zipmapNew</dfn>(<em>void</em>);</td></tr>
+<tr><th id="39">39</th><td><em>unsigned</em> <em>char</em> *<dfn class="decl" id="zipmapSet" title='zipmapSet' data-ref="zipmapSet">zipmapSet</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col8 decl" id="428zm" title='zm' data-type='unsigned char *' data-ref="428zm">zm</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col9 decl" id="429key" title='key' data-type='unsigned char *' data-ref="429key">key</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col0 decl" id="430klen" title='klen' data-type='unsigned int' data-ref="430klen">klen</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col1 decl" id="431val" title='val' data-type='unsigned char *' data-ref="431val">val</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="432vlen" title='vlen' data-type='unsigned int' data-ref="432vlen">vlen</dfn>, <em>int</em> *<dfn class="local col3 decl" id="433update" title='update' data-type='int *' data-ref="433update">update</dfn>);</td></tr>
+<tr><th id="40">40</th><td><em>unsigned</em> <em>char</em> *<dfn class="decl" id="zipmapDel" title='zipmapDel' data-ref="zipmapDel">zipmapDel</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="434zm" title='zm' data-type='unsigned char *' data-ref="434zm">zm</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col5 decl" id="435key" title='key' data-type='unsigned char *' data-ref="435key">key</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="436klen" title='klen' data-type='unsigned int' data-ref="436klen">klen</dfn>, <em>int</em> *<dfn class="local col7 decl" id="437deleted" title='deleted' data-type='int *' data-ref="437deleted">deleted</dfn>);</td></tr>
+<tr><th id="41">41</th><td><em>unsigned</em> <em>char</em> *<dfn class="decl" id="zipmapRewind" title='zipmapRewind' data-ref="zipmapRewind">zipmapRewind</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col8 decl" id="438zm" title='zm' data-type='unsigned char *' data-ref="438zm">zm</dfn>);</td></tr>
+<tr><th id="42">42</th><td><em>unsigned</em> <em>char</em> *<dfn class="decl" id="zipmapNext" title='zipmapNext' data-ref="zipmapNext">zipmapNext</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col9 decl" id="439zm" title='zm' data-type='unsigned char *' data-ref="439zm">zm</dfn>, <em>unsigned</em> <em>char</em> **<dfn class="local col0 decl" id="440key" title='key' data-type='unsigned char **' data-ref="440key">key</dfn>, <em>unsigned</em> <em>int</em> *<dfn class="local col1 decl" id="441klen" title='klen' data-type='unsigned int *' data-ref="441klen">klen</dfn>, <em>unsigned</em> <em>char</em> **<dfn class="local col2 decl" id="442value" title='value' data-type='unsigned char **' data-ref="442value">value</dfn>, <em>unsigned</em> <em>int</em> *<dfn class="local col3 decl" id="443vlen" title='vlen' data-type='unsigned int *' data-ref="443vlen">vlen</dfn>);</td></tr>
+<tr><th id="43">43</th><td><em>int</em> <dfn class="decl" id="zipmapGet" title='zipmapGet' data-ref="zipmapGet">zipmapGet</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="444zm" title='zm' data-type='unsigned char *' data-ref="444zm">zm</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col5 decl" id="445key" title='key' data-type='unsigned char *' data-ref="445key">key</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="446klen" title='klen' data-type='unsigned int' data-ref="446klen">klen</dfn>, <em>unsigned</em> <em>char</em> **<dfn class="local col7 decl" id="447value" title='value' data-type='unsigned char **' data-ref="447value">value</dfn>, <em>unsigned</em> <em>int</em> *<dfn class="local col8 decl" id="448vlen" title='vlen' data-type='unsigned int *' data-ref="448vlen">vlen</dfn>);</td></tr>
+<tr><th id="44">44</th><td><em>int</em> <dfn class="decl" id="zipmapExists" title='zipmapExists' data-ref="zipmapExists">zipmapExists</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col9 decl" id="449zm" title='zm' data-type='unsigned char *' data-ref="449zm">zm</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col0 decl" id="450key" title='key' data-type='unsigned char *' data-ref="450key">key</dfn>, <em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="451klen" title='klen' data-type='unsigned int' data-ref="451klen">klen</dfn>);</td></tr>
+<tr><th id="45">45</th><td><em>unsigned</em> <em>int</em> <dfn class="decl" id="zipmapLen" title='zipmapLen' data-ref="zipmapLen">zipmapLen</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col2 decl" id="452zm" title='zm' data-type='unsigned char *' data-ref="452zm">zm</dfn>);</td></tr>
+<tr><th id="46">46</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="zipmapBlobLen" title='zipmapBlobLen' data-ref="zipmapBlobLen">zipmapBlobLen</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col3 decl" id="453zm" title='zm' data-type='unsigned char *' data-ref="453zm">zm</dfn>);</td></tr>
+<tr><th id="47">47</th><td><em>void</em> <dfn class="decl" id="zipmapRepr" title='zipmapRepr' data-ref="zipmapRepr">zipmapRepr</dfn>(<em>unsigned</em> <em>char</em> *<dfn class="local col4 decl" id="454p" title='p' data-type='unsigned char *' data-ref="454p">p</dfn>);</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><u>#<span data-ppcond="49">ifdef</span> <span class="macro" data-ref="_M/REDIS_TEST">REDIS_TEST</span></u></td></tr>
+<tr><th id="50">50</th><td><em>int</em> zipmapTest(<em>int</em> argc, <em>char</em> *argv[]);</td></tr>
+<tr><th id="51">51</th><td><u>#<span data-ppcond="49">endif</span></u></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><u>#<span data-ppcond="35">endif</span></u></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='aof.c.html'>codebrowser/src/aof.c</a><br/>Generated on <em>2017-Oct-16</em> from project codebrowser revision <em>with-deprecated-diskstore-4466-g2bf8c2c</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

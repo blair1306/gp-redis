@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/private_namespace.h' l='284'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='958' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2352' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2481' u='c'/>

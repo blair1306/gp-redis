@@ -1,0 +1,6 @@
+<def f='codebrowser/src/module.c' l='528' ll='552' type='int commandFlagsFromString(char * s)'/>
+<use f='codebrowser/src/module.c' l='608' u='c' c='RM_CreateCommand'/>
+<doc f='codebrowser/src/module.c' l='524'>/* Helper for RM_CreateCommand(). Truns a string representing command
+ * flags into the command flags used by the Redis core.
+ *
+ * It returns the set of flags, or -1 if unknown flags are found. */</doc>

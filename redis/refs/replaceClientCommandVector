@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1371' type='void replaceClientCommandVector(client * c, int argc, robj ** argv)'/>
+<use f='codebrowser/src/cluster.c' l='5079' u='c' c='migrateCommand'/>
+<use f='codebrowser/src/geo.c' l='447' u='c' c='geoaddCommand'/>
+<def f='codebrowser/src/networking.c' l='1760' ll='1767' type='void replaceClientCommandVector(client * c, int argc, robj ** argv)'/>
+<doc f='codebrowser/src/networking.c' l='1759'>/* Completely replace the client command vector with the provided one. */</doc>

@@ -1,0 +1,8 @@
+<def f='codebrowser/src/cluster.c' l='89' ll='292' type='int clusterLoadConfig(char * filename)'/>
+<use f='codebrowser/src/cluster.c' l='439' u='c' c='clusterInit'/>
+<doc f='codebrowser/src/cluster.c' l='83'>/* Load the cluster config from &apos;filename&apos;.
+ *
+ * If the file does not exist or is zero-length (this may happen because
+ * when we lock the nodes.conf file, we create a zero-length one for the
+ * sake of locking if it does not already exist), C_ERR is returned.
+ * If the configuration was loaded from the file, C_OK is returned. */</doc>

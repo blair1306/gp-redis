@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='178' ll='193'/>
+<size>48</size>
+<doc f='codebrowser/src/module.c' l='175'>/* Reply of RM_Call() function. The function is filled in a lazy
+ * way depending on the function called on the reply structure. By default
+ * only the type, proto and protolen are filled. */</doc>

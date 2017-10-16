@@ -1,0 +1,23 @@
+<def f='codebrowser/deps/hiredis/hiredis.c' l='572' ll='586' type='void __redisSetError(redisContext * c, int type, const char * str)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='665' u='c' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='807' u='c' c='redisBufferRead'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='811' u='c' c='redisBufferRead'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='815' u='c' c='redisBufferRead'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='844' u='c' c='redisBufferWrite'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='864' u='c' c='redisGetReplyFromReader'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='912' u='c' c='__redisAppendCommand'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='935' u='c' c='redisvAppendCommand'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='938' u='c' c='redisvAppendCommand'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='967' u='c' c='redisAppendCommandArgv'/>
+<dec f='codebrowser/deps/hiredis/net.c' l='58' type='void __redisSetError(redisContext * c, int type, const char * str)'/>
+<use f='codebrowser/deps/hiredis/net.c' l='74' u='c' c='__redisSetErrorFromErrno'/>
+<use f='codebrowser/deps/hiredis/net.c' l='132' u='c' c='redisKeepAlive'/>
+<use f='codebrowser/deps/hiredis/net.c' l='147' u='c' c='redisKeepAlive'/>
+<use f='codebrowser/deps/hiredis/net.c' l='154' u='c' c='redisKeepAlive'/>
+<use f='codebrowser/deps/hiredis/net.c' l='160' u='c' c='redisKeepAlive'/>
+<use f='codebrowser/deps/hiredis/net.c' l='308' u='c' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='333' u='c' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='351' u='c' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='373' u='c' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='407' u='c' c='_redisContextConnectTcp'/>
+<doc f='codebrowser/deps/hiredis/net.c' l='57'>/* Defined in hiredis.c */</doc>

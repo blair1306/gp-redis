@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1386' type='void unlinkClient(client * c)'/>
+<def f='codebrowser/src/networking.c' l='735' ll='773' type='void unlinkClient(client * c)'/>
+<use f='codebrowser/src/networking.c' l='827' u='c' c='freeClient'/>
+<doc f='codebrowser/src/networking.c' l='732'>/* Remove the specified client from global lists where the client could
+ * be referenced, not including the Pub/Sub channels.
+ * This is used by freeClient() and replicationCacheMaster(). */</doc>
+<use f='codebrowser/src/replication.c' l='2126' u='c' c='replicationCacheMaster'/>
+<use f='codebrowser/src/replication.c' l='2175' u='c' c='replicationCacheMasterUsingMyself'/>

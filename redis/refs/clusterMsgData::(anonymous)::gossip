@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/cluster.h' l='211' type='clusterMsgDataGossip [1]'/>
+<use f='codebrowser/src/cluster.c' l='1318' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='2272' u='m' c='clusterNodeIsInGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='2282' u='a' c='clusterSetGossipEntry'/>
+<offset>0</offset>
+<doc f='codebrowser/src/cluster.h' l='210'>/* Array of N clusterMsgDataGossip structures */</doc>

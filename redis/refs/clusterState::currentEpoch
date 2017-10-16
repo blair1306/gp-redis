@@ -1,0 +1,29 @@
+<dec f='codebrowser/src/cluster.h' l='134' type='uint64_t'/>
+<use f='codebrowser/src/cluster.c' l='142' u='w' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='281' u='r' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='282' u='w' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='318' u='r' c='clusterSaveConfig'/>
+<use f='codebrowser/src/cluster.c' l='412' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='541' u='w' c='clusterReset'/>
+<use f='codebrowser/src/cluster.c' l='957' u='r' c='clusterGetMaxEpoch'/>
+<use f='codebrowser/src/cluster.c' l='957' u='r' c='clusterGetMaxEpoch'/>
+<use f='codebrowser/src/cluster.c' l='996' u='w' c='clusterBumpConfigEpochWithoutConsensus'/>
+<use f='codebrowser/src/cluster.c' l='997' u='r' c='clusterBumpConfigEpochWithoutConsensus'/>
+<use f='codebrowser/src/cluster.c' l='1062' u='w' c='clusterHandleConfigEpochCollision'/>
+<use f='codebrowser/src/cluster.c' l='1063' u='r' c='clusterHandleConfigEpochCollision'/>
+<use f='codebrowser/src/cluster.c' l='1672' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1673' u='w' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2239' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2614' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2619' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2624' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2628' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2692' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2695' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2967' u='w' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2968' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2970' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='4311' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4571' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4572' u='w' c='clusterCommand'/>
+<offset>64</offset>

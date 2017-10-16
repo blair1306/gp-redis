@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/cluster.c' l='64' type='int clusterNodeSetSlotBit(clusterNode * n, int slot)'/>
+<def f='codebrowser/src/cluster.c' l='3539' ll='3561' type='int clusterNodeSetSlotBit(clusterNode * n, int slot)'/>
+<use f='codebrowser/src/cluster.c' l='3582' u='c' c='clusterAddSlot'/>
+<doc f='codebrowser/src/cluster.c' l='3538'>/* Set the slot bit and return the old value. */</doc>

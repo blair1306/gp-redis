@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1382' type='int clientsArePaused()'/>
+<use f='codebrowser/src/cluster.c' l='3147' u='c' c='resetManualFailover'/>
+<use f='codebrowser/src/cluster.c' l='3149' u='c' c='resetManualFailover'/>
+<use f='codebrowser/src/evict.c' l='386' u='c' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/expire.c' l='111' u='c' c='activeExpireCycle'/>
+<use f='codebrowser/src/networking.c' l='1296' u='c' c='processInputBuffer'/>
+<def f='codebrowser/src/networking.c' l='1973' ll='1997' type='int clientsArePaused()'/>
+<doc f='codebrowser/src/networking.c' l='1971'>/* Return non-zero if clients are currently paused. As a side effect the
+ * function checks if the pause time was reached and clear it. */</doc>
+<use f='codebrowser/src/server.c' l='1136' u='c' c='serverCron'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/src/debug.c' l='850' ll='853' type='void closeDirectLogFiledes(int fd)'/>
+<use f='codebrowser/src/debug.c' l='879' u='c' c='logStackTrace'/>
+<use f='codebrowser/src/debug.c' l='983' u='c' c='memtest_test_linux_anonymous_maps'/>
+<doc f='codebrowser/src/debug.c' l='849'>/* Used to close what closeDirectLogFiledes() returns. */</doc>

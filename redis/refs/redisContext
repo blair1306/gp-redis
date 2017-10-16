@@ -1,0 +1,13 @@
+<def f='codebrowser/deps/hiredis/hiredis.h' l='140' ll='161'/>
+<size>208</size>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='139'>/* Context for a connection to Redis */</doc>
+<mbr r='redisContext::err' o='0' t='int'/>
+<mbr r='redisContext::errstr' o='32' t='char [128]'/>
+<mbr r='redisContext::fd' o='1056' t='int'/>
+<mbr r='redisContext::flags' o='1088' t='int'/>
+<mbr r='redisContext::obuf' o='1152' t='char *'/>
+<mbr r='redisContext::reader' o='1216' t='redisReader *'/>
+<mbr r='redisContext::connection_type' o='1280' t='enum redisConnectionType'/>
+<mbr r='redisContext::timeout' o='1344' t='struct timeval *'/>
+<mbr r='redisContext::tcp' o='1408' t='struct (anonymous struct at /home/jon/workspace/redis/deps/hiredis/hiredis.h:151:5)'/>
+<mbr r='redisContext::unix_sock' o='1600' t='struct (anonymous struct at /home/jon/workspace/redis/deps/hiredis/hiredis.h:157:5)'/>

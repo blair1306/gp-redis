@@ -1,0 +1,24 @@
+<dec f='codebrowser/src/server.h' l='1001' type='int'/>
+<use f='codebrowser/src/aof.c' l='211' u='r' c='stopAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='212' u='r' c='stopAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='214' u='w' c='stopAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='242' u='w' c='startAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='244' u='r' c='startAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='259' u='r' c='startAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='326' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='371' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='439' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='445' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='792' u='r' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='792' u='r' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1426' u='r' c='aofUpdateCurrentSize'/>
+<use f='codebrowser/src/aof.c' l='1499' u='r' c='backgroundRewriteDoneHandler'/>
+<use f='codebrowser/src/aof.c' l='1527' u='r' c='backgroundRewriteDoneHandler'/>
+<use f='codebrowser/src/aof.c' l='1533' u='r' c='backgroundRewriteDoneHandler'/>
+<use f='codebrowser/src/aof.c' l='1534' u='w' c='backgroundRewriteDoneHandler'/>
+<offset>14656</offset>
+<doc f='codebrowser/src/server.h' l='1001'>/* File descriptor of currently selected AOF file */</doc>
+<use f='codebrowser/src/server.c' l='1394' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1926' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1928' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2546' u='r' c='prepareForShutdown'/>

@@ -1,0 +1,3 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='64' ll='66'/>
+<size>4</size>
+<mbr r='tcache_bin_info_s::ncached_max' o='0' t='unsigned int'/>

@@ -1,0 +1,12 @@
+<def f='codebrowser/src/module.c' l='1343' ll='1346' type='int RM_SelectDb(RedisModuleCtx * ctx, int newid)'/>
+<use f='codebrowser/src/module.c' l='3915' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1333'>/* Change the currently selected DB. Returns an error if the id
+ * is out of range.
+ *
+ * Note that the client will retain the currently selected DB even after
+ * the Redis command implemented by the module calling this function
+ * returns.
+ *
+ * If the module command wishes to change something in a different DB and
+ * returns back to the original one, it should call RedisModule_GetSelectedDb()
+ * before in order to restore the old DB number before returning. */</doc>

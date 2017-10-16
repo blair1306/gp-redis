@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rax.h' l='150' type='void raxFree(rax * rax)'/>
+<use f='codebrowser/src/db.c' l='1387' u='c' c='slotToKeyFlush'/>
+<use f='codebrowser/src/lazyfree.c' l='133' u='c' c='lazyfreeFreeSlotsMapFromBioThread'/>
+<def f='codebrowser/src/rax.c' l='1111' ll='1115' type='void raxFree(rax * rax)'/>
+<doc f='codebrowser/src/rax.c' l='1110'>/* Free a whole radix tree. */</doc>

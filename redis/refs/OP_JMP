@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/lua/src/lopcodes.h' l='183' type='22'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='63' u='r' c='luaK_jump'/>
+<doc f='codebrowser/deps/lua/src/lopcodes.h' l='183'>/*	sBx	pc+=sBx					*/</doc>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='371' u='r' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='416' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='541' c='luaV_execute'/>
+<use f='codebrowser/deps/lua/src/print.c' l='102' u='r' c='PrintCode'/>
+<use f='codebrowser/deps/lua/src/print.c' l='139' c='PrintCode'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='1713' type='robj * lookupKeyWriteOrReply(client * c, robj * key, robj * reply)'/>
+<def f='codebrowser/src/db.c' l='150' ll='154' type='robj * lookupKeyWriteOrReply(client * c, robj * key, robj * reply)'/>
+<use f='codebrowser/src/db.c' l='838' u='c' c='renameGenericCommand'/>
+<use f='codebrowser/src/t_hash.c' l='706' u='c' c='hdelCommand'/>
+<use f='codebrowser/src/t_list.c' l='238' u='c' c='pushxGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='280' u='c' c='linsertCommand'/>
+<use f='codebrowser/src/t_list.c' l='342' u='c' c='lsetCommand'/>
+<use f='codebrowser/src/t_list.c' l='368' u='c' c='popGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='451' u='c' c='ltrimCommand'/>
+<use f='codebrowser/src/t_list.c' l='499' u='c' c='lremCommand'/>
+<use f='codebrowser/src/t_list.c' l='567' u='c' c='rpoplpushCommand'/>
+<use f='codebrowser/src/t_set.c' l='294' u='c' c='sremCommand'/>
+<use f='codebrowser/src/t_set.c' l='571' u='c' c='spopCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1621' u='c' c='zremCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1674' u='c' c='zremrangeGenericCommand'/>

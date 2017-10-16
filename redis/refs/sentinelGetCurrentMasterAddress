@@ -1,0 +1,6 @@
+<def f='codebrowser/src/sentinel.c' l='1530' ll='1544' type='sentinelAddr * sentinelGetCurrentMasterAddress(sentinelRedisInstance * master)'/>
+<use f='codebrowser/src/sentinel.c' l='1715' u='c' c='rewriteConfigSentinelOption'/>
+<use f='codebrowser/src/sentinel.c' l='2472' u='c' c='sentinelSendHello'/>
+<use f='codebrowser/src/sentinel.c' l='2978' u='c' c='sentinelCommand'/>
+<doc f='codebrowser/src/sentinel.c' l='1528'>/* Return the current master address, that is, its address or the address
+ * of the promoted slave if already operational. */</doc>

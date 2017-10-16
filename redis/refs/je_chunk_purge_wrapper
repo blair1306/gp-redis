@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk.h' l='71' macro='1' type='_Bool je_chunk_purge_wrapper(arena_t * arena, chunk_hooks_t * chunk_hooks, void * chunk, size_t size, size_t offset, size_t length)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1421' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='514' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/chunk.c' l='661' macro='1' type='_Bool je_chunk_purge_wrapper(arena_t * arena, chunk_hooks_t * chunk_hooks, void * chunk, size_t size, size_t offset, size_t length)'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='157' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='216' macro='1' u='c'/>

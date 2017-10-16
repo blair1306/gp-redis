@@ -1,0 +1,4 @@
+<def f='codebrowser/src/module.c' l='3206' ll='3210' type='void RM_DigestAddLongLong(RedisModuleDigest * md, long long ll)'/>
+<use f='codebrowser/src/module.c' l='4003' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3204'>/* Like `RedisModule_DigestAddStringBuffer()` but takes a long long as input
+ * that gets converted into a string before adding it to the digest. */</doc>

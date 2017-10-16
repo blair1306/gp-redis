@@ -1,0 +1,8 @@
+<def f='codebrowser/src/sentinel.c' l='546' ll='549' type='void releaseSentinelAddr(sentinelAddr * sa)'/>
+<use f='codebrowser/src/sentinel.c' l='1079' u='c' c='sentinelUpdateSentinelAddressInAllMasters'/>
+<use f='codebrowser/src/sentinel.c' l='1173' u='c' c='createSentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1256' u='c' c='releaseSentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1505' u='c' c='sentinelResetMasterAndChangeAddress'/>
+<use f='codebrowser/src/sentinel.c' l='1512' u='c' c='sentinelResetMasterAndChangeAddress'/>
+<use f='codebrowser/src/sentinel.c' l='2411' u='c' c='sentinelProcessHelloMessage'/>
+<doc f='codebrowser/src/sentinel.c' l='545'>/* Free a Sentinel address. Can&apos;t fail. */</doc>

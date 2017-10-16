@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='18'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='20' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='20' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='21' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='23' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='24' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='28' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='36' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='42' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='44' u='c'/>

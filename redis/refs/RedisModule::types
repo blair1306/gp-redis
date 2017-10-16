@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/module.c' l='49' type='list *'/>
+<use f='codebrowser/src/module.c' l='661' u='w' c='RM_SetModuleAttribs'/>
+<use f='codebrowser/src/module.c' l='2725' u='r' c='moduleTypeLookupModuleByName'/>
+<use f='codebrowser/src/module.c' l='2764' u='r' c='moduleTypeLookupModuleByID'/>
+<use f='codebrowser/src/module.c' l='2893' u='r' c='RM_CreateDataType'/>
+<use f='codebrowser/src/module.c' l='3731' u='r' c='moduleFreeModuleStructure'/>
+<use f='codebrowser/src/module.c' l='3785' u='r' c='moduleUnload'/>
+<offset>192</offset>
+<doc f='codebrowser/src/module.c' l='49'>/* Module data types. */</doc>

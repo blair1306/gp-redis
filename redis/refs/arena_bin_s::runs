@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='269' type='arena_run_tree_t'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1849' u='a' c='arena_bin_runs_first'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1861' u='a' c='arena_bin_runs_insert'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1863' u='a' c='arena_bin_runs_insert'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1871' u='a' c='arena_bin_runs_remove'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1873' u='a' c='arena_bin_runs_remove'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2438' u='a' c='arena_dalloc_bin_run'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3082' u='a' c='je_arena_new'/>
+<offset>384</offset>

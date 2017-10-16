@@ -1,0 +1,4 @@
+<def f='codebrowser/src/db.c' l='428' ll='444' type='void delGenericCommand(client * c, int lazy)'/>
+<use f='codebrowser/src/db.c' l='447' u='c' c='delCommand'/>
+<use f='codebrowser/src/db.c' l='451' u='c' c='unlinkCommand'/>
+<doc f='codebrowser/src/db.c' l='427'>/* This command implements DEL and LAZYDEL. */</doc>

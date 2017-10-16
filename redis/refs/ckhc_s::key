@@ -1,0 +1,16 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='28' type='const void *'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='60' u='r' c='ckh_bucket_search'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='60' u='r' c='ckh_bucket_search'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='106' u='r' c='ckh_try_bucket_insert'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='107' u='w' c='ckh_try_bucket_insert'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='146' u='r' c='ckh_evict_reloc_insert'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='149' u='r' c='ckh_evict_reloc_insert'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='150' u='w' c='ckh_evict_reloc_insert'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='231' u='r' c='ckh_rebuild'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='232' u='r' c='ckh_rebuild'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='445' u='r' c='je_ckh_iter'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='447' u='r' c='je_ckh_iter'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='493' u='r' c='je_ckh_remove'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='496' u='w' c='je_ckh_remove'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='524' u='r' c='je_ckh_search'/>

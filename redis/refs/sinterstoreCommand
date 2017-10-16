@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1874' type='void sinterstoreCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='173' u='r'/>
+<use f='codebrowser/src/server.c' l='173' u='r'/>
+<use f='codebrowser/src/server.c' l='173' u='r'/>
+<use f='codebrowser/src/server.c' l='173' u='r'/>
+<def f='codebrowser/src/t_set.c' l='919' ll='921' type='void sinterstoreCommand(client * c)'/>

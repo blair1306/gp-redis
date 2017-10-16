@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/cluster.h' l='180' type='uint32_t'/>
+<use f='codebrowser/src/cluster.c' l='1367' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='2285' u='w' c='clusterSetGossipEntry'/>
+<offset>352</offset>

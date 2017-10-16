@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/slowlog.h' l='36' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/src/slowlog.c' l='53' u='w' c='slowlogCreateEntry'/>
+<use f='codebrowser/src/slowlog.c' l='104' u='r' c='slowlogFreeEntry'/>
+<use f='codebrowser/src/slowlog.c' l='171' u='r' c='slowlogCommand'/>
+<use f='codebrowser/src/slowlog.c' l='172' u='r' c='slowlogCommand'/>

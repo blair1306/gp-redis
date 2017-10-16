@@ -1,0 +1,2 @@
+<def f='codebrowser/src/module.c' l='902' ll='921' macro='1' type='robj * moduleAssertUnsharedString(robj * str)'/>
+<use f='codebrowser/src/module.c' l='928' u='c' c='RM_StringAppendBuffer'/>

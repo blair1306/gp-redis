@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='449' macro='1' type='void je_arena_purge_all(arena_t * arena)'/>
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='1542' macro='1' type='void je_arena_purge_all(arena_t * arena)'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1561' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1566' macro='1' u='c'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/adlist.h' l='65'/>
+<use f='codebrowser/src/aof.c' l='75' u='c'/>
+<use f='codebrowser/src/aof.c' l='605' u='c'/>
+<use f='codebrowser/src/cluster.c' l='698' u='c'/>
+<use f='codebrowser/src/db.c' l='758' u='c'/>
+<use f='codebrowser/src/networking.c' l='123' u='c'/>
+<use f='codebrowser/src/networking.c' l='136' u='c'/>
+<use f='codebrowser/src/scripting.c' l='1499' u='c'/>
+<use f='codebrowser/src/server.c' l='1863' u='c'/>
+<use f='codebrowser/src/slowlog.c' l='117' u='c'/>
+<use f='codebrowser/src/sort.c' l='214' u='c'/>

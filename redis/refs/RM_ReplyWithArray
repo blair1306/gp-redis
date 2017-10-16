@@ -1,0 +1,13 @@
+<def f='codebrowser/src/module.c' l='1039' ll='1052' type='int RM_ReplyWithArray(RedisModuleCtx * ctx, long len)'/>
+<use f='codebrowser/src/module.c' l='3907' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1028'>/* Reply with an array type of &apos;len&apos; elements. However &apos;len&apos; other calls
+ * to `ReplyWith*` style functions must follow in order to emit the elements
+ * of the array.
+ *
+ * When producing arrays with a number of element that is not known beforehand
+ * the function can be called with the special count
+ * REDISMODULE_POSTPONED_ARRAY_LEN, and the actual number of elements can be
+ * later set with RedisModule_ReplySetArrayLength() (which will set the
+ * latest &quot;open&quot; count if there are multiple ones).
+ *
+ * The function always returns REDISMODULE_OK. */</doc>

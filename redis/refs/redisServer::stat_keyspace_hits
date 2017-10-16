@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='941' type='long long'/>
+<offset>7872</offset>
+<doc f='codebrowser/src/server.h' l='941'>/* Number of successful lookups of keys */</doc>
+<use f='codebrowser/src/db.c' l='124' u='w' c='lookupKeyReadWithFlags'/>
+<use f='codebrowser/src/server.c' l='1766' u='w' c='resetServerStats'/>
+<use f='codebrowser/src/server.c' l='3112' u='r' c='genRedisInfoString'/>

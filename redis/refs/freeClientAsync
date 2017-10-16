@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1336' type='void freeClientAsync(client * c)'/>
+<def f='codebrowser/src/networking.c' l='873' ll='877' type='void freeClientAsync(client * c)'/>
+<use f='codebrowser/src/networking.c' l='1009' u='c' c='handleClientsWithPendingWrites'/>
+<use f='codebrowser/src/networking.c' l='1726' u='c' c='securityWarningCommand'/>
+<use f='codebrowser/src/networking.c' l='1913' u='c' c='asyncCloseClientOnOutputBufferLimitReached'/>
+<doc f='codebrowser/src/networking.c' l='869'>/* Schedule a client to free it at a safe time in the serverCron() function.
+ * This function is useful when we need to terminate a client but we are in
+ * a context where calling freeClient() is not possible, because the client
+ * should be valid for the continuation of the flow of the program. */</doc>
+<use f='codebrowser/src/replication.c' l='435' u='c' c='replicationSetupSlaveForFullResync'/>
+<use f='codebrowser/src/replication.c' l='522' u='c' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='2212' u='c' c='replicationResurrectCachedMaster'/>
+<use f='codebrowser/src/replication.c' l='2221' u='c' c='replicationResurrectCachedMaster'/>
+<use f='codebrowser/src/scripting.c' l='1617' u='c' c='ldbStartSession'/>

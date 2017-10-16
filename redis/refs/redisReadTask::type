@@ -1,0 +1,19 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='64' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='106' u='r' c='createStringObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='116' u='r' c='createStringObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='117' u='r' c='createStringObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='118' u='r' c='createStringObject'/>
+<use f='codebrowser/deps/hiredis/read.c' l='201' u='r' c='moveToNextTask'/>
+<use f='codebrowser/deps/hiredis/read.c' l='207' u='w' c='moveToNextTask'/>
+<use f='codebrowser/deps/hiredis/read.c' l='222' u='r' c='processLineItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='232' u='r' c='processLineItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='348' u='w' c='processMultiBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='372' u='r' c='processItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='376' u='w' c='processItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='379' u='w' c='processItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='382' u='w' c='processItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='385' u='w' c='processItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='388' u='w' c='processItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='401' u='r' c='processItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='492' u='w' c='redisReaderGetReply'/>

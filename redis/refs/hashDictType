@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1298' type='dictType'/>
+<def f='codebrowser/src/server.c' l='615' ll='622' type='dictType'/>
+<doc f='codebrowser/src/server.c' l='614'>/* Hash type hash table (note that small hashes are represented with ziplists) */</doc>
+<use f='codebrowser/src/t_hash.c' l='477' u='a' c='hashTypeConvertZiplist'/>

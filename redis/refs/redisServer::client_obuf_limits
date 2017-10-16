@@ -1,0 +1,23 @@
+<dec f='codebrowser/src/server.h' l='987' type='clientBufferLimitsConfig [3]'/>
+<offset>13504</offset>
+<use f='codebrowser/src/config.c' l='669' u='m' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='670' u='m' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='671' u='m' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='972' u='m' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='973' u='m' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='974' u='m' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1367' u='m' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1368' u='m' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1369' u='m' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1768' u='m' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/config.c' l='1770' u='m' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/config.c' l='1772' u='m' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/config.c' l='1778' u='m' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/config.c' l='1780' u='m' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/config.c' l='1784' u='m' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/networking.c' l='1871' u='m' c='checkClientOutputBufferLimits'/>
+<use f='codebrowser/src/networking.c' l='1872' u='m' c='checkClientOutputBufferLimits'/>
+<use f='codebrowser/src/networking.c' l='1874' u='m' c='checkClientOutputBufferLimits'/>
+<use f='codebrowser/src/networking.c' l='1875' u='m' c='checkClientOutputBufferLimits'/>
+<use f='codebrowser/src/networking.c' l='1888' u='m' c='checkClientOutputBufferLimits'/>
+<use f='codebrowser/src/server.c' l='1488' u='w' c='initServerConfig'/>

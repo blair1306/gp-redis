@@ -1,0 +1,17 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='397' type='struct (anonymous struct at /home/jon/workspace/redis/deps/jemalloc/include/jemalloc/internal/arena.h:397:2)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='855' u='a' c='je_arena_node_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='855' u='a' c='je_arena_node_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' u='a' c='je_arena_node_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' u='a' c='je_arena_node_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' u='a' c='je_arena_node_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' u='a' c='je_arena_node_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' u='a' c='je_arena_node_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' u='a' c='je_arena_node_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='860' u='a' c='je_arena_node_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='871' u='a' c='je_arena_node_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='871' u='a' c='je_arena_node_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='871' u='a' c='je_arena_node_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='871' u='a' c='je_arena_node_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='871' u='a' c='je_arena_node_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3070' u='a' c='je_arena_new'/>
+<offset>8000</offset>

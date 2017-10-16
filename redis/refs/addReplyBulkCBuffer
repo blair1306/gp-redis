@@ -1,0 +1,46 @@
+<dec f='codebrowser/src/server.h' l='1349' type='void addReplyBulkCBuffer(client * c, const void * p, size_t len)'/>
+<use f='codebrowser/src/cluster.c' l='4037' u='c' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4047' u='c' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4103' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/geo.c' l='182' u='c' c='addReplyDoubleDistance'/>
+<use f='codebrowser/src/geo.c' l='744' u='c' c='geohashCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1517' u='c' c='pfdebugCommand'/>
+<use f='codebrowser/src/latency.c' l='599' u='c' c='latencyCommand'/>
+<use f='codebrowser/src/module.c' l='1107' u='c' c='RM_ReplyWithStringBuffer'/>
+<use f='codebrowser/src/module.c' l='3877' u='c' c='moduleCommand'/>
+<def f='codebrowser/src/networking.c' l='556' ll='560' type='void addReplyBulkCBuffer(client * c, const void * p, size_t len)'/>
+<use f='codebrowser/src/networking.c' l='574' u='c' c='addReplyBulkCString'/>
+<use f='codebrowser/src/networking.c' l='584' u='c' c='addReplyBulkLongLong'/>
+<use f='codebrowser/src/networking.c' l='1562' u='c' c='clientCommand'/>
+<doc f='codebrowser/src/networking.c' l='555'>/* Add a C buffer as bulk reply */</doc>
+<use f='codebrowser/src/replication.c' l='2040' u='c' c='roleCommand'/>
+<use f='codebrowser/src/replication.c' l='2065' u='c' c='roleCommand'/>
+<use f='codebrowser/src/scripting.c' l='282' u='c' c='luaReplyToRedisReply'/>
+<use f='codebrowser/src/scripting.c' l='1455' u='c' c='scriptCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3137' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3142' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3154' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3281' u='c' c='sentinelRoleCommand'/>
+<use f='codebrowser/src/server.c' l='2651' u='c' c='pingCommand'/>
+<use f='codebrowser/src/server.c' l='2653' u='c' c='pingCommand'/>
+<use f='codebrowser/src/slowlog.c' l='174' u='c' c='slowlogCommand'/>
+<use f='codebrowser/src/slowlog.c' l='175' u='c' c='slowlogCommand'/>
+<use f='codebrowser/src/t_hash.c' l='623' u='c' c='hincrbyfloatCommand'/>
+<use f='codebrowser/src/t_hash.c' l='658' u='c' c='addHashFieldToReply'/>
+<use f='codebrowser/src/t_hash.c' l='669' u='c' c='addHashFieldToReply'/>
+<use f='codebrowser/src/t_hash.c' l='755' u='c' c='addHashIteratorCursorToReply'/>
+<use f='codebrowser/src/t_hash.c' l='760' u='c' c='addHashIteratorCursorToReply'/>
+<use f='codebrowser/src/t_list.c' l='433' u='c' c='lrangeCommand'/>
+<use f='codebrowser/src/t_set.c' l='483' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='531' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='658' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='772' u='c' c='srandmemberCommand'/>
+<use f='codebrowser/src/t_set.c' l='874' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1059' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='281' u='c' c='getrangeCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2421' u='c' c='zrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2452' u='c' c='zrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2582' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2638' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2933' u='c' c='genericZrangebylexCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2986' u='c' c='genericZrangebylexCommand'/>

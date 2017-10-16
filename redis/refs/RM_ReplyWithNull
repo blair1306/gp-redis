@@ -1,0 +1,6 @@
+<def f='codebrowser/src/module.c' l='1125' ll='1130' type='int RM_ReplyWithNull(RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/module.c' l='3911' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1121'>/* Reply to the client with a NULL. In the RESP protocol a NULL is encoded
+ * as the string &quot;$-1\r\n&quot;.
+ *
+ * The function always returns REDISMODULE_OK. */</doc>

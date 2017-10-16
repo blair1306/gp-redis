@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1692' type='int keyspaceEventsStringToFlags(char * classes)'/>
+<use f='codebrowser/src/config.c' l='700' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='978' u='c' c='configSetCommand'/>
+<def f='codebrowser/src/notify.c' l='40' ll='61' type='int keyspaceEventsStringToFlags(char * classes)'/>
+<doc f='codebrowser/src/notify.c' l='35'>/* Turn a string representing notification classes into an integer
+ * representing notification classes flags xored.
+ *
+ * The function returns -1 if the input contains characters not mapping to
+ * any class. */</doc>

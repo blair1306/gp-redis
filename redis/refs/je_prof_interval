@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='275' macro='1' type='uint64_t'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='898' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='901' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='902' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='914' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='925' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1987' macro='1' u='r'/>
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='54' macro='1' type='uint64_t'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2094' macro='1' u='w'/>

@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='40' ll='49'/>
+<size>80</size>
+<mbr r='arena_run_s::binind' o='0' t='szind_t'/>
+<mbr r='arena_run_s::nfree' o='32' t='unsigned int'/>
+<mbr r='arena_run_s::bitmap' o='64' t='bitmap_t [9]'/>

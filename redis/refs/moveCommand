@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1850' type='void moveCommand(client * c)'/>
+<def f='codebrowser/src/db.c' l='879' ll='932' type='void moveCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='225' u='r'/>
+<use f='codebrowser/src/server.c' l='225' u='r'/>
+<use f='codebrowser/src/server.c' l='225' u='r'/>
+<use f='codebrowser/src/server.c' l='225' u='r'/>

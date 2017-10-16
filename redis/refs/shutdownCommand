@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1849' type='void shutdownCommand(client * c)'/>
+<def f='codebrowser/src/db.c' l='801' ll='827' type='void shutdownCommand(client * c)'/>
+<use f='codebrowser/src/sentinel.c' l='436'/>
+<use f='codebrowser/src/sentinel.c' l='436'/>
+<use f='codebrowser/src/sentinel.c' l='436'/>
+<use f='codebrowser/src/sentinel.c' l='436'/>
+<use f='codebrowser/src/server.c' l='241' u='r'/>
+<use f='codebrowser/src/server.c' l='241' u='r'/>
+<use f='codebrowser/src/server.c' l='241' u='r'/>
+<use f='codebrowser/src/server.c' l='241' u='r'/>
+<use f='codebrowser/src/server.c' l='2466' u='r' c='processCommand'/>

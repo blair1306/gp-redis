@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1804' type='uint8_t LFULogIncr(uint8_t value)'/>
+<use f='codebrowser/src/db.c' l='58' u='c' c='lookupKey'/>
+<def f='codebrowser/src/evict.c' l='317' ll='325' type='uint8_t LFULogIncr(uint8_t counter)'/>
+<doc f='codebrowser/src/evict.c' l='315'>/* Logarithmically increment a counter. The greater is the current counter value
+ * the less likely is that it gets really implemented. Saturate it at 255. */</doc>

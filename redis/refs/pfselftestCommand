@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1985' type='void pfselftestCommand(client * c)'/>
+<def f='codebrowser/src/hyperloglog.c' l='1345' ll='1445' type='void pfselftestCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='300' u='r'/>
+<use f='codebrowser/src/server.c' l='300' u='r'/>
+<use f='codebrowser/src/server.c' l='300' u='r'/>
+<use f='codebrowser/src/server.c' l='300' u='r'/>

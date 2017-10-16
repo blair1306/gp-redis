@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='64' macro='1' type='extent_node_t * je_extent_tree_szad_nsearch(extent_tree_t * rbtree, extent_node_t * key)'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='95' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='196' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/extent.c' l='40' macro='1' type='extent_node_t * je_extent_tree_szad_nsearch(extent_tree_t * rbtree, extent_node_t * key)'/>

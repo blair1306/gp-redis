@@ -1,0 +1,9 @@
+<def f='codebrowser/src/geo.c' l='191' ll='211' type='int geoAppendIfWithinRadius(geoArray * ga, double lon, double lat, double radius, double score, sds member)'/>
+<use f='codebrowser/src/geo.c' l='257' u='c' c='geoGetPointsInRange'/>
+<use f='codebrowser/src/geo.c' l='278' u='c' c='geoGetPointsInRange'/>
+<doc f='codebrowser/src/geo.c' l='185'>/* Helper function for geoGetPointsInRange(): given a sorted set score
+ * representing a point, and another point (the center of our search) and
+ * a radius, appends this entry as a geoPoint into the specified geoArray
+ * only if the point is within the search area.
+ *
+ * returns C_OK if the point is included, or REIDS_ERR if it is outside. */</doc>

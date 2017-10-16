@@ -1,0 +1,21 @@
+<def f='codebrowser/src/module.c' l='416' ll='421' type='int RM_GetApi(const char * funcname, void ** targetPtrPtr)'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='RedisModuleCommandDispatcher'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='RedisModuleCommandDispatcher'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='moduleGetCommandKeysViaAPI'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='moduleGetCommandKeysViaAPI'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='RM_GetContextFromIO'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='RM_GetContextFromIO'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='moduleBlockedClientTimedOut'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='moduleBlockedClientTimedOut'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='RM_GetThreadSafeContext'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='RM_GetThreadSafeContext'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='moduleLoad'/>
+<use f='codebrowser/src/module.c' l='123' u='a' c='moduleLoad'/>
+<doc f='codebrowser/src/module.c' l='410'>/* Lookup the requested module API and store the function pointer into the
+ * target pointer. The function returns REDISMODULE_ERR if there is no such
+ * named API, otherwise REDISMODULE_OK.
+ *
+ * This function is not meant to be used by modules developer, it is only
+ * used implicitly by including redismodule.h. */</doc>

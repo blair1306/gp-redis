@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1696' type='void loadServerConfig(char * filename, char * options)'/>
+<doc f='codebrowser/src/server.h' l='1695'>/* Configuration */</doc>
+<use f='codebrowser/src/config.c' l='310' u='c' c='loadServerConfigFromString'/>
+<def f='codebrowser/src/config.c' l='761' ll='789' type='void loadServerConfig(char * filename, char * options)'/>
+<doc f='codebrowser/src/config.c' l='754'>/* Load the server configuration from the specified filename.
+ * The function appends the additional configuration directives stored
+ * in the &apos;options&apos; string to the config file before loading.
+ *
+ * Both filename and options can be NULL, in such a case are considered
+ * empty. This way loadServerConfig can be used to just load a file or
+ * just load a string. */</doc>
+<use f='codebrowser/src/server.c' l='3805' u='c' c='main'/>

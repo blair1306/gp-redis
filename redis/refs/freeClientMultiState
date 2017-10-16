@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1420' type='void freeClientMultiState(client * c)'/>
+<use f='codebrowser/src/aof.c' l='623' u='c' c='freeFakeClient'/>
+<def f='codebrowser/src/multi.c' l='41' ll='53' type='void freeClientMultiState(client * c)'/>
+<use f='codebrowser/src/multi.c' l='73' u='c' c='discardTransaction'/>
+<doc f='codebrowser/src/multi.c' l='40'>/* Release all the resources associated with MULTI/EXEC state */</doc>
+<use f='codebrowser/src/networking.c' l='864' u='c' c='freeClient'/>

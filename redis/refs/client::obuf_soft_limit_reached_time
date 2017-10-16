@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='697' type='time_t'/>
+<use f='codebrowser/src/aof.c' l='602' u='w' c='createFakeClient'/>
+<offset>1152</offset>
+<use f='codebrowser/src/networking.c' l='122' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='1881' u='r' c='checkClientOutputBufferLimits'/>
+<use f='codebrowser/src/networking.c' l='1882' u='w' c='checkClientOutputBufferLimits'/>
+<use f='codebrowser/src/networking.c' l='1885' u='r' c='checkClientOutputBufferLimits'/>
+<use f='codebrowser/src/networking.c' l='1895' u='w' c='checkClientOutputBufferLimits'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='74' type='void *(*)(const redisReadTask *, int)'/>
+<offset>64</offset>
+<use f='codebrowser/deps/hiredis/read.c' l='333' u='r' c='processMultiBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='334' u='r' c='processMultiBulkItem'/>

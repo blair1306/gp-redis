@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='23'/>
+<use f='codebrowser/deps/lua/src/lapi.c' l='36' u='c'/>

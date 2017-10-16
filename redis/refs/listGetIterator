@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/adlist.h' l='80' type='listIter * listGetIterator(list * list, int direction)'/>
+<def f='codebrowser/src/adlist.c' l='186' ll='197' type='listIter * listGetIterator(list * list, int direction)'/>
+<doc f='codebrowser/src/adlist.c' l='182'>/* Returns a list iterator &apos;iter&apos;. After the initialization every
+ * call to listNext() will return the next element of the list.
+ *
+ * This function can&apos;t fail. */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/quicklist.h' l='141' type='quicklistIter * quicklistGetIterator(const quicklist * quicklist, int direction)'/>
+<use f='codebrowser/src/aof.c' l='837' u='c' c='rewriteListObject'/>
+<def f='codebrowser/src/quicklist.c' l='1048' ll='1067' type='quicklistIter * quicklistGetIterator(const quicklist * quicklist, int direction)'/>
+<use f='codebrowser/src/quicklist.c' l='1077' u='c' c='quicklistGetIteratorAtIdx'/>
+<doc f='codebrowser/src/quicklist.c' l='1046'>/* Returns a quicklist iterator &apos;iter&apos;. After the initialization every
+ * call to quicklistNext() will return the next element of the quicklist. */</doc>

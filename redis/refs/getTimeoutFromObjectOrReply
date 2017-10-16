@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1790' type='int getTimeoutFromObjectOrReply(client * c, robj * object, mstime_t * timeout, int unit)'/>
+<def f='codebrowser/src/blocked.c' l='76' ll='95' type='int getTimeoutFromObjectOrReply(client * c, robj * object, mstime_t * timeout, int unit)'/>
+<doc f='codebrowser/src/blocked.c' l='68'>/* Get a timeout value from an object and store it into &apos;timeout&apos;.
+ * The final timeout is always stored as milliseconds as a time where the
+ * timeout will expire, however the parsing is performed according to
+ * the &apos;unit&apos; that can be seconds or milliseconds.
+ *
+ * Note that if the timeout is zero (usually from the point of view of
+ * commands API this means no timeout) the value stored into &apos;timeout&apos;
+ * is zero. */</doc>
+<use f='codebrowser/src/networking.c' l='1700' u='c' c='clientCommand'/>
+<use f='codebrowser/src/replication.c' l='2400' u='c' c='waitCommand'/>
+<use f='codebrowser/src/t_list.c' l='885' u='c' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='947' u='c' c='brpoplpushCommand'/>

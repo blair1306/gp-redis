@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='67' type='void *'/>
+<offset>128</offset>
+<doc f='codebrowser/deps/hiredis/read.h' l='67'>/* holds user-generated value for a read task */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='127' u='r' c='createStringObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='152' u='r' c='createArrayObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='169' u='r' c='createIntegerObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='184' u='r' c='createNilObject'/>
+<use f='codebrowser/deps/hiredis/read.c' l='346' u='w' c='processMultiBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='351' u='w' c='processMultiBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='495' u='w' c='redisReaderGetReply'/>

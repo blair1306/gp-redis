@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/rax.h' l='148' type='int raxRemove(rax * rax, unsigned char * s, size_t len, void ** old)'/>
+<use f='codebrowser/src/db.c' l='1373' u='c' c='slotToKeyUpdateKey'/>
+<use f='codebrowser/src/rax.c' l='790' u='c' c='raxInsert'/>
+<def f='codebrowser/src/rax.c' l='894' ll='1091' type='int raxRemove(rax * rax, unsigned char * s, size_t len, void ** old)'/>
+<doc f='codebrowser/src/rax.c' l='892'>/* Remove the specified item. Returns 1 if the item was found and
+ * deleted, 0 otherwise. */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='890' type='int'/>
+<offset>832</offset>
+<doc f='codebrowser/src/server.h' l='890'>/* 32 or 64 depending on sizeof(long) */</doc>
+<use f='codebrowser/src/server.c' l='1352' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1939' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2868' u='r' c='genRedisInfoString'/>

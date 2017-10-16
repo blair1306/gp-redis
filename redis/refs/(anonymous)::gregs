@@ -1,0 +1,23 @@
+<dec f='include/x86_64-linux-gnu/sys/ucontext.h' l='126' type='gregset_t'/>
+<offset>0</offset>
+<use f='codebrowser/src/debug.c' l='682' u='r' c='getMcontextEip'/>
+<use f='codebrowser/src/debug.c' l='807' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='808' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='809' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='810' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='811' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='812' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='813' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='814' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='815' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='816' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='817' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='818' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='819' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='820' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='821' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='822' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='823' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='824' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='825' u='r' c='logRegisters'/>
+<use f='codebrowser/src/debug.c' l='827' u='r' c='logRegisters'/>

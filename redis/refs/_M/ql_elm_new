@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ql.h' l='16'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='870' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='92' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='258' u='c'/>

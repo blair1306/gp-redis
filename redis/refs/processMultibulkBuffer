@@ -1,0 +1,13 @@
+<def f='codebrowser/src/networking.c' l='1149' ll='1285' type='int processMultibulkBuffer(client * c)'/>
+<use f='codebrowser/src/networking.c' l='1320' u='c' c='processInputBuffer'/>
+<doc f='codebrowser/src/networking.c' l='1138'>/* Process the query buffer for client &apos;c&apos;, setting up the client argument
+ * vector for command execution. Returns C_OK if after running the function
+ * the client has a well-formed ready to be processed command, otherwise
+ * C_ERR if there is still to read more buffer to get the full command.
+ * The function also returns C_ERR when there is a protocol error: in such a
+ * case the client structure is setup to reply with the error and close
+ * the connection.
+ *
+ * This function is called if processInputBuffer() detects that the next
+ * command is in RESP format, so the first byte in the command is found
+ * to be &apos;*&apos;. Otherwise for inline commands processInlineBuffer() is called. */</doc>

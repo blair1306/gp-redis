@@ -1,0 +1,19 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='146' type='lua_Number lua_tonumber(lua_State * L, int idx)'/>
+<def f='codebrowser/deps/lua/src/lapi.c' l='313' ll='320' macro='1' type='lua_Number lua_tonumber(lua_State * L, int idx)'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='177' u='c' c='luaL_checknumber'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='58' u='c' c='luaB_tonumber'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='147' u='c' c='luaB_setfenv'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='420' u='c' c='g_write'/>
+<use f='codebrowser/deps/lua/src/ltablib.c' l='63' u='c' c='maxn'/>
+<use f='codebrowser/deps/lua/src/lua_bit.c' l='62' u='c' c='barg'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='507' u='c' c='lua_array_length'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='591' u='c' c='json_append_number'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='368' u='c' c='mp_encode_lua_number'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='442' u='c' c='table_is_an_array'/>
+<use f='codebrowser/deps/lua/src/lua_struct.c' l='336' u='c' c='b_unpack'/>
+<use f='codebrowser/src/scripting.c' l='288' u='c' c='luaReplyToRedisReply'/>
+<use f='codebrowser/src/scripting.c' l='397' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='761' u='c' c='luaRedisSetReplCommand'/>
+<use f='codebrowser/src/scripting.c' l='783' u='c' c='luaLogCommand'/>
+<use f='codebrowser/src/scripting.c' l='1872' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1891' u='c' c='ldbCatStackValueRec'/>

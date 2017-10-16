@@ -1,0 +1,4 @@
+<dec f='include/valgrind/valgrind.h' l='6673' type='4875'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1827' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2215' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2335' macro='1' u='r'/>

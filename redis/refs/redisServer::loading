@@ -1,0 +1,22 @@
+<dec f='codebrowser/src/server.h' l='926' type='int'/>
+<offset>6688</offset>
+<doc f='codebrowser/src/server.h' l='925'>/* RDB / AOF loading information */</doc>
+<doc f='codebrowser/src/server.h' l='926'>/* We are loading data from disk if true */</doc>
+<use f='codebrowser/src/cluster.c' l='604' u='r' c='clusterAcceptHandler'/>
+<use f='codebrowser/src/config.c' l='2063' u='r' c='configCommand'/>
+<use f='codebrowser/src/db.c' l='823' u='r' c='shutdownCommand'/>
+<use f='codebrowser/src/db.c' l='1094' u='r' c='expireIfNeeded'/>
+<use f='codebrowser/src/expire.c' l='405' u='r' c='expireGenericCommand'/>
+<use f='codebrowser/src/multi.c' l='195' u='r' c='execCommand'/>
+<use f='codebrowser/src/rdb.c' l='1448' u='w' c='startLoading'/>
+<use f='codebrowser/src/rdb.c' l='1467' u='w' c='stopLoading'/>
+<use f='codebrowser/src/scripting.c' l='484' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='517' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/server.c' l='1374' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2112' u='r' c='alsoPropagate'/>
+<use f='codebrowser/src/server.c' l='2191' u='r' c='call'/>
+<use f='codebrowser/src/server.c' l='2213' u='r' c='call'/>
+<use f='codebrowser/src/server.c' l='2457' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='3001' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3038' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3478' u='r' c='sigShutdownHandler'/>

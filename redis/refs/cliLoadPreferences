@@ -1,0 +1,3 @@
+<def f='codebrowser/src/redis-cli.c' l='1254' ll='1272' type='void cliLoadPreferences()'/>
+<use f='codebrowser/src/redis-cli.c' l='1299' u='c' c='repl'/>
+<doc f='codebrowser/src/redis-cli.c' l='1253'>/* Load the ~/.redisclirc file if any. */</doc>

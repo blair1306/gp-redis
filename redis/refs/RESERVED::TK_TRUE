@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/lua/src/llex.h' l='29' type='275'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='744' c='simpleexp'/>

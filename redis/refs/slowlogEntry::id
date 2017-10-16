@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/slowlog.h' l='37' type='long long'/>
+<offset>128</offset>
+<doc f='codebrowser/src/slowlog.h' l='37'>/* Unique entry identifier. */</doc>
+<use f='codebrowser/src/slowlog.c' l='90' u='w' c='slowlogCreateEntry'/>
+<use f='codebrowser/src/slowlog.c' l='168' u='r' c='slowlogCommand'/>

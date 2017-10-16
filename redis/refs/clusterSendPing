@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/cluster.c' l='53' type='void clusterSendPing(clusterLink * link, int type)'/>
+<use f='codebrowser/src/cluster.c' l='1751' u='c' c='clusterProcessPacket'/>
+<def f='codebrowser/src/cluster.c' l='2295' ll='2421' type='void clusterSendPing(clusterLink * link, int type)'/>
+<use f='codebrowser/src/cluster.c' l='2455' u='c' c='clusterBroadcastPong'/>
+<use f='codebrowser/src/cluster.c' l='3291' u='c' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3334' u='c' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3398' u='c' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3409' u='c' c='clusterCron'/>
+<doc f='codebrowser/src/cluster.c' l='2293'>/* Send a PING or PONG packet to the specified node, making sure to add enough
+ * gossip informations. */</doc>

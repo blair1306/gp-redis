@@ -1,0 +1,6 @@
+<def f='codebrowser/src/server.c' l='814' ll='834' type='int clientsCronResizeQueryBuffer(client * c)'/>
+<use f='codebrowser/src/server.c' l='867' u='c' c='clientsCron'/>
+<doc f='codebrowser/src/server.c' l='810'>/* The client query buffer is an sds.c string that can end with a lot of
+ * free space not used, this function reclaims space if needed.
+ *
+ * The function always returns 0 as it never terminates the client. */</doc>

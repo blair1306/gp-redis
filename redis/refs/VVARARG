@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/lua/src/lparser.h' l='34' type='14'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='284' u='r' c='luaK_setreturns'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='297' u='r' c='luaK_setoneret'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='327' c='luaK_dischargevars'/>
+<doc f='codebrowser/deps/lua/src/lparser.h' l='34'>/* info = instruction pc */</doc>
+<use f='codebrowser/deps/lua/src/lparser.c' l='30' u='r' c='adjust_assign'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='30' u='r' c='lastlistfield'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='30' u='r' c='funcargs'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='757' u='r' c='simpleexp'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='30' u='r' c='retstat'/>

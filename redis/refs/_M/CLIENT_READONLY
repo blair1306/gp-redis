@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='238'/>
+<use f='codebrowser/src/cluster.c' l='5171' u='c'/>
+<use f='codebrowser/src/cluster.c' l='5177' u='c'/>
+<use f='codebrowser/src/cluster.c' l='5362' u='c'/>
+<use f='codebrowser/src/module.c' l='2608' u='c'/>
+<use f='codebrowser/src/module.c' l='2609' u='c'/>
+<use f='codebrowser/src/networking.c' l='1508' u='c'/>
+<use f='codebrowser/src/scripting.c' l='521' u='c'/>
+<use f='codebrowser/src/scripting.c' l='522' u='c'/>

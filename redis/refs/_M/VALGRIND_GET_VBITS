@@ -1,0 +1,10 @@
+<dec f='include/valgrind/memcheck.h' l='266'/>
+<doc f='include/valgrind/memcheck.h' l='257'>/* Get the validity data for addresses [zza..zza+zznbytes-1] and copy it
+   into the provided zzvbits array.  Return values:
+      0   if not running on valgrind
+      1   success
+      2   [previously indicated unaligned arrays;  these are now allowed]
+      3   if any parts of zzsrc/zzvbits are not addressable.
+   The metadata is not copied in cases 0, 2 or 3 so it should be
+   impossible to segfault your system by using this call.
+*/</doc>

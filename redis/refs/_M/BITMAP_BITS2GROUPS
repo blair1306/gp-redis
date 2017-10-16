@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='19'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='18'>/* Number of groups required to store a given number of bits. */</doc>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='21' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='26' u='c'/>

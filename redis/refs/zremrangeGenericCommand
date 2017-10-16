@@ -1,0 +1,4 @@
+<def f='codebrowser/src/t_zset.c' l='1647' ll='1745' type='void zremrangeGenericCommand(client * c, int rangetype)'/>
+<use f='codebrowser/src/t_zset.c' l='1748' u='c' c='zremrangebyrankCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1752' u='c' c='zremrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1756' u='c' c='zremrangebylexCommand'/>

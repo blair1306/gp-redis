@@ -1,0 +1,23 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='51' type='uint8_t'/>
+<use f='codebrowser/deps/hiredis/sds.h' l='92' u='r' c='sdslen'/>
+<use f='codebrowser/deps/hiredis/sds.h' l='111' u='r' c='sdsavail'/>
+<use f='codebrowser/deps/hiredis/sds.h' l='139' u='w' c='sdssetlen'/>
+<use f='codebrowser/deps/hiredis/sds.h' l='164' u='w' c='sdsinclen'/>
+<offset>0</offset>
+<doc f='codebrowser/deps/hiredis/sds.h' l='51'>/* used */</doc>
+<use f='codebrowser/deps/hiredis/sds.c' l='104' u='w' c='sdsnewlen'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='326' u='r' c='sdsIncrLen'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='326' u='r' c='sdsIncrLen'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='327' u='w' c='sdsIncrLen'/>
+<dec f='codebrowser/src/sds.h' l='51' type='uint8_t'/>
+<use f='codebrowser/src/sds.h' l='92' u='r' c='sdslen'/>
+<use f='codebrowser/src/sds.h' l='111' u='r' c='sdsavail'/>
+<use f='codebrowser/src/sds.h' l='139' u='w' c='sdssetlen'/>
+<use f='codebrowser/src/sds.h' l='164' u='w' c='sdsinclen'/>
+<offset>0</offset>
+<doc f='codebrowser/src/sds.h' l='51'>/* used */</doc>
+<use f='codebrowser/src/object.c' l='98' u='w' c='createEmbeddedStringObject'/>
+<use f='codebrowser/src/sds.c' l='107' u='w' c='sdsnewlen'/>
+<use f='codebrowser/src/sds.c' l='329' u='r' c='sdsIncrLen'/>
+<use f='codebrowser/src/sds.c' l='329' u='r' c='sdsIncrLen'/>
+<use f='codebrowser/src/sds.c' l='330' u='w' c='sdsIncrLen'/>

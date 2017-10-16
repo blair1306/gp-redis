@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='8'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3143' u='c'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1984' type='void geodistCommand(client * c)'/>
+<def f='codebrowser/src/geo.c' l='786' ll='818' type='void geodistCommand(client * c)'/>
+<doc f='codebrowser/src/geo.c' l='781'>/* GEODIST key ele1 ele2 [unit]
+ *
+ * Return the distance, in meters by default, otherwise accordig to &quot;unit&quot;,
+ * between points ele1 and ele2. If one or more elements are missing NULL
+ * is returned. */</doc>
+<use f='codebrowser/src/server.c' l='299' u='r'/>
+<use f='codebrowser/src/server.c' l='299' u='r'/>
+<use f='codebrowser/src/server.c' l='299' u='r'/>
+<use f='codebrowser/src/server.c' l='299' u='r'/>

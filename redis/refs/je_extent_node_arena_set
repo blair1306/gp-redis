@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='147' macro='1' type='void je_extent_node_arena_set(extent_node_t * node, arena_t * arena)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='200' macro='1' u='c'/>

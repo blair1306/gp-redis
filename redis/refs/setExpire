@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1708' type='void setExpire(client * c, redisDb * db, robj * key, long long when)'/>
+<use f='codebrowser/src/cluster.c' l='4744' u='c' c='restoreCommand'/>
+<use f='codebrowser/src/db.c' l='859' u='c' c='renameGenericCommand'/>
+<use f='codebrowser/src/db.c' l='925' u='c' c='moveCommand'/>
+<def f='codebrowser/src/db.c' l='1034' ll='1046' type='void setExpire(client * c, redisDb * db, robj * key, long long when)'/>
+<doc f='codebrowser/src/db.c' l='1030'>/* Set an expire to the specified key. If the expire is set in the context
+ * of an user calling a command &apos;c&apos; is the client, otherwise &apos;c&apos; is set
+ * to NULL. The &apos;when&apos; parameter is the absolute unix time in milliseconds
+ * after which the key will no longer be considered valid. */</doc>
+<use f='codebrowser/src/expire.c' l='421' u='c' c='expireGenericCommand'/>
+<use f='codebrowser/src/module.c' l='1471' u='c' c='RM_SetExpire'/>
+<use f='codebrowser/src/rdb.c' l='1621' u='c' c='rdbLoadRio'/>
+<use f='codebrowser/src/t_string.c' l='88' u='c' c='setGenericCommand'/>

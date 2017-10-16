@@ -1,0 +1,2 @@
+<def f='codebrowser/src/debug.c' l='1145' ll='1159' type='void watchdogSignalHandler(int sig, siginfo_t * info, void * secret)'/>
+<use f='codebrowser/src/debug.c' l='1187' u='r' c='enableWatchdog'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1075' type='int'/>
+<offset>18368</offset>
+<doc f='codebrowser/src/server.h' l='1075'>/* Min number of slaves to write. */</doc>
+<use f='codebrowser/src/config.c' l='690' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='691' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1098' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1270' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1988' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/replication.c' l='2236' u='r' c='refreshGoodSlavesCount'/>
+<use f='codebrowser/src/server.c' l='1470' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2413' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2416' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='3185' u='r' c='genRedisInfoString'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='588' ll='597' macro='1' type='void atomic_write_z(size_t * p, size_t x)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2927' u='c' c='je_arena_lg_dirty_mult_default_set'/>

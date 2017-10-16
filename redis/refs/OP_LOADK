@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/lua/src/lopcodes.h' l='155' type='1'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='355' u='r' c='discharge2reg'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='359' u='r' c='discharge2reg'/>
+<doc f='codebrowser/deps/lua/src/lopcodes.h' l='155'>/*	A Bx	R(A) := Kst(Bx)					*/</doc>
+<use f='codebrowser/deps/lua/src/lparser.c' l='1082' u='r' c='fornum'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='411' c='luaV_execute'/>
+<use f='codebrowser/deps/lua/src/print.c' l='107' c='PrintCode'/>

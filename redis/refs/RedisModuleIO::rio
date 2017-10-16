@@ -1,0 +1,26 @@
+<dec f='codebrowser/src/server.h' l='530' type='rio *'/>
+<use f='codebrowser/src/aof.c' l='1041' macro='1' u='w'/>
+<offset>64</offset>
+<doc f='codebrowser/src/server.h' l='530'>/* Rio stream. */</doc>
+<use f='codebrowser/src/module.c' l='2961' u='r' c='RM_SaveUnsigned'/>
+<use f='codebrowser/src/module.c' l='2965' u='r' c='RM_SaveUnsigned'/>
+<use f='codebrowser/src/module.c' l='2979' u='r' c='RM_LoadUnsigned'/>
+<use f='codebrowser/src/module.c' l='2983' u='r' c='RM_LoadUnsigned'/>
+<use f='codebrowser/src/module.c' l='3015' u='r' c='RM_SaveString'/>
+<use f='codebrowser/src/module.c' l='3019' u='r' c='RM_SaveString'/>
+<use f='codebrowser/src/module.c' l='3033' u='r' c='RM_SaveStringBuffer'/>
+<use f='codebrowser/src/module.c' l='3037' u='r' c='RM_SaveStringBuffer'/>
+<use f='codebrowser/src/module.c' l='3049' u='r' c='moduleLoadString'/>
+<use f='codebrowser/src/module.c' l='3052' u='r' c='moduleLoadString'/>
+<use f='codebrowser/src/module.c' l='3092' u='r' c='RM_SaveDouble'/>
+<use f='codebrowser/src/module.c' l='3096' u='r' c='RM_SaveDouble'/>
+<use f='codebrowser/src/module.c' l='3109' u='r' c='RM_LoadDouble'/>
+<use f='codebrowser/src/module.c' l='3113' u='r' c='RM_LoadDouble'/>
+<use f='codebrowser/src/module.c' l='3128' u='r' c='RM_SaveFloat'/>
+<use f='codebrowser/src/module.c' l='3132' u='r' c='RM_SaveFloat'/>
+<use f='codebrowser/src/module.c' l='3145' u='r' c='RM_LoadFloat'/>
+<use f='codebrowser/src/module.c' l='3149' u='r' c='RM_LoadFloat'/>
+<use f='codebrowser/src/module.c' l='3260' u='r' c='RM_EmitAOF'/>
+<use f='codebrowser/src/module.c' l='3265' u='r' c='RM_EmitAOF'/>
+<use f='codebrowser/src/rdb.c' l='770' macro='1' u='w'/>
+<use f='codebrowser/src/rdb.c' l='1411' macro='1' u='w'/>

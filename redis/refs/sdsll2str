@@ -1,0 +1,6 @@
+<def f='codebrowser/deps/hiredis/sds.c' l='429' ll='458' type='int sdsll2str(char * s, long long value)'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='495' u='c' c='sdsfromlonglong'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='621' u='c' c='sdscatfmt'/>
+<def f='codebrowser/src/sds.c' l='432' ll='461' type='int sdsll2str(char * s, long long value)'/>
+<use f='codebrowser/src/sds.c' l='498' u='c' c='sdsfromlonglong'/>
+<use f='codebrowser/src/sds.c' l='626' u='c' c='sdscatfmt'/>

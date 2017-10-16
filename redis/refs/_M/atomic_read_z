@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='15'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='164' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='890' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2918' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='153' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='159' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='178' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/stats.c' l='582' u='c'/>

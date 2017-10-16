@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/cluster.h' l='136' type='int'/>
+<use f='codebrowser/src/cluster.c' l='414' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='1173' u='r' c='markNodeAsFailingIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2837' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='3678' u='w' c='clusterUpdateState'/>
+<use f='codebrowser/src/cluster.c' l='3684' u='w' c='clusterUpdateState'/>
+<use f='codebrowser/src/cluster.c' l='3695' u='r' c='clusterUpdateState'/>
+<use f='codebrowser/src/cluster.c' l='4310' u='r' c='clusterCommand'/>
+<offset>160</offset>
+<doc f='codebrowser/src/cluster.h' l='136'>/* Num of master nodes with at least one slot */</doc>

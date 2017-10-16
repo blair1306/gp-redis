@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1648' type='int setTypeIsMember(robj * subject, sds value)'/>
+<def f='codebrowser/src/t_set.c' l='107' ll='119' type='int setTypeIsMember(robj * subject, sds value)'/>
+<use f='codebrowser/src/t_set.c' l='337' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='379' u='c' c='sismemberCommand'/>
+<use f='codebrowser/src/t_set.c' l='857' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='864' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1016' u='c' c='sunionDiffGenericCommand'/>

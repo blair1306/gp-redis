@@ -1,0 +1,7 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='18' ll='26'/>
+<size>40</size>
+<mbr r='ctl_named_node_s::node' o='0' t='struct ctl_node_s'/>
+<mbr r='ctl_named_node_s::name' o='64' t='const char *'/>
+<mbr r='ctl_named_node_s::nchildren' o='128' t='unsigned int'/>
+<mbr r='ctl_named_node_s::children' o='192' t='const ctl_node_t *'/>
+<mbr r='ctl_named_node_s::ctl' o='256' t='int (*)(const size_t *, size_t, void *, size_t *, void *, size_t)'/>

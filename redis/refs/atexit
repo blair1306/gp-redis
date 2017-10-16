@@ -1,0 +1,5 @@
+<dec f='include/stdlib.h' l='519' type='int atexit(void (*)(void) __func)'/>
+<doc f='include/stdlib.h' l='518'>/* Register a function to be called when `exit&apos; is called.  */</doc>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1188' u='c' c='malloc_init_hard_a0_locked'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2145' u='c' c='je_prof_boot2'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='223' u='c' c='enableRawMode'/>

@@ -1,0 +1,5 @@
+<def f='codebrowser/src/server.c' l='1239' ll='1242' type='void afterSleep(struct aeEventLoop * eventLoop)'/>
+<use f='codebrowser/src/server.c' l='3864' u='r' c='main'/>
+<doc f='codebrowser/src/server.c' l='1236'>/* This function is called immadiately after the event loop multiplexing
+ * API returned, and the control is going to soon return to Redis by invoking
+ * the different events callbacks. */</doc>

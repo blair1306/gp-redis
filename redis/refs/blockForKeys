@@ -1,0 +1,5 @@
+<def f='codebrowser/src/t_list.c' l='625' ll='656' type='void blockForKeys(client * c, robj ** keys, int numkeys, mstime_t timeout, robj * target)'/>
+<use f='codebrowser/src/t_list.c' l='933' u='c' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='959' u='c' c='brpoplpushCommand'/>
+<doc f='codebrowser/src/t_list.c' l='623'>/* Set a client in blocking mode for the specified key, with the specified
+ * timeout */</doc>

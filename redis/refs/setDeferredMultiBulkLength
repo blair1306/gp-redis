@@ -1,0 +1,19 @@
+<dec f='codebrowser/src/server.h' l='1340' type='void setDeferredMultiBulkLength(client * c, void * node, long length)'/>
+<use f='codebrowser/src/cluster.c' l='4050' u='c' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4056' u='c' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/config.c' l='1414' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/db.c' l='521' u='c' c='keysCommand'/>
+<use f='codebrowser/src/debug.c' l='311' u='c' c='debugCommand'/>
+<use f='codebrowser/src/latency.c' l='490' u='c' c='latencyCommandReplyWithSamples'/>
+<use f='codebrowser/src/module.c' l='1092' u='c' c='RM_ReplySetArrayLength'/>
+<def f='codebrowser/src/networking.c' l='432' ll='456' type='void setDeferredMultiBulkLength(client * c, void * node, long length)'/>
+<doc f='codebrowser/src/networking.c' l='431'>/* Populate the length object and try gluing it to the next chunk. */</doc>
+<use f='codebrowser/src/pubsub.c' l='351' u='c' c='pubsubCommand'/>
+<use f='codebrowser/src/replication.c' l='2060' u='c' c='roleCommand'/>
+<use f='codebrowser/src/scripting.c' l='333' u='c' c='luaReplyToRedisReply'/>
+<use f='codebrowser/src/sentinel.c' l='2822' u='c' c='addReplySentinelRedisInstance'/>
+<use f='codebrowser/src/server.c' l='2719' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/slowlog.c' l='178' u='c' c='slowlogCommand'/>
+<use f='codebrowser/src/t_set.c' l='910' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2659' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='3000' u='c' c='genericZrangebylexCommand'/>

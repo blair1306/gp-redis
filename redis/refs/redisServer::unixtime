@@ -1,0 +1,53 @@
+<dec f='codebrowser/src/server.h' l='1144' type='time_t'/>
+<use f='codebrowser/src/aof.c' l='241' u='r' c='startAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='306' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='308' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='350' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='352' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='442' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='444' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='446' u='r' c='flushAppendOnlyFile'/>
+<offset>21440</offset>
+<doc f='codebrowser/src/server.h' l='1143'>/* time cache */</doc>
+<doc f='codebrowser/src/server.h' l='1144'>/* Unix time sampled every cron cycle. */</doc>
+<use f='codebrowser/src/cluster.c' l='1111' u='r' c='clusterBlacklistCleanup'/>
+<use f='codebrowser/src/cluster.c' l='2874' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2877' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='4788' u='r' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4826' u='r' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4858' u='r' c='migrateCloseTimedoutSockets'/>
+<use f='codebrowser/src/evict.c' l='302' u='r' c='LFUGetTimeInMinutes'/>
+<use f='codebrowser/src/networking.c' l='109' u='r' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='844' u='r' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='963' u='r' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='1083' u='r' c='processInlineBuffer'/>
+<use f='codebrowser/src/networking.c' l='1399' u='r' c='readQueryFromClient'/>
+<use f='codebrowser/src/networking.c' l='1523' u='r' c='catClientInfoString'/>
+<use f='codebrowser/src/networking.c' l='1524' u='r' c='catClientInfoString'/>
+<use f='codebrowser/src/networking.c' l='1882' u='r' c='checkClientOutputBufferLimits'/>
+<use f='codebrowser/src/networking.c' l='1885' u='r' c='checkClientOutputBufferLimits'/>
+<use f='codebrowser/src/replication.c' l='510' u='r' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='821' u='r' c='replconfCommand'/>
+<use f='codebrowser/src/replication.c' l='858' u='r' c='putSlaveOnline'/>
+<use f='codebrowser/src/replication.c' l='973' u='r' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='1139' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1208' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1356' u='r' c='sendSynchronousCommand'/>
+<use f='codebrowser/src/replication.c' l='1811' u='r' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1836' u='r' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1873' u='r' c='connectWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1980' u='r' c='replicationHandleMasterDisconnection'/>
+<use f='codebrowser/src/replication.c' l='2204' u='r' c='replicationResurrectCachedMaster'/>
+<use f='codebrowser/src/replication.c' l='2242' u='r' c='refreshGoodSlavesCount'/>
+<use f='codebrowser/src/replication.c' l='2595' u='r' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2613' u='r' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2651' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='816' u='r' c='clientsCronResizeQueryBuffer'/>
+<use f='codebrowser/src/server.c' l='929' u='a' c='updateCachedTime'/>
+<use f='codebrowser/src/server.c' l='1088' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1089' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1166' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='2806' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3152' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3163' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3170' u='r' c='genRedisInfoString'/>

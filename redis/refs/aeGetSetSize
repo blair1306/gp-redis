@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/ae.h' l='123' type='int aeGetSetSize(aeEventLoop * eventLoop)'/>
+<def f='codebrowser/src/ae.c' l='96' ll='98' type='int aeGetSetSize(aeEventLoop * eventLoop)'/>
+<doc f='codebrowser/src/ae.c' l='95'>/* Return the current set size. */</doc>
+<use f='codebrowser/src/config.c' l='867' u='c' c='configSetCommand'/>

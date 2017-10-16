@@ -1,0 +1,9 @@
+<def f='codebrowser/src/scripting.c' l='1837' ll='1844' type='void ldbList(int around, int context)'/>
+<use f='codebrowser/src/scripting.c' l='2119' u='c' c='ldbBreak'/>
+<use f='codebrowser/src/scripting.c' l='2321' u='c' c='ldbRepl'/>
+<use f='codebrowser/src/scripting.c' l='2324' u='c' c='ldbRepl'/>
+<doc f='codebrowser/src/scripting.c' l='1832'>/* Implement the &quot;list&quot; command of the Lua debugger. If around is 0
+ * the whole file is listed, otherwise only a small portion of the file
+ * around the specified line is shown. When a line number is specified
+ * the amonut of context (lines before/after) is specified via the
+ * &apos;context&apos; argument. */</doc>

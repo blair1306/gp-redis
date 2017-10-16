@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/sparkline.h' l='54' type='sds sparklineRender(sds output, struct sequence * seq, int columns, int rows, int flags)'/>
+<use f='codebrowser/src/latency.c' l='555' u='c' c='latencyCommandGenSparkeline'/>
+<def f='codebrowser/src/sparkline.c' l='165' ll='175' type='sds sparklineRender(sds output, struct sequence * seq, int columns, int rows, int flags)'/>
+<doc f='codebrowser/src/sparkline.c' l='164'>/* Turn a sequence into its ASCII representation */</doc>

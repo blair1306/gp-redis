@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1129' type='int'/>
+<offset>20864</offset>
+<doc f='codebrowser/src/server.h' l='1127'>/* Sort parameters - qsort_r() is only available under BSD so we
+     * have to take this state global, in order to pass it to sortCompare() */</doc>
+<use f='codebrowser/src/sort.c' l='184' u='r' c='sortCompare'/>
+<use f='codebrowser/src/sort.c' l='493' u='w' c='sortCommand'/>

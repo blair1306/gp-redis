@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1969' type='void timeCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='286' u='r'/>
+<use f='codebrowser/src/server.c' l='286' u='r'/>
+<use f='codebrowser/src/server.c' l='286' u='r'/>
+<use f='codebrowser/src/server.c' l='286' u='r'/>
+<def f='codebrowser/src/server.c' l='2668' ll='2677' type='void timeCommand(client * c)'/>

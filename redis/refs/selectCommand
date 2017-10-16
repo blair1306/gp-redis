@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1839' type='void selectCommand(client * c)'/>
+<def f='codebrowser/src/db.c' l='467' ll='483' type='void selectCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='223' u='r'/>
+<use f='codebrowser/src/server.c' l='223' u='r'/>
+<use f='codebrowser/src/server.c' l='223' u='r'/>
+<use f='codebrowser/src/server.c' l='223' u='r'/>

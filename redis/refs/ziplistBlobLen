@@ -1,0 +1,27 @@
+<dec f='codebrowser/src/ziplist.h' l='50' type='size_t ziplistBlobLen(unsigned char * zl)'/>
+<use f='codebrowser/src/object.c' l='723' u='c' c='objectComputeSize'/>
+<use f='codebrowser/src/object.c' l='728' u='c' c='objectComputeSize'/>
+<use f='codebrowser/src/object.c' l='752' u='c' c='objectComputeSize'/>
+<use f='codebrowser/src/object.c' l='770' u='c' c='objectComputeSize'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='quicklistPushHead'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='quicklistPushHead'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='quicklistPushTail'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='quicklistPushTail'/>
+<use f='codebrowser/src/quicklist.c' l='530' u='c' c='quicklistAppendZiplist'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='quicklistDelIndex'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='quicklistReplaceAtIndex'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='_quicklistZiplistMerge'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='_quicklistSplitNode'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='_quicklistSplitNode'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='473' u='c' c='quicklistDelRange'/>
+<use f='codebrowser/src/rdb.c' l='701' u='c' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='737' u='c' c='rdbSaveObject'/>
+<use f='codebrowser/src/t_hash.c' l='487' u='c' c='hashTypeConvertZiplist'/>
+<def f='codebrowser/src/ziplist.c' l='1186' ll='1188' type='size_t ziplistBlobLen(unsigned char * zl)'/>
+<doc f='codebrowser/src/ziplist.c' l='1185'>/* Return ziplist blob size in bytes. */</doc>

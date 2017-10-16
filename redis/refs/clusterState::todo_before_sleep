@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/cluster.h' l='164' type='int'/>
+<use f='codebrowser/src/cluster.c' l='312' u='w' c='clusterSaveConfig'/>
+<use f='codebrowser/src/cluster.c' l='334' u='w' c='clusterSaveConfig'/>
+<use f='codebrowser/src/cluster.c' l='415' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='2842' u='w' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='3472' u='r' c='clusterBeforeSleep'/>
+<use f='codebrowser/src/cluster.c' l='3476' u='r' c='clusterBeforeSleep'/>
+<use f='codebrowser/src/cluster.c' l='3480' u='r' c='clusterBeforeSleep'/>
+<use f='codebrowser/src/cluster.c' l='3481' u='r' c='clusterBeforeSleep'/>
+<use f='codebrowser/src/cluster.c' l='3488' u='w' c='clusterBeforeSleep'/>
+<use f='codebrowser/src/cluster.c' l='3492' u='w' c='clusterDoBeforeSleep'/>
+<use f='codebrowser/src/cluster.c' l='3640' u='w' c='clusterUpdateState'/>
+<offset>4195328</offset>
+<doc f='codebrowser/src/cluster.h' l='164'>/* Things to do in clusterBeforeSleep(). */</doc>

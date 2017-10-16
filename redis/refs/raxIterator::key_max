@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/rax.h' l='136' type='size_t'/>
+<offset>320</offset>
+<doc f='codebrowser/src/rax.h' l='136'>/* Max key len the current key buffer can hold. */</doc>
+<use f='codebrowser/src/rax.c' l='1127' u='w' c='raxStart'/>
+<use f='codebrowser/src/rax.c' l='1136' u='r' c='raxIteratorAddChars'/>
+<use f='codebrowser/src/rax.c' l='1147' u='w' c='raxIteratorAddChars'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/module.c' l='224' type='void RM_CloseKey(RedisModuleKey * key)'/>
+<use f='codebrowser/src/module.c' l='743' u='c' c='autoMemoryCollect'/>
+<def f='codebrowser/src/module.c' l='1390' ll='1398' type='void RM_CloseKey(RedisModuleKey * key)'/>
+<use f='codebrowser/src/module.c' l='3917' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1389'>/* Close a key handle. */</doc>

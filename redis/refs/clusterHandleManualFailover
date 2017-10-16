@@ -1,0 +1,4 @@
+<def f='codebrowser/src/cluster.c' l='3167' ll='3185' type='void clusterHandleManualFailover()'/>
+<use f='codebrowser/src/cluster.c' l='3449' u='c' c='clusterCron'/>
+<doc f='codebrowser/src/cluster.c' l='3165'>/* This function is called from the cluster cron function in order to go
+ * forward with a manual failover state machine. */</doc>

@@ -1,0 +1,7 @@
+<def f='codebrowser/src/module.c' l='2944' ll='2953' type='void moduleRDBLoadError(RedisModuleIO * io)'/>
+<use f='codebrowser/src/module.c' l='2988' u='c' c='RM_LoadUnsigned'/>
+<use f='codebrowser/src/module.c' l='3058' u='c' c='moduleLoadString'/>
+<use f='codebrowser/src/module.c' l='3118' u='c' c='RM_LoadDouble'/>
+<use f='codebrowser/src/module.c' l='3154' u='c' c='RM_LoadFloat'/>
+<doc f='codebrowser/src/module.c' l='2942'>/* Called when there is a load error in the context of a module. This cannot
+ * be recovered like for the built-in types. */</doc>

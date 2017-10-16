@@ -1,0 +1,21 @@
+<def f='codebrowser/src/t_list.c' l='738' ll='786' type='int serveClientBlockedOnList(client * receiver, robj * key, robj * dstkey, redisDb * db, robj * value, int where)'/>
+<use f='codebrowser/src/t_list.c' l='846' u='c' c='handleClientsBlockedOnLists'/>
+<doc f='codebrowser/src/t_list.c' l='719'>/* This is a helper function for handleClientsBlockedOnLists(). It&apos;s work
+ * is to serve a specific client (receiver) that is blocked on &apos;key&apos;
+ * in the context of the specified &apos;db&apos;, doing the following:
+ *
+ * 1) Provide the client with the &apos;value&apos; element.
+ * 2) If the dstkey is not NULL (we are serving a BRPOPLPUSH) also push the
+ *    &apos;value&apos; element on the destination list (the LPUSH side of the command).
+ * 3) Propagate the resulting BRPOP, BLPOP and additional LPUSH if any into
+ *    the AOF and replication channel.
+ *
+ * The argument &apos;where&apos; is LIST_TAIL or LIST_HEAD, and indicates if the
+ * &apos;value&apos; element was popped fron the head (BLPOP) or tail (BRPOP) so that
+ * we can propagate the command properly.
+ *
+ * The function returns C_OK if we are able to serve the client, otherwise
+ * C_ERR is returned to signal the caller that the list POP operation
+ * should be undone as the client was not served: This only happens for
+ * BRPOPLPUSH that fails to push the value to the destination key as it is
+ * of the wrong type. */</doc>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='748' type='robj *'/>
+<offset>1792</offset>
+<use f='codebrowser/src/cluster.c' l='4712' u='r' c='restoreCommand'/>
+<use f='codebrowser/src/server.c' l='1292' u='w' c='createSharedObjects'/>

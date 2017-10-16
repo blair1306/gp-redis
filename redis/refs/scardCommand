@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1870' type='void scardCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='169' u='r'/>
+<use f='codebrowser/src/server.c' l='169' u='r'/>
+<use f='codebrowser/src/server.c' l='169' u='r'/>
+<use f='codebrowser/src/server.c' l='169' u='r'/>
+<def f='codebrowser/src/t_set.c' l='385' ll='392' type='void scardCommand(client * c)'/>

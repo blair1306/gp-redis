@@ -1,0 +1,12 @@
+<def f='codebrowser/deps/hiredis/sds.h' l='62' ll='67'/>
+<size>9</size>
+<mbr r='sdshdr32::len' o='0' t='uint32_t'/>
+<mbr r='sdshdr32::alloc' o='32' t='uint32_t'/>
+<mbr r='sdshdr32::flags' o='64' t='unsigned char'/>
+<mbr r='sdshdr32::buf' o='72' t='char []'/>
+<def f='codebrowser/src/sds.h' l='62' ll='67'/>
+<size>9</size>
+<mbr r='sdshdr32::len' o='0' t='uint32_t'/>
+<mbr r='sdshdr32::alloc' o='32' t='uint32_t'/>
+<mbr r='sdshdr32::flags' o='64' t='unsigned char'/>
+<mbr r='sdshdr32::buf' o='72' t='char []'/>

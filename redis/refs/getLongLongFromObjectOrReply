@@ -1,0 +1,25 @@
+<dec f='codebrowser/src/server.h' l='1461' type='int getLongLongFromObjectOrReply(client * c, robj * o, long long * target, const char * msg)'/>
+<use f='codebrowser/src/bitops.c' l='974' u='c' c='bitfieldCommand'/>
+<use f='codebrowser/src/blocked.c' l='79' u='c' c='getTimeoutFromObjectOrReply'/>
+<use f='codebrowser/src/cluster.c' l='4363' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4376' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4378' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4555' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4717' u='c' c='restoreCommand'/>
+<use f='codebrowser/src/debug.c' l='321' u='c' c='debugCommand'/>
+<use f='codebrowser/src/expire.c' l='387' u='c' c='expireGenericCommand'/>
+<use f='codebrowser/src/geo.c' l='519' u='c' c='georadiusGeneric'/>
+<use f='codebrowser/src/networking.c' l='1601' u='c' c='clientCommand'/>
+<def f='codebrowser/src/object.c' l='649' ll='661' type='int getLongLongFromObjectOrReply(client * c, robj * o, long long * target, const char * msg)'/>
+<use f='codebrowser/src/object.c' l='666' u='c' c='getLongFromObjectOrReply'/>
+<use f='codebrowser/src/object.c' l='1057' u='c' c='memoryCommand'/>
+<use f='codebrowser/src/replication.c' l='456' u='c' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/scripting.c' l='1231' u='c' c='evalGenericCommand'/>
+<use f='codebrowser/src/sentinel.c' l='2938' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/t_hash.c' l='566' u='c' c='hincrbyCommand'/>
+<use f='codebrowser/src/t_string.c' l='71' u='c' c='setGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='250' u='c' c='getrangeCommand'/>
+<use f='codebrowser/src/t_string.c' l='252' u='c' c='getrangeCommand'/>
+<use f='codebrowser/src/t_string.c' l='347' u='c' c='incrDecrCommand'/>
+<use f='codebrowser/src/t_string.c' l='390' u='c' c='incrbyCommand'/>
+<use f='codebrowser/src/t_string.c' l='397' u='c' c='decrbyCommand'/>

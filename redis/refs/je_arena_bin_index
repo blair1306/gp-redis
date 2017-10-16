@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='988' macro='1' type='szind_t je_arena_bin_index(arena_t * arena, arena_bin_t * bin)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1901' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1946' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2417' macro='1' u='c'/>

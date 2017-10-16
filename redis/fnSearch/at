@@ -1,0 +1,9 @@
+atof|atof
+atoi|atoi
+atol|atol
+atoll|atoll
+atomic_write_p|atomic_write_p
+atomic_write_u|atomic_write_u
+atomic_write_uint32|atomic_write_uint32
+atomic_write_uint64|atomic_write_uint64
+atomic_write_z|atomic_write_z

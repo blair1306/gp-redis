@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1519' type='void flushAppendOnlyFile(int force)'/>
+<use f='codebrowser/src/aof.c' l='210' u='c' c='stopAppendOnly'/>
+<def f='codebrowser/src/aof.c' l='288' ll='448' type='void flushAppendOnlyFile(int force)'/>
+<doc f='codebrowser/src/server.h' l='1518'>/* AOF persistence */</doc>
+<use f='codebrowser/src/debug.c' l='352' u='c' c='debugCommand'/>
+<use f='codebrowser/src/server.c' l='1121' u='c' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1129' u='c' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1225' u='c' c='beforeSleep'/>
+<use f='codebrowser/src/server.c' l='2545' u='c' c='prepareForShutdown'/>

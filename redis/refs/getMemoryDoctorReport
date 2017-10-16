@@ -1,0 +1,4 @@
+<def f='codebrowser/src/object.c' l='920' ll='990' type='sds getMemoryDoctorReport()'/>
+<use f='codebrowser/src/object.c' l='1146' u='c' c='memoryCommand'/>
+<doc f='codebrowser/src/object.c' l='918'>/* This implements MEMORY DOCTOR. An human readable analysis of the Redis
+ * memory condition. */</doc>

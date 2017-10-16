@@ -1,0 +1,73 @@
+<dec f='codebrowser/src/cluster.h' l='125' type='char [46]'/>
+<use f='codebrowser/src/cluster.c' l='169' u='r' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='690' u='r' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='690' u='r' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='1244' u='r' c='clusterHandshakeInProgress'/>
+<use f='codebrowser/src/cluster.c' l='1305' u='r' c='clusterStartHandshake'/>
+<use f='codebrowser/src/cluster.c' l='1305' u='r' c='clusterStartHandshake'/>
+<use f='codebrowser/src/cluster.c' l='1389' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1394' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1460' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1460' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1463' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1469' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1474' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1714' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1720' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1722' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1724' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1737' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1799' u='w' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2286' u='r' c='clusterSetGossipEntry'/>
+<use f='codebrowser/src/cluster.c' l='2286' u='r' c='clusterSetGossipEntry'/>
+<use f='codebrowser/src/cluster.c' l='3223' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3224' u='w' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3226' u='w' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3265' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3275' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3307' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3442' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3816' u='r' c='clusterSetMaster'/>
+<use f='codebrowser/src/cluster.c' l='3865' c='clusterGenNodeDescription'/>
+<use f='codebrowser/src/cluster.c' l='4035' u='r' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4045' u='r' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='5401' c='clusterRedirectClient'/>
+<offset>17536</offset>
+<doc f='codebrowser/src/cluster.h' l='125'>/* Latest known IP address of this node */</doc>

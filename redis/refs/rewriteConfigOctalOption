@@ -1,0 +1,3 @@
+<def f='codebrowser/src/config.c' l='1672' ll='1677' type='void rewriteConfigOctalOption(struct rewriteConfigState * state, char * option, int value, int defvalue)'/>
+<use f='codebrowser/src/config.c' l='1958' u='c' c='rewriteConfig'/>
+<doc f='codebrowser/src/config.c' l='1671'>/* Rewrite a octal option. */</doc>

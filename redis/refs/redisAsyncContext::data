@@ -1,0 +1,13 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='70' type='void *'/>
+<use f='codebrowser/deps/hiredis/async.c' l='121' u='w' c='redisAsyncInitialize'/>
+<offset>1792</offset>
+<doc f='codebrowser/deps/hiredis/async.h' l='69'>/* Not used by hiredis */</doc>
+<use f='codebrowser/src/sentinel.c' l='961' u='w' c='instanceLinkCloseConnection'/>
+<use f='codebrowser/src/sentinel.c' l='1097' u='r' c='instanceLinkConnectionError'/>
+<use f='codebrowser/src/sentinel.c' l='1922' u='w' c='sentinelReconnectInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1946' u='w' c='sentinelReconnectInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2242' u='r' c='sentinelInfoReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2256' u='r' c='sentinelDiscardReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2265' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2304' u='r' c='sentinelPublishReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='3510' u='r' c='sentinelReceiveIsMasterDownReply'/>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/ziplist.h' l='38' type='unsigned char * ziplistMerge(unsigned char ** first, unsigned char ** second)'/>
+<use f='codebrowser/src/quicklist.c' l='702' u='c' c='_quicklistZiplistMerge'/>
+<def f='codebrowser/src/ziplist.c' l='856' ll='954' type='unsigned char * ziplistMerge(unsigned char ** first, unsigned char ** second)'/>
+<doc f='codebrowser/src/ziplist.c' l='841'>/* Merge ziplists &apos;first&apos; and &apos;second&apos; by appending &apos;second&apos; to &apos;first&apos;.
+ *
+ * NOTE: The larger ziplist is reallocated to contain the new merged ziplist.
+ * Either &apos;first&apos; or &apos;second&apos; can be used for the result.  The parameter not
+ * used will be free&apos;d and set to NULL.
+ *
+ * After calling this function, the input parameters are no longer valid since
+ * they are changed and free&apos;d in-place.
+ *
+ * The result ziplist is the contents of &apos;first&apos; followed by &apos;second&apos;.
+ *
+ * On failure: returns NULL if the merge is impossible.
+ * On success: returns the merged ziplist (which is expanded version of either
+ * &apos;first&apos; or &apos;second&apos;, also frees the other unused input ziplist, and sets the
+ * input ziplist argument equal to newly reallocated ziplist return value. */</doc>

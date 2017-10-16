@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1263' type='int'/>
+<offset>96</offset>
+<doc f='codebrowser/src/server.h' l='1263'>/* intset iterator */</doc>
+<use f='codebrowser/src/t_set.c' l='128' u='w' c='setTypeInitIterator'/>
+<use f='codebrowser/src/t_set.c' l='161' u='w' c='setTypeNext'/>

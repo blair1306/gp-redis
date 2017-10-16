@@ -1,0 +1,14 @@
+<def f='codebrowser/src/module.c' l='3446' ll='3455' type='int RM_UnblockClient(RedisModuleBlockedClient * bc, void * privdata)'/>
+<use f='codebrowser/src/module.c' l='3461' u='c' c='RM_AbortBlock'/>
+<use f='codebrowser/src/module.c' l='3992' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3435'>/* Unblock a client blocked by `RedisModule_BlockedClient`. This will trigger
+ * the reply callbacks to be called in order to reply to the client.
+ * The &apos;privdata&apos; argument will be accessible by the reply callback, so
+ * the caller of this function can pass any value that is needed in order to
+ * actually reply to the client.
+ *
+ * A common usage for &apos;privdata&apos; is a thread that computes something that
+ * needs to be passed to the client, included but not limited some slow
+ * to compute reply or some reply obtained via networking.
+ *
+ * Note: this function can be called from threads spawned by the module. */</doc>

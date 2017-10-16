@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1402' type='robj * listTypePop(robj * subject, int where)'/>
+<use f='codebrowser/src/module.c' l='1616' u='c' c='RM_ListPop'/>
+<def f='codebrowser/src/t_list.c' l='57' ll='72' type='robj * listTypePop(robj * subject, int where)'/>
+<use f='codebrowser/src/t_list.c' l='371' u='c' c='popGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='579' u='c' c='rpoplpushCommand'/>
+<use f='codebrowser/src/t_list.c' l='837' u='c' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_list.c' l='898' u='c' c='blockingPopGenericCommand'/>

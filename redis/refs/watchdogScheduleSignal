@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='2011' type='void watchdogScheduleSignal(int period)'/>
+<def f='codebrowser/src/debug.c' l='1164' ll='1174' type='void watchdogScheduleSignal(int period)'/>
+<use f='codebrowser/src/debug.c' l='1195' u='c' c='enableWatchdog'/>
+<use f='codebrowser/src/debug.c' l='1203' u='c' c='disableWatchdog'/>
+<doc f='codebrowser/src/debug.c' l='1161'>/* Schedule a SIGALRM delivery after the specified period in milliseconds.
+ * If a timer is already scheduled, this function will re-schedule it to the
+ * specified time. If period is 0 the current timer is disabled. */</doc>
+<use f='codebrowser/src/server.c' l='960' u='c' c='serverCron'/>

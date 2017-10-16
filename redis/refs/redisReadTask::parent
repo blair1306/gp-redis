@@ -1,0 +1,13 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='68' type='struct redisReadTask *'/>
+<offset>192</offset>
+<doc f='codebrowser/deps/hiredis/read.h' l='68'>/* parent task */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='126' u='r' c='createStringObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='127' u='r' c='createStringObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='151' u='r' c='createArrayObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='152' u='r' c='createArrayObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='168' u='r' c='createIntegerObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='169' u='r' c='createIntegerObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='183' u='r' c='createNilObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='184' u='r' c='createNilObject'/>
+<use f='codebrowser/deps/hiredis/read.c' l='352' u='w' c='processMultiBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='496' u='w' c='redisReaderGetReply'/>

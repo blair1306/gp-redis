@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='909' type='int [16]'/>
+<offset>2848</offset>
+<doc f='codebrowser/src/server.h' l='909'>/* TCP socket file descriptors */</doc>
+<use f='codebrowser/src/server.c' l='1829' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1904' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2501' u='r' c='closeListeningSockets'/>

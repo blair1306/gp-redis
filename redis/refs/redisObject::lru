@@ -1,0 +1,23 @@
+<dec f='codebrowser/src/server.h' l='587' type='unsigned int'/>
+<offset>8</offset>
+<doc f='codebrowser/src/server.h' l='587'>/* LRU time (relative to global lru_clock) or
+                            * LFU data (least significant 8 bits frequency
+                            * and most significant 16 bits decreas time). */</doc>
+<use f='codebrowser/src/db.c' l='57' u='r' c='lookupKey'/>
+<use f='codebrowser/src/db.c' l='58' u='r' c='lookupKey'/>
+<use f='codebrowser/src/db.c' l='59' u='w' c='lookupKey'/>
+<use f='codebrowser/src/db.c' l='61' u='w' c='lookupKey'/>
+<use f='codebrowser/src/db.c' l='180' u='r' c='dbOverwrite'/>
+<use f='codebrowser/src/db.c' l='182' u='w' c='dbOverwrite'/>
+<use f='codebrowser/src/debug.c' l='412' u='r' c='debugCommand'/>
+<use f='codebrowser/src/evict.c' l='94' u='r' c='estimateObjectIdleTime'/>
+<use f='codebrowser/src/evict.c' l='95' u='r' c='estimateObjectIdleTime'/>
+<use f='codebrowser/src/evict.c' l='97' u='r' c='estimateObjectIdleTime'/>
+<use f='codebrowser/src/evict.c' l='335' u='r' c='LFUDecrAndReturn'/>
+<use f='codebrowser/src/evict.c' l='336' u='r' c='LFUDecrAndReturn'/>
+<use f='codebrowser/src/evict.c' l='344' u='w' c='LFUDecrAndReturn'/>
+<use f='codebrowser/src/object.c' l='51' u='w' c='createObject'/>
+<use f='codebrowser/src/object.c' l='53' u='w' c='createObject'/>
+<use f='codebrowser/src/object.c' l='93' u='w' c='createEmbeddedStringObject'/>
+<use f='codebrowser/src/object.c' l='95' u='w' c='createEmbeddedStringObject'/>
+<use f='codebrowser/src/object.c' l='1038' u='r' c='objectCommand'/>

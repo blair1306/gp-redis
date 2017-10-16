@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1120' type='int'/>
+<offset>20576</offset>
+<doc f='codebrowser/src/server.h' l='1120'>/* Pricision of random sampling */</doc>
+<use f='codebrowser/src/config.c' l='326' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='327' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='333' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='339' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1040' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1223' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1994' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/evict.c' l='166' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='168' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/server.c' l='1414' u='w' c='initServerConfig'/>

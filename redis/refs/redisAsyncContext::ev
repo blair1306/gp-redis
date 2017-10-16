@@ -1,0 +1,37 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='83' type='struct (anonymous struct at /home/jon/workspace/redis/deps/hiredis/async.h:73:5)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='123' u='m' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='124' u='m' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='125' u='m' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='126' u='m' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='127' u='m' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='128' u='m' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='51' u='m' c='redisAsyncSetConnectCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='51' u='m' c='redisAsyncSetConnectCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='51' u='m' c='redisAsyncSetConnectCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='57' u='m' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='57' u='m' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='57' u='m' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='45' u='m' c='redisAsyncHandleRead'/>
+<use f='codebrowser/deps/hiredis/async.c' l='45' u='m' c='redisAsyncHandleRead'/>
+<use f='codebrowser/deps/hiredis/async.c' l='45' u='m' c='redisAsyncHandleRead'/>
+<use f='codebrowser/deps/hiredis/async.c' l='51' u='m' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='51' u='m' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='51' u='m' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='54' u='m' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='54' u='m' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='54' u='m' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='45' u='m' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='45' u='m' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='45' u='m' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='51' u='m' c='__redisAsyncCommand'/>
+<use f='codebrowser/deps/hiredis/async.c' l='51' u='m' c='__redisAsyncCommand'/>
+<use f='codebrowser/deps/hiredis/async.c' l='51' u='m' c='__redisAsyncCommand'/>
+<offset>1856</offset>
+<doc f='codebrowser/deps/hiredis/async.h' l='72'>/* Event library data and hooks */</doc>
+<use f='codebrowser/src/sentinel.c' l='333' u='m' c='redisAeAttach'/>
+<use f='codebrowser/src/sentinel.c' l='344' u='m' c='redisAeAttach'/>
+<use f='codebrowser/src/sentinel.c' l='345' u='m' c='redisAeAttach'/>
+<use f='codebrowser/src/sentinel.c' l='346' u='m' c='redisAeAttach'/>
+<use f='codebrowser/src/sentinel.c' l='347' u='m' c='redisAeAttach'/>
+<use f='codebrowser/src/sentinel.c' l='348' u='m' c='redisAeAttach'/>
+<use f='codebrowser/src/sentinel.c' l='349' u='m' c='redisAeAttach'/>

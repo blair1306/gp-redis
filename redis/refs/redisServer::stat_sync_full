@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='951' type='long long'/>
+<offset>8512</offset>
+<doc f='codebrowser/src/server.h' l='951'>/* Number of full resyncs with slaves. */</doc>
+<use f='codebrowser/src/replication.c' l='680' u='w' c='syncCommand'/>
+<use f='codebrowser/src/server.c' l='1774' u='w' c='resetServerStats'/>
+<use f='codebrowser/src/server.c' l='3107' u='r' c='genRedisInfoString'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/quicklist.h' l='158' type='int quicklistCompare(unsigned char * p1, unsigned char * p2, int p2_len)'/>
+<def f='codebrowser/src/quicklist.c' l='1042' ll='1044' type='int quicklistCompare(unsigned char * p1, unsigned char * p2, int p2_len)'/>
+<doc f='codebrowser/src/quicklist.c' l='1041'>/* Passthrough to ziplistCompare() */</doc>
+<use f='codebrowser/src/t_list.c' l='163' u='c' c='listTypeEqual'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='533' type='int'/>
+<use f='codebrowser/src/aof.c' l='1041' macro='1' u='w'/>
+<offset>224</offset>
+<doc f='codebrowser/src/server.h' l='533'>/* Module serialization version: 1 (old),
+                         * 2 (current version with opcodes annotation). */</doc>
+<use f='codebrowser/src/module.c' l='2978' u='r' c='RM_LoadUnsigned'/>
+<use f='codebrowser/src/module.c' l='3048' u='r' c='moduleLoadString'/>
+<use f='codebrowser/src/module.c' l='3108' u='r' c='RM_LoadDouble'/>
+<use f='codebrowser/src/module.c' l='3144' u='r' c='RM_LoadFloat'/>
+<use f='codebrowser/src/rdb.c' l='770' macro='1' u='w'/>
+<use f='codebrowser/src/rdb.c' l='1411' macro='1' u='w'/>
+<use f='codebrowser/src/rdb.c' l='1412' u='w' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1422' u='r' c='rdbLoadObject'/>

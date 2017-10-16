@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/ae.h' l='97' type='aeFiredEvent *'/>
+<use f='codebrowser/src/ae_epoll.c' l='126' u='r' c='aeApiPoll'/>
+<use f='codebrowser/src/ae_epoll.c' l='127' u='r' c='aeApiPoll'/>
+<use f='codebrowser/src/ae.c' l='69' u='w' c='aeCreateEventLoop'/>
+<use f='codebrowser/src/ae.c' l='70' u='r' c='aeCreateEventLoop'/>
+<use f='codebrowser/src/ae.c' l='89' u='r' c='aeCreateEventLoop'/>
+<use f='codebrowser/src/ae.c' l='115' u='w' c='aeResizeSetSize'/>
+<use f='codebrowser/src/ae.c' l='115' u='r' c='aeResizeSetSize'/>
+<use f='codebrowser/src/ae.c' l='128' u='r' c='aeDeleteEventLoop'/>
+<use f='codebrowser/src/ae.c' l='411' u='r' c='aeProcessEvents'/>
+<use f='codebrowser/src/ae.c' l='412' u='r' c='aeProcessEvents'/>
+<use f='codebrowser/src/ae.c' l='413' u='r' c='aeProcessEvents'/>
+<offset>256</offset>
+<doc f='codebrowser/src/ae.h' l='97'>/* Fired events */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1745' type='void emptyDbAsync(redisDb * db)'/>
+<use f='codebrowser/src/db.c' l='322' u='c' c='emptyDb'/>
+<def f='codebrowser/src/lazyfree.c' l='90' ll='96' type='void emptyDbAsync(redisDb * db)'/>
+<doc f='codebrowser/src/lazyfree.c' l='87'>/* Empty a Redis DB asynchronously. What the function does actually is to
+ * create a new empty set of hash tables and scheduling the old ones for
+ * lazy freeing. */</doc>

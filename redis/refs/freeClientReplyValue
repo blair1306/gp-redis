@@ -1,0 +1,2 @@
+<def f='codebrowser/src/networking.c' l='62' ll='64' type='void freeClientReplyValue(void * o)'/>
+<use f='codebrowser/src/networking.c' l='123' u='r' c='createClient'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/src/ziplist.c' l='678' ll='740' type='unsigned char * __ziplistDelete(unsigned char * zl, unsigned char * p, unsigned int num)'/>
+<use f='codebrowser/src/ziplist.c' l='1063' u='c' c='ziplistDelete'/>
+<use f='codebrowser/src/ziplist.c' l='1076' u='c' c='ziplistDeleteRange'/>
+<doc f='codebrowser/src/ziplist.c' l='677'>/* Delete &quot;num&quot; entries, starting at &quot;p&quot;. Returns pointer to the ziplist. */</doc>

@@ -1,0 +1,5 @@
+<dec f='include/linux/limits.h' l='12'/>
+<use f='include/x86_64-linux-gnu/sys/param.h' l='47' u='a'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='845' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1367' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1607' u='c'/>

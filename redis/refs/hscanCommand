@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1944' type='void hscanCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='215' u='r'/>
+<use f='codebrowser/src/server.c' l='215' u='r'/>
+<use f='codebrowser/src/server.c' l='215' u='r'/>
+<use f='codebrowser/src/server.c' l='215' u='r'/>
+<def f='codebrowser/src/t_hash.c' l='817' ll='825' type='void hscanCommand(client * c)'/>

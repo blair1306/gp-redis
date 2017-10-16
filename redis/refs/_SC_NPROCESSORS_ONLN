@@ -1,0 +1,2 @@
+<dec f='include/x86_64-linux-gnu/bits/confname.h' l='252' type='84'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='751' macro='1' u='r'/>

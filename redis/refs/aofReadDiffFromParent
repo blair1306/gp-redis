@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1529' type='ssize_t aofReadDiffFromParent()'/>
+<def f='codebrowser/src/aof.c' l='1053' ll='1063' type='ssize_t aofReadDiffFromParent()'/>
+<use f='codebrowser/src/aof.c' l='1129' u='c' c='rewriteAppendOnlyFileRio'/>
+<use f='codebrowser/src/aof.c' l='1201' u='c' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1216' u='c' c='rewriteAppendOnlyFile'/>
+<doc f='codebrowser/src/aof.c' l='1050'>/* This function is called by the child rewriting the AOF file to read
+ * the difference accumulated from the parent into a buffer, that is
+ * concatenated at the end of the rewrite. */</doc>
+<use f='codebrowser/src/rdb.c' l='938' u='c' c='rdbSaveRio'/>

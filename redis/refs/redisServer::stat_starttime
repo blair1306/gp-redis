@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='936' type='time_t'/>
+<offset>7552</offset>
+<doc f='codebrowser/src/server.h' l='935'>/* Fields used only for stats */</doc>
+<doc f='codebrowser/src/server.h' l='936'>/* Server start time */</doc>
+<use f='codebrowser/src/server.c' l='1882' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2806' u='r' c='genRedisInfoString'/>

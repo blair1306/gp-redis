@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='997' type='int'/>
+<use f='codebrowser/src/aof.c' l='256' u='w' c='startAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='1382' u='w' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/aof.c' l='1401' u='w' c='bgrewriteaofCommand'/>
+<use f='codebrowser/src/aof.c' l='1584' u='w' c='backgroundRewriteDoneHandler'/>
+<offset>14464</offset>
+<doc f='codebrowser/src/server.h' l='997'>/* Rewrite once BGSAVE terminates. */</doc>
+<use f='codebrowser/src/server.c' l='1037' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1388' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3012' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3031' u='r' c='genRedisInfoString'/>

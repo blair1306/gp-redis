@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='695' type='time_t'/>
+<offset>1024</offset>
+<doc f='codebrowser/src/server.h' l='695'>/* Client creation time. */</doc>
+<use f='codebrowser/src/networking.c' l='109' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='1523' u='r' c='catClientInfoString'/>

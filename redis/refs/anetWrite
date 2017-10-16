@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/anet.h' l='66' type='int anetWrite(int fd, char * buf, int count)'/>
+<def f='codebrowser/src/anet.c' l='427' ll='438' type='int anetWrite(int fd, char * buf, int count)'/>
+<doc f='codebrowser/src/anet.c' l='425'>/* Like write(2) but make sure &apos;count&apos; is written before to return
+ * (unless error is encountered) */</doc>

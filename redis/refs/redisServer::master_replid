@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1106' type='char [41]'/>
+<offset>19648</offset>
+<doc f='codebrowser/src/server.h' l='1103'>/* The following two fields is where we store master PSYNC replid/offset
+     * while the PSYNC is in progress. At the end we&apos;ll copy the fields into
+     * the server-&gt;master client structure. */</doc>
+<doc f='codebrowser/src/server.h' l='1106'>/* Master PSYNC runid. */</doc>
+<use f='codebrowser/src/replication.c' l='1083' u='r' c='replicationCreateMasterClient'/>
+<use f='codebrowser/src/replication.c' l='1084' u='r' c='replicationCreateMasterClient'/>
+<use f='codebrowser/src/replication.c' l='1480' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1482' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1483' u='w' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1486' c='slaveTryPartialResynchronization'/>

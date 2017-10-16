@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='328' type='_Bool'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1215' u='r' c='je_arena_maybe_purge'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1510' u='w' c='arena_purge'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1538' u='w' c='arena_purge'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3052' u='w' c='je_arena_new'/>
+<offset>1728</offset>

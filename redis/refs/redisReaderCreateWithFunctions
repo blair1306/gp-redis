@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='98' type='redisReader * redisReaderCreateWithFunctions(redisReplyObjectFunctions * fn)'/>
+<doc f='codebrowser/deps/hiredis/read.h' l='97'>/* Public API for the protocol parser. */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='589' u='c' c='redisReaderCreate'/>
+<def f='codebrowser/deps/hiredis/read.c' l='416' ll='435' type='redisReader * redisReaderCreateWithFunctions(redisReplyObjectFunctions * fn)'/>

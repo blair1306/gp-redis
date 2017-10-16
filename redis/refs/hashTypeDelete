@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1667' type='int hashTypeDelete(robj * o, sds key)'/>
+<use f='codebrowser/src/module.c' l='2156' u='c' c='RM_HashSet'/>
+<def f='codebrowser/src/t_hash.c' l='279' ll='308' type='int hashTypeDelete(robj * o, sds field)'/>
+<use f='codebrowser/src/t_hash.c' l='710' u='c' c='hdelCommand'/>
+<doc f='codebrowser/src/t_hash.c' l='277'>/* Delete an element from a hash.
+ * Return 1 on deleted and 0 on not found. */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1835' type='void decrCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='146' u='r'/>
+<use f='codebrowser/src/server.c' l='146' u='r'/>
+<use f='codebrowser/src/server.c' l='146' u='r'/>
+<use f='codebrowser/src/server.c' l='146' u='r'/>
+<def f='codebrowser/src/t_string.c' l='383' ll='385' type='void decrCommand(client * c)'/>

@@ -1,0 +1,13 @@
+<def f='codebrowser/deps/hiredis/read.h' l='80' ll='95'/>
+<size>560</size>
+<mbr r='redisReader::err' o='0' t='int'/>
+<mbr r='redisReader::errstr' o='32' t='char [128]'/>
+<mbr r='redisReader::buf' o='1088' t='char *'/>
+<mbr r='redisReader::pos' o='1152' t='size_t'/>
+<mbr r='redisReader::len' o='1216' t='size_t'/>
+<mbr r='redisReader::maxbuf' o='1280' t='size_t'/>
+<mbr r='redisReader::rstack' o='1344' t='redisReadTask [9]'/>
+<mbr r='redisReader::ridx' o='4224' t='int'/>
+<mbr r='redisReader::reply' o='4288' t='void *'/>
+<mbr r='redisReader::fn' o='4352' t='redisReplyObjectFunctions *'/>
+<mbr r='redisReader::privdata' o='4416' t='void *'/>

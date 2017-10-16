@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/quicklist.h' l='119' type='quicklist * quicklistNew(int fill, int compress)'/>
+<def f='codebrowser/src/quicklist.c' l='132' ll='136' type='quicklist * quicklistNew(int fill, int compress)'/>
+<use f='codebrowser/src/quicklist.c' l='568' u='c' c='quicklistCreateFromZiplist'/>
+<use f='codebrowser/src/quicklist.c' l='1189' u='c' c='quicklistDup'/>
+<doc f='codebrowser/src/quicklist.c' l='131'>/* Create a new quicklist with some default parameters. */</doc>

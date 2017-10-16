@@ -1,0 +1,18 @@
+<def f='codebrowser/src/quicklist.c' l='695' ll='723' type='quicklistNode * _quicklistZiplistMerge(quicklist * quicklist, quicklistNode * a, quicklistNode * b)'/>
+<use f='codebrowser/src/quicklist.c' l='753' u='c' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='759' u='c' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='765' u='c' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='774' u='c' c='_quicklistMergeNodes'/>
+<doc f='codebrowser/src/quicklist.c' l='682'>/* Given two nodes, try to merge their ziplists.
+ *
+ * This helps us not have a quicklist with 3 element ziplists if
+ * our fill factor can handle much higher levels.
+ *
+ * Note: &apos;a&apos; must be to the LEFT of &apos;b&apos;.
+ *
+ * After calling this function, both &apos;a&apos; and &apos;b&apos; should be considered
+ * unusable.  The return value from this function must be used
+ * instead of re-using any of the quicklistNode input arguments.
+ *
+ * Returns the input node picked to merge against or NULL if
+ * merging was not possible. */</doc>

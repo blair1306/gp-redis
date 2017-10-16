@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1418' type='void unwatchAllKeys(client * c)'/>
+<doc f='codebrowser/src/server.h' l='1417'>/* MULTI/EXEC/WATCH... */</doc>
+<use f='codebrowser/src/multi.c' l='76' u='c' c='discardTransaction'/>
+<use f='codebrowser/src/multi.c' l='141' u='c' c='execCommand'/>
+<def f='codebrowser/src/multi.c' l='248' ll='272' type='void unwatchAllKeys(client * c)'/>
+<use f='codebrowser/src/multi.c' l='335' u='c' c='unwatchCommand'/>
+<doc f='codebrowser/src/multi.c' l='246'>/* Unwatch all the keys watched by this client. To clean the EXEC dirty
+ * flag is up to the caller. */</doc>
+<use f='codebrowser/src/networking.c' l='811' u='c' c='freeClient'/>

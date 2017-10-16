@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/quicklist.h' l='133' type='void quicklistInsertAfter(quicklist * quicklist, quicklistEntry * node, void * value, const size_t sz)'/>
+<def f='codebrowser/src/quicklist.c' l='947' ll='950' type='void quicklistInsertAfter(quicklist * quicklist, quicklistEntry * entry, void * value, const size_t sz)'/>
+<use f='codebrowser/src/t_list.c' l='147' u='c' c='listTypeInsert'/>

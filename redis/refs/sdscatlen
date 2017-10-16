@@ -1,0 +1,156 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='223' type='sds sdscatlen(sds s, const void * t, size_t len)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='247' u='c' c='redisvFormatCommand'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='264' u='c' c='redisvFormatCommand'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='270' u='c' c='redisvFormatCommand'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='511' u='c' c='redisFormatSdsCommandArgv'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='512' u='c' c='redisFormatSdsCommandArgv'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='910' u='c' c='__redisAppendCommand'/>
+<use f='codebrowser/deps/hiredis/read.c' l='464' u='c' c='redisReaderFeed'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='376' ll='385' type='sds sdscatlen(sds s, const void * t, size_t len)'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='392' u='c' c='sdscat'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='400' u='c' c='sdscatsds'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='857' u='c' c='sdscatrepr'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='864' u='c' c='sdscatrepr'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='865' u='c' c='sdscatrepr'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='866' u='c' c='sdscatrepr'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='867' u='c' c='sdscatrepr'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='868' u='c' c='sdscatrepr'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='878' u='c' c='sdscatrepr'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='957' u='c' c='sdssplitargs'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='971' u='c' c='sdssplitargs'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='981' u='c' c='sdssplitargs'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='986' u='c' c='sdssplitargs'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='996' u='c' c='sdssplitargs'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='1014' u='c' c='sdssplitargs'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='1084' u='c' c='sdsjoinsds'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='371'>/* Append the specified binary-safe string pointed by &apos;t&apos; of &apos;len&apos; bytes to the
+ * end of the specified sds string &apos;s&apos;.
+ *
+ * After the call, the passed sds string is no longer valid and all the
+ * references must be substituted with the new pointer returned by the call. */</doc>
+<dec f='codebrowser/src/sds.h' l='223' type='sds sdscatlen(sds s, const void * t, size_t len)'/>
+<use f='codebrowser/src/aof.c' l='459' u='c' c='catAppendOnlyGenericCommand'/>
+<use f='codebrowser/src/aof.c' l='467' u='c' c='catAppendOnlyGenericCommand'/>
+<use f='codebrowser/src/aof.c' l='468' u='c' c='catAppendOnlyGenericCommand'/>
+<use f='codebrowser/src/aof.c' l='469' u='c' c='catAppendOnlyGenericCommand'/>
+<use f='codebrowser/src/aof.c' l='566' u='c' c='feedAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1059' u='c' c='aofReadDiffFromParent'/>
+<use f='codebrowser/src/cluster.c' l='2132' u='c' c='clusterReadHandler'/>
+<use f='codebrowser/src/cluster.c' l='2159' u='c' c='clusterSendMessage'/>
+<use f='codebrowser/src/cluster.c' l='3876' u='c' c='clusterGenNodeDescription'/>
+<use f='codebrowser/src/cluster.c' l='3948' u='c' c='clusterGenNodesDescription'/>
+<use f='codebrowser/src/cluster.c' l='4638' u='c' c='createDumpPayload'/>
+<use f='codebrowser/src/cluster.c' l='4644' u='c' c='createDumpPayload'/>
+<use f='codebrowser/src/cluster.c' l='4782' u='c' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4783' u='c' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4784' u='c' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4836' u='c' c='migrateCloseSocket'/>
+<use f='codebrowser/src/cluster.c' l='4837' u='c' c='migrateCloseSocket'/>
+<use f='codebrowser/src/cluster.c' l='4838' u='c' c='migrateCloseSocket'/>
+<use f='codebrowser/src/config.c' l='1353' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1371' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1657' u='c' c='rewriteConfigStringOption'/>
+<use f='codebrowser/src/config.c' l='1756' u='c' c='rewriteConfigNotifykeyspaceeventsOption'/>
+<use f='codebrowser/src/config.c' l='1804' u='c' c='rewriteConfigBindOption'/>
+<use f='codebrowser/src/config.c' l='1826' u='c' c='rewriteConfigGetContentFromState'/>
+<use f='codebrowser/src/debug.c' l='518' u='c' c='debugCommand'/>
+<use f='codebrowser/src/latency.c' l='378' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/latency.c' l='553' u='c' c='latencyCommandGenSparkeline'/>
+<use f='codebrowser/src/latency.c' l='554' u='c' c='latencyCommandGenSparkeline'/>
+<use f='codebrowser/src/module.c' l='930' u='c' c='RM_StringAppendBuffer'/>
+<use f='codebrowser/src/module.c' l='996' u='c' c='replyWithStatus'/>
+<use f='codebrowser/src/networking.c' l='294' u='c' c='_addReplyStringToList'/>
+<use f='codebrowser/src/networking.c' l='1394' u='c' c='readQueryFromClient'/>
+<use f='codebrowser/src/networking.c' l='1549' u='c' c='getAllClientsInfoString'/>
+<use f='codebrowser/src/notify.c' l='72' u='c' c='keyspaceEventsFlagsToString'/>
+<use f='codebrowser/src/notify.c' l='74' u='c' c='keyspaceEventsFlagsToString'/>
+<use f='codebrowser/src/notify.c' l='75' u='c' c='keyspaceEventsFlagsToString'/>
+<use f='codebrowser/src/notify.c' l='76' u='c' c='keyspaceEventsFlagsToString'/>
+<use f='codebrowser/src/notify.c' l='77' u='c' c='keyspaceEventsFlagsToString'/>
+<use f='codebrowser/src/notify.c' l='78' u='c' c='keyspaceEventsFlagsToString'/>
+<use f='codebrowser/src/notify.c' l='79' u='c' c='keyspaceEventsFlagsToString'/>
+<use f='codebrowser/src/notify.c' l='80' u='c' c='keyspaceEventsFlagsToString'/>
+<use f='codebrowser/src/notify.c' l='81' u='c' c='keyspaceEventsFlagsToString'/>
+<use f='codebrowser/src/notify.c' l='83' u='c' c='keyspaceEventsFlagsToString'/>
+<use f='codebrowser/src/notify.c' l='84' u='c' c='keyspaceEventsFlagsToString'/>
+<use f='codebrowser/src/notify.c' l='110' u='c' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/notify.c' l='111' u='c' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/notify.c' l='122' u='c' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/notify.c' l='123' u='c' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/redis-benchmark.c' l='347' u='c' c='createClient'/>
+<use f='codebrowser/src/redis-benchmark.c' l='364' u='c' c='createClient'/>
+<use f='codebrowser/src/redis-benchmark.c' l='369' u='c' c='createClient'/>
+<use f='codebrowser/src/redis-benchmark.c' l='705' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='706' u='c' c='main'/>
+<use f='codebrowser/src/redis-cli.c' l='609' u='c' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='630' u='c' c='sdscatcolor'/>
+<use f='codebrowser/src/redis-cli.c' l='643' u='c' c='sdscatcolor'/>
+<use f='codebrowser/src/redis-cli.c' l='675' u='c' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='676' u='c' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='696' u='c' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='706' u='c' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='741' u='c' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='1097' u='c' c='readArgFromStdin'/>
+<use f='codebrowser/src/redis-cli.c' l='1426' u='c' c='evalMode'/>
+<use f='codebrowser/src/replication.c' l='329' u='c' c='replicationFeedMonitors'/>
+<use f='codebrowser/src/replication.c' l='331' u='c' c='replicationFeedMonitors'/>
+<use f='codebrowser/src/replication.c' l='1329' u='c' c='sendSynchronousCommand'/>
+<use f='codebrowser/src/replication.c' l='1332' u='c' c='sendSynchronousCommand'/>
+<use f='codebrowser/src/rio.c' l='62' u='c' c='rioBufferWrite'/>
+<use f='codebrowser/src/rio.c' l='178' u='c' c='rioFdsetWrite'/>
+<use f='codebrowser/src/scripting.c' l='448' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='739' u='c' c='luaRedisDebugCommand'/>
+<use f='codebrowser/src/scripting.c' l='797' u='c' c='luaLogCommand'/>
+<use f='codebrowser/src/scripting.c' l='798' u='c' c='luaLogCommand'/>
+<use f='codebrowser/src/scripting.c' l='880' u='c' c='scriptingEnableGlobalsProtection'/>
+<use f='codebrowser/src/scripting.c' l='1149' u='c' c='luaCreateFunction'/>
+<use f='codebrowser/src/scripting.c' l='1150' u='c' c='luaCreateFunction'/>
+<use f='codebrowser/src/scripting.c' l='1151' u='c' c='luaCreateFunction'/>
+<use f='codebrowser/src/scripting.c' l='1152' u='c' c='luaCreateFunction'/>
+<use f='codebrowser/src/scripting.c' l='1548' u='c' c='ldbLogWithMaxLen'/>
+<use f='codebrowser/src/scripting.c' l='1567' u='c' c='ldbSendLogs'/>
+<use f='codebrowser/src/scripting.c' l='1570' u='c' c='ldbSendLogs'/>
+<use f='codebrowser/src/scripting.c' l='1875' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1895' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1897' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1899' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1901' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1909' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1911' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='1979' u='c' c='ldbRedisProtocolToHuman_Int'/>
+<use f='codebrowser/src/scripting.c' l='1989' u='c' c='ldbRedisProtocolToHuman_Bulk'/>
+<use f='codebrowser/src/scripting.c' l='2012' u='c' c='ldbRedisProtocolToHuman_MultiBulk'/>
+<use f='codebrowser/src/scripting.c' l='2015' u='c' c='ldbRedisProtocolToHuman_MultiBulk'/>
+<use f='codebrowser/src/scripting.c' l='2018' u='c' c='ldbRedisProtocolToHuman_MultiBulk'/>
+<use f='codebrowser/src/scripting.c' l='2020' u='c' c='ldbRedisProtocolToHuman_MultiBulk'/>
+<use f='codebrowser/src/scripting.c' l='2243' u='c' c='ldbRepl'/>
+<def f='codebrowser/src/sds.c' l='379' ll='388' type='sds sdscatlen(sds s, const void * t, size_t len)'/>
+<use f='codebrowser/src/sds.c' l='395' u='c' c='sdscat'/>
+<use f='codebrowser/src/sds.c' l='403' u='c' c='sdscatsds'/>
+<use f='codebrowser/src/sds.c' l='862' u='c' c='sdscatrepr'/>
+<use f='codebrowser/src/sds.c' l='869' u='c' c='sdscatrepr'/>
+<use f='codebrowser/src/sds.c' l='870' u='c' c='sdscatrepr'/>
+<use f='codebrowser/src/sds.c' l='871' u='c' c='sdscatrepr'/>
+<use f='codebrowser/src/sds.c' l='872' u='c' c='sdscatrepr'/>
+<use f='codebrowser/src/sds.c' l='873' u='c' c='sdscatrepr'/>
+<use f='codebrowser/src/sds.c' l='883' u='c' c='sdscatrepr'/>
+<use f='codebrowser/src/sds.c' l='962' u='c' c='sdssplitargs'/>
+<use f='codebrowser/src/sds.c' l='976' u='c' c='sdssplitargs'/>
+<use f='codebrowser/src/sds.c' l='986' u='c' c='sdssplitargs'/>
+<use f='codebrowser/src/sds.c' l='991' u='c' c='sdssplitargs'/>
+<use f='codebrowser/src/sds.c' l='1001' u='c' c='sdssplitargs'/>
+<use f='codebrowser/src/sds.c' l='1019' u='c' c='sdssplitargs'/>
+<use f='codebrowser/src/sds.c' l='1089' u='c' c='sdsjoinsds'/>
+<doc f='codebrowser/src/sds.c' l='374'>/* Append the specified binary-safe string pointed by &apos;t&apos; of &apos;len&apos; bytes to the
+ * end of the specified sds string &apos;s&apos;.
+ *
+ * After the call, the passed sds string is no longer valid and all the
+ * references must be substituted with the new pointer returned by the call. */</doc>
+<use f='codebrowser/src/sentinel.c' l='3205' u='c' c='sentinelInfoCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3205' u='c' c='sentinelInfoCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3205' u='c' c='sentinelInfoCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3205' u='c' c='sentinelInfoCommand'/>
+<use f='codebrowser/src/sparkline.c' l='156' u='c' c='sparklineRenderRange'/>
+<use f='codebrowser/src/sparkline.c' l='157' u='c' c='sparklineRenderRange'/>
+<use f='codebrowser/src/sparkline.c' l='171' u='c' c='sparklineRender'/>
+<use f='codebrowser/src/t_string.c' l='459' u='c' c='appendCommand'/>

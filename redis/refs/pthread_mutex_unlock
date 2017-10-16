@@ -1,0 +1,11 @@
+<dec f='include/pthread.h' l='773' type='int pthread_mutex_unlock(pthread_mutex_t * __mutex)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/mutex.h' l='104' u='c' c='je_malloc_mutex_unlock'/>
+<doc f='include/pthread.h' l='772'>/* Unlock a mutex.  */</doc>
+<use f='codebrowser/src/bio.c' l='142' u='c' c='bioCreateBackgroundJob'/>
+<use f='codebrowser/src/bio.c' l='184' u='c' c='bioProcessBackgroundJobs'/>
+<use f='codebrowser/src/bio.c' l='223' u='c' c='bioPendingJobsOfType'/>
+<use f='codebrowser/src/bio.c' l='245' u='c' c='bioWaitStepOfType'/>
+<use f='codebrowser/src/module.c' l='3453' u='c' c='RM_UnblockClient'/>
+<use f='codebrowser/src/module.c' l='3486' u='c' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='3543' u='c' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='3643' u='c' c='moduleReleaseGIL'/>

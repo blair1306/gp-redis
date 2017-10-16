@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/quicklist.h' l='123' type='void quicklistRelease(quicklist * quicklist)'/>
+<use f='codebrowser/src/object.c' l='250' u='c' c='freeListObject'/>
+<def f='codebrowser/src/quicklist.c' l='155' ll='173' type='void quicklistRelease(quicklist * quicklist)'/>
+<doc f='codebrowser/src/quicklist.c' l='154'>/* Free entire quicklist. */</doc>

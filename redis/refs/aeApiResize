@@ -1,0 +1,2 @@
+<def f='codebrowser/src/ae_epoll.c' l='58' ll='63' type='int aeApiResize(aeEventLoop * eventLoop, int setsize)'/>
+<use f='codebrowser/src/ae.c' l='112' u='c' c='aeResizeSetSize'/>

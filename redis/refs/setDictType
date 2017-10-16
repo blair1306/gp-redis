@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1291' type='dictType'/>
+<use f='codebrowser/src/object.c' l='197' u='a' c='createSetObject'/>
+<def f='codebrowser/src/server.c' l='555' ll='562' type='dictType'/>
+<doc f='codebrowser/src/server.c' l='554'>/* Set dictionary type. Keys are SDS strings, values are ot used. */</doc>
+<use f='codebrowser/src/t_set.c' l='242' u='a' c='setTypeConvert'/>

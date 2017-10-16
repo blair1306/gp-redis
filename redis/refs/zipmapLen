@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/zipmap.h' l='45' type='unsigned int zipmapLen(unsigned char * zm)'/>
+<def f='codebrowser/src/zipmap.c' l='350' ll='362' type='unsigned int zipmapLen(unsigned char * zm)'/>
+<doc f='codebrowser/src/zipmap.c' l='349'>/* Return the number of entries inside a zipmap */</doc>

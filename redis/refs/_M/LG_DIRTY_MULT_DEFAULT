@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='24'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='7' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='16'>/*
+ * The minimum ratio of active:dirty pages per arena is computed as:
+ *
+ *   (nactive &gt;&gt; lg_dirty_mult) &gt;= ndirty
+ *
+ * So, supposing that lg_dirty_mult is 3, there can be no less than 8 times as
+ * many active pages as dirty pages.
+ */</doc>

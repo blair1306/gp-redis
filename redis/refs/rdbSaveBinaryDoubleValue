@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/rdb.h' l='145' type='int rdbSaveBinaryDoubleValue(rio * rdb, double val)'/>
+<use f='codebrowser/src/module.c' l='3096' u='c' c='RM_SaveDouble'/>
+<def f='codebrowser/src/rdb.c' l='568' ll='571' type='int rdbSaveBinaryDoubleValue(rio * rdb, double val)'/>
+<use f='codebrowser/src/rdb.c' l='726' u='c' c='rdbSaveObject'/>
+<doc f='codebrowser/src/rdb.c' l='563'>/* Saves a double for RDB 8 or greater, where IE754 binary64 format is assumed.
+ * We just make sure the integer is always stored in little endian, otherwise
+ * the value is copied verbatim from memory to disk.
+ *
+ * Return -1 on error, the size of the serialized value on success. */</doc>

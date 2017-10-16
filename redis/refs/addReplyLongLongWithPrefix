@@ -1,0 +1,8 @@
+<def f='codebrowser/src/networking.c' l='484' ll='504' type='void addReplyLongLongWithPrefix(client * c, long long ll, char prefix)'/>
+<use f='codebrowser/src/networking.c' l='512' u='c' c='addReplyLongLong'/>
+<use f='codebrowser/src/networking.c' l='519' u='c' c='addReplyMultiBulkLen'/>
+<use f='codebrowser/src/networking.c' l='545' u='c' c='addReplyBulkLen'/>
+<use f='codebrowser/src/networking.c' l='557' u='c' c='addReplyBulkCBuffer'/>
+<use f='codebrowser/src/networking.c' l='564' u='c' c='addReplyBulkSds'/>
+<doc f='codebrowser/src/networking.c' l='482'>/* Add a long long as integer reply or bulk len / multi bulk count.
+ * Basically this is used to output &lt;prefix&gt;&lt;long long&gt;&lt;crlf&gt;. */</doc>

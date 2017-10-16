@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='345' type='arena_avail_tree_t'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='212' u='a' c='arena_avail_insert'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='223' u='a' c='arena_avail_remove'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1077' u='a' c='arena_run_first_best_fit'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3056' u='a' c='je_arena_new'/>
+<offset>1920</offset>

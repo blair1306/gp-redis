@@ -1,0 +1,13 @@
+<dec f='codebrowser/deps/linenoise/linenoise.h' l='61' type='int linenoiseHistoryAdd(const char * line)'/>
+<dec f='codebrowser/deps/linenoise/linenoise.c' l='176' type='int linenoiseHistoryAdd(const char * line)'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='792' u='c' c='linenoiseEdit'/>
+<def f='codebrowser/deps/linenoise/linenoise.c' l='1100' ll='1127' type='int linenoiseHistoryAdd(const char * line)'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1195' u='c' c='linenoiseHistoryLoad'/>
+<doc f='codebrowser/deps/linenoise/linenoise.c' l='1093'>/* This is the API call to add a new entry in the linenoise history.
+ * It uses a fixed array of char pointers that are shifted (memmoved)
+ * when the history max length is reached in order to remove the older
+ * entry and make room for the new one, so it is not exactly suitable for huge
+ * histories, but will work well for a few hundred of entries.
+ *
+ * Using a circular buffer is smarter, but a bit more complex to handle. */</doc>
+<use f='codebrowser/src/redis-cli.c' l='1306' u='c' c='repl'/>

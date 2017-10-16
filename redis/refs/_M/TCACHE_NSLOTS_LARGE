@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='34'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='33'>/* Number of cache slots for large size classes. */</doc>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='532' u='c'/>

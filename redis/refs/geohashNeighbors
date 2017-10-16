@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/geohash.h' l='113' type='void geohashNeighbors(const GeoHashBits * hash, GeoHashNeighbors * neighbors)'/>
+<def f='codebrowser/src/geohash.c' l='262' ll='295' type='void geohashNeighbors(const GeoHashBits * hash, GeoHashNeighbors * neighbors)'/>
+<use f='codebrowser/src/geohash_helper.c' l='136' u='c' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='166' u='c' c='geohashGetAreasByRadius'/>

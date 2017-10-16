@@ -1,0 +1,4 @@
+<def f='codebrowser/src/rdb.c' l='828' ll='833' type='int rdbSaveAuxField(rio * rdb, void * key, size_t keylen, void * val, size_t vallen)'/>
+<use f='codebrowser/src/rdb.c' l='838' u='c' c='rdbSaveAuxFieldStrStr'/>
+<use f='codebrowser/src/rdb.c' l='845' u='c' c='rdbSaveAuxFieldStrInt'/>
+<doc f='codebrowser/src/rdb.c' l='827'>/* Save an AUX field. */</doc>

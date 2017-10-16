@@ -1,0 +1,8 @@
+<def f='codebrowser/src/module.c' l='2565' ll='2648' type='RedisModuleCallReply * RM_Call(RedisModuleCtx * ctx, const char * cmdname, const char * fmt)'/>
+<use f='codebrowser/src/module.c' l='3924' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='2559'>/* Exported API to call any Redis command from modules.
+ * On success a RedisModuleCallReply object is returned, otherwise
+ * NULL is returned and errno is set to the following values:
+ *
+ * EINVAL: command non existing, wrong arity, wrong format specifier.
+ * EPERM:  operation in Cluster instance with key in non local slot. */</doc>

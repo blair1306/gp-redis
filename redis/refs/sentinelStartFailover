@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/sentinel.c' l='369' type='void sentinelStartFailover(sentinelRedisInstance * master)'/>
+<use f='codebrowser/src/sentinel.c' l='3001' u='c' c='sentinelCommand'/>
+<def f='codebrowser/src/sentinel.c' l='3796' ll='3807' type='void sentinelStartFailover(sentinelRedisInstance * master)'/>
+<use f='codebrowser/src/sentinel.c' l='3846' u='c' c='sentinelStartFailoverIfNeeded'/>
+<doc f='codebrowser/src/sentinel.c' l='3795'>/* Setup the master state to start a failover. */</doc>

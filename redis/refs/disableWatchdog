@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='2010' type='void disableWatchdog()'/>
+<use f='codebrowser/src/config.c' l='1124' u='c' c='configSetCommand'/>
+<def f='codebrowser/src/debug.c' l='1200' ll='1212' type='void disableWatchdog()'/>
+<doc f='codebrowser/src/debug.c' l='1199'>/* Disable the software watchdog. */</doc>

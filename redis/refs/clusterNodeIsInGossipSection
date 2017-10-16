@@ -1,0 +1,5 @@
+<def f='codebrowser/src/cluster.c' l='2269' ll='2276' type='int clusterNodeIsInGossipSection(clusterMsg * hdr, int count, clusterNode * n)'/>
+<use f='codebrowser/src/cluster.c' l='2383' u='c' c='clusterSendPing'/>
+<doc f='codebrowser/src/cluster.c' l='2266'>/* Return non zero if the node is already present in the gossip section of the
+ * message pointed by &apos;hdr&apos; and having &apos;count&apos; gossip entries. Otherwise
+ * zero is returned. Helper for clusterSendPing(). */</doc>

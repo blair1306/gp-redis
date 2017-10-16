@@ -1,0 +1,13 @@
+<dec f='codebrowser/deps/hiredis/async.c' l='61' type='int __redisAppendCommand(redisContext * c, const char * cmd, size_t len)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='642' u='c' c='__redisAsyncCommand'/>
+<doc f='codebrowser/deps/hiredis/async.c' l='60'>/* Forward declaration of function in hiredis.c */</doc>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='907' ll='918' type='int __redisAppendCommand(redisContext * c, const char * cmd, size_t len)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='922' u='c' c='redisAppendFormattedCommand'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='942' u='c' c='redisvAppendCommand'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='971' u='c' c='redisAppendCommandArgv'/>
+<doc f='codebrowser/deps/hiredis/hiredis.c' l='901'>/* Helper function for the redisAppendCommand* family of functions.
+ *
+ * Write a formatted command to the output buffer. When this family
+ * is used, you need to call redisGetReply yourself to retrieve
+ * the reply (or replies in pub/sub).
+ */</doc>

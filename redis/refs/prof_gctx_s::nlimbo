@@ -1,0 +1,13 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='154' type='unsigned int'/>
+<offset>64</offset>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='564' u='w' c='prof_gctx_create'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='589' u='r' c='prof_gctx_try_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='590' u='r' c='prof_gctx_try_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='603' u='w' c='prof_gctx_try_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='631' u='r' c='prof_gctx_should_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='674' u='w' c='prof_tctx_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='743' u='w' c='prof_lookup_global'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='819' u='w' c='je_prof_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1163' u='w' c='prof_dump_gctx_prep'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1219' u='w' c='prof_gctx_finish'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1221' u='w' c='prof_gctx_finish'/>

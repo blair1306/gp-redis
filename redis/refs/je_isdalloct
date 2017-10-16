@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='1033' macro='1' type='void je_isdalloct(tsd_t * tsd, void * ptr, size_t size, tcache_t * tcache)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='1046' macro='1' u='c'/>

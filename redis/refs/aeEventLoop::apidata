@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/ae.h' l='100' type='void *'/>
+<use f='codebrowser/src/ae_epoll.c' l='54' u='w' c='aeApiCreate'/>
+<use f='codebrowser/src/ae_epoll.c' l='59' u='r' c='aeApiResize'/>
+<use f='codebrowser/src/ae_epoll.c' l='66' u='r' c='aeApiFree'/>
+<use f='codebrowser/src/ae_epoll.c' l='74' u='r' c='aeApiAddEvent'/>
+<use f='codebrowser/src/ae_epoll.c' l='91' u='r' c='aeApiDelEvent'/>
+<use f='codebrowser/src/ae_epoll.c' l='109' u='r' c='aeApiPoll'/>
+<offset>448</offset>
+<doc f='codebrowser/src/ae.h' l='100'>/* This is used for polling API specific data */</doc>

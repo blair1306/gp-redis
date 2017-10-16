@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='887' type='int'/>
+<offset>672</offset>
+<doc f='codebrowser/src/server.h' l='887'>/* Active defragmentation running (holds current scan aggressiveness) */</doc>
+<use f='codebrowser/src/defrag.c' l='496' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='512' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='513' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='515' u='w' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='521' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='526' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='544' u='w' c='activeDefragCycle'/>
+<use f='codebrowser/src/server.c' l='1408' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2974' u='r' c='genRedisInfoString'/>

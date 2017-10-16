@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/sentinel.c' l='375' type='int sentinelSendPing(sentinelRedisInstance * ri)'/>
+<use f='codebrowser/src/sentinel.c' l='1932' u='c' c='sentinelReconnectInstance'/>
+<def f='codebrowser/src/sentinel.c' l='2542' ll='2557' type='int sentinelSendPing(sentinelRedisInstance * ri)'/>
+<use f='codebrowser/src/sentinel.c' l='2613' u='c' c='sentinelSendPeriodicCommands'/>
+<doc f='codebrowser/src/sentinel.c' l='2537'>/* Send a PING to the specified instance and refresh the act_ping_time
+ * if it is zero (that is, if we received a pong for the previous ping).
+ *
+ * On error zero is returned, and we can&apos;t consider the PING command
+ * queued in the connection. */</doc>

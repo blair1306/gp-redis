@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1965' type='void clientCommand(client * c)'/>
+<def f='codebrowser/src/networking.c' l='1554' ll='1707' type='void clientCommand(client * c)'/>
+<use f='codebrowser/src/sentinel.c' l='435'/>
+<use f='codebrowser/src/sentinel.c' l='435'/>
+<use f='codebrowser/src/sentinel.c' l='435'/>
+<use f='codebrowser/src/sentinel.c' l='435'/>
+<use f='codebrowser/src/server.c' l='281' u='r'/>
+<use f='codebrowser/src/server.c' l='281' u='r'/>
+<use f='codebrowser/src/server.c' l='281' u='r'/>
+<use f='codebrowser/src/server.c' l='281' u='r'/>

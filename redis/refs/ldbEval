@@ -1,0 +1,5 @@
+<def f='codebrowser/src/scripting.c' l='2137' ll='2164' type='void ldbEval(lua_State * lua, sds * argv, int argc)'/>
+<use f='codebrowser/src/scripting.c' l='2299' u='c' c='ldbRepl'/>
+<doc f='codebrowser/src/scripting.c' l='2134'>/* Implements the Lua debugger &quot;eval&quot; command. It just compiles the user
+ * passed fragment of code and executes it, showing the result left on
+ * the stack. */</doc>

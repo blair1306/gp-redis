@@ -1,0 +1,9 @@
+<def f='codebrowser/src/hyperloglog.c' l='1117' ll='1146' type='int isHLLObjectOrReply(client * c, robj * o)'/>
+<use f='codebrowser/src/hyperloglog.c' l='1162' u='c' c='pfaddCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1211' u='c' c='pfcountCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1236' u='c' c='pfcountCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1292' u='c' c='pfmergeCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1460' u='c' c='pfdebugCommand'/>
+<doc f='codebrowser/src/hyperloglog.c' l='1114'>/* Check if the object is a String with a valid HLL representation.
+ * Return C_OK if this is true, otherwise reply to the client
+ * with an error and return C_ERR. */</doc>

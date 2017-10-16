@@ -1,0 +1,2 @@
+<dec f='include/x86_64-linux-gnu/bits/mman-linux.h' l='38'/>
+<use f='codebrowser/deps/jemalloc/src/pages.c' l='112' u='c'/>

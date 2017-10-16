@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='37' type='ssize_t'/>
+<offset>128</offset>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='523' u='w' c='ctl_arena_clear'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='545' u='a' c='ctl_arena_stats_amerge'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='2000' u='r' c='stats_arenas_i_lg_dirty_mult_ctl'/>

@@ -1,0 +1,14 @@
+<def f='codebrowser/src/module.c' l='1905' ll='1907' type='int RM_ZsetFirstInLexRange(RedisModuleKey * key, robj * min, robj * max)'/>
+<use f='codebrowser/src/module.c' l='3955' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1893'>/* Setup a sorted set iterator seeking the first element in the specified
+ * lexicographical range. Returns REDISMODULE_OK if the iterator was correctly
+ * initialized otherwise REDISMODULE_ERR is returned in the
+ * following conditions:
+ *
+ * 1. The value stored at key is not a sorted set or the key is empty.
+ * 2. The lexicographical range &apos;min&apos; and &apos;max&apos; format is invalid.
+ *
+ * &apos;min&apos; and &apos;max&apos; should be provided as two RedisModuleString objects
+ * in the same format as the parameters passed to the ZRANGEBYLEX command.
+ * The function does not take ownership of the objects, so they can be released
+ * ASAP after the iterator is setup. */</doc>

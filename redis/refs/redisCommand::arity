@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='1214' type='int'/>
+<offset>128</offset>
+<use f='codebrowser/src/module.c' l='636' u='w' c='RM_CreateCommand'/>
+<use f='codebrowser/src/module.c' l='2598' u='r' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='2598' u='r' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='2598' u='r' c='RM_Call'/>
+<use f='codebrowser/src/scripting.c' l='457' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='457' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='458' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/server.c' l='2327' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2327' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2328' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2696' u='r' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2754' u='r' c='commandCommand'/>
+<use f='codebrowser/src/server.c' l='2754' u='r' c='commandCommand'/>
+<use f='codebrowser/src/server.c' l='2755' u='r' c='commandCommand'/>

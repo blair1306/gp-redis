@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='85' type='3'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='685' u='r' c='prof_tctx_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1061' c='prof_tctx_merge_tdata'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1089' c='prof_tctx_merge_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1111' c='prof_tctx_dump_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1138' c='prof_tctx_finish_iter'/>

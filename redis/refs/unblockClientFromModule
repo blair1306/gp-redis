@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='1315' type='void unblockClientFromModule(client * c)'/>
+<use f='codebrowser/src/blocked.c' l='140' u='c' c='unblockClient'/>
+<def f='codebrowser/src/module.c' l='3375' ll='3383' type='void unblockClientFromModule(client * c)'/>
+<doc f='codebrowser/src/module.c' l='3363'>/* This is called from blocked.c in order to unblock a client: may be called
+ * for multiple reasons while the client is in the middle of being blocked
+ * because the client is terminated, but is also called for cleanup when a
+ * client is unblocked in a clean way after replaying.
+ *
+ * What we do here is just to set the client to NULL in the redis module
+ * blocked client handle. This way if the client is terminated while there
+ * is a pending threaded operation involving the blocked client, we&apos;ll know
+ * that the client no longer exists and no reply callback should be called.
+ *
+ * The structure RedisModuleBlockedClient will be always deallocated when
+ * running the list of clients blocked by a module that need to be unblocked. */</doc>

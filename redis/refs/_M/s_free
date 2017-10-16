@@ -1,0 +1,20 @@
+<dec f='codebrowser/deps/hiredis/sdsalloc.h' l='42'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='157' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='230' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='262' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='523' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='534' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='836' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='847' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='1035' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='1096' u='c'/>
+<dec f='codebrowser/src/sdsalloc.h' l='42'/>
+<use f='codebrowser/src/sds.c' l='160' u='c'/>
+<use f='codebrowser/src/sds.c' l='233' u='c'/>
+<use f='codebrowser/src/sds.c' l='265' u='c'/>
+<use f='codebrowser/src/sds.c' l='526' u='c'/>
+<use f='codebrowser/src/sds.c' l='537' u='c'/>
+<use f='codebrowser/src/sds.c' l='841' u='c'/>
+<use f='codebrowser/src/sds.c' l='852' u='c'/>
+<use f='codebrowser/src/sds.c' l='1040' u='c'/>
+<use f='codebrowser/src/sds.c' l='1101' u='c'/>

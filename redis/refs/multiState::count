@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='629' type='int'/>
+<offset>64</offset>
+<doc f='codebrowser/src/server.h' l='629'>/* Total number of MULTI commands */</doc>
+<use f='codebrowser/src/cluster.c' l='5237' u='w' c='getNodeByQuery'/>
+<use f='codebrowser/src/cluster.c' l='5245' u='r' c='getNodeByQuery'/>
+<use f='codebrowser/src/multi.c' l='37' u='w' c='initClientMultiState'/>
+<use f='codebrowser/src/multi.c' l='44' u='r' c='freeClientMultiState'/>
+<use f='codebrowser/src/multi.c' l='61' u='r' c='queueMultiCommand'/>
+<use f='codebrowser/src/multi.c' l='62' u='r' c='queueMultiCommand'/>
+<use f='codebrowser/src/multi.c' l='69' u='w' c='queueMultiCommand'/>
+<use f='codebrowser/src/multi.c' l='145' u='r' c='execCommand'/>
+<use f='codebrowser/src/multi.c' l='146' u='r' c='execCommand'/>
+<use f='codebrowser/src/networking.c' l='1529' u='r' c='catClientInfoString'/>

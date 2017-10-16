@@ -1,0 +1,7 @@
+<def f='codebrowser/src/cluster.c' l='792' ll='795' type='int clusterNodeFailureReportsCount(clusterNode * node)'/>
+<use f='codebrowser/src/cluster.c' l='1178' u='c' c='markNodeAsFailingIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1365' u='c' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='4487' u='c' c='clusterCommand'/>
+<doc f='codebrowser/src/cluster.c' l='789'>/* Return the number of external nodes that believe &apos;node&apos; is failing,
+ * not including this node, that may have a PFAIL or FAIL state for this
+ * node as well. */</doc>

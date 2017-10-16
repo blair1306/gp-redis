@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/config.c' l='1456' type='dict *'/>
+<use f='codebrowser/src/config.c' l='1487' u='r' c='rewriteConfigMarkAsProcessed'/>
+<use f='codebrowser/src/config.c' l='1504' u='w' c='rewriteConfigReadOldFile'/>
+<use f='codebrowser/src/config.c' l='1835' u='r' c='rewriteConfigReleaseState'/>
+<use f='codebrowser/src/config.c' l='1857' u='r' c='rewriteConfigRemoveOrphaned'/>
+<offset>64</offset>
+<doc f='codebrowser/src/config.c' l='1456'>/* Dictionary of already processed options */</doc>

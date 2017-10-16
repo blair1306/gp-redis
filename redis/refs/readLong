@@ -1,0 +1,3 @@
+<def f='codebrowser/src/redis-check-aof.c' l='51' ll='63' type='int readLong(FILE * fp, char prefix, long * target)'/>
+<use f='codebrowser/src/redis-check-aof.c' l='79' u='c' c='readString'/>
+<use f='codebrowser/src/redis-check-aof.c' l='97' u='c' c='readArgc'/>

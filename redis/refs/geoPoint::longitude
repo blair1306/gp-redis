@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/geo.h' l='9' type='double'/>
+<use f='codebrowser/src/geo.c' l='205' u='w' c='geoAppendIfWithinRadius'/>
+<use f='codebrowser/src/geo.c' l='629' u='r' c='georadiusGeneric'/>
+<offset>0</offset>

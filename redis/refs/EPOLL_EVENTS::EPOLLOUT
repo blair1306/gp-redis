@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/sys/epoll.h' l='46' type='4'/>
+<use f='codebrowser/src/ae_epoll.c' l='84' macro='1' u='r'/>
+<use f='codebrowser/src/ae_epoll.c' l='97' macro='1' u='r'/>
+<use f='codebrowser/src/ae_epoll.c' l='123' macro='1' u='r'/>

@@ -1,0 +1,35 @@
+<dec f='include/stdio.h' l='169' type='struct _IO_FILE *'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='38' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='81' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='107' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='107' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='107' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='107' macro='1' u='r'/>
+<doc f='include/stdio.h' l='169'>/* Standard output stream.  */</doc>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='975' macro='1' u='r'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1050' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='44' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='45' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='48' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='547' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='182' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='182' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='233' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='234' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='175' macro='1' u='r'/>
+<use f='codebrowser/src/memtest.c' l='75' macro='1' u='r'/>
+<use f='codebrowser/src/memtest.c' l='87' macro='1' u='r'/>
+<use f='codebrowser/src/rax.c' l='1730' macro='1' u='r'/>
+<use f='codebrowser/src/redis-benchmark.c' l='624' macro='1' u='r'/>
+<use f='codebrowser/src/redis-benchmark.c' l='630' macro='1' u='r'/>
+<use f='codebrowser/src/redis-cli.c' l='826' macro='1' u='r'/>
+<use f='codebrowser/src/redis-cli.c' l='900' macro='1' u='r'/>
+<use f='codebrowser/src/redis-cli.c' l='932' macro='1' u='r'/>
+<use f='codebrowser/src/redis-cli.c' l='950' macro='1' u='r'/>
+<use f='codebrowser/src/redis-cli.c' l='1485' macro='1' u='r'/>
+<use f='codebrowser/src/redis-cli.c' l='1597' macro='1' u='r'/>
+<use f='codebrowser/src/redis-cli.c' l='2648' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='325' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='3434' macro='1' u='r'/>
+<use f='codebrowser/src/ziplist.c' l='1232' macro='1' u='r'/>
+<use f='codebrowser/src/ziplist.c' l='1236' macro='1' u='r'/>

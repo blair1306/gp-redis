@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='888' ll='891' type='int RM_StringToDouble(const robj * str, double * d)'/>
+<use f='codebrowser/src/module.c' l='3923' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='885'>/* Convert the string into a double, storing it at `*d`.
+ * Returns REDISMODULE_OK on success or REDISMODULE_ERR if the string is
+ * not a valid string representation of a double value. */</doc>

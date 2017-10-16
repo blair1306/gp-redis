@@ -1,0 +1,8 @@
+<dec f='include/signal.h' l='127' type='int kill(__pid_t __pid, int __sig)'/>
+<use f='codebrowser/src/aof.c' l='223' u='c' c='stopAppendOnly'/>
+<use f='codebrowser/src/db.c' l='412' u='c' c='flushallCommand'/>
+<use f='codebrowser/src/debug.c' l='1114' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/scripting.c' l='1703' u='c' c='ldbKillForkedSessions'/>
+<use f='codebrowser/src/sentinel.c' l='856' u='c' c='sentinelKillTimedoutScripts'/>
+<use f='codebrowser/src/server.c' l='2525' u='c' c='prepareForShutdown'/>
+<use f='codebrowser/src/server.c' l='2541' u='c' c='prepareForShutdown'/>

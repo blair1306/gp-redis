@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1412' type='void unblockClientWaitingData(client * c)'/>
+<use f='codebrowser/src/blocked.c' l='136' u='c' c='unblockClient'/>
+<def f='codebrowser/src/t_list.c' l='660' ll='687' type='void unblockClientWaitingData(client * c)'/>
+<doc f='codebrowser/src/t_list.c' l='658'>/* Unblock a client that&apos;s waiting in a blocking operation such as BLPOP.
+ * You should never call this function directly, but unblockClient() instead. */</doc>

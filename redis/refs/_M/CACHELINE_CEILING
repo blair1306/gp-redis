@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='310'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3004' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3020' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3024' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='309'>/* Return the smallest cacheline multiple that is &gt;= s. */</doc>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='51' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='90' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='65' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='389' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tsd.c' l='18' u='c'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='235' macro='1' type='extent_node_t * je_rtree_get(rtree_t * rtree, uintptr_t key, _Bool dependent)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk.h' l='91' macro='1' u='c'/>

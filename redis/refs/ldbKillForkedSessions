@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1782' type='void ldbKillForkedSessions()'/>
+<def f='codebrowser/src/scripting.c' l='1695' ll='1707' type='void ldbKillForkedSessions()'/>
+<doc f='codebrowser/src/scripting.c' l='1694'>/* Kill all the forked sessions. */</doc>
+<use f='codebrowser/src/server.c' l='2518' u='c' c='prepareForShutdown'/>

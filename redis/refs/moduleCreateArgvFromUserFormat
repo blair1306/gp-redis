@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/module.c' l='226' type='robj ** moduleCreateArgvFromUserFormat(const char * cmdname, const char * fmt, int * argcp, int * flags, struct __va_list_tag * ap)'/>
+<use f='codebrowser/src/module.c' l='1207' u='c' c='RM_Replicate'/>
+<def f='codebrowser/src/module.c' l='2496' ll='2557' type='robj ** moduleCreateArgvFromUserFormat(const char * cmdname, const char * fmt, int * argcp, int * flags, struct __va_list_tag * ap)'/>
+<use f='codebrowser/src/module.c' l='2583' u='c' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='3247' u='c' c='RM_EmitAOF'/>

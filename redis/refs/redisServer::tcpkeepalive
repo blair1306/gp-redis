@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='974' type='int'/>
+<offset>12992</offset>
+<doc f='codebrowser/src/server.h' l='974'>/* Set SO_KEEPALIVE if non-zero. */</doc>
+<use f='codebrowser/src/config.c' l='211' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='212' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1038' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1277' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1960' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/networking.c' l='80' u='r' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='81' u='r' c='createClient'/>
+<use f='codebrowser/src/server.c' l='1364' u='w' c='initServerConfig'/>

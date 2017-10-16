@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/rax.h' l='132' type='rax *'/>
+<offset>64</offset>
+<doc f='codebrowser/src/rax.h' l='132'>/* Radix tree we are iterating. */</doc>
+<use f='codebrowser/src/rax.c' l='1124' u='w' c='raxStart'/>
+<use f='codebrowser/src/rax.c' l='1222' u='r' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1310' u='r' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1398' u='r' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1412' u='r' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1422' u='r' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1576' u='r' c='raxRandomWalk'/>
+<use f='codebrowser/src/rax.c' l='1582' u='r' c='raxRandomWalk'/>
+<use f='codebrowser/src/rax.c' l='1590' u='r' c='raxRandomWalk'/>

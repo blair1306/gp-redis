@@ -1,0 +1,4 @@
+<def f='codebrowser/src/sentinel.c' l='715' ll='727' type='listNode * sentinelGetScriptListNodeByPid(pid_t pid)'/>
+<use f='codebrowser/src/sentinel.c' l='809' u='c' c='sentinelCollectTerminatedScripts'/>
+<doc f='codebrowser/src/sentinel.c' l='713'>/* Lookup a script in the scripts queue via pid, and returns the list node
+ * (so that we can easily remove it from the queue if needed). */</doc>

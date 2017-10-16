@@ -1,0 +1,15 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='125' type='uint64_t'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2240' u='w' c='je_arena_malloc_large'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2333' u='w' c='arena_palloc_large'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2634' u='w' c='arena_ralloc_large_shrink'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2723' u='w' c='arena_ralloc_large_grow'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2954' u='w' c='je_arena_stats_merge'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2954' u='r' c='je_arena_stats_merge'/>
+<offset>576</offset>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='582' u='w' c='ctl_arena_stats_smerge'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='582' u='r' c='ctl_arena_stats_smerge'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='2033' u='r' c='stats_arenas_i_large_nrequests_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='200' u='w' c='je_tcache_bin_flush_large'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='237' u='w' c='je_tcache_bin_flush_large'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='371' u='w' c='tcache_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='427' u='w' c='je_tcache_stats_merge'/>

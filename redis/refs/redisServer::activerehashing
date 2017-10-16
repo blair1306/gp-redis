@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='886' type='int'/>
+<offset>640</offset>
+<doc f='codebrowser/src/server.h' l='886'>/* Incremental rehash in serverCron() */</doc>
+<use f='codebrowser/src/config.c' l='407' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1007' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1293' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2025' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='909' u='r' c='databasesCron'/>
+<use f='codebrowser/src/server.c' l='1407' u='w' c='initServerConfig'/>

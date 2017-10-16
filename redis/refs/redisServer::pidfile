@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='889' type='char *'/>
+<offset>768</offset>
+<doc f='codebrowser/src/server.h' l='889'>/* PID file path */</doc>
+<use f='codebrowser/src/config.c' l='497' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='498' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1218' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1218' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1951' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/debug.c' l='1106' u='r' c='sigsegvHandler'/>
+<use f='codebrowser/src/server.c' l='1400' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2567' u='r' c='prepareForShutdown'/>
+<use f='codebrowser/src/server.c' l='2569' u='r' c='prepareForShutdown'/>
+<use f='codebrowser/src/server.c' l='3365' u='r' c='createPidFile'/>
+<use f='codebrowser/src/server.c' l='3365' u='w' c='createPidFile'/>
+<use f='codebrowser/src/server.c' l='3368' u='r' c='createPidFile'/>
+<use f='codebrowser/src/server.c' l='3829' u='r' c='main'/>

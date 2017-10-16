@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='306'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='268' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='273' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='314' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='317' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='389' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='394' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='66' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='73' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='81' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='325' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='327' u='c'/>

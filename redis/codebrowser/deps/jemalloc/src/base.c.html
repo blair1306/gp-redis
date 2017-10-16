@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>base.c source code [codebrowser/deps/jemalloc/src/base.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/deps/jemalloc/src/base.c'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>deps</a>/<a href='..'>jemalloc</a>/<a href='./'>src</a>/<a href='base.c.html'>base.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#define	<dfn class="macro" id="_M/JEMALLOC_BASE_C_" data-ref="_M/JEMALLOC_BASE_C_">JEMALLOC_BASE_C_</dfn></u></td></tr>
+<tr><th id="2">2</th><td><u>#include <a href="../include/jemalloc/internal/jemalloc_internal.h.html">"jemalloc/internal/jemalloc_internal.h"</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><i>/******************************************************************************/</i></td></tr>
+<tr><th id="5">5</th><td><i  data-doc="base_mtx">/* Data. */</i></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><em>static</em> <a class="typedef" href="../include/jemalloc/internal/mutex.h.html#malloc_mutex_t" title='malloc_mutex_t' data-type='struct malloc_mutex_s' data-ref="malloc_mutex_t">malloc_mutex_t</a>	<dfn class="tu decl def" id="base_mtx" title='base_mtx' data-type='malloc_mutex_t' data-ref="base_mtx">base_mtx</dfn>;</td></tr>
+<tr><th id="8">8</th><td><em>static</em> <a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_tree_t" title='extent_tree_t' data-type='struct extent_tree_t' data-ref="extent_tree_t">extent_tree_t</a>	<dfn class="tu decl def" id="base_avail_szad" title='base_avail_szad' data-type='extent_tree_t' data-ref="base_avail_szad">base_avail_szad</dfn>;</td></tr>
+<tr><th id="9">9</th><td><em>static</em> <a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a>	*<dfn class="tu decl def" id="base_nodes" title='base_nodes' data-type='extent_node_t *' data-ref="base_nodes">base_nodes</dfn>;</td></tr>
+<tr><th id="10">10</th><td><em>static</em> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>		<dfn class="tu decl def" id="base_allocated" title='base_allocated' data-type='size_t' data-ref="base_allocated">base_allocated</dfn>;</td></tr>
+<tr><th id="11">11</th><td><em>static</em> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>		<dfn class="tu decl def" id="base_resident" title='base_resident' data-type='size_t' data-ref="base_resident">base_resident</dfn>;</td></tr>
+<tr><th id="12">12</th><td><em>static</em> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>		<dfn class="tu decl def" id="base_mapped" title='base_mapped' data-type='size_t' data-ref="base_mapped">base_mapped</dfn>;</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><i>/******************************************************************************/</i></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><i  data-doc="base_node_try_alloc">/* base_mtx must be held. */</i></td></tr>
+<tr><th id="17">17</th><td><em>static</em> <a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a> *</td></tr>
+<tr><th id="18">18</th><td><dfn class="tu decl def" id="base_node_try_alloc" title='base_node_try_alloc' data-type='extent_node_t * base_node_try_alloc()' data-ref="base_node_try_alloc">base_node_try_alloc</dfn>(<em>void</em>)</td></tr>
+<tr><th id="19">19</th><td>{</td></tr>
+<tr><th id="20">20</th><td>	<a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a> *<dfn class="local col1 decl" id="1node" title='node' data-type='extent_node_t *' data-ref="1node">node</dfn>;</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td>	<b>if</b> (<a class="tu ref" href="#base_nodes" title='base_nodes' data-use='r' data-ref="base_nodes">base_nodes</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>)</td></tr>
+<tr><th id="23">23</th><td>		<b>return</b> (<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="24">24</th><td>	<a class="local col1 ref" href="#1node" title='node' data-ref="1node">node</a> = <a class="tu ref" href="#base_nodes" title='base_nodes' data-use='r' data-ref="base_nodes">base_nodes</a>;</td></tr>
+<tr><th id="25">25</th><td>	<a class="tu ref" href="#base_nodes" title='base_nodes' data-use='w' data-ref="base_nodes">base_nodes</a> = *(<a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a> **)<a class="local col1 ref" href="#1node" title='node' data-ref="1node">node</a>;</td></tr>
+<tr><th id="26">26</th><td>	<a class="macro" href="../include/jemalloc/internal/valgrind.h.html#20" title="do { if (__builtin_expect(!!(je_in_valgrind), 0)) je_valgrind_make_mem_undefined(node, sizeof(extent_node_t)); } while (0)" data-ref="_M/JEMALLOC_VALGRIND_MAKE_MEM_UNDEFINED">JEMALLOC_VALGRIND_MAKE_MEM_UNDEFINED</a>(<a class="local col1 ref" href="#1node" title='node' data-ref="1node">node</a>, <b>sizeof</b>(<a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a>));</td></tr>
+<tr><th id="27">27</th><td>	<b>return</b> (<a class="local col1 ref" href="#1node" title='node' data-ref="1node">node</a>);</td></tr>
+<tr><th id="28">28</th><td>}</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i  data-doc="base_node_dalloc">/* base_mtx must be held. */</i></td></tr>
+<tr><th id="31">31</th><td><em>static</em> <em>void</em></td></tr>
+<tr><th id="32">32</th><td><dfn class="tu decl def" id="base_node_dalloc" title='base_node_dalloc' data-type='void base_node_dalloc(extent_node_t * node)' data-ref="base_node_dalloc">base_node_dalloc</dfn>(<a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a> *<dfn class="local col2 decl" id="2node" title='node' data-type='extent_node_t *' data-ref="2node">node</dfn>)</td></tr>
+<tr><th id="33">33</th><td>{</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>	<a class="macro" href="../include/jemalloc/internal/valgrind.h.html#20" title="do { if (__builtin_expect(!!(je_in_valgrind), 0)) je_valgrind_make_mem_undefined(node, sizeof(extent_node_t)); } while (0)" data-ref="_M/JEMALLOC_VALGRIND_MAKE_MEM_UNDEFINED">JEMALLOC_VALGRIND_MAKE_MEM_UNDEFINED</a>(<a class="local col2 ref" href="#2node" title='node' data-ref="2node">node</a>, <b>sizeof</b>(<a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a>));</td></tr>
+<tr><th id="36">36</th><td>	*(<a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a> **)<a class="local col2 ref" href="#2node" title='node' data-ref="2node">node</a> = <a class="tu ref" href="#base_nodes" title='base_nodes' data-use='r' data-ref="base_nodes">base_nodes</a>;</td></tr>
+<tr><th id="37">37</th><td>	<a class="tu ref" href="#base_nodes" title='base_nodes' data-use='w' data-ref="base_nodes">base_nodes</a> = <a class="local col2 ref" href="#2node" title='node' data-ref="2node">node</a>;</td></tr>
+<tr><th id="38">38</th><td>}</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><i  data-doc="base_chunk_alloc">/* base_mtx must be held. */</i></td></tr>
+<tr><th id="41">41</th><td><em>static</em> <a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a> *</td></tr>
+<tr><th id="42">42</th><td><dfn class="tu decl def" id="base_chunk_alloc" title='base_chunk_alloc' data-type='extent_node_t * base_chunk_alloc(size_t minsize)' data-ref="base_chunk_alloc">base_chunk_alloc</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="3minsize" title='minsize' data-type='size_t' data-ref="3minsize">minsize</dfn>)</td></tr>
+<tr><th id="43">43</th><td>{</td></tr>
+<tr><th id="44">44</th><td>	<a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a> *<dfn class="local col4 decl" id="4node" title='node' data-type='extent_node_t *' data-ref="4node">node</dfn>;</td></tr>
+<tr><th id="45">45</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="5csize" title='csize' data-type='size_t' data-ref="5csize">csize</dfn>, <dfn class="local col6 decl" id="6nsize" title='nsize' data-type='size_t' data-ref="6nsize">nsize</dfn>;</td></tr>
+<tr><th id="46">46</th><td>	<em>void</em> *<dfn class="local col7 decl" id="7addr" title='addr' data-type='void *' data-ref="7addr">addr</dfn>;</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td>	<a class="macro" href="../include/jemalloc/internal/util.h.html#89" title="do { if (__builtin_expect(!!(config_debug &amp;&amp; !(minsize != 0)), 0)) { je_malloc_printf( &quot;&lt;jemalloc&gt;: %s:%d: Failed assertion: \&quot;%s\&quot;\n&quot;, &quot;/home/jon/workspace/redis/deps/jemalloc/src/base.c&quot;, 48, &quot;minsize != 0&quot;); abort(); } } while (0)" data-ref="_M/assert">assert</a>(<a class="local col3 ref" href="#3minsize" title='minsize' data-ref="3minsize">minsize</a> != <var>0</var>);</td></tr>
+<tr><th id="49">49</th><td>	<a class="local col4 ref" href="#4node" title='node' data-ref="4node">node</a> = <a class="tu ref" href="#base_node_try_alloc" title='base_node_try_alloc' data-use='c' data-ref="base_node_try_alloc">base_node_try_alloc</a>();</td></tr>
+<tr><th id="50">50</th><td>	<i>/* Allocate enough space to also carve a node out if necessary. */</i></td></tr>
+<tr><th id="51">51</th><td>	<a class="local col6 ref" href="#6nsize" title='nsize' data-ref="6nsize">nsize</a> = (<a class="local col4 ref" href="#4node" title='node' data-ref="4node">node</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) ? <a class="macro" href="../include/jemalloc/internal/jemalloc_internal.h.html#310" title="(((sizeof(extent_node_t)) + (64 - 1)) &amp; ~(64 - 1))" data-ref="_M/CACHELINE_CEILING">CACHELINE_CEILING</a>(<b>sizeof</b>(<a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a>)) : <var>0</var>;</td></tr>
+<tr><th id="52">52</th><td>	<a class="local col5 ref" href="#5csize" title='csize' data-ref="5csize">csize</a> = <a class="macro" href="../include/jemalloc/internal/chunk.h.html#19" title="(((minsize + nsize) + je_chunksize_mask) &amp; ~je_chunksize_mask)" data-ref="_M/CHUNK_CEILING">CHUNK_CEILING</a>(<a class="local col3 ref" href="#3minsize" title='minsize' data-ref="3minsize">minsize</a> + <a class="local col6 ref" href="#6nsize" title='nsize' data-ref="6nsize">nsize</a>);</td></tr>
+<tr><th id="53">53</th><td>	<a class="local col7 ref" href="#7addr" title='addr' data-ref="7addr">addr</a> = <a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#136" title="je_chunk_alloc_base" data-ref="_M/chunk_alloc_base">chunk_alloc_base</a>(<a class="local col5 ref" href="#5csize" title='csize' data-ref="5csize">csize</a>);</td></tr>
+<tr><th id="54">54</th><td>	<b>if</b> (<a class="local col7 ref" href="#7addr" title='addr' data-ref="7addr">addr</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="55">55</th><td>		<b>if</b> (<a class="local col4 ref" href="#4node" title='node' data-ref="4node">node</a> != <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>)</td></tr>
+<tr><th id="56">56</th><td>			<a class="tu ref" href="#base_node_dalloc" title='base_node_dalloc' data-use='c' data-ref="base_node_dalloc">base_node_dalloc</a>(<a class="local col4 ref" href="#4node" title='node' data-ref="4node">node</a>);</td></tr>
+<tr><th id="57">57</th><td>		<b>return</b> (<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="58">58</th><td>	}</td></tr>
+<tr><th id="59">59</th><td>	<a class="tu ref" href="#base_mapped" title='base_mapped' data-use='w' data-ref="base_mapped">base_mapped</a> += <a class="local col5 ref" href="#5csize" title='csize' data-ref="5csize">csize</a>;</td></tr>
+<tr><th id="60">60</th><td>	<b>if</b> (<a class="local col4 ref" href="#4node" title='node' data-ref="4node">node</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="61">61</th><td>		<a class="local col4 ref" href="#4node" title='node' data-ref="4node">node</a> = (<a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a> *)<a class="local col7 ref" href="#7addr" title='addr' data-ref="7addr">addr</a>;</td></tr>
+<tr><th id="62">62</th><td>		<a class="local col7 ref" href="#7addr" title='addr' data-ref="7addr">addr</a> = (<em>void</em> *)((<a class="typedef" href="../../../../include/stdint.h.html#uintptr_t" title='uintptr_t' data-type='unsigned long' data-ref="uintptr_t">uintptr_t</a>)<a class="local col7 ref" href="#7addr" title='addr' data-ref="7addr">addr</a> + <a class="local col6 ref" href="#6nsize" title='nsize' data-ref="6nsize">nsize</a>);</td></tr>
+<tr><th id="63">63</th><td>		<a class="local col5 ref" href="#5csize" title='csize' data-ref="5csize">csize</a> -= <a class="local col6 ref" href="#6nsize" title='nsize' data-ref="6nsize">nsize</a>;</td></tr>
+<tr><th id="64">64</th><td>		<b>if</b> (<a class="ref" href="../include/jemalloc/internal/jemalloc_internal.h.html#config_stats" title='config_stats' data-ref="config_stats">config_stats</a>) {</td></tr>
+<tr><th id="65">65</th><td>			<a class="tu ref" href="#base_allocated" title='base_allocated' data-use='w' data-ref="base_allocated">base_allocated</a> += <a class="local col6 ref" href="#6nsize" title='nsize' data-ref="6nsize">nsize</a>;</td></tr>
+<tr><th id="66">66</th><td>			<a class="tu ref" href="#base_resident" title='base_resident' data-use='w' data-ref="base_resident">base_resident</a> += <a class="macro" href="../include/jemalloc/internal/jemalloc_internal.h.html#321" title="(((nsize) + ((size_t)(((size_t)(1U &lt;&lt; 12)) - 1))) &amp; ~((size_t)(((size_t)(1U &lt;&lt; 12)) - 1)))" data-ref="_M/PAGE_CEILING">PAGE_CEILING</a>(<a class="local col6 ref" href="#6nsize" title='nsize' data-ref="6nsize">nsize</a>);</td></tr>
+<tr><th id="67">67</th><td>		}</td></tr>
+<tr><th id="68">68</th><td>	}</td></tr>
+<tr><th id="69">69</th><td>	<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#196" title="je_extent_node_init" data-ref="_M/extent_node_init">extent_node_init</a>(<a class="local col4 ref" href="#4node" title='node' data-ref="4node">node</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <a class="local col7 ref" href="#7addr" title='addr' data-ref="7addr">addr</a>, <a class="local col5 ref" href="#5csize" title='csize' data-ref="5csize">csize</a>, <span class="macro" title="1" data-ref="_M/true">true</span>, <span class="macro" title="1" data-ref="_M/true">true</span>);</td></tr>
+<tr><th id="70">70</th><td>	<b>return</b> (<a class="local col4 ref" href="#4node" title='node' data-ref="4node">node</a>);</td></tr>
+<tr><th id="71">71</th><td>}</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><i>/*</i></td></tr>
+<tr><th id="74">74</th><td><i> * base_alloc() guarantees demand-zeroed memory, in order to make multi-page</i></td></tr>
+<tr><th id="75">75</th><td><i> * sparse data structures such as radix tree nodes efficient with respect to</i></td></tr>
+<tr><th id="76">76</th><td><i> * physical memory usage.</i></td></tr>
+<tr><th id="77">77</th><td><i> */</i></td></tr>
+<tr><th id="78">78</th><td><em>void</em> *</td></tr>
+<tr><th id="79">79</th><td><a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#116" title="je_base_alloc" data-ref="_M/base_alloc">base_alloc</a>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="8size" title='size' data-type='size_t' data-ref="8size">size</dfn>)</td></tr>
+<tr><th id="80">80</th><td>{</td></tr>
+<tr><th id="81">81</th><td>	<em>void</em> *<dfn class="local col9 decl" id="9ret" title='ret' data-type='void *' data-ref="9ret">ret</dfn>;</td></tr>
+<tr><th id="82">82</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="10csize" title='csize' data-type='size_t' data-ref="10csize">csize</dfn>, <dfn class="local col1 decl" id="11usize" title='usize' data-type='size_t' data-ref="11usize">usize</dfn>;</td></tr>
+<tr><th id="83">83</th><td>	<a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a> *<dfn class="local col2 decl" id="12node" title='node' data-type='extent_node_t *' data-ref="12node">node</dfn>;</td></tr>
+<tr><th id="84">84</th><td>	<a class="typedef" href="../include/jemalloc/internal/extent.h.html#extent_node_t" title='extent_node_t' data-type='struct extent_node_s' data-ref="extent_node_t">extent_node_t</a> <dfn class="local col3 decl" id="13key" title='key' data-type='extent_node_t' data-ref="13key">key</dfn>;</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td>	<i>/*</i></td></tr>
+<tr><th id="87">87</th><td><i>	 * Round size up to nearest multiple of the cacheline size, so that</i></td></tr>
+<tr><th id="88">88</th><td><i>	 * there is no chance of false cache line sharing.</i></td></tr>
+<tr><th id="89">89</th><td><i>	 */</i></td></tr>
+<tr><th id="90">90</th><td>	<a class="local col0 ref" href="#10csize" title='csize' data-ref="10csize">csize</a> = <a class="macro" href="../include/jemalloc/internal/jemalloc_internal.h.html#310" title="(((size) + (64 - 1)) &amp; ~(64 - 1))" data-ref="_M/CACHELINE_CEILING">CACHELINE_CEILING</a>(<a class="local col8 ref" href="#8size" title='size' data-ref="8size">size</a>);</td></tr>
+<tr><th id="91">91</th><td></td></tr>
+<tr><th id="92">92</th><td>	<a class="local col1 ref" href="#11usize" title='usize' data-ref="11usize">usize</a> = <a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#416" title="je_s2u" data-ref="_M/s2u">s2u</a>(<a class="local col0 ref" href="#10csize" title='csize' data-ref="10csize">csize</a>);</td></tr>
+<tr><th id="93">93</th><td>	<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#196" title="je_extent_node_init" data-ref="_M/extent_node_init">extent_node_init</a>(&amp;<a class="local col3 ref" href="#13key" title='key' data-ref="13key">key</a>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>, <a class="local col1 ref" href="#11usize" title='usize' data-ref="11usize">usize</a>, <span class="macro" title="0" data-ref="_M/false">false</span>, <span class="macro" title="0" data-ref="_M/false">false</span>);</td></tr>
+<tr><th id="94">94</th><td>	<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#293" title="je_malloc_mutex_lock" data-ref="_M/malloc_mutex_lock">malloc_mutex_lock</a>(&amp;<a class="tu ref" href="#base_mtx" title='base_mtx' data-use='a' data-ref="base_mtx">base_mtx</a>);</td></tr>
+<tr><th id="95">95</th><td>	<a class="local col2 ref" href="#12node" title='node' data-ref="12node">node</a> = <a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#229" title="je_extent_tree_szad_nsearch" data-ref="_M/extent_tree_szad_nsearch">extent_tree_szad_nsearch</a>(&amp;<a class="tu ref" href="#base_avail_szad" title='base_avail_szad' data-use='a' data-ref="base_avail_szad">base_avail_szad</a>, &amp;<a class="local col3 ref" href="#13key" title='key' data-ref="13key">key</a>);</td></tr>
+<tr><th id="96">96</th><td>	<b>if</b> (<a class="local col2 ref" href="#12node" title='node' data-ref="12node">node</a> != <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="97">97</th><td>		<i>/* Use existing space. */</i></td></tr>
+<tr><th id="98">98</th><td>		<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#232" title="je_extent_tree_szad_remove" data-ref="_M/extent_tree_szad_remove">extent_tree_szad_remove</a>(&amp;<a class="tu ref" href="#base_avail_szad" title='base_avail_szad' data-use='a' data-ref="base_avail_szad">base_avail_szad</a>, <a class="local col2 ref" href="#12node" title='node' data-ref="12node">node</a>);</td></tr>
+<tr><th id="99">99</th><td>	} <b>else</b> {</td></tr>
+<tr><th id="100">100</th><td>		<i>/* Try to allocate more space. */</i></td></tr>
+<tr><th id="101">101</th><td>		<a class="local col2 ref" href="#12node" title='node' data-ref="12node">node</a> = <a class="tu ref" href="#base_chunk_alloc" title='base_chunk_alloc' data-use='c' data-ref="base_chunk_alloc">base_chunk_alloc</a>(<a class="local col0 ref" href="#10csize" title='csize' data-ref="10csize">csize</a>);</td></tr>
+<tr><th id="102">102</th><td>	}</td></tr>
+<tr><th id="103">103</th><td>	<b>if</b> (<a class="local col2 ref" href="#12node" title='node' data-ref="12node">node</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="104">104</th><td>		<a class="local col9 ref" href="#9ret" title='ret' data-ref="9ret">ret</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="105">105</th><td>		<b>goto</b> <a class="lbl" href="#14label_return" data-ref="14label_return">label_return</a>;</td></tr>
+<tr><th id="106">106</th><td>	}</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td>	<a class="local col9 ref" href="#9ret" title='ret' data-ref="9ret">ret</a> = <a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#189" title="je_extent_node_addr_get" data-ref="_M/extent_node_addr_get">extent_node_addr_get</a>(<a class="local col2 ref" href="#12node" title='node' data-ref="12node">node</a>);</td></tr>
+<tr><th id="109">109</th><td>	<b>if</b> (<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#199" title="je_extent_node_size_get" data-ref="_M/extent_node_size_get">extent_node_size_get</a>(<a class="local col2 ref" href="#12node" title='node' data-ref="12node">node</a>) &gt; <a class="local col0 ref" href="#10csize" title='csize' data-ref="10csize">csize</a>) {</td></tr>
+<tr><th id="110">110</th><td>		<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#190" title="je_extent_node_addr_set" data-ref="_M/extent_node_addr_set">extent_node_addr_set</a>(<a class="local col2 ref" href="#12node" title='node' data-ref="12node">node</a>, (<em>void</em> *)((<a class="typedef" href="../../../../include/stdint.h.html#uintptr_t" title='uintptr_t' data-type='unsigned long' data-ref="uintptr_t">uintptr_t</a>)<a class="local col9 ref" href="#9ret" title='ret' data-ref="9ret">ret</a> + <a class="local col0 ref" href="#10csize" title='csize' data-ref="10csize">csize</a>));</td></tr>
+<tr><th id="111">111</th><td>		<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#200" title="je_extent_node_size_set" data-ref="_M/extent_node_size_set">extent_node_size_set</a>(<a class="local col2 ref" href="#12node" title='node' data-ref="12node">node</a>, <a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#199" title="je_extent_node_size_get" data-ref="_M/extent_node_size_get">extent_node_size_get</a>(<a class="local col2 ref" href="#12node" title='node' data-ref="12node">node</a>) - <a class="local col0 ref" href="#10csize" title='csize' data-ref="10csize">csize</a>);</td></tr>
+<tr><th id="112">112</th><td>		<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#222" title="je_extent_tree_szad_insert" data-ref="_M/extent_tree_szad_insert">extent_tree_szad_insert</a>(&amp;<a class="tu ref" href="#base_avail_szad" title='base_avail_szad' data-use='a' data-ref="base_avail_szad">base_avail_szad</a>, <a class="local col2 ref" href="#12node" title='node' data-ref="12node">node</a>);</td></tr>
+<tr><th id="113">113</th><td>	} <b>else</b></td></tr>
+<tr><th id="114">114</th><td>		<a class="tu ref" href="#base_node_dalloc" title='base_node_dalloc' data-use='c' data-ref="base_node_dalloc">base_node_dalloc</a>(<a class="local col2 ref" href="#12node" title='node' data-ref="12node">node</a>);</td></tr>
+<tr><th id="115">115</th><td>	<b>if</b> (<a class="ref" href="../include/jemalloc/internal/jemalloc_internal.h.html#config_stats" title='config_stats' data-ref="config_stats">config_stats</a>) {</td></tr>
+<tr><th id="116">116</th><td>		<a class="tu ref" href="#base_allocated" title='base_allocated' data-use='w' data-ref="base_allocated">base_allocated</a> += <a class="local col0 ref" href="#10csize" title='csize' data-ref="10csize">csize</a>;</td></tr>
+<tr><th id="117">117</th><td>		<i>/*</i></td></tr>
+<tr><th id="118">118</th><td><i>		 * Add one PAGE to base_resident for every page boundary that is</i></td></tr>
+<tr><th id="119">119</th><td><i>		 * crossed by the new allocation.</i></td></tr>
+<tr><th id="120">120</th><td><i>		 */</i></td></tr>
+<tr><th id="121">121</th><td>		<a class="tu ref" href="#base_resident" title='base_resident' data-use='w' data-ref="base_resident">base_resident</a> += <a class="macro" href="../include/jemalloc/internal/jemalloc_internal.h.html#321" title="((((uintptr_t)ret + csize) + ((size_t)(((size_t)(1U &lt;&lt; 12)) - 1))) &amp; ~((size_t)(((size_t)(1U &lt;&lt; 12)) - 1)))" data-ref="_M/PAGE_CEILING">PAGE_CEILING</a>((<a class="typedef" href="../../../../include/stdint.h.html#uintptr_t" title='uintptr_t' data-type='unsigned long' data-ref="uintptr_t">uintptr_t</a>)<a class="local col9 ref" href="#9ret" title='ret' data-ref="9ret">ret</a> + <a class="local col0 ref" href="#10csize" title='csize' data-ref="10csize">csize</a>) -</td></tr>
+<tr><th id="122">122</th><td>		    <a class="macro" href="../include/jemalloc/internal/jemalloc_internal.h.html#321" title="((((uintptr_t)ret) + ((size_t)(((size_t)(1U &lt;&lt; 12)) - 1))) &amp; ~((size_t)(((size_t)(1U &lt;&lt; 12)) - 1)))" data-ref="_M/PAGE_CEILING">PAGE_CEILING</a>((<a class="typedef" href="../../../../include/stdint.h.html#uintptr_t" title='uintptr_t' data-type='unsigned long' data-ref="uintptr_t">uintptr_t</a>)<a class="local col9 ref" href="#9ret" title='ret' data-ref="9ret">ret</a>);</td></tr>
+<tr><th id="123">123</th><td>	}</td></tr>
+<tr><th id="124">124</th><td>	<a class="macro" href="../include/jemalloc/internal/valgrind.h.html#24" title="do { if (__builtin_expect(!!(je_in_valgrind), 0)) je_valgrind_make_mem_defined(ret, csize); } while (0)" data-ref="_M/JEMALLOC_VALGRIND_MAKE_MEM_DEFINED">JEMALLOC_VALGRIND_MAKE_MEM_DEFINED</a>(<a class="local col9 ref" href="#9ret" title='ret' data-ref="9ret">ret</a>, <a class="local col0 ref" href="#10csize" title='csize' data-ref="10csize">csize</a>);</td></tr>
+<tr><th id="125">125</th><td><dfn class="lbl" id="14label_return" data-ref="14label_return">label_return</dfn>:</td></tr>
+<tr><th id="126">126</th><td>	<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#297" title="je_malloc_mutex_unlock" data-ref="_M/malloc_mutex_unlock">malloc_mutex_unlock</a>(&amp;<a class="tu ref" href="#base_mtx" title='base_mtx' data-use='a' data-ref="base_mtx">base_mtx</a>);</td></tr>
+<tr><th id="127">127</th><td>	<b>return</b> (<a class="local col9 ref" href="#9ret" title='ret' data-ref="9ret">ret</a>);</td></tr>
+<tr><th id="128">128</th><td>}</td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td><em>void</em></td></tr>
+<tr><th id="131">131</th><td><a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#121" title="je_base_stats_get" data-ref="_M/base_stats_get">base_stats_get</a>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col5 decl" id="15allocated" title='allocated' data-type='size_t *' data-ref="15allocated">allocated</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col6 decl" id="16resident" title='resident' data-type='size_t *' data-ref="16resident">resident</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col7 decl" id="17mapped" title='mapped' data-type='size_t *' data-ref="17mapped">mapped</dfn>)</td></tr>
+<tr><th id="132">132</th><td>{</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>	<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#293" title="je_malloc_mutex_lock" data-ref="_M/malloc_mutex_lock">malloc_mutex_lock</a>(&amp;<a class="tu ref" href="#base_mtx" title='base_mtx' data-use='a' data-ref="base_mtx">base_mtx</a>);</td></tr>
+<tr><th id="135">135</th><td>	<a class="macro" href="../include/jemalloc/internal/util.h.html#89" title="do { if (__builtin_expect(!!(config_debug &amp;&amp; !(base_allocated &lt;= base_resident)), 0)) { je_malloc_printf( &quot;&lt;jemalloc&gt;: %s:%d: Failed assertion: \&quot;%s\&quot;\n&quot;, &quot;/home/jon/workspace/redis/deps/jemalloc/src/base.c&quot;, 135, &quot;base_allocated &lt;= base_resident&quot;); abort(); } } while (0)" data-ref="_M/assert">assert</a>(<a class="tu ref" href="#base_allocated" title='base_allocated' data-use='r' data-ref="base_allocated">base_allocated</a> &lt;= <a class="tu ref" href="#base_resident" title='base_resident' data-use='r' data-ref="base_resident">base_resident</a>);</td></tr>
+<tr><th id="136">136</th><td>	<a class="macro" href="../include/jemalloc/internal/util.h.html#89" title="do { if (__builtin_expect(!!(config_debug &amp;&amp; !(base_resident &lt;= base_mapped)), 0)) { je_malloc_printf( &quot;&lt;jemalloc&gt;: %s:%d: Failed assertion: \&quot;%s\&quot;\n&quot;, &quot;/home/jon/workspace/redis/deps/jemalloc/src/base.c&quot;, 136, &quot;base_resident &lt;= base_mapped&quot;); abort(); } } while (0)" data-ref="_M/assert">assert</a>(<a class="tu ref" href="#base_resident" title='base_resident' data-use='r' data-ref="base_resident">base_resident</a> &lt;= <a class="tu ref" href="#base_mapped" title='base_mapped' data-use='r' data-ref="base_mapped">base_mapped</a>);</td></tr>
+<tr><th id="137">137</th><td>	*<a class="local col5 ref" href="#15allocated" title='allocated' data-ref="15allocated">allocated</a> = <a class="tu ref" href="#base_allocated" title='base_allocated' data-use='r' data-ref="base_allocated">base_allocated</a>;</td></tr>
+<tr><th id="138">138</th><td>	*<a class="local col6 ref" href="#16resident" title='resident' data-ref="16resident">resident</a> = <a class="tu ref" href="#base_resident" title='base_resident' data-use='r' data-ref="base_resident">base_resident</a>;</td></tr>
+<tr><th id="139">139</th><td>	*<a class="local col7 ref" href="#17mapped" title='mapped' data-ref="17mapped">mapped</a> = <a class="tu ref" href="#base_mapped" title='base_mapped' data-use='r' data-ref="base_mapped">base_mapped</a>;</td></tr>
+<tr><th id="140">140</th><td>	<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#297" title="je_malloc_mutex_unlock" data-ref="_M/malloc_mutex_unlock">malloc_mutex_unlock</a>(&amp;<a class="tu ref" href="#base_mtx" title='base_mtx' data-use='a' data-ref="base_mtx">base_mtx</a>);</td></tr>
+<tr><th id="141">141</th><td>}</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><span class="macro" title="_Bool" data-ref="_M/bool">bool</span></td></tr>
+<tr><th id="144">144</th><td><a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#117" title="je_base_boot" data-ref="_M/base_boot">base_boot</a>(<em>void</em>)</td></tr>
+<tr><th id="145">145</th><td>{</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>	<b>if</b> (<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#292" title="je_malloc_mutex_init" data-ref="_M/malloc_mutex_init">malloc_mutex_init</a>(&amp;<a class="tu ref" href="#base_mtx" title='base_mtx' data-use='a' data-ref="base_mtx">base_mtx</a>))</td></tr>
+<tr><th id="148">148</th><td>		<b>return</b> (<span class="macro" title="1" data-ref="_M/true">true</span>);</td></tr>
+<tr><th id="149">149</th><td>	<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#227" title="je_extent_tree_szad_new" data-ref="_M/extent_tree_szad_new">extent_tree_szad_new</a>(&amp;<a class="tu ref" href="#base_avail_szad" title='base_avail_szad' data-use='a' data-ref="base_avail_szad">base_avail_szad</a>);</td></tr>
+<tr><th id="150">150</th><td>	<a class="tu ref" href="#base_nodes" title='base_nodes' data-use='w' data-ref="base_nodes">base_nodes</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td>	<b>return</b> (<span class="macro" title="0" data-ref="_M/false">false</span>);</td></tr>
+<tr><th id="153">153</th><td>}</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td><em>void</em></td></tr>
+<tr><th id="156">156</th><td><a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#120" title="je_base_prefork" data-ref="_M/base_prefork">base_prefork</a>(<em>void</em>)</td></tr>
+<tr><th id="157">157</th><td>{</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td>	<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#296" title="je_malloc_mutex_prefork" data-ref="_M/malloc_mutex_prefork">malloc_mutex_prefork</a>(&amp;<a class="tu ref" href="#base_mtx" title='base_mtx' data-use='a' data-ref="base_mtx">base_mtx</a>);</td></tr>
+<tr><th id="160">160</th><td>}</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td><em>void</em></td></tr>
+<tr><th id="163">163</th><td><a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#119" title="je_base_postfork_parent" data-ref="_M/base_postfork_parent">base_postfork_parent</a>(<em>void</em>)</td></tr>
+<tr><th id="164">164</th><td>{</td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td>	<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#295" title="je_malloc_mutex_postfork_parent" data-ref="_M/malloc_mutex_postfork_parent">malloc_mutex_postfork_parent</a>(&amp;<a class="tu ref" href="#base_mtx" title='base_mtx' data-use='a' data-ref="base_mtx">base_mtx</a>);</td></tr>
+<tr><th id="167">167</th><td>}</td></tr>
+<tr><th id="168">168</th><td></td></tr>
+<tr><th id="169">169</th><td><em>void</em></td></tr>
+<tr><th id="170">170</th><td><a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#118" title="je_base_postfork_child" data-ref="_M/base_postfork_child">base_postfork_child</a>(<em>void</em>)</td></tr>
+<tr><th id="171">171</th><td>{</td></tr>
+<tr><th id="172">172</th><td></td></tr>
+<tr><th id="173">173</th><td>	<a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#294" title="je_malloc_mutex_postfork_child" data-ref="_M/malloc_mutex_postfork_child">malloc_mutex_postfork_child</a>(&amp;<a class="tu ref" href="#base_mtx" title='base_mtx' data-use='a' data-ref="base_mtx">base_mtx</a>);</td></tr>
+<tr><th id="174">174</th><td>}</td></tr>
+<tr><th id="175">175</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Oct-16</em> from project codebrowser revision <em>with-deprecated-diskstore-4466-g2bf8c2c</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

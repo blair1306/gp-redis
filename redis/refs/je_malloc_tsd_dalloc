@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='577' macro='1' type='void je_malloc_tsd_dalloc(void * wrapper)'/>
+<def f='codebrowser/deps/jemalloc/src/tsd.c' l='22' macro='1' type='void je_malloc_tsd_dalloc(void * wrapper)'/>

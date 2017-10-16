@@ -1,0 +1,23 @@
+<dec f='codebrowser/src/quicklist.h' l='52' type='unsigned int'/>
+<offset>244</offset>
+<doc f='codebrowser/src/quicklist.h' l='52'>/* was this node previous compressed? */</doc>
+<use f='codebrowser/src/quicklist.c' l='147' u='w' c='quicklistCreateNode'/>
+<use f='codebrowser/src/quicklist.c' l='201' u='w' c='__quicklistCompressNode'/>
+<use f='codebrowser/src/quicklist.c' l='335' u='r' c='__quicklistInsertNode'/>
+<use f='codebrowser/src/quicklist.c' l='335' u='r' c='quicklistReplaceAtIndex'/>
+<use f='codebrowser/src/quicklist.c' l='335' u='r' c='_quicklistZiplistMerge'/>
+<use f='codebrowser/src/quicklist.c' l='246' u='w' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='344' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='246' u='w' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='344' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='246' u='w' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='344' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='246' u='w' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='344' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='246' u='w' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='246' u='w' c='quicklistDelRange'/>
+<use f='codebrowser/src/quicklist.c' l='344' u='r' c='quicklistDelRange'/>
+<use f='codebrowser/src/quicklist.c' l='335' u='r' c='quicklistReleaseIterator'/>
+<use f='codebrowser/src/quicklist.c' l='246' u='w' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='335' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='246' u='w' c='quicklistIndex'/>

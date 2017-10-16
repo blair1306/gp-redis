@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1523' type='int loadAppendOnlyFile(char * filename)'/>
+<def f='codebrowser/src/aof.c' l='630' ll='810' type='int loadAppendOnlyFile(char * filename)'/>
+<doc f='codebrowser/src/aof.c' l='627'>/* Replay the append log file. On success C_OK is returned. On non fatal
+ * error (the append only file is zero-length) C_ERR is returned. On
+ * fatal error an error message is logged and the program exists. */</doc>
+<use f='codebrowser/src/debug.c' l='354' u='c' c='debugCommand'/>
+<use f='codebrowser/src/server.c' l='3526' u='c' c='loadDataFromDisk'/>

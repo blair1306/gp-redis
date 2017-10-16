@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/intset.h' l='43' type='intset * intsetRemove(intset * is, int64_t value, int * success)'/>
+<def f='codebrowser/src/intset.c' l='234' ll='251' type='intset * intsetRemove(intset * is, int64_t value, int * success)'/>
+<doc f='codebrowser/src/intset.c' l='233'>/* Delete integer from intset */</doc>
+<use f='codebrowser/src/t_set.c' l='98' u='c' c='setTypeRemove'/>
+<use f='codebrowser/src/t_set.c' l='481' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='580' u='c' c='spopCommand'/>

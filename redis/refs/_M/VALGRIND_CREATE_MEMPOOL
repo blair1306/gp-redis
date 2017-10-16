@@ -1,0 +1,2 @@
+<dec f='include/valgrind/valgrind.h' l='7006'/>
+<doc f='include/valgrind/valgrind.h' l='7005'>/* Create a memory pool. */</doc>

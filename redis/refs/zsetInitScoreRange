@@ -1,0 +1,9 @@
+<def f='codebrowser/src/module.c' l='1798' ll='1826' type='int zsetInitScoreRange(RedisModuleKey * key, double min, double max, int minex, int maxex, int first)'/>
+<use f='codebrowser/src/module.c' l='1844' u='c' c='RM_ZsetFirstInScoreRange'/>
+<use f='codebrowser/src/module.c' l='1850' u='c' c='RM_ZsetLastInScoreRange'/>
+<doc f='codebrowser/src/module.c' l='1792'>/* Helper function for RM_ZsetFirstInScoreRange() and RM_ZsetLastInScoreRange().
+ * Setup the sorted set iteration according to the specified score range
+ * (see the functions calling it for more info). If &apos;first&apos; is true the
+ * first element in the range is used as a starting point for the iterator
+ * otherwise the last. Return REDISMODULE_OK on success otherwise
+ * REDISMODULE_ERR. */</doc>

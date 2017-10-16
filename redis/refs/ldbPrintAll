@@ -1,0 +1,4 @@
+<def f='codebrowser/src/scripting.c' l='2068' ll='2090' type='void ldbPrintAll(lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='2312' u='c' c='ldbRepl'/>
+<doc f='codebrowser/src/scripting.c' l='2066'>/* Implements the &quot;print&quot; command (without arguments) of the Lua debugger.
+ * Prints all the variables in the current stack frame. */</doc>

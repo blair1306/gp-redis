@@ -1,0 +1,4 @@
+<def f='codebrowser/src/networking.c' l='252' ll='278' type='void _addReplySdsToList(client * c, sds s)'/>
+<use f='codebrowser/src/networking.c' l='357' u='c' c='addReplySds'/>
+<doc f='codebrowser/src/networking.c' l='250'>/* This method takes responsibility over the sds. When it is no longer
+ * needed it will be free&apos;d, otherwise it ends up in a robj. */</doc>

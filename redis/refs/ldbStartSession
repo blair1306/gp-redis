@@ -1,0 +1,14 @@
+<def f='codebrowser/src/scripting.c' l='1593' ll='1643' type='int ldbStartSession(client * c)'/>
+<use f='codebrowser/src/scripting.c' l='1712' u='c' c='evalGenericCommandWithDebugging'/>
+<doc f='codebrowser/src/scripting.c' l='1581'>/* Start a debugging session before calling EVAL implementation.
+ * The techique we use is to capture the client socket file descriptor,
+ * in order to perform direct I/O with it from within Lua hooks. This
+ * way we don&apos;t have to re-enter Redis in order to handle I/O.
+ *
+ * The function returns 1 if the caller should proceed to call EVAL,
+ * and 0 if instead the caller should abort the operation (this happens
+ * for the parent in a forked session, since it&apos;s up to the children
+ * to continue, or when fork returned an error).
+ *
+ * The caller should call ldbEndSession() only if ldbStartSession()
+ * returned 1. */</doc>

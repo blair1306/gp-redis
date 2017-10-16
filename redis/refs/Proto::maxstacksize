@@ -1,0 +1,29 @@
+<dec f='codebrowser/deps/lua/src/lobject.h' l='252' type='lu_byte'/>
+<offset>920</offset>
+<use f='codebrowser/deps/lua/src/lcode.c' l='201' u='r' c='luaK_checkstack'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='204' u='w' c='luaK_checkstack'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='277' u='r' c='precheck'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='278' u='r' c='precheck'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='272' u='r' c='checkArgMode'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='310' u='r' c='checkArgMode'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='272' u='r' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='272' u='r' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='272' u='r' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='272' u='r' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='272' u='r' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='272' u='r' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='272' u='r' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='272' u='r' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='272' u='r' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='220' u='r' c='adjust_varargs'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='220' u='r' c='adjust_varargs'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='277' u='r' c='luaD_precall'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='277' u='r' c='luaD_precall'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='292' u='r' c='luaD_precall'/>
+<use f='codebrowser/deps/lua/src/ldump.c' l='137' u='r' c='DumpFunction'/>
+<use f='codebrowser/deps/lua/src/lfunc.c' l='130' u='w' c='luaF_newproto'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='346' u='w' c='open_func'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='129' u='w' c='combine'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='173' u='w' c='LoadFunction'/>
+<use f='codebrowser/deps/lua/src/print.c' l='176' u='r' c='PrintHeader'/>
+<use f='codebrowser/deps/lua/src/print.c' l='176' u='r' c='PrintHeader'/>

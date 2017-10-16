@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1966' type='void evalCommand(client * c)'/>
+<def f='codebrowser/src/scripting.c' l='1400' ll='1405' type='void evalCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='282' u='r'/>
+<use f='codebrowser/src/server.c' l='282' u='r'/>
+<use f='codebrowser/src/server.c' l='282' u='r'/>
+<use f='codebrowser/src/server.c' l='282' u='r'/>

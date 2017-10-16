@@ -1,0 +1,32 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='220' type='sds sdsdup(const sds s)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='150' ll='152' type='sds sdsdup(const sds s)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='149'>/* Duplicate an sds string. */</doc>
+<dec f='codebrowser/src/sds.h' l='220' type='sds sdsdup(const sds s)'/>
+<use f='codebrowser/src/cluster.c' l='1126' u='c' c='clusterBlacklistAddNode'/>
+<use f='codebrowser/src/config.c' l='572' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1475' u='c' c='rewriteConfigAddLineNumberToOption'/>
+<use f='codebrowser/src/config.c' l='1902' u='c' c='rewriteConfigOverwriteFile'/>
+<use f='codebrowser/src/db.c' l='161' u='c' c='dbAdd'/>
+<use f='codebrowser/src/evict.c' l='250' u='c' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/expire.c' l='342' u='c' c='rememberSlaveKeyWithExpire'/>
+<use f='codebrowser/src/geo.c' l='277' u='c' c='geoGetPointsInRange'/>
+<use f='codebrowser/src/module.c' l='644' u='c' c='RM_CreateCommand'/>
+<use f='codebrowser/src/module.c' l='645' u='c' c='RM_CreateCommand'/>
+<use f='codebrowser/src/networking.c' l='59' u='c' c='dupClientReplyValue'/>
+<use f='codebrowser/src/networking.c' l='228' u='c' c='_addReplyObjectToList'/>
+<use f='codebrowser/src/networking.c' l='242' u='c' c='_addReplyObjectToList'/>
+<use f='codebrowser/src/replication.c' l='2309' u='c' c='replicationScriptCacheAdd'/>
+<use f='codebrowser/src/scripting.c' l='1632' u='c' c='ldbStartSession'/>
+<use f='codebrowser/src/scripting.c' l='1774' u='c' c='ldbReplParseCommand'/>
+<def f='codebrowser/src/sds.c' l='153' ll='155' type='sds sdsdup(const sds s)'/>
+<doc f='codebrowser/src/sds.c' l='152'>/* Duplicate an sds string. */</doc>
+<use f='codebrowser/src/t_hash.c' l='247' u='c' c='hashTypeSet'/>
+<use f='codebrowser/src/t_hash.c' l='256' u='c' c='hashTypeSet'/>
+<use f='codebrowser/src/t_hash.c' l='262' u='c' c='hashTypeSet'/>
+<use f='codebrowser/src/t_set.c' l='58' u='c' c='setTypeAdd'/>
+<use f='codebrowser/src/t_set.c' l='58' u='c' c='setTypeAdd'/>
+<use f='codebrowser/src/t_set.c' l='79' u='c' c='setTypeAdd'/>
+<use f='codebrowser/src/t_set.c' l='188' u='c' c='setTypeNextObject'/>
+<use f='codebrowser/src/t_set.c' l='511' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1359' u='c' c='zsetAdd'/>
+<use f='codebrowser/src/t_zset.c' l='2011' u='c' c='zuiNewSdsFromValue'/>

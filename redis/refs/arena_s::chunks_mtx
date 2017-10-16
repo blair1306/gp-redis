@@ -1,0 +1,19 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='395' type='malloc_mutex_t'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3068' u='a' c='je_arena_new'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3288' u='a' c='je_arena_prefork'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3302' u='a' c='je_arena_postfork_parent'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3315' u='a' c='je_arena_postfork_child'/>
+<offset>7680</offset>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='70' u='a' c='je_chunk_hooks_get'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='72' u='a' c='je_chunk_hooks_get'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='82' u='a' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='107' u='a' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='222' u='a' c='chunk_recycle'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='235' u='a' c='chunk_recycle'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='254' u='a' c='chunk_recycle'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='275' u='a' c='chunk_recycle'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='284' u='a' c='chunk_recycle'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='299' u='a' c='chunk_recycle'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='304' u='a' c='chunk_recycle'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='479' u='a' c='chunk_record'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='555' u='a' c='chunk_record'/>

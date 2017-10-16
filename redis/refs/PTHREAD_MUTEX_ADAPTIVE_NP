@@ -1,0 +1,10 @@
+<dec f='include/pthread.h' l='47' type='3'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='209' macro='1'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='209' macro='1'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='209' macro='1'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='209' macro='1'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='209' macro='1'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='209' macro='1'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='209' macro='1'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='209' macro='1'/>
+<use f='codebrowser/deps/jemalloc/src/mutex.c' l='99' macro='1' u='r'/>

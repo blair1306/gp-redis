@@ -1,0 +1,6 @@
+<def f='codebrowser/src/hyperloglog.c' l='1082' ll='1112' type='robj * createHLLObject()'/>
+<use f='codebrowser/src/hyperloglog.c' l='1158' u='c' c='pfaddCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1308' u='c' c='pfmergeCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1390' u='c' c='pfselftestCommand'/>
+<doc f='codebrowser/src/hyperloglog.c' l='1080'>/* Create an HLL object. We always create the HLL using sparse encoding.
+ * This will be upgraded to the dense representation as needed. */</doc>

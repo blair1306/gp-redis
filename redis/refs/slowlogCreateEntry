@@ -1,0 +1,5 @@
+<def f='codebrowser/src/slowlog.c' l='48' ll='94' type='slowlogEntry * slowlogCreateEntry(client * c, robj ** argv, int argc, long long duration)'/>
+<use f='codebrowser/src/slowlog.c' l='127' u='c' c='slowlogPushEntryIfNeeded'/>
+<doc f='codebrowser/src/slowlog.c' l='45'>/* Create a new slowlog entry.
+ * Incrementing the ref count of all the objects retained is up to
+ * this function. */</doc>

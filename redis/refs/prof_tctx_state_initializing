@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='82' type='0'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='806' u='r' c='je_prof_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1042' c='prof_tctx_merge_tdata'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1106' c='prof_tctx_dump_iter'/>

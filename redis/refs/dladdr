@@ -1,0 +1,5 @@
+<dec f='include/dlfcn.h' l='98' type='int dladdr(const void * __address, Dl_info * __info)'/>
+<use f='codebrowser/src/debug.c' l='1004' u='c' c='dumpX86Calls'/>
+<use f='codebrowser/src/debug.c' l='1071' u='c' c='sigsegvHandler'/>
+<doc f='include/dlfcn.h' l='96'>/* Fill in *INFO with the following information about ADDRESS.
+   Returns 0 iff no shared object&apos;s segments contain that address.  */</doc>

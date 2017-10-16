@@ -1,0 +1,2 @@
+<def f='codebrowser/src/module.c' l='2695' ll='2711' type='uint64_t moduleTypeEncodeId(const char * name, int encver)'/>
+<use f='codebrowser/src/module.c' l='2866' u='c' c='RM_CreateDataType'/>

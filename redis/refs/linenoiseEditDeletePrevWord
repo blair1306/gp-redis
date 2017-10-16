@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/linenoise/linenoise.c' l='746' ll='758' type='void linenoiseEditDeletePrevWord(struct linenoiseState * l)'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='945' u='c' c='linenoiseEdit'/>
+<doc f='codebrowser/deps/linenoise/linenoise.c' l='744'>/* Delete the previosu word, maintaining the cursor at the start of the
+ * current word. */</doc>

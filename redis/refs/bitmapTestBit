@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/cluster.c' l='68' type='int bitmapTestBit(unsigned char * bitmap, int pos)'/>
+<use f='codebrowser/src/cluster.c' l='1532' u='c' c='clusterUpdateSlotsConfigWith'/>
+<use f='codebrowser/src/cluster.c' l='1921' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2672' u='c' c='clusterSendFailoverAuthIfNeeded'/>
+<def f='codebrowser/src/cluster.c' l='3501' ll='3505' type='int bitmapTestBit(unsigned char * bitmap, int pos)'/>
+<use f='codebrowser/src/cluster.c' l='3540' u='c' c='clusterNodeSetSlotBit'/>
+<use f='codebrowser/src/cluster.c' l='3565' u='c' c='clusterNodeClearSlotBit'/>
+<use f='codebrowser/src/cluster.c' l='3573' u='c' c='clusterNodeGetSlotBit'/>
+<doc f='codebrowser/src/cluster.c' l='3499'>/* Test bit &apos;pos&apos; in a generic bitmap. Return 1 if the bit is set,
+ * otherwise 0. */</doc>

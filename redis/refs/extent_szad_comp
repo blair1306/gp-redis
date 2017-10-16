@@ -1,0 +1,10 @@
+<def f='codebrowser/deps/jemalloc/src/extent.c' l='17' ll='37' macro='1' type='int extent_szad_comp(extent_node_t * a, extent_node_t * b)'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='41' u='c' c='je_extent_tree_szad_next'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='41' u='c' c='je_extent_tree_szad_prev'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='41' u='c' c='je_extent_tree_szad_search'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='41' u='c' c='je_extent_tree_szad_nsearch'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='41' u='c' c='je_extent_tree_szad_psearch'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='41' u='c' c='je_extent_tree_szad_insert'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='41' u='c' c='je_extent_tree_szad_remove'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='41' u='c' c='je_extent_tree_szad_iter_start'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='41' u='c' c='je_extent_tree_szad_reverse_iter_start'/>

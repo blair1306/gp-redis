@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='88'/>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='87'>/* &quot;regular&quot; POSIX strerror_r that does the right thing. */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='584' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='73' u='c'/>

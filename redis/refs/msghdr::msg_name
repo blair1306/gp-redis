@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='230' type='void *'/>
+<offset>0</offset>
+<doc f='include/x86_64-linux-gnu/bits/socket.h' l='230'>/* Address to send to/receive from.  */</doc>
+<use f='codebrowser/src/server.c' l='3636' u='w' c='redisSupervisedSystemd'/>

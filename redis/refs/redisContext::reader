@@ -1,0 +1,19 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='146' type='redisReader *'/>
+<use f='codebrowser/deps/hiredis/async.c' l='458' u='r' c='redisProcessCallbacks'/>
+<use f='codebrowser/deps/hiredis/async.c' l='470' u='r' c='redisProcessCallbacks'/>
+<use f='codebrowser/deps/hiredis/async.c' l='482' u='r' c='redisProcessCallbacks'/>
+<offset>1216</offset>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='146'>/* Protocol reader */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='602' u='w' c='redisContextInit'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='608' u='r' c='redisContextInit'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='623' u='r' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='624' u='r' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='652' u='r' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='655' u='w' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='814' u='r' c='redisBufferRead'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='815' u='r' c='redisBufferRead'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='815' u='r' c='redisBufferRead'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='863' u='r' c='redisGetReplyFromReader'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='864' u='r' c='redisGetReplyFromReader'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='864' u='r' c='redisGetReplyFromReader'/>
+<use f='codebrowser/src/redis-benchmark.c' l='334' u='r' c='createClient'/>

@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='660' macro='1' type='quarantine_t * je_tsd_quarantine_get(tsd_t * tsd)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/quarantine.h' l='53' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/quarantine.c' l='55' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/quarantine.c' l='125' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/quarantine.c' l='177' macro='1' u='c'/>

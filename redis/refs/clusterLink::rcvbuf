@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/cluster.h' l='44' type='sds'/>
+<use f='codebrowser/src/cluster.c' l='570' u='w' c='createClusterLink'/>
+<use f='codebrowser/src/cluster.c' l='585' u='r' c='freeClusterLink'/>
+<use f='codebrowser/src/cluster.c' l='1608' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1619' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2096' u='r' c='clusterReadHandler'/>
+<use f='codebrowser/src/cluster.c' l='2103' u='r' c='clusterReadHandler'/>
+<use f='codebrowser/src/cluster.c' l='2132' u='w' c='clusterReadHandler'/>
+<use f='codebrowser/src/cluster.c' l='2132' u='r' c='clusterReadHandler'/>
+<use f='codebrowser/src/cluster.c' l='2133' u='r' c='clusterReadHandler'/>
+<use f='codebrowser/src/cluster.c' l='2140' u='r' c='clusterReadHandler'/>
+<use f='codebrowser/src/cluster.c' l='2141' u='w' c='clusterReadHandler'/>
+<offset>192</offset>
+<doc f='codebrowser/src/cluster.h' l='44'>/* Packet reception buffer */</doc>

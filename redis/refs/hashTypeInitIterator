@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1669' type='hashTypeIterator * hashTypeInitIterator(robj * subject)'/>
+<use f='codebrowser/src/aof.c' l='1012' u='c' c='rewriteHashObject'/>
+<use f='codebrowser/src/debug.c' l='227' u='c' c='computeDatasetDigest'/>
+<def f='codebrowser/src/t_hash.c' l='324' ll='338' type='hashTypeIterator * hashTypeInitIterator(robj * subject)'/>
+<use f='codebrowser/src/t_hash.c' l='476' u='c' c='hashTypeConvertZiplist'/>
+<use f='codebrowser/src/t_hash.c' l='781' u='c' c='genericHgetallCommand'/>

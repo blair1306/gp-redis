@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='31'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='24'>/*
+ * Absolute maximum number of cache slots for each small bin in the thread
+ * cache.  This is an additional constraint beyond that imposed as: twice the
+ * number of regions per run for this size class.
+ *
+ * This constant must be an even number.
+ */</doc>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='333' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='522' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='527' u='c'/>

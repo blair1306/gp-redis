@@ -1,0 +1,17 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/base.h' l='12' macro='1' type='void * je_base_alloc(size_t size)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='858' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3004' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3008' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3211' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/base.c' l='79' macro='1' type='void * je_base_alloc(size_t size)'/>
+<doc f='codebrowser/deps/jemalloc/src/base.c' l='73'>/*
+ * base_alloc() guarantees demand-zeroed memory, in order to make multi-page
+ * sparse data structures such as radix tree nodes efficient with respect to
+ * physical memory usage.
+ */</doc>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='696' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1295' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2151' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2160' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='440' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='512' macro='1' u='c'/>

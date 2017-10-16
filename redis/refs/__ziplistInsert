@@ -1,0 +1,4 @@
+<def f='codebrowser/src/ziplist.c' l='743' ll='839' type='unsigned char * __ziplistInsert(unsigned char * zl, unsigned char * p, unsigned char * s, unsigned int slen)'/>
+<use f='codebrowser/src/ziplist.c' l='959' u='c' c='ziplistPush'/>
+<use f='codebrowser/src/ziplist.c' l='1055' u='c' c='ziplistInsert'/>
+<doc f='codebrowser/src/ziplist.c' l='742'>/* Insert item at &quot;p&quot;. */</doc>

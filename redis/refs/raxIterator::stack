@@ -1,0 +1,25 @@
+<dec f='codebrowser/src/rax.h' l='139' type='raxStack'/>
+<offset>1472</offset>
+<doc f='codebrowser/src/rax.h' l='139'>/* Stack used for unsafe iteration. */</doc>
+<use f='codebrowser/src/rax.c' l='1129' u='a' c='raxStart'/>
+<use f='codebrowser/src/rax.c' l='1187' u='m' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1201' u='a' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1224' u='m' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1233' u='a' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1256' u='a' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1283' u='a' c='raxSeekGreatest'/>
+<use f='codebrowser/src/rax.c' l='1303' u='m' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1312' u='m' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1320' u='a' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1348' u='a' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1372' u='m' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1422' u='a' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1425' u='m' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1439' u='a' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1440' u='m' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1441' u='m' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1442' u='m' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1459' u='a' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1594' u='a' c='raxRandomWalk'/>
+<use f='codebrowser/src/rax.c' l='1605' u='a' c='raxRandomWalk'/>
+<use f='codebrowser/src/rax.c' l='1647' u='a' c='raxStop'/>

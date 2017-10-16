@@ -1,0 +1,15 @@
+<dec f='include/stdio.h' l='858' type='int fileno(FILE * __stream)'/>
+<doc f='include/stdio.h' l='857'>/* Return the system file descriptor for STREAM.  */</doc>
+<use f='codebrowser/src/aof.c' l='647' u='c' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1183' u='c' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1227' u='c' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/cluster.c' l='108' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/rdb.c' l='1016' u='c' c='rdbSave'/>
+<use f='codebrowser/src/rdb.c' l='1451' u='c' c='startLoading'/>
+<use f='codebrowser/src/redis-check-aof.c' l='172' u='c' c='redis_check_aof_main'/>
+<use f='codebrowser/src/redis-check-aof.c' l='216' u='c' c='redis_check_aof_main'/>
+<use f='codebrowser/src/redis-cli.c' l='1090' u='c' c='readArgFromStdin'/>
+<use f='codebrowser/src/redis-cli.c' l='1293' u='c' c='repl'/>
+<use f='codebrowser/src/redis-cli.c' l='2648' u='c' c='main'/>
+<use f='codebrowser/src/rio.c' l='119' u='c' c='rioFileWrite'/>
+<use f='codebrowser/src/server.c' l='3434' u='c' c='redisAsciiArt'/>

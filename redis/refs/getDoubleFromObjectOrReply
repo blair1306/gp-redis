@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1462' type='int getDoubleFromObjectOrReply(client * c, robj * o, double * target, const char * msg)'/>
+<use f='codebrowser/src/geo.c' l='96' u='c' c='extractLongLatOrReply'/>
+<use f='codebrowser/src/geo.c' l='155' u='c' c='extractDistanceOrReply'/>
+<def f='codebrowser/src/object.c' l='578' ll='590' type='int getDoubleFromObjectOrReply(client * c, robj * o, double * target, const char * msg)'/>
+<use f='codebrowser/src/t_zset.c' l='1548' u='c' c='zaddGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2186' u='c' c='zunionInterGenericCommand'/>

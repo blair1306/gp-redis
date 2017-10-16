@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1829' type='void setbitCommand(client * c)'/>
+<def f='codebrowser/src/bitops.c' l='525' ll='561' type='void setbitCommand(client * c)'/>
+<doc f='codebrowser/src/bitops.c' l='524'>/* SETBIT key offset bitvalue */</doc>
+<use f='codebrowser/src/server.c' l='139' u='r'/>
+<use f='codebrowser/src/server.c' l='139' u='r'/>
+<use f='codebrowser/src/server.c' l='139' u='r'/>
+<use f='codebrowser/src/server.c' l='139' u='r'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1467' type='char * strEncoding(int encoding)'/>
+<use f='codebrowser/src/debug.c' l='371' u='c' c='debugCommand'/>
+<def f='codebrowser/src/object.c' l='679' ll='691' type='char * strEncoding(int encoding)'/>
+<use f='codebrowser/src/object.c' l='1022' u='c' c='objectCommand'/>

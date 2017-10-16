@@ -1,0 +1,9 @@
+<def f='codebrowser/src/module.c' l='3297' ll='3311' type='void RM_LogRaw(RedisModule * module, const char * levelstr, const char * fmt, struct __va_list_tag * ap)'/>
+<use f='codebrowser/src/module.c' l='3332' u='c' c='RM_Log'/>
+<use f='codebrowser/src/module.c' l='3344' u='c' c='RM_LogIOError'/>
+<doc f='codebrowser/src/module.c' l='3291'>/* This is the low level function implementing both:
+ *
+ *      RM_Log()
+ *      RM_LogIOError()
+ *
+ */</doc>

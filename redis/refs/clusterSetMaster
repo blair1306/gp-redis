@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/cluster.c' l='65' type='void clusterSetMaster(clusterNode * n)'/>
+<use f='codebrowser/src/cluster.c' l='1581' u='c' c='clusterUpdateSlotsConfigWith'/>
+<use f='codebrowser/src/cluster.c' l='3108' u='c' c='clusterHandleSlaveMigration'/>
+<def f='codebrowser/src/cluster.c' l='3802' ll='3818' type='void clusterSetMaster(clusterNode * n)'/>
+<use f='codebrowser/src/cluster.c' l='4452' u='c' c='clusterCommand'/>
+<doc f='codebrowser/src/cluster.c' l='3800'>/* Set the specified node &apos;n&apos; as master for this node.
+ * If this node is currently a master, it is turned into a slave. */</doc>

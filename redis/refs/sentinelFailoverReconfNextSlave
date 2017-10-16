@@ -1,0 +1,4 @@
+<def f='codebrowser/src/sentinel.c' l='4109' ll='4166' type='void sentinelFailoverReconfNextSlave(sentinelRedisInstance * master)'/>
+<use f='codebrowser/src/sentinel.c' l='4201' u='c' c='sentinelFailoverStateMachine'/>
+<doc f='codebrowser/src/sentinel.c' l='4107'>/* Send SLAVE OF &lt;new master address&gt; to all the remaining slaves that
+ * still don&apos;t appear to have the configuration updated. */</doc>

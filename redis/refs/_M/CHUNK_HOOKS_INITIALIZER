@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk.h' l='22'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='622' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='743' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='903' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='931' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='990' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='117' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='335' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='136' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='135' u='c'/>

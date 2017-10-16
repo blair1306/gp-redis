@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1634' type='unsigned int LRU_CLOCK()'/>
+<use f='codebrowser/src/db.c' l='61' u='c' c='lookupKey'/>
+<def f='codebrowser/src/evict.c' l='80' ll='88' type='unsigned int LRU_CLOCK()'/>
+<use f='codebrowser/src/evict.c' l='93' u='c' c='estimateObjectIdleTime'/>
+<doc f='codebrowser/src/evict.c' l='76'>/* This function is used to obtain the current LRU clock.
+ * If the current resolution is lower than the frequency we refresh the
+ * LRU clock (as it should be in production servers) we return the
+ * precomputed value, otherwise we need to resort to a system call. */</doc>
+<use f='codebrowser/src/object.c' l='53' u='c' c='createObject'/>
+<use f='codebrowser/src/object.c' l='95' u='c' c='createEmbeddedStringObject'/>

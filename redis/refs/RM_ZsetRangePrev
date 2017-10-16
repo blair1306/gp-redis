@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='2008' ll='2066' type='int RM_ZsetRangePrev(RedisModuleKey * key)'/>
+<use f='codebrowser/src/module.c' l='3959' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='2005'>/* Go to the previous element of the sorted set iterator. Returns 1 if there was
+ * a previous element, 0 if we are already at the first element or the range
+ * does not include any item at all. */</doc>

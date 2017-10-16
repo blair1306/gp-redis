@@ -1,0 +1,21 @@
+<def f='codebrowser/src/module.c' l='1196' ll='1220' type='int RM_Replicate(RedisModuleCtx * ctx, const char * cmdname, const char * fmt)'/>
+<use f='codebrowser/src/module.c' l='3940' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1177'>/* Replicate the specified command and arguments to slaves and AOF, as effect
+ * of execution of the calling command implementation.
+ *
+ * The replicated commands are always wrapped into the MULTI/EXEC that
+ * contains all the commands replicated in a given module command
+ * execution. However the commands replicated with RedisModule_Call()
+ * are the first items, the ones replicated with RedisModule_Replicate()
+ * will all follow before the EXEC.
+ *
+ * Modules should try to use one interface or the other.
+ *
+ * This command follows exactly the same interface of RedisModule_Call(),
+ * so a set of format specifiers must be passed, followed by arguments
+ * matching the provided format specifiers.
+ *
+ * Please refer to RedisModule_Call() for more information.
+ *
+ * The command returns REDISMODULE_ERR if the format specifiers are invalid
+ * or the command name does not belong to a known command. */</doc>

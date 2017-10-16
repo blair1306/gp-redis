@@ -1,0 +1,16 @@
+<def f='codebrowser/src/scripting.c' l='1562' ll='1579' type='void ldbSendLogs()'/>
+<use f='codebrowser/src/scripting.c' l='1650' u='c' c='ldbEndSession'/>
+<use f='codebrowser/src/scripting.c' l='2282' u='c' c='ldbRepl'/>
+<use f='codebrowser/src/scripting.c' l='2291' u='c' c='ldbRepl'/>
+<use f='codebrowser/src/scripting.c' l='2294' u='c' c='ldbRepl'/>
+<use f='codebrowser/src/scripting.c' l='2297' u='c' c='ldbRepl'/>
+<use f='codebrowser/src/scripting.c' l='2300' u='c' c='ldbRepl'/>
+<use f='codebrowser/src/scripting.c' l='2307' u='c' c='ldbRepl'/>
+<use f='codebrowser/src/scripting.c' l='2313' u='c' c='ldbRepl'/>
+<use f='codebrowser/src/scripting.c' l='2322' u='c' c='ldbRepl'/>
+<use f='codebrowser/src/scripting.c' l='2325' u='c' c='ldbRepl'/>
+<use f='codebrowser/src/scripting.c' l='2329' u='c' c='ldbRepl'/>
+<use f='codebrowser/src/scripting.c' l='2378' u='c' c='luaLdbLineHook'/>
+<doc f='codebrowser/src/scripting.c' l='1559'>/* Send ldb.logs to the debugging client as a multi-bulk reply
+ * consisting of simple strings. Log entries which include newlines have them
+ * replaced with spaces. The entries sent are also consumed. */</doc>

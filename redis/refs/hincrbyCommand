@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1946' type='void hincrbyCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='206' u='r'/>
+<use f='codebrowser/src/server.c' l='206' u='r'/>
+<use f='codebrowser/src/server.c' l='206' u='r'/>
+<use f='codebrowser/src/server.c' l='206' u='r'/>
+<def f='codebrowser/src/t_hash.c' l='559' ll='592' type='void hincrbyCommand(client * c)'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='962' type='size_t'/>
+<offset>9216</offset>
+<doc f='codebrowser/src/server.h' l='962'>/* Copy on write bytes during AOF rewrite. */</doc>
+<use f='codebrowser/src/childinfo.c' l='82' u='w' c='receiveChildInfo'/>
+<use f='codebrowser/src/server.c' l='1885' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='3018' u='r' c='genRedisInfoString'/>

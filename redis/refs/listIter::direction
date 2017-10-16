@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/adlist.h' l='44' type='int'/>
+<use f='codebrowser/src/adlist.c' l='195' u='w' c='listGetIterator'/>
+<use f='codebrowser/src/adlist.c' l='207' u='w' c='listRewind'/>
+<use f='codebrowser/src/adlist.c' l='212' u='w' c='listRewindTail'/>
+<use f='codebrowser/src/adlist.c' l='234' u='r' c='listNext'/>
+<offset>64</offset>

@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='171' ll='186'/>
+<size>112</size>
+<mbr r='arena_chunk_s::node' o='0' t='extent_node_t'/>
+<mbr r='arena_chunk_s::map_bits' o='832' t='arena_chunk_map_bits_t [1]'/>

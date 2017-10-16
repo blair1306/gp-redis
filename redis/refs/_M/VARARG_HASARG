@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/lua/src/lobject.h' l='257'/>
+<doc f='codebrowser/deps/lua/src/lobject.h' l='256'>/* masks for new-style vararg */</doc>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='278' u='c'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='280' u='c'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='561' u='c'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='571' u='c'/>

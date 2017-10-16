@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1628' type='void adjustOpenFilesLimit()'/>
+<use f='codebrowser/src/config.c' l='861' u='c' c='configSetCommand'/>
+<def f='codebrowser/src/server.c' l='1586' ll='1659' type='void adjustOpenFilesLimit()'/>
+<use f='codebrowser/src/server.c' l='1817' u='c' c='initServer'/>
+<doc f='codebrowser/src/server.c' l='1578'>/* This function will try to raise the max number of open files accordingly to
+ * the configured max number of clients. It also reserves a number of file
+ * descriptors (CONFIG_MIN_RESERVED_FDS) for extra operations of
+ * persistence, listening sockets, log files and so forth.
+ *
+ * If it will not be possible to set the limit accordingly to the configured
+ * max number of clients, the function will do the reverse setting
+ * server.maxclients to the value that we can actually handle. */</doc>

@@ -1,0 +1,28 @@
+<dec f='codebrowser/src/server.h' l='1808' type='int dictSdsKeyCompare(void * privdata, const void * key1, const void * key2)'/>
+<use f='codebrowser/src/expire.c' l='328' u='r' c='rememberSlaveKeyWithExpire'/>
+<use f='codebrowser/src/expire.c' l='328' u='r' c='rememberSlaveKeyWithExpire'/>
+<dec f='codebrowser/src/sentinel.c' l='383' type='int dictSdsKeyCompare(void * privdata, const void * key1, const void * key2)'/>
+<use f='codebrowser/src/sentinel.c' l='399' u='r'/>
+<use f='codebrowser/src/sentinel.c' l='399' u='r'/>
+<use f='codebrowser/src/sentinel.c' l='412'/>
+<use f='codebrowser/src/sentinel.c' l='412'/>
+<def f='codebrowser/src/server.c' l='445' ll='455' type='int dictSdsKeyCompare(void * privdata, const void * key1, const void * key2)'/>
+<use f='codebrowser/src/server.c' l='486' u='c' c='dictObjKeyCompare'/>
+<use f='codebrowser/src/server.c' l='514' u='c' c='dictEncObjKeyCompare'/>
+<use f='codebrowser/src/server.c' l='559'/>
+<use f='codebrowser/src/server.c' l='559'/>
+<use f='codebrowser/src/server.c' l='569'/>
+<use f='codebrowser/src/server.c' l='569'/>
+<use f='codebrowser/src/server.c' l='579'/>
+<use f='codebrowser/src/server.c' l='579'/>
+<use f='codebrowser/src/server.c' l='599'/>
+<use f='codebrowser/src/server.c' l='599'/>
+<use f='codebrowser/src/server.c' l='619'/>
+<use f='codebrowser/src/server.c' l='619'/>
+<use f='codebrowser/src/server.c' l='642'/>
+<use f='codebrowser/src/server.c' l='642'/>
+<use f='codebrowser/src/server.c' l='676'/>
+<use f='codebrowser/src/server.c' l='676'/>
+<dec f='codebrowser/src/t_zset.c' l='2114' type='int dictSdsKeyCompare(void * privdata, const void * key1, const void * key2)'/>
+<use f='codebrowser/src/t_zset.c' l='2120' u='r'/>
+<use f='codebrowser/src/t_zset.c' l='2120' u='r'/>

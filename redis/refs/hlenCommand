@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1934' type='void hlenCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='209' u='r'/>
+<use f='codebrowser/src/server.c' l='209' u='r'/>
+<use f='codebrowser/src/server.c' l='209' u='r'/>
+<use f='codebrowser/src/server.c' l='209' u='r'/>
+<def f='codebrowser/src/t_hash.c' l='730' ll='737' type='void hlenCommand(client * c)'/>

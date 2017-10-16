@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='302' type='chunk_purge_t *'/>
+<offset>256</offset>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='103' u='a' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='103' u='r' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='592' u='r' c='je_chunk_dalloc_arena'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='666' u='r' c='je_chunk_purge_wrapper'/>

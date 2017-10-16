@@ -1,0 +1,10 @@
+<def f='codebrowser/src/module.c' l='700' ll='728' type='int autoMemoryFreed(RedisModuleCtx * ctx, int type, void * ptr)'/>
+<use f='codebrowser/src/module.c' l='819' u='c' c='RM_FreeString'/>
+<use f='codebrowser/src/module.c' l='845' u='c' c='RM_RetainString'/>
+<use f='codebrowser/src/module.c' l='1396' u='c' c='RM_CloseKey'/>
+<use f='codebrowser/src/module.c' l='2418' u='c' c='RM_FreeCallReply'/>
+<doc f='codebrowser/src/module.c' l='695'>/* Mark an object as freed in the auto release queue, so that users can still
+ * free things manually if they want.
+ *
+ * The function returns 1 if the object was actually found in the auto memory
+ * pool, otherwise 0 is returned. */</doc>

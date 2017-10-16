@@ -1,0 +1,6 @@
+<def f='codebrowser/src/server.c' l='3583' ll='3596' type='int redisSupervisedUpstart()'/>
+<use f='codebrowser/src/server.c' l='3661' u='c' c='redisIsSupervised'/>
+<use f='codebrowser/src/server.c' l='3666' u='c' c='redisIsSupervised'/>
+<doc f='codebrowser/src/server.c' l='3579'>/*
+ * Check whether systemd or upstart have been used to start redis.
+ */</doc>

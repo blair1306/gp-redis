@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='128' macro='1' type='void * je_tcache_alloc_small_hard(tsd_t * tsd, arena_t * arena, tcache_t * tcache, tcache_bin_t * tbin, szind_t binind)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='280' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/tcache.c' l='74' macro='1' type='void * je_tcache_alloc_small_hard(tsd_t * tsd, arena_t * arena, tcache_t * tcache, tcache_bin_t * tbin, szind_t binind)'/>

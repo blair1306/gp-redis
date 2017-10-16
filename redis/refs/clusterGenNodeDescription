@@ -1,0 +1,7 @@
+<def f='codebrowser/src/cluster.c' l='3858' ll='3921' type='sds clusterGenNodeDescription(clusterNode * node)'/>
+<use f='codebrowser/src/cluster.c' l='3945' u='c' c='clusterGenNodesDescription'/>
+<use f='codebrowser/src/cluster.c' l='4473' u='c' c='clusterCommand'/>
+<doc f='codebrowser/src/cluster.c' l='3854'>/* Generate a csv-alike representation of the specified cluster node.
+ * See clusterGenNodesDescription() top comment for more information.
+ *
+ * The function returns the string representation as an SDS string. */</doc>

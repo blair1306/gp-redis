@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='45'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='41'>/*
+ * Number of mutexes shared among all tdata&apos;s.  No space is allocated for these
+ * unless profiling is enabled, so it&apos;s okay to over-provision.
+ */</doc>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='545' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2160' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2164' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2196' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2208' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2226' u='c'/>

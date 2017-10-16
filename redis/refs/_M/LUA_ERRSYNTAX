@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='45'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='61' u='c'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='108' u='c'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='164' u='c'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='39' u='c'/>

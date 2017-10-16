@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/linenoise/linenoise.h' l='55' type='void linenoiseSetHintsCallback(linenoiseHintsCallback * )'/>
+<def f='codebrowser/deps/linenoise/linenoise.c' l='415' ll='417' type='void linenoiseSetHintsCallback(linenoiseHintsCallback * fn)'/>
+<doc f='codebrowser/deps/linenoise/linenoise.c' l='413'>/* Register a hits function to be called to show hits to the user at the
+ * right of the prompt. */</doc>
+<use f='codebrowser/src/redis-cli.c' l='1289' u='c' c='repl'/>

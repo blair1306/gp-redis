@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/anet.h' l='55' type='int anetTcpNonBlockBestEffortBindConnect(char * err, char * addr, int port, char * source_addr)'/>
+<def f='codebrowser/src/anet.c' l='365' ll='370' type='int anetTcpNonBlockBestEffortBindConnect(char * err, char * addr, int port, char * source_addr)'/>
+<use f='codebrowser/src/replication.c' l='1857' u='c' c='connectWithMaster'/>

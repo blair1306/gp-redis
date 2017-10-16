@@ -1,0 +1,19 @@
+<dec f='codebrowser/src/ae.h' l='96' type='aeFileEvent *'/>
+<use f='codebrowser/src/ae_epoll.c' l='78' u='r' c='aeApiAddEvent'/>
+<use f='codebrowser/src/ae_epoll.c' l='82' u='r' c='aeApiAddEvent'/>
+<use f='codebrowser/src/ae_epoll.c' l='93' u='r' c='aeApiDelEvent'/>
+<use f='codebrowser/src/ae.c' l='68' u='w' c='aeCreateEventLoop'/>
+<use f='codebrowser/src/ae.c' l='70' u='r' c='aeCreateEventLoop'/>
+<use f='codebrowser/src/ae.c' l='83' u='r' c='aeCreateEventLoop'/>
+<use f='codebrowser/src/ae.c' l='88' u='r' c='aeCreateEventLoop'/>
+<use f='codebrowser/src/ae.c' l='114' u='w' c='aeResizeSetSize'/>
+<use f='codebrowser/src/ae.c' l='114' u='r' c='aeResizeSetSize'/>
+<use f='codebrowser/src/ae.c' l='121' u='r' c='aeResizeSetSize'/>
+<use f='codebrowser/src/ae.c' l='127' u='r' c='aeDeleteEventLoop'/>
+<use f='codebrowser/src/ae.c' l='143' u='r' c='aeCreateFileEvent'/>
+<use f='codebrowser/src/ae.c' l='159' u='r' c='aeDeleteFileEvent'/>
+<use f='codebrowser/src/ae.c' l='169' u='r' c='aeDeleteFileEvent'/>
+<use f='codebrowser/src/ae.c' l='176' u='r' c='aeGetFileEvents'/>
+<use f='codebrowser/src/ae.c' l='411' u='r' c='aeProcessEvents'/>
+<offset>192</offset>
+<doc f='codebrowser/src/ae.h' l='96'>/* Registered events */</doc>

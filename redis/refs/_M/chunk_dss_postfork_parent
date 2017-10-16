@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/private_namespace.h' l='149'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk_dss.h' l='31' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='753' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='199' u='c'/>

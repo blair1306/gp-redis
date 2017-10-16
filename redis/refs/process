@@ -1,0 +1,2 @@
+<def f='codebrowser/src/redis-check-aof.c' l='100' ll='142' type='off_t process(FILE * fp)'/>
+<use f='codebrowser/src/redis-check-aof.c' l='202' u='c' c='redis_check_aof_main'/>

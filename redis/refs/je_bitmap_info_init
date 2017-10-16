@@ -1,0 +1,43 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='95' macro='1' type='void je_bitmap_info_init(bitmap_info_t * binfo, size_t nbits)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3199' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/bitmap.c' l='7' macro='1' type='void je_bitmap_info_init(bitmap_info_t * binfo, size_t nbits)'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='47' macro='1' u='c'/>
+<doc f='codebrowser/deps/jemalloc/src/bitmap.c' l='4'>/******************************************************************************/</doc>

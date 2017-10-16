@@ -1,0 +1,8 @@
+<def f='codebrowser/src/rax.c' l='1292' ll='1363' type='int raxIteratorPrevStep(raxIterator * it, int noup)'/>
+<use f='codebrowser/src/rax.c' l='1476' u='c' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1508' u='c' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1522' u='c' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1552' u='c' c='raxPrev'/>
+<doc f='codebrowser/src/rax.c' l='1289'>/* Like raxIteratorNextStep() but implements an iteration step moving
+ * to the lexicographically previous element. The &apos;noup&apos; option has a similar
+ * effect to the one of raxIteratorPrevSte(). */</doc>

@@ -1,0 +1,5 @@
+<def f='codebrowser/src/config.c' l='71' ll='77' type='configEnum [5]'/>
+<use f='codebrowser/src/config.c' l='264' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1143' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1319' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1962' u='r' c='rewriteConfig'/>

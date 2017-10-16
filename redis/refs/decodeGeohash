@@ -1,0 +1,10 @@
+<def f='codebrowser/src/geo.c' l='85' ll='88' type='int decodeGeohash(double bits, double * xy)'/>
+<use f='codebrowser/src/geo.c' l='117' u='c' c='longLatFromMember'/>
+<use f='codebrowser/src/geo.c' l='194' u='c' c='geoAppendIfWithinRadius'/>
+<use f='codebrowser/src/geo.c' l='723' u='c' c='geohashCommand'/>
+<use f='codebrowser/src/geo.c' l='770' u='c' c='geoposCommand'/>
+<use f='codebrowser/src/geo.c' l='813' u='c' c='geodistCommand'/>
+<use f='codebrowser/src/geo.c' l='813' u='c' c='geodistCommand'/>
+<doc f='codebrowser/src/geo.c' l='82'>/* ====================================================================
+ * Helpers
+ * ==================================================================== */</doc>

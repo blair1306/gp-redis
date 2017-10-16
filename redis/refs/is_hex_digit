@@ -1,0 +1,10 @@
+<def f='codebrowser/deps/hiredis/sds.c' l='883' ll='886' type='int is_hex_digit(char c)'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='950' u='c' c='sdssplitargs'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='951' u='c' c='sdssplitargs'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='881'>/* Helper function for sdssplitargs() that returns non zero if &apos;c&apos;
+ * is a valid hex digit. */</doc>
+<def f='codebrowser/src/sds.c' l='888' ll='891' type='int is_hex_digit(char c)'/>
+<use f='codebrowser/src/sds.c' l='955' u='c' c='sdssplitargs'/>
+<use f='codebrowser/src/sds.c' l='956' u='c' c='sdssplitargs'/>
+<doc f='codebrowser/src/sds.c' l='886'>/* Helper function for sdssplitargs() that returns non zero if &apos;c&apos;
+ * is a valid hex digit. */</doc>

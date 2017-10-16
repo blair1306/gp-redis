@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='839' ll='841' type='int mp_unpack(lua_State * L)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='884' u='r'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='884' u='r'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='884' u='r'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='884' u='r'/>

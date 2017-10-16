@@ -1,0 +1,19 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='74' type='size_t'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='116' u='r' c='je_bitmap_full'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='156' u='r' c='je_bitmap_set'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='178' u='r' c='je_bitmap_sfu'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='182' u='r' c='je_bitmap_sfu'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='214' u='r' c='je_bitmap_unset'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='20' u='w' c='je_bitmap_info_init'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='24' u='w' c='je_bitmap_info_init'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='24' u='r' c='je_bitmap_info_init'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='28' u='w' c='je_bitmap_info_init'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='28' u='r' c='je_bitmap_info_init'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='30' u='r' c='je_bitmap_info_init'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='39' u='r' c='je_bitmap_info_ngroups'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='64' u='r' c='je_bitmap_init'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='69' u='r' c='je_bitmap_init'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='71' u='r' c='je_bitmap_init'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='72' u='r' c='je_bitmap_init'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='76' u='r' c='je_bitmap_init'/>

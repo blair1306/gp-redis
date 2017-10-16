@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1033' type='time_t'/>
+<offset>16000</offset>
+<doc f='codebrowser/src/server.h' l='1033'>/* Unix time of last successful save */</doc>
+<use f='codebrowser/src/db.c' l='774' u='r' c='lastsaveCommand'/>
+<use f='codebrowser/src/rdb.c' l='1036' u='w' c='rdbSave'/>
+<use f='codebrowser/src/rdb.c' l='1674' u='w' c='backgroundSaveDoneHandlerDisk'/>
+<use f='codebrowser/src/server.c' l='1088' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1875' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='3004' u='r' c='genRedisInfoString'/>

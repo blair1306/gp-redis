@@ -1,0 +1,28 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='120' type='void dictRelease(dict * ht)'/>
+<def f='codebrowser/deps/hiredis/dict.c' l='238' ll='241' type='void dictRelease(dict * ht)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='294' u='c' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='300' u='c' c='__redisAsyncFree'/>
+<doc f='codebrowser/deps/hiredis/dict.c' l='237'>/* Clear &amp; Release the hash table */</doc>
+<dec f='codebrowser/src/dict.h' l='160' type='void dictRelease(dict * d)'/>
+<use f='codebrowser/src/config.c' l='1834' u='c' c='rewriteConfigReleaseState'/>
+<use f='codebrowser/src/config.c' l='1835' u='c' c='rewriteConfigReleaseState'/>
+<def f='codebrowser/src/dict.c' l='469' ll='474' type='void dictRelease(dict * d)'/>
+<doc f='codebrowser/src/dict.c' l='468'>/* Clear &amp; Release the hash table */</doc>
+<use f='codebrowser/src/expire.c' l='367' u='c' c='flushSlaveKeysWithExpireList'/>
+<use f='codebrowser/src/lazyfree.c' l='124' u='c' c='lazyfreeFreeDatabaseFromBioThread'/>
+<use f='codebrowser/src/lazyfree.c' l='125' u='c' c='lazyfreeFreeDatabaseFromBioThread'/>
+<use f='codebrowser/src/networking.c' l='808' u='c' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='817' u='c' c='freeClient'/>
+<use f='codebrowser/src/object.c' l='259' u='c' c='freeSetObject'/>
+<use f='codebrowser/src/object.c' l='274' u='c' c='freeZsetObject'/>
+<use f='codebrowser/src/object.c' l='289' u='c' c='freeHashObject'/>
+<use f='codebrowser/src/scripting.c' l='1067' u='c' c='scriptingRelease'/>
+<use f='codebrowser/src/sentinel.c' l='1241' u='c' c='releaseSentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1242' u='c' c='releaseSentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1400' u='c' c='sentinelResetMaster'/>
+<use f='codebrowser/src/sentinel.c' l='1403' u='c' c='sentinelResetMaster'/>
+<use f='codebrowser/src/sentinel.c' l='3161' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3725' u='c' c='sentinelGetLeader'/>
+<use f='codebrowser/src/t_set.c' l='747' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1166' u='c' c='zsetConvert'/>
+<use f='codebrowser/src/t_zset.c' l='2324' u='c' c='zunionInterGenericCommand'/>

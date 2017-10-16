@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='771' type='unsigned long'/>
+<offset>128</offset>
+<use f='codebrowser/src/lazyfree.c' l='40' u='r' c='lazyfreeGetFreeEffort'/>
+<use f='codebrowser/src/rdb.c' l='709' u='r' c='rdbSaveObject'/>
+<use f='codebrowser/src/t_zset.c' l='86' u='w' c='zslCreate'/>
+<use f='codebrowser/src/t_zset.c' l='161' u='r' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='185' u='w' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='207' u='w' c='zslDeleteNode'/>
+<use f='codebrowser/src/t_zset.c' l='1108' u='r' c='zsetLength'/>
+<use f='codebrowser/src/t_zset.c' l='1193' u='r' c='zsetConvertToZiplistIfNeeded'/>
+<use f='codebrowser/src/t_zset.c' l='1899' u='r' c='zuiLength'/>
+<use f='codebrowser/src/t_zset.c' l='2331' u='r' c='zunionInterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2729' u='r' c='zcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2737' u='r' c='zcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2807' u='r' c='zlexcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2815' u='r' c='zlexcountCommand'/>

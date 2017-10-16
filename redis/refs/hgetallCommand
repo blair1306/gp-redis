@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1942' type='void hgetallCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='213' u='r'/>
+<use f='codebrowser/src/server.c' l='213' u='r'/>
+<use f='codebrowser/src/server.c' l='213' u='r'/>
+<use f='codebrowser/src/server.c' l='213' u='r'/>
+<def f='codebrowser/src/t_hash.c' l='805' ll='807' type='void hgetallCommand(client * c)'/>

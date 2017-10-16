@@ -1,0 +1,9 @@
+<def f='codebrowser/src/bitops.c' l='447' ll='471' type='int getBitfieldTypeFromArgument(client * c, robj * o, int * sign, int * bits)'/>
+<use f='codebrowser/src/bitops.c' l='959' u='c' c='bitfieldCommand'/>
+<doc f='codebrowser/src/bitops.c' l='440'>/* This helper function for BITFIELD parses a bitfield type in the form
+ * &lt;sign&gt;&lt;bits&gt; where sign is &apos;u&apos; or &apos;i&apos; for unsigned and signed, and
+ * the bits is a value between 1 and 64. However 64 bits unsigned integers
+ * are reported as an error because of current limitations of Redis protocol
+ * to return unsigned integer values greater than INT64_MAX.
+ *
+ * On error C_ERR is returned and an error is sent to the client. */</doc>

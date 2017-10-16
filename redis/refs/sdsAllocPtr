@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='259' type='void * sdsAllocPtr(sds s)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='285' ll='287' type='void * sdsAllocPtr(sds s)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='283'>/* Return the pointer of the actual SDS allocation (normally SDS strings
+ * are referenced by the start of the string buffer). */</doc>
+<dec f='codebrowser/src/sds.h' l='259' type='void * sdsAllocPtr(sds s)'/>
+<use f='codebrowser/src/defrag.c' l='84' u='c' c='activeDefragSds'/>
+<use f='codebrowser/src/networking.c' l='42' u='c' c='sdsZmallocSize'/>
+<def f='codebrowser/src/sds.c' l='288' ll='290' type='void * sdsAllocPtr(sds s)'/>
+<doc f='codebrowser/src/sds.c' l='286'>/* Return the pointer of the actual SDS allocation (normally SDS strings
+ * are referenced by the start of the string buffer). */</doc>

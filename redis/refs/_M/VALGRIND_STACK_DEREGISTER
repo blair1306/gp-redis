@@ -1,0 +1,3 @@
+<dec f='include/valgrind/valgrind.h' l='7056'/>
+<doc f='include/valgrind/valgrind.h' l='7054'>/* Unmark the piece of memory associated with a stack id as being a
+   stack. */</doc>

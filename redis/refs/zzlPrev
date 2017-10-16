@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1575' type='void zzlPrev(unsigned char * zl, unsigned char ** eptr, unsigned char ** sptr)'/>
+<def f='codebrowser/src/t_zset.c' l='751' ll='766' type='void zzlPrev(unsigned char * zl, unsigned char ** eptr, unsigned char ** sptr)'/>
+<use f='codebrowser/src/t_zset.c' l='2427' u='c' c='zrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2559' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2591' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2911' u='c' c='genericZrangebylexCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2938' u='c' c='genericZrangebylexCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='749'>/* Move to the previous entry based on the values in eptr and sptr. Both are
+ * set to NULL when there is no next entry. */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/cluster.h' l='101' type='struct clusterNode *'/>
+<use f='codebrowser/src/cluster.c' l='723' u='r' c='clusterNodeAddFailureReport'/>
+<use f='codebrowser/src/cluster.c' l='731' u='w' c='clusterNodeAddFailureReport'/>
+<use f='codebrowser/src/cluster.c' l='779' u='r' c='clusterNodeDelFailureReport'/>
+<offset>0</offset>
+<doc f='codebrowser/src/cluster.h' l='101'>/* Node reporting the failure condition. */</doc>

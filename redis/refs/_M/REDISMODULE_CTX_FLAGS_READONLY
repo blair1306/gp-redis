@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/redismodule.h' l='72'/>
+<use f='codebrowser/src/module.c' l='1327' u='c'/>
+<doc f='codebrowser/src/redismodule.h' l='71'>/* The instance is read-only (usually meaning it&apos;s a slave as well) */</doc>

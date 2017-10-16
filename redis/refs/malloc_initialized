@@ -1,0 +1,16 @@
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='248' ll='253' macro='1' type='_Bool malloc_initialized()'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='285' u='c' c='malloc_init'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1153' u='c' c='malloc_init_hard_needed'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1169' u='c' c='malloc_init_hard_needed'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1734' u='c' c='ifree'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1755' u='c' c='isfree'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1790' u='c' c='je_realloc'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2169' u='c' c='je_rallocx'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2302' u='c' c='je_xallocx'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2348' u='c' c='je_sallocx'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2366' u='c' c='je_dallocx'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2402' u='c' c='je_sdallocx'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2477' u='c' c='je_malloc_usable_size'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2532' u='c' c='je_jemalloc_prefork'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2560' u='c' c='je_jemalloc_postfork_parent'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2579' u='c' c='je_jemalloc_postfork_child'/>

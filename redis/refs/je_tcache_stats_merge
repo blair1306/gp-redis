@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='142' macro='1' type='void je_tcache_stats_merge(tcache_t * tcache, arena_t * arena)'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='711' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='291' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/tcache.c' l='408' macro='1' type='void je_tcache_stats_merge(tcache_t * tcache, arena_t * arena)'/>
+<doc f='codebrowser/deps/jemalloc/src/tcache.c' l='406'>/* Caller must own arena-&gt;lock. */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='111' type='void lua_close(lua_State * L)'/>
+<def f='codebrowser/deps/lua/src/lstate.c' l='199' ll='213' macro='1' type='void lua_close(lua_State * L)'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='389' u='c' c='main'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='198' u='c' c='main'/>
+<use f='codebrowser/src/scripting.c' l='1068' u='c' c='scriptingRelease'/>

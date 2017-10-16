@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='77' type='void (*)(void *)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='458' u='r' c='redisProcessCallbacks'/>
+<use f='codebrowser/deps/hiredis/async.c' l='470' u='r' c='redisProcessCallbacks'/>
+<use f='codebrowser/deps/hiredis/async.c' l='482' u='r' c='redisProcessCallbacks'/>
+<offset>256</offset>
+<use f='codebrowser/deps/hiredis/read.c' l='49' u='r' c='__redisReaderSetError'/>
+<use f='codebrowser/deps/hiredis/read.c' l='50' u='r' c='__redisReaderSetError'/>
+<use f='codebrowser/deps/hiredis/read.c' l='438' u='r' c='redisReaderFree'/>
+<use f='codebrowser/deps/hiredis/read.c' l='439' u='r' c='redisReaderFree'/>

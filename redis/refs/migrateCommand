@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1958' type='void migrateCommand(client * c)'/>
+<def f='codebrowser/src/cluster.c' l='4872' ll='5144' type='void migrateCommand(client * c)'/>
+<use f='codebrowser/src/cluster.c' l='5334' u='r' c='getNodeByQuery'/>
+<doc f='codebrowser/src/cluster.c' l='4867'>/* MIGRATE host port key dbid timeout [COPY | REPLACE]
+ *
+ * On in the multiple keys form:
+ *
+ * MIGRATE host port &quot;&quot; dbid timeout [COPY | REPLACE] KEYS key1 key2 ... keyN */</doc>
+<use f='codebrowser/src/server.c' l='274' u='r'/>
+<use f='codebrowser/src/server.c' l='274' u='r'/>
+<use f='codebrowser/src/server.c' l='274' u='r'/>
+<use f='codebrowser/src/server.c' l='274' u='r'/>

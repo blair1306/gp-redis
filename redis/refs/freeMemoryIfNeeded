@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1601' type='int freeMemoryIfNeeded()'/>
+<doc f='codebrowser/src/server.h' l='1600'>/* Core functions */</doc>
+<use f='codebrowser/src/config.c' l='1133' u='c' c='configSetCommand'/>
+<def f='codebrowser/src/evict.c' l='377' ll='566' type='int freeMemoryIfNeeded()'/>
+<use f='codebrowser/src/scripting.c' l='505' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/server.c' l='2375' u='c' c='processCommand'/>

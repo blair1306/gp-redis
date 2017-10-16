@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='920' type='mstime_t'/>
+<offset>4416</offset>
+<doc f='codebrowser/src/server.h' l='920'>/* Time when we undo clients_paused */</doc>
+<use f='codebrowser/src/cluster.c' l='3148' u='w' c='resetManualFailover'/>
+<use f='codebrowser/src/networking.c' l='1966' u='r' c='pauseClients'/>
+<use f='codebrowser/src/networking.c' l='1967' u='w' c='pauseClients'/>
+<use f='codebrowser/src/networking.c' l='1975' u='r' c='clientsArePaused'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/src/server.h' l='948' type='long long'/>
+<use f='codebrowser/src/aof.c' l='1369' u='w' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/aof.c' l='1370' u='r' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/aof.c' l='1371' u='r' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/aof.c' l='1371' u='r' c='rewriteAppendOnlyFileBackground'/>
+<offset>8320</offset>
+<doc f='codebrowser/src/server.h' l='948'>/* Time needed to perform latest fork() */</doc>
+<use f='codebrowser/src/rdb.c' l='1080' u='w' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1081' u='r' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1082' u='r' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1082' u='r' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1955' u='w' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/rdb.c' l='1956' u='r' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/rdb.c' l='1957' u='r' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/rdb.c' l='1957' u='r' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/server.c' l='1771' u='w' c='resetServerStats'/>
+<use f='codebrowser/src/server.c' l='3116' u='r' c='genRedisInfoString'/>

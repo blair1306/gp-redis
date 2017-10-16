@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1803' type='unsigned long LFUGetTimeInMinutes()'/>
+<def f='codebrowser/src/evict.c' l='301' ll='303' type='unsigned long LFUGetTimeInMinutes()'/>
+<use f='codebrowser/src/evict.c' l='310' u='c' c='LFUTimeElapsed'/>
+<use f='codebrowser/src/evict.c' l='344' u='c' c='LFUDecrAndReturn'/>
+<doc f='codebrowser/src/evict.c' l='298'>/* Return the current time in minutes, just taking the least significant
+ * 16 bits. The returned time is suitable to be stored as LDT (last decrement
+ * time) for the LFU implementation. */</doc>
+<use f='codebrowser/src/object.c' l='51' u='c' c='createObject'/>
+<use f='codebrowser/src/object.c' l='93' u='c' c='createEmbeddedStringObject'/>

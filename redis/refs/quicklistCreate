@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/quicklist.h' l='118' type='quicklist * quicklistCreate()'/>
+<doc f='codebrowser/src/quicklist.h' l='117'>/* Prototypes */</doc>
+<use f='codebrowser/src/object.c' l='183' u='c' c='createQuicklistObject'/>
+<def f='codebrowser/src/quicklist.c' l='94' ll='104' type='quicklist * quicklistCreate()'/>
+<use f='codebrowser/src/quicklist.c' l='133' u='c' c='quicklistNew'/>
+<doc f='codebrowser/src/quicklist.c' l='92'>/* Create a new quicklist.
+ * Free with quicklistRelease(). */</doc>

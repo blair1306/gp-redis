@@ -1,0 +1,9 @@
+<def f='codebrowser/src/geo.c' l='127' ll='143' type='double extractUnitOrReply(client * c, robj * unit)'/>
+<use f='codebrowser/src/geo.c' l='165' u='c' c='extractDistanceOrReply'/>
+<use f='codebrowser/src/geo.c' l='791' u='c' c='geodistCommand'/>
+<doc f='codebrowser/src/geo.c' l='121'>/* Check that the unit argument matches one of the known units, and returns
+ * the conversion factor to meters (you need to divide meters by the conversion
+ * factor to convert to the right unit).
+ *
+ * If the unit is not valid, an error is reported to the client, and a value
+ * less than zero is returned. */</doc>

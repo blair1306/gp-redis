@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='724' type='sds'/>
+<use f='codebrowser/src/aof.c' l='604' u='w' c='createFakeClient'/>
+<offset>3648</offset>
+<doc f='codebrowser/src/server.h' l='724'>/* Cached peer ID. */</doc>
+<use f='codebrowser/src/networking.c' l='135' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='865' u='r' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='1480' u='r' c='getClientPeerId'/>
+<use f='codebrowser/src/networking.c' l='1482' u='w' c='getClientPeerId'/>
+<use f='codebrowser/src/networking.c' l='1484' u='r' c='getClientPeerId'/>
+<use f='codebrowser/src/replication.c' l='2145' u='r' c='replicationCacheMaster'/>
+<use f='codebrowser/src/replication.c' l='2146' u='r' c='replicationCacheMaster'/>
+<use f='codebrowser/src/replication.c' l='2147' u='w' c='replicationCacheMaster'/>

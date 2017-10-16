@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/ldebug.h' l='16'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='49' u='c'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='71' u='c'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='74' u='c'/>
+<use f='codebrowser/deps/lua/src/print.c' l='87' u='c'/>

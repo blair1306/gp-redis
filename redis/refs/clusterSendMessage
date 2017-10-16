@@ -1,0 +1,12 @@
+<def f='codebrowser/src/cluster.c' l='2154' ll='2166' type='void clusterSendMessage(clusterLink * link, unsigned char * msg, size_t msglen)'/>
+<use f='codebrowser/src/cluster.c' l='2185' u='c' c='clusterBroadcastMessage'/>
+<use f='codebrowser/src/cluster.c' l='2419' u='c' c='clusterSendPing'/>
+<use f='codebrowser/src/cluster.c' l='2495' u='c' c='clusterSendPublish'/>
+<use f='codebrowser/src/cluster.c' l='2530' u='c' c='clusterSendUpdate'/>
+<use f='codebrowser/src/cluster.c' l='2579' u='c' c='clusterSendFailoverAuth'/>
+<use f='codebrowser/src/cluster.c' l='2592' u='c' c='clusterSendMFStart'/>
+<doc f='codebrowser/src/cluster.c' l='2149'>/* Put stuff into the send buffer.
+ *
+ * It is guaranteed that this function will never have as a side effect
+ * the link to be invalidated, so it is safe to call this function
+ * from event handlers that will do stuff with the same link later. */</doc>

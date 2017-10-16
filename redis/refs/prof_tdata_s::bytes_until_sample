@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='213' type='uint64_t'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='448' u='r' c='je_prof_sample_accum_update'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='450' u='w' c='je_prof_sample_accum_update'/>
+<offset>960</offset>

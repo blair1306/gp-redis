@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1781' type='int ldbRemoveChild(pid_t pid)'/>
+<def f='codebrowser/src/scripting.c' l='1679' ll='1686' type='int ldbRemoveChild(pid_t pid)'/>
+<doc f='codebrowser/src/scripting.c' l='1676'>/* If the specified pid is among the list of children spawned for
+ * forked debugging sessions, it is removed from the children list.
+ * If the pid was found non-zero is returned. */</doc>
+<use f='codebrowser/src/server.c' l='1068' u='c' c='serverCron'/>

@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='2716' ll='2736' type='moduleType * moduleTypeLookupModuleByName(const char * name)'/>
+<use f='codebrowser/src/module.c' l='2868' u='c' c='RM_CreateDataType'/>
+<doc f='codebrowser/src/module.c' l='2713'>/* Search, in the list of exported data types of all the modules registered,
+ * a type with the same name as the one given. Returns the moduleType
+ * structure pointer if such a module is found, or NULL otherwise. */</doc>

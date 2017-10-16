@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1917' type='void zremrangebylexCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='185' u='r'/>
+<use f='codebrowser/src/server.c' l='185' u='r'/>
+<use f='codebrowser/src/server.c' l='185' u='r'/>
+<use f='codebrowser/src/server.c' l='185' u='r'/>
+<def f='codebrowser/src/t_zset.c' l='1755' ll='1757' type='void zremrangebylexCommand(client * c)'/>

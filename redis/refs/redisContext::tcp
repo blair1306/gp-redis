@@ -1,0 +1,24 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='155' type='struct (anonymous struct at /home/jon/workspace/redis/deps/hiredis/hiredis.h:151:5)'/>
+<offset>1408</offset>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='603' u='m' c='redisContextInit'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='604' u='m' c='redisContextInit'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='625' u='m' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='626' u='m' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='627' u='m' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='628' u='m' c='redisFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='658' u='m' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='658' u='m' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='659' u='m' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/net.c' l='278' u='m' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='287' u='m' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='288' u='m' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='289' u='m' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='291' u='m' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='313' u='m' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='314' u='m' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='315' u='m' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='316' u='m' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='317' u='m' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='330' u='m' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='345' u='m' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='348' u='m' c='_redisContextConnectTcp'/>

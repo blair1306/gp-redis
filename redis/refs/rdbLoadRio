@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/rdb.h' l='149' type='int rdbLoadRio(rio * rdb, rdbSaveInfo * rsi)'/>
+<use f='codebrowser/src/aof.c' l='673' u='c' c='loadAppendOnlyFile'/>
+<def f='codebrowser/src/rdb.c' l='1491' ll='1644' type='int rdbLoadRio(rio * rdb, rdbSaveInfo * rsi)'/>
+<use f='codebrowser/src/rdb.c' l='1661' u='c' c='rdbLoad'/>
+<doc f='codebrowser/src/rdb.c' l='1489'>/* Load an RDB file from the rio stream &apos;rdb&apos;. On success C_OK is returned,
+ * otherwise C_ERR is returned and &apos;errno&apos; is set accordingly. */</doc>

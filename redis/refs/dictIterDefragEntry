@@ -1,0 +1,6 @@
+<def f='codebrowser/src/defrag.c' l='137' ll='164' type='int dictIterDefragEntry(dictIterator * iter)'/>
+<use f='codebrowser/src/defrag.c' l='342' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='381' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='402' u='c' c='defragKey'/>
+<doc f='codebrowser/src/defrag.c' l='135'>/* Defrag helper for dictEntries to be used during dict iteration (called on
+ * each step). Teturns a stat of how many pointers were moved. */</doc>

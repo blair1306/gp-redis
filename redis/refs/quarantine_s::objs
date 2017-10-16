@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/quarantine.h' l='25' type='quarantine_obj_t [1]'/>
+<offset>256</offset>
+<use f='codebrowser/deps/jemalloc/src/quarantine.c' l='77' u='r' c='quarantine_grow'/>
+<use f='codebrowser/deps/jemalloc/src/quarantine.c' l='77' u='a' c='quarantine_grow'/>
+<use f='codebrowser/deps/jemalloc/src/quarantine.c' l='85' u='r' c='quarantine_grow'/>
+<use f='codebrowser/deps/jemalloc/src/quarantine.c' l='85' u='a' c='quarantine_grow'/>
+<use f='codebrowser/deps/jemalloc/src/quarantine.c' l='87' u='a' c='quarantine_grow'/>
+<use f='codebrowser/deps/jemalloc/src/quarantine.c' l='87' u='r' c='quarantine_grow'/>
+<use f='codebrowser/deps/jemalloc/src/quarantine.c' l='99' u='a' c='quarantine_drain_one'/>
+<use f='codebrowser/deps/jemalloc/src/quarantine.c' l='147' u='a' c='je_quarantine'/>

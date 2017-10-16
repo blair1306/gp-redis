@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/redismodule.h' l='27'/>
+<use f='codebrowser/src/module.c' l='350' u='c'/>
+<use f='codebrowser/src/module.c' l='1408' u='c'/>
+<use f='codebrowser/src/module.c' l='1599' u='c'/>

@@ -1,0 +1,51 @@
+<def f='codebrowser/src/server.h' l='675' ll='729'/>
+<size>16856</size>
+<doc f='codebrowser/src/server.h' l='673'>/* With multiplexing we need to take per-client state.
+ * Clients are taken in a linked list. */</doc>
+<mbr r='client::id' o='0' t='uint64_t'/>
+<mbr r='client::fd' o='64' t='int'/>
+<mbr r='client::db' o='128' t='redisDb *'/>
+<mbr r='client::name' o='192' t='robj *'/>
+<mbr r='client::querybuf' o='256' t='sds'/>
+<mbr r='client::pending_querybuf' o='320' t='sds'/>
+<mbr r='client::querybuf_peak' o='384' t='size_t'/>
+<mbr r='client::argc' o='448' t='int'/>
+<mbr r='client::argv' o='512' t='robj **'/>
+<mbr r='client::cmd' o='576' t='struct redisCommand *'/>
+<mbr r='client::lastcmd' o='640' t='struct redisCommand *'/>
+<mbr r='client::reqtype' o='704' t='int'/>
+<mbr r='client::multibulklen' o='736' t='int'/>
+<mbr r='client::bulklen' o='768' t='long'/>
+<mbr r='client::reply' o='832' t='list *'/>
+<mbr r='client::reply_bytes' o='896' t='unsigned long long'/>
+<mbr r='client::sentlen' o='960' t='size_t'/>
+<mbr r='client::ctime' o='1024' t='time_t'/>
+<mbr r='client::lastinteraction' o='1088' t='time_t'/>
+<mbr r='client::obuf_soft_limit_reached_time' o='1152' t='time_t'/>
+<mbr r='client::flags' o='1216' t='int'/>
+<mbr r='client::authenticated' o='1248' t='int'/>
+<mbr r='client::replstate' o='1280' t='int'/>
+<mbr r='client::repl_put_online_on_ack' o='1312' t='int'/>
+<mbr r='client::repldbfd' o='1344' t='int'/>
+<mbr r='client::repldboff' o='1408' t='off_t'/>
+<mbr r='client::repldbsize' o='1472' t='off_t'/>
+<mbr r='client::replpreamble' o='1536' t='sds'/>
+<mbr r='client::read_reploff' o='1600' t='long long'/>
+<mbr r='client::reploff' o='1664' t='long long'/>
+<mbr r='client::repl_ack_off' o='1728' t='long long'/>
+<mbr r='client::repl_ack_time' o='1792' t='long long'/>
+<mbr r='client::psync_initial_offset' o='1856' t='long long'/>
+<mbr r='client::replid' o='1920' t='char [41]'/>
+<mbr r='client::slave_listening_port' o='2272' t='int'/>
+<mbr r='client::slave_ip' o='2304' t='char [46]'/>
+<mbr r='client::slave_capa' o='2688' t='int'/>
+<mbr r='client::mstate' o='2752' t='multiState'/>
+<mbr r='client::btype' o='2944' t='int'/>
+<mbr r='client::bpop' o='3008' t='blockingState'/>
+<mbr r='client::woff' o='3392' t='long long'/>
+<mbr r='client::watched_keys' o='3456' t='list *'/>
+<mbr r='client::pubsub_channels' o='3520' t='dict *'/>
+<mbr r='client::pubsub_patterns' o='3584' t='list *'/>
+<mbr r='client::peerid' o='3648' t='sds'/>
+<mbr r='client::bufpos' o='3712' t='int'/>
+<mbr r='client::buf' o='3744' t='char [16384]'/>

@@ -1,0 +1,8 @@
+<def f='codebrowser/src/module.c' l='1438' ll='1445' type='int RM_DeleteKey(RedisModuleKey * key)'/>
+<use f='codebrowser/src/module.c' l='1488' u='c' c='RM_StringSet'/>
+<use f='codebrowser/src/module.c' l='2903' u='c' c='RM_ModuleTypeSetValue'/>
+<use f='codebrowser/src/module.c' l='3942' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1434'>/* If the key is open for writing, remove it, and setup the key to
+ * accept new writes as an empty key (that will be created on demand).
+ * On success REDISMODULE_OK is returned. If the key is not open for
+ * writing REDISMODULE_ERR is returned. */</doc>

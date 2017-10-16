@@ -1,0 +1,4 @@
+<def f='codebrowser/src/t_hash.c' l='766' ll='795' type='void genericHgetallCommand(client * c, int flags)'/>
+<use f='codebrowser/src/t_hash.c' l='798' u='c' c='hkeysCommand'/>
+<use f='codebrowser/src/t_hash.c' l='802' u='c' c='hvalsCommand'/>
+<use f='codebrowser/src/t_hash.c' l='806' u='c' c='hgetallCommand'/>

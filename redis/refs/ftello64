@@ -1,0 +1,6 @@
+<use f='codebrowser/src/aof.c' l='692' u='c' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='754' u='c' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/redis-check-aof.c' l='53' u='c' c='readLong'/>
+<use f='codebrowser/src/redis-check-aof.c' l='67' u='c' c='readBytes'/>
+<use f='codebrowser/src/redis-check-aof.c' l='107' u='c' c='process'/>
+<use f='codebrowser/src/rio.c' l='132' u='c' c='rioFileTell'/>

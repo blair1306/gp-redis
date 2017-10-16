@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='7'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='6'>/* Maximum number of regions in one run. */</doc>

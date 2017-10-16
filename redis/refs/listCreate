@@ -1,0 +1,44 @@
+<dec f='codebrowser/src/adlist.h' l='73' type='list * listCreate()'/>
+<def f='codebrowser/src/adlist.c' l='41' ll='53' type='list * listCreate()'/>
+<use f='codebrowser/src/adlist.c' l='256' u='c' c='listDup'/>
+<doc f='codebrowser/src/adlist.c' l='36'>/* Create a new list. The created list can be freed with
+ * AlFreeList(), but private value of every node need to be freed
+ * by the user before to call AlFreeList().
+ *
+ * On error, NULL is returned. Otherwise the pointer to the new list. */</doc>
+<doc f='codebrowser/src/adlist.h' l='72'>/* Prototypes */</doc>
+<use f='codebrowser/src/aof.c' l='74' u='c' c='aofRewriteBufferReset'/>
+<use f='codebrowser/src/aof.c' l='600' u='c' c='createFakeClient'/>
+<use f='codebrowser/src/aof.c' l='603' u='c' c='createFakeClient'/>
+<use f='codebrowser/src/bio.c' l='107' u='c' c='bioInit'/>
+<use f='codebrowser/src/cluster.c' l='693' u='c' c='createClusterNode'/>
+<use f='codebrowser/src/config.c' l='1474' u='c' c='rewriteConfigAddLineNumberToOption'/>
+<use f='codebrowser/src/db.c' l='587' u='c' c='scanGenericCommand'/>
+<use f='codebrowser/src/module.c' l='661' u='c' c='RM_SetModuleAttribs'/>
+<use f='codebrowser/src/module.c' l='3682' u='c' c='moduleInitModulesSystem'/>
+<use f='codebrowser/src/module.c' l='3684' u='c' c='moduleInitModulesSystem'/>
+<use f='codebrowser/src/multi.c' l='233' u='c' c='watchForKey'/>
+<use f='codebrowser/src/networking.c' l='120' u='c' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='132' u='c' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='134' u='c' c='createClient'/>
+<use f='codebrowser/src/pubsub.c' l='70' u='c' c='pubsubSubscribeChannel'/>
+<use f='codebrowser/src/redis-benchmark.c' l='675' u='c' c='main'/>
+<use f='codebrowser/src/replication.c' l='2285' u='c' c='replicationScriptCacheInit'/>
+<use f='codebrowser/src/replication.c' l='2302' u='c' c='replicationScriptCacheFlush'/>
+<use f='codebrowser/src/scripting.c' l='1498' u='c' c='ldbInit'/>
+<use f='codebrowser/src/scripting.c' l='1500' u='c' c='ldbInit'/>
+<use f='codebrowser/src/scripting.c' l='1706' u='c' c='ldbKillForkedSessions'/>
+<use f='codebrowser/src/sentinel.c' l='467' u='c' c='initSentinel'/>
+<use f='codebrowser/src/server.c' l='1803' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1804' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1805' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1806' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1807' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1809' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1810' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1811' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1862' u='c' c='initServer'/>
+<use f='codebrowser/src/slowlog.c' l='115' u='c' c='slowlogInit'/>
+<use f='codebrowser/src/sort.c' l='213' u='c' c='sortCommand'/>
+<use f='codebrowser/src/t_list.c' l='646' u='c' c='blockForKeys'/>
+<use f='codebrowser/src/t_list.c' l='807' u='c' c='handleClientsBlockedOnLists'/>

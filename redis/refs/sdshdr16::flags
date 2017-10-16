@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='59' type='unsigned char'/>
+<offset>32</offset>
+<doc f='codebrowser/deps/hiredis/sds.h' l='59'>/* 3 lsb of type, 5 unused bits */</doc>
+<dec f='codebrowser/src/sds.h' l='59' type='unsigned char'/>
+<offset>32</offset>
+<doc f='codebrowser/src/sds.h' l='59'>/* 3 lsb of type, 5 unused bits */</doc>

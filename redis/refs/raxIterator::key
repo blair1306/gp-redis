@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/rax.h' l='133' type='unsigned char *'/>
+<offset>128</offset>
+<doc f='codebrowser/src/rax.h' l='133'>/* The current string. */</doc>
+<use f='codebrowser/src/db.c' l='1406' u='r' c='getKeysInSlot'/>
+<use f='codebrowser/src/db.c' l='1406' u='r' c='getKeysInSlot'/>
+<use f='codebrowser/src/db.c' l='1407' u='r' c='getKeysInSlot'/>
+<use f='codebrowser/src/db.c' l='1427' u='r' c='delKeysInSlot'/>
+<use f='codebrowser/src/rax.c' l='1126' u='w' c='raxStart'/>
+<use f='codebrowser/src/rax.c' l='1137' u='r' c='raxIteratorAddChars'/>
+<use f='codebrowser/src/rax.c' l='1138' u='r' c='raxIteratorAddChars'/>
+<use f='codebrowser/src/rax.c' l='1140' u='w' c='raxIteratorAddChars'/>
+<use f='codebrowser/src/rax.c' l='1141' u='r' c='raxIteratorAddChars'/>
+<use f='codebrowser/src/rax.c' l='1142' u='w' c='raxIteratorAddChars'/>
+<use f='codebrowser/src/rax.c' l='1146' u='r' c='raxIteratorAddChars'/>
+<use f='codebrowser/src/rax.c' l='1151' u='r' c='raxIteratorAddChars'/>
+<use f='codebrowser/src/rax.c' l='1231' u='r' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1318' u='r' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1626' u='r' c='raxCompare'/>
+<use f='codebrowser/src/rax.c' l='1646' u='r' c='raxStop'/>
+<use f='codebrowser/src/rax.c' l='1646' u='r' c='raxStop'/>

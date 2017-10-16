@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1630' type='void updateCachedTime()'/>
+<use f='codebrowser/src/rdb.c' l='1481' u='c' c='rdbLoadProgressCallback'/>
+<def f='codebrowser/src/server.c' l='927' ll='931' type='void updateCachedTime()'/>
+<use f='codebrowser/src/server.c' l='963' u='c' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1891' u='c' c='initServer'/>
+<doc f='codebrowser/src/server.c' l='923'>/* We take a cached value of the unix time in the global state because with
+ * virtual memory and aging there is to store the current time in objects at
+ * every object access, and accuracy is not needed. To access a global var is
+ * a lot faster than calling time(NULL) */</doc>

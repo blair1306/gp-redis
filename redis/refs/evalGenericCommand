@@ -1,0 +1,4 @@
+<def f='codebrowser/src/scripting.c' l='1206' ll='1398' type='void evalGenericCommand(client * c, int evalsha)'/>
+<use f='codebrowser/src/scripting.c' l='1402' u='c' c='evalCommand'/>
+<use f='codebrowser/src/scripting.c' l='1417' u='c' c='evalShaCommand'/>
+<use f='codebrowser/src/scripting.c' l='1713' u='c' c='evalGenericCommandWithDebugging'/>

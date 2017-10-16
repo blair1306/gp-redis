@@ -1,0 +1,21 @@
+<dec f='codebrowser/src/server.h' l='1346' type='void addReplyString(client * c, const char * s, size_t len)'/>
+<use f='codebrowser/src/module.c' l='3514' u='c' c='moduleHandleBlockedClients'/>
+<def f='codebrowser/src/networking.c' l='369' ll='373' type='void addReplyString(client * c, const char * s, size_t len)'/>
+<use f='codebrowser/src/networking.c' l='376' u='c' c='addReplyErrorLength'/>
+<use f='codebrowser/src/networking.c' l='377' u='c' c='addReplyErrorLength'/>
+<use f='codebrowser/src/networking.c' l='378' u='c' c='addReplyErrorLength'/>
+<use f='codebrowser/src/networking.c' l='402' u='c' c='addReplyStatusLength'/>
+<use f='codebrowser/src/networking.c' l='403' u='c' c='addReplyStatusLength'/>
+<use f='codebrowser/src/networking.c' l='404' u='c' c='addReplyStatusLength'/>
+<use f='codebrowser/src/networking.c' l='469' u='c' c='addReplyDouble'/>
+<use f='codebrowser/src/networking.c' l='503' u='c' c='addReplyLongLongWithPrefix'/>
+<use f='codebrowser/src/networking.c' l='558' u='c' c='addReplyBulkCBuffer'/>
+<doc f='codebrowser/src/networking.c' l='361'>/* This low level function just adds whatever protocol you send it to the
+ * client buffer, trying the static buffer initially, and using the string
+ * of objects if not possible.
+ *
+ * It is efficient because does not create an SDS object nor an Redis object
+ * if not needed. The object will only be created by calling
+ * _addReplyStringToList() if we fail to extend the existing tail object
+ * in the list of objects. */</doc>
+<use f='codebrowser/src/replication.c' l='299' u='c' c='replicationFeedSlavesFromMasterStream'/>

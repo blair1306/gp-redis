@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/slowlog.h' l='49' type='void slowlogCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='284' u='r'/>
+<use f='codebrowser/src/server.c' l='284' u='r'/>
+<use f='codebrowser/src/server.c' l='284' u='r'/>
+<use f='codebrowser/src/server.c' l='284' u='r'/>
+<doc f='codebrowser/src/slowlog.h' l='48'>/* Exported commands */</doc>
+<def f='codebrowser/src/slowlog.c' l='142' ll='183' type='void slowlogCommand(client * c)'/>
+<doc f='codebrowser/src/slowlog.c' l='140'>/* The SLOWLOG command. Implements all the subcommands needed to handle the
+ * Redis slow log. */</doc>

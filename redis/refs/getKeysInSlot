@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1735' type='unsigned int getKeysInSlot(unsigned int hashslot, robj ** keys, unsigned int count)'/>
+<use f='codebrowser/src/cluster.c' l='4392' u='c' c='clusterCommand'/>
+<def f='codebrowser/src/db.c' l='1396' ll='1411' type='unsigned int getKeysInSlot(unsigned int hashslot, robj ** keys, unsigned int count)'/>
+<doc f='codebrowser/src/db.c' l='1393'>/* Pupulate the specified array of objects with keys in the specified slot.
+ * New objects are returned to represent keys, it&apos;s up to the caller to
+ * decrement the reference count to release the keys names. */</doc>

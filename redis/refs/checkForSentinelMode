@@ -1,0 +1,4 @@
+<def f='codebrowser/src/server.c' l='3513' ll='3520' type='int checkForSentinelMode(int argc, char ** argv)'/>
+<use f='codebrowser/src/server.c' l='3716' u='c' c='main'/>
+<doc f='codebrowser/src/server.c' l='3511'>/* Returns 1 if there is --sentinel among the arguments or if
+ * argv[0] contains &quot;redis-sentinel&quot;. */</doc>

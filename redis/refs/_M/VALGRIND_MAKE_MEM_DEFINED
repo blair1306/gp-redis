@@ -1,0 +1,4 @@
+<dec f='include/valgrind/memcheck.h' l='126'/>
+<use f='codebrowser/deps/jemalloc/src/valgrind.c' l='26' u='c'/>
+<doc f='include/valgrind/memcheck.h' l='124'>/* Similarly, mark memory at _qzz_addr as addressable and defined
+   for _qzz_len bytes. */</doc>

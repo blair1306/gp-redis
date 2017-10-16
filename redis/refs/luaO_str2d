@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/lobject.h' l='373' type='int luaO_str2d(const char * s, lua_Number * result)'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='185' u='c' c='trydecpoint'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='205' u='c' c='read_numeral'/>
+<def f='codebrowser/deps/lua/src/lobject.c' l='90' ll='100' type='int luaO_str2d(const char * s, lua_Number * result)'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='38' u='c' c='luaV_tonumber'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='393' type='extent_tree_t'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3067' u='a' c='je_arena_new'/>
+<offset>6784</offset>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='344' u='a' c='chunk_alloc_core'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='595' u='a' c='je_chunk_dalloc_arena'/>

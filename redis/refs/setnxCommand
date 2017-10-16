@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1822' type='void setnxCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='131' u='r'/>
+<use f='codebrowser/src/server.c' l='131' u='r'/>
+<use f='codebrowser/src/server.c' l='131' u='r'/>
+<use f='codebrowser/src/server.c' l='131' u='r'/>
+<def f='codebrowser/src/t_string.c' l='142' ll='145' type='void setnxCommand(client * c)'/>

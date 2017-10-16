@@ -1,0 +1,9 @@
+<def f='codebrowser/src/quicklist.h' l='62' ll='65'/>
+<size>4</size>
+<doc f='codebrowser/src/quicklist.h' l='57'>/* quicklistLZF is a 4+N byte struct holding &apos;sz&apos; followed by &apos;compressed&apos;.
+ * &apos;sz&apos; is byte length of &apos;compressed&apos; field.
+ * &apos;compressed&apos; is LZF data with total (compressed) length &apos;sz&apos;
+ * NOTE: uncompressed length is stored in quicklistNode-&gt;sz.
+ * When quicklistNode-&gt;zl is compressed, node-&gt;zl points to a quicklistLZF */</doc>
+<mbr r='quicklistLZF::sz' o='0' t='unsigned int'/>
+<mbr r='quicklistLZF::compressed' o='32' t='char []'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/src/module.c' l='1911' ll='1913' type='int RM_ZsetLastInLexRange(RedisModuleKey * key, robj * min, robj * max)'/>
+<use f='codebrowser/src/module.c' l='3956' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1909'>/* Exactly like RedisModule_ZsetFirstInLexRange() but the last element of
+ * the range is selected for the start of the iteration instead. */</doc>

@@ -1,0 +1,27 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='258' type='size_t sdsAllocSize(sds s)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='278' ll='281' type='size_t sdsAllocSize(sds s)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='271'>/* Return the total size of the allocation of the specifed sds string,
+ * including:
+ * 1) The sds header before the pointer.
+ * 2) The string.
+ * 3) The free buffer at the end if any.
+ * 4) The implicit null term.
+ */</doc>
+<dec f='codebrowser/src/sds.h' l='258' type='size_t sdsAllocSize(sds s)'/>
+<use f='codebrowser/src/object.c' l='711' u='c' c='objectComputeSize'/>
+<use f='codebrowser/src/object.c' l='739' u='c' c='objectComputeSize'/>
+<use f='codebrowser/src/object.c' l='759' u='c' c='objectComputeSize'/>
+<use f='codebrowser/src/object.c' l='778' u='c' c='objectComputeSize'/>
+<use f='codebrowser/src/object.c' l='778' u='c' c='objectComputeSize'/>
+<use f='codebrowser/src/object.c' l='839' u='c' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='857' u='c' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='1073' u='c' c='memoryCommand'/>
+<def f='codebrowser/src/sds.c' l='281' ll='284' type='size_t sdsAllocSize(sds s)'/>
+<doc f='codebrowser/src/sds.c' l='274'>/* Return the total size of the allocation of the specifed sds string,
+ * including:
+ * 1) The sds header before the pointer.
+ * 2) The string.
+ * 3) The free buffer at the end if any.
+ * 4) The implicit null term.
+ */</doc>
+<use f='codebrowser/src/server.c' l='815' u='c' c='clientsCronResizeQueryBuffer'/>

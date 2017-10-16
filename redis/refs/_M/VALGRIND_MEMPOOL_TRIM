@@ -1,0 +1,2 @@
+<dec f='include/valgrind/valgrind.h' l='7026'/>
+<doc f='include/valgrind/valgrind.h' l='7025'>/* Disassociate any pieces outside a particular range. */</doc>

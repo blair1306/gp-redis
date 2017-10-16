@@ -1,0 +1,4 @@
+<def f='codebrowser/src/bio.c' l='79' ll='84'/>
+<size>32</size>
+<doc f='codebrowser/src/bio.c' l='77'>/* This structure represents a background Job. It is only used locally to this
+ * file as the API does not expose the internals at all. */</doc>

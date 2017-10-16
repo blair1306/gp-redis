@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1131' type='int'/>
+<offset>20928</offset>
+<use f='codebrowser/src/sort.c' l='156' u='r' c='sortCompare'/>
+<use f='codebrowser/src/sort.c' l='495' u='w' c='sortCommand'/>

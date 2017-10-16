@@ -1,0 +1,10 @@
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='174' ll='189' macro='1' type='int prof_tdata_comp(const prof_tdata_t * a, const prof_tdata_t * b)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='192' u='c' c='tdata_tree_next'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='192' u='c' c='tdata_tree_prev'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='192' u='c' c='tdata_tree_search'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='192' u='c' c='tdata_tree_nsearch'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='192' u='c' c='tdata_tree_psearch'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='192' u='c' c='tdata_tree_insert'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='192' u='c' c='tdata_tree_remove'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='192' u='c' c='tdata_tree_iter_start'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='192' u='c' c='tdata_tree_reverse_iter_start'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/src/t_zset.c' l='596' ll='611' type='int zslIsInLexRange(zskiplist * zsl, zlexrangespec * range)'/>
+<use f='codebrowser/src/t_zset.c' l='620' u='c' c='zslFirstInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='646' u='c' c='zslLastInLexRange'/>
+<doc f='codebrowser/src/t_zset.c' l='595'>/* Returns if there is a part of the zset is in the lex range. */</doc>

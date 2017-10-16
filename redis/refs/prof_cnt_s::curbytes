@@ -1,0 +1,20 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='76' type='uint64_t'/>
+<offset>64</offset>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='233' u='w' c='je_prof_malloc_sample_object'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='248' u='r' c='je_prof_free_sampled_object'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='250' u='w' c='je_prof_free_sampled_object'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='645' u='r' c='prof_tctx_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1052' u='w' c='prof_tctx_merge_tdata'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1052' u='r' c='prof_tctx_merge_tdata'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1072' u='w' c='prof_tctx_merge_gctx'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1072' u='r' c='prof_tctx_merge_gctx'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1115' u='r' c='prof_tctx_dump_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1249' u='w' c='prof_tdata_merge_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1249' u='r' c='prof_tdata_merge_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1272' u='r' c='prof_tdata_dump_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1293' u='r' c='je_prof_dump_header'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1322' u='r' c='prof_dump_gctx'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1344' u='r' c='prof_dump_gctx'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1434' u='r' c='prof_leakcheck'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1437' u='r' c='prof_leakcheck'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1437' u='r' c='prof_leakcheck'/>

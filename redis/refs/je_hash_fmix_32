@@ -1,0 +1,6 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='63' macro='1' type='uint32_t je_hash_fmix_32(uint32_t h)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='134' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='229' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='230' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='231' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='232' macro='1' u='c'/>

@@ -1,0 +1,78 @@
+<dec f='codebrowser/src/server.h' l='1691' type='void notifyKeyspaceEvent(int type, char * event, robj * key, int dbid)'/>
+<doc f='codebrowser/src/server.h' l='1690'>/* Keyspace events notification */</doc>
+<use f='codebrowser/src/bitops.c' l='558' u='c' c='setbitCommand'/>
+<use f='codebrowser/src/bitops.c' l='758' u='c' c='bitopCommand'/>
+<use f='codebrowser/src/bitops.c' l='762' u='c' c='bitopCommand'/>
+<use f='codebrowser/src/bitops.c' l='1121' u='c' c='bitfieldCommand'/>
+<use f='codebrowser/src/db.c' l='437' u='c' c='delGenericCommand'/>
+<use f='codebrowser/src/db.c' l='863' u='c' c='renameGenericCommand'/>
+<use f='codebrowser/src/db.c' l='865' u='c' c='renameGenericCommand'/>
+<use f='codebrowser/src/db.c' l='1118' u='c' c='expireIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='518' u='c' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/expire.c' l='65' u='c' c='activeExpireCycleTryExpire'/>
+<use f='codebrowser/src/expire.c' l='417' u='c' c='expireGenericCommand'/>
+<use f='codebrowser/src/expire.c' l='424' u='c' c='expireGenericCommand'/>
+<use f='codebrowser/src/geo.c' l='662' u='c' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='667' u='c' c='georadiusGeneric'/>
+<use f='codebrowser/src/hyperloglog.c' l='1181' u='c' c='pfaddCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1334' u='c' c='pfmergeCommand'/>
+<def f='codebrowser/src/notify.c' l='95' ll='130' type='void notifyKeyspaceEvent(int type, char * event, robj * key, int dbid)'/>
+<doc f='codebrowser/src/notify.c' l='88'>/* The API provided to the rest of the Redis core is a simple function:
+ *
+ * notifyKeyspaceEvent(char *event, robj *key, int dbid);
+ *
+ * &apos;event&apos; is a C string representing the event name.
+ * &apos;key&apos; is a Redis object representing the key name.
+ * &apos;dbid&apos; is the database ID where the key lives.  */</doc>
+<use f='codebrowser/src/sort.c' l='569' u='c' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='574' u='c' c='sortCommand'/>
+<use f='codebrowser/src/t_hash.c' l='525' u='c' c='hsetnxCommand'/>
+<use f='codebrowser/src/t_hash.c' l='555' u='c' c='hsetCommand'/>
+<use f='codebrowser/src/t_hash.c' l='590' u='c' c='hincrbyCommand'/>
+<use f='codebrowser/src/t_hash.c' l='625' u='c' c='hincrbyfloatCommand'/>
+<use f='codebrowser/src/t_hash.c' l='721' u='c' c='hdelCommand'/>
+<use f='codebrowser/src/t_hash.c' l='723' u='c' c='hdelCommand'/>
+<use f='codebrowser/src/t_list.c' l='221' u='c' c='pushGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='251' u='c' c='pushxGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='296' u='c' c='linsertCommand'/>
+<use f='codebrowser/src/t_list.c' l='359' u='c' c='lsetCommand'/>
+<use f='codebrowser/src/t_list.c' l='379' u='c' c='popGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='381' u='c' c='popGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='480' u='c' c='ltrimCommand'/>
+<use f='codebrowser/src/t_list.c' l='483' u='c' c='ltrimCommand'/>
+<use f='codebrowser/src/t_list.c' l='523' u='c' c='lremCommand'/>
+<use f='codebrowser/src/t_list.c' l='528' u='c' c='lremCommand'/>
+<use f='codebrowser/src/t_list.c' l='560' u='c' c='rpoplpushHandlePush'/>
+<use f='codebrowser/src/t_list.c' l='590' u='c' c='rpoplpushCommand'/>
+<use f='codebrowser/src/t_list.c' l='593' u='c' c='rpoplpushCommand'/>
+<use f='codebrowser/src/t_list.c' l='905' u='c' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='909' u='c' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='284' u='c' c='saddCommand'/>
+<use f='codebrowser/src/t_set.c' l='309' u='c' c='sremCommand'/>
+<use f='codebrowser/src/t_set.c' l='311' u='c' c='sremCommand'/>
+<use f='codebrowser/src/t_set.c' l='347' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='352' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='368' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='431' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='443' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='586' u='c' c='spopCommand'/>
+<use f='codebrowser/src/t_set.c' l='600' u='c' c='spopCommand'/>
+<use f='codebrowser/src/t_set.c' l='898' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='904' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1071' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1078' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='89' u='c' c='setGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='90' u='c' c='setGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='180' u='c' c='getsetCommand'/>
+<use f='codebrowser/src/t_string.c' l='237' u='c' c='setrangeCommand'/>
+<use f='codebrowser/src/t_string.c' l='327' u='c' c='msetGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='372' u='c' c='incrDecrCommand'/>
+<use f='codebrowser/src/t_string.c' l='422' u='c' c='incrbyfloatCommand'/>
+<use f='codebrowser/src/t_string.c' l='463' u='c' c='appendCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1603' u='c' c='zaddGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1634' u='c' c='zremCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1636' u='c' c='zremCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1736' u='c' c='zremrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1738' u='c' c='zremrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2336' u='c' c='zunionInterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2345' u='c' c='zunionInterGenericCommand'/>

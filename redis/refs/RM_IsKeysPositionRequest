@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='499' ll='501' type='int RM_IsKeysPositionRequest(RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/module.c' l='3963' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='496'>/* Return non-zero if a module command, that was declared with the
+ * flag &quot;getkeys-api&quot;, is called in a special way to get the keys positions
+ * and not to get executed. Otherwise zero is returned. */</doc>

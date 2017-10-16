@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/dict.h' l='89' type='dict *'/>
+<offset>0</offset>
+<use f='codebrowser/src/defrag.c' l='154' u='r' c='dictIterDefragEntry'/>
+<use f='codebrowser/src/dict.c' l='546' u='w' c='dictGetIterator'/>
+<use f='codebrowser/src/dict.c' l='566' u='r' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='569' u='r' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='571' u='r' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='575' u='r' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='578' u='r' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='601' u='r' c='dictReleaseIterator'/>
+<use f='codebrowser/src/dict.c' l='603' u='r' c='dictReleaseIterator'/>

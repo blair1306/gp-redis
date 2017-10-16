@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='75' macro='1' type='_Bool je_ckh_remove(tsd_t * tsd, ckh_t * ckh, const void * searchkey, void ** key, void ** data)'/>
+<def f='codebrowser/deps/jemalloc/src/ckh.c' l='483' macro='1' type='_Bool je_ckh_remove(tsd_t * tsd, ckh_t * ckh, const void * searchkey, void ** key, void ** data)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='592' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='650' macro='1' u='c'/>

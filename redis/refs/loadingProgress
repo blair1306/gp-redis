@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1511' type='void loadingProgress(off_t pos)'/>
+<use f='codebrowser/src/aof.c' l='692' u='c' c='loadAppendOnlyFile'/>
+<def f='codebrowser/src/rdb.c' l='1459' ll='1463' type='void loadingProgress(off_t pos)'/>
+<use f='codebrowser/src/rdb.c' l='1484' u='c' c='rdbLoadProgressCallback'/>
+<doc f='codebrowser/src/rdb.c' l='1458'>/* Refresh the loading progress info */</doc>

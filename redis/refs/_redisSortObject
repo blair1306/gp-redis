@@ -1,0 +1,4 @@
+<def f='codebrowser/src/server.h' l='1232' ll='1238'/>
+<size>16</size>
+<mbr r='_redisSortObject::obj' o='0' t='robj *'/>
+<mbr r='_redisSortObject::u' o='64' t='union (anonymous union at /home/jon/workspace/redis/deps/lua/src/../../../src/server.h:1234:5)'/>

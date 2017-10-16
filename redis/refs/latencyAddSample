@@ -1,0 +1,23 @@
+<dec f='codebrowser/src/latency.h' l='65' type='void latencyAddSample(char * event, mstime_t latency)'/>
+<use f='codebrowser/src/aof.c' l='334' macro='1' u='c'/>
+<use f='codebrowser/src/aof.c' l='336' macro='1' u='c'/>
+<use f='codebrowser/src/aof.c' l='338' macro='1' u='c'/>
+<use f='codebrowser/src/aof.c' l='340' macro='1' u='c'/>
+<use f='codebrowser/src/aof.c' l='441' macro='1' u='c'/>
+<use f='codebrowser/src/aof.c' l='1371' macro='1' u='c'/>
+<use f='codebrowser/src/aof.c' l='1433' macro='1' u='c'/>
+<use f='codebrowser/src/aof.c' l='1467' macro='1' u='c'/>
+<use f='codebrowser/src/aof.c' l='1525' macro='1' u='c'/>
+<use f='codebrowser/src/evict.c' l='513' macro='1' u='c'/>
+<use f='codebrowser/src/evict.c' l='548' macro='1' u='c'/>
+<use f='codebrowser/src/evict.c' l='553' macro='1' u='c'/>
+<use f='codebrowser/src/expire.c' l='214' macro='1' u='c'/>
+<def f='codebrowser/src/latency.c' l='98' ll='127' type='void latencyAddSample(char * event, mstime_t latency)'/>
+<doc f='codebrowser/src/latency.c' l='94'>/* Add the specified sample to the specified time series &quot;event&quot;.
+ * This function is usually called via latencyAddSampleIfNeeded(), that
+ * is a macro that only adds the sample if the latency is higher than
+ * server.latency_monitor_threshold. */</doc>
+<use f='codebrowser/src/rdb.c' l='1082' macro='1' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1687' macro='1' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1957' macro='1' u='c'/>
+<use f='codebrowser/src/server.c' l='2231' macro='1' u='c'/>

@@ -1,0 +1,15 @@
+<def f='codebrowser/src/ziplist.c' l='332' ll='364' type='unsigned int zipStoreEntryEncoding(unsigned char * p, unsigned char encoding, unsigned int rawlen)'/>
+<use f='codebrowser/src/ziplist.c' l='776' u='c' c='__ziplistInsert'/>
+<use f='codebrowser/src/ziplist.c' l='831' u='c' c='__ziplistInsert'/>
+<doc f='codebrowser/src/ziplist.c' l='320'>/* Write the encoidng header of the entry in &apos;p&apos;. If p is NULL it just returns
+ * the amount of bytes required to encode such a length. Arguments:
+ *
+ * &apos;encoding&apos; is the encoding we are using for the entry. It could be
+ * ZIP_INT_* or ZIP_STR_* or between ZIP_INT_IMM_MIN and ZIP_INT_IMM_MAX
+ * for single-byte small immediate integers.
+ *
+ * &apos;rawlen&apos; is only used for ZIP_STR_* encodings and is the length of the
+ * srting that this entry represents.
+ *
+ * The function returns the number of bytes used by the encoding/length
+ * header stored in &apos;p&apos;. */</doc>

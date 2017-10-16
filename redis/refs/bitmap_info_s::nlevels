@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='82' type='unsigned int'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='116' u='r' c='je_bitmap_full'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='153' u='r' c='je_bitmap_set'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='177' u='r' c='je_bitmap_sfu'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='211' u='r' c='je_bitmap_unset'/>
+<offset>64</offset>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='31' u='w' c='je_bitmap_info_init'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='39' u='r' c='je_bitmap_info_ngroups'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='64' u='r' c='je_bitmap_init'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='70' u='r' c='je_bitmap_init'/>

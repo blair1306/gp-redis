@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='97' macro='1' type='size_t je_bitmap_size(size_t nbits)'/>
+<def f='codebrowser/deps/jemalloc/src/bitmap.c' l='43' macro='1' type='size_t je_bitmap_size(size_t nbits)'/>

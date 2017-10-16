@@ -1,0 +1,3 @@
+<dec f='include/valgrind/memcheck.h' l='291'/>
+<doc f='include/valgrind/memcheck.h' l='289'>/* Disable and re-enable reporting of addressing errors in the
+   specified address range. */</doc>

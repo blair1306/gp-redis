@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/ziplist.h' l='44' type='unsigned char * ziplistInsert(unsigned char * zl, unsigned char * p, unsigned char * s, unsigned int slen)'/>
+<use f='codebrowser/src/quicklist.c' l='673' u='c' c='quicklistReplaceAtIndex'/>
+<use f='codebrowser/src/quicklist.c' l='883' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='891' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/t_hash.c' l='222' u='c' c='hashTypeSet'/>
+<use f='codebrowser/src/t_zset.c' l='989' u='c' c='zzlInsertAt'/>
+<use f='codebrowser/src/t_zset.c' l='994' u='c' c='zzlInsertAt'/>
+<def f='codebrowser/src/ziplist.c' l='1054' ll='1056' type='unsigned char * ziplistInsert(unsigned char * zl, unsigned char * p, unsigned char * s, unsigned int slen)'/>
+<doc f='codebrowser/src/ziplist.c' l='1053'>/* Insert an entry at &quot;p&quot;. */</doc>

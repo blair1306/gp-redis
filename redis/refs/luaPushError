@@ -1,0 +1,18 @@
+<def f='codebrowser/src/scripting.c' l='208' ll='230' type='void luaPushError(lua_State * lua, char * error)'/>
+<use f='codebrowser/src/scripting.c' l='370' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='377' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='429' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='461' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='464' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='471' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='480' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='487' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='493' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='506' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='526' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='672' u='c' c='luaRedisReturnSingleFieldTable'/>
+<doc f='codebrowser/src/scripting.c' l='203'>/* This function is used in order to push an error on the Lua stack in the
+ * format used by redis.pcall to return errors, which is a lua table
+ * with a single &quot;err&quot; field set to the error string. Note that this
+ * table is never a valid reply by proper commands, since the returned
+ * tables are otherwise always indexed by integers, never by strings. */</doc>

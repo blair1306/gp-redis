@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1685' type='int pubsubUnsubscribeAllPatterns(client * c, int notify)'/>
+<use f='codebrowser/src/networking.c' l='816' u='c' c='freeClient'/>
+<def f='codebrowser/src/pubsub.c' l='202' ll='222' type='int pubsubUnsubscribeAllPatterns(client * c, int notify)'/>
+<use f='codebrowser/src/pubsub.c' l='307' u='c' c='punsubscribeCommand'/>
+<doc f='codebrowser/src/pubsub.c' l='200'>/* Unsubscribe from all the patterns. Return the number of patterns the
+ * client was subscribed from. */</doc>

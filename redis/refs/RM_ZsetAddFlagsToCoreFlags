@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='1631' ll='1636' type='int RM_ZsetAddFlagsToCoreFlags(int flags)'/>
+<use f='codebrowser/src/module.c' l='1680' u='c' c='RM_ZsetAdd'/>
+<use f='codebrowser/src/module.c' l='1707' u='c' c='RM_ZsetIncrby'/>
+<doc f='codebrowser/src/module.c' l='1629'>/* Conversion from/to public flags of the Modules API and our private flags,
+ * so that we have everything decoupled. */</doc>

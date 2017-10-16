@@ -1,0 +1,2 @@
+<def f='codebrowser/src/t_set.c' l='402' ll='553' type='void spopWithCountCommand(client * c)'/>
+<use f='codebrowser/src/t_set.c' l='562' u='c' c='spopCommand'/>

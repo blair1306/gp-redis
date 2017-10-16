@@ -1,0 +1,19 @@
+<dec f='codebrowser/src/server.h' l='1608' type='void propagate(struct redisCommand * cmd, int dbid, robj ** argv, int argc, int flags)'/>
+<use f='codebrowser/src/multi.c' l='109' u='c' c='execCommandPropagateMulti'/>
+<def f='codebrowser/src/server.c' l='2085' ll='2092' type='void propagate(struct redisCommand * cmd, int dbid, robj ** argv, int argc, int flags)'/>
+<use f='codebrowser/src/server.c' l='2267' u='c' c='call'/>
+<use f='codebrowser/src/server.c' l='2291' u='c' c='call'/>
+<doc f='codebrowser/src/server.c' l='2074'>/* Propagate the specified command (in the context of the specified database id)
+ * to AOF and Slaves.
+ *
+ * flags are an xor between:
+ * + PROPAGATE_NONE (no propagation of command at all)
+ * + PROPAGATE_AOF (propagate into the AOF file if is enabled)
+ * + PROPAGATE_REPL (propagate into the replication link)
+ *
+ * This should not be used inside commands implementation. Use instead
+ * alsoPropagate(), preventCommandPropagation(), forceCommandPropagation().
+ */</doc>
+<use f='codebrowser/src/t_list.c' l='747' u='c' c='serveClientBlockedOnList'/>
+<use f='codebrowser/src/t_list.c' l='765' u='c' c='serveClientBlockedOnList'/>
+<use f='codebrowser/src/t_list.c' l='775' u='c' c='serveClientBlockedOnList'/>

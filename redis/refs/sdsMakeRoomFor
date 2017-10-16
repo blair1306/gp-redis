@@ -1,0 +1,36 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='255' type='sds sdsMakeRoomFor(sds s, size_t addlen)'/>
+<doc f='codebrowser/deps/hiredis/sds.h' l='254'>/* Low level functions exposed to the user API */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='502' u='c' c='redisFormatSdsCommandArgv'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='194' ll='237' type='sds sdsMakeRoomFor(sds s, size_t addlen)'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='362' u='c' c='sdsgrowzero'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='379' u='c' c='sdscatlen'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='407' u='c' c='sdscpylen'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='594' u='c' c='sdscatfmt'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='607' u='c' c='sdscatfmt'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='623' u='c' c='sdscatfmt'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='640' u='c' c='sdscatfmt'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='188'>/* Enlarge the free space at the end of the sds string so that the caller
+ * is sure that after calling this function can overwrite up to addlen
+ * bytes after the end of the string, plus one more byte for nul term.
+ *
+ * Note: this does not change the *length* of the sds string as returned
+ * by sdslen(), but only the free buffer space we have. */</doc>
+<dec f='codebrowser/src/sds.h' l='255' type='sds sdsMakeRoomFor(sds s, size_t addlen)'/>
+<doc f='codebrowser/src/sds.h' l='254'>/* Low level functions exposed to the user API */</doc>
+<use f='codebrowser/src/hyperloglog.c' l='660' u='c' c='hllSparseAdd'/>
+<use f='codebrowser/src/networking.c' l='1243' u='c' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1376' u='c' c='readQueryFromClient'/>
+<def f='codebrowser/src/sds.c' l='197' ll='240' type='sds sdsMakeRoomFor(sds s, size_t addlen)'/>
+<use f='codebrowser/src/sds.c' l='365' u='c' c='sdsgrowzero'/>
+<use f='codebrowser/src/sds.c' l='382' u='c' c='sdscatlen'/>
+<use f='codebrowser/src/sds.c' l='410' u='c' c='sdscpylen'/>
+<use f='codebrowser/src/sds.c' l='599' u='c' c='sdscatfmt'/>
+<use f='codebrowser/src/sds.c' l='612' u='c' c='sdscatfmt'/>
+<use f='codebrowser/src/sds.c' l='628' u='c' c='sdscatfmt'/>
+<use f='codebrowser/src/sds.c' l='645' u='c' c='sdscatfmt'/>
+<doc f='codebrowser/src/sds.c' l='191'>/* Enlarge the free space at the end of the sds string so that the caller
+ * is sure that after calling this function can overwrite up to addlen
+ * bytes after the end of the string, plus one more byte for nul term.
+ *
+ * Note: this does not change the *length* of the sds string as returned
+ * by sdslen(), but only the free buffer space we have. */</doc>

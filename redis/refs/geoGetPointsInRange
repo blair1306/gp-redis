@@ -1,0 +1,14 @@
+<def f='codebrowser/src/geo.c' l='225' ll='284' type='int geoGetPointsInRange(robj * zobj, double min, double max, double lon, double lat, double radius, geoArray * ga)'/>
+<use f='codebrowser/src/geo.c' l='322' u='c' c='membersOfGeoHashBox'/>
+<doc f='codebrowser/src/geo.c' l='213'>/* Query a Redis sorted set to extract all the elements between &apos;min&apos; and
+ * &apos;max&apos;, appending them into the array of geoPoint structures &apos;gparray&apos;.
+ * The command returns the number of elements added to the array.
+ *
+ * Elements which are farest than &apos;radius&apos; from the specified &apos;x&apos; and &apos;y&apos;
+ * coordinates are not included.
+ *
+ * The ability of this function to append to an existing set of points is
+ * important for good performances because querying by radius is performed
+ * using multiple queries to the sorted set, that we later need to sort
+ * via qsort. Similarly we need to be able to reject points outside the search
+ * radius area ASAP in order to allocate and process more points than needed. */</doc>

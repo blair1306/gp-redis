@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1292' type='dictType'/>
+<use f='codebrowser/src/object.c' l='221' u='a' c='createZsetObject'/>
+<def f='codebrowser/src/server.c' l='565' ll='572' type='dictType'/>
+<doc f='codebrowser/src/server.c' l='564'>/* Sorted sets hash (note: a skiplist is used in addition to the hash table) */</doc>
+<use f='codebrowser/src/t_zset.c' l='1133' u='a' c='zsetConvert'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='497' type='moduleTypeSaveFunc'/>
+<offset>192</offset>
+<use f='codebrowser/src/module.c' l='2887' u='w' c='RM_CreateDataType'/>
+<use f='codebrowser/src/rdb.c' l='779' u='r' c='rdbSaveObject'/>

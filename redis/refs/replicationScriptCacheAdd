@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1493' type='void replicationScriptCacheAdd(sds sha1)'/>
+<def f='codebrowser/src/replication.c' l='2307' ll='2326' type='void replicationScriptCacheAdd(sds sha1)'/>
+<doc f='codebrowser/src/replication.c' l='2305'>/* Add an entry into the script cache, if we reach max number of entries the
+ * oldest is removed from the list. */</doc>
+<use f='codebrowser/src/scripting.c' l='1390' u='c' c='evalGenericCommand'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1857' type='void linsertCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='152' u='r'/>
+<use f='codebrowser/src/server.c' l='152' u='r'/>
+<use f='codebrowser/src/server.c' l='152' u='r'/>
+<use f='codebrowser/src/server.c' l='152' u='r'/>
+<def f='codebrowser/src/t_list.c' l='264' ll='306' type='void linsertCommand(client * c)'/>

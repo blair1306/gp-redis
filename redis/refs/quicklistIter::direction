@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/quicklist.h' l='87' type='int'/>
+<offset>256</offset>
+<use f='codebrowser/src/quicklist.c' l='645' u='r' c='quicklistDelEntry'/>
+<use f='codebrowser/src/quicklist.c' l='648' u='r' c='quicklistDelEntry'/>
+<use f='codebrowser/src/quicklist.c' l='1061' u='w' c='quicklistGetIterator'/>
+<use f='codebrowser/src/quicklist.c' l='1142' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1145' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1164' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1169' u='r' c='quicklistNext'/>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='288'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='287'>/* Return the smallest long multiple that is &gt;= a. */</doc>

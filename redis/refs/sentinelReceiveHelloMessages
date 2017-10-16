@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/sentinel.c' l='358' type='void sentinelReceiveHelloMessages(redisAsyncContext * c, void * reply, void * privdata)'/>
+<use f='codebrowser/src/sentinel.c' l='1956' u='r' c='sentinelReconnectInstance'/>
+<def f='codebrowser/src/sentinel.c' l='2426' ll='2452' type='void sentinelReceiveHelloMessages(redisAsyncContext * c, void * reply, void * privdata)'/>
+<doc f='codebrowser/src/sentinel.c' l='2424'>/* This is our Pub/Sub callback for the Hello channel. It&apos;s useful in order
+ * to discover other sentinels attached at the same master. */</doc>

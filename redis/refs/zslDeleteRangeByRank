@@ -1,0 +1,4 @@
+<def f='codebrowser/src/t_zset.c' l='389' ll='415' type='unsigned long zslDeleteRangeByRank(zskiplist * zsl, unsigned int start, unsigned int end, dict * dict)'/>
+<use f='codebrowser/src/t_zset.c' l='1714' u='c' c='zremrangeGenericCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='387'>/* Delete all the elements with rank between start and end from the skiplist.
+ * Start and end are inclusive. Note that start and end need to be 1-based */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1902' type='void msetnxCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='221' u='r'/>
+<use f='codebrowser/src/server.c' l='221' u='r'/>
+<use f='codebrowser/src/server.c' l='221' u='r'/>
+<use f='codebrowser/src/server.c' l='221' u='r'/>
+<def f='codebrowser/src/t_string.c' l='337' ll='339' type='void msetnxCommand(client * c)'/>

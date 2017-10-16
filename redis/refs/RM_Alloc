@@ -1,0 +1,6 @@
+<def f='codebrowser/src/module.c' l='239' ll='241' type='void * RM_Alloc(size_t bytes)'/>
+<use f='codebrowser/src/module.c' l='3896' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='235'>/* Use like malloc(). Memory allocated with this function is reported in
+ * Redis INFO memory, used for keys eviction according to maxmemory settings
+ * and in general is taken into account as memory allocated by Redis.
+ * You should avoid using malloc(). */</doc>

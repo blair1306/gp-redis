@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='23'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='156' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='22'>/* Used for two-stage lock-free node initialization. */</doc>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='96' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='104' u='c'/>

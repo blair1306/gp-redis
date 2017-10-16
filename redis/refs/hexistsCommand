@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1943' type='void hexistsCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='214' u='r'/>
+<use f='codebrowser/src/server.c' l='214' u='r'/>
+<use f='codebrowser/src/server.c' l='214' u='r'/>
+<use f='codebrowser/src/server.c' l='214' u='r'/>
+<def f='codebrowser/src/t_hash.c' l='809' ll='815' type='void hexistsCommand(client * c)'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/src/t_zset.c' l='358' ll='385' type='unsigned long zslDeleteRangeByLex(zskiplist * zsl, zlexrangespec * range, dict * dict)'/>
+<use f='codebrowser/src/t_zset.c' l='1720' u='c' c='zremrangeGenericCommand'/>

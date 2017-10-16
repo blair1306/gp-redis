@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/rax.h' l='106' type='uint64_t'/>
+<offset>128</offset>
+<use f='codebrowser/src/rax.c' l='160' u='w' c='raxNew'/>
+<use f='codebrowser/src/rax.c' l='649' u='w' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='663' u='w' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='714' u='w' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='769' u='w' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='927' u='w' c='raxRemove'/>
+<use f='codebrowser/src/rax.c' l='1054' u='w' c='raxRemove'/>
+<use f='codebrowser/src/rax.c' l='1067' u='w' c='raxRemove'/>
+<use f='codebrowser/src/rax.c' l='1107' u='w' c='raxRecursiveFree'/>
+<use f='codebrowser/src/rax.c' l='1113' u='r' c='raxFree'/>

@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1485' ll='1549' macro='1' type='int imemalign(void ** memptr, size_t alignment, size_t size, size_t min_alignment)'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1555' u='c' c='je_posix_memalign'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1569' u='c' c='je_aligned_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1858' u='c' c='je_memalign'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1872' u='c' c='je_valloc'/>

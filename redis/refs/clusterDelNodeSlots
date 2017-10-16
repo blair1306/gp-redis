@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/cluster.c' l='63' type='int clusterDelNodeSlots(clusterNode * node)'/>
+<use f='codebrowser/src/cluster.c' l='1850' u='c' c='clusterProcessPacket'/>
+<def f='codebrowser/src/cluster.c' l='3601' ll='3611' type='int clusterDelNodeSlots(clusterNode * node)'/>
+<use f='codebrowser/src/cluster.c' l='4113' u='c' c='clusterCommand'/>
+<doc f='codebrowser/src/cluster.c' l='3599'>/* Delete all the slots associated with the specified node.
+ * The number of deleted slots is returned. */</doc>

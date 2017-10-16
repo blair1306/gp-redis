@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/ziplist.h' l='45' type='unsigned char * ziplistDelete(unsigned char * zl, unsigned char ** p)'/>
+<use f='codebrowser/src/quicklist.c' l='617' u='c' c='quicklistDelIndex'/>
+<use f='codebrowser/src/quicklist.c' l='672' u='c' c='quicklistReplaceAtIndex'/>
+<use f='codebrowser/src/t_hash.c' l='219' u='c' c='hashTypeSet'/>
+<use f='codebrowser/src/t_hash.c' l='290' u='c' c='hashTypeDelete'/>
+<use f='codebrowser/src/t_hash.c' l='291' u='c' c='hashTypeDelete'/>
+<use f='codebrowser/src/t_zset.c' l='971' u='c' c='zzlDelete'/>
+<use f='codebrowser/src/t_zset.c' l='972' u='c' c='zzlDelete'/>
+<use f='codebrowser/src/t_zset.c' l='1050' u='c' c='zzlDeleteRangeByScore'/>
+<use f='codebrowser/src/t_zset.c' l='1051' u='c' c='zzlDeleteRangeByScore'/>
+<use f='codebrowser/src/t_zset.c' l='1077' u='c' c='zzlDeleteRangeByLex'/>
+<use f='codebrowser/src/t_zset.c' l='1078' u='c' c='zzlDeleteRangeByLex'/>
+<def f='codebrowser/src/ziplist.c' l='1061' ll='1071' type='unsigned char * ziplistDelete(unsigned char * zl, unsigned char ** p)'/>
+<doc f='codebrowser/src/ziplist.c' l='1058'>/* Delete a single entry from the ziplist, pointed to by *p.
+ * Also update *p in place, to be able to iterate over the
+ * ziplist, while deleting entries. */</doc>

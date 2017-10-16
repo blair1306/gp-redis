@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='579' macro='1' type='void je_malloc_tsd_cleanup_register(_Bool (*)(void) f)'/>
+<def f='codebrowser/deps/jemalloc/src/tsd.c' l='62' macro='1' type='void je_malloc_tsd_cleanup_register(_Bool (*)(void) f)'/>

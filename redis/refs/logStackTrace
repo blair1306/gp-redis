@@ -1,0 +1,5 @@
+<def f='codebrowser/src/debug.c' l='857' ll='880' type='void logStackTrace(ucontext_t * uc)'/>
+<use f='codebrowser/src/debug.c' l='1038' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/debug.c' l='1154' u='c' c='watchdogSignalHandler'/>
+<doc f='codebrowser/src/debug.c' l='855'>/* Logs the stack trace using the backtrace() call. This function is designed
+ * to be called from signal handlers safely. */</doc>

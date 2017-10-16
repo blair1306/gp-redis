@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='613' type='dict *'/>
+<offset>128</offset>
+<doc f='codebrowser/src/server.h' l='613'>/* Keys with clients waiting for data (BLPOP)*/</doc>
+<use f='codebrowser/src/db.c' l='940' u='r' c='scanDatabaseForReadyLists'/>
+<use f='codebrowser/src/server.c' l='1854' u='w' c='initServer'/>
+<use f='codebrowser/src/t_list.c' l='641' u='r' c='blockForKeys'/>
+<use f='codebrowser/src/t_list.c' l='647' u='r' c='blockForKeys'/>
+<use f='codebrowser/src/t_list.c' l='672' u='r' c='unblockClientWaitingData'/>
+<use f='codebrowser/src/t_list.c' l='677' u='r' c='unblockClientWaitingData'/>
+<use f='codebrowser/src/t_list.c' l='700' u='r' c='signalListAsReady'/>
+<use f='codebrowser/src/t_list.c' l='825' u='r' c='handleClientsBlockedOnLists'/>

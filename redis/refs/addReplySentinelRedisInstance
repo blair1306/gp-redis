@@ -1,0 +1,4 @@
+<def f='codebrowser/src/sentinel.c' l='2636' ll='2823' type='void addReplySentinelRedisInstance(client * c, sentinelRedisInstance * ri)'/>
+<use f='codebrowser/src/sentinel.c' l='2836' u='c' c='addReplyDictOfRedisInstances'/>
+<use f='codebrowser/src/sentinel.c' l='2894' u='c' c='sentinelCommand'/>
+<doc f='codebrowser/src/sentinel.c' l='2635'>/* Redis instance to Redis protocol representation. */</doc>

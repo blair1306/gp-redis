@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/lua/src/lauxlib.h' l='77' type='int luaL_loadfile(lua_State * L, const char * filename)'/>
+<def f='codebrowser/deps/lua/src/lauxlib.c' l='552' ll='590' macro='1' type='int luaL_loadfile(lua_State * L, const char * filename)'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='287' u='c' c='luaB_loadfile'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='328' u='c' c='luaB_dofile'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='385' u='c' c='loader_Lua'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='135' u='c' c='dofile'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='247' u='c' c='handle_script'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='169' u='c' c='pmain'/>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/server.h' l='1483' type='void updateSlavesWaitingBgsave(int bgsaveerr, int type)'/>
+<use f='codebrowser/src/rdb.c' l='1699' u='c' c='backgroundSaveDoneHandlerDisk'/>
+<use f='codebrowser/src/rdb.c' l='1794' u='c' c='backgroundSaveDoneHandlerSocket'/>
+<def f='codebrowser/src/replication.c' l='940' ll='1001' type='void updateSlavesWaitingBgsave(int bgsaveerr, int type)'/>
+<doc f='codebrowser/src/replication.c' l='926'>/* This function is called at the end of every background saving,
+ * or when the replication RDB transfer strategy is modified from
+ * disk to socket or the other way around.
+ *
+ * The goal of this function is to handle slaves waiting for a successful
+ * background saving in order to perform non-blocking synchronization, and
+ * to schedule a new BGSAVE if there are slaves that attached while a
+ * BGSAVE was in progress, but it was not a good one for replication (no
+ * other slave was accumulating differences).
+ *
+ * The argument bgsaveerr is C_OK if the background saving succeeded
+ * otherwise C_ERR is passed to the function.
+ * The &apos;type&apos; argument is the type of the child that terminated
+ * (if it had a disk or socket target). */</doc>

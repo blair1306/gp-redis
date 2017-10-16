@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/rax.h' l='155' type='int raxRandomWalk(raxIterator * it, size_t steps)'/>
+<def f='codebrowser/src/rax.c' l='1575' ll='1612' type='int raxRandomWalk(raxIterator * it, size_t steps)'/>
+<doc f='codebrowser/src/rax.c' l='1563'>/* Perform a random walk starting in the current position of the iterator.
+ * Return 0 if the tree is empty or on out of memory. Otherwise 1 is returned
+ * and the iterator is set to the node reached after doing a random walk
+ * of &apos;steps&apos; steps. If the &apos;steps&apos; argument is 0, the random walk is performed
+ * using a random number of steps between 1 and two times the logarithm of
+ * the number of elements.
+ *
+ * NOTE: if you use this function to generate random elements from the radix
+ * tree, expect a disappointing distribution. A random walk produces good
+ * random elements if the tree is not sparse, however in the case of a radix
+ * tree certain keys will be reported much more often than others. At least
+ * this function should be able to expore every possible element eventually. */</doc>

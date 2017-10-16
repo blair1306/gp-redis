@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1290' type='dictType'/>
+<use f='codebrowser/src/networking.c' l='127' u='a' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='133' u='a' c='createClient'/>
+<def f='codebrowser/src/server.c' l='545' ll='552' type='dictType'/>
+<use f='codebrowser/src/server.c' l='1855' u='a' c='initServer'/>
+<doc f='codebrowser/src/server.c' l='543'>/* Generic hash table type where keys are Redis Objects, Values
+ * dummy pointers. */</doc>
+<use f='codebrowser/src/t_set.c' l='673' u='a' c='srandmemberWithCountCommand'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/geo.h' l='17' type='struct geoPoint *'/>
+<use f='codebrowser/src/geo.c' l='56' u='w' c='geoArrayCreate'/>
+<use f='codebrowser/src/geo.c' l='67' u='w' c='geoArrayAppend'/>
+<use f='codebrowser/src/geo.c' l='67' u='r' c='geoArrayAppend'/>
+<use f='codebrowser/src/geo.c' l='69' u='r' c='geoArrayAppend'/>
+<use f='codebrowser/src/geo.c' l='77' u='r' c='geoArrayFree'/>
+<use f='codebrowser/src/geo.c' l='78' u='r' c='geoArrayFree'/>
+<use f='codebrowser/src/geo.c' l='581' u='r' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='583' u='r' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='609' u='r' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='647' u='r' c='georadiusGeneric'/>
+<offset>0</offset>

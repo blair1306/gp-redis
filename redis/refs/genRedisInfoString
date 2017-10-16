@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='2008' type='sds genRedisInfoString(char * section)'/>
+<use f='codebrowser/src/debug.c' l='1042' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/sentinel.c' l='3204' u='c' c='sentinelInfoCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3204' u='c' c='sentinelInfoCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3204' u='c' c='sentinelInfoCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3204' u='c' c='sentinelInfoCommand'/>
+<def f='codebrowser/src/server.c' l='2804' ll='3314' type='sds genRedisInfoString(char * section)'/>
+<use f='codebrowser/src/server.c' l='3323' u='c' c='infoCommand'/>
+<doc f='codebrowser/src/server.c' l='2801'>/* Create the string returned by the INFO command. This is decoupled
+ * by the INFO command itself as we need to report the same information
+ * on memory corruption problems. */</doc>

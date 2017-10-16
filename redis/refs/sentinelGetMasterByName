@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/sentinel.c' l='359' type='sentinelRedisInstance * sentinelGetMasterByName(char * name)'/>
+<def f='codebrowser/src/sentinel.c' l='1350' ll='1357' type='sentinelRedisInstance * sentinelGetMasterByName(char * name)'/>
+<use f='codebrowser/src/sentinel.c' l='1591' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='1599' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='1606' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='1611' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='1618' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='1626' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='1640' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='1650' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='1657' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='1670' u='c' c='sentinelHandleConfiguration'/>
+<use f='codebrowser/src/sentinel.c' l='2333' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='2974' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3116' u='c' c='sentinelCommand'/>
+<doc f='codebrowser/src/sentinel.c' l='1349'>/* Master lookup by name */</doc>

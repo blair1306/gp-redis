@@ -1,0 +1,14 @@
+<dec f='include/stdlib.h' l='564' type='char * getenv(const char * __name)'/>
+<doc f='include/stdlib.h' l='563'>/* Return the value of envariable NAME, or NULL if it doesn&apos;t exist.  */</doc>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='208' u='c' c='isUnsupportedTerm'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='594' u='c' c='setpath'/>
+<use f='codebrowser/deps/lua/src/loslib.c' l='69' u='c' c='os_getenv'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='324' u='c' c='handle_luainit'/>
+<use f='codebrowser/src/redis-cli.c' l='183' u='c' c='getDotfilePath'/>
+<use f='codebrowser/src/redis-cli.c' l='192' u='c' c='getDotfilePath'/>
+<use f='codebrowser/src/redis-cli.c' l='623' u='c' c='isColorTerm'/>
+<use f='codebrowser/src/redis-cli.c' l='2648' u='c' c='main'/>
+<use f='codebrowser/src/server.c' l='3584' u='c' c='redisSupervisedUpstart'/>
+<use f='codebrowser/src/server.c' l='3599' u='c' c='redisSupervisedSystemd'/>
+<use f='codebrowser/src/server.c' l='3657' u='c' c='redisIsSupervised'/>
+<use f='codebrowser/src/server.c' l='3658' u='c' c='redisIsSupervised'/>

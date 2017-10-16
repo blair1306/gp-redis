@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/lua/src/lobject.h' l='263' type='TString *'/>
+<offset>0</offset>
+<use f='codebrowser/deps/lua/src/ldump.c' l='120' u='r' c='DumpDebug'/>
+<use f='codebrowser/deps/lua/src/lfunc.c' l='169' u='r' c='luaF_getlocalname'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='217' u='r' c='traverseproto'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='218' u='r' c='traverseproto'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='149' u='w' c='registerlocalvar'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='150' u='w' c='registerlocalvar'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='210' u='r' c='searchvar'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='147' u='w' c='LoadDebug'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='150' u='w' c='LoadDebug'/>
+<use f='codebrowser/deps/lua/src/print.c' l='200' u='r' c='PrintLocals'/>

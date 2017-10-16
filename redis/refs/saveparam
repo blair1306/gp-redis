@@ -1,0 +1,4 @@
+<def f='codebrowser/src/server.h' l='731' ll='734'/>
+<size>16</size>
+<mbr r='saveparam::seconds' o='0' t='time_t'/>
+<mbr r='saveparam::changes' o='64' t='int'/>

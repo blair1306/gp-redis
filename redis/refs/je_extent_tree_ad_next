@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='66' macro='1' type='extent_node_t * je_extent_tree_ad_next(extent_tree_t * rbtree, extent_node_t * node)'/>
+<def f='codebrowser/deps/jemalloc/src/extent.c' l='53' macro='1' type='extent_node_t * je_extent_tree_ad_next(extent_tree_t * rbtree, extent_node_t * node)'/>

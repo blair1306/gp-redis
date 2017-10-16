@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1182' type='int'/>
+<offset>22848</offset>
+<doc f='codebrowser/src/server.h' l='1181'>/* Lazy free */</doc>
+<use f='codebrowser/src/config.c' l='411' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1025' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1307' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2034' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/evict.c' l='497' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='508' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='536' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/server.c' l='1438' u='w' c='initServerConfig'/>

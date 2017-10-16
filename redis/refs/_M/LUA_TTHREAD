@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='82'/>
+<use f='codebrowser/deps/lua/src/lapi.c' l='406' u='c'/>
+<use f='codebrowser/deps/lua/src/lapi.c' l='628' u='c'/>
+<use f='codebrowser/deps/lua/src/lapi.c' l='749' u='c'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='100' u='c'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='297' u='c'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='384' u='c'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='412' u='c'/>
+<use f='codebrowser/deps/lua/src/lstate.c' l='121' u='c'/>
+<use f='codebrowser/deps/lua/src/lstate.c' l='152' u='c'/>
+<use f='codebrowser/src/scripting.c' l='1918' u='c'/>
+<use f='codebrowser/src/scripting.c' l='1925' u='c'/>

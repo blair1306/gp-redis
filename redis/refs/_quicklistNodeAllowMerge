@@ -1,0 +1,5 @@
+<def f='codebrowser/src/quicklist.c' l='452' ll='469' type='int _quicklistNodeAllowMerge(const quicklistNode * a, const quicklistNode * b, const int fill)'/>
+<use f='codebrowser/src/quicklist.c' l='752' u='c' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='758' u='c' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='764' u='c' c='_quicklistMergeNodes'/>
+<use f='codebrowser/src/quicklist.c' l='773' u='c' c='_quicklistMergeNodes'/>

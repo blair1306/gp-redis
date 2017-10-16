@@ -1,0 +1,4 @@
+<def f='codebrowser/src/module.c' l='3562' ll='3564' type='int RM_IsBlockedReplyRequest(RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/module.c' l='3993' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3560'>/* Return non-zero if a module command was called in order to fill the
+ * reply for a blocked client. */</doc>

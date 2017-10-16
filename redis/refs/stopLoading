@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1512' type='void stopLoading()'/>
+<use f='codebrowser/src/aof.c' l='765' u='c' c='loadAppendOnlyFile'/>
+<def f='codebrowser/src/rdb.c' l='1466' ll='1468' type='void stopLoading()'/>
+<use f='codebrowser/src/rdb.c' l='1663' u='c' c='rdbLoad'/>
+<doc f='codebrowser/src/rdb.c' l='1465'>/* Loading finished */</doc>

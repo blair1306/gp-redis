@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='743' type='robj *'/>
+<offset>0</offset>
+<use f='codebrowser/src/cluster.c' l='4345' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/networking.c' l='552' u='r' c='addReplyBulk'/>
+<use f='codebrowser/src/networking.c' l='559' u='r' c='addReplyBulkCBuffer'/>
+<use f='codebrowser/src/networking.c' l='566' u='r' c='addReplyBulkSds'/>
+<use f='codebrowser/src/server.c' l='1249' u='w' c='createSharedObjects'/>
+<use f='codebrowser/src/t_string.c' l='376' u='r' c='incrDecrCommand'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1526' type='void backgroundRewriteDoneHandler(int exitcode, int bysignal)'/>
+<def f='codebrowser/src/aof.c' l='1438' ll='1585' type='void backgroundRewriteDoneHandler(int exitcode, int bysignal)'/>
+<doc f='codebrowser/src/aof.c' l='1436'>/* A background append only file rewriting (BGREWRITEAOF) terminated its work.
+ * Handle this. */</doc>
+<use f='codebrowser/src/server.c' l='1065' u='c' c='serverCron'/>

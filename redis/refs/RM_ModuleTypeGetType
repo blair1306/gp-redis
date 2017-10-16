@@ -1,0 +1,7 @@
+<def f='codebrowser/src/module.c' l='2916' ll='2922' type='moduleType * RM_ModuleTypeGetType(RedisModuleKey * key)'/>
+<use f='codebrowser/src/module.c' l='3970' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='2911'>/* Assuming RedisModule_KeyType() returned REDISMODULE_KEYTYPE_MODULE on
+ * the key, returns the moduel type pointer of the value stored at key.
+ *
+ * If the key is NULL, is not associated with a module type, or is empty,
+ * then NULL is returned instead. */</doc>

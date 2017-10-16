@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='48'/>
+<use f='codebrowser/deps/hiredis/async.c' l='456' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='665' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='938' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='132' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='147' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='154' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='160' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='333' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='351' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='373' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='407' u='c'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/rio.h' l='131' type='void rioFreeFdset(rio * r)'/>
+<use f='codebrowser/src/rdb.c' l='1928' u='c' c='rdbSaveToSlavesSockets'/>
+<def f='codebrowser/src/rio.c' l='280' ll='284' type='void rioFreeFdset(rio * r)'/>
+<doc f='codebrowser/src/rio.c' l='279'>/* release the rio stream. */</doc>

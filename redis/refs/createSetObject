@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1453' type='robj * createSetObject()'/>
+<def f='codebrowser/src/object.c' l='196' ll='201' type='robj * createSetObject()'/>
+<use f='codebrowser/src/rdb.c' l='1180' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_set.c' l='45' u='c' c='setTypeCreate'/>

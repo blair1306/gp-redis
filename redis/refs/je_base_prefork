@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/base.h' l='15' macro='1' type='void je_base_prefork()'/>
+<def f='codebrowser/deps/jemalloc/src/base.c' l='156' macro='1' type='void je_base_prefork()'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2543' macro='1' u='c'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/sentinel.c' l='378' type='void sentinelSimFailureCrash()'/>
+<use f='codebrowser/src/sentinel.c' l='2164' u='c' c='sentinelRefreshInstanceInfo'/>
+<def f='codebrowser/src/sentinel.c' l='3597' ll='3601' type='void sentinelSimFailureCrash()'/>
+<use f='codebrowser/src/sentinel.c' l='3982' u='c' c='sentinelFailoverWaitStart'/>
+<doc f='codebrowser/src/sentinel.c' l='3596'>/* Crash because of user request via SENTINEL simulate-failure command. */</doc>

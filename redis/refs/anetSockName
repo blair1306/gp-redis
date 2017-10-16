@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/anet.h' l='75' type='int anetSockName(int fd, char * ip, size_t ip_len, int * port)'/>
+<def f='codebrowser/src/anet.c' l='630' ll='650' type='int anetSockName(int fd, char * ip, size_t ip_len, int * port)'/>
+<use f='codebrowser/src/anet.c' l='656' u='c' c='anetFormatSock'/>
+<use f='codebrowser/src/cluster.c' l='1719' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/sentinel.c' l='2481' u='c' c='sentinelSendHello'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='374'/>
+<use f='codebrowser/src/config.c' l='50' u='c'/>
+<use f='codebrowser/src/evict.c' l='181' u='c'/>
+<use f='codebrowser/src/evict.c' l='200' u='c'/>
+<use f='codebrowser/src/evict.c' l='420' u='c'/>

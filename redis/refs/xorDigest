@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/server.h' l='2015' type='void xorDigest(unsigned char * digest, void * ptr, size_t len)'/>
+<def f='codebrowser/src/debug.c' l='60' ll='71' type='void xorDigest(unsigned char * digest, void * ptr, size_t len)'/>
+<use f='codebrowser/src/debug.c' l='75' u='c' c='xorObjectDigest'/>
+<use f='codebrowser/src/debug.c' l='97' u='c' c='mixDigest'/>
+<use f='codebrowser/src/debug.c' l='170' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='204' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='220' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='239' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='249' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='255' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='257' u='c' c='computeDatasetDigest'/>
+<doc f='codebrowser/src/debug.c' l='54'>/* Compute the sha1 of string at &apos;s&apos; with &apos;len&apos; bytes long.
+ * The SHA1 is then xored against the string pointed by digest.
+ * Since xor is commutative, this operation is used in order to
+ * &quot;add&quot; digests relative to unordered elements.
+ *
+ * So digest(a,b,c,d) will be the same of digest(b,a,c,d) */</doc>
+<use f='codebrowser/src/module.c' l='3214' u='c' c='RM_DigestEndSequence'/>

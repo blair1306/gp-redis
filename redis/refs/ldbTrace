@@ -1,0 +1,4 @@
+<def f='codebrowser/src/scripting.c' l='2188' ll='2205' type='void ldbTrace(lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='2290' u='c' c='ldbRepl'/>
+<doc f='codebrowser/src/scripting.c' l='2186'>/* Implements &quot;trace&quot; command of the Lua debugger. It just prints a backtrace
+ * querying Lua starting from the current callframe back to the outer one. */</doc>

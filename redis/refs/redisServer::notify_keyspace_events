@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1149' type='int'/>
+<offset>21696</offset>
+<doc f='codebrowser/src/server.h' l='1149'>/* Events to propagate via Pub/Sub. This is an
+                                   xor of NOTIFY_... flags. */</doc>
+<use f='codebrowser/src/config.c' l='706' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='981' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1399' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1750' u='r' c='rewriteConfigNotifykeyspaceeventsOption'/>
+<use f='codebrowser/src/config.c' l='1754' u='r' c='rewriteConfigNotifykeyspaceeventsOption'/>
+<use f='codebrowser/src/notify.c' l='102' u='r' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/notify.c' l='107' u='r' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/notify.c' l='119' u='r' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/server.c' l='1409' u='w' c='initServerConfig'/>

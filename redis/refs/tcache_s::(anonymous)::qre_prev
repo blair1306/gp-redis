@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='77' macro='1' type='tcache_t *'/>
+<offset>64</offset>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='258' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='259' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' macro='1' u='w'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='290' macro='1' u='w'/>

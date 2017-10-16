@@ -1,0 +1,17 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='74'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='107' u='c'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='410' u='c'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='39' u='c'/>
+<use f='codebrowser/deps/lua/src/ldump.c' l='90' u='c'/>
+<use f='codebrowser/deps/lua/src/lobject.c' l='27' u='c'/>
+<use f='codebrowser/deps/lua/src/lobject.c' l='75' u='c'/>
+<use f='codebrowser/deps/lua/src/ltable.c' l='76' u='c'/>
+<use f='codebrowser/deps/lua/src/ltable.c' l='77' u='c'/>
+<use f='codebrowser/deps/lua/src/ltable.c' l='471' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='687' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='485' u='c'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='113' u='c'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='259' u='c'/>
+<use f='codebrowser/deps/lua/src/print.c' l='56' u='c'/>
+<use f='codebrowser/src/scripting.c' l='326' u='c'/>
+<use f='codebrowser/src/scripting.c' l='1874' u='c'/>

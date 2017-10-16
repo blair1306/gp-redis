@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/module.c' l='223' type='void RM_FreeCallReply(RedisModuleCallReply * reply)'/>
+<use f='codebrowser/src/module.c' l='742' u='c' c='autoMemoryCollect'/>
+<def f='codebrowser/src/module.c' l='2414' ll='2419' type='void RM_FreeCallReply(RedisModuleCallReply * reply)'/>
+<use f='codebrowser/src/module.c' l='3926' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='219'>/* --------------------------------------------------------------------------
+ * Prototypes
+ * -------------------------------------------------------------------------- */</doc>
+<doc f='codebrowser/src/module.c' l='2411'>/* Wrapper for the recursive free reply function. This is needed in order
+ * to have the first level function to return on nested replies, but only
+ * if called by the module API. */</doc>

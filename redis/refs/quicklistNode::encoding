@@ -1,0 +1,36 @@
+<dec f='codebrowser/src/quicklist.h' l='50' type='unsigned int'/>
+<offset>240</offset>
+<doc f='codebrowser/src/quicklist.h' l='50'>/* RAW==1 or LZF==2 */</doc>
+<use f='codebrowser/src/quicklist.c' l='145' u='w' c='quicklistCreateNode'/>
+<use f='codebrowser/src/quicklist.c' l='200' u='w' c='__quicklistCompressNode'/>
+<use f='codebrowser/src/quicklist.c' l='229' u='w' c='__quicklistDecompressNode'/>
+<use f='codebrowser/src/quicklist.c' l='236' u='r' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='236' u='r' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='__quicklistInsertNode'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='quicklistReplaceAtIndex'/>
+<use f='codebrowser/src/quicklist.c' l='236' u='r' c='_quicklistZiplistMerge'/>
+<use f='codebrowser/src/quicklist.c' l='236' u='r' c='_quicklistZiplistMerge'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='_quicklistZiplistMerge'/>
+<use f='codebrowser/src/quicklist.c' l='244' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='244' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='244' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='244' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='244' u='r' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='244' u='r' c='quicklistDelRange'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='quicklistDelRange'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='quicklistReleaseIterator'/>
+<use f='codebrowser/src/quicklist.c' l='244' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='208' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1195' u='r' c='quicklistDup'/>
+<use f='codebrowser/src/quicklist.c' l='1200' u='r' c='quicklistDup'/>
+<use f='codebrowser/src/quicklist.c' l='1208' u='w' c='quicklistDup'/>
+<use f='codebrowser/src/quicklist.c' l='1208' u='r' c='quicklistDup'/>
+<use f='codebrowser/src/quicklist.c' l='244' u='r' c='quicklistIndex'/>
+<use f='codebrowser/src/rdb.c' l='660' macro='1' u='r'/>

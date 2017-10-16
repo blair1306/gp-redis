@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1939' type='void zscanCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='200' u='r'/>
+<use f='codebrowser/src/server.c' l='200' u='r'/>
+<use f='codebrowser/src/server.c' l='200' u='r'/>
+<use f='codebrowser/src/server.c' l='200' u='r'/>
+<def f='codebrowser/src/t_zset.c' l='3062' ll='3070' type='void zscanCommand(client * c)'/>

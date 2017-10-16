@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='762' ll='766' macro='1' type='robj * RM_CreateString(RedisModuleCtx * ctx, const char * ptr, size_t len)'/>
+<use f='codebrowser/src/module.c' l='797' u='c' c='RM_CreateStringFromLongLong'/>
+<use f='codebrowser/src/module.c' l='2472' u='c' c='RM_CreateStringFromCallReply'/>
+<use f='codebrowser/src/module.c' l='2476' u='c' c='RM_CreateStringFromCallReply'/>
+<use f='codebrowser/src/module.c' l='3933' macro='1' u='r'/>

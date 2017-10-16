@@ -1,0 +1,9 @@
+<def f='codebrowser/src/module.c' l='951' ll='956' type='int RM_WrongArity(RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/module.c' l='3903' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='944'>/* Send an error about the number of arguments given to the command,
+ * citing the command name in the error message.
+ *
+ * Example:
+ *
+ *     if (argc != 3) return RedisModule_WrongArity(ctx);
+ */</doc>

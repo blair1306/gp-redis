@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='252' type='sds sdsjoinsds(sds * argv, int argc, const char * sep, size_t seplen)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='1078' ll='1087' type='sds sdsjoinsds(sds * argv, int argc, const char * sep, size_t seplen)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='1077'>/* Like sdsjoin, but joins an array of SDS strings. */</doc>
+<dec f='codebrowser/src/sds.h' l='252' type='sds sdsjoinsds(sds * argv, int argc, const char * sep, size_t seplen)'/>
+<use f='codebrowser/src/scripting.c' l='2139' u='c' c='ldbEval'/>
+<def f='codebrowser/src/sds.c' l='1083' ll='1092' type='sds sdsjoinsds(sds * argv, int argc, const char * sep, size_t seplen)'/>
+<doc f='codebrowser/src/sds.c' l='1082'>/* Like sdsjoin, but joins an array of SDS strings. */</doc>

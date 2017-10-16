@@ -1,0 +1,3 @@
+<def f='codebrowser/src/t_set.c' l='788' ll='913' type='void sinterGenericCommand(client * c, robj ** setkeys, unsigned long setnum, robj * dstkey)'/>
+<use f='codebrowser/src/t_set.c' l='916' u='c' c='sinterCommand'/>
+<use f='codebrowser/src/t_set.c' l='920' u='c' c='sinterstoreCommand'/>

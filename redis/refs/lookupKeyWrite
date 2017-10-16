@@ -1,0 +1,43 @@
+<dec f='codebrowser/src/server.h' l='1711' type='robj * lookupKeyWrite(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/bitops.c' l='480' u='c' c='lookupStringForBitCommand'/>
+<use f='codebrowser/src/cluster.c' l='4711' u='c' c='restoreCommand'/>
+<def f='codebrowser/src/db.c' l='139' ll='142' type='robj * lookupKeyWrite(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/db.c' l='151' u='c' c='lookupKeyWriteOrReply'/>
+<use f='codebrowser/src/db.c' l='197' u='c' c='setKey'/>
+<use f='codebrowser/src/db.c' l='848' u='c' c='renameGenericCommand'/>
+<use f='codebrowser/src/db.c' l='912' u='c' c='moveCommand'/>
+<use f='codebrowser/src/db.c' l='920' u='c' c='moveCommand'/>
+<doc f='codebrowser/src/db.c' l='134'>/* Lookup a key for write operations, and as a side effect, if needed, expires
+ * the key if its TTL is reached.
+ *
+ * Returns the linked value object if the key exists or NULL if the key
+ * does not exist in the specified DB. */</doc>
+<use f='codebrowser/src/debug.c' l='467' u='c' c='debugCommand'/>
+<use f='codebrowser/src/expire.c' l='394' u='c' c='expireGenericCommand'/>
+<use f='codebrowser/src/expire.c' l='485' u='c' c='persistCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1150' u='c' c='pfaddCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1230' u='c' c='pfcountCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1303' u='c' c='pfmergeCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1455' u='c' c='pfdebugCommand'/>
+<use f='codebrowser/src/module.c' l='1367' u='c' c='RM_OpenKey'/>
+<use f='codebrowser/src/t_hash.c' l='452' u='c' c='hashTypeLookupWriteOrCreate'/>
+<use f='codebrowser/src/t_list.c' l='199' u='c' c='pushGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='575' u='c' c='rpoplpushCommand'/>
+<use f='codebrowser/src/t_list.c' l='758' u='c' c='serveClientBlockedOnList'/>
+<use f='codebrowser/src/t_list.c' l='819' u='c' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_list.c' l='889' u='c' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='950' u='c' c='brpoplpushCommand'/>
+<use f='codebrowser/src/t_set.c' l='268' u='c' c='saddCommand'/>
+<use f='codebrowser/src/t_set.c' l='320' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='321' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='801' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='938' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='80' u='c' c='setGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='81' u='c' c='setGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='197' u='c' c='setrangeCommand'/>
+<use f='codebrowser/src/t_string.c' l='314' u='c' c='msetGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='345' u='c' c='incrDecrCommand'/>
+<use f='codebrowser/src/t_string.c' l='405' u='c' c='incrbyfloatCommand'/>
+<use f='codebrowser/src/t_string.c' l='439' u='c' c='appendCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1553' u='c' c='zaddGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2157' u='c' c='zunionInterGenericCommand'/>

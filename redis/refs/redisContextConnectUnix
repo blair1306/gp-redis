@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/hiredis/net.h' l='50' type='int redisContextConnectUnix(redisContext * c, const char * path, const struct timeval * timeout)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='661' u='c' c='redisReconnect'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='735' u='c' c='redisConnectUnix'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='747' u='c' c='redisConnectUnixWithTimeout'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='759' u='c' c='redisConnectUnixNonBlock'/>
+<def f='codebrowser/deps/hiredis/net.c' l='429' ll='476' type='int redisContextConnectUnix(redisContext * c, const char * path, const struct timeval * timeout)'/>

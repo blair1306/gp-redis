@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='1750' type='int * getKeysFromCommand(struct redisCommand * cmd, robj ** argv, int argc, int * numkeys)'/>
+<doc f='codebrowser/src/server.h' l='1749'>/* API to get key arguments from commands */</doc>
+<use f='codebrowser/src/cluster.c' l='5254' u='c' c='getNodeByQuery'/>
+<def f='codebrowser/src/db.c' l='1173' ll='1181' type='int * getKeysFromCommand(struct redisCommand * cmd, robj ** argv, int argc, int * numkeys)'/>
+<doc f='codebrowser/src/db.c' l='1162'>/* Return all the arguments that are keys in the command passed via argc / argv.
+ *
+ * The command returns the positions of all the key arguments inside the array,
+ * so the actual return value is an heap allocated array of integers. The
+ * length of the array is returned by reference into *numkeys.
+ *
+ * &apos;cmd&apos; must be point to the corresponding entry into the redisCommand
+ * table, according to the command name in argv[0].
+ *
+ * This function uses the command table if a command-specific helper function
+ * is not required, otherwise it calls the command-specific function. */</doc>
+<use f='codebrowser/src/server.c' l='2761' u='c' c='commandCommand'/>

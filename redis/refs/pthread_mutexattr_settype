@@ -1,0 +1,5 @@
+<dec f='include/pthread.h' l='833' type='int pthread_mutexattr_settype(pthread_mutexattr_t * __attr, int __kind)'/>
+<doc f='include/pthread.h' l='830'>/* Set the mutex kind attribute in *ATTR to KIND (either PTHREAD_MUTEX_NORMAL,
+   PTHREAD_MUTEX_RECURSIVE, PTHREAD_MUTEX_ERRORCHECK, or
+   PTHREAD_MUTEX_DEFAULT).  */</doc>
+<use f='codebrowser/deps/jemalloc/src/mutex.c' l='99' u='c' c='je_malloc_mutex_init'/>

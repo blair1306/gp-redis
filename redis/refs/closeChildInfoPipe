@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1533' type='void closeChildInfoPipe()'/>
+<use f='codebrowser/src/aof.c' l='1373' u='c' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/childinfo.c' l='40' u='c' c='openChildInfoPipe'/>
+<use f='codebrowser/src/childinfo.c' l='42' u='c' c='openChildInfoPipe'/>
+<def f='codebrowser/src/childinfo.c' l='49' ll='58' type='void closeChildInfoPipe()'/>
+<doc f='codebrowser/src/childinfo.c' l='48'>/* Close the pipes opened with openChildInfoPipe(). */</doc>
+<use f='codebrowser/src/rdb.c' l='1084' u='c' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1953' u='c' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/server.c' l='1075' u='c' c='serverCron'/>

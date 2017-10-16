@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/sentinel.c' l='363' type='void instanceLinkConnectionError(const redisAsyncContext * c)'/>
+<def f='codebrowser/src/sentinel.c' l='1096' ll='1108' type='void instanceLinkConnectionError(const redisAsyncContext * c)'/>
+<use f='codebrowser/src/sentinel.c' l='1113' u='c' c='sentinelLinkEstablishedCallback'/>
+<use f='codebrowser/src/sentinel.c' l='1118' u='c' c='sentinelDisconnectCallback'/>
+<doc f='codebrowser/src/sentinel.c' l='1090'>/* This function is called when an hiredis connection reported an error.
+ * We set it to NULL and mark the link as disconnected so that it will be
+ * reconnected again.
+ *
+ * Note: we don&apos;t free the hiredis context as hiredis will do it for us
+ * for async connections. */</doc>

@@ -1,0 +1,9 @@
+<def f='codebrowser/src/server.c' l='718' ll='730' type='int incrementallyRehash(int dbid)'/>
+<use f='codebrowser/src/server.c' l='911' u='c' c='databasesCron'/>
+<doc f='codebrowser/src/server.c' l='711'>/* Our hash table implementation performs rehashing incrementally while
+ * we write/read from the hash table. Still if the server is idle, the hash
+ * table will use two tables for a long time. So we try to use 1 millisecond
+ * of CPU time at every call of this function to perform some rehahsing.
+ *
+ * The function returns 1 if some rehashing was performed, otherwise 0
+ * is returned. */</doc>

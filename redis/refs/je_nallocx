@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='65' type='size_t je_nallocx(size_t size, int flags)'/>
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2421' macro='1' type='size_t je_nallocx(size_t size, int flags)'/>

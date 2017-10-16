@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='918' type='client *'/>
+<offset>4288</offset>
+<doc f='codebrowser/src/server.h' l='918'>/* Current client, only used on crash report */</doc>
+<use f='codebrowser/src/db.c' l='112' u='r' c='lookupKeyReadWithFlags'/>
+<use f='codebrowser/src/db.c' l='113' u='r' c='lookupKeyReadWithFlags'/>
+<use f='codebrowser/src/db.c' l='114' u='r' c='lookupKeyReadWithFlags'/>
+<use f='codebrowser/src/db.c' l='115' u='r' c='lookupKeyReadWithFlags'/>
+<use f='codebrowser/src/debug.c' l='886' u='r' c='logCurrentClient'/>
+<use f='codebrowser/src/debug.c' l='888' u='r' c='logCurrentClient'/>
+<use f='codebrowser/src/networking.c' l='739' u='r' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='739' u='w' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='1292' u='w' c='processInputBuffer'/>
+<use f='codebrowser/src/networking.c' l='1346' u='r' c='processInputBuffer'/>
+<use f='codebrowser/src/networking.c' l='1349' u='w' c='processInputBuffer'/>
+<use f='codebrowser/src/server.c' l='1802' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2378' u='r' c='processCommand'/>

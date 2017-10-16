@@ -1,0 +1,9 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='795' macro='1' type='void je_arena_mapbits_unallocated_set(arena_chunk_t * chunk, size_t pageind, size_t size, size_t flags)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='406' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='410' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='669' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='695' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1709' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1710' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1713' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1715' macro='1' u='c'/>

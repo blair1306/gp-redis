@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/zmalloc.h' l='82' type='float zmalloc_get_fragmentation_ratio(size_t rss)'/>
+<use f='codebrowser/src/object.c' l='821' u='c' c='getMemoryOverheadData'/>
+<def f='codebrowser/src/zmalloc.c' l='301' ll='303' type='float zmalloc_get_fragmentation_ratio(size_t rss)'/>
+<doc f='codebrowser/src/zmalloc.c' l='300'>/* Fragmentation = RSS / allocated-bytes */</doc>

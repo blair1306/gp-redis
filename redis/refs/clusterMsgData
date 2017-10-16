@@ -1,0 +1,6 @@
+<def f='codebrowser/src/cluster.h' l='207' ll='228'/>
+<size>2096</size>
+<mbr r='clusterMsgData::ping' o='0' t='struct (anonymous struct at /home/jon/workspace/redis/deps/lua/src/../../../src/cluster.h:209:5)'/>
+<mbr r='clusterMsgData::fail' o='0' t='struct (anonymous struct at /home/jon/workspace/redis/deps/lua/src/../../../src/cluster.h:215:5)'/>
+<mbr r='clusterMsgData::publish' o='0' t='struct (anonymous struct at /home/jon/workspace/redis/deps/lua/src/../../../src/cluster.h:220:5)'/>
+<mbr r='clusterMsgData::update' o='0' t='struct (anonymous struct at /home/jon/workspace/redis/deps/lua/src/../../../src/cluster.h:225:5)'/>

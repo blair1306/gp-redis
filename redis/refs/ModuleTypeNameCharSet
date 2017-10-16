@@ -1,0 +1,25 @@
+<def f='codebrowser/src/module.c' l='2690' ll='2693' type='const char *'/>
+<use f='codebrowser/src/module.c' l='2698' u='r' c='moduleTypeEncodeId'/>
+<use f='codebrowser/src/module.c' l='2790' u='r' c='moduleTypeNameByID'/>
+<doc f='codebrowser/src/module.c' l='2667'>/* Turn a 9 chars name in the specified charset and a 10 bit encver into
+ * a single 64 bit unsigned integer that represents this exact module name
+ * and version. This final number is called a &quot;type ID&quot; and is used when
+ * writing module exported values to RDB files, in order to re-associate the
+ * value to the right module to load them during RDB loading.
+ *
+ * If the string is not of the right length or the charset is wrong, or
+ * if encver is outside the unsigned 10 bit integer range, 0 is returned,
+ * otherwise the function returns the right type ID.
+ *
+ * The resulting 64 bit integer is composed as follows:
+ *
+ *     (high order bits) 6|6|6|6|6|6|6|6|6|10 (low order bits)
+ *
+ * The first 6 bits value is the first character, name[0], while the last
+ * 6 bits value, immediately before the 10 bits integer, is name[8].
+ * The last 10 bits are the encoding version.
+ *
+ * Note that a name and encver combo of &quot;AAAAAAAAA&quot; and 0, will produce
+ * zero as return value, that is the same we use to signal errors, thus
+ * this combination is invalid, and also useless since type names should
+ * try to be vary to avoid collisions. */</doc>

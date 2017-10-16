@@ -1,0 +1,97 @@
+<dec f='codebrowser/src/util.h' l='41' type='int ll2string(char * s, size_t len, long long value)'/>
+<use f='codebrowser/src/aof.c' l='456' u='c' c='catAppendOnlyGenericCommand'/>
+<use f='codebrowser/src/aof.c' l='464' u='c' c='catAppendOnlyGenericCommand'/>
+<use f='codebrowser/src/bitops.c' l='514' u='c' c='getObjectReadOnlyString'/>
+<use f='codebrowser/src/bitops.c' l='583' u='c' c='getbitCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1188' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/db.c' l='716' u='c' c='scanGenericCommand'/>
+<use f='codebrowser/src/debug.c' l='198' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/module.c' l='796' u='c' c='RM_CreateStringFromLongLong'/>
+<use f='codebrowser/src/module.c' l='2475' u='c' c='RM_CreateStringFromCallReply'/>
+<use f='codebrowser/src/module.c' l='3208' u='c' c='RM_DigestAddLongLong'/>
+<use f='codebrowser/src/networking.c' l='332' u='c' c='addReply'/>
+<use f='codebrowser/src/networking.c' l='500' u='c' c='addReplyLongLongWithPrefix'/>
+<use f='codebrowser/src/networking.c' l='583' u='c' c='addReplyBulkLongLong'/>
+<use f='codebrowser/src/notify.c' l='109' u='c' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/notify.c' l='121' u='c' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/object.c' l='465' u='c' c='getDecodedObject'/>
+<use f='codebrowser/src/object.c' l='494' u='c' c='compareStringObjectsWithFlags'/>
+<use f='codebrowser/src/object.c' l='501' u='c' c='compareStringObjectsWithFlags'/>
+<use f='codebrowser/src/quicklist.c' l='553' u='c' c='quicklistAppendValuesFromZiplist'/>
+<use f='codebrowser/src/quicklist.c' l='1297' u='c' c='quicklistRotate'/>
+<use f='codebrowser/src/rdb.c' l='255' u='c' c='rdbLoadIntegerObject'/>
+<use f='codebrowser/src/rdb.c' l='277' u='c' c='rdbTryIntegerEncoding'/>
+<use f='codebrowser/src/rdb.c' l='416' u='c' c='rdbSaveLongLongAsStringObject'/>
+<use f='codebrowser/src/rdb.c' l='844' u='c' c='rdbSaveAuxFieldStrInt'/>
+<use f='codebrowser/src/replication.c' l='159' u='c' c='feedReplicationBacklogWithObject'/>
+<use f='codebrowser/src/replication.c' l='203' u='c' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/replication.c' l='232' u='c' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/replication.c' l='244' u='c' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/rio.c' l='318' u='c' c='rioWriteBulkCount'/>
+<use f='codebrowser/src/rio.c' l='340' u='c' c='rioWriteBulkLongLong'/>
+<use f='codebrowser/src/sentinel.c' l='918' u='c' c='sentinelCallClientReconfScript'/>
+<use f='codebrowser/src/sentinel.c' l='919' u='c' c='sentinelCallClientReconfScript'/>
+<use f='codebrowser/src/sentinel.c' l='3581' u='c' c='sentinelAskMasterStateToOtherSentinels'/>
+<use f='codebrowser/src/sentinel.c' l='3743' u='c' c='sentinelSendSlaveOf'/>
+<use f='codebrowser/src/server.c' l='387' u='c' c='serverLogFromHandler'/>
+<use f='codebrowser/src/server.c' l='390' u='c' c='serverLogFromHandler'/>
+<use f='codebrowser/src/server.c' l='530' u='c' c='dictEncObjHash'/>
+<use f='codebrowser/src/server.c' l='1302' u='c' c='createSharedObjects'/>
+<use f='codebrowser/src/t_string.c' l='259' u='c' c='getrangeCommand'/>
+<use f='codebrowser/src/t_zset.c' l='716' u='c' c='zzlCompareElements'/>
+<use f='codebrowser/src/t_zset.c' l='2025' u='c' c='zuiBufferFromValue'/>
+<def f='codebrowser/src/util.c' l='277' ll='329' type='int ll2string(char * dst, size_t dstlen, long long svalue)'/>
+<use f='codebrowser/src/util.c' l='484' u='c' c='d2string'/>
+<doc f='codebrowser/src/util.c' l='266'>/* Convert a long long into a string. Returns the number of
+ * characters needed to represent the number.
+ * If the buffer is not big enough to store the string, 0 is returned.
+ *
+ * Based on the following article (that apparently does not provide a
+ * novel approach but only publicizes an already used technique):
+ *
+ * https://www.facebook.com/notes/facebook-engineering/three-optimization-tips-for-c/10151361643253920
+ *
+ * Modified in order to handle signed integers since the original code was
+ * designed for unsigned integers. */</doc>

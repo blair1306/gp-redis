@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/rax.h' l='152' type='int raxSeek(raxIterator * it, const char * op, unsigned char * ele, size_t len)'/>
+<use f='codebrowser/src/db.c' l='1404' u='c' c='getKeysInSlot'/>
+<use f='codebrowser/src/db.c' l='1424' u='c' c='delKeysInSlot'/>
+<def f='codebrowser/src/rax.c' l='1369' ll='1531' type='int raxSeek(raxIterator * it, const char * op, unsigned char * ele, size_t len)'/>
+<use f='codebrowser/src/rax.c' l='1406' u='c' c='raxSeek'/>
+<doc f='codebrowser/src/rax.c' l='1365'>/* Seek an iterator at the specified element.
+ * Return 0 if the seek failed for syntax error or out of memory. Otherwise
+ * 1 is returned. When 0 is returned for out of memory, errno is set to
+ * the ENOMEM value. */</doc>

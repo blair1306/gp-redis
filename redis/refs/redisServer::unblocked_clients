@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1125' type='list *'/>
+<offset>20736</offset>
+<doc f='codebrowser/src/server.h' l='1125'>/* list of clients to unblock before next loop */</doc>
+<use f='codebrowser/src/blocked.c' l='113' u='r' c='processUnblockedClients'/>
+<use f='codebrowser/src/blocked.c' l='114' u='r' c='processUnblockedClients'/>
+<use f='codebrowser/src/blocked.c' l='117' u='r' c='processUnblockedClients'/>
+<use f='codebrowser/src/blocked.c' l='153' u='r' c='unblockClient'/>
+<use f='codebrowser/src/networking.c' l='768' u='r' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='770' u='r' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='1993' u='r' c='clientsArePaused'/>
+<use f='codebrowser/src/server.c' l='1221' u='r' c='beforeSleep'/>
+<use f='codebrowser/src/server.c' l='1809' u='w' c='initServer'/>

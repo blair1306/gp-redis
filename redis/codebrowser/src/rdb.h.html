@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>rdb.h source code [codebrowser/src/rdb.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/rdb.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>src</a>/<a href='rdb.h.html'>rdb.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (c) 2009-2012, Salvatore Sanfilippo &lt;antirez at gmail dot com&gt;</i></td></tr>
+<tr><th id="3">3</th><td><i> * All rights reserved.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="6">6</th><td><i> * modification, are permitted provided that the following conditions are met:</i></td></tr>
+<tr><th id="7">7</th><td><i> *</i></td></tr>
+<tr><th id="8">8</th><td><i> *   * Redistributions of source code must retain the above copyright notice,</i></td></tr>
+<tr><th id="9">9</th><td><i> *     this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="10">10</th><td><i> *   * Redistributions in binary form must reproduce the above copyright</i></td></tr>
+<tr><th id="11">11</th><td><i> *     notice, this list of conditions and the following disclaimer in the</i></td></tr>
+<tr><th id="12">12</th><td><i> *     documentation and/or other materials provided with the distribution.</i></td></tr>
+<tr><th id="13">13</th><td><i> *   * Neither the name of Redis nor the names of its contributors may be used</i></td></tr>
+<tr><th id="14">14</th><td><i> *     to endorse or promote products derived from this software without</i></td></tr>
+<tr><th id="15">15</th><td><i> *     specific prior written permission.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"</i></td></tr>
+<tr><th id="18">18</th><td><i> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</i></td></tr>
+<tr><th id="19">19</th><td><i> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</i></td></tr>
+<tr><th id="20">20</th><td><i> * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE</i></td></tr>
+<tr><th id="21">21</th><td><i> * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</i></td></tr>
+<tr><th id="22">22</th><td><i> * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</i></td></tr>
+<tr><th id="23">23</th><td><i> * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</i></td></tr>
+<tr><th id="24">24</th><td><i> * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</i></td></tr>
+<tr><th id="25">25</th><td><i> * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</i></td></tr>
+<tr><th id="26">26</th><td><i> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</i></td></tr>
+<tr><th id="27">27</th><td><i> * POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="28">28</th><td><i> */</i></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="30">ifndef</span> <span class="macro" data-ref="_M/__RDB_H">__RDB_H</span></u></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/__RDB_H" data-ref="_M/__RDB_H">__RDB_H</dfn></u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="../../include/stdio.h.html">&lt;stdio.h&gt;</a></u></td></tr>
+<tr><th id="34">34</th><td><u>#include <a href="rio.h.html">"rio.h"</a></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><i>/* TBD: include only necessary headers. */</i></td></tr>
+<tr><th id="37">37</th><td><u>#include <a href="server.h.html">"server.h"</a></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><i>/* The current RDB version. When the format changes in a way that is no longer</i></td></tr>
+<tr><th id="40">40</th><td><i> * backward compatible this number gets incremented. */</i></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/RDB_VERSION" data-ref="_M/RDB_VERSION">RDB_VERSION</dfn> 8</u></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><i>/* Defines related to the dump file format. To store 32 bits lengths for short</i></td></tr>
+<tr><th id="44">44</th><td><i> * keys requires a lot of space, so we check the most significant 2 bits of</i></td></tr>
+<tr><th id="45">45</th><td><i> * the first byte to interpreter the length:</i></td></tr>
+<tr><th id="46">46</th><td><i> *</i></td></tr>
+<tr><th id="47">47</th><td><i> * 00|XXXXXX =&gt; if the two MSB are 00 the len is the 6 bits of this byte</i></td></tr>
+<tr><th id="48">48</th><td><i> * 01|XXXXXX XXXXXXXX =&gt;  01, the len is 14 byes, 6 bits + 8 bits of next byte</i></td></tr>
+<tr><th id="49">49</th><td><i> * 10|000000 [32 bit integer] =&gt; A full 32 bit len in net byte order will follow</i></td></tr>
+<tr><th id="50">50</th><td><i> * 10|000001 [64 bit integer] =&gt; A full 64 bit len in net byte order will follow</i></td></tr>
+<tr><th id="51">51</th><td><i> * 11|OBKIND this means: specially encoded object will follow. The six bits</i></td></tr>
+<tr><th id="52">52</th><td><i> *           number specify the kind of object that follows.</i></td></tr>
+<tr><th id="53">53</th><td><i> *           See the RDB_ENC_* defines.</i></td></tr>
+<tr><th id="54">54</th><td><i> *</i></td></tr>
+<tr><th id="55">55</th><td><i> * Lengths up to 63 are stored using a single byte, most DB keys, and may</i></td></tr>
+<tr><th id="56">56</th><td><i> * values, will fit inside. */</i></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/RDB_6BITLEN" data-ref="_M/RDB_6BITLEN">RDB_6BITLEN</dfn> 0</u></td></tr>
+<tr><th id="58">58</th><td><u>#define <dfn class="macro" id="_M/RDB_14BITLEN" data-ref="_M/RDB_14BITLEN">RDB_14BITLEN</dfn> 1</u></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/RDB_32BITLEN" data-ref="_M/RDB_32BITLEN">RDB_32BITLEN</dfn> 0x80</u></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/RDB_64BITLEN" data-ref="_M/RDB_64BITLEN">RDB_64BITLEN</dfn> 0x81</u></td></tr>
+<tr><th id="61">61</th><td><u>#define <dfn class="macro" id="_M/RDB_ENCVAL" data-ref="_M/RDB_ENCVAL">RDB_ENCVAL</dfn> 3</u></td></tr>
+<tr><th id="62">62</th><td><u>#define <dfn class="macro" id="_M/RDB_LENERR" data-ref="_M/RDB_LENERR">RDB_LENERR</dfn> UINT64_MAX</u></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><i>/* When a length of a string object stored on disk has the first two bits</i></td></tr>
+<tr><th id="65">65</th><td><i> * set, the remaining six bits specify a special encoding for the object</i></td></tr>
+<tr><th id="66">66</th><td><i> * accordingly to the following defines: */</i></td></tr>
+<tr><th id="67">67</th><td><u>#define <dfn class="macro" id="_M/RDB_ENC_INT8" data-ref="_M/RDB_ENC_INT8">RDB_ENC_INT8</dfn> 0        /* 8 bit signed integer */</u></td></tr>
+<tr><th id="68">68</th><td><u>#define <dfn class="macro" id="_M/RDB_ENC_INT16" data-ref="_M/RDB_ENC_INT16">RDB_ENC_INT16</dfn> 1       /* 16 bit signed integer */</u></td></tr>
+<tr><th id="69">69</th><td><u>#define <dfn class="macro" id="_M/RDB_ENC_INT32" data-ref="_M/RDB_ENC_INT32">RDB_ENC_INT32</dfn> 2       /* 32 bit signed integer */</u></td></tr>
+<tr><th id="70">70</th><td><u>#define <dfn class="macro" id="_M/RDB_ENC_LZF" data-ref="_M/RDB_ENC_LZF">RDB_ENC_LZF</dfn> 3         /* string compressed with FASTLZ */</u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><i>/* Dup object types to RDB object types. Only reason is readability (are we</i></td></tr>
+<tr><th id="73">73</th><td><i> * dealing with RDB types or with in-memory object types?). */</i></td></tr>
+<tr><th id="74">74</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_STRING" data-ref="_M/RDB_TYPE_STRING">RDB_TYPE_STRING</dfn> 0</u></td></tr>
+<tr><th id="75">75</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_LIST" data-ref="_M/RDB_TYPE_LIST">RDB_TYPE_LIST</dfn>   1</u></td></tr>
+<tr><th id="76">76</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_SET" data-ref="_M/RDB_TYPE_SET">RDB_TYPE_SET</dfn>    2</u></td></tr>
+<tr><th id="77">77</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_ZSET" data-ref="_M/RDB_TYPE_ZSET">RDB_TYPE_ZSET</dfn>   3</u></td></tr>
+<tr><th id="78">78</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_HASH" data-ref="_M/RDB_TYPE_HASH">RDB_TYPE_HASH</dfn>   4</u></td></tr>
+<tr><th id="79">79</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_ZSET_2" data-ref="_M/RDB_TYPE_ZSET_2">RDB_TYPE_ZSET_2</dfn> 5 /* ZSET version 2 with doubles stored in binary. */</u></td></tr>
+<tr><th id="80">80</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_MODULE" data-ref="_M/RDB_TYPE_MODULE">RDB_TYPE_MODULE</dfn> 6</u></td></tr>
+<tr><th id="81">81</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_MODULE_2" data-ref="_M/RDB_TYPE_MODULE_2">RDB_TYPE_MODULE_2</dfn> 7 /* Module value with annotations for parsing without</u></td></tr>
+<tr><th id="82">82</th><td><u>                               the generating module being loaded. */</u></td></tr>
+<tr><th id="83">83</th><td><i>/* NOTE: WHEN ADDING NEW RDB TYPE, UPDATE rdbIsObjectType() BELOW */</i></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><i>/* Object types for encoded objects. */</i></td></tr>
+<tr><th id="86">86</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_HASH_ZIPMAP" data-ref="_M/RDB_TYPE_HASH_ZIPMAP">RDB_TYPE_HASH_ZIPMAP</dfn>    9</u></td></tr>
+<tr><th id="87">87</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_LIST_ZIPLIST" data-ref="_M/RDB_TYPE_LIST_ZIPLIST">RDB_TYPE_LIST_ZIPLIST</dfn>  10</u></td></tr>
+<tr><th id="88">88</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_SET_INTSET" data-ref="_M/RDB_TYPE_SET_INTSET">RDB_TYPE_SET_INTSET</dfn>    11</u></td></tr>
+<tr><th id="89">89</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_ZSET_ZIPLIST" data-ref="_M/RDB_TYPE_ZSET_ZIPLIST">RDB_TYPE_ZSET_ZIPLIST</dfn>  12</u></td></tr>
+<tr><th id="90">90</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_HASH_ZIPLIST" data-ref="_M/RDB_TYPE_HASH_ZIPLIST">RDB_TYPE_HASH_ZIPLIST</dfn>  13</u></td></tr>
+<tr><th id="91">91</th><td><u>#define <dfn class="macro" id="_M/RDB_TYPE_LIST_QUICKLIST" data-ref="_M/RDB_TYPE_LIST_QUICKLIST">RDB_TYPE_LIST_QUICKLIST</dfn> 14</u></td></tr>
+<tr><th id="92">92</th><td><i>/* NOTE: WHEN ADDING NEW RDB TYPE, UPDATE rdbIsObjectType() BELOW */</i></td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><i>/* Test if a type is an object type. */</i></td></tr>
+<tr><th id="95">95</th><td><u>#define <dfn class="macro" id="_M/rdbIsObjectType" data-ref="_M/rdbIsObjectType">rdbIsObjectType</dfn>(t) ((t &gt;= 0 &amp;&amp; t &lt;= 7) || (t &gt;= 9 &amp;&amp; t &lt;= 14))</u></td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><i>/* Special RDB opcodes (saved/loaded with rdbSaveType/rdbLoadType). */</i></td></tr>
+<tr><th id="98">98</th><td><u>#define <dfn class="macro" id="_M/RDB_OPCODE_AUX" data-ref="_M/RDB_OPCODE_AUX">RDB_OPCODE_AUX</dfn>        250</u></td></tr>
+<tr><th id="99">99</th><td><u>#define <dfn class="macro" id="_M/RDB_OPCODE_RESIZEDB" data-ref="_M/RDB_OPCODE_RESIZEDB">RDB_OPCODE_RESIZEDB</dfn>   251</u></td></tr>
+<tr><th id="100">100</th><td><u>#define <dfn class="macro" id="_M/RDB_OPCODE_EXPIRETIME_MS" data-ref="_M/RDB_OPCODE_EXPIRETIME_MS">RDB_OPCODE_EXPIRETIME_MS</dfn> 252</u></td></tr>
+<tr><th id="101">101</th><td><u>#define <dfn class="macro" id="_M/RDB_OPCODE_EXPIRETIME" data-ref="_M/RDB_OPCODE_EXPIRETIME">RDB_OPCODE_EXPIRETIME</dfn> 253</u></td></tr>
+<tr><th id="102">102</th><td><u>#define <dfn class="macro" id="_M/RDB_OPCODE_SELECTDB" data-ref="_M/RDB_OPCODE_SELECTDB">RDB_OPCODE_SELECTDB</dfn>   254</u></td></tr>
+<tr><th id="103">103</th><td><u>#define <dfn class="macro" id="_M/RDB_OPCODE_EOF" data-ref="_M/RDB_OPCODE_EOF">RDB_OPCODE_EOF</dfn>        255</u></td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><i>/* Module serialized values sub opcodes */</i></td></tr>
+<tr><th id="106">106</th><td><u>#define <dfn class="macro" id="_M/RDB_MODULE_OPCODE_EOF" data-ref="_M/RDB_MODULE_OPCODE_EOF">RDB_MODULE_OPCODE_EOF</dfn>   0   /* End of module value. */</u></td></tr>
+<tr><th id="107">107</th><td><u>#define <dfn class="macro" id="_M/RDB_MODULE_OPCODE_SINT" data-ref="_M/RDB_MODULE_OPCODE_SINT">RDB_MODULE_OPCODE_SINT</dfn>  1   /* Signed integer. */</u></td></tr>
+<tr><th id="108">108</th><td><u>#define <dfn class="macro" id="_M/RDB_MODULE_OPCODE_UINT" data-ref="_M/RDB_MODULE_OPCODE_UINT">RDB_MODULE_OPCODE_UINT</dfn>  2   /* Unsigned integer. */</u></td></tr>
+<tr><th id="109">109</th><td><u>#define <dfn class="macro" id="_M/RDB_MODULE_OPCODE_FLOAT" data-ref="_M/RDB_MODULE_OPCODE_FLOAT">RDB_MODULE_OPCODE_FLOAT</dfn> 3   /* Float. */</u></td></tr>
+<tr><th id="110">110</th><td><u>#define <dfn class="macro" id="_M/RDB_MODULE_OPCODE_DOUBLE" data-ref="_M/RDB_MODULE_OPCODE_DOUBLE">RDB_MODULE_OPCODE_DOUBLE</dfn> 4  /* Double. */</u></td></tr>
+<tr><th id="111">111</th><td><u>#define <dfn class="macro" id="_M/RDB_MODULE_OPCODE_STRING" data-ref="_M/RDB_MODULE_OPCODE_STRING">RDB_MODULE_OPCODE_STRING</dfn> 5  /* String. */</u></td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><i>/* rdbLoad...() functions flags. */</i></td></tr>
+<tr><th id="114">114</th><td><u>#define <dfn class="macro" id="_M/RDB_LOAD_NONE" data-ref="_M/RDB_LOAD_NONE">RDB_LOAD_NONE</dfn>   0</u></td></tr>
+<tr><th id="115">115</th><td><u>#define <dfn class="macro" id="_M/RDB_LOAD_ENC" data-ref="_M/RDB_LOAD_ENC">RDB_LOAD_ENC</dfn>    (1&lt;&lt;0)</u></td></tr>
+<tr><th id="116">116</th><td><u>#define <dfn class="macro" id="_M/RDB_LOAD_PLAIN" data-ref="_M/RDB_LOAD_PLAIN">RDB_LOAD_PLAIN</dfn>  (1&lt;&lt;1)</u></td></tr>
+<tr><th id="117">117</th><td><u>#define <dfn class="macro" id="_M/RDB_LOAD_SDS" data-ref="_M/RDB_LOAD_SDS">RDB_LOAD_SDS</dfn>    (1&lt;&lt;2)</u></td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><u>#define <dfn class="macro" id="_M/RDB_SAVE_NONE" data-ref="_M/RDB_SAVE_NONE">RDB_SAVE_NONE</dfn> 0</u></td></tr>
+<tr><th id="120">120</th><td><u>#define <dfn class="macro" id="_M/RDB_SAVE_AOF_PREAMBLE" data-ref="_M/RDB_SAVE_AOF_PREAMBLE">RDB_SAVE_AOF_PREAMBLE</dfn> (1&lt;&lt;0)</u></td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><em>int</em> <dfn class="decl" id="rdbSaveType" title='rdbSaveType' data-ref="rdbSaveType">rdbSaveType</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col3 decl" id="753rdb" title='rdb' data-type='rio *' data-ref="753rdb">rdb</dfn>, <em>unsigned</em> <em>char</em> <dfn class="local col4 decl" id="754type" title='type' data-type='unsigned char' data-ref="754type">type</dfn>);</td></tr>
+<tr><th id="123">123</th><td><em>int</em> <dfn class="decl" id="rdbLoadType" title='rdbLoadType' data-ref="rdbLoadType">rdbLoadType</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col5 decl" id="755rdb" title='rdb' data-type='rio *' data-ref="755rdb">rdb</dfn>);</td></tr>
+<tr><th id="124">124</th><td><em>int</em> <dfn class="decl" id="rdbSaveTime" title='rdbSaveTime' data-ref="rdbSaveTime">rdbSaveTime</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col6 decl" id="756rdb" title='rdb' data-type='rio *' data-ref="756rdb">rdb</dfn>, <a class="typedef" href="../../include/time.h.html#time_t" title='time_t' data-type='__time_t' data-ref="time_t">time_t</a> <dfn class="local col7 decl" id="757t" title='t' data-type='time_t' data-ref="757t">t</dfn>);</td></tr>
+<tr><th id="125">125</th><td><a class="typedef" href="../../include/time.h.html#time_t" title='time_t' data-type='__time_t' data-ref="time_t">time_t</a> <dfn class="decl" id="rdbLoadTime" title='rdbLoadTime' data-ref="rdbLoadTime">rdbLoadTime</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col8 decl" id="758rdb" title='rdb' data-type='rio *' data-ref="758rdb">rdb</dfn>);</td></tr>
+<tr><th id="126">126</th><td><em>int</em> <dfn class="decl" id="rdbSaveLen" title='rdbSaveLen' data-ref="rdbSaveLen">rdbSaveLen</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col9 decl" id="759rdb" title='rdb' data-type='rio *' data-ref="759rdb">rdb</dfn>, <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col0 decl" id="760len" title='len' data-type='uint64_t' data-ref="760len">len</dfn>);</td></tr>
+<tr><th id="127">127</th><td><a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="decl" id="rdbLoadLen" title='rdbLoadLen' data-ref="rdbLoadLen">rdbLoadLen</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col1 decl" id="761rdb" title='rdb' data-type='rio *' data-ref="761rdb">rdb</dfn>, <em>int</em> *<dfn class="local col2 decl" id="762isencoded" title='isencoded' data-type='int *' data-ref="762isencoded">isencoded</dfn>);</td></tr>
+<tr><th id="128">128</th><td><em>int</em> <dfn class="decl" id="rdbLoadLenByRef" title='rdbLoadLenByRef' data-ref="rdbLoadLenByRef">rdbLoadLenByRef</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col3 decl" id="763rdb" title='rdb' data-type='rio *' data-ref="763rdb">rdb</dfn>, <em>int</em> *<dfn class="local col4 decl" id="764isencoded" title='isencoded' data-type='int *' data-ref="764isencoded">isencoded</dfn>, <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> *<dfn class="local col5 decl" id="765lenptr" title='lenptr' data-type='uint64_t *' data-ref="765lenptr">lenptr</dfn>);</td></tr>
+<tr><th id="129">129</th><td><em>int</em> <dfn class="decl" id="rdbSaveObjectType" title='rdbSaveObjectType' data-ref="rdbSaveObjectType">rdbSaveObjectType</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col6 decl" id="766rdb" title='rdb' data-type='rio *' data-ref="766rdb">rdb</dfn>, <a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="local col7 decl" id="767o" title='o' data-type='robj *' data-ref="767o">o</dfn>);</td></tr>
+<tr><th id="130">130</th><td><em>int</em> <dfn class="decl" id="rdbLoadObjectType" title='rdbLoadObjectType' data-ref="rdbLoadObjectType">rdbLoadObjectType</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col8 decl" id="768rdb" title='rdb' data-type='rio *' data-ref="768rdb">rdb</dfn>);</td></tr>
+<tr><th id="131">131</th><td><em>int</em> <dfn class="decl" id="rdbLoad" title='rdbLoad' data-ref="rdbLoad">rdbLoad</dfn>(<em>char</em> *<dfn class="local col9 decl" id="769filename" title='filename' data-type='char *' data-ref="769filename">filename</dfn>, <a class="typedef" href="server.h.html#rdbSaveInfo" title='rdbSaveInfo' data-type='struct rdbSaveInfo' data-ref="rdbSaveInfo">rdbSaveInfo</a> *<dfn class="local col0 decl" id="770rsi" title='rsi' data-type='rdbSaveInfo *' data-ref="770rsi">rsi</dfn>);</td></tr>
+<tr><th id="132">132</th><td><em>int</em> <dfn class="decl" id="rdbSaveBackground" title='rdbSaveBackground' data-ref="rdbSaveBackground">rdbSaveBackground</dfn>(<em>char</em> *<dfn class="local col1 decl" id="771filename" title='filename' data-type='char *' data-ref="771filename">filename</dfn>, <a class="typedef" href="server.h.html#rdbSaveInfo" title='rdbSaveInfo' data-type='struct rdbSaveInfo' data-ref="rdbSaveInfo">rdbSaveInfo</a> *<dfn class="local col2 decl" id="772rsi" title='rsi' data-type='rdbSaveInfo *' data-ref="772rsi">rsi</dfn>);</td></tr>
+<tr><th id="133">133</th><td><em>int</em> <dfn class="decl" id="rdbSaveToSlavesSockets" title='rdbSaveToSlavesSockets' data-ref="rdbSaveToSlavesSockets">rdbSaveToSlavesSockets</dfn>(<a class="typedef" href="server.h.html#rdbSaveInfo" title='rdbSaveInfo' data-type='struct rdbSaveInfo' data-ref="rdbSaveInfo">rdbSaveInfo</a> *<dfn class="local col3 decl" id="773rsi" title='rsi' data-type='rdbSaveInfo *' data-ref="773rsi">rsi</dfn>);</td></tr>
+<tr><th id="134">134</th><td><em>void</em> <dfn class="decl" id="rdbRemoveTempFile" title='rdbRemoveTempFile' data-ref="rdbRemoveTempFile">rdbRemoveTempFile</dfn>(<a class="typedef" href="../../include/x86_64-linux-gnu/sys/types.h.html#pid_t" title='pid_t' data-type='__pid_t' data-ref="pid_t">pid_t</a> <dfn class="local col4 decl" id="774childpid" title='childpid' data-type='pid_t' data-ref="774childpid">childpid</dfn>);</td></tr>
+<tr><th id="135">135</th><td><em>int</em> <dfn class="decl" id="rdbSave" title='rdbSave' data-ref="rdbSave">rdbSave</dfn>(<em>char</em> *<dfn class="local col5 decl" id="775filename" title='filename' data-type='char *' data-ref="775filename">filename</dfn>, <a class="typedef" href="server.h.html#rdbSaveInfo" title='rdbSaveInfo' data-type='struct rdbSaveInfo' data-ref="rdbSaveInfo">rdbSaveInfo</a> *<dfn class="local col6 decl" id="776rsi" title='rsi' data-type='rdbSaveInfo *' data-ref="776rsi">rsi</dfn>);</td></tr>
+<tr><th id="136">136</th><td><a class="typedef" href="../../include/x86_64-linux-gnu/sys/types.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="decl" id="rdbSaveObject" title='rdbSaveObject' data-ref="rdbSaveObject">rdbSaveObject</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col7 decl" id="777rdb" title='rdb' data-type='rio *' data-ref="777rdb">rdb</dfn>, <a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="local col8 decl" id="778o" title='o' data-type='robj *' data-ref="778o">o</dfn>);</td></tr>
+<tr><th id="137">137</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="rdbSavedObjectLen" title='rdbSavedObjectLen' data-ref="rdbSavedObjectLen">rdbSavedObjectLen</dfn>(<a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="local col9 decl" id="779o" title='o' data-type='robj *' data-ref="779o">o</dfn>);</td></tr>
+<tr><th id="138">138</th><td><a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="decl" id="rdbLoadObject" title='rdbLoadObject' data-ref="rdbLoadObject">rdbLoadObject</dfn>(<em>int</em> <dfn class="local col0 decl" id="780type" title='type' data-type='int' data-ref="780type">type</dfn>, <a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col1 decl" id="781rdb" title='rdb' data-type='rio *' data-ref="781rdb">rdb</dfn>);</td></tr>
+<tr><th id="139">139</th><td><em>void</em> <dfn class="decl" id="backgroundSaveDoneHandler" title='backgroundSaveDoneHandler' data-ref="backgroundSaveDoneHandler">backgroundSaveDoneHandler</dfn>(<em>int</em> <dfn class="local col2 decl" id="782exitcode" title='exitcode' data-type='int' data-ref="782exitcode">exitcode</dfn>, <em>int</em> <dfn class="local col3 decl" id="783bysignal" title='bysignal' data-type='int' data-ref="783bysignal">bysignal</dfn>);</td></tr>
+<tr><th id="140">140</th><td><em>int</em> <dfn class="decl" id="rdbSaveKeyValuePair" title='rdbSaveKeyValuePair' data-ref="rdbSaveKeyValuePair">rdbSaveKeyValuePair</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col4 decl" id="784rdb" title='rdb' data-type='rio *' data-ref="784rdb">rdb</dfn>, <a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="local col5 decl" id="785key" title='key' data-type='robj *' data-ref="785key">key</dfn>, <a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="local col6 decl" id="786val" title='val' data-type='robj *' data-ref="786val">val</dfn>, <em>long</em> <em>long</em> <dfn class="local col7 decl" id="787expiretime" title='expiretime' data-type='long long' data-ref="787expiretime">expiretime</dfn>, <em>long</em> <em>long</em> <dfn class="local col8 decl" id="788now" title='now' data-type='long long' data-ref="788now">now</dfn>);</td></tr>
+<tr><th id="141">141</th><td><a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="decl" id="rdbLoadStringObject" title='rdbLoadStringObject' data-ref="rdbLoadStringObject">rdbLoadStringObject</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col9 decl" id="789rdb" title='rdb' data-type='rio *' data-ref="789rdb">rdb</dfn>);</td></tr>
+<tr><th id="142">142</th><td><em>int</em> <dfn class="decl" id="rdbSaveStringObject" title='rdbSaveStringObject' data-ref="rdbSaveStringObject">rdbSaveStringObject</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col0 decl" id="790rdb" title='rdb' data-type='rio *' data-ref="790rdb">rdb</dfn>, <a class="typedef" href="server.h.html#robj" title='robj' data-type='struct redisObject' data-ref="robj">robj</a> *<dfn class="local col1 decl" id="791obj" title='obj' data-type='robj *' data-ref="791obj">obj</dfn>);</td></tr>
+<tr><th id="143">143</th><td><a class="typedef" href="../../include/x86_64-linux-gnu/sys/types.h.html#ssize_t" title='ssize_t' data-type='__ssize_t' data-ref="ssize_t">ssize_t</a> <dfn class="decl" id="rdbSaveRawString" title='rdbSaveRawString' data-ref="rdbSaveRawString">rdbSaveRawString</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col2 decl" id="792rdb" title='rdb' data-type='rio *' data-ref="792rdb">rdb</dfn>, <em>unsigned</em> <em>char</em> *<dfn class="local col3 decl" id="793s" title='s' data-type='unsigned char *' data-ref="793s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="794len" title='len' data-type='size_t' data-ref="794len">len</dfn>);</td></tr>
+<tr><th id="144">144</th><td><em>void</em> *<dfn class="decl" id="rdbGenericLoadStringObject" title='rdbGenericLoadStringObject' data-ref="rdbGenericLoadStringObject">rdbGenericLoadStringObject</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col5 decl" id="795rdb" title='rdb' data-type='rio *' data-ref="795rdb">rdb</dfn>, <em>int</em> <dfn class="local col6 decl" id="796flags" title='flags' data-type='int' data-ref="796flags">flags</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col7 decl" id="797lenptr" title='lenptr' data-type='size_t *' data-ref="797lenptr">lenptr</dfn>);</td></tr>
+<tr><th id="145">145</th><td><em>int</em> <dfn class="decl" id="rdbSaveBinaryDoubleValue" title='rdbSaveBinaryDoubleValue' data-ref="rdbSaveBinaryDoubleValue">rdbSaveBinaryDoubleValue</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col8 decl" id="798rdb" title='rdb' data-type='rio *' data-ref="798rdb">rdb</dfn>, <em>double</em> <dfn class="local col9 decl" id="799val" title='val' data-type='double' data-ref="799val">val</dfn>);</td></tr>
+<tr><th id="146">146</th><td><em>int</em> <dfn class="decl" id="rdbLoadBinaryDoubleValue" title='rdbLoadBinaryDoubleValue' data-ref="rdbLoadBinaryDoubleValue">rdbLoadBinaryDoubleValue</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col0 decl" id="800rdb" title='rdb' data-type='rio *' data-ref="800rdb">rdb</dfn>, <em>double</em> *<dfn class="local col1 decl" id="801val" title='val' data-type='double *' data-ref="801val">val</dfn>);</td></tr>
+<tr><th id="147">147</th><td><em>int</em> <dfn class="decl" id="rdbSaveBinaryFloatValue" title='rdbSaveBinaryFloatValue' data-ref="rdbSaveBinaryFloatValue">rdbSaveBinaryFloatValue</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col2 decl" id="802rdb" title='rdb' data-type='rio *' data-ref="802rdb">rdb</dfn>, <em>float</em> <dfn class="local col3 decl" id="803val" title='val' data-type='float' data-ref="803val">val</dfn>);</td></tr>
+<tr><th id="148">148</th><td><em>int</em> <dfn class="decl" id="rdbLoadBinaryFloatValue" title='rdbLoadBinaryFloatValue' data-ref="rdbLoadBinaryFloatValue">rdbLoadBinaryFloatValue</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col4 decl" id="804rdb" title='rdb' data-type='rio *' data-ref="804rdb">rdb</dfn>, <em>float</em> *<dfn class="local col5 decl" id="805val" title='val' data-type='float *' data-ref="805val">val</dfn>);</td></tr>
+<tr><th id="149">149</th><td><em>int</em> <dfn class="decl" id="rdbLoadRio" title='rdbLoadRio' data-ref="rdbLoadRio">rdbLoadRio</dfn>(<a class="typedef" href="rio.h.html#rio" title='rio' data-type='struct _rio' data-ref="rio">rio</a> *<dfn class="local col6 decl" id="806rdb" title='rdb' data-type='rio *' data-ref="806rdb">rdb</dfn>, <a class="typedef" href="server.h.html#rdbSaveInfo" title='rdbSaveInfo' data-type='struct rdbSaveInfo' data-ref="rdbSaveInfo">rdbSaveInfo</a> *<dfn class="local col7 decl" id="807rsi" title='rsi' data-type='rdbSaveInfo *' data-ref="807rsi">rsi</dfn>);</td></tr>
+<tr><th id="150">150</th><td><a class="typedef" href="server.h.html#rdbSaveInfo" title='rdbSaveInfo' data-type='struct rdbSaveInfo' data-ref="rdbSaveInfo">rdbSaveInfo</a> *<dfn class="decl" id="rdbPopulateSaveInfo" title='rdbPopulateSaveInfo' data-ref="rdbPopulateSaveInfo">rdbPopulateSaveInfo</dfn>(<a class="typedef" href="server.h.html#rdbSaveInfo" title='rdbSaveInfo' data-type='struct rdbSaveInfo' data-ref="rdbSaveInfo">rdbSaveInfo</a> *<dfn class="local col8 decl" id="808rsi" title='rsi' data-type='rdbSaveInfo *' data-ref="808rsi">rsi</dfn>);</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><u>#<span data-ppcond="30">endif</span></u></td></tr>
+<tr><th id="153">153</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='aof.c.html'>codebrowser/src/aof.c</a><br/>Generated on <em>2017-Oct-16</em> from project codebrowser revision <em>with-deprecated-diskstore-4466-g2bf8c2c</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/config.c' l='1427' type='int dictSdsKeyCaseCompare(void * privdata, const void * key1, const void * key2)'/>
+<use f='codebrowser/src/config.c' l='1439'/>
+<use f='codebrowser/src/config.c' l='1439'/>
+<use f='codebrowser/src/config.c' l='1448'/>
+<use f='codebrowser/src/config.c' l='1448'/>
+<def f='codebrowser/src/server.c' l='459' ll='465' type='int dictSdsKeyCaseCompare(void * privdata, const void * key1, const void * key2)'/>
+<use f='codebrowser/src/server.c' l='589'/>
+<use f='codebrowser/src/server.c' l='589'/>
+<use f='codebrowser/src/server.c' l='609'/>
+<use f='codebrowser/src/server.c' l='609'/>
+<use f='codebrowser/src/server.c' l='654'/>
+<use f='codebrowser/src/server.c' l='654'/>
+<use f='codebrowser/src/server.c' l='666'/>
+<use f='codebrowser/src/server.c' l='666'/>
+<use f='codebrowser/src/server.c' l='688'/>
+<use f='codebrowser/src/server.c' l='688'/>
+<doc f='codebrowser/src/server.c' l='457'>/* A case insensitive version used for the command lookup table and other
+ * places where case insensitive non binary-safe comparison is needed. */</doc>

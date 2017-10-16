@@ -1,0 +1,55 @@
+<def f='codebrowser/src/module.c' l='607' ll='647' type='int RM_CreateCommand(RedisModuleCtx * ctx, const char * name, RedisModuleCmdFunc cmdfunc, const char * strflags, int firstkey, int lastkey, int keystep)'/>
+<use f='codebrowser/src/module.c' l='3901' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='554'>/* Register a new command in the Redis server, that will be handled by
+ * calling the function pointer &apos;func&apos; using the RedisModule calling
+ * convention. The function returns REDISMODULE_ERR if the specified command
+ * name is already busy or a set of invalid flags were passed, otherwise
+ * REDISMODULE_OK is returned and the new command is registered.
+ *
+ * This function must be called during the initialization of the module
+ * inside the RedisModule_OnLoad() function. Calling this function outside
+ * of the initialization function is not defined.
+ *
+ * The command function type is the following:
+ *
+ *      int MyCommand_RedisCommand(RedisModuleCtx *ctx, RedisModuleString **argv, int argc);
+ *
+ * And is supposed to always return REDISMODULE_OK.
+ *
+ * The set of flags &apos;strflags&apos; specify the behavior of the command, and should
+ * be passed as a C string compoesd of space separated words, like for
+ * example &quot;write deny-oom&quot;. The set of flags are:
+ *
+ * * **&quot;write&quot;**:     The command may modify the data set (it may also read
+ *                    from it).
+ * * **&quot;readonly&quot;**:  The command returns data from keys but never writes.
+ * * **&quot;admin&quot;**:     The command is an administrative command (may change
+ *                    replication or perform similar tasks).
+ * * **&quot;deny-oom&quot;**:  The command may use additional memory and should be
+ *                    denied during out of memory conditions.
+ * * **&quot;deny-script&quot;**:   Don&apos;t allow this command in Lua scripts.
+ * * **&quot;allow-loading&quot;**: Allow this command while the server is loading data.
+ *                        Only commands not interacting with the data set
+ *                        should be allowed to run in this mode. If not sure
+ *                        don&apos;t use this flag.
+ * * **&quot;pubsub&quot;**:    The command publishes things on Pub/Sub channels.
+ * * **&quot;random&quot;**:    The command may have different outputs even starting
+ *                    from the same input arguments and key values.
+ * * **&quot;allow-stale&quot;**: The command is allowed to run on slaves that don&apos;t
+ *                      serve stale data. Don&apos;t use if you don&apos;t know what
+ *                      this means.
+ * * **&quot;no-monitor&quot;**: Don&apos;t propoagate the command on monitor. Use this if
+ *                     the command has sensible data among the arguments.
+ * * **&quot;fast&quot;**:      The command time complexity is not greater
+ *                    than O(log(N)) where N is the size of the collection or
+ *                    anything else representing the normal scalability
+ *                    issue with the command.
+ * * **&quot;getkeys-api&quot;**: The command implements the interface to return
+ *                      the arguments that are keys. Used when start/stop/step
+ *                      is not enough because of the command syntax.
+ * * **&quot;no-cluster&quot;**: The command should not register in Redis Cluster
+ *                     since is not designed to work with it because, for
+ *                     example, is unable to report the position of the
+ *                     keys, programmatically creates key names, or any
+ *                     other reason.
+ */</doc>

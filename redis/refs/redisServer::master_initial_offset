@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1107' type='long long'/>
+<offset>20032</offset>
+<doc f='codebrowser/src/server.h' l='1107'>/* Master PSYNC offset. */</doc>
+<use f='codebrowser/src/replication.c' l='1081' u='r' c='replicationCreateMasterClient'/>
+<use f='codebrowser/src/replication.c' l='1428' u='w' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1484' u='w' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1487' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='2168' u='w' c='replicationCacheMasterUsingMyself'/>
+<use f='codebrowser/src/server.c' l='1458' u='w' c='initServerConfig'/>

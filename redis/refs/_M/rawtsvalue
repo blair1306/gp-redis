@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/lua/src/lobject.h' l='94'/>
+<use f='codebrowser/deps/lua/src/ldump.c' l='99' u='c'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='340' u='c'/>
+<use f='codebrowser/deps/lua/src/ltable.c' l='105' u='c'/>
+<use f='codebrowser/deps/lua/src/ltable.c' l='458' u='c'/>
+<use f='codebrowser/deps/lua/src/ltable.c' l='472' u='c'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='232' u='c'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='232' u='c'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='246' u='c'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='246' u='c'/>
+<use f='codebrowser/deps/lua/src/print.c' l='66' u='c'/>

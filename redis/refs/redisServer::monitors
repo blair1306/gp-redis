@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='917' type='list *'/>
+<offset>4224</offset>
+<use f='codebrowser/src/multi.c' l='195' u='r' c='execCommand'/>
+<use f='codebrowser/src/multi.c' l='196' u='r' c='execCommand'/>
+<use f='codebrowser/src/networking.c' l='836' u='r' c='freeClient'/>
+<use f='codebrowser/src/server.c' l='1806' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2190' u='r' c='call'/>
+<use f='codebrowser/src/server.c' l='2194' u='r' c='call'/>
+<use f='codebrowser/src/server.c' l='3331' u='r' c='monitorCommand'/>

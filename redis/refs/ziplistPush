@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/ziplist.h' l='39' type='unsigned char * ziplistPush(unsigned char * zl, unsigned char * s, unsigned int slen, int where)'/>
+<use f='codebrowser/src/quicklist.c' l='485' u='c' c='quicklistPushHead'/>
+<use f='codebrowser/src/quicklist.c' l='489' u='c' c='quicklistPushHead'/>
+<use f='codebrowser/src/quicklist.c' l='508' u='c' c='quicklistPushTail'/>
+<use f='codebrowser/src/quicklist.c' l='512' u='c' c='quicklistPushTail'/>
+<use f='codebrowser/src/quicklist.c' l='843' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='881' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='901' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='911' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='921' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='931' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/rdb.c' l='1275' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1277' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1354' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1355' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_hash.c' l='229' u='c' c='hashTypeSet'/>
+<use f='codebrowser/src/t_hash.c' l='231' u='c' c='hashTypeSet'/>
+<use f='codebrowser/src/t_zset.c' l='984' u='c' c='zzlInsertAt'/>
+<use f='codebrowser/src/t_zset.c' l='985' u='c' c='zzlInsertAt'/>
+<def f='codebrowser/src/ziplist.c' l='956' ll='960' type='unsigned char * ziplistPush(unsigned char * zl, unsigned char * s, unsigned int slen, int where)'/>

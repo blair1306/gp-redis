@@ -1,0 +1,5 @@
+<def f='codebrowser/src/aof.c' l='1037' ll='1048' type='int rewriteModuleObject(rio * r, robj * key, robj * o)'/>
+<use f='codebrowser/src/aof.c' l='1115' u='c' c='rewriteAppendOnlyFileRio'/>
+<doc f='codebrowser/src/aof.c' l='1034'>/* Call the module type callback in order to rewrite a data type
+ * that is exported by a module and is not handled by Redis itself.
+ * The function returns 0 on error, 1 on success. */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='955' type='long long'/>
+<offset>8768</offset>
+<doc f='codebrowser/src/server.h' l='955'>/* SLOWLOG current entry ID */</doc>
+<use f='codebrowser/src/slowlog.c' l='90' u='w' c='slowlogCreateEntry'/>
+<use f='codebrowser/src/slowlog.c' l='116' u='w' c='slowlogInit'/>

@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/bits/sigaction.h' l='46' type='int'/>
+<offset>1088</offset>
+<doc f='include/x86_64-linux-gnu/bits/sigaction.h' l='45'>/* Special flags.  */</doc>
+<use f='codebrowser/src/debug.c' l='1111' u='w' c='sigsegvHandler'/>
+<use f='codebrowser/src/debug.c' l='1186' u='w' c='enableWatchdog'/>
+<use f='codebrowser/src/debug.c' l='1208' u='w' c='disableWatchdog'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='167' u='w' c='rdbCheckSetupSignals'/>
+<use f='codebrowser/src/scripting.c' l='1604' u='w' c='ldbStartSession'/>
+<use f='codebrowser/src/server.c' l='3492' u='w' c='setupSignalHandlers'/>
+<use f='codebrowser/src/server.c' l='3499' u='w' c='setupSignalHandlers'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='166' type='redisContext * redisConnectBindNonBlock(const char * ip, int port, const char * source_addr)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='173' u='c' c='redisAsyncConnectBind'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='710' ll='716' type='redisContext * redisConnectBindNonBlock(const char * ip, int port, const char * source_addr)'/>

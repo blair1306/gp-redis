@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1907' type='void zrevrangebyscoreCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='190' u='r'/>
+<use f='codebrowser/src/server.c' l='190' u='r'/>
+<use f='codebrowser/src/server.c' l='190' u='r'/>
+<use f='codebrowser/src/server.c' l='190' u='r'/>
+<def f='codebrowser/src/t_zset.c' l='2666' ll='2668' type='void zrevrangebyscoreCommand(client * c)'/>

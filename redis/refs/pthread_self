@@ -1,0 +1,14 @@
+<dec f='include/pthread.h' l='275' type='pthread_t pthread_self()'/>
+<doc f='include/pthread.h' l='274'>/* Obtain the identifier of the current thread.  */</doc>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='167' u='c' c='malloc_init_hard_needed'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='167' u='c' c='malloc_init_hard_needed'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='166' u='c' c='malloc_init_hard_a0_locked'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='167' u='c' c='ifree'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='167' u='c' c='isfree'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='167' u='c' c='je_realloc'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='167' u='c' c='je_rallocx'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='167' u='c' c='je_xallocx'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='167' u='c' c='je_sallocx'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='167' u='c' c='je_dallocx'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='167' u='c' c='je_sdallocx'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='167' u='c' c='je_malloc_usable_size'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1567' type='void zslFree(zskiplist * zsl)'/>
+<use f='codebrowser/src/object.c' l='275' u='c' c='freeZsetObject'/>
+<def f='codebrowser/src/t_zset.c' l='106' ll='116' type='void zslFree(zskiplist * zsl)'/>
+<doc f='codebrowser/src/t_zset.c' l='105'>/* Free a whole skiplist. */</doc>

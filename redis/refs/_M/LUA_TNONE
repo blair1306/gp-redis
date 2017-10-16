@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='72'/>
+<use f='codebrowser/deps/lua/src/lapi.c' l='244' u='c'/>
+<use f='codebrowser/deps/lua/src/lapi.c' l='250' u='c'/>
+<doc f='codebrowser/deps/lua/src/lua.h' l='69'>/*
+** basic types
+*/</doc>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='153' u='c'/>

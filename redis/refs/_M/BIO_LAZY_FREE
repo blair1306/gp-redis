@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/bio.h' l='41'/>
+<use f='codebrowser/src/bio.c' l='191' u='c'/>
+<use f='codebrowser/src/evict.c' l='560' u='c'/>
+<use f='codebrowser/src/lazyfree.c' l='71' u='c'/>
+<use f='codebrowser/src/lazyfree.c' l='95' u='c'/>
+<use f='codebrowser/src/lazyfree.c' l='107' u='c'/>

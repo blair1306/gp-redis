@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1098' type='time_t'/>
+<offset>19392</offset>
+<doc f='codebrowser/src/server.h' l='1098'>/* Unix time at which link with master went down */</doc>
+<use f='codebrowser/src/cluster.c' l='2877' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/replication.c' l='1945' u='w' c='replicationSetMaster'/>
+<use f='codebrowser/src/replication.c' l='1980' u='w' c='replicationHandleMasterDisconnection'/>
+<use f='codebrowser/src/server.c' l='1464' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3170' u='r' c='genRedisInfoString'/>

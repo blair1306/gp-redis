@@ -1,0 +1,2 @@
+<dec f='codebrowser/src/server.h' l='1452' type='robj * createZiplistObject()'/>
+<def f='codebrowser/src/object.c' l='189' ll='194' type='robj * createZiplistObject()'/>

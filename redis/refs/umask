@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/sys/stat.h' l='311' type='__mode_t umask(__mode_t __mask)'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1164' u='c' c='linenoiseHistorySave'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1169' u='c' c='linenoiseHistorySave'/>
+<doc f='include/x86_64-linux-gnu/sys/stat.h' l='309'>/* Set the file creation mask of the current process to MASK,
+   and return the old creation mask.  */</doc>

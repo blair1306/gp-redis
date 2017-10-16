@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='924' type='int'/>
+<offset>6656</offset>
+<doc f='codebrowser/src/server.h' l='924'>/* Don&apos;t accept external connections. */</doc>
+<use f='codebrowser/src/config.c' l='216' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1021' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1295' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2027' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/networking.c' l='634' u='r' c='acceptCommonHandler'/>
+<use f='codebrowser/src/server.c' l='1360' u='w' c='initServerConfig'/>

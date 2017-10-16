@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='184' type='int redisReconnect(redisContext * c)'/>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='175'>/**
+ * Reconnect the given context using the saved information.
+ *
+ * This re-uses the exact same connect options as in the initial connection.
+ * host, ip (or path), timeout and bind address are reused,
+ * flags are used unmodified from the existing context.
+ *
+ * Returns REDIS_OK on successful connect or REDIS_ERR otherwise.
+ */</doc>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='643' ll='669' type='int redisReconnect(redisContext * c)'/>

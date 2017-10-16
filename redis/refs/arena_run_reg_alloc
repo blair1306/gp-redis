@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='291' ll='309' macro='1' type='void * arena_run_reg_alloc(arena_run_t * run, arena_bin_info_t * bin_info)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1957' u='c' c='arena_bin_malloc_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1985' u='c' c='arena_bin_malloc_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2006' u='c' c='je_arena_tcache_fill_small'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2162' u='c' c='je_arena_malloc_small'/>

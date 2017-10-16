@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='1147' type='dict *'/>
+<offset>21568</offset>
+<doc f='codebrowser/src/server.h' l='1146'>/* Pubsub */</doc>
+<doc f='codebrowser/src/server.h' l='1147'>/* Map channels to list of subscribed clients */</doc>
+<use f='codebrowser/src/cluster.c' l='1982' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1982' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/pubsub.c' l='68' u='r' c='pubsubSubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='71' u='r' c='pubsubSubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='100' u='r' c='pubsubUnsubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='110' u='r' c='pubsubUnsubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='232' u='r' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/pubsub.c' l='333' u='r' c='pubsubCommand'/>
+<use f='codebrowser/src/pubsub.c' l='358' u='r' c='pubsubCommand'/>
+<use f='codebrowser/src/server.c' l='1861' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='3114' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3114' u='r' c='genRedisInfoString'/>

@@ -1,0 +1,29 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='275' ll='405'/>
+<size>9840</size>
+<mbr r='arena_s::ind' o='0' t='unsigned int'/>
+<mbr r='arena_s::nthreads' o='32' t='unsigned int'/>
+<mbr r='arena_s::lock' o='64' t='malloc_mutex_t'/>
+<mbr r='arena_s::stats' o='384' t='arena_stats_t'/>
+<mbr r='arena_s::tcache_ql' o='1344' t='struct (anonymous struct at /home/jon/workspace/redis/deps/jemalloc/include/jemalloc/internal/arena.h:300:2)'/>
+<mbr r='arena_s::prof_accumbytes' o='1408' t='uint64_t'/>
+<mbr r='arena_s::offset_state' o='1472' t='uint64_t'/>
+<mbr r='arena_s::dss_prec' o='1536' t='dss_prec_t'/>
+<mbr r='arena_s::spare' o='1600' t='arena_chunk_t *'/>
+<mbr r='arena_s::lg_dirty_mult' o='1664' t='ssize_t'/>
+<mbr r='arena_s::purging' o='1728' t='_Bool'/>
+<mbr r='arena_s::nactive' o='1792' t='size_t'/>
+<mbr r='arena_s::ndirty' o='1856' t='size_t'/>
+<mbr r='arena_s::runs_avail' o='1920' t='arena_avail_tree_t'/>
+<mbr r='arena_s::runs_dirty' o='2752' t='arena_runs_dirty_link_t'/>
+<mbr r='arena_s::chunks_cache' o='2880' t='extent_node_t'/>
+<mbr r='arena_s::huge' o='3712' t='struct (anonymous struct at /home/jon/workspace/redis/deps/jemalloc/include/jemalloc/internal/arena.h:379:2)'/>
+<mbr r='arena_s::huge_mtx' o='3776' t='malloc_mutex_t'/>
+<mbr r='arena_s::chunks_szad_cached' o='4096' t='extent_tree_t'/>
+<mbr r='arena_s::chunks_ad_cached' o='4992' t='extent_tree_t'/>
+<mbr r='arena_s::chunks_szad_retained' o='5888' t='extent_tree_t'/>
+<mbr r='arena_s::chunks_ad_retained' o='6784' t='extent_tree_t'/>
+<mbr r='arena_s::chunks_mtx' o='7680' t='malloc_mutex_t'/>
+<mbr r='arena_s::node_cache' o='8000' t='struct (anonymous struct at /home/jon/workspace/redis/deps/jemalloc/include/jemalloc/internal/arena.h:397:2)'/>
+<mbr r='arena_s::node_cache_mtx' o='8064' t='malloc_mutex_t'/>
+<mbr r='arena_s::chunk_hooks' o='8384' t='chunk_hooks_t'/>
+<mbr r='arena_s::bins' o='8832' t='arena_bin_t [39]'/>

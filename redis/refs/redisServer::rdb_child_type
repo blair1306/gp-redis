@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1038' type='int'/>
+<offset>16288</offset>
+<doc f='codebrowser/src/server.h' l='1038'>/* Type of save by active child. */</doc>
+<use f='codebrowser/src/rdb.c' l='1093' u='w' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1694' u='w' c='backgroundSaveDoneHandlerDisk'/>
+<use f='codebrowser/src/rdb.c' l='1718' u='w' c='backgroundSaveDoneHandlerSocket'/>
+<use f='codebrowser/src/rdb.c' l='1799' u='r' c='backgroundSaveDoneHandler'/>
+<use f='codebrowser/src/rdb.c' l='1963' u='w' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/replication.c' l='703' u='r' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='733' u='r' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='2575' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='1868' u='w' c='initServer'/>

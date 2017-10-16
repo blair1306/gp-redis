@@ -1,0 +1,14 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/private_namespace.h' l='238'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='58' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='69' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/hash.h' l='322' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='77' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='158' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='200' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='350' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='358' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='386' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='386' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='537' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='560' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1677' u='c'/>

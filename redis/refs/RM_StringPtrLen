@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='862' ll='870' type='const char * RM_StringPtrLen(const robj * str, size_t * len)'/>
+<use f='codebrowser/src/module.c' l='3938' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='859'>/* Given a string module object, this function returns the string pointer
+ * and length of the string. The returned pointer and length should only
+ * be used for read only accesses and never modified. */</doc>

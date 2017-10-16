@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/anet.h' l='72' type='int anetSendTimeout(char * err, int fd, long long ms)'/>
+<def f='codebrowser/src/anet.c' l='184' ll='194' type='int anetSendTimeout(char * err, int fd, long long ms)'/>
+<doc f='codebrowser/src/anet.c' l='182'>/* Set the socket send timeout (SO_SNDTIMEO socket option) to the specified
+ * number of milliseconds, or disable it if the &apos;ms&apos; argument is zero. */</doc>
+<use f='codebrowser/src/rdb.c' l='1788' u='c' c='backgroundSaveDoneHandlerSocket'/>
+<use f='codebrowser/src/rdb.c' l='1854' u='c' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/scripting.c' l='1627' u='c' c='ldbStartSession'/>
+<use f='codebrowser/src/scripting.c' l='1664' u='c' c='ldbEndSession'/>

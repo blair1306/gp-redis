@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='943' type='long long'/>
+<offset>8000</offset>
+<doc f='codebrowser/src/server.h' l='943'>/* number of allocations moved */</doc>
+<use f='codebrowser/src/defrag.c' l='421' u='w' c='defragScanCallback'/>
+<use f='codebrowser/src/defrag.c' l='484' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='538' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='550' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='562' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='567' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/server.c' l='1767' u='w' c='resetServerStats'/>
+<use f='codebrowser/src/server.c' l='3119' u='r' c='genRedisInfoString'/>

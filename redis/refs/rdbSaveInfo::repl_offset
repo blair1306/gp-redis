@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='852' type='long long'/>
+<offset>448</offset>
+<doc f='codebrowser/src/server.h' l='852'>/* Replication offset. */</doc>
+<use f='codebrowser/src/rdb.c' l='1590' u='w' c='rdbLoadRio'/>
+<use f='codebrowser/src/server.c' l='3537' u='r' c='loadDataFromDisk'/>
+<use f='codebrowser/src/server.c' l='3543' u='r' c='loadDataFromDisk'/>

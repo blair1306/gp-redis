@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='144' macro='1' type='size_t'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='164' macro='1' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='171' macro='1' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='178' macro='1' u='a'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1992' macro='1' u='a'/>
+<def f='codebrowser/deps/jemalloc/src/stats.c' l='33' macro='1' type='size_t'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/lua/src/llex.h' l='32' type='285'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='91' c='txtToken'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='434' u='r' c='llex'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='58' u='r' c='anchor_token'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='119' u='r' c='str_checkname'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='449' u='r' c='recfield'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='515' c='constructor'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='552' c='parlist'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='678' c='prefixexp'/>

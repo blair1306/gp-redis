@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1456' type='robj * createZsetObject()'/>
+<use f='codebrowser/src/geo.c' l='641' u='c' c='georadiusGeneric'/>
+<def f='codebrowser/src/object.c' l='217' ll='226' type='robj * createZsetObject()'/>
+<use f='codebrowser/src/rdb.c' l='1222' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_zset.c' l='1559' u='c' c='zaddGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2221' u='c' c='zunionInterGenericCommand'/>

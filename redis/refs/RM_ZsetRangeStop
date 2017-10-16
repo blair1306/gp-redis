@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/module.c' l='228' type='void RM_ZsetRangeStop(RedisModuleKey * kp)'/>
+<use f='codebrowser/src/module.c' l='1394' u='c' c='RM_CloseKey'/>
+<def f='codebrowser/src/module.c' l='1777' ll='1785' type='void RM_ZsetRangeStop(RedisModuleKey * key)'/>
+<use f='codebrowser/src/module.c' l='1801' u='c' c='zsetInitScoreRange'/>
+<use f='codebrowser/src/module.c' l='1865' u='c' c='zsetInitLexRange'/>
+<use f='codebrowser/src/module.c' l='3952' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1776'>/* Stop a sorted set iteration. */</doc>

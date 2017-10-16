@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/cluster.h' l='135' type='int'/>
+<use f='codebrowser/src/cluster.c' l='413' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='2236' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='3035' u='r' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/cluster.c' l='3460' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3650' u='r' c='clusterUpdateState'/>
+<use f='codebrowser/src/cluster.c' l='3704' u='r' c='clusterUpdateState'/>
+<use f='codebrowser/src/cluster.c' l='3726' u='w' c='clusterUpdateState'/>
+<use f='codebrowser/src/cluster.c' l='4304' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='5323' u='r' c='getNodeByQuery'/>
+<use f='codebrowser/src/cluster.c' l='5424' u='r' c='clusterRedirectBlockedClientIfNeeded'/>
+<offset>128</offset>
+<doc f='codebrowser/src/cluster.h' l='135'>/* CLUSTER_OK, CLUSTER_FAIL, ... */</doc>

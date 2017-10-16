@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='754' type='robj *[32]'/>
+<offset>645440</offset>
+<use f='codebrowser/src/networking.c' l='495' u='r' c='addReplyLongLongWithPrefix'/>
+<use f='codebrowser/src/networking.c' l='543' u='r' c='addReplyBulkLen'/>
+<use f='codebrowser/src/server.c' l='1327' u='w' c='createSharedObjects'/>

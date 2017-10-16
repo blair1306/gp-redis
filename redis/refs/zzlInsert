@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1569' type='unsigned char * zzlInsert(unsigned char * zl, sds ele, double score)'/>
+<def f='codebrowser/src/t_zset.c' l='1001' ll='1032' type='unsigned char * zzlInsert(unsigned char * zl, sds ele, double score)'/>
+<use f='codebrowser/src/t_zset.c' l='1299' u='c' c='zsetAdd'/>
+<use f='codebrowser/src/t_zset.c' l='1306' u='c' c='zsetAdd'/>
+<doc f='codebrowser/src/t_zset.c' l='999'>/* Insert (element,score) pair in ziplist. This function assumes the element is
+ * not yet present in the list. */</doc>

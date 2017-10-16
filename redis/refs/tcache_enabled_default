@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='57' type='2'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='556'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='556'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='192' u='r' c='je_tcache_enabled_get'/>
+<use f='codebrowser/deps/jemalloc/src/tsd.c' l='10' macro='1'/>
+<use f='codebrowser/deps/jemalloc/src/tsd.c' l='10' macro='1'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='107'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_macros.h' l='35' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/util.h' l='54' u='a'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='106'>/* JEMALLOC_CC_SILENCE enables code that silences unuseful compiler warnings. */</doc>

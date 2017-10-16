@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='980' type='int'/>
+<offset>13248</offset>
+<doc f='codebrowser/src/server.h' l='980'>/* minimal effort for defrag in CPU percentage */</doc>
+<use f='codebrowser/src/config.c' l='525' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='526' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='526' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1054' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1228' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1998' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/defrag.c' l='505' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='505' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='508' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/defrag.c' l='508' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/server.c' l='1370' u='w' c='initServerConfig'/>

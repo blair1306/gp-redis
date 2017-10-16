@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='14'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3116' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3117' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='10'>/*
+ * Minimum redzone size.  Redzones may be larger than this if necessary to
+ * preserve region alignment.
+ */</doc>

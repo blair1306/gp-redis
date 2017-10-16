@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='699' type='int'/>
+<offset>1248</offset>
+<doc f='codebrowser/src/server.h' l='699'>/* When requirepass is non-NULL. */</doc>
+<use f='codebrowser/src/networking.c' l='110' u='w' c='createClient'/>
+<use f='codebrowser/src/replication.c' l='1080' u='w' c='replicationCreateMasterClient'/>
+<use f='codebrowser/src/replication.c' l='2203' u='w' c='replicationResurrectCachedMaster'/>
+<use f='codebrowser/src/server.c' l='2336' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2631' u='w' c='authCommand'/>
+<use f='codebrowser/src/server.c' l='2634' u='w' c='authCommand'/>

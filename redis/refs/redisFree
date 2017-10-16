@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='188' type='void redisFree(redisContext * c)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='163' u='c' c='redisAsyncConnect'/>
+<use f='codebrowser/deps/hiredis/async.c' l='197' u='c' c='redisAsyncConnectUnix'/>
+<use f='codebrowser/deps/hiredis/async.c' l='316' u='c' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='609' u='c' c='redisContextInit'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='616' ll='634' type='void redisFree(redisContext * c)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='639' u='c' c='redisFreeKeepFd'/>
+<use f='codebrowser/src/redis-benchmark.c' l='129' u='c' c='freeClient'/>
+<use f='codebrowser/src/redis-cli.c' l='515' u='c' c='cliConnect'/>
+<use f='codebrowser/src/redis-cli.c' l='530' u='c' c='cliConnect'/>
+<use f='codebrowser/src/redis-cli.c' l='761' u='c' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='952' u='c' c='reconnectingRedisCommand'/>

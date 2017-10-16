@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1221' type='int'/>
+<offset>384</offset>
+<doc f='codebrowser/src/server.h' l='1220'>/* What keys should be loaded in background when calling this command? */</doc>
+<doc f='codebrowser/src/server.h' l='1221'>/* The first argument that&apos;s a key (0 = no keys) */</doc>
+<use f='codebrowser/src/db.c' l='1134' u='r' c='getKeysUsingCommandTable'/>
+<use f='codebrowser/src/db.c' l='1141' u='r' c='getKeysUsingCommandTable'/>
+<use f='codebrowser/src/db.c' l='1142' u='r' c='getKeysUsingCommandTable'/>
+<use f='codebrowser/src/module.c' l='639' u='w' c='RM_CreateCommand'/>
+<use f='codebrowser/src/server.c' l='2351' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2721' u='r' c='addReplyCommand'/>

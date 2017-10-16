@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/quicklist.h' l='129' type='quicklist * quicklistAppendValuesFromZiplist(quicklist * quicklist, unsigned char * zl)'/>
+<def f='codebrowser/src/quicklist.c' l='542' ll='561' type='quicklist * quicklistAppendValuesFromZiplist(quicklist * quicklist, unsigned char * zl)'/>
+<use f='codebrowser/src/quicklist.c' l='568' u='c' c='quicklistCreateFromZiplist'/>
+<doc f='codebrowser/src/quicklist.c' l='536'>/* Append all values of ziplist &apos;zl&apos; individually into &apos;quicklist&apos;.
+ *
+ * This allows us to restore old RDB ziplists into new quicklists
+ * with smaller ziplist sizes than the saved RDB ziplist.
+ *
+ * Returns &apos;quicklist&apos; argument. Frees passed-in ziplist &apos;zl&apos; */</doc>

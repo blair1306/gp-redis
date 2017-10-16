@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/sentinel.c' l='367' type='sentinelRedisInstance * sentinelSelectSlave(sentinelRedisInstance * master)'/>
+<use f='codebrowser/src/sentinel.c' l='2995' u='c' c='sentinelCommand'/>
+<def f='codebrowser/src/sentinel.c' l='3910' ll='3952' type='sentinelRedisInstance * sentinelSelectSlave(sentinelRedisInstance * master)'/>
+<use f='codebrowser/src/sentinel.c' l='3989' u='c' c='sentinelFailoverSelectSlave'/>

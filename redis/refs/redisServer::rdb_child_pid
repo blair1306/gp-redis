@@ -1,0 +1,39 @@
+<dec f='codebrowser/src/server.h' l='1027' type='pid_t'/>
+<use f='codebrowser/src/aof.c' l='255' u='r' c='startAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='335' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='431' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1341' u='r' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/aof.c' l='1400' u='r' c='bgrewriteaofCommand'/>
+<offset>15680</offset>
+<doc f='codebrowser/src/server.h' l='1027'>/* PID of RDB saving child */</doc>
+<use f='codebrowser/src/db.c' l='52' u='r' c='lookupKey'/>
+<use f='codebrowser/src/db.c' l='411' u='r' c='flushallCommand'/>
+<use f='codebrowser/src/db.c' l='412' u='r' c='flushallCommand'/>
+<use f='codebrowser/src/db.c' l='413' u='r' c='flushallCommand'/>
+<use f='codebrowser/src/defrag.c' l='487' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/rdb.c' l='1051' u='r' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1092' u='w' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1685' u='r' c='backgroundSaveDoneHandlerDisk'/>
+<use f='codebrowser/src/rdb.c' l='1693' u='w' c='backgroundSaveDoneHandlerDisk'/>
+<use f='codebrowser/src/rdb.c' l='1717' u='w' c='backgroundSaveDoneHandlerSocket'/>
+<use f='codebrowser/src/rdb.c' l='1824' u='r' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/rdb.c' l='1962' u='w' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/rdb.c' l='1974' u='r' c='saveCommand'/>
+<use f='codebrowser/src/rdb.c' l='2002' u='r' c='bgsaveCommand'/>
+<use f='codebrowser/src/replication.c' l='702' u='r' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='732' u='r' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='2640' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='739' u='r' c='updateDictResizePolicy'/>
+<use f='codebrowser/src/server.c' l='890' u='r' c='databasesCron'/>
+<use f='codebrowser/src/server.c' l='1036' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1043' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1059' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1061' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1103' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1164' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1866' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2523' u='r' c='prepareForShutdown'/>
+<use f='codebrowser/src/server.c' l='2525' u='r' c='prepareForShutdown'/>
+<use f='codebrowser/src/server.c' l='2526' u='r' c='prepareForShutdown'/>
+<use f='codebrowser/src/server.c' l='3003' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3007' u='r' c='genRedisInfoString'/>

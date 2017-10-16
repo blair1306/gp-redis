@@ -1,0 +1,6 @@
+<def f='codebrowser/src/t_list.c' l='197' ll='224' type='void pushGenericCommand(client * c, int where)'/>
+<use f='codebrowser/src/t_list.c' l='227' u='c' c='lpushCommand'/>
+<use f='codebrowser/src/t_list.c' l='231' u='c' c='rpushCommand'/>
+<doc f='codebrowser/src/t_list.c' l='193'>/*-----------------------------------------------------------------------------
+ * List Commands
+ *----------------------------------------------------------------------------*/</doc>

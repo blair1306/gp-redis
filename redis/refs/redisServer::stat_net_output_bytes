@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='960' type='long long'/>
+<offset>9088</offset>
+<doc f='codebrowser/src/server.h' l='960'>/* Bytes written to network. */</doc>
+<use f='codebrowser/src/networking.c' l='947' u='w' c='writeToClient'/>
+<use f='codebrowser/src/replication.c' l='888' u='w' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='917' u='w' c='sendBulkToSlave'/>
+<use f='codebrowser/src/server.c' l='970' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1785' u='w' c='resetServerStats'/>
+<use f='codebrowser/src/server.c' l='3103' u='r' c='genRedisInfoString'/>

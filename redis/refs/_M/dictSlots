@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='110'/>
+<dec f='codebrowser/src/dict.h' l='146'/>
+<use f='codebrowser/src/expire.c' l='164' u='c'/>
+<use f='codebrowser/src/object.c' l='736' u='c'/>
+<use f='codebrowser/src/object.c' l='757' u='c'/>
+<use f='codebrowser/src/object.c' l='774' u='c'/>
+<use f='codebrowser/src/object.c' l='882' u='c'/>
+<use f='codebrowser/src/object.c' l='888' u='c'/>
+<use f='codebrowser/src/server.c' l='696' u='c'/>
+<use f='codebrowser/src/server.c' l='1007' u='c'/>

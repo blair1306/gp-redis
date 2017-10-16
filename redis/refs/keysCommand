@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1842' type='void keysCommand(client * c)'/>
+<def f='codebrowser/src/db.c' l='497' ll='522' type='void keysCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='232' u='r'/>
+<use f='codebrowser/src/server.c' l='232' u='r'/>
+<use f='codebrowser/src/server.c' l='232' u='r'/>
+<use f='codebrowser/src/server.c' l='232' u='r'/>

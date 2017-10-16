@@ -1,0 +1,9 @@
+<def f='codebrowser/src/aof.c' l='1149' ll='1245' type='int rewriteAppendOnlyFile(char * filename)'/>
+<use f='codebrowser/src/aof.c' l='1352' u='c' c='rewriteAppendOnlyFileBackground'/>
+<doc f='codebrowser/src/aof.c' l='1142'>/* Write a sequence of commands able to fully rebuild the dataset into
+ * &quot;filename&quot;. Used both by REWRITEAOF and BGREWRITEAOF.
+ *
+ * In order to minimize the number of commands needed in the rewritten
+ * log Redis uses variadic commands when possible, such as RPUSH, SADD
+ * and ZADD. However at max AOF_REWRITE_ITEMS_PER_CMD items per time
+ * are inserted using a single command. */</doc>

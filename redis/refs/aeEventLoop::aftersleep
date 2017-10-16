@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/ae.h' l='102' type='aeBeforeSleepProc *'/>
+<use f='codebrowser/src/ae.c' l='78' u='w' c='aeCreateEventLoop'/>
+<use f='codebrowser/src/ae.c' l='407' u='r' c='aeProcessEvents'/>
+<use f='codebrowser/src/ae.c' l='408' u='r' c='aeProcessEvents'/>
+<use f='codebrowser/src/ae.c' l='477' u='w' c='aeSetAfterSleepProc'/>
+<offset>576</offset>

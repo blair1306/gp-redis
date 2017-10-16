@@ -1,0 +1,17 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='237' type='int lua_error(lua_State * L)'/>
+<def f='codebrowser/deps/lua/src/lapi.c' l='964' ll='970' macro='1' type='int lua_error(lua_State * L)'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='93' u='c' c='luaL_error'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='89' u='c' c='luaB_error'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='328' u='c' c='luaB_dofile'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='570' u='c' c='luaB_auxwrap'/>
+<use f='codebrowser/src/scripting.c' l='239' u='c' c='luaRaiseError'/>
+<use f='codebrowser/src/scripting.c' l='654' u='c' c='luaRedisSha1hexCommand'/>
+<use f='codebrowser/src/scripting.c' l='755' u='c' c='luaRedisSetReplCommand'/>
+<use f='codebrowser/src/scripting.c' l='758' u='c' c='luaRedisSetReplCommand'/>
+<use f='codebrowser/src/scripting.c' l='764' u='c' c='luaRedisSetReplCommand'/>
+<use f='codebrowser/src/scripting.c' l='778' u='c' c='luaLogCommand'/>
+<use f='codebrowser/src/scripting.c' l='781' u='c' c='luaLogCommand'/>
+<use f='codebrowser/src/scripting.c' l='786' u='c' c='luaLogCommand'/>
+<use f='codebrowser/src/scripting.c' l='1202' u='c' c='luaMaskCountHook'/>
+<use f='codebrowser/src/scripting.c' l='2303' u='c' c='ldbRepl'/>
+<use f='codebrowser/src/scripting.c' l='2384' u='c' c='luaLdbLineHook'/>

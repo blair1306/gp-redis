@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1566' type='zskiplist * zslCreate()'/>
+<use f='codebrowser/src/object.c' l='222' u='c' c='createZsetObject'/>
+<def f='codebrowser/src/t_zset.c' l='80' ll='95' type='zskiplist * zslCreate()'/>
+<use f='codebrowser/src/t_zset.c' l='1134' u='c' c='zsetConvert'/>
+<doc f='codebrowser/src/t_zset.c' l='79'>/* Create a new skiplist. */</doc>

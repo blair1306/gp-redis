@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1693' type='sds keyspaceEventsFlagsToString(int flags)'/>
+<use f='codebrowser/src/config.c' l='1399' u='c' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1754' u='c' c='rewriteConfigNotifykeyspaceeventsOption'/>
+<def f='codebrowser/src/notify.c' l='67' ll='86' type='sds keyspaceEventsFlagsToString(int flags)'/>
+<doc f='codebrowser/src/notify.c' l='63'>/* This function does exactly the revese of the function above: it gets
+ * as input an integer with the xored flags and returns a string representing
+ * the selected classes. The string returned is an sds string that needs to
+ * be released with sdsfree(). */</doc>

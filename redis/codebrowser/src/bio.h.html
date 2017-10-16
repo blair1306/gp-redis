@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>bio.h source code [codebrowser/src/bio.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/bio.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>src</a>/<a href='bio.h.html'>bio.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (c) 2009-2012, Salvatore Sanfilippo &lt;antirez at gmail dot com&gt;</i></td></tr>
+<tr><th id="3">3</th><td><i> * All rights reserved.</i></td></tr>
+<tr><th id="4">4</th><td><i> *</i></td></tr>
+<tr><th id="5">5</th><td><i> * Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="6">6</th><td><i> * modification, are permitted provided that the following conditions are met:</i></td></tr>
+<tr><th id="7">7</th><td><i> *</i></td></tr>
+<tr><th id="8">8</th><td><i> *   * Redistributions of source code must retain the above copyright notice,</i></td></tr>
+<tr><th id="9">9</th><td><i> *     this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="10">10</th><td><i> *   * Redistributions in binary form must reproduce the above copyright</i></td></tr>
+<tr><th id="11">11</th><td><i> *     notice, this list of conditions and the following disclaimer in the</i></td></tr>
+<tr><th id="12">12</th><td><i> *     documentation and/or other materials provided with the distribution.</i></td></tr>
+<tr><th id="13">13</th><td><i> *   * Neither the name of Redis nor the names of its contributors may be used</i></td></tr>
+<tr><th id="14">14</th><td><i> *     to endorse or promote products derived from this software without</i></td></tr>
+<tr><th id="15">15</th><td><i> *     specific prior written permission.</i></td></tr>
+<tr><th id="16">16</th><td><i> *</i></td></tr>
+<tr><th id="17">17</th><td><i> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"</i></td></tr>
+<tr><th id="18">18</th><td><i> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</i></td></tr>
+<tr><th id="19">19</th><td><i> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</i></td></tr>
+<tr><th id="20">20</th><td><i> * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE</i></td></tr>
+<tr><th id="21">21</th><td><i> * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</i></td></tr>
+<tr><th id="22">22</th><td><i> * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</i></td></tr>
+<tr><th id="23">23</th><td><i> * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</i></td></tr>
+<tr><th id="24">24</th><td><i> * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</i></td></tr>
+<tr><th id="25">25</th><td><i> * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</i></td></tr>
+<tr><th id="26">26</th><td><i> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</i></td></tr>
+<tr><th id="27">27</th><td><i> * POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="28">28</th><td><i> */</i></td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i>/* Exported API */</i></td></tr>
+<tr><th id="31">31</th><td><em>void</em> <dfn class="decl" id="bioInit" title='bioInit' data-ref="bioInit">bioInit</dfn>(<em>void</em>);</td></tr>
+<tr><th id="32">32</th><td><em>void</em> <dfn class="decl" id="bioCreateBackgroundJob" title='bioCreateBackgroundJob' data-ref="bioCreateBackgroundJob">bioCreateBackgroundJob</dfn>(<em>int</em> <dfn class="local col2 decl" id="1362type" title='type' data-type='int' data-ref="1362type">type</dfn>, <em>void</em> *<dfn class="local col3 decl" id="1363arg1" title='arg1' data-type='void *' data-ref="1363arg1">arg1</dfn>, <em>void</em> *<dfn class="local col4 decl" id="1364arg2" title='arg2' data-type='void *' data-ref="1364arg2">arg2</dfn>, <em>void</em> *<dfn class="local col5 decl" id="1365arg3" title='arg3' data-type='void *' data-ref="1365arg3">arg3</dfn>);</td></tr>
+<tr><th id="33">33</th><td><em>unsigned</em> <em>long</em> <em>long</em> <dfn class="decl" id="bioPendingJobsOfType" title='bioPendingJobsOfType' data-ref="bioPendingJobsOfType">bioPendingJobsOfType</dfn>(<em>int</em> <dfn class="local col6 decl" id="1366type" title='type' data-type='int' data-ref="1366type">type</dfn>);</td></tr>
+<tr><th id="34">34</th><td><em>unsigned</em> <em>long</em> <em>long</em> <dfn class="decl" id="bioWaitStepOfType" title='bioWaitStepOfType' data-ref="bioWaitStepOfType">bioWaitStepOfType</dfn>(<em>int</em> <dfn class="local col7 decl" id="1367type" title='type' data-type='int' data-ref="1367type">type</dfn>);</td></tr>
+<tr><th id="35">35</th><td><a class="typedef" href="../../include/time.h.html#time_t" title='time_t' data-type='__time_t' data-ref="time_t">time_t</a> <dfn class="decl" id="bioOlderJobOfType" title='bioOlderJobOfType' data-ref="bioOlderJobOfType">bioOlderJobOfType</dfn>(<em>int</em> <dfn class="local col8 decl" id="1368type" title='type' data-type='int' data-ref="1368type">type</dfn>);</td></tr>
+<tr><th id="36">36</th><td><em>void</em> <dfn class="decl" id="bioKillThreads" title='bioKillThreads' data-ref="bioKillThreads">bioKillThreads</dfn>(<em>void</em>);</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><i>/* Background job opcodes */</i></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/BIO_CLOSE_FILE" data-ref="_M/BIO_CLOSE_FILE">BIO_CLOSE_FILE</dfn>    0 /* Deferred close(2) syscall. */</u></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/BIO_AOF_FSYNC" data-ref="_M/BIO_AOF_FSYNC">BIO_AOF_FSYNC</dfn>     1 /* Deferred AOF fsync. */</u></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/BIO_LAZY_FREE" data-ref="_M/BIO_LAZY_FREE">BIO_LAZY_FREE</dfn>     2 /* Deferred objects freeing. */</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/BIO_NUM_OPS" data-ref="_M/BIO_NUM_OPS">BIO_NUM_OPS</dfn>       3</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='aof.c.html'>codebrowser/src/aof.c</a><br/>Generated on <em>2017-Oct-16</em> from project codebrowser revision <em>with-deprecated-diskstore-4466-g2bf8c2c</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

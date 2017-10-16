@@ -1,0 +1,10 @@
+<def f='codebrowser/deps/jemalloc/src/extent.c' l='43' ll='50' macro='1' type='int extent_ad_comp(extent_node_t * a, extent_node_t * b)'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='53' u='c' c='je_extent_tree_ad_next'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='53' u='c' c='je_extent_tree_ad_prev'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='53' u='c' c='je_extent_tree_ad_search'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='53' u='c' c='je_extent_tree_ad_nsearch'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='53' u='c' c='je_extent_tree_ad_psearch'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='53' u='c' c='je_extent_tree_ad_insert'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='53' u='c' c='je_extent_tree_ad_remove'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='53' u='c' c='je_extent_tree_ad_iter_start'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='53' u='c' c='je_extent_tree_ad_reverse_iter_start'/>

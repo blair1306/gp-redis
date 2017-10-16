@@ -1,0 +1,4 @@
+<dec f='include/string.h' l='258' type='char * strrchr(const char * __s, int __c)'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='535' u='c' c='modinit'/>
+<use f='codebrowser/src/cluster.c' l='167' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/redis-cli.c' l='800' u='c' c='cliReadReply'/>

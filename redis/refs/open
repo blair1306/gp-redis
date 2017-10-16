@@ -1,0 +1,3 @@
+<dec f='include/fcntl.h' l='156' type='int open(const char * __file, int __oflag)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1372' u='c' c='prof_open_maps'/>
+<use f='codebrowser/src/zmalloc.c' l='247' u='c' c='zmalloc_get_rss'/>

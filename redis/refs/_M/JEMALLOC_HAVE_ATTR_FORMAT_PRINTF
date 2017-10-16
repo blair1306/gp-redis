@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='17'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='16'>/* Defined if format(printf, ...) attribute is supported. */</doc>

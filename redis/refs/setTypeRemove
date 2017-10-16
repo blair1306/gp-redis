@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1647' type='int setTypeRemove(robj * subject, sds value)'/>
+<def f='codebrowser/src/t_set.c' l='88' ll='105' type='int setTypeRemove(robj * setobj, sds value)'/>
+<use f='codebrowser/src/t_set.c' l='298' u='c' c='sremCommand'/>
+<use f='codebrowser/src/t_set.c' l='343' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='485' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='515' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='583' u='c' c='spopCommand'/>
+<use f='codebrowser/src/t_set.c' l='1042' u='c' c='sunionDiffGenericCommand'/>

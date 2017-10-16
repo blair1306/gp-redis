@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='465' macro='1' type='void * je_arena_malloc_large(arena_t * arena, size_t size, _Bool zero)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='330' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1186' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='2202' macro='1' type='void * je_arena_malloc_large(arena_t * arena, size_t size, _Bool zero)'/>

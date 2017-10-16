@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/anet.h' l='73' type='int anetPeerToString(int fd, char * ip, size_t ip_len, int * port)'/>
+<def f='codebrowser/src/anet.c' l='577' ll='611' type='int anetPeerToString(int fd, char * ip, size_t ip_len, int * port)'/>
+<use f='codebrowser/src/anet.c' l='626' u='c' c='anetFormatPeer'/>
+<use f='codebrowser/src/cluster.c' l='1427' u='c' c='nodeIp2String'/>
+<use f='codebrowser/src/replication.c' l='59' u='c' c='replicationGetSlaveName'/>
+<use f='codebrowser/src/replication.c' l='2049' u='c' c='roleCommand'/>
+<use f='codebrowser/src/server.c' l='3206' u='c' c='genRedisInfoString'/>

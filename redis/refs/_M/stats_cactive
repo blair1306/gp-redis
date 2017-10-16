@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/private_namespace.h' l='425'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='144' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='164' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='171' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/stats.h' l='178' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1992' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/stats.c' l='33' u='c'/>

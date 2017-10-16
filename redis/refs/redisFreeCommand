@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='131' type='void redisFreeCommand(char * cmd)'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='568' ll='570' type='void redisFreeCommand(char * cmd)'/>

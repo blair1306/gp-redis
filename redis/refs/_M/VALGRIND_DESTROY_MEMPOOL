@@ -1,0 +1,2 @@
+<dec f='include/valgrind/valgrind.h' l='7011'/>
+<doc f='include/valgrind/valgrind.h' l='7010'>/* Destroy a memory pool. */</doc>

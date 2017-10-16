@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1100' type='int'/>
+<offset>19488</offset>
+<doc f='codebrowser/src/server.h' l='1100'>/* Reported in INFO and used by Sentinel. */</doc>
+<use f='codebrowser/src/config.c' l='678' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1094' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1268' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1987' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='1472' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3175' u='r' c='genRedisInfoString'/>

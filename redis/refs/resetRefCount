@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='1433' type='robj * resetRefCount(robj * obj)'/>
+<def f='codebrowser/src/object.c' l='347' ll='350' type='robj * resetRefCount(robj * obj)'/>
+<doc f='codebrowser/src/object.c' l='335'>/* This function set the ref count to zero without freeing the object.
+ * It is useful in order to pass a new object to functions incrementing
+ * the ref count of the received object. Example:
+ *
+ *    functionThatWillIncrementRefCount(resetRefCount(CreateObject(...)));
+ *
+ * Otherwise you need to resort to the less elegant pattern:
+ *
+ *    *obj = createObject(...);
+ *    functionThatWillIncrementRefCount(obj);
+ *    decrRefCount(obj);
+ */</doc>
+<use f='codebrowser/src/scripting.c' l='1393' u='c' c='evalGenericCommand'/>

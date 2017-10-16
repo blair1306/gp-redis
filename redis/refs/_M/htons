@@ -1,0 +1,10 @@
+<dec f='include/netinet/in.h' l='405'/>
+<use f='codebrowser/src/cluster.c' l='2205' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2210' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2233' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2234' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2235' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2287' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2288' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2289' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2417' u='c'/>

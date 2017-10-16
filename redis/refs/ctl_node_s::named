@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='15' type='_Bool'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='23' u='r' c='ctl_named_node'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='38' u='r' c='ctl_indexed_node'/>

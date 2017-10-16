@@ -1,0 +1,19 @@
+<dec f='codebrowser/src/server.h' l='1973' type='void replconfCommand(client * c)'/>
+<def f='codebrowser/src/replication.c' l='776' ll='841' type='void replconfCommand(client * c)'/>
+<doc f='codebrowser/src/replication.c' l='764'>/* REPLCONF &lt;option&gt; &lt;value&gt; &lt;option&gt; &lt;value&gt; ...
+ * This command is used by a slave in order to configure the replication
+ * process before starting it with the SYNC command.
+ *
+ * Currently the only use of this command is to communicate to the master
+ * what is the listening port of the Slave redis instance, so that the
+ * master can accurately list slaves and their listening ports in
+ * the INFO output.
+ *
+ * In the future the same command can be used in order to configure
+ * the replication to initiate an incremental replication instead of a
+ * full resync. */</doc>
+<use f='codebrowser/src/server.c' l='249' u='r'/>
+<use f='codebrowser/src/server.c' l='249' u='r'/>
+<use f='codebrowser/src/server.c' l='249' u='r'/>
+<use f='codebrowser/src/server.c' l='249' u='r'/>
+<use f='codebrowser/src/server.c' l='2465' u='r' c='processCommand'/>

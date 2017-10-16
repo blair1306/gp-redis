@@ -1,0 +1,25 @@
+<dec f='codebrowser/src/ae.h' l='109' type='int aeCreateFileEvent(aeEventLoop * eventLoop, int fd, int mask, aeFileProc * proc, void * clientData)'/>
+<def f='codebrowser/src/ae.c' l='136' ll='154' type='int aeCreateFileEvent(aeEventLoop * eventLoop, int fd, int mask, aeFileProc * proc, void * clientData)'/>
+<use f='codebrowser/src/aof.c' l='166' u='c' c='aofRewriteBufferAppend'/>
+<use f='codebrowser/src/aof.c' l='1292' u='c' c='aofCreatePipes'/>
+<use f='codebrowser/src/cluster.c' l='474' u='c' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='626' u='c' c='clusterAcceptHandler'/>
+<use f='codebrowser/src/cluster.c' l='2156' u='c' c='clusterSendMessage'/>
+<use f='codebrowser/src/cluster.c' l='3282' u='c' c='clusterCron'/>
+<use f='codebrowser/src/networking.c' l='82' u='c' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='1006' u='c' c='handleClientsWithPendingWrites'/>
+<use f='codebrowser/src/redis-benchmark.c' l='152' u='c' c='resetClient'/>
+<use f='codebrowser/src/redis-benchmark.c' l='290' u='c' c='writeHandler'/>
+<use f='codebrowser/src/redis-benchmark.c' l='407' u='c' c='createClient'/>
+<use f='codebrowser/src/replication.c' l='859' u='c' c='putSlaveOnline'/>
+<use f='codebrowser/src/replication.c' l='993' u='c' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='1822' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1865' u='c' c='connectWithMaster'/>
+<use f='codebrowser/src/replication.c' l='2209' u='c' c='replicationResurrectCachedMaster'/>
+<use f='codebrowser/src/replication.c' l='2218' u='c' c='replicationResurrectCachedMaster'/>
+<use f='codebrowser/src/scripting.c' l='1327' u='c' c='evalGenericCommand'/>
+<use f='codebrowser/src/sentinel.c' l='290' u='c' c='redisAeAddRead'/>
+<use f='codebrowser/src/sentinel.c' l='308' u='c' c='redisAeAddWrite'/>
+<use f='codebrowser/src/server.c' l='1904' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1911' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1917' u='c' c='initServer'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='916' type='list *'/>
+<offset>4096</offset>
+<doc f='codebrowser/src/server.h' l='916'>/* There is to write or install handler. */</doc>
+<use f='codebrowser/src/module.c' l='3531' u='r' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/networking.c' l='196' u='r' c='prepareClientToWrite'/>
+<use f='codebrowser/src/networking.c' l='759' u='r' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='761' u='r' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='992' u='r' c='handleClientsWithPendingWrites'/>
+<use f='codebrowser/src/networking.c' l='994' u='r' c='handleClientsWithPendingWrites'/>
+<use f='codebrowser/src/networking.c' l='998' u='r' c='handleClientsWithPendingWrites'/>
+<use f='codebrowser/src/server.c' l='1807' u='w' c='initServer'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/lua/src/lobject.h' l='291'/>
+<use f='codebrowser/deps/lua/src/lobject.h' l='296' u='c'/>
+<use f='codebrowser/deps/lua/src/lobject.h' l='303' u='c'/>
+<doc f='codebrowser/deps/lua/src/lobject.h' l='287'>/*
+** Closures
+*/</doc>

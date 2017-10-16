@@ -1,0 +1,8 @@
+<def f='codebrowser/src/module.c' l='3012' ll='3026' type='void RM_SaveString(RedisModuleIO * io, robj * s)'/>
+<use f='codebrowser/src/module.c' l='3976' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3006'>/* In the context of the rdb_save method of a module type, saves a
+ * string into the RDB file taking as input a RedisModuleString.
+ *
+ * The string can be later loaded with RedisModule_LoadString() or
+ * other Load family functions expecting a serialized string inside
+ * the RDB file. */</doc>

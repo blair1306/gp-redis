@@ -1,0 +1,22 @@
+<dec f='codebrowser/src/server.h' l='312'/>
+<doc f='codebrowser/src/server.h' l='311'>/* List related stuff */</doc>
+<use f='codebrowser/src/sort.c' l='358' u='c'/>
+<use f='codebrowser/src/t_list.c' l='43' u='c'/>
+<use f='codebrowser/src/t_list.c' l='61' u='c'/>
+<use f='codebrowser/src/t_list.c' l='93' u='c'/>
+<use f='codebrowser/src/t_list.c' l='149' u='c'/>
+<use f='codebrowser/src/t_list.c' l='218' u='c'/>
+<use f='codebrowser/src/t_list.c' l='227' u='c'/>
+<use f='codebrowser/src/t_list.c' l='249' u='c'/>
+<use f='codebrowser/src/t_list.c' l='257' u='c'/>
+<use f='codebrowser/src/t_list.c' l='274' u='c'/>
+<use f='codebrowser/src/t_list.c' l='375' u='c'/>
+<use f='codebrowser/src/t_list.c' l='391' u='c'/>
+<use f='codebrowser/src/t_list.c' l='505' u='c'/>
+<use f='codebrowser/src/t_list.c' l='559' u='c'/>
+<use f='codebrowser/src/t_list.c' l='744' u='c'/>
+<use f='codebrowser/src/t_list.c' l='747' u='c'/>
+<use f='codebrowser/src/t_list.c' l='836' u='c'/>
+<use f='codebrowser/src/t_list.c' l='897' u='c'/>
+<use f='codebrowser/src/t_list.c' l='917' u='c'/>
+<use f='codebrowser/src/t_list.c' l='937' u='c'/>

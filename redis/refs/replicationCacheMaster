@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='1486' type='void replicationCacheMaster(client * c)'/>
+<use f='codebrowser/src/networking.c' l='790' u='c' c='freeClient'/>
+<def f='codebrowser/src/replication.c' l='2121' ll='2154' type='void replicationCacheMaster(client * c)'/>
+<doc f='codebrowser/src/replication.c' l='2108'>/* This function is called by freeClient() in order to cache the master
+ * client structure instead of destryoing it. freeClient() will return
+ * ASAP after this function returns, so every action needed to avoid problems
+ * with a client that is really &quot;suspended&quot; has to be done by this function.
+ *
+ * The other functions that will deal with the cached master are:
+ *
+ * replicationDiscardCachedMaster() that will make sure to kill the client
+ * as for some reason we don&apos;t want to use it in the future.
+ *
+ * replicationResurrectCachedMaster() that is used after a successful PSYNC
+ * handshake in order to reactivate the cached master.
+ */</doc>

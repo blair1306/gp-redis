@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/util.h' l='43' type='int string2l(const char * s, size_t slen, long * value)'/>
+<use f='codebrowser/src/object.c' l='400' u='c' c='tryObjectEncoding'/>
+<use f='codebrowser/src/scripting.c' l='2109' u='c' c='ldbBreak'/>
+<def f='codebrowser/src/util.c' l='409' ll='420' type='int string2l(const char * s, size_t slen, long * lval)'/>
+<doc f='codebrowser/src/util.c' l='406'>/* Convert a string into a long. Returns 1 if the string could be parsed into a
+ * (non-overflowing) long, 0 otherwise. The value will be set to the parsed
+ * value when appropriate. */</doc>

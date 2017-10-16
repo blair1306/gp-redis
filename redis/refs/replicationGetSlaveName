@@ -1,0 +1,17 @@
+<dec f='codebrowser/src/server.h' l='1500' type='char * replicationGetSlaveName(client * c)'/>
+<use f='codebrowser/src/networking.c' l='798' u='c' c='freeClient'/>
+<use f='codebrowser/src/rdb.c' l='1778' u='c' c='backgroundSaveDoneHandlerSocket'/>
+<use f='codebrowser/src/rdb.c' l='1785' u='c' c='backgroundSaveDoneHandlerSocket'/>
+<def f='codebrowser/src/replication.c' l='52' ll='73' type='char * replicationGetSlaveName(client * c)'/>
+<use f='codebrowser/src/replication.c' l='485' u='c' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='496' u='c' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='499' u='c' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='528' u='c' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='648' u='c' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='867' u='c' c='putSlaveOnline'/>
+<use f='codebrowser/src/replication.c' l='965' u='c' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='2598' u='c' c='replicationCron'/>
+<doc f='codebrowser/src/replication.c' l='48'>/* Return the pointer to a string representing the slave ip:listening_port
+ * pair. Mostly useful for logging, since we want to log a slave using its
+ * IP address and its listening port which is more clear for the user, for
+ * example: &quot;Closing connection with slave 10.1.2.3:6380&quot;. */</doc>

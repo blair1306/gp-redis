@@ -1,0 +1,6 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='73' ll='79'/>
+<size>32</size>
+<mbr r='prof_cnt_s::curobjs' o='0' t='uint64_t'/>
+<mbr r='prof_cnt_s::curbytes' o='64' t='uint64_t'/>
+<mbr r='prof_cnt_s::accumobjs' o='128' t='uint64_t'/>
+<mbr r='prof_cnt_s::accumbytes' o='192' t='uint64_t'/>

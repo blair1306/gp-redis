@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='882' type='dict *'/>
+<offset>448</offset>
+<doc f='codebrowser/src/server.h' l='882'>/* Command table before command renaming. */</doc>
+<use f='codebrowser/src/module.c' l='645' u='r' c='RM_CreateCommand'/>
+<use f='codebrowser/src/module.c' l='3801' u='r' c='moduleUnload'/>
+<use f='codebrowser/src/server.c' l='1500' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1988' u='r' c='populateCommandTable'/>
+<use f='codebrowser/src/server.c' l='2070' u='r' c='lookupCommandOrOriginal'/>

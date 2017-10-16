@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1819' type='void echoCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='237' u='r'/>
+<use f='codebrowser/src/server.c' l='237' u='r'/>
+<use f='codebrowser/src/server.c' l='237' u='r'/>
+<use f='codebrowser/src/server.c' l='237' u='r'/>
+<def f='codebrowser/src/server.c' l='2664' ll='2666' type='void echoCommand(client * c)'/>

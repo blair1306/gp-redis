@@ -1,0 +1,7 @@
+<def f='codebrowser/src/defrag.c' l='99' ll='133' type='robj * activeDefragStringOb(robj * ob, int * defragged)'/>
+<use f='codebrowser/src/defrag.c' l='298' u='c' c='defragKey'/>
+<doc f='codebrowser/src/defrag.c' l='94'>/* Defrag helper for robj and/or string objects
+ *
+ * returns NULL in case the allocatoin wasn&apos;t moved.
+ * when it returns a non-null value, the old pointer was already released
+ * and should NOT be accessed. */</doc>

@@ -1,0 +1,19 @@
+<dec f='include/stdio.h' l='168' type='struct _IO_FILE *'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='46' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='72' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='72' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='72' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='72' macro='1' u='r'/>
+<doc f='include/stdio.h' l='167'>/* Standard streams.  */</doc>
+<doc f='include/stdio.h' l='168'>/* Standard input stream.  */</doc>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1017' macro='1' u='r'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1051' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='560' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='306' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='546' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='182' macro='1' u='r'/>
+<use f='codebrowser/src/config.c' l='770' macro='1' u='r'/>
+<use f='codebrowser/src/config.c' l='780' macro='1' u='r'/>
+<use f='codebrowser/src/redis-check-aof.c' l='211' macro='1' u='r'/>
+<use f='codebrowser/src/redis-cli.c' l='1090' macro='1' u='r'/>
+<use f='codebrowser/src/redis-cli.c' l='1293' macro='1' u='r'/>

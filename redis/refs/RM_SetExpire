@@ -1,0 +1,11 @@
+<def f='codebrowser/src/module.c' l='1466' ll='1476' type='int RM_SetExpire(RedisModuleKey * key, mstime_t expire)'/>
+<use f='codebrowser/src/module.c' l='3946' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1457'>/* Set a new expire for the key. If the special expire
+ * REDISMODULE_NO_EXPIRE is set, the expire is cancelled if there was
+ * one (the same as the PERSIST command).
+ *
+ * Note that the expire must be provided as a positive integer representing
+ * the number of milliseconds of TTL the key should have.
+ *
+ * The function returns REDISMODULE_OK on success or REDISMODULE_ERR if
+ * the key was not open for writing or is an empty key. */</doc>

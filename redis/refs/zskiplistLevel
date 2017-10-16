@@ -1,0 +1,4 @@
+<def f='codebrowser/src/server.h' l='763' ll='766'/>
+<size>16</size>
+<mbr r='zskiplistLevel::forward' o='0' t='struct zskiplistNode *'/>
+<mbr r='zskiplistLevel::span' o='64' t='unsigned int'/>

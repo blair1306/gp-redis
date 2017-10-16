@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/sentinel.c' l='377' type='sentinelRedisInstance * getSentinelRedisInstanceByAddrAndRunID(dict * instances, char * ip, int port, char * runid)'/>
+<use f='codebrowser/src/sentinel.c' l='1032' u='c' c='sentinelTryConnectionSharing'/>
+<use f='codebrowser/src/sentinel.c' l='1063' u='c' c='sentinelUpdateSentinelAddressInAllMasters'/>
+<def f='codebrowser/src/sentinel.c' l='1326' ll='1347' type='sentinelRedisInstance * getSentinelRedisInstanceByAddrAndRunID(dict * instances, char * ip, int port, char * runid)'/>
+<use f='codebrowser/src/sentinel.c' l='2339' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='2358' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='2941' u='c' c='sentinelCommand'/>
+<doc f='codebrowser/src/sentinel.c' l='1320'>/* Search an instance with the same runid, ip and port into a dictionary
+ * of instances. Return NULL if not found, otherwise return the instance
+ * pointer.
+ *
+ * runid or ip can be NULL. In such a case the search is performed only
+ * by the non-NULL field. */</doc>

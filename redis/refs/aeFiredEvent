@@ -1,0 +1,5 @@
+<def f='codebrowser/src/ae.h' l='85' ll='88'/>
+<size>8</size>
+<doc f='codebrowser/src/ae.h' l='84'>/* A fired event */</doc>
+<mbr r='aeFiredEvent::fd' o='0' t='int'/>
+<mbr r='aeFiredEvent::mask' o='32' t='int'/>

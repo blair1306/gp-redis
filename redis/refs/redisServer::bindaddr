@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/server.h' l='905' type='char *[16]'/>
+<offset>1664</offset>
+<doc f='codebrowser/src/server.h' l='905'>/* Addresses we should bind to */</doc>
+<use f='codebrowser/src/cluster.c' l='3266' macro='1' u='r'/>
+<use f='codebrowser/src/config.c' l='236' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1407' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1802' u='r' c='rewriteConfigBindOption'/>
+<use f='codebrowser/src/replication.c' l='1858' macro='1' u='r'/>
+<use f='codebrowser/src/sentinel.c' l='1914' macro='1' u='r'/>
+<use f='codebrowser/src/sentinel.c' l='1937' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='1701' u='w' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1703' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1733' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1733' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1733' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1735' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1739' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1745' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1745' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='3571' u='r' c='redisSetProcTitle'/>

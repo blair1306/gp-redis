@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='366'/>
+<doc f='codebrowser/src/server.h' l='363'>/* Redis maxmemory strategies. Instead of using just incremental number
+ * for this defines, we use a set of flags so that testing for certain
+ * properties common to multiple policies is faster. */</doc>
+<use f='codebrowser/src/evict.c' l='189' u='c'/>
+<use f='codebrowser/src/evict.c' l='419' u='c'/>
+<use f='codebrowser/src/object.c' l='1034' u='c'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/cluster.c' l='56' type='void clusterUpdateState()'/>
+<use f='codebrowser/src/cluster.c' l='2815' u='c' c='clusterFailoverReplaceYourMaster'/>
+<use f='codebrowser/src/cluster.c' l='3461' u='c' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3477' u='c' c='clusterBeforeSleep'/>
+<def f='codebrowser/src/cluster.c' l='3634' ll='3728' type='void clusterUpdateState()'/>

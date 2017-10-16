@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='130' ll='133' type='void mp_buf_free(lua_State * L, mp_buf * buf)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='534' u='c' c='mp_pack'/>

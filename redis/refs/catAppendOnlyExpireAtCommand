@@ -1,0 +1,12 @@
+<def f='codebrowser/src/aof.c' l='482' ll='510' type='sds catAppendOnlyExpireAtCommand(sds buf, struct redisCommand * cmd, robj * key, robj * seconds)'/>
+<use f='codebrowser/src/aof.c' l='530' u='c' c='feedAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='538' u='c' c='feedAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='550' u='c' c='feedAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='553' u='c' c='feedAppendOnlyFile'/>
+<doc f='codebrowser/src/aof.c' l='475'>/* Create the sds representation of an PEXPIREAT command, using
+ * &apos;seconds&apos; as time to live and &apos;cmd&apos; to understand what command
+ * we are translating into a PEXPIREAT.
+ *
+ * This command is used in order to translate EXPIRE and PEXPIRE commands
+ * into PEXPIREAT command so that we retain precision in the append only
+ * file, and the time is always absolute and not relative. */</doc>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/rdb.h' l='86'/>
+<doc f='codebrowser/src/rdb.h' l='85'>/* Object types for encoded objects. */</doc>
+<use f='codebrowser/src/rdb.c' l='1323' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1341' u='c'/>

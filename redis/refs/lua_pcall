@@ -1,0 +1,17 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='202' type='int lua_pcall(lua_State * L, int nargs, int nresults, int errfunc)'/>
+<def f='codebrowser/deps/lua/src/lapi.c' l='805' ll='825' macro='1' type='int lua_pcall(lua_State * L, int nargs, int nresults, int errfunc)'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='377' u='c' c='luaB_pcall'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='389' u='c' c='luaB_xpcall'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='310' u='c' c='db_debug'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='102' u='c' c='docall'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='226' u='c' c='dotty'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='1328' u='c' c='json_protect_conversion'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='869' u='c' c='mp_safe'/>
+<use f='codebrowser/src/scripting.c' l='254' u='c' c='luaSortArray'/>
+<use f='codebrowser/src/scripting.c' l='882' u='c' c='scriptingEnableGlobalsProtection'/>
+<use f='codebrowser/src/scripting.c' l='1023' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='1044' u='c' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='1162' u='c' c='luaCreateFunction'/>
+<use f='codebrowser/src/scripting.c' l='1319' u='c' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='2157' u='c' c='ldbEval'/>
+<use f='codebrowser/src/scripting.c' l='2180' u='c' c='ldbRedis'/>

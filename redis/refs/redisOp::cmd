@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='797' type='struct redisCommand *'/>
+<offset>192</offset>
+<use f='codebrowser/src/server.c' l='2022' u='w' c='redisOpArrayAppend'/>
+<use f='codebrowser/src/server.c' l='2291' u='r' c='call'/>

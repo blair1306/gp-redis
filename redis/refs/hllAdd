@@ -1,0 +1,4 @@
+<def f='codebrowser/src/hyperloglog.c' l='1020' ll='1027' type='int hllAdd(robj * o, unsigned char * ele, size_t elesize)'/>
+<use f='codebrowser/src/hyperloglog.c' l='1167' u='c' c='pfaddCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1398' u='c' c='pfselftestCommand'/>
+<doc f='codebrowser/src/hyperloglog.c' l='1019'>/* Call hllDenseAdd() or hllSparseAdd() according to the HLL encoding. */</doc>

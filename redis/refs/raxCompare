@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rax.h' l='156' type='int raxCompare(raxIterator * iter, const char * op, unsigned char * key, size_t key_len)'/>
+<def f='codebrowser/src/rax.c' l='1617' ll='1642' type='int raxCompare(raxIterator * iter, const char * op, unsigned char * key, size_t key_len)'/>
+<doc f='codebrowser/src/rax.c' l='1614'>/* Compare the key currently pointed by the iterator to the specified
+ * key according to the specified operator. Returns 1 if the comparison is
+ * true, otherwise 0 is returned. */</doc>

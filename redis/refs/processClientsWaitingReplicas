@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1495' type='void processClientsWaitingReplicas()'/>
+<def f='codebrowser/src/replication.c' l='2435' ll='2466' type='void processClientsWaitingReplicas()'/>
+<doc f='codebrowser/src/replication.c' l='2433'>/* Check if there are clients blocked in WAIT that can be unblocked since
+ * we received enough ACKs from slaves. */</doc>
+<use f='codebrowser/src/server.c' l='1214' u='c' c='beforeSleep'/>

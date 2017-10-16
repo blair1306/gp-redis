@@ -1,0 +1,5 @@
+<def f='codebrowser/src/t_hash.c' l='144' ll='162' type='size_t hashTypeGetValueLength(robj * o, sds field)'/>
+<use f='codebrowser/src/t_hash.c' l='744' u='c' c='hstrlenCommand'/>
+<doc f='codebrowser/src/t_hash.c' l='141'>/* Higher level function using hashTypeGet*() to return the length of the
+ * object associated with the requested field, or 0 if the field does not
+ * exist. */</doc>

@@ -1,0 +1,6 @@
+<def f='codebrowser/src/help.h' l='6' ll='21' type='char *[14]'/>
+<use f='codebrowser/src/redis-cli.c' l='237' u='r' c='cliInitHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='247' u='r' c='cliInitHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='328' u='r' c='cliOutputCommandHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='363' u='r' c='cliOutputHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='365' u='r' c='cliOutputHelp'/>

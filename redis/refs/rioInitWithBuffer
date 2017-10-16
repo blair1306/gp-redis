@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rio.h' l='128' type='void rioInitWithBuffer(rio * r, sds s)'/>
+<use f='codebrowser/src/cluster.c' l='4624' u='c' c='createDumpPayload'/>
+<use f='codebrowser/src/cluster.c' l='4731' u='c' c='restoreCommand'/>
+<use f='codebrowser/src/cluster.c' l='4955' u='c' c='migrateCommand'/>
+<def f='codebrowser/src/rio.c' l='100' ll='104' type='void rioInitWithBuffer(rio * r, sds s)'/>

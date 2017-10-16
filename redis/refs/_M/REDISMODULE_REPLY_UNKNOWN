@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/redismodule.h' l='34'/>
+<use f='codebrowser/src/module.c' l='2290' u='c'/>
+<use f='codebrowser/src/module.c' l='2423' u='c'/>
+<doc f='codebrowser/src/redismodule.h' l='33'>/* Reply types. */</doc>

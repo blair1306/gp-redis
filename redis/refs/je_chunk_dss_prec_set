@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk_dss.h' l='25' macro='1' type='_Bool je_chunk_dss_prec_set(dss_prec_t dss_prec)'/>
+<def f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='57' macro='1' type='_Bool je_chunk_dss_prec_set(dss_prec_t dss_prec)'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1627' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1037' macro='1' u='c'/>

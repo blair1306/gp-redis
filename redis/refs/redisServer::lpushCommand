@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='932' type='struct redisCommand *'/>
+<offset>7104</offset>
+<use f='codebrowser/src/server.c' l='1504' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/t_list.c' l='775' u='r' c='serveClientBlockedOnList'/>

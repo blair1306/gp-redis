@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='530' macro='1' type='_Bool je_atomic_cas_p(void ** p, void * c, void * s)'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='96' macro='1' u='c'/>

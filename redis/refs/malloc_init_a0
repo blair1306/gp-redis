@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='272' ll='279' macro='1' type='_Bool malloc_init_a0()'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='309' u='c' c='a0ialloc'/>

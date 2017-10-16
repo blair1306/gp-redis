@@ -1,0 +1,21 @@
+<dec f='codebrowser/src/server.h' l='745' type='robj *'/>
+<offset>832</offset>
+<use f='codebrowser/src/geo.c' l='469' u='r' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='569' u='r' c='georadiusGeneric'/>
+<use f='codebrowser/src/server.c' l='1258' u='w' c='createSharedObjects'/>
+<use f='codebrowser/src/t_hash.c' l='772' u='r' c='genericHgetallCommand'/>
+<use f='codebrowser/src/t_list.c' l='405' u='r' c='lrangeCommand'/>
+<use f='codebrowser/src/t_list.c' l='417' u='r' c='lrangeCommand'/>
+<use f='codebrowser/src/t_set.c' l='418' u='r' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='424' u='r' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='637' u='r' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='643' u='r' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='812' u='r' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2379' u='r' c='zrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2391' u='r' c='zrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2522' u='r' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2542' u='r' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2610' u='r' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2870' u='r' c='genericZrangebylexCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2893' u='r' c='genericZrangebylexCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2957' u='r' c='genericZrangebylexCommand'/>

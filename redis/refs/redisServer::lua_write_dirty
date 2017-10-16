@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1170' type='int'/>
+<offset>22592</offset>
+<doc f='codebrowser/src/server.h' l='1170'>/* True if a write command was called during the
+                             execution of the current script. */</doc>
+<use f='codebrowser/src/scripting.c' l='502' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='512' u='w' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='538' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='700' u='r' c='luaRedisReplicateCommandsCommand'/>
+<use f='codebrowser/src/scripting.c' l='1225' u='w' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1461' u='r' c='scriptCommand'/>

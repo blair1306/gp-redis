@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/ae.h' l='106' type='aeEventLoop * aeCreateEventLoop(int setsize)'/>
+<def f='codebrowser/src/ae.c' l='63' ll='93' type='aeEventLoop * aeCreateEventLoop(int setsize)'/>
+<doc f='codebrowser/src/ae.h' l='105'>/* Prototypes */</doc>
+<use f='codebrowser/src/redis-benchmark.c' l='662' u='c' c='main'/>
+<use f='codebrowser/src/server.c' l='1818' u='c' c='initServer'/>

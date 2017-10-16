@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1614' type='int prepareForShutdown()'/>
+<use f='codebrowser/src/db.c' l='825' u='c' c='shutdownCommand'/>
+<use f='codebrowser/src/server.c' l='997' u='c' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1558' u='c' c='restartServer'/>
+<def f='codebrowser/src/server.c' l='2511' ll='2581' type='int prepareForShutdown(int flags)'/>

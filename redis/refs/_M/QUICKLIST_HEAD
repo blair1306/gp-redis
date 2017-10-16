@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/quicklist.h' l='100'/>
+<use f='codebrowser/src/module.c' l='1601' u='c'/>
+<use f='codebrowser/src/module.c' l='1617' u='c'/>
+<use f='codebrowser/src/quicklist.c' l='1331' u='c'/>
+<use f='codebrowser/src/quicklist.c' l='1344' u='c'/>
+<use f='codebrowser/src/quicklist.c' l='1406' u='c'/>
+<use f='codebrowser/src/t_list.c' l='43' u='c'/>
+<use f='codebrowser/src/t_list.c' l='61' u='c'/>

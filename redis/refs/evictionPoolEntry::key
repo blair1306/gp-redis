@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/evict.c' l='56' type='sds'/>
+<use f='codebrowser/src/evict.c' l='148' u='w' c='evictionPoolAlloc'/>
+<use f='codebrowser/src/evict.c' l='212' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='214' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='218' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='223' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='238' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='238' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='250' u='w' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='254' u='w' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='443' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='448' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='451' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='455' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='456' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='457' u='w' c='freeMemoryIfNeeded'/>
+<offset>64</offset>
+<doc f='codebrowser/src/evict.c' l='56'>/* Key name. */</doc>

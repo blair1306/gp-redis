@@ -1,0 +1,233 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='116' type='char *'/>
+<use f='codebrowser/deps/hiredis/async.c' l='377' u='r' c='__redisGetSubscribeCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='387' u='r' c='__redisGetSubscribeCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='457' u='r' c='redisProcessCallbacks'/>
+<offset>192</offset>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='116'>/* Used for both REDIS_REPLY_ERROR and REDIS_REPLY_STRING */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='95' u='r' c='freeReplyObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='96' u='r' c='freeReplyObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='123' u='w' c='createStringObject'/>
+<use f='codebrowser/src/redis-benchmark.c' l='222' u='r' c='readHandler'/>
+<use f='codebrowser/src/redis-cli.c' l='282' u='r' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='559' u='r' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='562' u='r' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='571' u='r' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='675' u='r' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='686' u='r' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='686' u='r' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='693' u='r' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='696' u='r' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='724' u='r' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='724' u='r' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='727' u='r' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='733' u='r' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='785' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='785' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='787' u='r' c='cliReadReply'/>
+<use f='codebrowser/src/redis-cli.c' l='1874' u='r' c='pipeMode'/>
+<use f='codebrowser/src/redis-cli.c' l='1881' u='r' c='pipeMode'/>
+<use f='codebrowser/src/redis-cli.c' l='1993' u='r' c='sendScan'/>
+<use f='codebrowser/src/redis-cli.c' l='2008' u='r' c='sendScan'/>
+<use f='codebrowser/src/redis-cli.c' l='2056' u='r' c='getKeyTypes'/>
+<use f='codebrowser/src/redis-cli.c' l='2063' u='r' c='getKeyTypes'/>
+<use f='codebrowser/src/redis-cli.c' l='2067' u='r' c='getKeyTypes'/>
+<use f='codebrowser/src/redis-cli.c' l='2071' u='r' c='getKeyTypes'/>
+<use f='codebrowser/src/redis-cli.c' l='2076' u='r' c='getKeyTypes'/>
+<use f='codebrowser/src/redis-cli.c' l='2076' u='r' c='getKeyTypes'/>
+<use f='codebrowser/src/redis-cli.c' l='2095' u='r' c='getKeySizes'/>
+<use f='codebrowser/src/redis-cli.c' l='2109' u='r' c='getKeySizes'/>
+<use f='codebrowser/src/redis-cli.c' l='2116' u='r' c='getKeySizes'/>
+<use f='codebrowser/src/redis-cli.c' l='2193' u='r' c='findBigKeys'/>
+<use f='codebrowser/src/redis-cli.c' l='2197' u='r' c='findBigKeys'/>
+<use f='codebrowser/src/redis-cli.c' l='2329' u='r' c='statMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2345' u='r' c='statMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2353' u='r' c='statMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2358' u='r' c='statMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2363' u='r' c='statMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2368' u='r' c='statMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2374' u='r' c='statMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2379' u='r' c='statMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2380' u='r' c='statMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2381' u='r' c='statMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2422' u='r' c='scanMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2427' u='r' c='scanMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2429' u='r' c='scanMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2501' u='r' c='LRUTestMode'/>
+<use f='codebrowser/src/sentinel.c' l='2250' u='r' c='sentinelInfoReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2276' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2277' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2278' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2285' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='2446' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2446' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2449' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='2451' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='3531' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3531' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3538' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3540' u='r' c='sentinelReceiveIsMasterDownReply'/>

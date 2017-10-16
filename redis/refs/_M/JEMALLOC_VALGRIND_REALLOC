@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/valgrind.h' l='37'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1827' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2215' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2335' u='c'/>

@@ -1,0 +1,9 @@
+<def f='codebrowser/src/networking.c' l='207' ll='222' type='int _addReplyToBuffer(client * c, const char * s, size_t len)'/>
+<use f='codebrowser/src/networking.c' l='322' u='c' c='addReply'/>
+<use f='codebrowser/src/networking.c' l='333' u='c' c='addReply'/>
+<use f='codebrowser/src/networking.c' l='339' u='c' c='addReply'/>
+<use f='codebrowser/src/networking.c' l='353' u='c' c='addReplySds'/>
+<use f='codebrowser/src/networking.c' l='371' u='c' c='addReplyString'/>
+<doc f='codebrowser/src/networking.c' l='203'>/* -----------------------------------------------------------------------------
+ * Low level functions to add more data to output buffers.
+ * -------------------------------------------------------------------------- */</doc>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/module.c' l='116' type='int *'/>
+<use f='codebrowser/src/module.c' l='490' u='r' c='moduleGetCommandKeysViaAPI'/>
+<use f='codebrowser/src/module.c' l='520' u='w' c='RM_KeyAtPos'/>
+<use f='codebrowser/src/module.c' l='520' u='r' c='RM_KeyAtPos'/>
+<use f='codebrowser/src/module.c' l='521' u='r' c='RM_KeyAtPos'/>
+<offset>640</offset>
+<doc f='codebrowser/src/module.c' l='115'>/* Used if there is the REDISMODULE_CTX_KEYS_POS_REQUEST flag set. */</doc>

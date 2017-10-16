@@ -1,0 +1,5 @@
+<def f='codebrowser/src/rdb.c' l='332' ll='371' type='void * rdbLoadLzfStringObject(rio * rdb, int flags, size_t * lenptr)'/>
+<use f='codebrowser/src/rdb.c' l='466' u='c' c='rdbGenericLoadStringObject'/>
+<doc f='codebrowser/src/rdb.c' l='329'>/* Load an LZF compressed string in RDB format. The returned value
+ * changes according to &apos;flags&apos;. For more info check the
+ * rdbGenericLoadStringObject() function. */</doc>

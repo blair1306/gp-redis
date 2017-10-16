@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/cluster.h' l='140' type='clusterNode *[16384]'/>
+<use f='codebrowser/src/cluster.c' l='255' u='w' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='890' u='r' c='clusterDelNode'/>
+<use f='codebrowser/src/cluster.c' l='891' u='w' c='clusterDelNode'/>
+<use f='codebrowser/src/cluster.c' l='1540' u='r' c='clusterUpdateSlotsConfigWith'/>
+<use f='codebrowser/src/cluster.c' l='3618' u='r' c='clusterCloseAllSlots'/>
+<use f='codebrowser/src/cluster.c' l='3619' u='r' c='clusterCloseAllSlots'/>
+<use f='codebrowser/src/cluster.c' l='3773' u='r' c='verifyClusterConfigWithData'/>
+<use f='codebrowser/src/cluster.c' l='3789' u='w' c='verifyClusterConfigWithData'/>
+<use f='codebrowser/src/cluster.c' l='3914' u='r' c='clusterGenNodeDescription'/>
+<use f='codebrowser/src/cluster.c' l='3916' u='r' c='clusterGenNodeDescription'/>
+<use f='codebrowser/src/cluster.c' l='4155' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4156' u='w' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4203' u='w' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4206' u='w' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4237' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4252' u='w' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='5287' u='r' c='getNodeByQuery'/>
+<use f='codebrowser/src/cluster.c' l='5440' u='r' c='clusterRedirectBlockedClientIfNeeded'/>
+<offset>1048896</offset>

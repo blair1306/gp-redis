@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/server.h' l='679' type='robj *'/>
+<use f='codebrowser/src/aof.c' l='589' u='w' c='createFakeClient'/>
+<offset>192</offset>
+<doc f='codebrowser/src/server.h' l='679'>/* As set by CLIENT SETNAME. */</doc>
+<use f='codebrowser/src/networking.c' l='96' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='862' u='r' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='862' u='r' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='1522' u='r' c='catClientInfoString'/>
+<use f='codebrowser/src/networking.c' l='1522' u='r' c='catClientInfoString'/>
+<use f='codebrowser/src/networking.c' l='1671' u='r' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1671' u='r' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1672' u='w' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1688' u='r' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1688' u='r' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1689' u='w' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1690' u='r' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1693' u='r' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1694' u='r' c='clientCommand'/>
+<use f='codebrowser/src/slowlog.c' l='92' u='r' c='slowlogCreateEntry'/>
+<use f='codebrowser/src/slowlog.c' l='92' u='r' c='slowlogCreateEntry'/>

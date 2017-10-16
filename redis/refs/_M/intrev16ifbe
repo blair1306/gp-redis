@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/endianconv.h' l='52'/>
+<use f='codebrowser/src/ziplist.c' l='866' u='c'/>
+<use f='codebrowser/src/ziplist.c' l='869' u='c'/>
+<use f='codebrowser/src/ziplist.c' l='927' u='c'/>
+<use f='codebrowser/src/ziplist.c' l='1170' u='c'/>
+<use f='codebrowser/src/ziplist.c' l='1171' u='c'/>
+<use f='codebrowser/src/ziplist.c' l='1180' u='c'/>
+<use f='codebrowser/src/ziplist.c' l='1200' u='c'/>

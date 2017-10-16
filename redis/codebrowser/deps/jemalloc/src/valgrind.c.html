@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>valgrind.c source code [codebrowser/deps/jemalloc/src/valgrind.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/deps/jemalloc/src/valgrind.c'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>deps</a>/<a href='..'>jemalloc</a>/<a href='./'>src</a>/<a href='valgrind.c.html'>valgrind.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#include <a href="../include/jemalloc/internal/jemalloc_internal.h.html">"jemalloc/internal/jemalloc_internal.h"</a></u></td></tr>
+<tr><th id="2">2</th><td><u>#<span data-ppcond="2">ifndef</span> <a class="macro" href="../include/jemalloc/internal/jemalloc_internal_defs.h.html#153" data-ref="_M/JEMALLOC_VALGRIND">JEMALLOC_VALGRIND</a></u></td></tr>
+<tr><th id="3">3</th><td><u>#  error "This source file is for Valgrind integration."</u></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="2">endif</span></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="../../../../include/valgrind/memcheck.h.html">&lt;valgrind/memcheck.h&gt;</a></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><em>void</em></td></tr>
+<tr><th id="9">9</th><td><a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#498" title="je_valgrind_make_mem_noaccess" data-ref="_M/valgrind_make_mem_noaccess">valgrind_make_mem_noaccess</a>(<em>void</em> *<dfn class="local col1 decl" id="1ptr" title='ptr' data-type='void *' data-ref="1ptr">ptr</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="2usize" title='usize' data-type='size_t' data-ref="2usize">usize</dfn>)</td></tr>
+<tr><th id="10">10</th><td>{</td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td>	<a class="macro" href="../../../../include/valgrind/memcheck.h.html#112" title="__extension__ ({ volatile unsigned long int _zzq_args[6]; volatile unsigned long int _zzq_result; _zzq_args[0] = (unsigned long int)(VG_USERREQ__MAKE_MEM_NOACCESS); _zzq_args[1] = (unsigned long int)((ptr)); _zzq_args[2] = (unsigned long int)((usize)); _zzq_args[3] = (unsigned long int)(0); _zzq_args[4] = (unsigned long int)(0); _zzq_args[5] = (unsigned long int)(0); __asm__ volatile(&quot;rolq $3,  %%rdi ; rolq $13, %%rdi\n\t&quot; &quot;rolq $61, %%rdi ; rolq $51, %%rdi\n\t&quot; &quot;xchgq %%rbx,%%rbx&quot; : &quot;=d&quot; (_zzq_result) : &quot;a&quot; (&amp;_zzq_args[0]), &quot;0&quot; (0) : &quot;cc&quot;, &quot;memory&quot; ); _zzq_result; })" data-ref="_M/VALGRIND_MAKE_MEM_NOACCESS">VALGRIND_MAKE_MEM_NOACCESS</a>(<a class="local col1 ref" href="#1ptr" title='ptr' data-ref="1ptr">ptr</a>, <a class="local col2 ref" href="#2usize" title='usize' data-ref="2usize">usize</a>);</td></tr>
+<tr><th id="13">13</th><td>}</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><em>void</em></td></tr>
+<tr><th id="16">16</th><td><a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#499" title="je_valgrind_make_mem_undefined" data-ref="_M/valgrind_make_mem_undefined">valgrind_make_mem_undefined</a>(<em>void</em> *<dfn class="local col3 decl" id="3ptr" title='ptr' data-type='void *' data-ref="3ptr">ptr</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="4usize" title='usize' data-type='size_t' data-ref="4usize">usize</dfn>)</td></tr>
+<tr><th id="17">17</th><td>{</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td>	<a class="macro" href="../../../../include/valgrind/memcheck.h.html#119" title="__extension__ ({ volatile unsigned long int _zzq_args[6]; volatile unsigned long int _zzq_result; _zzq_args[0] = (unsigned long int)(VG_USERREQ__MAKE_MEM_UNDEFINED); _zzq_args[1] = (unsigned long int)((ptr)); _zzq_args[2] = (unsigned long int)((usize)); _zzq_args[3] = (unsigned long int)(0); _zzq_args[4] = (unsigned long int)(0); _zzq_args[5] = (unsigned long int)(0); __asm__ volatile(&quot;rolq $3,  %%rdi ; rolq $13, %%rdi\n\t&quot; &quot;rolq $61, %%rdi ; rolq $51, %%rdi\n\t&quot; &quot;xchgq %%rbx,%%rbx&quot; : &quot;=d&quot; (_zzq_result) : &quot;a&quot; (&amp;_zzq_args[0]), &quot;0&quot; (0) : &quot;cc&quot;, &quot;memory&quot; ); _zzq_result; })" data-ref="_M/VALGRIND_MAKE_MEM_UNDEFINED">VALGRIND_MAKE_MEM_UNDEFINED</a>(<a class="local col3 ref" href="#3ptr" title='ptr' data-ref="3ptr">ptr</a>, <a class="local col4 ref" href="#4usize" title='usize' data-ref="4usize">usize</a>);</td></tr>
+<tr><th id="20">20</th><td>}</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><em>void</em></td></tr>
+<tr><th id="23">23</th><td><a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#497" title="je_valgrind_make_mem_defined" data-ref="_M/valgrind_make_mem_defined">valgrind_make_mem_defined</a>(<em>void</em> *<dfn class="local col5 decl" id="5ptr" title='ptr' data-type='void *' data-ref="5ptr">ptr</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="6usize" title='usize' data-type='size_t' data-ref="6usize">usize</dfn>)</td></tr>
+<tr><th id="24">24</th><td>{</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td>	<a class="macro" href="../../../../include/valgrind/memcheck.h.html#126" title="__extension__ ({ volatile unsigned long int _zzq_args[6]; volatile unsigned long int _zzq_result; _zzq_args[0] = (unsigned long int)(VG_USERREQ__MAKE_MEM_DEFINED); _zzq_args[1] = (unsigned long int)((ptr)); _zzq_args[2] = (unsigned long int)((usize)); _zzq_args[3] = (unsigned long int)(0); _zzq_args[4] = (unsigned long int)(0); _zzq_args[5] = (unsigned long int)(0); __asm__ volatile(&quot;rolq $3,  %%rdi ; rolq $13, %%rdi\n\t&quot; &quot;rolq $61, %%rdi ; rolq $51, %%rdi\n\t&quot; &quot;xchgq %%rbx,%%rbx&quot; : &quot;=d&quot; (_zzq_result) : &quot;a&quot; (&amp;_zzq_args[0]), &quot;0&quot; (0) : &quot;cc&quot;, &quot;memory&quot; ); _zzq_result; })" data-ref="_M/VALGRIND_MAKE_MEM_DEFINED">VALGRIND_MAKE_MEM_DEFINED</a>(<a class="local col5 ref" href="#5ptr" title='ptr' data-ref="5ptr">ptr</a>, <a class="local col6 ref" href="#6usize" title='usize' data-ref="6usize">usize</a>);</td></tr>
+<tr><th id="27">27</th><td>}</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><em>void</em></td></tr>
+<tr><th id="30">30</th><td><a class="macro" href="../include/jemalloc/internal/private_namespace.h.html#496" title="je_valgrind_freelike_block" data-ref="_M/valgrind_freelike_block">valgrind_freelike_block</a>(<em>void</em> *<dfn class="local col7 decl" id="7ptr" title='ptr' data-type='void *' data-ref="7ptr">ptr</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="8usize" title='usize' data-type='size_t' data-ref="8usize">usize</dfn>)</td></tr>
+<tr><th id="31">31</th><td>{</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>	<a class="macro" href="../../../../include/valgrind/valgrind.h.html#7001" title="do { (void) __extension__ ({ volatile unsigned long int _zzq_args[6]; volatile unsigned long int _zzq_result; _zzq_args[0] = (unsigned long int)((VG_USERREQ__FREELIKE_BLOCK)); _zzq_args[1] = (unsigned long int)((ptr)); _zzq_args[2] = (unsigned long int)((usize)); _zzq_args[3] = (unsigned long int)((0)); _zzq_args[4] = (unsigned long int)((0)); _zzq_args[5] = (unsigned long int)((0)); __asm__ volatile(&quot;rolq $3,  %%rdi ; rolq $13, %%rdi\n\t&quot; &quot;rolq $61, %%rdi ; rolq $51, %%rdi\n\t&quot; &quot;xchgq %%rbx,%%rbx&quot; : &quot;=d&quot; (_zzq_result) : &quot;a&quot; (&amp;_zzq_args[0]), &quot;0&quot; (0) : &quot;cc&quot;, &quot;memory&quot; ); _zzq_result; }); } while (0)" data-ref="_M/VALGRIND_FREELIKE_BLOCK">VALGRIND_FREELIKE_BLOCK</a>(<a class="local col7 ref" href="#7ptr" title='ptr' data-ref="7ptr">ptr</a>, <a class="local col8 ref" href="#8usize" title='usize' data-ref="8usize">usize</a>);</td></tr>
+<tr><th id="34">34</th><td>}</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Oct-16</em> from project codebrowser revision <em>with-deprecated-diskstore-4466-g2bf8c2c</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

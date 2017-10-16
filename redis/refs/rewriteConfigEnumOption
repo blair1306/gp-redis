@@ -1,0 +1,8 @@
+<def f='codebrowser/src/config.c' l='1682' ll='1689' type='void rewriteConfigEnumOption(struct rewriteConfigState * state, char * option, int value, configEnum * ce, int defval)'/>
+<use f='codebrowser/src/config.c' l='1962' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1993' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2002' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2033' u='c' c='rewriteConfig'/>
+<doc f='codebrowser/src/config.c' l='1679'>/* Rewrite an enumeration option. It takes as usually state and option name,
+ * and in addition the enumeration array and the default value for the
+ * option. */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1856' type='void rpushxCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='150' u='r'/>
+<use f='codebrowser/src/server.c' l='150' u='r'/>
+<use f='codebrowser/src/server.c' l='150' u='r'/>
+<use f='codebrowser/src/server.c' l='150' u='r'/>
+<def f='codebrowser/src/t_list.c' l='260' ll='262' type='void rpushxCommand(client * c)'/>

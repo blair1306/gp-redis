@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='66' macro='1' type='void je_extent_tree_ad_new(extent_tree_t * rbtree)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3065' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3067' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/extent.c' l='53' macro='1' type='void je_extent_tree_ad_new(extent_tree_t * rbtree)'/>

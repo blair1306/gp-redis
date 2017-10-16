@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/linenoise/linenoise.h' l='47' type='size_t'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='338' u='r' c='freeCompletions'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='356' u='r' c='completeLine'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='363' u='r' c='completeLine'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='384' u='r' c='completeLine'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='385' u='r' c='completeLine'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='389' u='r' c='completeLine'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='394' u='r' c='completeLine'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='436' u='r' c='linenoiseAddCompletion'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='442' u='w' c='linenoiseAddCompletion'/>
+<offset>0</offset>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/src/adlist.h' l='78' type='list * listInsertNode(list * list, listNode * old_node, void * value, int after)'/>
+<def f='codebrowser/src/adlist.c' l='134' ll='161' type='list * listInsertNode(list * list, listNode * old_node, void * value, int after)'/>

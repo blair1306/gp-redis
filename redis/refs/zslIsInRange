@@ -1,0 +1,4 @@
+<def f='codebrowser/src/t_zset.c' l='256' ll='270' type='int zslIsInRange(zskiplist * zsl, zrangespec * range)'/>
+<use f='codebrowser/src/t_zset.c' l='279' u='c' c='zslFirstInRange'/>
+<use f='codebrowser/src/t_zset.c' l='305' u='c' c='zslLastInRange'/>
+<doc f='codebrowser/src/t_zset.c' l='255'>/* Returns if there is a part of the zset is in range. */</doc>

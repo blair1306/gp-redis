@@ -1,0 +1,14 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='115' type='size_t'/>
+<use f='codebrowser/deps/hiredis/async.c' l='387' u='r' c='__redisGetSubscribeCallback'/>
+<offset>128</offset>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='115'>/* Length of string */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='124' u='w' c='createStringObject'/>
+<use f='codebrowser/src/redis-cli.c' l='571' u='r' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='675' u='r' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='693' u='r' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='696' u='r' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='727' u='r' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='733' u='r' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='1877' u='r' c='pipeMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2187' u='r' c='findBigKeys'/>
+<use f='codebrowser/src/sentinel.c' l='2451' u='r' c='sentinelReceiveHelloMessages'/>

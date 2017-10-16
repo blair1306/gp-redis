@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/intset.h' l='45' type='int64_t intsetRandom(intset * is)'/>
+<def f='codebrowser/src/intset.c' l='260' ll='262' type='int64_t intsetRandom(intset * is)'/>
+<doc f='codebrowser/src/intset.c' l='259'>/* Return random member */</doc>
+<use f='codebrowser/src/t_set.c' l='214' u='c' c='setTypeRandomElement'/>

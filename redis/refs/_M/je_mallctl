@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='66'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='225' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2433' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/stats.c' l='382' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/stats.c' l='540' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/stats.c' l='544' u='c'/>

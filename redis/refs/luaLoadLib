@@ -1,0 +1,13 @@
+<def f='codebrowser/src/scripting.c' l='810' ll='814' type='void luaLoadLib(lua_State * lua, const char * libname, lua_CFunction luafunc)'/>
+<use f='codebrowser/src/scripting.c' l='822' u='c' c='luaLoadLibraries'/>
+<use f='codebrowser/src/scripting.c' l='823' u='c' c='luaLoadLibraries'/>
+<use f='codebrowser/src/scripting.c' l='824' u='c' c='luaLoadLibraries'/>
+<use f='codebrowser/src/scripting.c' l='825' u='c' c='luaLoadLibraries'/>
+<use f='codebrowser/src/scripting.c' l='826' u='c' c='luaLoadLibraries'/>
+<use f='codebrowser/src/scripting.c' l='827' u='c' c='luaLoadLibraries'/>
+<use f='codebrowser/src/scripting.c' l='828' u='c' c='luaLoadLibraries'/>
+<use f='codebrowser/src/scripting.c' l='829' u='c' c='luaLoadLibraries'/>
+<use f='codebrowser/src/scripting.c' l='830' u='c' c='luaLoadLibraries'/>
+<doc f='codebrowser/src/scripting.c' l='806'>/* ---------------------------------------------------------------------------
+ * Lua engine initialization and reset.
+ * ------------------------------------------------------------------------- */</doc>

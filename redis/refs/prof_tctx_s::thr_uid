@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='96' type='uint64_t'/>
+<offset>64</offset>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='138' u='r' c='prof_tctx_comp'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='139' u='r' c='prof_tctx_comp'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='800' u='w' c='je_prof_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1114' u='r' c='prof_tctx_dump_iter'/>

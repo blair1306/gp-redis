@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/help.h' l='27' type='int'/>
+<use f='codebrowser/src/redis-cli.c' l='315' u='w' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='328' u='r' c='cliOutputCommandHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='389' u='r' c='cliOutputHelp'/>
+<offset>192</offset>

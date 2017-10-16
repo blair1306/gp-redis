@@ -1,0 +1,2 @@
+<def f='codebrowser/src/scripting.c' l='821' ll='836' type='void luaLoadLibraries(lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='907' u='c' c='scriptingInit'/>

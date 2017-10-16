@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1633' type='unsigned int getLRUClock()'/>
+<def f='codebrowser/src/evict.c' l='72' ll='74' type='unsigned int getLRUClock()'/>
+<use f='codebrowser/src/evict.c' l='85' u='c' c='LRU_CLOCK'/>
+<doc f='codebrowser/src/evict.c' l='69'>/* Return the LRU clock, based on the clock resolution. This is a time
+ * in a reduced-bits format that can be used to set and check the
+ * object-&gt;lru field of redisObject structures. */</doc>
+<use f='codebrowser/src/server.c' l='984' u='c' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1444' u='c' c='initServerConfig'/>

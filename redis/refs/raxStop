@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rax.h' l='157' type='void raxStop(raxIterator * it)'/>
+<use f='codebrowser/src/db.c' l='1409' u='c' c='getKeysInSlot'/>
+<use f='codebrowser/src/db.c' l='1432' u='c' c='delKeysInSlot'/>
+<def f='codebrowser/src/rax.c' l='1645' ll='1648' type='void raxStop(raxIterator * it)'/>
+<doc f='codebrowser/src/rax.c' l='1644'>/* Free the iterator. */</doc>

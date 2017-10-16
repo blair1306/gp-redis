@@ -1,0 +1,4 @@
+<def f='codebrowser/src/server.c' l='704' ll='709' type='void tryResizeHashTables(int dbid)'/>
+<use f='codebrowser/src/server.c' l='904' u='c' c='databasesCron'/>
+<doc f='codebrowser/src/server.c' l='702'>/* If the percentage of used slots in the HT reaches HASHTABLE_MIN_FILL
+ * we resize the hash table to save memory */</doc>

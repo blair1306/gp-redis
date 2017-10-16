@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1219' type='redisGetKeysProc *'/>
+<offset>320</offset>
+<doc f='codebrowser/src/server.h' l='1217'>/* Use a function to determine keys arguments in a command line.
+     * Used for Redis Cluster redirect. */</doc>
+<use f='codebrowser/src/db.c' l='1176' u='r' c='getKeysFromCommand'/>
+<use f='codebrowser/src/db.c' l='1177' u='r' c='getKeysFromCommand'/>
+<use f='codebrowser/src/module.c' l='463' u='r' c='RedisModuleCommandDispatcher'/>
+<use f='codebrowser/src/module.c' l='483' u='r' c='moduleGetCommandKeysViaAPI'/>
+<use f='codebrowser/src/module.c' l='638' u='w' c='RM_CreateCommand'/>
+<use f='codebrowser/src/module.c' l='3797' u='r' c='moduleUnload'/>
+<use f='codebrowser/src/server.c' l='2351' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2713' u='r' c='addReplyCommand'/>

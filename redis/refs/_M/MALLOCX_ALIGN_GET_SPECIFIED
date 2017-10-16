@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='206'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='205'>/* Use MALLOCX_ALIGN_GET() if alignment may not be specified in flags. */</doc>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1923' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2389' u='c'/>

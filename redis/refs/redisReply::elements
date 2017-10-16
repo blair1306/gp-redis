@@ -1,0 +1,27 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='117' type='size_t'/>
+<use f='codebrowser/deps/hiredis/async.c' l='375' u='r' c='__redisGetSubscribeCallback'/>
+<offset>256</offset>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='117'>/* number of elements, for REDIS_REPLY_ARRAY */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='86' u='r' c='freeReplyObject'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='149' u='w' c='createArrayObject'/>
+<use f='codebrowser/src/redis-cli.c' l='276' u='r' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='278' u='r' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='578' u='r' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='588' u='r' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='602' u='r' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='703' u='r' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='739' u='r' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='742' u='r' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='1998' u='r' c='sendScan'/>
+<use f='codebrowser/src/redis-cli.c' l='2055' u='r' c='getKeyTypes'/>
+<use f='codebrowser/src/redis-cli.c' l='2060' u='r' c='getKeyTypes'/>
+<use f='codebrowser/src/redis-cli.c' l='2089' u='r' c='getKeySizes'/>
+<use f='codebrowser/src/redis-cli.c' l='2099' u='r' c='getKeySizes'/>
+<use f='codebrowser/src/redis-cli.c' l='2164' u='r' c='findBigKeys'/>
+<use f='codebrowser/src/redis-cli.c' l='2165' u='r' c='findBigKeys'/>
+<use f='codebrowser/src/redis-cli.c' l='2166' u='r' c='findBigKeys'/>
+<use f='codebrowser/src/redis-cli.c' l='2173' u='r' c='findBigKeys'/>
+<use f='codebrowser/src/redis-cli.c' l='2181' u='r' c='findBigKeys'/>
+<use f='codebrowser/src/redis-cli.c' l='2428' u='r' c='scanMode'/>
+<use f='codebrowser/src/sentinel.c' l='2442' u='r' c='sentinelReceiveHelloMessages'/>
+<use f='codebrowser/src/sentinel.c' l='3520' u='r' c='sentinelReceiveIsMasterDownReply'/>

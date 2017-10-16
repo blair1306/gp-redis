@@ -1,0 +1,11 @@
+<def f='codebrowser/src/config.c' l='1484' ll='1488' type='void rewriteConfigMarkAsProcessed(struct rewriteConfigState * state, const char * option)'/>
+<use f='codebrowser/src/config.c' l='1572' u='c' c='rewriteConfigRewriteLine'/>
+<use f='codebrowser/src/config.c' l='1649' u='c' c='rewriteConfigStringOption'/>
+<use f='codebrowser/src/config.c' l='1717' u='c' c='rewriteConfigSaveOption'/>
+<use f='codebrowser/src/config.c' l='1725' u='c' c='rewriteConfigDirOption'/>
+<use f='codebrowser/src/config.c' l='1740' u='c' c='rewriteConfigSlaveofOption'/>
+<use f='codebrowser/src/config.c' l='1797' u='c' c='rewriteConfigBindOption'/>
+<doc f='codebrowser/src/config.c' l='1480'>/* Add the specified option to the set of processed options.
+ * This is useful as only unused lines of processed options will be blanked
+ * in the config file, while options the rewrite process does not understand
+ * remain untouched. */</doc>

@@ -1,0 +1,25 @@
+<dec f='codebrowser/src/server.h' l='914' type='list *'/>
+<offset>3968</offset>
+<doc f='codebrowser/src/server.h' l='914'>/* List of active clients */</doc>
+<use f='codebrowser/src/blocked.c' l='183' u='r' c='disconnectAllBlockedClients'/>
+<use f='codebrowser/src/multi.c' l='304' u='r' c='touchWatchedKeysOnFlush'/>
+<use f='codebrowser/src/networking.c' l='138' u='r' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='618' u='r' c='acceptCommonHandler'/>
+<use f='codebrowser/src/networking.c' l='746' u='r' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='748' u='r' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='1440' u='r' c='getClientsMaxBuffers'/>
+<use f='codebrowser/src/networking.c' l='1543' u='r' c='getAllClientsInfoString'/>
+<use f='codebrowser/src/networking.c' l='1545' u='r' c='getAllClientsInfoString'/>
+<use f='codebrowser/src/networking.c' l='1634' u='r' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1985' u='r' c='clientsArePaused'/>
+<use f='codebrowser/src/object.c' l='847' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='851' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='947' u='r' c='getMemoryDoctorReport'/>
+<use f='codebrowser/src/replication.c' l='2208' u='r' c='replicationResurrectCachedMaster'/>
+<use f='codebrowser/src/server.c' l='842' u='r' c='clientsCron'/>
+<use f='codebrowser/src/server.c' l='853' u='r' c='clientsCron'/>
+<use f='codebrowser/src/server.c' l='860' u='r' c='clientsCron'/>
+<use f='codebrowser/src/server.c' l='861' u='r' c='clientsCron'/>
+<use f='codebrowser/src/server.c' l='1022' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1803' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2896' u='r' c='genRedisInfoString'/>

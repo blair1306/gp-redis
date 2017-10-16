@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/bits/mathcalls.h' l='109' type='double log(double __x)'/>
+<use f='codebrowser/deps/lua/src/lmathlib.c' l='115' u='c' c='math_log'/>
+<use f='codebrowser/src/hyperloglog.c' l='1005' u='c' c='hllCount'/>
+<use f='codebrowser/src/rax.c' l='1582' u='c' c='raxRandomWalk'/>
+<use f='codebrowser/src/sparkline.c' l='108' u='c' c='sparklineRenderRange'/>
+<use f='codebrowser/src/sparkline.c' l='121' u='c' c='sparklineRenderRange'/>

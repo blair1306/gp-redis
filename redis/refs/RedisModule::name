@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/module.c' l='46' type='char *'/>
+<use f='codebrowser/src/module.c' l='435' u='r' c='moduleFreeContext'/>
+<use f='codebrowser/src/module.c' l='658' u='w' c='RM_SetModuleAttribs'/>
+<use f='codebrowser/src/module.c' l='1088' u='r' c='RM_ReplySetArrayLength'/>
+<use f='codebrowser/src/module.c' l='2949' u='r' c='moduleRDBLoadError'/>
+<use f='codebrowser/src/module.c' l='3308' u='r' c='RM_LogRaw'/>
+<use f='codebrowser/src/module.c' l='3732' u='r' c='moduleFreeModuleStructure'/>
+<use f='codebrowser/src/module.c' l='3764' u='r' c='moduleLoad'/>
+<use f='codebrowser/src/module.c' l='3766' u='r' c='moduleLoad'/>
+<use f='codebrowser/src/module.c' l='3817' u='r' c='moduleUnload'/>
+<use f='codebrowser/src/module.c' l='3821' u='r' c='moduleUnload'/>
+<use f='codebrowser/src/module.c' l='3822' u='r' c='moduleUnload'/>
+<use f='codebrowser/src/module.c' l='3823' u='w' c='moduleUnload'/>
+<offset>64</offset>
+<doc f='codebrowser/src/module.c' l='46'>/* Module name. */</doc>

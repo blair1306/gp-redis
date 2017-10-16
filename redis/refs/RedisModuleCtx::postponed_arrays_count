@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/module.c' l='112' type='int'/>
+<use f='codebrowser/src/module.c' l='429' u='w' c='moduleFreeContext'/>
+<use f='codebrowser/src/module.c' l='1044' u='r' c='RM_ReplyWithArray'/>
+<use f='codebrowser/src/module.c' l='1045' u='r' c='RM_ReplyWithArray'/>
+<use f='codebrowser/src/module.c' l='1047' u='w' c='RM_ReplyWithArray'/>
+<use f='codebrowser/src/module.c' l='1083' u='r' c='RM_ReplySetArrayLength'/>
+<use f='codebrowser/src/module.c' l='1091' u='w' c='RM_ReplySetArrayLength'/>
+<use f='codebrowser/src/module.c' l='1093' u='r' c='RM_ReplySetArrayLength'/>
+<use f='codebrowser/src/module.c' l='1095' u='r' c='RM_ReplySetArrayLength'/>
+<offset>512</offset>
+<doc f='codebrowser/src/module.c' l='112'>/* Number of entries in postponed_arrays. */</doc>

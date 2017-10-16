@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='946' type='long long'/>
+<offset>8192</offset>
+<doc f='codebrowser/src/server.h' l='946'>/* number of keys scanned and not moved */</doc>
+<use f='codebrowser/src/defrag.c' l='425' u='w' c='defragScanCallback'/>
+<use f='codebrowser/src/server.c' l='1770' u='w' c='resetServerStats'/>
+<use f='codebrowser/src/server.c' l='3122' u='r' c='genRedisInfoString'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='748' type='robj *'/>
+<offset>1856</offset>
+<use f='codebrowser/src/scripting.c' l='506' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/server.c' l='1286' u='w' c='createSharedObjects'/>
+<use f='codebrowser/src/server.c' l='2384' u='r' c='processCommand'/>

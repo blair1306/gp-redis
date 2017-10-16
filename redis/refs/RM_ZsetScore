@@ -1,0 +1,10 @@
+<def f='codebrowser/src/module.c' l='1759' ll='1764' type='int RM_ZsetScore(RedisModuleKey * key, robj * ele, double * score)'/>
+<use f='codebrowser/src/module.c' l='3950' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1751'>/* On success retrieve the double score associated at the sorted set element
+ * &apos;ele&apos; and returns REDISMODULE_OK. Otherwise REDISMODULE_ERR is returned
+ * to signal one of the following conditions:
+ *
+ * * There is no such element &apos;ele&apos; in the sorted set.
+ * * The key is not a sorted set.
+ * * The key is an open empty key.
+ */</doc>

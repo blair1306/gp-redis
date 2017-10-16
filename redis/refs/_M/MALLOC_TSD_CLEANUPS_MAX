@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='5'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='4'>/* Maximum number of malloc_tsd users with cleanup functions. */</doc>
+<use f='codebrowser/deps/jemalloc/src/tsd.c' l='8' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tsd.c' l='65' u='c'/>

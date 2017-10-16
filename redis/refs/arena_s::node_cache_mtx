@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='398' type='malloc_mutex_t'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='854' u='a' c='je_arena_node_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='857' u='a' c='je_arena_node_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='861' u='a' c='je_arena_node_alloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='869' u='a' c='je_arena_node_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='872' u='a' c='je_arena_node_dalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3071' u='a' c='je_arena_new'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3289' u='a' c='je_arena_prefork'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3301' u='a' c='je_arena_postfork_parent'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3314' u='a' c='je_arena_postfork_child'/>
+<offset>8064</offset>

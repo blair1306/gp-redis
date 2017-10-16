@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='79' type='unsigned int'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='243' u='w' c='je_tcache_event'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='244' u='r' c='je_tcache_event'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='245' u='r' c='je_tcache_event'/>
+<offset>192</offset>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='70' u='w' c='je_tcache_event_hard'/>

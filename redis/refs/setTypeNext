@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/server.h' l='1651' type='int setTypeNext(setTypeIterator * si, sds * sdsele, int64_t * llele)'/>
+<def f='codebrowser/src/t_set.c' l='154' ll='168' type='int setTypeNext(setTypeIterator * si, sds * sdsele, int64_t * llele)'/>
+<use f='codebrowser/src/t_set.c' l='182' u='c' c='setTypeNextObject'/>
+<use f='codebrowser/src/t_set.c' l='250' u='c' c='setTypeConvert'/>
+<use f='codebrowser/src/t_set.c' l='526' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='689' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='843' u='c' c='sinterGenericCommand'/>
+<doc f='codebrowser/src/t_set.c' l='141'>/* Move to the next entry in the set. Returns the object at the current
+ * position.
+ *
+ * Since set elements can be internally be stored as SDS strings or
+ * simple arrays of integers, setTypeNext returns the encoding of the
+ * set object you are iterating, and will populate the appropriate pointer
+ * (sdsele) or (llele) accordingly.
+ *
+ * Note that both the sdsele and llele pointers should be passed and cannot
+ * be NULL since the function will try to defensively populate the non
+ * used field with values which are easy to trap if misused.
+ *
+ * When there are no longer elements -1 is returned. */</doc>

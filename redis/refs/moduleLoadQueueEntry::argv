@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='739' type='robj **'/>
+<offset>128</offset>
+<use f='codebrowser/src/config.c' l='163' u='w' c='queueLoadModule'/>
+<use f='codebrowser/src/config.c' l='167' u='r' c='queueLoadModule'/>
+<use f='codebrowser/src/module.c' l='3719' u='r' c='moduleLoadFromQueue'/>

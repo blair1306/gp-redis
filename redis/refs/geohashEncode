@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/geohash.h' l='98' type='int geohashEncode(const GeoHashRange * long_range, const GeoHashRange * lat_range, double longitude, double latitude, uint8_t step, GeoHashBits * hash)'/>
+<use f='codebrowser/src/geo.c' l='735' u='c' c='geohashCommand'/>
+<def f='codebrowser/src/geohash.c' l='121' ll='151' type='int geohashEncode(const GeoHashRange * long_range, const GeoHashRange * lat_range, double longitude, double latitude, uint8_t step, GeoHashBits * hash)'/>
+<use f='codebrowser/src/geohash.c' l='156' u='c' c='geohashEncodeType'/>
+<use f='codebrowser/src/geohash_helper.c' l='135' u='c' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='165' u='c' c='geohashGetAreasByRadius'/>

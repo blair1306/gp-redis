@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>util.h source code [codebrowser/deps/jemalloc/include/jemalloc/internal/util.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/deps/jemalloc/include/jemalloc/internal/util.h'; var root_path = '../../../../../..'; var data_path = '../../../../../../../data';</script>
+<script src='../../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../../..'>codebrowser</a>/<a href='../../../..'>deps</a>/<a href='../../..'>jemalloc</a>/<a href='../..'>include</a>/<a href='..'>jemalloc</a>/<a href='./'>internal</a>/<a href='util.h.html'>util.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/******************************************************************************/</i></td></tr>
+<tr><th id="2">2</th><td><u>#<span data-ppcond="2">ifdef</span> <a class="macro" href="jemalloc_internal.h.html#182" data-ref="_M/JEMALLOC_H_TYPES">JEMALLOC_H_TYPES</a></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifdef</span> <span class="macro" data-ref="_M/_WIN32">_WIN32</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#  ifdef _WIN64</u></td></tr>
+<tr><th id="6">6</th><td><u>#    define FMT64_PREFIX "ll"</u></td></tr>
+<tr><th id="7">7</th><td><u>#    define FMTPTR_PREFIX "ll"</u></td></tr>
+<tr><th id="8">8</th><td><u>#  else</u></td></tr>
+<tr><th id="9">9</th><td><u>#    define FMT64_PREFIX "ll"</u></td></tr>
+<tr><th id="10">10</th><td><u>#    define FMTPTR_PREFIX ""</u></td></tr>
+<tr><th id="11">11</th><td><u>#  endif</u></td></tr>
+<tr><th id="12">12</th><td><u>#  define FMTd32 "d"</u></td></tr>
+<tr><th id="13">13</th><td><u>#  define FMTu32 "u"</u></td></tr>
+<tr><th id="14">14</th><td><u>#  define FMTx32 "x"</u></td></tr>
+<tr><th id="15">15</th><td><u>#  define FMTd64 FMT64_PREFIX "d"</u></td></tr>
+<tr><th id="16">16</th><td><u>#  define FMTu64 FMT64_PREFIX "u"</u></td></tr>
+<tr><th id="17">17</th><td><u>#  define FMTx64 FMT64_PREFIX "x"</u></td></tr>
+<tr><th id="18">18</th><td><u>#  define FMTdPTR FMTPTR_PREFIX "d"</u></td></tr>
+<tr><th id="19">19</th><td><u>#  define FMTuPTR FMTPTR_PREFIX "u"</u></td></tr>
+<tr><th id="20">20</th><td><u>#  define FMTxPTR FMTPTR_PREFIX "x"</u></td></tr>
+<tr><th id="21">21</th><td><u>#<span data-ppcond="4">else</span></u></td></tr>
+<tr><th id="22">22</th><td><u>#  include &lt;inttypes.h&gt;</u></td></tr>
+<tr><th id="23">23</th><td><u>#  define <dfn class="macro" id="_M/FMTd32" data-ref="_M/FMTd32">FMTd32</dfn> PRId32</u></td></tr>
+<tr><th id="24">24</th><td><u>#  define <dfn class="macro" id="_M/FMTu32" data-ref="_M/FMTu32">FMTu32</dfn> PRIu32</u></td></tr>
+<tr><th id="25">25</th><td><u>#  define <dfn class="macro" id="_M/FMTx32" data-ref="_M/FMTx32">FMTx32</dfn> PRIx32</u></td></tr>
+<tr><th id="26">26</th><td><u>#  define <dfn class="macro" id="_M/FMTd64" data-ref="_M/FMTd64">FMTd64</dfn> PRId64</u></td></tr>
+<tr><th id="27">27</th><td><u>#  define <dfn class="macro" id="_M/FMTu64" data-ref="_M/FMTu64">FMTu64</dfn> PRIu64</u></td></tr>
+<tr><th id="28">28</th><td><u>#  define <dfn class="macro" id="_M/FMTx64" data-ref="_M/FMTx64">FMTx64</dfn> PRIx64</u></td></tr>
+<tr><th id="29">29</th><td><u>#  define <dfn class="macro" id="_M/FMTdPTR" data-ref="_M/FMTdPTR">FMTdPTR</dfn> PRIdPTR</u></td></tr>
+<tr><th id="30">30</th><td><u>#  define <dfn class="macro" id="_M/FMTuPTR" data-ref="_M/FMTuPTR">FMTuPTR</dfn> PRIuPTR</u></td></tr>
+<tr><th id="31">31</th><td><u>#  define <dfn class="macro" id="_M/FMTxPTR" data-ref="_M/FMTxPTR">FMTxPTR</dfn> PRIxPTR</u></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i>/* Size of stack-allocated buffer passed to buferror(). */</i></td></tr>
+<tr><th id="35">35</th><td><u>#define	<dfn class="macro" id="_M/BUFERROR_BUF" data-ref="_M/BUFERROR_BUF">BUFERROR_BUF</dfn>		64</u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><i>/*</i></td></tr>
+<tr><th id="38">38</th><td><i> * Size of stack-allocated buffer used by malloc_{,v,vc}printf().  This must be</i></td></tr>
+<tr><th id="39">39</th><td><i> * large enough for all possible uses within jemalloc.</i></td></tr>
+<tr><th id="40">40</th><td><i> */</i></td></tr>
+<tr><th id="41">41</th><td><u>#define	<dfn class="macro" id="_M/MALLOC_PRINTF_BUFSIZE" data-ref="_M/MALLOC_PRINTF_BUFSIZE">MALLOC_PRINTF_BUFSIZE</dfn>	4096</u></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><i>/*</i></td></tr>
+<tr><th id="44">44</th><td><i> * Wrap a cpp argument that contains commas such that it isn't broken up into</i></td></tr>
+<tr><th id="45">45</th><td><i> * multiple arguments.</i></td></tr>
+<tr><th id="46">46</th><td><i> */</i></td></tr>
+<tr><th id="47">47</th><td><u>#define	<dfn class="macro" id="_M/JEMALLOC_ARG_CONCAT" data-ref="_M/JEMALLOC_ARG_CONCAT">JEMALLOC_ARG_CONCAT</dfn>(...) __VA_ARGS__</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><i>/*</i></td></tr>
+<tr><th id="50">50</th><td><i> * Silence compiler warnings due to uninitialized values.  This is used</i></td></tr>
+<tr><th id="51">51</th><td><i> * wherever the compiler fails to recognize that the variable is never used</i></td></tr>
+<tr><th id="52">52</th><td><i> * uninitialized.</i></td></tr>
+<tr><th id="53">53</th><td><i> */</i></td></tr>
+<tr><th id="54">54</th><td><u>#<span data-ppcond="54">ifdef</span> <a class="macro" href="jemalloc_internal_defs.h.html#107" data-ref="_M/JEMALLOC_CC_SILENCE">JEMALLOC_CC_SILENCE</a></u></td></tr>
+<tr><th id="55">55</th><td><u>#	define <dfn class="macro" id="_M/JEMALLOC_CC_SILENCE_INIT" data-ref="_M/JEMALLOC_CC_SILENCE_INIT">JEMALLOC_CC_SILENCE_INIT</dfn>(v) = v</u></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="54">else</span></u></td></tr>
+<tr><th id="57">57</th><td><u>#	define JEMALLOC_CC_SILENCE_INIT(v)</u></td></tr>
+<tr><th id="58">58</th><td><u>#<span data-ppcond="54">endif</span></u></td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><u>#define	<dfn class="macro" id="_M/JEMALLOC_GNUC_PREREQ" data-ref="_M/JEMALLOC_GNUC_PREREQ">JEMALLOC_GNUC_PREREQ</dfn>(major, minor)				\</u></td></tr>
+<tr><th id="61">61</th><td><u>    (!defined(__clang__) &amp;&amp;						\</u></td></tr>
+<tr><th id="62">62</th><td><u>    (__GNUC__ &gt; (major) || (__GNUC__ == (major) &amp;&amp; __GNUC_MINOR__ &gt;= (minor))))</u></td></tr>
+<tr><th id="63">63</th><td><u>#<span data-ppcond="63">ifndef</span> <span class="macro" data-ref="_M/__has_builtin">__has_builtin</span></u></td></tr>
+<tr><th id="64">64</th><td><u>#  define __has_builtin(builtin) (0)</u></td></tr>
+<tr><th id="65">65</th><td><u>#<span data-ppcond="63">endif</span></u></td></tr>
+<tr><th id="66">66</th><td><u>#define	<dfn class="macro" id="_M/JEMALLOC_CLANG_HAS_BUILTIN" data-ref="_M/JEMALLOC_CLANG_HAS_BUILTIN">JEMALLOC_CLANG_HAS_BUILTIN</dfn>(builtin)				\</u></td></tr>
+<tr><th id="67">67</th><td><u>    (defined(__clang__) &amp;&amp; __has_builtin(builtin))</u></td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><u>#<span data-ppcond="69">ifdef</span> <span class="macro" data-ref="_M/__GNUC__">__GNUC__</span></u></td></tr>
+<tr><th id="70">70</th><td><u>#	define <dfn class="macro" id="_M/likely" data-ref="_M/likely">likely</dfn>(x)   __builtin_expect(!!(x), 1)</u></td></tr>
+<tr><th id="71">71</th><td><u>#	define <dfn class="macro" id="_M/unlikely" data-ref="_M/unlikely">unlikely</dfn>(x) __builtin_expect(!!(x), 0)</u></td></tr>
+<tr><th id="72">72</th><td><u>#  <span data-ppcond="72">if</span> <a class="macro" href="#60" title="(!defined(1) &amp;&amp; (4 &gt; (4) || (4 == (4) &amp;&amp; 2 &gt;= (6))))" data-ref="_M/JEMALLOC_GNUC_PREREQ">JEMALLOC_GNUC_PREREQ</a>(4, 6) ||					\</u></td></tr>
+<tr><th id="73">73</th><td><u>      <a class="macro" href="#66" title="(defined(1) &amp;&amp;1)" data-ref="_M/JEMALLOC_CLANG_HAS_BUILTIN">JEMALLOC_CLANG_HAS_BUILTIN</a>(__builtin_unreachable)</u></td></tr>
+<tr><th id="74">74</th><td><u>#	define <dfn class="macro" id="_M/unreachable" data-ref="_M/unreachable">unreachable</dfn>() __builtin_unreachable()</u></td></tr>
+<tr><th id="75">75</th><td><u>#  <span data-ppcond="72">else</span></u></td></tr>
+<tr><th id="76">76</th><td><u>#	define unreachable()</u></td></tr>
+<tr><th id="77">77</th><td><u>#  <span data-ppcond="72">endif</span></u></td></tr>
+<tr><th id="78">78</th><td><u>#<span data-ppcond="69">else</span></u></td></tr>
+<tr><th id="79">79</th><td><u>#	define likely(x)   !!(x)</u></td></tr>
+<tr><th id="80">80</th><td><u>#	define unlikely(x) !!(x)</u></td></tr>
+<tr><th id="81">81</th><td><u>#	define unreachable()</u></td></tr>
+<tr><th id="82">82</th><td><u>#<span data-ppcond="69">endif</span></u></td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td><i>/*</i></td></tr>
+<tr><th id="85">85</th><td><i> * Define a custom assert() in order to reduce the chances of deadlock during</i></td></tr>
+<tr><th id="86">86</th><td><i> * assertion failure.</i></td></tr>
+<tr><th id="87">87</th><td><i> */</i></td></tr>
+<tr><th id="88">88</th><td><u>#<span data-ppcond="88">ifndef</span> <span class="macro" data-ref="_M/assert">assert</span></u></td></tr>
+<tr><th id="89">89</th><td><u>#define	<dfn class="macro" id="_M/assert" data-ref="_M/assert">assert</dfn>(e) do {							\</u></td></tr>
+<tr><th id="90">90</th><td><u>	if (unlikely(config_debug &amp;&amp; !(e))) {				\</u></td></tr>
+<tr><th id="91">91</th><td><u>		malloc_printf(						\</u></td></tr>
+<tr><th id="92">92</th><td><u>		    "&lt;jemalloc&gt;: %s:%d: Failed assertion: \"%s\"\n",	\</u></td></tr>
+<tr><th id="93">93</th><td><u>		    __FILE__, __LINE__, #e);				\</u></td></tr>
+<tr><th id="94">94</th><td><u>		abort();						\</u></td></tr>
+<tr><th id="95">95</th><td><u>	}								\</u></td></tr>
+<tr><th id="96">96</th><td><u>} while (0)</u></td></tr>
+<tr><th id="97">97</th><td><u>#<span data-ppcond="88">endif</span></u></td></tr>
+<tr><th id="98">98</th><td></td></tr>
+<tr><th id="99">99</th><td><u>#<span data-ppcond="99">ifndef</span> <span class="macro" data-ref="_M/not_reached">not_reached</span></u></td></tr>
+<tr><th id="100">100</th><td><u>#define	<dfn class="macro" id="_M/not_reached" data-ref="_M/not_reached">not_reached</dfn>() do {						\</u></td></tr>
+<tr><th id="101">101</th><td><u>	if (config_debug) {						\</u></td></tr>
+<tr><th id="102">102</th><td><u>		malloc_printf(						\</u></td></tr>
+<tr><th id="103">103</th><td><u>		    "&lt;jemalloc&gt;: %s:%d: Unreachable code reached\n",	\</u></td></tr>
+<tr><th id="104">104</th><td><u>		    __FILE__, __LINE__);				\</u></td></tr>
+<tr><th id="105">105</th><td><u>		abort();						\</u></td></tr>
+<tr><th id="106">106</th><td><u>	}								\</u></td></tr>
+<tr><th id="107">107</th><td><u>	unreachable();							\</u></td></tr>
+<tr><th id="108">108</th><td><u>} while (0)</u></td></tr>
+<tr><th id="109">109</th><td><u>#<span data-ppcond="99">endif</span></u></td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><u>#<span data-ppcond="111">ifndef</span> <span class="macro" data-ref="_M/not_implemented">not_implemented</span></u></td></tr>
+<tr><th id="112">112</th><td><u>#define	<dfn class="macro" id="_M/not_implemented" data-ref="_M/not_implemented">not_implemented</dfn>() do {						\</u></td></tr>
+<tr><th id="113">113</th><td><u>	if (config_debug) {						\</u></td></tr>
+<tr><th id="114">114</th><td><u>		malloc_printf("&lt;jemalloc&gt;: %s:%d: Not implemented\n",	\</u></td></tr>
+<tr><th id="115">115</th><td><u>		    __FILE__, __LINE__);				\</u></td></tr>
+<tr><th id="116">116</th><td><u>		abort();						\</u></td></tr>
+<tr><th id="117">117</th><td><u>	}								\</u></td></tr>
+<tr><th id="118">118</th><td><u>} while (0)</u></td></tr>
+<tr><th id="119">119</th><td><u>#<span data-ppcond="111">endif</span></u></td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td><u>#<span data-ppcond="121">ifndef</span> <span class="macro" data-ref="_M/assert_not_implemented">assert_not_implemented</span></u></td></tr>
+<tr><th id="122">122</th><td><u>#define	<dfn class="macro" id="_M/assert_not_implemented" data-ref="_M/assert_not_implemented">assert_not_implemented</dfn>(e) do {					\</u></td></tr>
+<tr><th id="123">123</th><td><u>	if (unlikely(config_debug &amp;&amp; !(e)))				\</u></td></tr>
+<tr><th id="124">124</th><td><u>		not_implemented();					\</u></td></tr>
+<tr><th id="125">125</th><td><u>} while (0)</u></td></tr>
+<tr><th id="126">126</th><td><u>#<span data-ppcond="121">endif</span></u></td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td><i>/* Use to assert a particular configuration, e.g., cassert(config_debug). */</i></td></tr>
+<tr><th id="129">129</th><td><u>#define	<dfn class="macro" id="_M/cassert" data-ref="_M/cassert">cassert</dfn>(c) do {							\</u></td></tr>
+<tr><th id="130">130</th><td><u>	if (unlikely(!(c)))						\</u></td></tr>
+<tr><th id="131">131</th><td><u>		not_reached();						\</u></td></tr>
+<tr><th id="132">132</th><td><u>} while (0)</u></td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td><u>#<span data-ppcond="2">endif</span> /* JEMALLOC_H_TYPES */</u></td></tr>
+<tr><th id="135">135</th><td><i>/******************************************************************************/</i></td></tr>
+<tr><th id="136">136</th><td><u>#<span data-ppcond="136">ifdef</span> <span class="macro" data-ref="_M/JEMALLOC_H_STRUCTS">JEMALLOC_H_STRUCTS</span></u></td></tr>
+<tr><th id="137">137</th><td></td></tr>
+<tr><th id="138">138</th><td><u>#<span data-ppcond="136">endif</span> /* JEMALLOC_H_STRUCTS */</u></td></tr>
+<tr><th id="139">139</th><td><i>/******************************************************************************/</i></td></tr>
+<tr><th id="140">140</th><td><u>#<span data-ppcond="140">ifdef</span> <span class="macro" data-ref="_M/JEMALLOC_H_EXTERNS">JEMALLOC_H_EXTERNS</span></u></td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><em>int</em>	buferror(<em>int</em> err, <em>char</em> *buf, size_t buflen);</td></tr>
+<tr><th id="143">143</th><td>uintmax_t	malloc_strtoumax(<em>const</em> <em>char</em> *<b>restrict</b> nptr,</td></tr>
+<tr><th id="144">144</th><td>    <em>char</em> **<b>restrict</b> endptr, <em>int</em> base);</td></tr>
+<tr><th id="145">145</th><td><em>void</em>	malloc_write(<em>const</em> <em>char</em> *s);</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td><i>/*</i></td></tr>
+<tr><th id="148">148</th><td><i> * malloc_vsnprintf() supports a subset of snprintf(3) that avoids floating</i></td></tr>
+<tr><th id="149">149</th><td><i> * point math.</i></td></tr>
+<tr><th id="150">150</th><td><i> */</i></td></tr>
+<tr><th id="151">151</th><td><em>int</em>	malloc_vsnprintf(<em>char</em> *str, size_t size, <em>const</em> <em>char</em> *format,</td></tr>
+<tr><th id="152">152</th><td>    va_list ap);</td></tr>
+<tr><th id="153">153</th><td><em>int</em>	malloc_snprintf(<em>char</em> *str, size_t size, <em>const</em> <em>char</em> *format, ...)</td></tr>
+<tr><th id="154">154</th><td>    JEMALLOC_FORMAT_PRINTF(<var>3</var>, <var>4</var>);</td></tr>
+<tr><th id="155">155</th><td><em>void</em>	malloc_vcprintf(<em>void</em> (*write_cb)(<em>void</em> *, <em>const</em> <em>char</em> *), <em>void</em> *cbopaque,</td></tr>
+<tr><th id="156">156</th><td>    <em>const</em> <em>char</em> *format, va_list ap);</td></tr>
+<tr><th id="157">157</th><td><em>void</em> malloc_cprintf(<em>void</em> (*write)(<em>void</em> *, <em>const</em> <em>char</em> *), <em>void</em> *cbopaque,</td></tr>
+<tr><th id="158">158</th><td>    <em>const</em> <em>char</em> *format, ...) JEMALLOC_FORMAT_PRINTF(<var>3</var>, <var>4</var>);</td></tr>
+<tr><th id="159">159</th><td><em>void</em>	malloc_printf(<em>const</em> <em>char</em> *format, ...) JEMALLOC_FORMAT_PRINTF(<var>1</var>, <var>2</var>);</td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td><u>#<span data-ppcond="140">endif</span> /* JEMALLOC_H_EXTERNS */</u></td></tr>
+<tr><th id="162">162</th><td><i>/******************************************************************************/</i></td></tr>
+<tr><th id="163">163</th><td><u>#<span data-ppcond="163">ifdef</span> <span class="macro" data-ref="_M/JEMALLOC_H_INLINES">JEMALLOC_H_INLINES</span></u></td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td><u>#ifndef JEMALLOC_ENABLE_INLINE</u></td></tr>
+<tr><th id="166">166</th><td><em>int</em>	jemalloc_ffsl(<em>long</em> bitmap);</td></tr>
+<tr><th id="167">167</th><td><em>int</em>	jemalloc_ffs(<em>int</em> bitmap);</td></tr>
+<tr><th id="168">168</th><td>size_t	pow2_ceil(size_t x);</td></tr>
+<tr><th id="169">169</th><td>size_t	lg_floor(size_t x);</td></tr>
+<tr><th id="170">170</th><td><em>void</em>	set_errno(<em>int</em> errnum);</td></tr>
+<tr><th id="171">171</th><td><em>int</em>	get_errno(<em>void</em>);</td></tr>
+<tr><th id="172">172</th><td><u>#endif</u></td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><u>#if (defined(JEMALLOC_ENABLE_INLINE) || defined(JEMALLOC_UTIL_C_))</u></td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td><i>/* Sanity check. */</i></td></tr>
+<tr><th id="177">177</th><td><u>#if !defined(JEMALLOC_INTERNAL_FFSL) || !defined(JEMALLOC_INTERNAL_FFS)</u></td></tr>
+<tr><th id="178">178</th><td><u>#  error Both JEMALLOC_INTERNAL_FFSL &amp;&amp; JEMALLOC_INTERNAL_FFS should have been defined by configure</u></td></tr>
+<tr><th id="179">179</th><td><u>#endif</u></td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td>JEMALLOC_ALWAYS_INLINE <em>int</em></td></tr>
+<tr><th id="182">182</th><td>jemalloc_ffsl(<em>long</em> bitmap)</td></tr>
+<tr><th id="183">183</th><td>{</td></tr>
+<tr><th id="184">184</th><td></td></tr>
+<tr><th id="185">185</th><td>	<b>return</b> (JEMALLOC_INTERNAL_FFSL(bitmap));</td></tr>
+<tr><th id="186">186</th><td>}</td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td>JEMALLOC_ALWAYS_INLINE <em>int</em></td></tr>
+<tr><th id="189">189</th><td>jemalloc_ffs(<em>int</em> bitmap)</td></tr>
+<tr><th id="190">190</th><td>{</td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td>	<b>return</b> (JEMALLOC_INTERNAL_FFS(bitmap));</td></tr>
+<tr><th id="193">193</th><td>}</td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td><i>/* Compute the smallest power of 2 that is &gt;= x. */</i></td></tr>
+<tr><th id="196">196</th><td>JEMALLOC_INLINE size_t</td></tr>
+<tr><th id="197">197</th><td>pow2_ceil(size_t x)</td></tr>
+<tr><th id="198">198</th><td>{</td></tr>
+<tr><th id="199">199</th><td></td></tr>
+<tr><th id="200">200</th><td>	x--;</td></tr>
+<tr><th id="201">201</th><td>	x |= x &gt;&gt; <var>1</var>;</td></tr>
+<tr><th id="202">202</th><td>	x |= x &gt;&gt; <var>2</var>;</td></tr>
+<tr><th id="203">203</th><td>	x |= x &gt;&gt; <var>4</var>;</td></tr>
+<tr><th id="204">204</th><td>	x |= x &gt;&gt; <var>8</var>;</td></tr>
+<tr><th id="205">205</th><td>	x |= x &gt;&gt; <var>16</var>;</td></tr>
+<tr><th id="206">206</th><td><u>#if (LG_SIZEOF_PTR == 3)</u></td></tr>
+<tr><th id="207">207</th><td>	x |= x &gt;&gt; <var>32</var>;</td></tr>
+<tr><th id="208">208</th><td><u>#endif</u></td></tr>
+<tr><th id="209">209</th><td>	x++;</td></tr>
+<tr><th id="210">210</th><td>	<b>return</b> (x);</td></tr>
+<tr><th id="211">211</th><td>}</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><u>#if (defined(__i386__) || defined(__amd64__) || defined(__x86_64__))</u></td></tr>
+<tr><th id="214">214</th><td>JEMALLOC_INLINE size_t</td></tr>
+<tr><th id="215">215</th><td>lg_floor(size_t x)</td></tr>
+<tr><th id="216">216</th><td>{</td></tr>
+<tr><th id="217">217</th><td>	size_t ret;</td></tr>
+<tr><th id="218">218</th><td></td></tr>
+<tr><th id="219">219</th><td>	assert(x != <var>0</var>);</td></tr>
+<tr><th id="220">220</th><td></td></tr>
+<tr><th id="221">221</th><td>	<b>asm</b> (<q>"bsr %1, %0"</q></td></tr>
+<tr><th id="222">222</th><td>	    : <q>"=r"</q>(ret) <i>// Outputs.</i></td></tr>
+<tr><th id="223">223</th><td>	    : <q>"r"</q>(x)    <i>// Inputs.</i></td></tr>
+<tr><th id="224">224</th><td>	    );</td></tr>
+<tr><th id="225">225</th><td>	<b>return</b> (ret);</td></tr>
+<tr><th id="226">226</th><td>}</td></tr>
+<tr><th id="227">227</th><td><u>#elif (defined(_MSC_VER))</u></td></tr>
+<tr><th id="228">228</th><td>JEMALLOC_INLINE size_t</td></tr>
+<tr><th id="229">229</th><td>lg_floor(size_t x)</td></tr>
+<tr><th id="230">230</th><td>{</td></tr>
+<tr><th id="231">231</th><td>	<em>unsigned</em> <em>long</em> ret;</td></tr>
+<tr><th id="232">232</th><td></td></tr>
+<tr><th id="233">233</th><td>	assert(x != <var>0</var>);</td></tr>
+<tr><th id="234">234</th><td></td></tr>
+<tr><th id="235">235</th><td><u>#if (LG_SIZEOF_PTR == 3)</u></td></tr>
+<tr><th id="236">236</th><td>	_BitScanReverse64(&amp;ret, x);</td></tr>
+<tr><th id="237">237</th><td><u>#elif (LG_SIZEOF_PTR == 2)</u></td></tr>
+<tr><th id="238">238</th><td>	_BitScanReverse(&amp;ret, x);</td></tr>
+<tr><th id="239">239</th><td><u>#else</u></td></tr>
+<tr><th id="240">240</th><td><u>#  error "Unsupported type sizes for lg_floor()"</u></td></tr>
+<tr><th id="241">241</th><td><u>#endif</u></td></tr>
+<tr><th id="242">242</th><td>	<b>return</b> (ret);</td></tr>
+<tr><th id="243">243</th><td>}</td></tr>
+<tr><th id="244">244</th><td><u>#elif (defined(JEMALLOC_HAVE_BUILTIN_CLZ))</u></td></tr>
+<tr><th id="245">245</th><td>JEMALLOC_INLINE size_t</td></tr>
+<tr><th id="246">246</th><td>lg_floor(size_t x)</td></tr>
+<tr><th id="247">247</th><td>{</td></tr>
+<tr><th id="248">248</th><td></td></tr>
+<tr><th id="249">249</th><td>	assert(x != <var>0</var>);</td></tr>
+<tr><th id="250">250</th><td></td></tr>
+<tr><th id="251">251</th><td><u>#if (LG_SIZEOF_PTR == LG_SIZEOF_INT)</u></td></tr>
+<tr><th id="252">252</th><td>	<b>return</b> (((<var>8</var> &lt;&lt; LG_SIZEOF_PTR) - <var>1</var>) - __builtin_clz(x));</td></tr>
+<tr><th id="253">253</th><td><u>#elif (LG_SIZEOF_PTR == LG_SIZEOF_LONG)</u></td></tr>
+<tr><th id="254">254</th><td>	<b>return</b> (((<var>8</var> &lt;&lt; LG_SIZEOF_PTR) - <var>1</var>) - __builtin_clzl(x));</td></tr>
+<tr><th id="255">255</th><td><u>#else</u></td></tr>
+<tr><th id="256">256</th><td><u>#  error "Unsupported type sizes for lg_floor()"</u></td></tr>
+<tr><th id="257">257</th><td><u>#endif</u></td></tr>
+<tr><th id="258">258</th><td>}</td></tr>
+<tr><th id="259">259</th><td><u>#else</u></td></tr>
+<tr><th id="260">260</th><td>JEMALLOC_INLINE size_t</td></tr>
+<tr><th id="261">261</th><td>lg_floor(size_t x)</td></tr>
+<tr><th id="262">262</th><td>{</td></tr>
+<tr><th id="263">263</th><td></td></tr>
+<tr><th id="264">264</th><td>	assert(x != <var>0</var>);</td></tr>
+<tr><th id="265">265</th><td></td></tr>
+<tr><th id="266">266</th><td>	x |= (x &gt;&gt; <var>1</var>);</td></tr>
+<tr><th id="267">267</th><td>	x |= (x &gt;&gt; <var>2</var>);</td></tr>
+<tr><th id="268">268</th><td>	x |= (x &gt;&gt; <var>4</var>);</td></tr>
+<tr><th id="269">269</th><td>	x |= (x &gt;&gt; <var>8</var>);</td></tr>
+<tr><th id="270">270</th><td>	x |= (x &gt;&gt; <var>16</var>);</td></tr>
+<tr><th id="271">271</th><td><u>#if (LG_SIZEOF_PTR == 3 &amp;&amp; LG_SIZEOF_PTR == LG_SIZEOF_LONG)</u></td></tr>
+<tr><th id="272">272</th><td>	x |= (x &gt;&gt; <var>32</var>);</td></tr>
+<tr><th id="273">273</th><td>	<b>if</b> (x == KZU(<var>0xffffffffffffffff</var>))</td></tr>
+<tr><th id="274">274</th><td>		<b>return</b> (<var>63</var>);</td></tr>
+<tr><th id="275">275</th><td>	x++;</td></tr>
+<tr><th id="276">276</th><td>	<b>return</b> (jemalloc_ffsl(x) - <var>2</var>);</td></tr>
+<tr><th id="277">277</th><td><u>#elif (LG_SIZEOF_PTR == 2)</u></td></tr>
+<tr><th id="278">278</th><td>	<b>if</b> (x == KZU(<var>0xffffffff</var>))</td></tr>
+<tr><th id="279">279</th><td>		<b>return</b> (<var>31</var>);</td></tr>
+<tr><th id="280">280</th><td>	x++;</td></tr>
+<tr><th id="281">281</th><td>	<b>return</b> (jemalloc_ffs(x) - <var>2</var>);</td></tr>
+<tr><th id="282">282</th><td><u>#else</u></td></tr>
+<tr><th id="283">283</th><td><u>#  error "Unsupported type sizes for lg_floor()"</u></td></tr>
+<tr><th id="284">284</th><td><u>#endif</u></td></tr>
+<tr><th id="285">285</th><td>}</td></tr>
+<tr><th id="286">286</th><td><u>#endif</u></td></tr>
+<tr><th id="287">287</th><td></td></tr>
+<tr><th id="288">288</th><td><i>/* Set error code. */</i></td></tr>
+<tr><th id="289">289</th><td>JEMALLOC_INLINE <em>void</em></td></tr>
+<tr><th id="290">290</th><td>set_errno(<em>int</em> errnum)</td></tr>
+<tr><th id="291">291</th><td>{</td></tr>
+<tr><th id="292">292</th><td></td></tr>
+<tr><th id="293">293</th><td><u>#ifdef _WIN32</u></td></tr>
+<tr><th id="294">294</th><td>	SetLastError(errnum);</td></tr>
+<tr><th id="295">295</th><td><u>#else</u></td></tr>
+<tr><th id="296">296</th><td>	errno = errnum;</td></tr>
+<tr><th id="297">297</th><td><u>#endif</u></td></tr>
+<tr><th id="298">298</th><td>}</td></tr>
+<tr><th id="299">299</th><td></td></tr>
+<tr><th id="300">300</th><td><i>/* Get last error code. */</i></td></tr>
+<tr><th id="301">301</th><td>JEMALLOC_INLINE <em>int</em></td></tr>
+<tr><th id="302">302</th><td>get_errno(<em>void</em>)</td></tr>
+<tr><th id="303">303</th><td>{</td></tr>
+<tr><th id="304">304</th><td></td></tr>
+<tr><th id="305">305</th><td><u>#ifdef _WIN32</u></td></tr>
+<tr><th id="306">306</th><td>	<b>return</b> (GetLastError());</td></tr>
+<tr><th id="307">307</th><td><u>#else</u></td></tr>
+<tr><th id="308">308</th><td>	<b>return</b> (errno);</td></tr>
+<tr><th id="309">309</th><td><u>#endif</u></td></tr>
+<tr><th id="310">310</th><td>}</td></tr>
+<tr><th id="311">311</th><td><u>#endif</u></td></tr>
+<tr><th id="312">312</th><td></td></tr>
+<tr><th id="313">313</th><td><u>#<span data-ppcond="163">endif</span> /* JEMALLOC_H_INLINES */</u></td></tr>
+<tr><th id="314">314</th><td><i>/******************************************************************************/</i></td></tr>
+<tr><th id="315">315</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../src/arena.c.html'>codebrowser/deps/jemalloc/src/arena.c</a><br/>Generated on <em>2017-Oct-16</em> from project codebrowser revision <em>with-deprecated-diskstore-4466-g2bf8c2c</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

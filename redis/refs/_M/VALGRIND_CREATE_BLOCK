@@ -1,0 +1,5 @@
+<dec f='include/valgrind/memcheck.h' l='143'/>
+<doc f='include/valgrind/memcheck.h' l='139'>/* Create a block-description handle.  The description is an ascii
+   string which is included in any messages pertaining to addresses
+   within the specified memory range.  Has no other effect on the
+   properties of the memory range. */</doc>

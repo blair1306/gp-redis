@@ -1,0 +1,17 @@
+<def f='codebrowser/src/bitops.c' l='506' ll='522' type='unsigned char * getObjectReadOnlyString(robj * o, long * len, char * llbuf)'/>
+<use f='codebrowser/src/bitops.c' l='778' u='c' c='bitcountCommand'/>
+<use f='codebrowser/src/bitops.c' l='842' u='c' c='bitposCommand'/>
+<use f='codebrowser/src/bitops.c' l='1091' u='c' c='bitfieldCommand'/>
+<doc f='codebrowser/src/bitops.c' l='493'>/* Return a pointer to the string object content, and stores its length
+ * in &apos;len&apos;. The user is required to pass (likely stack allocated) buffer
+ * &apos;llbuf&apos; of at least LONG_STR_SIZE bytes. Such a buffer is used in the case
+ * the object is integer encoded in order to provide the representation
+ * without usign heap allocation.
+ *
+ * The function returns the pointer to the object array of bytes representing
+ * the string it contains, that may be a pointer to &apos;llbuf&apos; or to the
+ * internal object representation. As a side effect &apos;len&apos; is filled with
+ * the length of such buffer.
+ *
+ * If the source object is NULL the function is guaranteed to return NULL
+ * and set &apos;len&apos; to 0. */</doc>

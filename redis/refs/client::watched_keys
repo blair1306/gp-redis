@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='721' type='list *'/>
+<use f='codebrowser/src/aof.c' l='603' u='w' c='createFakeClient'/>
+<use f='codebrowser/src/aof.c' l='622' u='r' c='freeFakeClient'/>
+<offset>3456</offset>
+<doc f='codebrowser/src/server.h' l='721'>/* Keys WATCHED for MULTI/EXEC CAS */</doc>
+<use f='codebrowser/src/multi.c' l='224' u='r' c='watchForKey'/>
+<use f='codebrowser/src/multi.c' l='243' u='r' c='watchForKey'/>
+<use f='codebrowser/src/multi.c' l='252' u='r' c='unwatchAllKeys'/>
+<use f='codebrowser/src/multi.c' l='253' u='r' c='unwatchAllKeys'/>
+<use f='codebrowser/src/multi.c' l='268' u='r' c='unwatchAllKeys'/>
+<use f='codebrowser/src/multi.c' l='307' u='r' c='touchWatchedKeysOnFlush'/>
+<use f='codebrowser/src/networking.c' l='132' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='812' u='r' c='freeClient'/>

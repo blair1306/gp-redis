@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1813' type='char * redisGitDirty()'/>
+<dec f='codebrowser/src/redis-cli.c' l='132' type='char * redisGitDirty()'/>
+<use f='codebrowser/src/redis-cli.c' l='228' u='c' c='cliVersion'/>
+<def f='codebrowser/src/release.c' l='44' ll='46' type='char * redisGitDirty()'/>
+<use f='codebrowser/src/server.c' l='2864' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3396' u='c' c='version'/>
+<use f='codebrowser/src/server.c' l='3446' u='c' c='redisAsciiArt'/>
+<use f='codebrowser/src/server.c' l='3815' u='c' c='main'/>

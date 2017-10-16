@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1387' type='int writeToClient(int fd, client * c, int handler_installed)'/>
+<def f='codebrowser/src/networking.c' l='892' ll='976' type='int writeToClient(int fd, client * c, int handler_installed)'/>
+<use f='codebrowser/src/networking.c' l='982' u='c' c='sendReplyToClient'/>
+<use f='codebrowser/src/networking.c' l='1001' u='c' c='handleClientsWithPendingWrites'/>
+<use f='codebrowser/src/networking.c' l='1943' u='c' c='flushSlavesOutputBuffers'/>
+<doc f='codebrowser/src/networking.c' l='890'>/* Write data in output buffers to client. Return C_OK if the client
+ * is still valid after the call, C_ERR if it was freed. */</doc>
+<use f='codebrowser/src/scripting.c' l='1654' u='c' c='ldbEndSession'/>

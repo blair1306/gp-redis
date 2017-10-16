@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/sentinel.c' l='384' type='void releaseSentinelRedisInstance(sentinelRedisInstance * ri)'/>
+<use f='codebrowser/src/sentinel.c' l='388' u='c' c='dictInstancesValDestructor'/>
+<def f='codebrowser/src/sentinel.c' l='1239' ll='1263' type='void releaseSentinelRedisInstance(sentinelRedisInstance * ri)'/>
+<doc f='codebrowser/src/sentinel.c' l='1235'>/* Release this instance and all its slaves, sentinels, hiredis connections.
+ * This function does not take care of unlinking the instance from the main
+ * masters table (if it is a master) or from its master sentinels/slaves table
+ * if it is a slave or sentinel. */</doc>

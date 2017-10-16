@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='436' macro='1' type='const size_t [239]'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='614' macro='1' u='r'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='432'>/*
+ * index2size_tab encodes the same information as could be computed (at
+ * unacceptable cost in some code paths) by index2size_compute().
+ */</doc>
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='74' macro='1' type='const size_t [239]'/>

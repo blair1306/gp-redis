@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/intset.h' l='42' type='intset * intsetAdd(intset * is, int64_t value, uint8_t * success)'/>
+<def f='codebrowser/src/intset.c' l='204' ll='231' type='intset * intsetAdd(intset * is, int64_t value, uint8_t * success)'/>
+<doc f='codebrowser/src/intset.c' l='203'>/* Insert an integer in the intset */</doc>
+<use f='codebrowser/src/rdb.c' l='1200' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_set.c' l='65' u='c' c='setTypeAdd'/>

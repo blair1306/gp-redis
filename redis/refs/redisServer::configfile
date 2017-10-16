@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/server.h' l='876' type='char *'/>
+<offset>64</offset>
+<doc f='codebrowser/src/server.h' l='876'>/* Absolute config file path, or NULL */</doc>
+<use f='codebrowser/src/config.c' l='2050' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2081' u='r' c='configCommand'/>
+<use f='codebrowser/src/config.c' l='2085' u='r' c='configCommand'/>
+<use f='codebrowser/src/sentinel.c' l='479' u='r' c='sentinelIsRunning'/>
+<use f='codebrowser/src/sentinel.c' l='483' u='r' c='sentinelIsRunning'/>
+<use f='codebrowser/src/sentinel.c' l='486' u='r' c='sentinelIsRunning'/>
+<use f='codebrowser/src/sentinel.c' l='1851' u='r' c='sentinelFlushConfig'/>
+<use f='codebrowser/src/sentinel.c' l='1855' u='r' c='sentinelFlushConfig'/>
+<use f='codebrowser/src/server.c' l='1349' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1553' u='r' c='restartServer'/>
+<use f='codebrowser/src/server.c' l='1554' u='r' c='restartServer'/>
+<use f='codebrowser/src/server.c' l='2884' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2884' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3767' u='w' c='main'/>
+<use f='codebrowser/src/server.c' l='3771' u='r' c='main'/>

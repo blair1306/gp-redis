@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='94' type='void *'/>
+<offset>4416</offset>
+<use f='codebrowser/deps/hiredis/read.c' l='353' u='r' c='processMultiBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='497' u='r' c='redisReaderGetReply'/>

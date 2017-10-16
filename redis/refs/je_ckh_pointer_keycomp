@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='81' macro='1' type='_Bool je_ckh_pointer_keycomp(const void * k1, const void * k2)'/>
+<def f='codebrowser/deps/jemalloc/src/ckh.c' l='564' macro='1' type='_Bool je_ckh_pointer_keycomp(const void * k1, const void * k2)'/>

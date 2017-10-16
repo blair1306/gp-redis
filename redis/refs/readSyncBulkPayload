@@ -1,0 +1,2 @@
+<def f='codebrowser/src/replication.c' l='1106' ll='1304' type='void readSyncBulkPayload(aeEventLoop * el, int fd, void * privdata, int mask)'/>
+<use f='codebrowser/src/replication.c' l='1822' u='r' c='syncWithMaster'/>

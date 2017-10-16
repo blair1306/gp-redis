@@ -1,0 +1,17 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='118' type='int dictReplace(dict * ht, void * key, void * val)'/>
+<def f='codebrowser/deps/hiredis/dict.c' l='160' ll='179' type='int dictReplace(dict * ht, void * key, void * val)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='615' u='c' c='__redisAsyncCommand'/>
+<use f='codebrowser/deps/hiredis/async.c' l='617' u='c' c='__redisAsyncCommand'/>
+<doc f='codebrowser/deps/hiredis/dict.c' l='156'>/* Add an element, discarding the old if the key already exists.
+ * Return 1 if the key was added from scratch, 0 if there was already an
+ * element with such key and dictReplace() just performed a value update
+ * operation. */</doc>
+<dec f='codebrowser/src/dict.h' l='156' type='int dictReplace(dict * d, void * key, void * val)'/>
+<use f='codebrowser/src/db.c' l='181' u='c' c='dbOverwrite'/>
+<use f='codebrowser/src/db.c' l='184' u='c' c='dbOverwrite'/>
+<def f='codebrowser/src/dict.c' l='325' ll='346' type='int dictReplace(dict * d, void * key, void * val)'/>
+<doc f='codebrowser/src/dict.c' l='320'>/* Add or Overwrite:
+ * Add an element, discarding the old value if the key already exists.
+ * Return 1 if the key was added from scratch, 0 if there was already an
+ * element with such key and dictReplace() just performed a value update
+ * operation. */</doc>

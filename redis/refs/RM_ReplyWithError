@@ -1,0 +1,16 @@
+<def f='codebrowser/src/module.c' l='1015' ll='1017' type='int RM_ReplyWithError(RedisModuleCtx * ctx, const char * err)'/>
+<use f='codebrowser/src/module.c' l='3905' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1001'>/* Reply with the error &apos;err&apos;.
+ *
+ * Note that &apos;err&apos; must contain all the error, including
+ * the initial error code. The function only provides the initial &quot;-&quot;, so
+ * the usage is, for example:
+ *
+ *     RedisModule_ReplyWithError(ctx,&quot;ERR Wrong Type&quot;);
+ *
+ * and not just:
+ *
+ *     RedisModule_ReplyWithError(ctx,&quot;Wrong Type&quot;);
+ *
+ * The function always returns REDISMODULE_OK.
+ */</doc>

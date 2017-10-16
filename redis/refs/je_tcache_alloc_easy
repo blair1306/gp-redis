@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='250' macro='1' type='void * je_tcache_alloc_easy(tcache_bin_t * tbin)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='278' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='324' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='83' macro='1' u='c'/>

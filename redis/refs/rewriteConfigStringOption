@@ -1,0 +1,14 @@
+<def f='codebrowser/src/config.c' l='1642' ll='1661' type='void rewriteConfigStringOption(struct rewriteConfigState * state, char * option, char * value, char * defvalue)'/>
+<use f='codebrowser/src/config.c' l='1728' u='c' c='rewriteConfigDirOption'/>
+<use f='codebrowser/src/config.c' l='1951' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1957' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1963' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1965' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1972' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1975' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1976' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1977' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='1990' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2001' u='c' c='rewriteConfig'/>
+<use f='codebrowser/src/config.c' l='2008' u='c' c='rewriteConfig'/>
+<doc f='codebrowser/src/config.c' l='1641'>/* Rewrite a string option. */</doc>

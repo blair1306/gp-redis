@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1361' type='size_t sdsZmallocSize(sds s)'/>
+<use f='codebrowser/src/debug.c' l='433' u='c' c='debugCommand'/>
+<def f='codebrowser/src/networking.c' l='41' ll='44' type='size_t sdsZmallocSize(sds s)'/>
+<use f='codebrowser/src/networking.c' l='51' u='c' c='getStringObjectSdsUsedMemory'/>
+<doc f='codebrowser/src/networking.c' l='38'>/* Return the size consumed from the allocator, for the specified SDS string,
+ * including internal fragmentation. This function is used in order to compute
+ * the client output buffer size. */</doc>

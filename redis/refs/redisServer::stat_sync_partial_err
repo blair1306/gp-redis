@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='953' type='long long'/>
+<offset>8640</offset>
+<doc f='codebrowser/src/server.h' l='953'>/* Number of unaccepted PSYNC requests. */</doc>
+<use f='codebrowser/src/replication.c' l='670' u='w' c='syncCommand'/>
+<use f='codebrowser/src/server.c' l='1776' u='w' c='resetServerStats'/>
+<use f='codebrowser/src/server.c' l='3109' u='r' c='genRedisInfoString'/>

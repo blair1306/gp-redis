@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='669' type='redisDb *'/>
+<offset>0</offset>
+<use f='codebrowser/src/t_list.c' l='708' u='w' c='signalListAsReady'/>
+<use f='codebrowser/src/t_list.c' l='815' u='r' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_list.c' l='819' u='r' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_list.c' l='825' u='r' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_list.c' l='847' u='r' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_list.c' l='864' u='r' c='handleClientsBlockedOnLists'/>

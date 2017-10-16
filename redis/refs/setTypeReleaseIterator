@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1650' type='void setTypeReleaseIterator(setTypeIterator * si)'/>
+<use f='codebrowser/src/debug.c' l='173' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/sort.c' l='390' u='c' c='sortCommand'/>
+<def f='codebrowser/src/t_set.c' l='135' ll='139' type='void setTypeReleaseIterator(setTypeIterator * si)'/>
+<use f='codebrowser/src/t_set.c' l='254' u='c' c='setTypeConvert'/>
+<use f='codebrowser/src/t_set.c' l='541' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='699' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='889' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1000' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1025' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1046' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1062' u='c' c='sunionDiffGenericCommand'/>

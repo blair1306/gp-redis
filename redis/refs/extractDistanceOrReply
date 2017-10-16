@@ -1,0 +1,9 @@
+<def f='codebrowser/src/geo.c' l='152' ll='172' type='double extractDistanceOrReply(client * c, robj ** argv, double * conversion)'/>
+<use f='codebrowser/src/geo.c' l='495' u='c' c='georadiusGeneric'/>
+<doc f='codebrowser/src/geo.c' l='145'>/* Input Argument Helper.
+ * Extract the dinstance from the specified two arguments starting at &apos;argv&apos;
+ * that shouldbe in the form: &lt;number&gt; &lt;unit&gt; and return the dinstance in the
+ * specified unit on success. *conversino is populated with the coefficient
+ * to use in order to convert meters to the unit.
+ *
+ * On error a value less than zero is returned. */</doc>

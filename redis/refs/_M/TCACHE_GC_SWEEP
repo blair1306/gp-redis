@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='44'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='39'>/*
+ * TCACHE_GC_SWEEP is the approximate number of allocation events between
+ * full GC sweeps.  Integer rounding may cause the actual number to be
+ * slightly higher, since GC is performed incrementally.
+ */</doc>

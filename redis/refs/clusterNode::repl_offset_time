@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/cluster.h' l='122' type='mstime_t'/>
+<use f='codebrowser/src/cluster.c' l='696' u='w' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='1682' u='w' c='clusterProcessPacket'/>
+<offset>17344</offset>
+<doc f='codebrowser/src/cluster.h' l='122'>/* Unix time we received offset for this node */</doc>

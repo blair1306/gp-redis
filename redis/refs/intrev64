@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/endianconv.h' l='44' type='uint64_t intrev64(uint64_t v)'/>
+<use f='codebrowser/src/cluster.c' l='1670' macro='1' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1671' macro='1' u='c'/>
+<use f='codebrowser/src/cluster.c' l='1681' macro='1' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2027' macro='1' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2239' macro='1' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2240' macro='1' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2247' macro='1' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2528' macro='1' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2598' macro='1' u='c'/>
+<use f='codebrowser/src/cluster.c' l='2599' macro='1' u='c'/>
+<def f='codebrowser/src/endianconv.c' l='99' ll='102' type='uint64_t intrev64(uint64_t v)'/>
+<use f='codebrowser/src/rdb.c' l='136' macro='1' u='c'/>
+<use f='codebrowser/src/rdb.c' l='180' macro='1' u='c'/>

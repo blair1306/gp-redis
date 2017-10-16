@@ -1,0 +1,11 @@
+<def f='codebrowser/src/rax.c' l='216' ll='290' type='raxNode * raxAddChild(raxNode * n, unsigned char c, raxNode ** childptr, raxNode *** parentlink)'/>
+<use f='codebrowser/src/rax.c' l='762' u='c' c='raxInsert'/>
+<doc f='codebrowser/src/rax.c' l='207'>/* Add a new child to the node &apos;n&apos; representing the character &apos;c&apos; and return
+ * its new pointer, as well as the child pointer by reference. Additionally
+ * &apos;***parentlink&apos; is populated with the raxNode pointer-to-pointer of where
+ * the new child was stored, which is useful for the caller to replace the
+ * child pointer if it gets reallocated.
+ *
+ * On success the new parent node pointer is returned (it may change because
+ * of the realloc, so the caller should discard &apos;n&apos; and use the new value).
+ * On out of memory NULL is returned, and the old node is still valid. */</doc>

@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/bits/fcntl-linux.h' l='43'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1372' u='c'/>
+<use f='codebrowser/src/aof.c' l='1505' u='c'/>
+<use f='codebrowser/src/replication.c' l='980' u='c'/>
+<use f='codebrowser/src/sentinel.c' l='1855' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='247' u='c'/>

@@ -1,0 +1,34 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='168' type='void lua_pushcclosure(lua_State * L, lua_CFunction fn, int n)'/>
+<def f='codebrowser/deps/lua/src/lapi.c' l='486' ll='500' macro='1' type='void lua_pushcclosure(lua_State * L, lua_CFunction fn, int n)'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='264' u='c' c='luaL_openlib'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='588' u='c' c='luaB_cowrap'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='620' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='621' u='c' c='auxopen'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='643' u='c' c='base_open'/>
+<use f='codebrowser/deps/lua/src/linit.c' l='33' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='237' u='c' c='aux_lines'/>
+<use f='codebrowser/deps/lua/src/liolib.c' l='532' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='303' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='631' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='645' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='579' u='c' c='gmatch'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='99' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='382' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='1308' u='c' c='luaL_setfuncs'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='1392' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cjson.c' l='1397' u='c' c='lua_cjson_safe_new'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='897' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='933' u='c' c='luaopen_cmsgpack_safe'/>
+<use f='codebrowser/src/scripting.c' l='811' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='920' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='925' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='930' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='951' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='956' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='959' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='964' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='969' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='990' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='995' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='1005' macro='1' u='c'/>
+<use f='codebrowser/src/scripting.c' l='1009' macro='1' u='c'/>

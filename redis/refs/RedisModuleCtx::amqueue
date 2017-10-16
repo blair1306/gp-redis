@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/module.c' l='107' type='struct AutoMemEntry *'/>
+<use f='codebrowser/src/module.c' l='688' u='w' c='autoMemoryAdd'/>
+<use f='codebrowser/src/module.c' l='688' u='r' c='autoMemoryAdd'/>
+<use f='codebrowser/src/module.c' l='690' u='r' c='autoMemoryAdd'/>
+<use f='codebrowser/src/module.c' l='691' u='r' c='autoMemoryAdd'/>
+<use f='codebrowser/src/module.c' l='709' u='r' c='autoMemoryFreed'/>
+<use f='codebrowser/src/module.c' l='710' u='r' c='autoMemoryFreed'/>
+<use f='codebrowser/src/module.c' l='712' u='r' c='autoMemoryFreed'/>
+<use f='codebrowser/src/module.c' l='717' u='r' c='autoMemoryFreed'/>
+<use f='codebrowser/src/module.c' l='717' u='r' c='autoMemoryFreed'/>
+<use f='codebrowser/src/module.c' l='739' u='r' c='autoMemoryCollect'/>
+<use f='codebrowser/src/module.c' l='740' u='r' c='autoMemoryCollect'/>
+<use f='codebrowser/src/module.c' l='747' u='r' c='autoMemoryCollect'/>
+<use f='codebrowser/src/module.c' l='748' u='w' c='autoMemoryCollect'/>
+<offset>256</offset>
+<doc f='codebrowser/src/module.c' l='107'>/* Auto memory queue of objects to free. */</doc>

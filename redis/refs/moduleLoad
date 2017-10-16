@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1309' type='int moduleLoad(const char * path, void ** argv, int argc)'/>
+<use f='codebrowser/src/module.c' l='3719' u='c' c='moduleLoadFromQueue'/>
+<def f='codebrowser/src/module.c' l='3738' ll='3769' type='int moduleLoad(const char * path, void ** module_argv, int module_argc)'/>
+<use f='codebrowser/src/module.c' l='3844' u='c' c='moduleCommand'/>
+<doc f='codebrowser/src/module.c' l='3736'>/* Load a module and initialize it. On success C_OK is returned, otherwise
+ * C_ERR is returned. */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1430' type='void decrRefCountVoid(void * o)'/>
+<use f='codebrowser/src/aof.c' l='605' u='r' c='createFakeClient'/>
+<use f='codebrowser/src/db.c' l='758' u='r' c='scanGenericCommand'/>
+<use f='codebrowser/src/networking.c' l='136' u='r' c='createClient'/>
+<def f='codebrowser/src/object.c' l='331' ll='333' type='void decrRefCountVoid(void * o)'/>
+<doc f='codebrowser/src/object.c' l='328'>/* This variant of decrRefCount() gets its argument as void, and is useful
+ * as free method in data structures that expect a &apos;void free_object(void*)&apos;
+ * prototype for the free method. */</doc>

@@ -1,0 +1,4 @@
+<def f='codebrowser/src/db.c' l='526' ll='553' type='void scanCallback(void * privdata, const dictEntry * de)'/>
+<use f='codebrowser/src/db.c' l='670' u='r' c='scanGenericCommand'/>
+<doc f='codebrowser/src/db.c' l='524'>/* This callback is used by scanGenericCommand in order to collect elements
+ * returned by the dictionary iterator into a list. */</doc>

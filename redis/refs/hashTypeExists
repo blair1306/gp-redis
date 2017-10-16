@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1666' type='int hashTypeExists(robj * o, sds key)'/>
+<use f='codebrowser/src/module.c' l='2145' u='c' c='RM_HashSet'/>
+<use f='codebrowser/src/module.c' l='2244' u='c' c='RM_HashGet'/>
+<def f='codebrowser/src/t_hash.c' l='166' ll='179' type='int hashTypeExists(robj * o, sds field)'/>
+<use f='codebrowser/src/t_hash.c' l='519' u='c' c='hsetnxCommand'/>
+<use f='codebrowser/src/t_hash.c' l='814' u='c' c='hexistsCommand'/>
+<doc f='codebrowser/src/t_hash.c' l='164'>/* Test if the specified field exists in the given hash. Returns 1 if the field
+ * exists, and 0 when it doesn&apos;t. */</doc>

@@ -1,0 +1,29 @@
+<dec f='codebrowser/src/server.h' l='1719' type='void dbAdd(redisDb * db, robj * key, robj * val)'/>
+<use f='codebrowser/src/bitops.c' l='484' u='c' c='lookupStringForBitCommand'/>
+<use f='codebrowser/src/cluster.c' l='4743' u='c' c='restoreCommand'/>
+<def f='codebrowser/src/db.c' l='160' ll='167' type='void dbAdd(redisDb * db, robj * key, robj * val)'/>
+<use f='codebrowser/src/db.c' l='198' u='c' c='setKey'/>
+<use f='codebrowser/src/db.c' l='858' u='c' c='renameGenericCommand'/>
+<use f='codebrowser/src/db.c' l='924' u='c' c='moveCommand'/>
+<doc f='codebrowser/src/db.c' l='156'>/* Add the key to the DB. It&apos;s up to the caller to increment the reference
+ * counter of the value if needed.
+ *
+ * The program is aborted if the key already exists. */</doc>
+<use f='codebrowser/src/debug.c' l='479' u='c' c='debugCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1159' u='c' c='pfaddCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1309' u='c' c='pfmergeCommand'/>
+<use f='codebrowser/src/module.c' l='363' u='c' c='moduleCreateEmptyKey'/>
+<use f='codebrowser/src/rdb.c' l='1618' u='c' c='rdbLoadRio'/>
+<use f='codebrowser/src/t_hash.c' l='455' u='c' c='hashTypeLookupWriteOrCreate'/>
+<use f='codebrowser/src/t_list.c' l='211' u='c' c='pushGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='556' u='c' c='rpoplpushHandlePush'/>
+<use f='codebrowser/src/t_set.c' l='271' u='c' c='saddCommand'/>
+<use f='codebrowser/src/t_set.c' l='358' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='896' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1069' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='210' u='c' c='setrangeCommand'/>
+<use f='codebrowser/src/t_string.c' l='368' u='c' c='incrDecrCommand'/>
+<use f='codebrowser/src/t_string.c' l='420' u='c' c='incrbyfloatCommand'/>
+<use f='codebrowser/src/t_string.c' l='443' u='c' c='appendCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1563' u='c' c='zaddGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2333' u='c' c='zunionInterGenericCommand'/>

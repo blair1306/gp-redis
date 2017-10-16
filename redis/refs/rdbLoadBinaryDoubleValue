@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/rdb.h' l='146' type='int rdbLoadBinaryDoubleValue(rio * rdb, double * val)'/>
+<use f='codebrowser/src/module.c' l='3113' u='c' c='RM_LoadDouble'/>
+<def f='codebrowser/src/rdb.c' l='575' ll='579' type='int rdbLoadBinaryDoubleValue(rio * rdb, double * val)'/>
+<use f='codebrowser/src/rdb.c' l='1137' u='c' c='rdbLoadCheckModuleValue'/>
+<use f='codebrowser/src/rdb.c' l='1235' u='c' c='rdbLoadObject'/>
+<doc f='codebrowser/src/rdb.c' l='573'>/* Loads a double from RDB 8 or greater. See rdbSaveBinaryDoubleValue() for
+ * more info. On error -1 is returned, otherwise 0. */</doc>

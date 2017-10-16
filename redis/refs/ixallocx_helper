@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2227' ll='2238' macro='1' type='size_t ixallocx_helper(void * ptr, size_t old_usize, size_t size, size_t extra, size_t alignment, _Bool zero)'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2248' u='c' c='ixallocx_prof_sample'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2277' u='c' c='ixallocx_prof'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2325' u='c' c='je_xallocx'/>

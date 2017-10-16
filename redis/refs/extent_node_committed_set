@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='174' ll='179' macro='1' type='void extent_node_committed_set(extent_node_t * node, _Bool committed)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='204' u='c' c='je_extent_node_init'/>

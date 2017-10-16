@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/sentinel.c' l='422' type='void sentinelPublishCommand(client * c)'/>
+<use f='codebrowser/src/sentinel.c' l='432'/>
+<use f='codebrowser/src/sentinel.c' l='432'/>
+<use f='codebrowser/src/sentinel.c' l='432'/>
+<use f='codebrowser/src/sentinel.c' l='432'/>
+<def f='codebrowser/src/sentinel.c' l='3387' ll='3394' type='void sentinelPublishCommand(client * c)'/>
+<doc f='codebrowser/src/sentinel.c' l='3381'>/* Our fake PUBLISH command: it is actually useful only to receive hello messages
+ * from the other sentinel instances, and publishing to a channel other than
+ * SENTINEL_HELLO_CHANNEL is forbidden.
+ *
+ * Because we have a Sentinel PUBLISH, the code to send hello messages is the same
+ * for all the three kind of instances: masters, slaves, sentinels. */</doc>

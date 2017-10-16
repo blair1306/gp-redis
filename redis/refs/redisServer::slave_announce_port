@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1101' type='int'/>
+<offset>19520</offset>
+<doc f='codebrowser/src/server.h' l='1101'>/* Give the master this listening port. */</doc>
+<use f='codebrowser/src/config.c' l='683' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='684' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='685' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1096' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1269' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1961' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/replication.c' l='1667' u='r' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1668' u='r' c='syncWithMaster'/>
+<use f='codebrowser/src/server.c' l='1474' u='w' c='initServerConfig'/>

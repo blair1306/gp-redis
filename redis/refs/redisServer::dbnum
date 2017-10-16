@@ -1,0 +1,37 @@
+<dec f='codebrowser/src/server.h' l='983' type='int'/>
+<use f='codebrowser/src/aof.c' l='1072' u='r' c='rewriteAppendOnlyFileRio'/>
+<offset>13376</offset>
+<doc f='codebrowser/src/server.h' l='983'>/* Total number of configured DBs */</doc>
+<use f='codebrowser/src/cluster.c' l='3761' u='r' c='verifyClusterConfigWithData'/>
+<use f='codebrowser/src/config.c' l='305' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='306' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1261' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1968' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/db.c' l='313' u='r' c='emptyDb'/>
+<use f='codebrowser/src/db.c' l='318' u='r' c='emptyDb'/>
+<use f='codebrowser/src/db.c' l='340' u='r' c='selectDb'/>
+<use f='codebrowser/src/db.c' l='959' u='r' c='dbSwapDatabases'/>
+<use f='codebrowser/src/db.c' l='960' u='r' c='dbSwapDatabases'/>
+<use f='codebrowser/src/debug.c' l='125' u='r' c='computeDatasetDigest'/>
+<use f='codebrowser/src/debug.c' l='538' u='r' c='debugCommand'/>
+<use f='codebrowser/src/defrag.c' l='532' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/evict.c' l='430' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='479' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='480' u='r' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/expire.c' l='129' u='r' c='activeExpireCycle'/>
+<use f='codebrowser/src/expire.c' l='130' u='r' c='activeExpireCycle'/>
+<use f='codebrowser/src/expire.c' l='145' u='r' c='activeExpireCycle'/>
+<use f='codebrowser/src/expire.c' l='278' u='r' c='expireSlaveKeys'/>
+<use f='codebrowser/src/object.c' l='872' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/rdb.c' l='895' u='r' c='rdbSaveRio'/>
+<use f='codebrowser/src/rdb.c' l='1545' u='r' c='rdbLoadRio'/>
+<use f='codebrowser/src/rdb.c' l='1549' u='r' c='rdbLoadRio'/>
+<use f='codebrowser/src/server.c' l='900' u='r' c='databasesCron'/>
+<use f='codebrowser/src/server.c' l='900' u='r' c='databasesCron'/>
+<use f='codebrowser/src/server.c' l='904' u='r' c='databasesCron'/>
+<use f='codebrowser/src/server.c' l='911' u='r' c='databasesCron'/>
+<use f='codebrowser/src/server.c' l='1004' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1361' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1825' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1851' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='3301' u='r' c='genRedisInfoString'/>

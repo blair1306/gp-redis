@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='299' macro='1' type='void je_prof_idump()'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1998' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2178' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2250' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='303' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='1588' macro='1' type='void je_prof_idump()'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='111' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='229' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='380' macro='1' u='c'/>

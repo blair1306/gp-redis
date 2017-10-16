@@ -1,0 +1,18 @@
+<def f='codebrowser/src/siphash.c' l='50' ll='56' type='int siptlw(int c)'/>
+<use f='codebrowser/src/siphash.c' l='88' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='89' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='90' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='91' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='92' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='93' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='94' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='95' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='205' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='206' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='207' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='208' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='209' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='210' u='c' c='siphash_nocase'/>
+<use f='codebrowser/src/siphash.c' l='211' u='c' c='siphash_nocase'/>
+<doc f='codebrowser/src/siphash.c' l='48'>/* Fast tolower() alike function that does not care about locale
+ * but just returns a-z insetad of A-Z. */</doc>

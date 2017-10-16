@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='910' type='int'/>
+<offset>3360</offset>
+<doc f='codebrowser/src/server.h' l='910'>/* Used slots in ipfd[] */</doc>
+<use f='codebrowser/src/server.c' l='1358' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1829' u='a' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1845' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1903' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2501' u='r' c='closeListeningSockets'/>
+<use f='codebrowser/src/server.c' l='3850' u='r' c='main'/>

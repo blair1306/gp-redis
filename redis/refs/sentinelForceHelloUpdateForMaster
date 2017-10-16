@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/sentinel.c' l='376' type='int sentinelForceHelloUpdateForMaster(sentinelRedisInstance * master)'/>
+<use f='codebrowser/src/sentinel.c' l='2169' u='c' c='sentinelRefreshInstanceInfo'/>
+<def f='codebrowser/src/sentinel.c' l='2528' ll='2535' type='int sentinelForceHelloUpdateForMaster(sentinelRedisInstance * master)'/>
+<doc f='codebrowser/src/sentinel.c' l='2520'>/* This function forces the delivery of an &quot;Hello&quot; message (see
+ * sentinelSendHello() top comment for further information) to all the Redis
+ * and Sentinel instances related to the specified &apos;master&apos;.
+ *
+ * It is technically not needed since we send an update to every instance
+ * with a period of SENTINEL_PUBLISH_PERIOD milliseconds, however when a
+ * Sentinel upgrades a configuration it is a good idea to deliever an update
+ * to the other Sentinels ASAP. */</doc>

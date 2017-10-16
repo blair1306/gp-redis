@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk_dss.h' l='26' macro='1' type='void * je_chunk_alloc_dss(arena_t * arena, void * new_addr, size_t size, size_t alignment, _Bool * zero, _Bool * commit)'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='350' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='362' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='69' macro='1' type='void * je_chunk_alloc_dss(arena_t * arena, void * new_addr, size_t size, size_t alignment, _Bool * zero, _Bool * commit)'/>

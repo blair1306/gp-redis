@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/rax.h' l='158' type='void raxShow(rax * rax)'/>
+<def f='codebrowser/src/rax.c' l='1712' ll='1715' type='void raxShow(rax * rax)'/>
+<doc f='codebrowser/src/rax.c' l='1711'>/* Show a tree, as outlined in the comment above. */</doc>

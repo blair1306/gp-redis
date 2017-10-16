@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='416' macro='1' type='tcache_t * je_tcaches_get(tsd_t * tsd, unsigned int ind)'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1932' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2185' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2373' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2411' macro='1' u='c'/>

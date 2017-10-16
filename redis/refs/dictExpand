@@ -1,0 +1,19 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='116' type='int dictExpand(dict * ht, unsigned long size)'/>
+<def f='codebrowser/deps/hiredis/dict.c' l='88' ll='132' type='int dictExpand(dict * ht, unsigned long size)'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='299' u='c' c='_dictExpandIfNeeded'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='301' u='c' c='_dictExpandIfNeeded'/>
+<doc f='codebrowser/deps/hiredis/dict.c' l='87'>/* Expand or create the hashtable */</doc>
+<dec f='codebrowser/src/dict.h' l='152' type='int dictExpand(dict * d, unsigned long size)'/>
+<use f='codebrowser/src/debug.c' l='458' u='c' c='debugCommand'/>
+<use f='codebrowser/src/dict.c' l='143' u='c' c='dictResize'/>
+<def f='codebrowser/src/dict.c' l='147' ll='177' type='int dictExpand(dict * d, unsigned long size)'/>
+<use f='codebrowser/src/dict.c' l='923' u='c' c='_dictExpandIfNeeded'/>
+<use f='codebrowser/src/dict.c' l='933' u='c' c='_dictExpandIfNeeded'/>
+<doc f='codebrowser/src/dict.c' l='146'>/* Expand or create the hash table */</doc>
+<use f='codebrowser/src/rdb.c' l='1184' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1203' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1562' u='c' c='rdbLoadRio'/>
+<use f='codebrowser/src/rdb.c' l='1563' u='c' c='rdbLoadRio'/>
+<use f='codebrowser/src/t_set.c' l='246' u='c' c='setTypeConvert'/>
+<use f='codebrowser/src/t_zset.c' l='2270' u='c' c='zunionInterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2315' u='c' c='zunionInterGenericCommand'/>

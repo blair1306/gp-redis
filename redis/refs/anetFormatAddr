@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/anet.h' l='76' type='int anetFormatAddr(char * fmt, size_t fmt_len, char * ip, int port)'/>
+<def f='codebrowser/src/anet.c' l='616' ll='619' type='int anetFormatAddr(char * buf, size_t buf_len, char * ip, int port)'/>
+<use f='codebrowser/src/anet.c' l='627' u='c' c='anetFormatPeer'/>
+<use f='codebrowser/src/anet.c' l='657' u='c' c='anetFormatSock'/>
+<doc f='codebrowser/src/anet.c' l='613'>/* Format an IP,port pair into something easy to parse. If IP is IPv6
+ * (matches for &quot;:&quot;), the ip is surrounded by []. IP and port are just
+ * separated by colons. This the standard to display addresses within Redis. */</doc>
+<use f='codebrowser/src/redis-cli.c' l='161' u='c' c='cliRefreshPrompt'/>
+<use f='codebrowser/src/replication.c' l='65' u='c' c='replicationGetSlaveName'/>
+<use f='codebrowser/src/sentinel.c' l='1160' u='c' c='createSentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1274' u='c' c='sentinelRedisInstanceLookupSlave'/>

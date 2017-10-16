@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_decls.h' l='26'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='137' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='64' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='82' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='491' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='522' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='847' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1056' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1086' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1646' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2301' u='c'/>

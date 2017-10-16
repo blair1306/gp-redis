@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1193' type='int'/>
+<offset>23296</offset>
+<doc f='codebrowser/src/server.h' l='1193'>/* Software watchdog period in ms. 0 = off */</doc>
+<use f='codebrowser/src/config.c' l='1267' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/debug.c' l='1180' u='r' c='enableWatchdog'/>
+<use f='codebrowser/src/debug.c' l='1196' u='w' c='enableWatchdog'/>
+<use f='codebrowser/src/debug.c' l='1202' u='r' c='disableWatchdog'/>
+<use f='codebrowser/src/debug.c' l='1211' u='w' c='disableWatchdog'/>
+<use f='codebrowser/src/server.c' l='960' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='960' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1524' u='w' c='initServerConfig'/>

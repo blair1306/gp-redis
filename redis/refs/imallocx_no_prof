@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2027' ll='2048' macro='1' type='void * imallocx_no_prof(tsd_t * tsd, size_t size, int flags, size_t * usize)'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2068' u='c' c='je_mallocx'/>

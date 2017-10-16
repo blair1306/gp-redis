@@ -1,0 +1,18 @@
+<dec f='include/ctype.h' l='53' type='8192'/>
+<doc f='include/ctype.h' l='53'>/* Whitespace.  */</doc>
+<use f='codebrowser/deps/hiredis/sds.c' l='939' macro='1' u='r'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='975' macro='1' u='r'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='990' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='69' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='413' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/lobject.c' l='97' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='234' macro='1' u='r'/>
+<use f='codebrowser/src/db.c' l='566' macro='1' u='r'/>
+<use f='codebrowser/src/object.c' l='561' macro='1' u='r'/>
+<use f='codebrowser/src/object.c' l='603' macro='1' u='r'/>
+<use f='codebrowser/src/redis-cli.c' l='407' macro='1' u='r'/>
+<use f='codebrowser/src/redis-cli.c' l='432' macro='1' u='r'/>
+<use f='codebrowser/src/sds.c' l='944' macro='1' u='r'/>
+<use f='codebrowser/src/sds.c' l='980' macro='1' u='r'/>
+<use f='codebrowser/src/sds.c' l='995' macro='1' u='r'/>
+<use f='codebrowser/src/util.c' l='440' macro='1' u='r'/>

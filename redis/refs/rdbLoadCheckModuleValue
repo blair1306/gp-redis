@@ -1,0 +1,6 @@
+<def f='codebrowser/src/rdb.c' l='1111' ll='1144' type='robj * rdbLoadCheckModuleValue(rio * rdb, char * modulename)'/>
+<use f='codebrowser/src/rdb.c' l='1403' u='c' c='rdbLoadObject'/>
+<doc f='codebrowser/src/rdb.c' l='1107'>/* This function is called by rdbLoadObject() when the code is in RDB-check
+ * mode and we find a module value of type 2 that can be parsed without
+ * the need of the actual module. The value is parsed for errors, finally
+ * a dummy redis object is returned just to conform to the API. */</doc>

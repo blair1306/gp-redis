@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='387'/>
+<doc f='codebrowser/src/server.h' l='386'>/* Units */</doc>
+<use f='codebrowser/src/blocked.c' l='89' u='c'/>
+<use f='codebrowser/src/expire.c' l='390' u='c'/>
+<use f='codebrowser/src/expire.c' l='432' u='c'/>
+<use f='codebrowser/src/expire.c' l='437' u='c'/>
+<use f='codebrowser/src/t_list.c' l='885' u='c'/>
+<use f='codebrowser/src/t_list.c' l='947' u='c'/>
+<use f='codebrowser/src/t_string.c' l='77' u='c'/>
+<use f='codebrowser/src/t_string.c' l='99' u='c'/>
+<use f='codebrowser/src/t_string.c' l='121' u='c'/>
+<use f='codebrowser/src/t_string.c' l='149' u='c'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/bio.h' l='36' type='void bioKillThreads()'/>
+<def f='codebrowser/src/bio.c' l='253' ll='268' type='void bioKillThreads()'/>
+<doc f='codebrowser/src/bio.c' l='249'>/* Kill the running bio threads in an unclean way. This function should be
+ * used only when it&apos;s critical to stop the threads for some reason.
+ * Currently Redis does this only on crash (for instance on SIGSEGV) in order
+ * to perform a fast memory check without other threads messing with memory. */</doc>
+<use f='codebrowser/src/debug.c' l='1059' u='c' c='sigsegvHandler'/>

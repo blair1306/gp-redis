@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1763' type='void clusterPropagatePublish(robj * channel, robj * message)'/>
+<def f='codebrowser/src/cluster.c' l='2540' ll='2542' type='void clusterPropagatePublish(robj * channel, robj * message)'/>
+<doc f='codebrowser/src/cluster.c' l='2533'>/* -----------------------------------------------------------------------------
+ * CLUSTER Pub/Sub support
+ *
+ * For now we do very little, just propagating PUBLISH messages across the whole
+ * cluster. In the future we&apos;ll try to get smarter and avoiding propagating those
+ * messages to hosts without receives for a given channel.
+ * -------------------------------------------------------------------------- */</doc>
+<use f='codebrowser/src/pubsub.c' l='320' u='c' c='publishCommand'/>

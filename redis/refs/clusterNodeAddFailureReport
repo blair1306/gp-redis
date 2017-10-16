@@ -1,0 +1,12 @@
+<def f='codebrowser/src/cluster.c' l='712' ll='735' type='int clusterNodeAddFailureReport(clusterNode * failing, clusterNode * sender)'/>
+<use f='codebrowser/src/cluster.c' l='1344' u='c' c='clusterProcessGossipSection'/>
+<doc f='codebrowser/src/cluster.c' l='702'>/* This function is called every time we get a failure report from a node.
+ * The side effect is to populate the fail_reports list (or to update
+ * the timestamp of an existing report).
+ *
+ * &apos;failing&apos; is the node that is in failure state according to the
+ * &apos;sender&apos; node.
+ *
+ * The function returns 0 if it just updates a timestamp of an existing
+ * failure report from the same sender. 1 is returned if a new failure
+ * report is created. */</doc>

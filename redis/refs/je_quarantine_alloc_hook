@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/quarantine.h' l='46' macro='1' type='void je_quarantine_alloc_hook()'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='269' macro='1' u='c'/>

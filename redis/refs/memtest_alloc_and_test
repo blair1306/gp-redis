@@ -1,0 +1,3 @@
+<def f='codebrowser/src/memtest.c' l='336' ll='347' type='void memtest_alloc_and_test(size_t megabytes, int passes)'/>
+<use f='codebrowser/src/memtest.c' l='354' u='c' c='memtest'/>
+<doc f='codebrowser/src/memtest.c' l='335'>/* Perform an interactive test allocating the specified number of megabytes. */</doc>

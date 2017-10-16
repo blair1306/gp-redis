@@ -1,0 +1,17 @@
+<def f='codebrowser/src/rax.c' l='1135' ll='1154' type='int raxIteratorAddChars(raxIterator * it, unsigned char * s, size_t len)'/>
+<use f='codebrowser/src/rax.c' l='1203' u='c' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1255' u='c' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1276' u='c' c='raxSeekGreatest'/>
+<use f='codebrowser/src/rax.c' l='1279' u='c' c='raxSeekGreatest'/>
+<use f='codebrowser/src/rax.c' l='1347' u='c' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1432' u='c' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1444' u='c' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1456' u='c' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1471' u='c' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1493' u='c' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1506' u='c' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1600' u='c' c='raxRandomWalk'/>
+<use f='codebrowser/src/rax.c' l='1602' u='c' c='raxRandomWalk'/>
+<doc f='codebrowser/src/rax.c' l='1132'>/* Append characters at the current key string of the iterator &apos;it&apos;. This
+ * is a low level function used to implement the iterator, not callable by
+ * the user. Returns 0 on out of memory, otherwise 1 is returned. */</doc>

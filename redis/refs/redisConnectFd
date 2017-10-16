@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='173' type='redisContext * redisConnectFd(int fd)'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='763' ll='773' type='redisContext * redisConnectFd(int fd)'/>

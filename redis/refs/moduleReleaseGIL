@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1321' type='void moduleReleaseGIL()'/>
+<use f='codebrowser/src/module.c' l='3635' u='c' c='RM_ThreadSafeContextUnlock'/>
+<def f='codebrowser/src/module.c' l='3642' ll='3644' type='void moduleReleaseGIL()'/>
+<use f='codebrowser/src/server.c' l='1233' u='c' c='beforeSleep'/>

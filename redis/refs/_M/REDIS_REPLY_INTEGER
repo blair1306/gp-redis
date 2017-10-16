@@ -1,0 +1,17 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='52'/>
+<use f='codebrowser/deps/hiredis/async.c' l='398' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='82' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='162' u='c'/>
+<use f='codebrowser/deps/hiredis/read.c' l='222' u='c'/>
+<use f='codebrowser/deps/hiredis/read.c' l='226' u='c'/>
+<use f='codebrowser/deps/hiredis/read.c' l='382' u='c'/>
+<use f='codebrowser/deps/hiredis/read.c' l='404' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='280' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='281' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='565' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='699' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='729' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='2019' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='2111' u='c'/>
+<use f='codebrowser/src/sentinel.c' l='3521' u='c'/>
+<use f='codebrowser/src/sentinel.c' l='3523' u='c'/>

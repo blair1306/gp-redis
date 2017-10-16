@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='66' ll='70' type='const _Bool'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1251' u='r' c='config_prof_libunwind_ctl'/>

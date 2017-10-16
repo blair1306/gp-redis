@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/rdb.h' l='62'/>
+<use f='codebrowser/src/rdb.c' l='196' u='c'/>
+<use f='codebrowser/src/rdb.c' l='339' u='c'/>
+<use f='codebrowser/src/rdb.c' l='340' u='c'/>
+<use f='codebrowser/src/rdb.c' l='472' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1159' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1176' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1221' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1257' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1312' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1543' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1558' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1560' u='c'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='240' u='c'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='249' u='c'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='251' u='c'/>

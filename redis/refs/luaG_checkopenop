@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/lua/src/ldebug.h' l='31' type='int luaG_checkopenop(Instruction i)'/>
+<def f='codebrowser/deps/lua/src/ldebug.c' l='290' ll='301' type='int luaG_checkopenop(Instruction i)'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='288' u='c' c='symbexec'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='288' u='c' c='symbexec'/>

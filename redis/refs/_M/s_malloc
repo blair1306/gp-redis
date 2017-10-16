@@ -1,0 +1,24 @@
+<dec f='codebrowser/deps/hiredis/sdsalloc.h' l='40'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='91' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='227' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='259' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='509' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='525' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='799' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='1027' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='1094' u='c'/>
+<doc f='codebrowser/deps/hiredis/sdsalloc.h' l='33'>/* SDS allocator selection.
+ *
+ * This file is used in order to change the SDS allocator at compile time.
+ * Just define the following defines to what you want to use. Also add
+ * the include of your alternate allocator if needed (not needed in order
+ * to use the default libc allocator). */</doc>
+<dec f='codebrowser/src/sdsalloc.h' l='40'/>
+<use f='codebrowser/src/sds.c' l='94' u='c'/>
+<use f='codebrowser/src/sds.c' l='230' u='c'/>
+<use f='codebrowser/src/sds.c' l='262' u='c'/>
+<use f='codebrowser/src/sds.c' l='512' u='c'/>
+<use f='codebrowser/src/sds.c' l='528' u='c'/>
+<use f='codebrowser/src/sds.c' l='804' u='c'/>
+<use f='codebrowser/src/sds.c' l='1032' u='c'/>
+<use f='codebrowser/src/sds.c' l='1099' u='c'/>

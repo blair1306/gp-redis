@@ -1,0 +1,6 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='123' macro='1' type='_Bool je_bitmap_get(bitmap_t * bitmap, const bitmap_info_t * binfo, size_t bit)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='142' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='149' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='199' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='207' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='331' macro='1' u='c'/>

@@ -1,0 +1,22 @@
+<def f='codebrowser/src/rio.h' l='106' ll='117' type='size_t rioRead(rio * r, void * buf, size_t len)'/>
+<use f='codebrowser/src/rdb.c' l='86' u='c' c='rdbLoadType'/>
+<use f='codebrowser/src/rdb.c' l='92' u='c' c='rdbLoadTime'/>
+<use f='codebrowser/src/rdb.c' l='103' u='c' c='rdbLoadMillisecondTime'/>
+<use f='codebrowser/src/rdb.c' l='158' u='c' c='rdbLoadLenByRef'/>
+<use f='codebrowser/src/rdb.c' l='169' u='c' c='rdbLoadLenByRef'/>
+<use f='codebrowser/src/rdb.c' l='174' u='c' c='rdbLoadLenByRef'/>
+<use f='codebrowser/src/rdb.c' l='179' u='c' c='rdbLoadLenByRef'/>
+<use f='codebrowser/src/rdb.c' l='237' u='c' c='rdbLoadIntegerObject'/>
+<use f='codebrowser/src/rdb.c' l='241' u='c' c='rdbLoadIntegerObject'/>
+<use f='codebrowser/src/rdb.c' l='246' u='c' c='rdbLoadIntegerObject'/>
+<use f='codebrowser/src/rdb.c' l='352' u='c' c='rdbLoadLzfStringObject'/>
+<use f='codebrowser/src/rdb.c' l='476' u='c' c='rdbGenericLoadStringObject'/>
+<use f='codebrowser/src/rdb.c' l='487' u='c' c='rdbGenericLoadStringObject'/>
+<use f='codebrowser/src/rdb.c' l='550' u='c' c='rdbLoadDoubleValue'/>
+<use f='codebrowser/src/rdb.c' l='556' u='c' c='rdbLoadDoubleValue'/>
+<use f='codebrowser/src/rdb.c' l='576' u='c' c='rdbLoadBinaryDoubleValue'/>
+<use f='codebrowser/src/rdb.c' l='589' u='c' c='rdbLoadBinaryFloatValue'/>
+<use f='codebrowser/src/rdb.c' l='1500' u='c' c='rdbLoadRio'/>
+<use f='codebrowser/src/rdb.c' l='1629' u='c' c='rdbLoadRio'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='192' u='c' c='redis_check_rdb'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='304' u='c' c='redis_check_rdb'/>

@@ -1,0 +1,11 @@
+<def f='codebrowser/src/server.h' l='807' ll='810'/>
+<size>16</size>
+<doc f='codebrowser/src/server.h' l='800'>/* Defines an array of Redis operations. There is an API to add to this
+ * structure in a easy way.
+ *
+ * redisOpArrayInit();
+ * redisOpArrayAppend();
+ * redisOpArrayFree();
+ */</doc>
+<mbr r='redisOpArray::ops' o='0' t='redisOp *'/>
+<mbr r='redisOpArray::numops' o='64' t='int'/>

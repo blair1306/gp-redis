@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/sha1.h' l='18' type='void SHA1Update(SHA1_CTX * context, const unsigned char * data, uint32_t len)'/>
+<use f='codebrowser/src/debug.c' l='66' u='c' c='xorDigest'/>
+<use f='codebrowser/src/debug.c' l='99' u='c' c='mixDigest'/>
+<use f='codebrowser/src/scripting.c' l='96' u='c' c='sha1hex'/>
+<def f='codebrowser/src/sha1.c' l='131' ll='150' type='void SHA1Update(SHA1_CTX * context, const unsigned char * data, uint32_t len)'/>
+<use f='codebrowser/src/sha1.c' l='184' u='c' c='SHA1Final'/>
+<use f='codebrowser/src/sha1.c' l='187' u='c' c='SHA1Final'/>
+<use f='codebrowser/src/sha1.c' l='189' u='c' c='SHA1Final'/>
+<doc f='codebrowser/src/sha1.c' l='129'>/* Run your data through this. */</doc>
+<use f='codebrowser/src/util.c' l='570' u='c' c='getRandomHexChars'/>
+<use f='codebrowser/src/util.c' l='571' u='c' c='getRandomHexChars'/>

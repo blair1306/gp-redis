@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/geo.h' l='11' type='double'/>
+<use f='codebrowser/src/geo.c' l='207' u='w' c='geoAppendIfWithinRadius'/>
+<use f='codebrowser/src/geo.c' l='388' u='r' c='sort_gp_asc'/>
+<use f='codebrowser/src/geo.c' l='388' u='r' c='sort_gp_asc'/>
+<use f='codebrowser/src/geo.c' l='390' u='r' c='sort_gp_asc'/>
+<use f='codebrowser/src/geo.c' l='390' u='r' c='sort_gp_asc'/>
+<use f='codebrowser/src/geo.c' l='610' u='w' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='622' u='r' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='648' u='w' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='649' u='r' c='georadiusGeneric'/>
+<offset>128</offset>

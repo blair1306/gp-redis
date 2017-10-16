@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/zmalloc.h' l='85' type='size_t zmalloc_get_smap_bytes_by_field(char * field, long pid)'/>
+<use f='codebrowser/src/latency.c' l='82' u='c' c='THPGetAnonHugePagesSize'/>
+<def f='codebrowser/src/zmalloc.c' l='316' ll='342' type='size_t zmalloc_get_smap_bytes_by_field(char * field, long pid)'/>
+<use f='codebrowser/src/zmalloc.c' l='352' u='c' c='zmalloc_get_private_dirty'/>

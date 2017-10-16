@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='189' type='int redisFreeKeepFd(redisContext * c)'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='636' ll='641' type='int redisFreeKeepFd(redisContext * c)'/>

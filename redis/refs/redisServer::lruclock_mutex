@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1199' type='pthread_mutex_t'/>
+<offset>23424</offset>
+<doc f='codebrowser/src/server.h' l='1197'>/* Mutexes used to protect atomic variables when atomic builtins are
+     * not available. */</doc>
+<use f='codebrowser/src/server.c' l='1342' u='a' c='initServerConfig'/>

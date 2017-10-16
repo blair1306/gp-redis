@@ -1,0 +1,19 @@
+<dec f='codebrowser/src/server.h' l='220'/>
+<doc f='codebrowser/src/server.h' l='219'>/* Client flags */</doc>
+<use f='codebrowser/src/networking.c' l='796' u='c'/>
+<use f='codebrowser/src/networking.c' l='831' u='c'/>
+<use f='codebrowser/src/networking.c' l='843' u='c'/>
+<use f='codebrowser/src/networking.c' l='1082' u='c'/>
+<use f='codebrowser/src/networking.c' l='1296' u='c'/>
+<use f='codebrowser/src/networking.c' l='1494' u='c'/>
+<use f='codebrowser/src/networking.c' l='1832' u='c'/>
+<use f='codebrowser/src/networking.c' l='1991' u='c'/>
+<use f='codebrowser/src/object.c' l='854' u='c'/>
+<use f='codebrowser/src/replication.c' l='508' u='c'/>
+<use f='codebrowser/src/replication.c' l='596' u='c'/>
+<use f='codebrowser/src/replication.c' l='629' u='c'/>
+<use f='codebrowser/src/replication.c' l='688' u='c'/>
+<use f='codebrowser/src/replication.c' l='816' u='c'/>
+<use f='codebrowser/src/server.c' l='782' u='c'/>
+<use f='codebrowser/src/server.c' l='3328' u='c'/>
+<use f='codebrowser/src/server.c' l='3330' u='c'/>

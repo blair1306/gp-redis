@@ -1,0 +1,5 @@
+<def f='codebrowser/src/ziplist.c' l='271' ll='289'/>
+<size>32</size>
+<doc f='codebrowser/src/ziplist.c' l='268'>/* We use this function to receive information about a ziplist entry.
+ * Note that this is not how the data is actually encoded, is just what we
+ * get filled by a function in order to operate more easily. */</doc>

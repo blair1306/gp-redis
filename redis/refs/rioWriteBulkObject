@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/rio.h' l='139' type='int rioWriteBulkObject(rio * r, struct redisObject * obj)'/>
+<def f='codebrowser/src/aof.c' l='818' ll='828' type='int rioWriteBulkObject(rio * r, robj * obj)'/>
+<use f='codebrowser/src/aof.c' l='846' u='c' c='rewriteListObject'/>
+<use f='codebrowser/src/aof.c' l='880' u='c' c='rewriteSetObject'/>
+<use f='codebrowser/src/aof.c' l='898' u='c' c='rewriteSetObject'/>
+<use f='codebrowser/src/aof.c' l='939' u='c' c='rewriteSortedSetObject'/>
+<use f='codebrowser/src/aof.c' l='966' u='c' c='rewriteSortedSetObject'/>
+<use f='codebrowser/src/aof.c' l='1020' u='c' c='rewriteHashObject'/>
+<use f='codebrowser/src/aof.c' l='1104' u='c' c='rewriteAppendOnlyFileRio'/>
+<use f='codebrowser/src/aof.c' l='1105' u='c' c='rewriteAppendOnlyFileRio'/>
+<use f='codebrowser/src/aof.c' l='1123' u='c' c='rewriteAppendOnlyFileRio'/>
+<doc f='codebrowser/src/aof.c' l='816'>/* Delegate writing an object to writing a bulk string or bulk long long.
+ * This is not placed in rio.c since that adds the server.h dependency. */</doc>
+<use f='codebrowser/src/module.c' l='3265' u='c' c='RM_EmitAOF'/>

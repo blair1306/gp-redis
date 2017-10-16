@@ -1,0 +1,4 @@
+<def f='codebrowser/src/expire.c' l='451' ll='471' type='void ttlGenericCommand(client * c, int output_ms)'/>
+<use f='codebrowser/src/expire.c' l='475' u='c' c='ttlCommand'/>
+<use f='codebrowser/src/expire.c' l='480' u='c' c='pttlCommand'/>
+<doc f='codebrowser/src/expire.c' l='450'>/* Implements TTL and PTTL */</doc>

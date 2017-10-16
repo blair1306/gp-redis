@@ -1,0 +1,8 @@
+<def f='codebrowser/src/bitops.c' l='478' ll='491' type='robj * lookupStringForBitCommand(client * c, size_t maxbit)'/>
+<use f='codebrowser/src/bitops.c' l='545' u='c' c='setbitCommand'/>
+<use f='codebrowser/src/bitops.c' l='1001' u='c' c='bitfieldCommand'/>
+<doc f='codebrowser/src/bitops.c' l='473'>/* This is an helper function for commands implementations that need to write
+ * bits to a string object. The command creates or pad with zeroes the string
+ * so that the &apos;maxbit&apos; bit can be addressed. The object is finally
+ * returned. Otherwise if the key holds a wrong type NULL is returned and
+ * an error is sent to the client. */</doc>

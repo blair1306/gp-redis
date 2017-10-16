@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='157' type='void *'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1088' u='a' c='je_arena_prof_tctx_get'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1117' u='a' c='je_arena_prof_tctx_set'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1153' u='a' c='je_arena_prof_tctx_reset'/>
+<offset>0</offset>

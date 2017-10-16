@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/server.h' l='1465' type='int getLongDoubleFromObject(robj * o, long double * target)'/>
+<def f='codebrowser/src/object.c' l='592' ll='614' type='int getLongDoubleFromObject(robj * o, long double * target)'/>
+<use f='codebrowser/src/object.c' l='618' u='c' c='getLongDoubleFromObjectOrReply'/>

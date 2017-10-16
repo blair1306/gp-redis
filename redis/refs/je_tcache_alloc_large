@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='311' macro='1' type='void * je_tcache_alloc_large(tsd_t * tsd, arena_t * arena, tcache_t * tcache, size_t size, _Bool zero)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1183' macro='1' u='c'/>

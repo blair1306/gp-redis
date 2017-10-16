@@ -1,0 +1,5 @@
+<def f='codebrowser/src/rdb.c' l='229' ll='265' type='void * rdbLoadIntegerObject(rio * rdb, int enctype, int flags, size_t * lenptr)'/>
+<use f='codebrowser/src/rdb.c' l='464' u='c' c='rdbGenericLoadStringObject'/>
+<doc f='codebrowser/src/rdb.c' l='226'>/* Loads an integer-encoded object with the specified encoding type &quot;enctype&quot;.
+ * The returned value changes according to the flags, see
+ * rdbGenerincLoadStringObject() for more info. */</doc>

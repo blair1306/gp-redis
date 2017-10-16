@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1963' type='void objectCommand(client * c)'/>
+<def f='codebrowser/src/object.c' l='1012' ll='1042' type='void objectCommand(client * c)'/>
+<doc f='codebrowser/src/object.c' l='1010'>/* Object command allows to inspect the internals of an Redis Object.
+ * Usage: OBJECT &lt;refcount|encoding|idletime&gt; &lt;key&gt; */</doc>
+<use f='codebrowser/src/server.c' l='279' u='r'/>
+<use f='codebrowser/src/server.c' l='279' u='r'/>
+<use f='codebrowser/src/server.c' l='279' u='r'/>
+<use f='codebrowser/src/server.c' l='279' u='r'/>

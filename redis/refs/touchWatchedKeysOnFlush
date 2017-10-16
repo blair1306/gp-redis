@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1423' type='void touchWatchedKeysOnFlush(int dbid)'/>
+<use f='codebrowser/src/db.c' l='360' u='c' c='signalFlushedDb'/>
+<def f='codebrowser/src/multi.c' l='299' ll='320' type='void touchWatchedKeysOnFlush(int dbid)'/>
+<doc f='codebrowser/src/multi.c' l='295'>/* On FLUSHDB or FLUSHALL all the watched keys that are present before the
+ * flush but will be deleted as effect of the flushing operation should
+ * be touched. &quot;dbid&quot; is the DB that&apos;s getting the flush. -1 if it is
+ * a FLUSHALL operation (all the DBs flushed). */</doc>

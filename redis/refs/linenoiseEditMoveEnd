@@ -1,0 +1,6 @@
+<def f='codebrowser/deps/linenoise/linenoise.c' l='689' ll='694' type='void linenoiseEditMoveEnd(struct linenoiseState * l)'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='818' u='c' c='linenoiseEdit'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='903' u='c' c='linenoiseEdit'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='916' u='c' c='linenoiseEdit'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='938' u='c' c='linenoiseEdit'/>
+<doc f='codebrowser/deps/linenoise/linenoise.c' l='688'>/* Move cursor to the end of the line. */</doc>

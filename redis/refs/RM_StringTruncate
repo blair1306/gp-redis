@@ -1,0 +1,14 @@
+<def f='codebrowser/src/module.c' l='1557' ll='1586' type='int RM_StringTruncate(RedisModuleKey * key, size_t newlen)'/>
+<use f='codebrowser/src/module.c' l='3945' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1545'>/* If the string is open for writing and is of string type, resize it, padding
+ * with zero bytes if the new length is greater than the old one.
+ *
+ * After this call, RM_StringDMA() must be called again to continue
+ * DMA access with the new pointer.
+ *
+ * The function returns REDISMODULE_OK on success, and REDISMODULE_ERR on
+ * error, that is, the key is not open for writing, is not a string
+ * or resizing for more than 512 MB is requested.
+ *
+ * If the key is empty, a string key is created with the new string value
+ * unless the new length value requested is zero. */</doc>

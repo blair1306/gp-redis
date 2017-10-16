@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/quicklist.h' l='83' type='const quicklist *'/>
+<offset>0</offset>
+<use f='codebrowser/src/quicklist.c' l='1062' u='w' c='quicklistGetIterator'/>
+<use f='codebrowser/src/quicklist.c' l='1091' u='r' c='quicklistReleaseIterator'/>
+<use f='codebrowser/src/quicklist.c' l='1125' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1163' u='r' c='quicklistNext'/>

@@ -1,0 +1,34 @@
+<dec f='codebrowser/src/server.h' l='770' type='struct zskiplistNode *'/>
+<offset>0</offset>
+<use f='codebrowser/src/defrag.c' l='197' u='r' c='zslUpdateNode'/>
+<use f='codebrowser/src/defrag.c' l='221' u='r' c='zslDefrag'/>
+<use f='codebrowser/src/defrag.c' l='367' u='r' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='368' u='w' c='defragKey'/>
+<use f='codebrowser/src/object.c' l='756' u='r' c='objectComputeSize'/>
+<use f='codebrowser/src/sort.c' l='413' u='r' c='sortCommand'/>
+<use f='codebrowser/src/t_zset.c' l='87' u='w' c='zslCreate'/>
+<use f='codebrowser/src/t_zset.c' l='89' u='r' c='zslCreate'/>
+<use f='codebrowser/src/t_zset.c' l='90' u='r' c='zslCreate'/>
+<use f='codebrowser/src/t_zset.c' l='92' u='r' c='zslCreate'/>
+<use f='codebrowser/src/t_zset.c' l='107' u='r' c='zslFree'/>
+<use f='codebrowser/src/t_zset.c' l='109' u='r' c='zslFree'/>
+<use f='codebrowser/src/t_zset.c' l='138' u='r' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='160' u='r' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='180' u='r' c='zslInsert'/>
+<use f='codebrowser/src/t_zset.c' l='205' u='r' c='zslDeleteNode'/>
+<use f='codebrowser/src/t_zset.c' l='222' u='r' c='zslDelete'/>
+<use f='codebrowser/src/t_zset.c' l='266' u='r' c='zslIsInRange'/>
+<use f='codebrowser/src/t_zset.c' l='281' u='r' c='zslFirstInRange'/>
+<use f='codebrowser/src/t_zset.c' l='307' u='r' c='zslLastInRange'/>
+<use f='codebrowser/src/t_zset.c' l='332' u='r' c='zslDeleteRangeByScore'/>
+<use f='codebrowser/src/t_zset.c' l='364' u='r' c='zslDeleteRangeByLex'/>
+<use f='codebrowser/src/t_zset.c' l='394' u='r' c='zslDeleteRangeByRank'/>
+<use f='codebrowser/src/t_zset.c' l='426' u='r' c='zslGetRank'/>
+<use f='codebrowser/src/t_zset.c' l='450' u='r' c='zslGetElementByRank'/>
+<use f='codebrowser/src/t_zset.c' l='607' u='r' c='zslIsInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='622' u='r' c='zslFirstInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='648' u='r' c='zslLastInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='1167' u='r' c='zsetConvert'/>
+<use f='codebrowser/src/t_zset.c' l='1168' u='r' c='zsetConvert'/>
+<use f='codebrowser/src/t_zset.c' l='1845' u='r' c='zuiInitIterator'/>
+<use f='codebrowser/src/t_zset.c' l='2444' u='r' c='zrangeGenericCommand'/>

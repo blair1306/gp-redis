@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/config.c' l='1457' type='int'/>
+<use f='codebrowser/src/config.c' l='1465' u='r' c='rewriteConfigAppendLine'/>
+<use f='codebrowser/src/config.c' l='1466' u='w' c='rewriteConfigAppendLine'/>
+<use f='codebrowser/src/config.c' l='1505' u='w' c='rewriteConfigReadOldFile'/>
+<use f='codebrowser/src/config.c' l='1817' u='r' c='rewriteConfigGetContentFromState'/>
+<use f='codebrowser/src/config.c' l='1833' u='r' c='rewriteConfigReleaseState'/>
+<offset>128</offset>
+<doc f='codebrowser/src/config.c' l='1457'>/* Number of lines in current config */</doc>

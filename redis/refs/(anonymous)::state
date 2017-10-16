@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/sha1.h' l='11' type='uint32_t [5]'/>
+<offset>0</offset>
+<dec f='codebrowser/src/cluster.h' l='252' type='unsigned char'/>
+<use f='codebrowser/src/cluster.c' l='2236' u='w' c='clusterBuildMessageHdr'/>
+<offset>18016</offset>
+<doc f='codebrowser/src/cluster.h' l='252'>/* Cluster state from the POV of the sender */</doc>
+<use f='codebrowser/src/sha1.c' l='120' u='w' c='SHA1Init'/>
+<use f='codebrowser/src/sha1.c' l='121' u='w' c='SHA1Init'/>
+<use f='codebrowser/src/sha1.c' l='122' u='w' c='SHA1Init'/>
+<use f='codebrowser/src/sha1.c' l='123' u='w' c='SHA1Init'/>
+<use f='codebrowser/src/sha1.c' l='124' u='w' c='SHA1Init'/>
+<use f='codebrowser/src/sha1.c' l='142' u='r' c='SHA1Update'/>
+<use f='codebrowser/src/sha1.c' l='144' u='r' c='SHA1Update'/>
+<use f='codebrowser/src/sha1.c' l='192' u='r' c='SHA1Final'/>

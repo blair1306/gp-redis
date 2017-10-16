@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1019' type='int'/>
+<use f='codebrowser/src/aof.c' l='1263' u='r' c='aofChildPipeReadable'/>
+<use f='codebrowser/src/aof.c' l='1298' u='w' c='aofCreatePipes'/>
+<use f='codebrowser/src/aof.c' l='1317' u='r' c='aofClosePipes'/>
+<offset>15392</offset>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/evict.c' l='63' type='unsigned long LFUDecrAndReturn(robj * o)'/>
+<use f='codebrowser/src/evict.c' l='199' u='c' c='evictionPoolPopulate'/>
+<def f='codebrowser/src/evict.c' l='334' ll='347' type='unsigned long LFUDecrAndReturn(robj * o)'/>

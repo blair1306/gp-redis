@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/config.c' l='1429' type='void dictListDestructor(void * privdata, void * val)'/>
+<use f='codebrowser/src/config.c' l='1441'/>
+<use f='codebrowser/src/config.c' l='1441'/>
+<def f='codebrowser/src/server.c' l='439' ll='443' type='void dictListDestructor(void * privdata, void * val)'/>
+<use f='codebrowser/src/server.c' l='633'/>
+<use f='codebrowser/src/server.c' l='633'/>

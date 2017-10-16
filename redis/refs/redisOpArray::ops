@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='808' type='redisOp *'/>
+<offset>0</offset>
+<use f='codebrowser/src/server.c' l='2011' u='w' c='redisOpArrayInit'/>
+<use f='codebrowser/src/server.c' l='2020' u='w' c='redisOpArrayAppend'/>
+<use f='codebrowser/src/server.c' l='2020' u='r' c='redisOpArrayAppend'/>
+<use f='codebrowser/src/server.c' l='2021' u='r' c='redisOpArrayAppend'/>
+<use f='codebrowser/src/server.c' l='2037' u='r' c='redisOpArrayFree'/>
+<use f='codebrowser/src/server.c' l='2042' u='r' c='redisOpArrayFree'/>
+<use f='codebrowser/src/server.c' l='2285' u='r' c='call'/>

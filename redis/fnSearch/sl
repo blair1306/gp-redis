@@ -1,0 +1,14 @@
+slotToKeyAdd|slotToKeyAdd
+slotToKeyDel|slotToKeyDel
+slotToKeyFlush|slotToKeyFlush
+slotToKeyUpdateKey|slotToKeyUpdateKey
+slotToKeyFlushAsync|slotToKeyFlushAsync
+slaveIsInHandshakeState|slaveIsInHandshakeState
+slaveTryPartialResynchronization|slaveTryPartialResynchronization
+slaveofCommand|slaveofCommand
+slowlogCommand|slowlogCommand
+slowlogCreateEntry|slowlogCreateEntry
+slowlogFreeEntry|slowlogFreeEntry
+slowlogInit|slowlogInit
+slowlogPushEntryIfNeeded|slowlogPushEntryIfNeeded
+slowlogReset|slowlogReset

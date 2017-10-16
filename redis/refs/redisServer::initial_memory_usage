@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='894' type='size_t'/>
+<offset>1280</offset>
+<doc f='codebrowser/src/server.h' l='894'>/* Bytes used after initialization. */</doc>
+<use f='codebrowser/src/object.c' l='818' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='822' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/server.c' l='1951' u='w' c='initServer'/>

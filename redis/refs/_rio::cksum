@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/rio.h' l='55' type='uint64_t'/>
+<offset>320</offset>
+<doc f='codebrowser/src/rio.h' l='54'>/* The current checksum */</doc>
+<use f='codebrowser/src/rdb.c' l='950' u='r' c='rdbSaveRio'/>
+<use f='codebrowser/src/rdb.c' l='1627' u='r' c='rdbLoadRio'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='301' u='r' c='redis_check_rdb'/>
+<use f='codebrowser/src/rio.c' l='291' u='w' c='rioGenericUpdateChecksum'/>
+<use f='codebrowser/src/rio.c' l='291' u='r' c='rioGenericUpdateChecksum'/>

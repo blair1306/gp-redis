@@ -1,0 +1,24 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='104' macro='1' type='void * je_extent_node_addr_get(const extent_node_t * node)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='967' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1317' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1320' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1478' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='108' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='145' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='238' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='239' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='243' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='252' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='485' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='486' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='488' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='528' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='531' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='543' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='30' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='31' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='46' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/extent.c' l='47' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='21' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='371' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='374' macro='1' u='c'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='2006' type='void serverLogObjectDebugInfo(const robj * o)'/>
+<def f='codebrowser/src/debug.c' l='597' ll='619' type='void serverLogObjectDebugInfo(const robj * o)'/>
+<use f='codebrowser/src/debug.c' l='624' u='c' c='_serverAssertPrintObject'/>
+<use f='codebrowser/src/debug.c' l='915' u='c' c='logCurrentClient'/>

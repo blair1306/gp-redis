@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1295' type='dictType'/>
+<use f='codebrowser/src/lazyfree.c' l='92' u='a' c='emptyDbAsync'/>
+<def f='codebrowser/src/server.c' l='575' ll='582' type='dictType'/>
+<use f='codebrowser/src/server.c' l='1852' u='a' c='initServer'/>
+<doc f='codebrowser/src/server.c' l='574'>/* Db-&gt;dict, keys are sds strings, vals are Redis objects. */</doc>

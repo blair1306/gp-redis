@@ -1,0 +1,4 @@
+<def f='codebrowser/src/module.c' l='3143' ll='3156' type='float RM_LoadFloat(RedisModuleIO * io)'/>
+<use f='codebrowser/src/module.c' l='3983' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3141'>/* In the context of the rdb_save method of a module data type, loads back the
+ * float value saved by RedisModule_SaveFloat(). */</doc>

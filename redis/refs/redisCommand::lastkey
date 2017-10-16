@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1222' type='int'/>
+<offset>416</offset>
+<doc f='codebrowser/src/server.h' l='1222'>/* The last argument that&apos;s a key */</doc>
+<use f='codebrowser/src/db.c' l='1139' u='r' c='getKeysUsingCommandTable'/>
+<use f='codebrowser/src/module.c' l='640' u='w' c='RM_CreateCommand'/>
+<use f='codebrowser/src/server.c' l='2722' u='r' c='addReplyCommand'/>

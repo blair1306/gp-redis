@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1278' type='dictEntry *'/>
+<offset>320</offset>
+<use f='codebrowser/src/t_hash.c' l='376' u='w' c='hashTypeNext'/>
+<use f='codebrowser/src/t_hash.c' l='410' u='r' c='hashTypeCurrentFromHashTable'/>
+<use f='codebrowser/src/t_hash.c' l='412' u='r' c='hashTypeCurrentFromHashTable'/>

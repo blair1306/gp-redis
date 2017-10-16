@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/cluster.h' l='183' type='uint16_t'/>
+<dec f='codebrowser/src/cluster.h' l='250' type='uint16_t'/>
+<use f='codebrowser/src/cluster.c' l='1332' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1391' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1396' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1410' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1448' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1739' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2234' u='w' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2288' u='w' c='clusterSetGossipEntry'/>
+<offset>17984</offset>
+<doc f='codebrowser/src/cluster.h' l='183'>/* cluster port last time it was seen */</doc>
+<doc f='codebrowser/src/cluster.h' l='250'>/* Sender TCP cluster bus port */</doc>

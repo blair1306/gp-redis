@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1051' type='redisOpArray'/>
+<offset>16704</offset>
+<doc f='codebrowser/src/server.h' l='1050'>/* Propagation of commands in AOF / replication */</doc>
+<doc f='codebrowser/src/server.h' l='1051'>/* Additional command to propagate. */</doc>
+<use f='codebrowser/src/server.c' l='2119' u='a' c='alsoPropagate'/>
+<use f='codebrowser/src/server.c' l='2200' u='r' c='call'/>
+<use f='codebrowser/src/server.c' l='2201' u='a' c='call'/>
+<use f='codebrowser/src/server.c' l='2279' u='m' c='call'/>
+<use f='codebrowser/src/server.c' l='2284' u='m' c='call'/>
+<use f='codebrowser/src/server.c' l='2285' u='m' c='call'/>
+<use f='codebrowser/src/server.c' l='2294' u='a' c='call'/>
+<use f='codebrowser/src/server.c' l='2296' u='w' c='call'/>

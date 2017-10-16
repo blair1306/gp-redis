@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='3627' ll='3630' type='void RM_ThreadSafeContextLock(RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/module.c' l='4000' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3624'>/* Acquire the server lock before executing a thread safe API call.
+ * This is not needed for `RedisModule_Reply*` calls when there is
+ * a blocked client connected to the thread safe context. */</doc>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='906' type='int'/>
+<offset>2688</offset>
+<doc f='codebrowser/src/server.h' l='906'>/* Number of addresses in server.bindaddr[] */</doc>
+<use f='codebrowser/src/cluster.c' l='3266' macro='1' u='r'/>
+<use f='codebrowser/src/config.c' l='237' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1407' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1796' u='r' c='rewriteConfigBindOption'/>
+<use f='codebrowser/src/config.c' l='1802' u='r' c='rewriteConfigBindOption'/>
+<use f='codebrowser/src/networking.c' l='635' u='r' c='acceptCommonHandler'/>
+<use f='codebrowser/src/replication.c' l='1858' macro='1' u='r'/>
+<use f='codebrowser/src/sentinel.c' l='1914' macro='1' u='r'/>
+<use f='codebrowser/src/sentinel.c' l='1937' macro='1' u='r'/>
+<use f='codebrowser/src/server.c' l='1355' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1701' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='1702' u='r' c='listenToPort'/>
+<use f='codebrowser/src/server.c' l='3571' u='r' c='redisSetProcTitle'/>

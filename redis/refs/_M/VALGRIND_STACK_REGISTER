@@ -1,0 +1,4 @@
+<dec f='include/valgrind/valgrind.h' l='7049'/>
+<doc f='include/valgrind/valgrind.h' l='7046'>/* Mark a piece of memory as being a stack. Returns a stack id.
+   start is the lowest addressable stack byte, end is the highest
+   addressable stack byte. */</doc>

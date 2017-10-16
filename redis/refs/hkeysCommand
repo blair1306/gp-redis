@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1940' type='void hkeysCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='211' u='r'/>
+<use f='codebrowser/src/server.c' l='211' u='r'/>
+<use f='codebrowser/src/server.c' l='211' u='r'/>
+<use f='codebrowser/src/server.c' l='211' u='r'/>
+<def f='codebrowser/src/t_hash.c' l='797' ll='799' type='void hkeysCommand(client * c)'/>

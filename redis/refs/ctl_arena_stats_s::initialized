@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='34' type='_Bool'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='713' u='w' c='ctl_refresh'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='786' u='w' c='ctl_init'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1768' u='r' c='arenas_initialized_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='2114' u='r' c='stats_arenas_i_index'/>

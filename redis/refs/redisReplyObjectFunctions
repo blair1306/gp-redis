@@ -1,0 +1,7 @@
+<def f='codebrowser/deps/hiredis/read.h' l='72' ll='78'/>
+<size>40</size>
+<mbr r='redisReplyObjectFunctions::createString' o='0' t='void *(*)(const redisReadTask *, char *, size_t)'/>
+<mbr r='redisReplyObjectFunctions::createArray' o='64' t='void *(*)(const redisReadTask *, int)'/>
+<mbr r='redisReplyObjectFunctions::createInteger' o='128' t='void *(*)(const redisReadTask *, long long)'/>
+<mbr r='redisReplyObjectFunctions::createNil' o='192' t='void *(*)(const redisReadTask *)'/>
+<mbr r='redisReplyObjectFunctions::freeObject' o='256' t='void (*)(void *)'/>

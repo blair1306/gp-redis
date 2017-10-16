@@ -1,0 +1,17 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/private_namespace.h' l='289'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='427' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='708' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1177' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='14' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2360' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2371' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2806' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2806' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2858' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3264' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3265' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3271' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3273' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3274' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='504' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='505' u='c'/>

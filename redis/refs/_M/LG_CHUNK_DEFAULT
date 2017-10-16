@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk.h' l='8'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk.h' l='4'>/*
+ * Size and alignment of memory chunks that are allocated by the OS&apos;s virtual
+ * memory system.
+ */</doc>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='724' u='c'/>

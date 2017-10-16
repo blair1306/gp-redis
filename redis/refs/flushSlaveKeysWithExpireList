@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1797' type='void flushSlaveKeysWithExpireList()'/>
+<use f='codebrowser/src/db.c' l='335' u='c' c='emptyDb'/>
+<def f='codebrowser/src/expire.c' l='365' ll='370' type='void flushSlaveKeysWithExpireList()'/>
+<doc f='codebrowser/src/expire.c' l='357'>/* Remove the keys in the hash table. We need to do that when data is
+ * flushed from the server. We may receive new keys from the master with
+ * the same name/db and it is no longer a good idea to expire them.
+ *
+ * Note: technically we should handle the case of a single DB being flushed
+ * but it is not worth it since anyway race conditions using the same set
+ * of key names in a wriatable slave and in its master will lead to
+ * inconsistencies. This is just a best-effort thing we do. */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1293' type='dictType'/>
+<use f='codebrowser/src/cluster.c' l='416' u='a' c='clusterInit'/>
+<def f='codebrowser/src/server.c' l='638' ll='645' type='dictType'/>
+<doc f='codebrowser/src/server.c' l='636'>/* Cluster nodes hash table, mapping nodes addresses 1.2.3.4:6379 to
+ * clusterNode structures. */</doc>

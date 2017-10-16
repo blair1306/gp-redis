@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='746' type='robj *'/>
+<offset>1216</offset>
+<use f='codebrowser/src/scripting.c' l='1274' u='r' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1413' u='r' c='evalShaCommand'/>
+<use f='codebrowser/src/server.c' l='1272' u='w' c='createSharedObjects'/>

@@ -1,0 +1,7 @@
+<def f='codebrowser/src/db.c' l='1359' ll='1376' type='void slotToKeyUpdateKey(robj * key, int add)'/>
+<use f='codebrowser/src/db.c' l='1379' u='c' c='slotToKeyAdd'/>
+<use f='codebrowser/src/db.c' l='1383' u='c' c='slotToKeyDel'/>
+<doc f='codebrowser/src/db.c' l='1355'>/* Slot to Key API. This is used by Redis Cluster in order to obtain in
+ * a fast way a key that belongs to a specified hash slot. This is useful
+ * while rehashing the cluster and in other conditions when we need to
+ * understand if we have keys for a given hash slot. */</doc>

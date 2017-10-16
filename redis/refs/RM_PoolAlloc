@@ -1,0 +1,14 @@
+<def f='codebrowser/src/module.c' l='296' ll='324' type='void * RM_PoolAlloc(RedisModuleCtx * ctx, size_t bytes)'/>
+<use f='codebrowser/src/module.c' l='3967' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='284'>/* Return heap allocated memory that will be freed automatically when the
+ * module callback function returns. Mostly suitable for small allocations
+ * that are short living and must be released when the callback returns
+ * anyway. The returned memory is aligned to the architecture word size
+ * if at least word size bytes are requested, otherwise it is just
+ * aligned to the next power of two, so for example a 3 bytes request is
+ * 4 bytes aligned while a 2 bytes request is 2 bytes aligned.
+ *
+ * There is no realloc style function since when this is needed to use the
+ * pool allocator is not a good idea.
+ *
+ * The function returns NULL if `bytes` is 0. */</doc>

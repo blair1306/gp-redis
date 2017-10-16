@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/atomicvar.h' l='79'/>
+<use f='codebrowser/src/evict.c' l='83' u='c'/>
+<use f='codebrowser/src/lazyfree.c' l='12' u='c'/>
+<use f='codebrowser/src/server.c' l='2840' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='214' u='c'/>

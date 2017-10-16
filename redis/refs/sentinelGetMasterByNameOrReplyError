@@ -1,0 +1,11 @@
+<def f='codebrowser/src/sentinel.c' l='2844' ll='2855' type='sentinelRedisInstance * sentinelGetMasterByNameOrReplyError(client * c, robj * name)'/>
+<use f='codebrowser/src/sentinel.c' l='2892' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='2900' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='2908' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='2989' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3064' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3076' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3299' u='c' c='sentinelSetCommand'/>
+<doc f='codebrowser/src/sentinel.c' l='2841'>/* Lookup the named master into sentinel.masters.
+ * If the master is not found reply to the client with an error and returns
+ * NULL. */</doc>

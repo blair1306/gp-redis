@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='72'/>
+<use f='codebrowser/deps/hiredis/async.c' l='428' u='c'/>
+<use f='codebrowser/deps/hiredis/async.c' l='463' u='c'/>
+<use f='codebrowser/deps/hiredis/async.c' l='631' u='c'/>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='71'>/* Flag that is set when monitor mode is active */</doc>

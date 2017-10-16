@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/valgrind.h' l='24'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='351' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='451' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='684' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='124' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='316' u='c'/>

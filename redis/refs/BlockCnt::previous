@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/lua/src/lparser.c' l='41' type='struct BlockCnt *'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='219' u='r' c='markupval'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='290' u='w' c='enterblock'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='298' u='r' c='leaveblock'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='981' u='r' c='breakstat'/>
+<offset>0</offset>
+<doc f='codebrowser/deps/lua/src/lparser.c' l='41'>/* chain */</doc>

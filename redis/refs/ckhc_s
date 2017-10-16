@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='27' ll='30'/>
+<size>16</size>
+<mbr r='ckhc_s::key' o='0' t='const void *'/>
+<mbr r='ckhc_s::data' o='64' t='const void *'/>

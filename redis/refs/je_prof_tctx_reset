@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='420' macro='1' type='void je_prof_tctx_reset(const void * ptr, size_t usize, const void * old_ptr, prof_tctx_t * old_tctx)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='525' macro='1' u='c'/>

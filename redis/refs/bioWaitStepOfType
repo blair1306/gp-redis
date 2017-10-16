@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/bio.h' l='34' type='unsigned long long bioWaitStepOfType(int type)'/>
+<def f='codebrowser/src/bio.c' l='237' ll='247' type='unsigned long long bioWaitStepOfType(int type)'/>
+<doc f='codebrowser/src/bio.c' l='227'>/* If there are pending jobs for the specified type, the function blocks
+ * and waits that the next job was processed. Otherwise the function
+ * does not block and returns ASAP.
+ *
+ * The function returns the number of jobs still to process of the
+ * requested type.
+ *
+ * This function is useful when from another thread, we want to wait
+ * a bio.c thread to do more work in a blocking way.
+ */</doc>

@@ -1,0 +1,31 @@
+<dec f='codebrowser/src/dict.h' l='165' type='dictIterator * dictGetSafeIterator(dict * d)'/>
+<use f='codebrowser/src/aof.c' l='1077' u='c' c='rewriteAppendOnlyFileRio'/>
+<use f='codebrowser/src/cluster.c' l='528' u='c' c='clusterReset'/>
+<use f='codebrowser/src/cluster.c' l='899' u='c' c='clusterDelNode'/>
+<use f='codebrowser/src/cluster.c' l='951' u='c' c='clusterGetMaxEpoch'/>
+<use f='codebrowser/src/cluster.c' l='1107' u='c' c='clusterBlacklistCleanup'/>
+<use f='codebrowser/src/cluster.c' l='1239' u='c' c='clusterHandshakeInProgress'/>
+<use f='codebrowser/src/cluster.c' l='2178' u='c' c='clusterBroadcastMessage'/>
+<use f='codebrowser/src/cluster.c' l='2396' u='c' c='clusterSendPing'/>
+<use f='codebrowser/src/cluster.c' l='2443' u='c' c='clusterBroadcastPong'/>
+<use f='codebrowser/src/cluster.c' l='3056' u='c' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/cluster.c' l='3241' u='c' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3347' u='c' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3525' u='c' c='clusterMastersHaveSlaves'/>
+<use f='codebrowser/src/cluster.c' l='3679' u='c' c='clusterUpdateState'/>
+<use f='codebrowser/src/cluster.c' l='3940' u='c' c='clusterGenNodesDescription'/>
+<use f='codebrowser/src/cluster.c' l='4001' u='c' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4852' u='c' c='migrateCloseTimedoutSockets'/>
+<use f='codebrowser/src/db.c' l='505' u='c' c='keysCommand'/>
+<use f='codebrowser/src/db.c' l='940' u='c' c='scanDatabaseForReadyLists'/>
+<use f='codebrowser/src/debug.c' l='129' u='c' c='computeDatasetDigest'/>
+<def f='codebrowser/src/dict.c' l='555' ll='560' type='dictIterator * dictGetSafeIterator(dict * d)'/>
+<use f='codebrowser/src/latency.c' l='139' u='c' c='latencyResetEvent'/>
+<use f='codebrowser/src/latency.c' l='251' u='c' c='createLatencyReport'/>
+<use f='codebrowser/src/module.c' l='3791' u='c' c='moduleUnload'/>
+<use f='codebrowser/src/pubsub.c' l='179' u='c' c='pubsubUnsubscribeAllChannels'/>
+<use f='codebrowser/src/rdb.c' l='899' u='c' c='rdbSaveRio'/>
+<use f='codebrowser/src/sentinel.c' l='1307' u='c' c='removeMatchingSentinelFromMaster'/>
+<use f='codebrowser/src/sentinel.c' l='2511' u='c' c='sentinelForceHelloUpdateDictOfRedisInstances'/>
+<use f='codebrowser/src/server.c' l='1998' u='c' c='resetCommandTableStats'/>
+<use f='codebrowser/src/server.c' l='3276' u='c' c='genRedisInfoString'/>

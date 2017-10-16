@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/server.h' l='893' type='int'/>
+<offset>1248</offset>
+<doc f='codebrowser/src/server.h' l='893'>/* True if this instance is a Sentinel. */</doc>
+<use f='codebrowser/src/config.c' l='722' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='2040' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/db.c' l='823' u='r' c='shutdownCommand'/>
+<use f='codebrowser/src/server.c' l='339' u='r' c='serverLogRaw'/>
+<use f='codebrowser/src/server.c' l='1018' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1149' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='2579' u='r' c='prepareForShutdown'/>
+<use f='codebrowser/src/server.c' l='2828' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3426' u='r' c='redisAsciiArt'/>
+<use f='codebrowser/src/server.c' l='3567' u='r' c='redisSetProcTitle'/>
+<use f='codebrowser/src/server.c' l='3716' u='w' c='main'/>
+<use f='codebrowser/src/server.c' l='3730' u='r' c='main'/>
+<use f='codebrowser/src/server.c' l='3797' u='r' c='main'/>
+<use f='codebrowser/src/server.c' l='3819' u='r' c='main'/>
+<use f='codebrowser/src/server.c' l='3834' u='r' c='main'/>

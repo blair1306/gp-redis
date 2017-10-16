@@ -1,0 +1,7 @@
+<def f='codebrowser/src/defrag.c' l='169' ll='188' type='int dictDefragTables(dict ** dictRef)'/>
+<use f='codebrowser/src/defrag.c' l='345' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='384' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='405' u='c' c='defragKey'/>
+<doc f='codebrowser/src/defrag.c' l='166'>/* Defrag helper for dict main allocations (dict struct, and hash tables).
+ * receives a pointer to the dict* and implicitly updates it when the dict
+ * struct itself was moved. Returns a stat of how many pointers were moved. */</doc>

@@ -1,0 +1,9 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='510' ll='539' type='int mp_pack(lua_State * L)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='883' u='r'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='883' u='r'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='883' u='r'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='883' u='r'/>
+<doc f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='506'>/*
+ * Packs all arguments as a stream for multiple upacking later.
+ * Returns error if no arguments provided.
+ */</doc>

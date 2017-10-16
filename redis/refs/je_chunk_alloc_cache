@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk.h' l='58' macro='1' type='void * je_chunk_alloc_cache(arena_t * arena, chunk_hooks_t * chunk_hooks, void * new_addr, size_t size, size_t alignment, _Bool * zero, _Bool dalloc_node)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='624' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='915' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1047' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1316' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/chunk.c' l='393' macro='1' type='void * je_chunk_alloc_cache(arena_t * arena, chunk_hooks_t * chunk_hooks, void * new_addr, size_t size, size_t alignment, _Bool * zero, _Bool dalloc_node)'/>

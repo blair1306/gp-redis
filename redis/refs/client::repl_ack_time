@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='709' type='long long'/>
+<offset>1792</offset>
+<doc f='codebrowser/src/server.h' l='709'>/* Replication ack time, if this is a slave. */</doc>
+<use f='codebrowser/src/networking.c' l='116' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='1083' u='w' c='processInlineBuffer'/>
+<use f='codebrowser/src/replication.c' l='510' u='w' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='821' u='w' c='replconfCommand'/>
+<use f='codebrowser/src/replication.c' l='858' u='w' c='putSlaveOnline'/>
+<use f='codebrowser/src/replication.c' l='973' u='w' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='2242' u='r' c='refreshGoodSlavesCount'/>
+<use f='codebrowser/src/replication.c' l='2595' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='3224' u='r' c='genRedisInfoString'/>

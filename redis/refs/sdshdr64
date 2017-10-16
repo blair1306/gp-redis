@@ -1,0 +1,12 @@
+<def f='codebrowser/deps/hiredis/sds.h' l='68' ll='73'/>
+<size>17</size>
+<mbr r='sdshdr64::len' o='0' t='uint64_t'/>
+<mbr r='sdshdr64::alloc' o='64' t='uint64_t'/>
+<mbr r='sdshdr64::flags' o='128' t='unsigned char'/>
+<mbr r='sdshdr64::buf' o='136' t='char []'/>
+<def f='codebrowser/src/sds.h' l='68' ll='73'/>
+<size>17</size>
+<mbr r='sdshdr64::len' o='0' t='uint64_t'/>
+<mbr r='sdshdr64::alloc' o='64' t='uint64_t'/>
+<mbr r='sdshdr64::flags' o='128' t='unsigned char'/>
+<mbr r='sdshdr64::buf' o='136' t='char []'/>

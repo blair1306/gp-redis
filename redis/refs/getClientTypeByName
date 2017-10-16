@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1376' type='int getClientTypeByName(char * name)'/>
+<use f='codebrowser/src/config.c' l='653' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='948' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='967' u='c' c='configSetCommand'/>
+<use f='codebrowser/src/networking.c' l='1605' u='c' c='clientCommand'/>
+<def f='codebrowser/src/networking.c' l='1838' ll='1844' type='int getClientTypeByName(char * name)'/>

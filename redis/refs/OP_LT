@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/lua/src/lopcodes.h' l='186' type='24'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='775' u='r' c='luaK_posfix'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='777' u='r' c='luaK_posfix'/>
+<doc f='codebrowser/deps/lua/src/lopcodes.h' l='186'>/*	A B C	if ((RK(B) &lt;  RK(C)) ~= A) then pc++  		*/</doc>
+<use f='codebrowser/deps/lua/src/lvm.c' l='555' c='luaV_execute'/>
+<use f='codebrowser/deps/lua/src/print.c' l='129' c='PrintCode'/>

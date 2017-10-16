@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/server.h' l='1201' type='pthread_mutex_t'/>
+<offset>24064</offset>
+<use f='codebrowser/src/server.c' l='1343' u='a' c='initServerConfig'/>

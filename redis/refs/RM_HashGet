@@ -1,0 +1,43 @@
+<def f='codebrowser/src/module.c' l='2222' ll='2268' type='int RM_HashGet(RedisModuleKey * key, int flags)'/>
+<use f='codebrowser/src/module.c' l='3962' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='2181'>/* Get fields from an hash value. This function is called using a variable
+ * number of arguments, alternating a field name (as a StringRedisModule
+ * pointer) with a pointer to a StringRedisModule pointer, that is set to the
+ * value of the field if the field exist, or NULL if the field did not exist.
+ * At the end of the field/value-ptr pairs, NULL must be specified as last
+ * argument to signal the end of the arguments in the variadic function.
+ *
+ * This is an example usage:
+ *
+ *      RedisModuleString *first, *second;
+ *      RedisModule_HashGet(mykey,REDISMODULE_HASH_NONE,argv[1],&amp;first,
+ *                      argv[2],&amp;second,NULL);
+ *
+ * As with RedisModule_HashSet() the behavior of the command can be specified
+ * passing flags different than REDISMODULE_HASH_NONE:
+ *
+ * REDISMODULE_HASH_CFIELD: field names as null terminated C strings.
+ *
+ * REDISMODULE_HASH_EXISTS: instead of setting the value of the field
+ * expecting a RedisModuleString pointer to pointer, the function just
+ * reports if the field esists or not and expects an integer pointer
+ * as the second element of each pair.
+ *
+ * Example of REDISMODULE_HASH_CFIELD:
+ *
+ *      RedisModuleString *username, *hashedpass;
+ *      RedisModule_HashGet(mykey,&quot;username&quot;,&amp;username,&quot;hp&quot;,&amp;hashedpass, NULL);
+ *
+ * Example of REDISMODULE_HASH_EXISTS:
+ *
+ *      int exists;
+ *      RedisModule_HashGet(mykey,argv[1],&amp;exists,NULL);
+ *
+ * The function returns REDISMODULE_OK on success and REDISMODULE_ERR if
+ * the key is not an hash value.
+ *
+ * Memory management:
+ *
+ * The returned RedisModuleString objects should be released with
+ * RedisModule_FreeString(), or by enabling automatic memory management.
+ */</doc>

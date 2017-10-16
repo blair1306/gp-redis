@@ -1,0 +1,19 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='49'/>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='47'>/* Connection type can be blocking or non-blocking and is set in the
+ * least significant bit of the flags field in redisContext. */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='681' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='693' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='705' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='713' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='721' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='734' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='746' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='758' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='771' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='777' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='804' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='841' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='879' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='994' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='271' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='430' u='c'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/server.h' l='1437' type='void freeZsetObject(robj * o)'/>
+<def f='codebrowser/src/object.c' l='269' ll='284' type='void freeZsetObject(robj * o)'/>
+<use f='codebrowser/src/object.c' l='316' u='c' c='decrRefCount'/>

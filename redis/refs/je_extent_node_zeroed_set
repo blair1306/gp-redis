@@ -1,0 +1,6 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='168' macro='1' type='void je_extent_node_zeroed_set(extent_node_t * node, _Bool zeroed)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='203' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='499' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='546' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='168' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='228' macro='1' u='c'/>

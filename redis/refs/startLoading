@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1510' type='void startLoading(FILE * fp)'/>
+<use f='codebrowser/src/aof.c' l='658' u='c' c='loadAppendOnlyFile'/>
+<doc f='codebrowser/src/server.h' l='1509'>/* Generic persistence functions */</doc>
+<def f='codebrowser/src/rdb.c' l='1444' ll='1456' type='void startLoading(FILE * fp)'/>
+<use f='codebrowser/src/rdb.c' l='1659' u='c' c='rdbLoad'/>
+<doc f='codebrowser/src/rdb.c' l='1442'>/* Mark that we are loading in the global state and setup the fields
+ * needed to provide loading stats. */</doc>
+<use f='codebrowser/src/redis-check-rdb.c' l='204' u='c' c='redis_check_rdb'/>

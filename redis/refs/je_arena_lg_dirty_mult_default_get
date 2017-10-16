@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='494' macro='1' type='ssize_t je_arena_lg_dirty_mult_default_get()'/>
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='2915' macro='1' type='ssize_t je_arena_lg_dirty_mult_default_get()'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3051' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1782' macro='1' u='c'/>

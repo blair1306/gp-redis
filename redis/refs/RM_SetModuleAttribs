@@ -1,0 +1,6 @@
+<def f='codebrowser/src/module.c' l='653' ll='663' type='void RM_SetModuleAttribs(RedisModuleCtx * ctx, const char * name, int ver, int apiver)'/>
+<use f='codebrowser/src/module.c' l='3902' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='649'>/* Called by RM_Init() to setup the `ctx-&gt;module` structure.
+ *
+ * This is an internal function, Redis modules developers don&apos;t need
+ * to use it. */</doc>

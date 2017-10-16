@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1369' type='void rewriteClientCommandVector(client * c, int argc)'/>
+<use f='codebrowser/src/expire.c' l='415' u='c' c='expireGenericCommand'/>
+<def f='codebrowser/src/networking.c' l='1732' ll='1757' type='void rewriteClientCommandVector(client * c, int argc)'/>
+<doc f='codebrowser/src/networking.c' l='1729'>/* Rewrite the command vector of the client. All the new objects ref count
+ * is incremented. The old command vector is freed, and the old objects
+ * ref count is decremented. */</doc>
+<use f='codebrowser/src/t_list.c' l='916' u='c' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='446' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='590' u='c' c='spopCommand'/>

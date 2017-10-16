@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/ae.h' l='87' type='int'/>
+<use f='codebrowser/src/ae_epoll.c' l='127' u='w' c='aeApiPoll'/>
+<use f='codebrowser/src/ae.c' l='412' u='r' c='aeProcessEvents'/>
+<offset>32</offset>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='888' type='char *'/>
+<offset>704</offset>
+<doc f='codebrowser/src/server.h' l='888'>/* Pass for AUTH command, or NULL */</doc>
+<use f='codebrowser/src/config.c' l='495' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='845' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='846' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1213' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1213' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1990' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/networking.c' l='636' u='r' c='acceptCommonHandler'/>
+<use f='codebrowser/src/server.c' l='1403' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2336' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2628' u='r' c='authCommand'/>
+<use f='codebrowser/src/server.c' l='2630' u='r' c='authCommand'/>

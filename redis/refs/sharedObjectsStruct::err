@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='743' type='robj *'/>
+<use f='codebrowser/src/aof.c' l='1406' u='r' c='bgrewriteaofCommand'/>
+<offset>128</offset>
+<use f='codebrowser/src/debug.c' l='341' u='r' c='debugCommand'/>
+<use f='codebrowser/src/debug.c' l='355' u='r' c='debugCommand'/>
+<use f='codebrowser/src/rdb.c' l='1983' u='r' c='saveCommand'/>
+<use f='codebrowser/src/rdb.c' l='2017' u='r' c='bgsaveCommand'/>
+<use f='codebrowser/src/server.c' l='1251' u='w' c='createSharedObjects'/>

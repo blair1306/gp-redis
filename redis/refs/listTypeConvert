@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1411' type='void listTypeConvert(robj * subject, int enc)'/>
+<use f='codebrowser/src/rdb.c' l='1373' u='c' c='rdbLoadObject'/>
+<def f='codebrowser/src/t_list.c' l='179' ll='191' type='void listTypeConvert(robj * subject, int enc)'/>
+<doc f='codebrowser/src/t_list.c' l='178'>/* Create a quicklist from a single ziplist */</doc>

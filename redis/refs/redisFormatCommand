@@ -1,0 +1,31 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='128' type='int redisFormatCommand(char ** target, const char * format)'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='456' ll='469' type='int redisFormatCommand(char ** target, const char * format)'/>
+<doc f='codebrowser/deps/hiredis/hiredis.c' l='444'>/* Format a command according to the Redis protocol. This function
+ * takes a format similar to printf:
+ *
+ * %s represents a C null terminated string you want to interpolate
+ * %b represents a binary safe string
+ *
+ * When using %b you need to provide both the pointer to the string
+ * and the length in bytes as a size_t. Examples:
+ *
+ * len = redisFormatCommand(target, &quot;GET %s&quot;, mykey);
+ * len = redisFormatCommand(target, &quot;SET %s %b&quot;, mykey, myval, myvallen);
+ */</doc>
+<use f='codebrowser/src/redis-benchmark.c' l='346' u='c' c='createClient'/>
+<use f='codebrowser/src/redis-benchmark.c' l='728' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='734' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='740' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='746' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='752' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='758' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='764' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='770' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='776' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='783' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='790' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='801' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='807' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='813' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='819' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='825' u='c' c='main'/>

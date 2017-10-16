@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='120' type='int redisvAsyncCommand(redisAsyncContext * ac, redisCallbackFn * fn, void * privdata, const char * format, struct __va_list_tag * ap)'/>
+<def f='codebrowser/deps/hiredis/async.c' l='650' ll='663' type='int redisvAsyncCommand(redisAsyncContext * ac, redisCallbackFn * fn, void * privdata, const char * format, struct __va_list_tag * ap)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='669' u='c' c='redisAsyncCommand'/>
+<doc f='codebrowser/deps/hiredis/async.h' l='118'>/* Command functions for an async context. Write the command to the
+ * output buffer and register the provided callback. */</doc>

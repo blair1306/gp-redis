@@ -1,0 +1,21 @@
+<dec f='codebrowser/src/server.h' l='1502' type='int replicationSetupSlaveForFullResync(client * slave, long long offset)'/>
+<use f='codebrowser/src/rdb.c' l='1849' u='c' c='rdbSaveToSlavesSockets'/>
+<def f='codebrowser/src/replication.c' l='418' ll='440' type='int replicationSetupSlaveForFullResync(client * slave, long long offset)'/>
+<use f='codebrowser/src/replication.c' l='614' u='c' c='startBgsaveForReplication'/>
+<use f='codebrowser/src/replication.c' l='723' u='c' c='syncCommand'/>
+<doc f='codebrowser/src/replication.c' l='402'>/* Send a FULLRESYNC reply in the specific case of a full resynchronization,
+ * as a side effect setup the slave for a full sync in different ways:
+ *
+ * 1) Remember, into the slave client structure, the replication offset
+ *    we sent here, so that if new slaves will later attach to the same
+ *    background RDB saving process (by duplicating this client output
+ *    buffer), we can get the right offset from this slave.
+ * 2) Set the replication state of the slave to WAIT_BGSAVE_END so that
+ *    we start accumulating differences from this point.
+ * 3) Force the replication stream to re-emit a SELECT statement so
+ *    the new slave incremental differences will start selecting the
+ *    right database number.
+ *
+ * Normally this function should be called immediately after a successful
+ * BGSAVE for replication was started, or when there is one already in
+ * progress that we attached our slave to. */</doc>

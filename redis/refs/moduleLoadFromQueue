@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1310' type='void moduleLoadFromQueue()'/>
+<def f='codebrowser/src/module.c' l='3712' ll='3728' type='void moduleLoadFromQueue()'/>
+<doc f='codebrowser/src/module.c' l='3703'>/* Load all the modules in the server.loadmodule_queue list, which is
+ * populated by `loadmodule` directives in the configuration file.
+ * We can&apos;t load modules directly when processing the configuration file
+ * because the server must be fully initialized before loading modules.
+ *
+ * The function aborts the server on errors, since to start with missing
+ * modules is not considered sane: clients may rely on the existance of
+ * given commands, loading AOF also may need some modules to exist, and
+ * if this instance is a slave, it must understand commands from master. */</doc>
+<use f='codebrowser/src/server.c' l='3840' u='c' c='main'/>

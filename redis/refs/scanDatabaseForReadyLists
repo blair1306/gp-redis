@@ -1,0 +1,7 @@
+<def f='codebrowser/src/db.c' l='938' ll='948' type='void scanDatabaseForReadyLists(redisDb * db)'/>
+<use f='codebrowser/src/db.c' l='985' u='c' c='dbSwapDatabases'/>
+<use f='codebrowser/src/db.c' l='986' u='c' c='dbSwapDatabases'/>
+<doc f='codebrowser/src/db.c' l='934'>/* Helper function for dbSwapDatabases(): scans the list of keys that have
+ * one or more blocked clients for B[LR]POP or other list blocking commands
+ * and signal the keys are ready if they are lists. See the comment where
+ * the function is used for more info. */</doc>

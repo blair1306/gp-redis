@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/util.h' l='47' type='sds getAbsolutePath(char * filename)'/>
+<use f='codebrowser/src/server.c' l='3722' u='c' c='main'/>
+<use f='codebrowser/src/server.c' l='3767' u='c' c='main'/>
+<def f='codebrowser/src/util.c' l='623' ll='666' type='sds getAbsolutePath(char * filename)'/>
+<doc f='codebrowser/src/util.c' l='616'>/* Given the filename, return the absolute path as an SDS string, or NULL
+ * if it fails for some reason. Note that &quot;filename&quot; may be an absolute path
+ * already, this will be detected and handled correctly.
+ *
+ * The function does not try to normalize everything, but only the obvious
+ * case of one or more &quot;../&quot; appearning at the start of &quot;filename&quot;
+ * relative path. */</doc>

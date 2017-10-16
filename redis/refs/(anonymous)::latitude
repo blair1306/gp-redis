@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/geohash.h' l='79' type='GeoHashRange'/>
+<use f='codebrowser/src/geo.c' l='360' u='m' c='membersOfAllNeighbors'/>
+<use f='codebrowser/src/geo.c' l='361' u='m' c='membersOfAllNeighbors'/>
+<offset>256</offset>
+<use f='codebrowser/src/geohash.c' l='184' u='m' c='geohashDecode'/>
+<use f='codebrowser/src/geohash.c' l='186' u='m' c='geohashDecode'/>
+<use f='codebrowser/src/geohash.c' l='209' u='m' c='geohashDecodeAreaToLongLat'/>
+<use f='codebrowser/src/geohash.c' l='209' u='m' c='geohashDecodeAreaToLongLat'/>
+<use f='codebrowser/src/geohash_helper.c' l='153' u='m' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='155' u='m' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='172' u='m' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='177' u='m' c='geohashGetAreasByRadius'/>

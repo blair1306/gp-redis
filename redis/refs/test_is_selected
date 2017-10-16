@@ -1,0 +1,31 @@
+<def f='codebrowser/src/redis-benchmark.c' l='636' ll='646' type='int test_is_selected(char * name)'/>
+<use f='codebrowser/src/redis-benchmark.c' l='724' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='724' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='727' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='727' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='733' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='739' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='745' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='751' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='757' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='763' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='769' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='775' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='782' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='789' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='795' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='796' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='797' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='798' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='799' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='806' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='806' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='812' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='812' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='818' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='818' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='824' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='824' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='830' u='c' c='main'/>
+<doc f='codebrowser/src/redis-benchmark.c' l='634'>/* Return true if the named test was selected using the -t command line
+ * switch, or if all the tests are selected (no -t passed by user). */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rdb.h' l='129' type='int rdbSaveObjectType(rio * rdb, robj * o)'/>
+<use f='codebrowser/src/cluster.c' l='4625' u='c' c='createDumpPayload'/>
+<def f='codebrowser/src/rdb.c' l='595' ll='631' type='int rdbSaveObjectType(rio * rdb, robj * o)'/>
+<use f='codebrowser/src/rdb.c' l='821' u='c' c='rdbSaveKeyValuePair'/>
+<doc f='codebrowser/src/rdb.c' l='594'>/* Save the object type of object &quot;o&quot;. */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1313' type='void moduleTypeNameByID(char * name, uint64_t moduleid)'/>
+<def f='codebrowser/src/module.c' l='2789' ll='2799' type='void moduleTypeNameByID(char * name, uint64_t moduleid)'/>
+<doc f='codebrowser/src/module.c' l='2785'>/* Turn an (unresolved) module ID into a type name, to show the user an
+ * error when RDB files contain module data we can&apos;t load.
+ * The buffer pointed by &apos;name&apos; must be 10 bytes at least. The function will
+ * fill it with a null terminated module name. */</doc>
+<use f='codebrowser/src/rdb.c' l='1406' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1431' u='c' c='rdbLoadObject'/>

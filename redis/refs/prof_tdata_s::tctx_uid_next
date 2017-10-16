@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='201' type='uint64_t'/>
+<offset>448</offset>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='804' u='w' c='je_prof_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1728' u='w' c='prof_tdata_init_impl'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/src/server.h' l='1578' type='unsigned int zsetLength(const robj * zobj)'/>
+<use f='codebrowser/src/aof.c' l='914' u='c' c='rewriteSortedSetObject'/>
+<use f='codebrowser/src/debug.c' l='615' u='c' c='serverLogObjectDebugInfo'/>
+<use f='codebrowser/src/module.c' l='386' u='c' c='moduleDelKeyIfEmpty'/>
+<use f='codebrowser/src/module.c' l='1428' u='c' c='RM_ValueLength'/>
+<use f='codebrowser/src/rdb.c' l='1248' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1384' u='c' c='rdbLoadObject'/>
+<def f='codebrowser/src/t_zset.c' l='1103' ll='1113' type='unsigned int zsetLength(const robj * zobj)'/>
+<use f='codebrowser/src/t_zset.c' l='1430' u='c' c='zsetRank'/>
+<use f='codebrowser/src/t_zset.c' l='1626' u='c' c='zremCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1679' u='c' c='zremrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2334' u='c' c='zunionInterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2383' u='c' c='zrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='3018' u='c' c='zcardCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='1099'>/*-----------------------------------------------------------------------------
+ * Common sorted set API
+ *----------------------------------------------------------------------------*/</doc>

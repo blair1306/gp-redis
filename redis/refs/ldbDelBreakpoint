@@ -1,0 +1,4 @@
+<def f='codebrowser/src/scripting.c' l='1751' ll='1762' type='int ldbDelBreakpoint(int line)'/>
+<use f='codebrowser/src/scripting.c' l='2124' u='c' c='ldbBreak'/>
+<doc f='codebrowser/src/scripting.c' l='1749'>/* Remove the specified breakpoint, returning 1 if the operation was
+ * performed or 0 if there was no such breakpoint. */</doc>

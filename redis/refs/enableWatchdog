@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='2009' type='void enableWatchdog(int period)'/>
+<use f='codebrowser/src/config.c' l='1122' u='c' c='configSetCommand'/>
+<def f='codebrowser/src/debug.c' l='1177' ll='1197' type='void enableWatchdog(int period)'/>
+<doc f='codebrowser/src/debug.c' l='1176'>/* Enable the software watchdog with the specified period in milliseconds. */</doc>

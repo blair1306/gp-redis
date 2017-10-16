@@ -1,0 +1,8 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='69' ll='85' type='void memrevifle(void * ptr, size_t len)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='211' u='c' c='mp_encode_double'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='216' u='c' c='mp_encode_double'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='675' u='c' c='mp_decode_to_lua_type'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='686' u='c' c='mp_decode_to_lua_type'/>
+<doc f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='66'>/* Reverse memory bytes if arch is little endian. Given the conceptual
+ * simplicity of the Lua build system we prefer check for endianess at runtime.
+ * The performance difference should be acceptable. */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1867' type='void sremCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='166' u='r'/>
+<use f='codebrowser/src/server.c' l='166' u='r'/>
+<use f='codebrowser/src/server.c' l='166' u='r'/>
+<use f='codebrowser/src/server.c' l='166' u='r'/>
+<def f='codebrowser/src/t_set.c' l='290' ll='316' type='void sremCommand(client * c)'/>

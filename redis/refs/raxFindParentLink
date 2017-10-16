@@ -1,0 +1,8 @@
+<def f='codebrowser/src/rax.c' l='815' ll='824' type='raxNode ** raxFindParentLink(raxNode * parent, raxNode * child)'/>
+<use f='codebrowser/src/rax.c' l='943' u='c' c='raxRemove'/>
+<use f='codebrowser/src/rax.c' l='1079' u='c' c='raxRemove'/>
+<doc f='codebrowser/src/rax.c' l='810'>/* Return the memory address where the &apos;parent&apos; node stores the specified
+ * &apos;child&apos; pointer, so that the caller can update the pointer with another
+ * one if needed. The function assumes it will find a match, otherwise the
+ * operation is an undefined behavior (it will continue scanning the
+ * memory without any bound checking). */</doc>

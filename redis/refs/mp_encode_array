@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='293' ll='314' type='void mp_encode_array(lua_State * L, mp_buf * buf, int64_t n)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='387' u='c' c='mp_encode_lua_table_as_array'/>

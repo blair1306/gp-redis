@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='991' type='char *'/>
+<use f='codebrowser/src/aof.c' l='242' u='r' c='startAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='250' u='r' c='startAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='1505' u='r' c='backgroundRewriteDoneHandler'/>
+<use f='codebrowser/src/aof.c' l='1514' u='r' c='backgroundRewriteDoneHandler'/>
+<use f='codebrowser/src/aof.c' l='1518' u='r' c='backgroundRewriteDoneHandler'/>
+<offset>14144</offset>
+<doc f='codebrowser/src/server.h' l='991'>/* Name of the AOF file */</doc>
+<use f='codebrowser/src/config.c' l='450' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='451' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='2001' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/debug.c' l='354' u='r' c='debugCommand'/>
+<use f='codebrowser/src/server.c' l='1402' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1926' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='3526' u='r' c='loadDataFromDisk'/>

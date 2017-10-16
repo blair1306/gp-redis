@@ -1,0 +1,4 @@
+<def f='codebrowser/src/aof.c' l='584' ll='609' type='struct client * createFakeClient()'/>
+<use f='codebrowser/src/aof.c' l='657' u='c' c='loadAppendOnlyFile'/>
+<doc f='codebrowser/src/aof.c' l='582'>/* In Redis commands are always executed in the context of a client, so in
+ * order to load the append only file we need to create a fake client. */</doc>

@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/mathcalls.h' l='65' type='double sin(double __x)'/>
+<use f='codebrowser/deps/lua/src/lmathlib.c' l='32' u='c' c='math_sin'/>
+<use f='codebrowser/src/geohash_helper.c' l='217' u='c' c='geohashGetDistance'/>
+<use f='codebrowser/src/geohash_helper.c' l='218' u='c' c='geohashGetDistance'/>

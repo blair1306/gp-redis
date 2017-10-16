@@ -1,0 +1,23 @@
+<dec f='codebrowser/src/adlist.h' l='74' type='void listRelease(list * list)'/>
+<def f='codebrowser/src/adlist.c' l='76' ll='80' type='void listRelease(list * list)'/>
+<use f='codebrowser/src/adlist.c' l='268' u='c' c='listDup'/>
+<use f='codebrowser/src/adlist.c' l='274' u='c' c='listDup'/>
+<doc f='codebrowser/src/adlist.c' l='73'>/* Free the whole list.
+ *
+ * This function can&apos;t fail. */</doc>
+<use f='codebrowser/src/aof.c' l='72' u='c' c='aofRewriteBufferReset'/>
+<use f='codebrowser/src/aof.c' l='621' u='c' c='freeFakeClient'/>
+<use f='codebrowser/src/aof.c' l='622' u='c' c='freeFakeClient'/>
+<use f='codebrowser/src/cluster.c' l='858' u='c' c='freeClusterNode'/>
+<use f='codebrowser/src/db.c' l='759' u='c' c='scanGenericCommand'/>
+<use f='codebrowser/src/module.c' l='3731' u='c' c='moduleFreeModuleStructure'/>
+<use f='codebrowser/src/networking.c' l='591' u='c' c='copyClientOutputBuffer'/>
+<use f='codebrowser/src/networking.c' l='812' u='c' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='818' u='c' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='821' u='c' c='freeClient'/>
+<use f='codebrowser/src/replication.c' l='2301' u='c' c='replicationScriptCacheFlush'/>
+<use f='codebrowser/src/scripting.c' l='1705' u='c' c='ldbKillForkedSessions'/>
+<use f='codebrowser/src/server.c' l='442' u='c' c='dictListDestructor'/>
+<use f='codebrowser/src/sort.c' l='284' u='c' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='586' u='c' c='sortCommand'/>
+<use f='codebrowser/src/t_list.c' l='875' u='c' c='handleClientsBlockedOnLists'/>

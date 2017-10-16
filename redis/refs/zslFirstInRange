@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1571' type='zskiplistNode * zslFirstInRange(zskiplist * zsl, zrangespec * range)'/>
+<use f='codebrowser/src/geo.c' l='266' u='c' c='geoGetPointsInRange'/>
+<use f='codebrowser/src/module.c' l='1819' u='c' c='zsetInitScoreRange'/>
+<def f='codebrowser/src/t_zset.c' l='274' ll='296' type='zskiplistNode * zslFirstInRange(zskiplist * zsl, zrangespec * range)'/>
+<use f='codebrowser/src/t_zset.c' l='2605' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2724' u='c' c='zcountCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='272'>/* Find the first node that is contained in the specified range.
+ * Returns NULL when no element is contained in the range. */</doc>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/private_namespace.h' l='498'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/valgrind.h' l='100' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/valgrind.c' l='9' u='c'/>

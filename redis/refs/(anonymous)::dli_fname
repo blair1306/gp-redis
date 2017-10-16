@@ -1,0 +1,4 @@
+<dec f='include/dlfcn.h' l='90' type='const char *'/>
+<use f='codebrowser/src/debug.c' l='1079' u='r' c='sigsegvHandler'/>
+<offset>0</offset>
+<doc f='include/dlfcn.h' l='90'>/* File name of defining object.  */</doc>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/lua/src/lua_struct.c' l='393' type='int luaopen_struct(lua_State * L)'/>
+<def f='codebrowser/deps/lua/src/lua_struct.c' l='395' ll='398' macro='1' type='int luaopen_struct(lua_State * L)'/>
+<dec f='codebrowser/src/scripting.c' l='817' type='int luaopen_struct(lua_State * L)'/>
+<use f='codebrowser/src/scripting.c' l='828' u='r' c='luaLoadLibraries'/>

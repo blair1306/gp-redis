@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1967' type='void evalShaCommand(client * c)'/>
+<def f='codebrowser/src/scripting.c' l='1407' ll='1422' type='void evalShaCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='283' u='r'/>
+<use f='codebrowser/src/server.c' l='283' u='r'/>
+<use f='codebrowser/src/server.c' l='283' u='r'/>
+<use f='codebrowser/src/server.c' l='283' u='r'/>

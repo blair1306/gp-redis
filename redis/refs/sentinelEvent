@@ -1,0 +1,80 @@
+<dec f='codebrowser/src/sentinel.c' l='366' type='void sentinelEvent(int level, char * type, sentinelRedisInstance * ri, const char * fmt)'/>
+<def f='codebrowser/src/sentinel.c' l='582' ll='637' type='void sentinelEvent(int level, char * type, sentinelRedisInstance * ri, const char * fmt)'/>
+<use f='codebrowser/src/sentinel.c' l='650' u='c' c='sentinelGenerateInitialMonitorEvents'/>
+<use f='codebrowser/src/sentinel.c' l='760' u='c' c='sentinelRunPendingScripts'/>
+<use f='codebrowser/src/sentinel.c' l='772' u='c' c='sentinelRunPendingScripts'/>
+<use f='codebrowser/src/sentinel.c' l='806' u='c' c='sentinelCollectTerminatedScripts'/>
+<use f='codebrowser/src/sentinel.c' l='830' u='c' c='sentinelCollectTerminatedScripts'/>
+<use f='codebrowser/src/sentinel.c' l='854' u='c' c='sentinelKillTimedoutScripts'/>
+<use f='codebrowser/src/sentinel.c' l='1085' u='c' c='sentinelUpdateSentinelAddressInAllMasters'/>
+<use f='codebrowser/src/sentinel.c' l='1428' u='c' c='sentinelResetMaster'/>
+<use f='codebrowser/src/sentinel.c' l='1506' u='c' c='sentinelResetMasterAndChangeAddress'/>
+<use f='codebrowser/src/sentinel.c' l='1916' u='c' c='sentinelReconnectInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1939' u='c' c='sentinelReconnectInstance'/>
+<use f='codebrowser/src/sentinel.c' l='2013' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2054' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2124' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2161' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2165' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2185' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2208' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2226' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2235' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2350' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='2361' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='2372' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='2387' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='2399' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='2400' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='3051' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3066' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3368' u='c' c='sentinelSetCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3452' u='c' c='sentinelCheckSubjectivelyDown'/>
+<use f='codebrowser/src/sentinel.c' l='3459' u='c' c='sentinelCheckSubjectivelyDown'/>
+<use f='codebrowser/src/sentinel.c' l='3493' u='c' c='sentinelCheckObjectivelyDown'/>
+<use f='codebrowser/src/sentinel.c' l='3500' u='c' c='sentinelCheckObjectivelyDown'/>
+<use f='codebrowser/src/sentinel.c' l='3612' u='c' c='sentinelVoteLeader'/>
+<use f='codebrowser/src/sentinel.c' l='3622' u='c' c='sentinelVoteLeader'/>
+<use f='codebrowser/src/sentinel.c' l='3802' u='c' c='sentinelStartFailover'/>
+<use f='codebrowser/src/sentinel.c' l='3804' u='c' c='sentinelStartFailover'/>
+<use f='codebrowser/src/sentinel.c' l='3975' u='c' c='sentinelFailoverWaitStart'/>
+<use f='codebrowser/src/sentinel.c' l='3980' u='c' c='sentinelFailoverWaitStart'/>
+<use f='codebrowser/src/sentinel.c' l='3985' u='c' c='sentinelFailoverWaitStart'/>
+<use f='codebrowser/src/sentinel.c' l='3994' u='c' c='sentinelFailoverSelectSlave'/>
+<use f='codebrowser/src/sentinel.c' l='3997' u='c' c='sentinelFailoverSelectSlave'/>
+<use f='codebrowser/src/sentinel.c' l='4002' u='c' c='sentinelFailoverSelectSlave'/>
+<use f='codebrowser/src/sentinel.c' l='4015' u='c' c='sentinelFailoverSendSlaveOfNoOne'/>
+<use f='codebrowser/src/sentinel.c' l='4027' u='c' c='sentinelFailoverSendSlaveOfNoOne'/>
+<use f='codebrowser/src/sentinel.c' l='4039' u='c' c='sentinelFailoverWaitPromotion'/>
+<use f='codebrowser/src/sentinel.c' l='4071' u='c' c='sentinelFailoverDetectEnd'/>
+<use f='codebrowser/src/sentinel.c' l='4075' u='c' c='sentinelFailoverDetectEnd'/>
+<use f='codebrowser/src/sentinel.c' l='4099' u='c' c='sentinelFailoverDetectEnd'/>
+<use f='codebrowser/src/sentinel.c' l='4141' u='c' c='sentinelFailoverReconfNextSlave'/>
+<use f='codebrowser/src/sentinel.c' l='4158' u='c' c='sentinelFailoverReconfNextSlave'/>
+<use f='codebrowser/src/sentinel.c' l='4175' u='c' c='sentinelFailoverSwitchToPromotedSlave'/>
+<use f='codebrowser/src/sentinel.c' l='4243' u='c' c='sentinelHandleRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='4316' u='c' c='sentinelCheckTiltCondition'/>
+<doc f='codebrowser/src/sentinel.c' l='558'>/* Send an event to log, pub/sub, user notification script.
+ *
+ * &apos;level&apos; is the log level for logging. Only LL_WARNING events will trigger
+ * the execution of the user notification script.
+ *
+ * &apos;type&apos; is the message type, also used as a pub/sub channel name.
+ *
+ * &apos;ri&apos;, is the redis instance target of this event if applicable, and is
+ * used to obtain the path of the notification script to execute.
+ *
+ * The remaining arguments are printf-alike.
+ * If the format specifier starts with the two characters &quot;%@&quot; then ri is
+ * not NULL, and the message is prefixed with an instance identifier in the
+ * following format:
+ *
+ *  &lt;instance type&gt; &lt;instance name&gt; &lt;ip&gt; &lt;port&gt;
+ *
+ *  If the instance type is not master, than the additional string is
+ *  added to specify the originating master:
+ *
+ *  @ &lt;master name&gt; &lt;master ip&gt; &lt;master port&gt;
+ *
+ *  Any other specifier after &quot;%@&quot; is processed by printf itself.
+ */</doc>

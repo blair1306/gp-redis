@@ -1,0 +1,47 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='237' type='sds sdscatfmt(sds s, const char * fmt)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='507' u='c' c='redisFormatSdsCommandArgv'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='510' u='c' c='redisFormatSdsCommandArgv'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='579' ll='665' type='sds sdscatfmt(sds s, const char * fmt)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='563'>/* This function is similar to sdscatprintf, but much faster as it does
+ * not rely on sprintf() family functions implemented by the libc that
+ * are often very slow. Moreover directly handling the sds string as
+ * new data is concatenated provides a performance improvement.
+ *
+ * However this function only handles an incompatible subset of printf-alike
+ * format specifiers:
+ *
+ * %s - C String
+ * %S - SDS string
+ * %i - signed int
+ * %I - 64 bit signed integer (long long, int64_t)
+ * %u - unsigned int
+ * %U - 64 bit unsigned integer (unsigned long long, uint64_t)
+ * %% - Verbatim &quot;%&quot; character.
+ */</doc>
+<dec f='codebrowser/src/sds.h' l='237' type='sds sdscatfmt(sds s, const char * fmt)'/>
+<use f='codebrowser/src/networking.c' l='1517' u='c' c='catClientInfoString'/>
+<use f='codebrowser/src/redis-cli.c' l='642' u='c' c='sdscatcolor'/>
+<use f='codebrowser/src/scripting.c' l='1564' u='c' c='ldbSendLogs'/>
+<use f='codebrowser/src/scripting.c' l='2099' u='c' c='ldbBreak'/>
+<use f='codebrowser/src/scripting.c' l='2110' u='c' c='ldbBreak'/>
+<use f='codebrowser/src/scripting.c' l='2147' u='c' c='ldbEval'/>
+<use f='codebrowser/src/scripting.c' l='2158' u='c' c='ldbEval'/>
+<def f='codebrowser/src/sds.c' l='582' ll='670' type='sds sdscatfmt(sds s, const char * fmt)'/>
+<doc f='codebrowser/src/sds.c' l='566'>/* This function is similar to sdscatprintf, but much faster as it does
+ * not rely on sprintf() family functions implemented by the libc that
+ * are often very slow. Moreover directly handling the sds string as
+ * new data is concatenated provides a performance improvement.
+ *
+ * However this function only handles an incompatible subset of printf-alike
+ * format specifiers:
+ *
+ * %s - C String
+ * %S - SDS string
+ * %i - signed int
+ * %I - 64 bit signed integer (long long, int64_t)
+ * %u - unsigned int
+ * %U - 64 bit unsigned integer (unsigned long long, uint64_t)
+ * %% - Verbatim &quot;%&quot; character.
+ */</doc>
+<use f='codebrowser/src/sentinel.c' l='3080' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3084' u='c' c='sentinelCommand'/>

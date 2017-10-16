@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/linenoise/linenoise.c' l='665' ll='670' type='void linenoiseEditMoveLeft(struct linenoiseState * l)'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='855' u='c' c='linenoiseEdit'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='897' u='c' c='linenoiseEdit'/>
+<doc f='codebrowser/deps/linenoise/linenoise.c' l='664'>/* Move cursor on the left. */</doc>

@@ -1,0 +1,11 @@
+<dec f='include/x86_64-linux-gnu/bits/string2.h' l='1278' type='char * __strdup(const char * __string)'/>
+<use f='codebrowser/deps/hiredis/net.c' l='291' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='317' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='441' macro='1' u='c'/>
+<use f='codebrowser/src/redis-benchmark.c' l='499' macro='1' u='c'/>
+<use f='codebrowser/src/redis-benchmark.c' l='505' macro='1' u='c'/>
+<use f='codebrowser/src/redis-benchmark.c' l='508' macro='1' u='c'/>
+<use f='codebrowser/src/setproctitle.c' l='138' macro='1' u='c'/>
+<use f='codebrowser/src/setproctitle.c' l='173' macro='1' u='c'/>
+<use f='codebrowser/src/setproctitle.c' l='177' macro='1' u='c'/>
+<use f='codebrowser/src/setproctitle.c' l='182' macro='1' u='c'/>

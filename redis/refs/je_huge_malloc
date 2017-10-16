@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/huge.h' l='12' macro='1' type='void * je_huge_malloc(tsd_t * tsd, arena_t * arena, size_t size, _Bool zero, tcache_t * tcache)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1188' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2375' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/huge.c' l='34' macro='1' type='void * je_huge_malloc(tsd_t * tsd, arena_t * arena, size_t size, _Bool zero, tcache_t * tcache)'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='327' macro='1' u='c'/>

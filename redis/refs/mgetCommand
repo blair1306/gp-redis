@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1887' type='void mgetCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='147' u='r'/>
+<use f='codebrowser/src/server.c' l='147' u='r'/>
+<use f='codebrowser/src/server.c' l='147' u='r'/>
+<use f='codebrowser/src/server.c' l='147' u='r'/>
+<def f='codebrowser/src/t_string.c' l='285' ll='301' type='void mgetCommand(client * c)'/>

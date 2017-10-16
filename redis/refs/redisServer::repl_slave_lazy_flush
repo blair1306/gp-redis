@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1108' type='int'/>
+<offset>20096</offset>
+<doc f='codebrowser/src/server.h' l='1108'>/* Lazy FLUSHALL before loading DB? */</doc>
+<use f='codebrowser/src/config.c' l='423' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1031' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1313' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2037' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/replication.c' l='1259' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/server.c' l='1463' u='w' c='initServerConfig'/>

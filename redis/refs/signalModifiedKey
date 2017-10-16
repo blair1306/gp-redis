@@ -1,0 +1,62 @@
+<dec f='codebrowser/src/server.h' l='1733' type='void signalModifiedKey(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/bitops.c' l='557' u='c' c='setbitCommand'/>
+<use f='codebrowser/src/bitops.c' l='761' u='c' c='bitopCommand'/>
+<use f='codebrowser/src/bitops.c' l='1120' u='c' c='bitfieldCommand'/>
+<use f='codebrowser/src/cluster.c' l='4745' u='c' c='restoreCommand'/>
+<use f='codebrowser/src/cluster.c' l='5048' u='c' c='migrateCommand'/>
+<use f='codebrowser/src/db.c' l='204' u='c' c='setKey'/>
+<def f='codebrowser/src/db.c' l='355' ll='357' type='void signalModifiedKey(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/db.c' l='436' u='c' c='delGenericCommand'/>
+<use f='codebrowser/src/db.c' l='861' u='c' c='renameGenericCommand'/>
+<use f='codebrowser/src/db.c' l='862' u='c' c='renameGenericCommand'/>
+<doc f='codebrowser/src/db.c' l='346'>/*-----------------------------------------------------------------------------
+ * Hooks for key space changes.
+ *
+ * Every time a key in the database is modified the function
+ * signalModifiedKey() is called.
+ *
+ * Every time a DB is flushed the function signalFlushDb() is called.
+ *----------------------------------------------------------------------------*/</doc>
+<use f='codebrowser/src/debug.c' l='480' u='c' c='debugCommand'/>
+<use f='codebrowser/src/expire.c' l='416' u='c' c='expireGenericCommand'/>
+<use f='codebrowser/src/expire.c' l='423' u='c' c='expireGenericCommand'/>
+<use f='codebrowser/src/geo.c' l='666' u='c' c='georadiusGeneric'/>
+<use f='codebrowser/src/hyperloglog.c' l='1180' u='c' c='pfaddCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1271' u='c' c='pfcountCommand'/>
+<use f='codebrowser/src/hyperloglog.c' l='1331' u='c' c='pfmergeCommand'/>
+<use f='codebrowser/src/module.c' l='1392' u='c' c='RM_CloseKey'/>
+<use f='codebrowser/src/sort.c' l='573' u='c' c='sortCommand'/>
+<use f='codebrowser/src/t_hash.c' l='524' u='c' c='hsetnxCommand'/>
+<use f='codebrowser/src/t_hash.c' l='554' u='c' c='hsetCommand'/>
+<use f='codebrowser/src/t_hash.c' l='589' u='c' c='hincrbyCommand'/>
+<use f='codebrowser/src/t_hash.c' l='624' u='c' c='hincrbyfloatCommand'/>
+<use f='codebrowser/src/t_hash.c' l='720' u='c' c='hdelCommand'/>
+<use f='codebrowser/src/t_list.c' l='220' u='c' c='pushGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='250' u='c' c='pushxGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='295' u='c' c='linsertCommand'/>
+<use f='codebrowser/src/t_list.c' l='358' u='c' c='lsetCommand'/>
+<use f='codebrowser/src/t_list.c' l='385' u='c' c='popGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='485' u='c' c='ltrimCommand'/>
+<use f='codebrowser/src/t_list.c' l='522' u='c' c='lremCommand'/>
+<use f='codebrowser/src/t_list.c' l='558' u='c' c='rpoplpushHandlePush'/>
+<use f='codebrowser/src/t_list.c' l='596' u='c' c='rpoplpushCommand'/>
+<use f='codebrowser/src/t_list.c' l='912' u='c' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='283' u='c' c='saddCommand'/>
+<use f='codebrowser/src/t_set.c' l='308' u='c' c='sremCommand'/>
+<use f='codebrowser/src/t_set.c' l='361' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='362' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='447' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='551' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='604' u='c' c='spopCommand'/>
+<use f='codebrowser/src/t_set.c' l='807' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='907' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1081' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_string.c' l='236' u='c' c='setrangeCommand'/>
+<use f='codebrowser/src/t_string.c' l='371' u='c' c='incrDecrCommand'/>
+<use f='codebrowser/src/t_string.c' l='421' u='c' c='incrbyfloatCommand'/>
+<use f='codebrowser/src/t_string.c' l='462' u='c' c='appendCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1602' u='c' c='zaddGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1637' u='c' c='zremCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1735' u='c' c='zremrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2335' u='c' c='zunionInterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2344' u='c' c='zunionInterGenericCommand'/>

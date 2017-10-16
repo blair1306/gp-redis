@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1734' type='void signalFlushedDb(int dbid)'/>
+<def f='codebrowser/src/db.c' l='359' ll='361' type='void signalFlushedDb(int dbid)'/>
+<use f='codebrowser/src/db.c' l='396' u='c' c='flushdbCommand'/>
+<use f='codebrowser/src/db.c' l='408' u='c' c='flushallCommand'/>
+<use f='codebrowser/src/replication.c' l='1256' u='c' c='readSyncBulkPayload'/>

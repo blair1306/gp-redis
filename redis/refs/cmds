@@ -1,0 +1,10 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='882' ll='888' type='const struct luaL_Reg [5]'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='896' u='r' c='luaopen_create'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='896' u='r' c='luaopen_create'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='897' u='m' c='luaopen_create'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='898' u='m' c='luaopen_create'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='931' u='r' c='luaopen_cmsgpack_safe'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='931' u='r' c='luaopen_cmsgpack_safe'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='932' u='m' c='luaopen_cmsgpack_safe'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='934' u='m' c='luaopen_cmsgpack_safe'/>
+<doc f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='881'>/* -------------------------------------------------------------------------- */</doc>

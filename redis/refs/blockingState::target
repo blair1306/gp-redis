@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='644' type='robj *'/>
+<offset>128</offset>
+<doc f='codebrowser/src/server.h' l='644'>/* The key that should receive the element,
+                             * for BRPOPLPUSH. */</doc>
+<use f='codebrowser/src/networking.c' l='128' u='w' c='createClient'/>
+<use f='codebrowser/src/t_list.c' l='631' u='w' c='blockForKeys'/>
+<use f='codebrowser/src/t_list.c' l='683' u='r' c='unblockClientWaitingData'/>
+<use f='codebrowser/src/t_list.c' l='684' u='r' c='unblockClientWaitingData'/>
+<use f='codebrowser/src/t_list.c' l='685' u='w' c='unblockClientWaitingData'/>
+<use f='codebrowser/src/t_list.c' l='833' u='r' c='handleClientsBlockedOnLists'/>

@@ -1,0 +1,11 @@
+<dec f='include/features.h' l='358'/>
+<doc f='include/features.h' l='356'>/* Major and minor version number of the GNU C library package.  Use
+   these macros to test for features in specific releases.  */</doc>
+<use f='codebrowser/deps/hiredis/net.c' l='144' u='a'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='87' u='a'/>
+<use f='codebrowser/src/config.h' l='65' u='a'/>
+<use f='codebrowser/src/config.h' l='100' u='a'/>
+<use f='codebrowser/src/config.h' l='124' u='a'/>
+<use f='codebrowser/src/config.h' l='202' u='a'/>
+<use f='codebrowser/src/setproctitle.c' l='80' u='c'/>
+<use f='codebrowser/src/setproctitle.c' l='176' u='c'/>

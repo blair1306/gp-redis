@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/cluster.h' l='138' type='dict *'/>
+<use f='codebrowser/src/cluster.c' l='417' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='1107' u='r' c='clusterBlacklistCleanup'/>
+<use f='codebrowser/src/cluster.c' l='1112' u='r' c='clusterBlacklistCleanup'/>
+<use f='codebrowser/src/cluster.c' l='1123' u='r' c='clusterBlacklistAddNode'/>
+<use f='codebrowser/src/cluster.c' l='1128' u='r' c='clusterBlacklistAddNode'/>
+<use f='codebrowser/src/cluster.c' l='1141' u='r' c='clusterBlacklistExists'/>
+<offset>256</offset>
+<doc f='codebrowser/src/cluster.h' l='138'>/* Nodes we don&apos;t re-add for a few seconds. */</doc>

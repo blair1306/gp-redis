@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1215' type='char *'/>
+<offset>192</offset>
+<doc f='codebrowser/src/server.h' l='1215'>/* Flags as string representation, one char per flag. */</doc>
+<use f='codebrowser/src/server.c' l='1962' u='r' c='populateCommandTable'/>

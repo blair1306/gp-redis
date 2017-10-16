@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/pages.h' l='13' macro='1' type='void je_pages_unmap(void * addr, size_t size)'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_mmap.c' l='61' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_mmap.c' l='77' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/pages.c' l='35' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/pages.c' l='45' macro='1' type='void je_pages_unmap(void * addr, size_t size)'/>
+<use f='codebrowser/deps/jemalloc/src/pages.c' l='92' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/pages.c' l='94' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/pages.c' l='122' macro='1' u='c'/>

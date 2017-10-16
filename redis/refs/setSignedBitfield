@@ -1,0 +1,2 @@
+<def f='codebrowser/src/bitops.c' l='224' ll='227' type='void setSignedBitfield(unsigned char * p, uint64_t offset, uint64_t bits, int64_t value)'/>
+<use f='codebrowser/src/bitops.c' l='1047' u='c' c='bitfieldCommand'/>

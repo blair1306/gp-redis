@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/socket.h' l='233' type='struct iovec *'/>
+<offset>128</offset>
+<doc f='include/x86_64-linux-gnu/bits/socket.h' l='233'>/* Vector of data to send/receive into.  */</doc>
+<use f='codebrowser/src/server.c' l='3639' u='w' c='redisSupervisedSystemd'/>

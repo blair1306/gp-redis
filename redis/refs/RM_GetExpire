@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='1450' ll='1455' type='mstime_t RM_GetExpire(RedisModuleKey * key)'/>
+<use f='codebrowser/src/module.c' l='3947' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1447'>/* Return the key expire value, as milliseconds of remaining TTL.
+ * If no TTL is associated with the key or if the key is empty,
+ * REDISMODULE_NO_EXPIRE is returned. */</doc>

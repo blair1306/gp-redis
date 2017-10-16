@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1704' type='int removeExpire(redisDb * db, robj * key)'/>
+<doc f='codebrowser/src/server.h' l='1703'>/* db.c -- Keyspace access API */</doc>
+<use f='codebrowser/src/db.c' l='203' u='c' c='setKey'/>
+<def f='codebrowser/src/db.c' l='1023' ll='1028' type='int removeExpire(redisDb * db, robj * key)'/>
+<doc f='codebrowser/src/db.c' l='1019'>/*-----------------------------------------------------------------------------
+ * Expires API
+ *----------------------------------------------------------------------------*/</doc>
+<use f='codebrowser/src/expire.c' l='486' u='c' c='persistCommand'/>
+<use f='codebrowser/src/module.c' l='1473' u='c' c='RM_SetExpire'/>

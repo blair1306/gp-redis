@@ -1,0 +1,18 @@
+<dec f='include/ctype.h' l='124' type='int tolower(int __c)'/>
+<def f='include/ctype.h' l='214' ll='218' macro='1' type='int tolower(int __c)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='378' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/async.c' l='604' macro='1' u='c'/>
+<doc f='include/ctype.h' l='123'>/* Return the lowercase version of C.  */</doc>
+<use f='codebrowser/deps/hiredis/sds.c' l='744' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='75' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='228' macro='1' u='c'/>
+<use f='codebrowser/src/sds.c' l='749' macro='1' u='c'/>
+<use f='codebrowser/src/server.c' l='2468' macro='1' u='c'/>
+<use f='codebrowser/src/server.c' l='2471' macro='1' u='c'/>
+<use f='codebrowser/src/util.c' l='108' macro='1' u='c'/>
+<use f='codebrowser/src/util.c' l='109' macro='1' u='c'/>
+<use f='codebrowser/src/util.c' l='110' macro='1' u='c'/>
+<use f='codebrowser/src/util.c' l='121' macro='1' u='c'/>
+<use f='codebrowser/src/util.c' l='121' macro='1' u='c'/>
+<use f='codebrowser/src/util.c' l='147' macro='1' u='c'/>
+<use f='codebrowser/src/util.c' l='147' macro='1' u='c'/>

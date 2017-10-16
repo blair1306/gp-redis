@@ -1,0 +1,11 @@
+<def f='codebrowser/src/rax.c' l='186' ll='196' type='void raxSetData(raxNode * n, void * data)'/>
+<use f='codebrowser/src/rax.c' l='339' u='c' c='raxCompressNode'/>
+<use f='codebrowser/src/rax.c' l='439' u='c' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='443' u='c' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='631' u='c' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='643' u='c' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='711' u='c' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='725' u='c' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='776' u='c' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='841' u='c' c='raxRemoveChild'/>
+<doc f='codebrowser/src/rax.c' l='185'>/* Set the node auxiliary data to the specified pointer. */</doc>

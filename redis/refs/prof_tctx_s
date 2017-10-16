@@ -1,0 +1,12 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='88' ll='137'/>
+<size>128</size>
+<mbr r='prof_tctx_s::tdata' o='0' t='prof_tdata_t *'/>
+<mbr r='prof_tctx_s::thr_uid' o='64' t='uint64_t'/>
+<mbr r='prof_tctx_s::thr_discrim' o='128' t='uint64_t'/>
+<mbr r='prof_tctx_s::cnts' o='192' t='prof_cnt_t'/>
+<mbr r='prof_tctx_s::gctx' o='448' t='prof_gctx_t *'/>
+<mbr r='prof_tctx_s::tctx_uid' o='512' t='uint64_t'/>
+<mbr r='prof_tctx_s::tctx_link' o='576' t='struct (anonymous struct at /home/jon/workspace/redis/deps/jemalloc/include/jemalloc/internal/prof.h:121:2)'/>
+<mbr r='prof_tctx_s::prepared' o='704' t='_Bool'/>
+<mbr r='prof_tctx_s::state' o='736' t='prof_tctx_state_t'/>
+<mbr r='prof_tctx_s::dump_cnts' o='768' t='prof_cnt_t'/>

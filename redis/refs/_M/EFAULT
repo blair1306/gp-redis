@@ -1,0 +1,14 @@
+<dec f='include/asm-generic/errno-base.h' l='17'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1312' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1472' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1500' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1527' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1621' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1628' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1653' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1667' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1699' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1791' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1928' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1970' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1974' u='c'/>

@@ -1,0 +1,33 @@
+<dec f='codebrowser/src/server.h' l='1725' type='int dbDelete(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/bitops.c' l='760' u='c' c='bitopCommand'/>
+<use f='codebrowser/src/cluster.c' l='4740' u='c' c='restoreCommand'/>
+<use f='codebrowser/src/cluster.c' l='5047' u='c' c='migrateCommand'/>
+<def f='codebrowser/src/db.c' l='252' ll='255' type='int dbDelete(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/db.c' l='856' u='c' c='renameGenericCommand'/>
+<use f='codebrowser/src/db.c' l='860' u='c' c='renameGenericCommand'/>
+<use f='codebrowser/src/db.c' l='929' u='c' c='moveCommand'/>
+<use f='codebrowser/src/db.c' l='1428' u='c' c='delKeysInSlot'/>
+<doc f='codebrowser/src/db.c' l='250'>/* This is a wrapper whose behavior depends on the Redis lazy free
+ * configuration. Deletes the key synchronously or asynchronously. */</doc>
+<use f='codebrowser/src/geo.c' l='665' u='c' c='georadiusGeneric'/>
+<use f='codebrowser/src/module.c' l='392' u='c' c='moduleDelKeyIfEmpty'/>
+<use f='codebrowser/src/module.c' l='1441' u='c' c='RM_DeleteKey'/>
+<use f='codebrowser/src/sort.c' l='572' u='c' c='sortCommand'/>
+<use f='codebrowser/src/t_hash.c' l='713' u='c' c='hdelCommand'/>
+<use f='codebrowser/src/t_list.c' l='383' u='c' c='popGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='482' u='c' c='ltrimCommand'/>
+<use f='codebrowser/src/t_list.c' l='527' u='c' c='lremCommand'/>
+<use f='codebrowser/src/t_list.c' l='592' u='c' c='rpoplpushCommand'/>
+<use f='codebrowser/src/t_list.c' l='864' u='c' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_list.c' l='908' u='c' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='301' u='c' c='sremCommand'/>
+<use f='codebrowser/src/t_set.c' l='351' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='442' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='599' u='c' c='spopCommand'/>
+<use f='codebrowser/src/t_set.c' l='806' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='894' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1067' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1627' u='c' c='zremCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1707' u='c' c='zremrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1725' u='c' c='zremrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2329' u='c' c='zunionInterGenericCommand'/>

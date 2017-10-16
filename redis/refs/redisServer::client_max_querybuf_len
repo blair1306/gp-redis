@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='982' type='size_t'/>
+<offset>13312</offset>
+<doc f='codebrowser/src/server.h' l='982'>/* Limit for client query buffer length */</doc>
+<use f='codebrowser/src/networking.c' l='1402' u='r' c='readQueryFromClient'/>
+<use f='codebrowser/src/server.c' l='1372' u='w' c='initServerConfig'/>

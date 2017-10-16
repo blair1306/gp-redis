@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/rio.h' l='79' type='int *'/>
+<offset>64</offset>
+<doc f='codebrowser/src/rio.h' l='79'>/* Error state of each fd. 0 (if ok) or errno. */</doc>
+<use f='codebrowser/src/rdb.c' l='1911' u='r' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/rio.c' l='195' u='r' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='219' u='r' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='220' u='r' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='220' u='r' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='271' u='w' c='rioInitWithFdset'/>
+<use f='codebrowser/src/rio.c' l='273' u='r' c='rioInitWithFdset'/>
+<use f='codebrowser/src/rio.c' l='282' u='r' c='rioFreeFdset'/>

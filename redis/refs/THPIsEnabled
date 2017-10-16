@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/latency.h' l='66' type='int THPIsEnabled()'/>
+<def f='codebrowser/src/latency.c' l='64' ll='75' type='int THPIsEnabled()'/>
+<doc f='codebrowser/src/latency.c' l='62'>/* Returns 1 if Transparent Huge Pages support is enabled in the kernel.
+ * Otherwise (or if we are unable to check) 0 is returned. */</doc>
+<use f='codebrowser/src/server.c' l='3356' u='c' c='linuxMemoryWarnings'/>

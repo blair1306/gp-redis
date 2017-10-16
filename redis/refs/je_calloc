@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='54' type='void * je_calloc(size_t num, size_t size)'/>
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1619' macro='1' type='void * je_calloc(size_t num, size_t size)'/>
+<use f='codebrowser/src/zmalloc.c' l='66' u='c' c='zcalloc'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1317' type='void moduleBlockedClientTimedOut(client * c)'/>
+<use f='codebrowser/src/blocked.c' l='166' u='c' c='replyToBlockedClientTimedOut'/>
+<def f='codebrowser/src/module.c' l='3550' ll='3558' type='void moduleBlockedClientTimedOut(client * c)'/>
+<doc f='codebrowser/src/module.c' l='3546'>/* Called when our client timed out. After this function unblockClient()
+ * is called, and it will invalidate the blocked client. So this function
+ * does not need to do any cleanup. Eventually the module will call the
+ * API to unblock the client and the memory will be released. */</doc>

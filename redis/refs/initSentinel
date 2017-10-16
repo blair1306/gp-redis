@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1769' type='void initSentinel()'/>
+<def f='codebrowser/src/sentinel.c' l='446' ll='472' type='void initSentinel()'/>
+<doc f='codebrowser/src/sentinel.c' l='445'>/* Perform the Sentinel mode initialization. */</doc>
+<use f='codebrowser/src/server.c' l='3732' u='c' c='main'/>

@@ -1,0 +1,13 @@
+<def f='codebrowser/src/redis-cli.c' l='2294' ll='2316' type='void bytesToHuman(char * s, long long n)'/>
+<use f='codebrowser/src/redis-cli.c' l='2354' u='c' c='statMode'/>
+<doc f='codebrowser/src/redis-cli.c' l='2292'>/* Convert number of bytes into a human readable string of the form:
+ * 100B, 2G, 100M, 4K, and so forth. */</doc>
+<def f='codebrowser/src/server.c' l='2773' ll='2799' type='void bytesToHuman(char * s, unsigned long long n)'/>
+<use f='codebrowser/src/server.c' l='2922' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2923' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2924' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2925' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2926' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='2927' u='c' c='genRedisInfoString'/>
+<doc f='codebrowser/src/server.c' l='2771'>/* Convert an amount of bytes into a human readable string in the form
+ * of 100B, 2G, 100M, 4K, and so forth. */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='322' macro='1' type='void je_prof_sample_threshold_update(prof_tdata_t * tdata)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='455' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='212' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='827' macro='1' type='void je_prof_sample_threshold_update(prof_tdata_t * tdata)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1737' macro='1' u='c'/>

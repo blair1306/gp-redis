@@ -1,0 +1,6 @@
+<def f='codebrowser/deps/linenoise/linenoise.c' l='451' ll='454'/>
+<size>16</size>
+<doc f='codebrowser/deps/linenoise/linenoise.c' l='447'>/* We define a very simple &quot;append buffer&quot; structure, that is an heap
+ * allocated string where we can append to. This is useful in order to
+ * write all the escape sequences in a buffer and flush them to the standard
+ * output in a single call, to avoid flickering effects. */</doc>

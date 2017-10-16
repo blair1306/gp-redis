@@ -1,0 +1,4 @@
+<def f='codebrowser/src/config.c' l='58' ll='69' type='configEnum [10]'/>
+<use f='codebrowser/src/config.c' l='299' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1325' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1698' u='r' c='rewriteConfigSyslogfacilityOption'/>

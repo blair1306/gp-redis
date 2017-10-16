@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/quicklist.h' l='126' type='void quicklistPush(quicklist * quicklist, void * value, const size_t sz, int where)'/>
+<def f='codebrowser/src/quicklist.c' l='1404' ll='1411' type='void quicklistPush(quicklist * quicklist, void * value, const size_t sz, int where)'/>
+<doc f='codebrowser/src/quicklist.c' l='1403'>/* Wrapper to allow argument-based switching between HEAD/TAIL pop */</doc>
+<use f='codebrowser/src/t_list.c' l='46' u='c' c='listTypePush'/>

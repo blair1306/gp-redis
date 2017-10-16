@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/dict.h' l='94' type='long long'/>
+<offset>320</offset>
+<doc f='codebrowser/src/dict.h' l='93'>/* unsafe iterator fingerprint for misuse detection. */</doc>
+<use f='codebrowser/src/dict.c' l='571' u='w' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='603' u='r' c='dictReleaseIterator'/>

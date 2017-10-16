@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/rdb.h' l='132' type='int rdbSaveBackground(char * filename, rdbSaveInfo * rsi)'/>
+<def f='codebrowser/src/rdb.c' l='1047' ll='1098' type='int rdbSaveBackground(char * filename, rdbSaveInfo * rsi)'/>
+<use f='codebrowser/src/rdb.c' l='2014' u='c' c='bgsaveCommand'/>
+<use f='codebrowser/src/replication.c' l='580' u='c' c='startBgsaveForReplication'/>
+<use f='codebrowser/src/server.c' l='1097' u='c' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1171' u='c' c='serverCron'/>

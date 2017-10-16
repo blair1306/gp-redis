@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='74' type='void *'/>
+<use f='codebrowser/deps/hiredis/async.c' l='123' u='w' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='51' u='r' c='redisAsyncSetConnectCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='57' u='r' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='45' u='r' c='redisAsyncHandleRead'/>
+<use f='codebrowser/deps/hiredis/async.c' l='51' u='r' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='54' u='r' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='45' u='r' c='redisAsyncHandleWrite'/>
+<use f='codebrowser/deps/hiredis/async.c' l='51' u='r' c='__redisAsyncCommand'/>
+<offset>0</offset>
+<use f='codebrowser/src/sentinel.c' l='333' u='r' c='redisAeAttach'/>
+<use f='codebrowser/src/sentinel.c' l='349' u='w' c='redisAeAttach'/>

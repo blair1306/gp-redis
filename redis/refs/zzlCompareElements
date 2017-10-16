@@ -1,0 +1,3 @@
+<def f='codebrowser/src/t_zset.c' l='706' ll='724' type='int zzlCompareElements(unsigned char * eptr, unsigned char * cstr, unsigned int clen)'/>
+<use f='codebrowser/src/t_zset.c' l='1018' u='c' c='zzlInsert'/>
+<doc f='codebrowser/src/t_zset.c' l='705'>/* Compare element in sorted set with given element. */</doc>

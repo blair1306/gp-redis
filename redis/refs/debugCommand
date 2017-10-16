@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1900' type='void debugCommand(client * c)'/>
+<def f='codebrowser/src/debug.c' l='264' ll='556' type='void debugCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='261' u='r'/>
+<use f='codebrowser/src/server.c' l='261' u='r'/>
+<use f='codebrowser/src/server.c' l='261' u='r'/>
+<use f='codebrowser/src/server.c' l='261' u='r'/>

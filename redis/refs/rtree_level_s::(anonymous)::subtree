@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='70' type='rtree_node_elm_t *'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='217' u='r' c='je_rtree_subtree_tryread'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='35' u='w' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='41' u='w' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='48' u='w' c='je_rtree_new'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='85' u='r' c='je_rtree_delete'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='119' u='a' c='je_rtree_subtree_read_hard'/>

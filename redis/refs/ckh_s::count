@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='48' type='size_t'/>
+<offset>64</offset>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='109' u='w' c='ckh_try_bucket_insert'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='228' u='r' c='ckh_rebuild'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='229' u='w' c='ckh_rebuild'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='235' u='w' c='ckh_rebuild'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='369' u='w' c='je_ckh_new'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='435' u='r' c='je_ckh_count'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='499' u='w' c='je_ckh_remove'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='501' u='r' c='je_ckh_remove'/>

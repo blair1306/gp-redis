@@ -1,0 +1,9 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='136' ll='138' type='const _Bool'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1227' u='r' c='je_arena_salloc'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1280' u='r' c='je_arena_dalloc'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1330' u='r' c='je_arena_sdalloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2214' u='r' c='je_arena_malloc_large'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2368' u='r' c='je_arena_palloc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2682' u='r' c='arena_ralloc_large_grow'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3035' u='r' c='je_arena_new'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1244' u='r' c='config_cache_oblivious_ctl'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/ae.h' l='75' type='long long'/>
+<use f='codebrowser/src/ae.c' l='213' u='w' c='aeCreateTimeEvent'/>
+<use f='codebrowser/src/ae.c' l='227' u='r' c='aeDeleteTimeEvent'/>
+<use f='codebrowser/src/ae.c' l='228' u='w' c='aeDeleteTimeEvent'/>
+<use f='codebrowser/src/ae.c' l='294' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='312' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='322' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='328' u='w' c='processTimeEvents'/>
+<offset>0</offset>
+<doc f='codebrowser/src/ae.h' l='75'>/* time event identifier. */</doc>

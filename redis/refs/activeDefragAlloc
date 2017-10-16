@@ -1,0 +1,27 @@
+<def f='codebrowser/src/defrag.c' l='53' ll='76' type='void * activeDefragAlloc(void * ptr)'/>
+<use f='codebrowser/src/defrag.c' l='85' u='c' c='activeDefragSds'/>
+<use f='codebrowser/src/defrag.c' l='106' u='c' c='activeDefragStringOb'/>
+<use f='codebrowser/src/defrag.c' l='124' u='c' c='activeDefragStringOb'/>
+<use f='codebrowser/src/defrag.c' l='146' u='c' c='dictIterDefragEntry'/>
+<use f='codebrowser/src/defrag.c' l='156' u='c' c='dictIterDefragEntry'/>
+<use f='codebrowser/src/defrag.c' l='174' u='c' c='dictDefragTables'/>
+<use f='codebrowser/src/defrag.c' l='178' u='c' c='dictDefragTables'/>
+<use f='codebrowser/src/defrag.c' l='183' u='c' c='dictDefragTables'/>
+<use f='codebrowser/src/defrag.c' l='241' u='c' c='zslDefrag'/>
+<use f='codebrowser/src/defrag.c' l='260' u='c' c='replaceSateliteDictKeyPtrAndOrDefragDictEntry'/>
+<use f='codebrowser/src/defrag.c' l='309' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='312' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='324' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='329' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='348' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='356' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='363' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='365' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='367' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='390' u='c' c='defragKey'/>
+<use f='codebrowser/src/defrag.c' l='434' u='c' c='defragDictBucketCallback'/>
+<doc f='codebrowser/src/defrag.c' l='48'>/* Defrag helper for generic allocations.
+ *
+ * returns NULL in case the allocatoin wasn&apos;t moved.
+ * when it returns a non-null value, the old pointer was already released
+ * and should NOT be accessed. */</doc>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1010' type='int'/>
+<use f='codebrowser/src/aof.c' l='398' u='w' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='411' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='414' u='w' c='flushAppendOnlyFile'/>
+<offset>15136</offset>
+<doc f='codebrowser/src/server.h' l='1010'>/* C_OK or C_ERR */</doc>
+<use f='codebrowser/src/server.c' l='1128' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1888' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2394' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2400' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='3017' u='r' c='genRedisInfoString'/>

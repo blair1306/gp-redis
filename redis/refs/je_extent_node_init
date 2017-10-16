@@ -1,0 +1,10 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='196' macro='1' type='void je_extent_node_init(extent_node_t * node, arena_t * arena, void * addr, size_t size, _Bool zeroed, _Bool committed)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='579' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='69' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='93' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='195' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='226' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='291' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='481' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='519' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='82' macro='1' u='c'/>

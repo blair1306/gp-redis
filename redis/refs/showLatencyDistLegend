@@ -1,0 +1,4 @@
+<def f='codebrowser/src/redis-cli.c' l='1602' ll='1617' type='void showLatencyDistLegend()'/>
+<use f='codebrowser/src/redis-cli.c' l='1688' u='c' c='latencyDistMode'/>
+<doc f='codebrowser/src/redis-cli.c' l='1600'>/* Show the legend: different buckets values and colors meaning, so
+ * that the spectrum is more easily readable. */</doc>

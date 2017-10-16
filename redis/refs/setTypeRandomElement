@@ -1,0 +1,21 @@
+<dec f='codebrowser/src/server.h' l='1653' type='int setTypeRandomElement(robj * setobj, sds * sdsele, int64_t * llele)'/>
+<def f='codebrowser/src/t_set.c' l='208' ll='220' type='int setTypeRandomElement(robj * setobj, sds * sdsele, int64_t * llele)'/>
+<use f='codebrowser/src/t_set.c' l='477' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='507' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='575' u='c' c='spopCommand'/>
+<use f='codebrowser/src/t_set.c' l='654' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='721' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='768' u='c' c='srandmemberCommand'/>
+<doc f='codebrowser/src/t_set.c' l='195'>/* Return random element from a non empty set.
+ * The returned element can be a int64_t value if the set is encoded
+ * as an &quot;intset&quot; blob of integers, or an SDS string if the set
+ * is a regular set.
+ *
+ * The caller provides both pointers to be populated with the right
+ * object. The return value of the function is the object-&gt;encoding
+ * field of the object and is used by the caller to check if the
+ * int64_t pointer or the redis object pointer was populated.
+ *
+ * Note that both the sdsele and llele pointers should be passed and cannot
+ * be NULL since the function will try to defensively populate the non
+ * used field with values which are easy to trap if misused. */</doc>

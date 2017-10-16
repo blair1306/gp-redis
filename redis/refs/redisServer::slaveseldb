@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1062' type='int'/>
+<offset>17856</offset>
+<doc f='codebrowser/src/server.h' l='1062'>/* Last SELECTed DB in replication output */</doc>
+<use f='codebrowser/src/rdb.c' l='2037' u='r' c='rdbPopulateSaveInfo'/>
+<use f='codebrowser/src/replication.c' l='194' u='r' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/replication.c' l='224' u='w' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/replication.c' l='427' u='w' c='replicationSetupSlaveForFullResync'/>
+<use f='codebrowser/src/replication.c' l='1972' u='w' c='replicationUnsetMaster'/>
+<use f='codebrowser/src/replication.c' l='2549' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='1204' u='r' c='beforeSleep'/>
+<use f='codebrowser/src/server.c' l='1808' u='w' c='initServer'/>

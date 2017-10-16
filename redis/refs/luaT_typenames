@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/lua/src/ltm.h' l='46' type='const char *const []'/>
+<use f='codebrowser/deps/lua/src/lapi.c' l='250' u='r' c='lua_typename'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='569' u='r' c='luaG_typeerror'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='597' u='r' c='luaG_ordererror'/>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='598' u='r' c='luaG_ordererror'/>
+<def f='codebrowser/deps/lua/src/ltm.c' l='23' ll='27' type='const char *const [11]'/>

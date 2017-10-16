@@ -1,0 +1,24 @@
+<dec f='codebrowser/src/server.h' l='1403' type='unsigned long listTypeLength(const robj * subject)'/>
+<use f='codebrowser/src/aof.c' l='833' u='c' c='rewriteListObject'/>
+<use f='codebrowser/src/debug.c' l='609' u='c' c='serverLogObjectDebugInfo'/>
+<use f='codebrowser/src/module.c' l='384' u='c' c='moduleDelKeyIfEmpty'/>
+<use f='codebrowser/src/module.c' l='1426' u='c' c='RM_ValueLength'/>
+<use f='codebrowser/src/object.c' l='726' u='c' c='objectComputeSize'/>
+<use f='codebrowser/src/sort.c' l='310' u='c' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='357' u='c' c='sortCommand'/>
+<def f='codebrowser/src/t_list.c' l='74' ll='80' type='unsigned long listTypeLength(const robj * subject)'/>
+<use f='codebrowser/src/t_list.c' l='216' u='c' c='pushGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='246' u='c' c='pushxGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='305' u='c' c='linsertCommand'/>
+<use f='codebrowser/src/t_list.c' l='311' u='c' c='llenCommand'/>
+<use f='codebrowser/src/t_list.c' l='380' u='c' c='popGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='407' u='c' c='lrangeCommand'/>
+<use f='codebrowser/src/t_list.c' l='453' u='c' c='ltrimCommand'/>
+<use f='codebrowser/src/t_list.c' l='481' u='c' c='ltrimCommand'/>
+<use f='codebrowser/src/t_list.c' l='526' u='c' c='lremCommand'/>
+<use f='codebrowser/src/t_list.c' l='570' u='c' c='rpoplpushCommand'/>
+<use f='codebrowser/src/t_list.c' l='591' u='c' c='rpoplpushCommand'/>
+<use f='codebrowser/src/t_list.c' l='863' u='c' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_list.c' l='895' u='c' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='907' u='c' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='967' u='c' c='brpoplpushCommand'/>

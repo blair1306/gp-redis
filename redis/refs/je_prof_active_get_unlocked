@@ -1,0 +1,8 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='351' macro='1' type='_Bool je_prof_active_get_unlocked()'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1381' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1471' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1602' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1710' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2009' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2120' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2261' macro='1' u='c'/>

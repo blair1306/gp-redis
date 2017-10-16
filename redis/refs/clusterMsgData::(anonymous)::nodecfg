@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/cluster.h' l='226' type='clusterMsgDataUpdate'/>
+<use f='codebrowser/src/cluster.c' l='2027' u='m' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2030' u='m' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2045' u='m' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2527' u='m' c='clusterSendUpdate'/>
+<use f='codebrowser/src/cluster.c' l='2528' u='m' c='clusterSendUpdate'/>
+<use f='codebrowser/src/cluster.c' l='2529' u='m' c='clusterSendUpdate'/>
+<offset>0</offset>

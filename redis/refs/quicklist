@@ -1,0 +1,14 @@
+<def f='codebrowser/src/quicklist.h' l='73' ll='80'/>
+<size>32</size>
+<doc f='codebrowser/src/quicklist.h' l='67'>/* quicklist is a 32 byte struct (on 64-bit systems) describing a quicklist.
+ * &apos;count&apos; is the number of total entries.
+ * &apos;len&apos; is the number of quicklist nodes.
+ * &apos;compress&apos; is: -1 if compression disabled, otherwise it&apos;s the number
+ *                of quicklistNodes to leave uncompressed at ends of quicklist.
+ * &apos;fill&apos; is the user-requested (or default) fill factor. */</doc>
+<mbr r='quicklist::head' o='0' t='quicklistNode *'/>
+<mbr r='quicklist::tail' o='64' t='quicklistNode *'/>
+<mbr r='quicklist::count' o='128' t='unsigned long'/>
+<mbr r='quicklist::len' o='192' t='unsigned int'/>
+<mbr r='quicklist::fill' o='224' t='int'/>
+<mbr r='quicklist::compress' o='240' t='unsigned int'/>

@@ -1,0 +1,12 @@
+<def f='codebrowser/deps/hiredis/sds.h' l='153' ll='176' type='void sdsinclen(sds s, size_t inc)'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='610' u='c' c='sdscatfmt'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='626' u='c' c='sdscatfmt'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='643' u='c' c='sdscatfmt'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='649' u='c' c='sdscatfmt'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='655' u='c' c='sdscatfmt'/>
+<def f='codebrowser/src/sds.h' l='153' ll='176' type='void sdsinclen(sds s, size_t inc)'/>
+<use f='codebrowser/src/sds.c' l='615' u='c' c='sdscatfmt'/>
+<use f='codebrowser/src/sds.c' l='631' u='c' c='sdscatfmt'/>
+<use f='codebrowser/src/sds.c' l='648' u='c' c='sdscatfmt'/>
+<use f='codebrowser/src/sds.c' l='654' u='c' c='sdscatfmt'/>
+<use f='codebrowser/src/sds.c' l='660' u='c' c='sdscatfmt'/>

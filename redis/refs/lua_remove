@@ -1,0 +1,15 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='123' type='void lua_remove(lua_State * L, int idx)'/>
+<def f='codebrowser/deps/lua/src/lapi.c' l='180' ll='188' macro='1' type='void lua_remove(lua_State * L, int idx)'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='213' u='c' c='luaL_getmetafield'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='257' u='c' c='luaL_openlib'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='377' u='c' c='luaL_findtable'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='547' u='c' c='errfile'/>
+<use f='codebrowser/deps/lua/src/lauxlib.c' l='588' u='c' c='luaL_loadfile'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='91' u='c' c='treatstackoption'/>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='294' u='c' c='db_gethook'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='363' u='c' c='findfile'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='367' u='c' c='findfile'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='397' u='c' c='mkfuncname'/>
+<use f='codebrowser/deps/lua/src/loadlib.c' l='602' u='c' c='setpath'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='104' u='c' c='docall'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='211' u='c' c='loadline'/>

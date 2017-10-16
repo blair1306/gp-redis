@@ -1,0 +1,27 @@
+<dec f='codebrowser/src/server.h' l='1447' type='robj * getDecodedObject(robj * o)'/>
+<use f='codebrowser/src/aof.c' l='462' u='c' c='catAppendOnlyGenericCommand'/>
+<use f='codebrowser/src/aof.c' l='487' u='c' c='catAppendOnlyExpireAtCommand'/>
+<use f='codebrowser/src/bitops.c' l='649' u='c' c='bitopCommand'/>
+<use f='codebrowser/src/cluster.c' l='2469' u='c' c='clusterSendPublish'/>
+<use f='codebrowser/src/cluster.c' l='2470' u='c' c='clusterSendPublish'/>
+<use f='codebrowser/src/db.c' l='287' u='c' c='dbUnshareStringValue'/>
+<use f='codebrowser/src/debug.c' l='74' u='c' c='xorObjectDigest'/>
+<use f='codebrowser/src/debug.c' l='104' u='c' c='mixObjectDigest'/>
+<use f='codebrowser/src/debug.c' l='899' u='c' c='logCurrentClient'/>
+<use f='codebrowser/src/debug.c' l='910' u='c' c='logCurrentClient'/>
+<use f='codebrowser/src/module.c' l='1618' u='c' c='RM_ListPop'/>
+<use f='codebrowser/src/module.c' l='2252' u='c' c='RM_HashGet'/>
+<use f='codebrowser/src/networking.c' l='338' u='c' c='addReply'/>
+<def f='codebrowser/src/object.c' l='455' ll='471' type='robj * getDecodedObject(robj * o)'/>
+<doc f='codebrowser/src/object.c' l='453'>/* Get a decoded version of an encoded object (returned as a new object).
+ * If the object is already raw-encoded just increment the ref count. */</doc>
+<use f='codebrowser/src/pubsub.c' l='136' u='c' c='pubsubSubscribePattern'/>
+<use f='codebrowser/src/pubsub.c' l='252' u='c' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/rdb.c' l='1168' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/server.c' l='512' u='c' c='dictEncObjKeyCompare'/>
+<use f='codebrowser/src/server.c' l='513' u='c' c='dictEncObjKeyCompare'/>
+<use f='codebrowser/src/server.c' l='535' u='c' c='dictEncObjHash'/>
+<use f='codebrowser/src/sort.c' l='78' u='c' c='lookupKeyByPattern'/>
+<use f='codebrowser/src/sort.c' l='463' u='c' c='sortCommand'/>
+<use f='codebrowser/src/t_list.c' l='44' u='c' c='listTypePush'/>
+<use f='codebrowser/src/t_list.c' l='143' u='c' c='listTypeInsert'/>

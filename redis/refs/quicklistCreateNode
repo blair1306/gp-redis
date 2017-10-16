@@ -1,0 +1,8 @@
+<def f='codebrowser/src/quicklist.c' l='138' ll='149' type='quicklistNode * quicklistCreateNode()'/>
+<use f='codebrowser/src/quicklist.c' l='488' u='c' c='quicklistPushHead'/>
+<use f='codebrowser/src/quicklist.c' l='511' u='c' c='quicklistPushTail'/>
+<use f='codebrowser/src/quicklist.c' l='526' u='c' c='quicklistAppendZiplist'/>
+<use f='codebrowser/src/quicklist.c' l='801' u='c' c='_quicklistSplitNode'/>
+<use f='codebrowser/src/quicklist.c' l='842' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='920' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='1193' u='c' c='quicklistDup'/>

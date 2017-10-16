@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/server.h' l='1612' type='void preventCommandAOF(client * c)'/>
+<def f='codebrowser/src/server.c' l='2138' ll='2140' type='void preventCommandAOF(client * c)'/>
+<doc f='codebrowser/src/server.c' l='2137'>/* AOF specific version of preventCommandPropagation(). */</doc>

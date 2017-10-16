@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/src/ctl.c' l='19' ll='24' macro='1' type='const ctl_named_node_t * ctl_named_node(const ctl_node_t * node)'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='29' u='c' c='ctl_named_children'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='820' u='c' c='ctl_lookup'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='916' u='c' c='je_ctl_byname'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='961' u='c' c='je_ctl_bymib'/>

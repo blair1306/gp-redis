@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1751' type='void getKeysFreeResult(int * result)'/>
+<use f='codebrowser/src/cluster.c' l='5272' u='c' c='getNodeByQuery'/>
+<use f='codebrowser/src/cluster.c' l='5296' u='c' c='getNodeByQuery'/>
+<use f='codebrowser/src/cluster.c' l='5315' u='c' c='getNodeByQuery'/>
+<def f='codebrowser/src/db.c' l='1184' ll='1186' type='void getKeysFreeResult(int * result)'/>
+<doc f='codebrowser/src/db.c' l='1183'>/* Free the result of getKeysFromCommand. */</doc>
+<use f='codebrowser/src/server.c' l='2764' u='c' c='commandCommand'/>

@@ -1,0 +1,8 @@
+<def f='codebrowser/src/scripting.c' l='236' ll='240' type='int luaRaiseError(lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='380' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='432' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='628' u='c' c='luaRedisGenericCommand'/>
+<doc f='codebrowser/src/scripting.c' l='232'>/* In case the error set into the Lua stack by luaPushError() was generated
+ * by the non-error-trapping version of redis.pcall(), which is redis.call(),
+ * this function will raise the Lua error so that the execution of the
+ * script will be halted. */</doc>

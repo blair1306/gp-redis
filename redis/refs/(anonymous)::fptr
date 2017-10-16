@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1275' type='unsigned char *'/>
+<offset>128</offset>
+<use f='codebrowser/src/t_hash.c' l='330' u='w' c='hashTypeInitIterator'/>
+<use f='codebrowser/src/t_hash.c' l='354' u='r' c='hashTypeNext'/>
+<use f='codebrowser/src/t_hash.c' l='373' u='w' c='hashTypeNext'/>
+<use f='codebrowser/src/t_hash.c' l='395' u='r' c='hashTypeCurrentFromZiplist'/>

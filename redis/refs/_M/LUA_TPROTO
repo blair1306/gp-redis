@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/lua/src/lobject.h' l='28'/>
+<doc f='codebrowser/deps/lua/src/lobject.h' l='25'>/*
+** Extra tags for non-values
+*/</doc>
+<use f='codebrowser/deps/lua/src/lfunc.c' l='117' u='c'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='105' u='c'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='307' u='c'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='380' u='c'/>

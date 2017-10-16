@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1521' type='void aofRemoveTempFile(pid_t childpid)'/>
+<use f='codebrowser/src/aof.c' l='228' u='c' c='stopAppendOnly'/>
+<def f='codebrowser/src/aof.c' l='1410' ll='1415' type='void aofRemoveTempFile(pid_t childpid)'/>
+<use f='codebrowser/src/aof.c' l='1578' u='c' c='backgroundRewriteDoneHandler'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1888' type='void monitorCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='254' u='r'/>
+<use f='codebrowser/src/server.c' l='254' u='r'/>
+<use f='codebrowser/src/server.c' l='254' u='r'/>
+<use f='codebrowser/src/server.c' l='254' u='r'/>
+<def f='codebrowser/src/server.c' l='3326' ll='3333' type='void monitorCommand(client * c)'/>

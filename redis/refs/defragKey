@@ -1,0 +1,5 @@
+<def f='codebrowser/src/defrag.c' l='275' ll='416' type='int defragKey(redisDb * db, dictEntry * de)'/>
+<use f='codebrowser/src/defrag.c' l='420' u='c' c='defragScanCallback'/>
+<doc f='codebrowser/src/defrag.c' l='272'>/* for each key we scan in the main dict, this function will attempt to defrag
+ * all the various pointers it has. Returns a stat of how many pointers were
+ * moved. */</doc>

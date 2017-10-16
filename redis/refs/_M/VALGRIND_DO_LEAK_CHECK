@@ -1,0 +1,2 @@
+<dec f='include/valgrind/memcheck.h' l='189'/>
+<doc f='include/valgrind/memcheck.h' l='188'>/* Do a full memory leak check (like --leak-check=full) mid-execution. */</doc>

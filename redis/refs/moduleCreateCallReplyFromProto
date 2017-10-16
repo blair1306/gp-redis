@@ -1,0 +1,6 @@
+<def f='codebrowser/src/module.c' l='2278' ll='2295' type='RedisModuleCallReply * moduleCreateCallReplyFromProto(RedisModuleCtx * ctx, sds proto)'/>
+<use f='codebrowser/src/module.c' l='2642' u='c' c='RM_Call'/>
+<doc f='codebrowser/src/module.c' l='2274'>/* Create a new RedisModuleCallReply object. The processing of the reply
+ * is lazy, the object is just populated with the raw protocol and later
+ * is processed as needed. Initially we just make sure to set the right
+ * reply type, which is extremely cheap to do. */</doc>

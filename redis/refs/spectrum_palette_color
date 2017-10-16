@@ -1,0 +1,2 @@
+<def f='codebrowser/src/redis-cli.c' l='71' type='int [19]'/>
+<use f='codebrowser/src/redis-cli.c' l='2645' u='r' c='main'/>

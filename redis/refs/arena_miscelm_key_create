@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='38' ll='44' macro='1' type='arena_chunk_map_misc_t * arena_miscelm_key_create(size_t size)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1075' u='c' c='arena_run_first_best_fit'/>

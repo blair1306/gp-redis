@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1496' type='void unblockClientWaitingReplicas(client * c)'/>
+<use f='codebrowser/src/blocked.c' l='138' u='c' c='unblockClient'/>
+<def f='codebrowser/src/replication.c' l='2427' ll='2431' type='void unblockClientWaitingReplicas(client * c)'/>
+<doc f='codebrowser/src/replication.c' l='2423'>/* This is called by unblockClient() to perform the blocking op type
+ * specific cleanup. We just remove the client from the list of clients
+ * waiting for replica acks. Never call it directly, call unblockClient()
+ * instead. */</doc>

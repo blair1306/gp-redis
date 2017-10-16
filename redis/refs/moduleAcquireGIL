@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1320' type='void moduleAcquireGIL()'/>
+<use f='codebrowser/src/module.c' l='3629' u='c' c='RM_ThreadSafeContextLock'/>
+<def f='codebrowser/src/module.c' l='3638' ll='3640' type='void moduleAcquireGIL()'/>
+<use f='codebrowser/src/server.c' l='1241' u='c' c='afterSleep'/>

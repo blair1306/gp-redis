@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/sentinel.c' l='370' type='void sentinelDiscardReplyCallback(redisAsyncContext * c, void * reply, void * privdata)'/>
+<use f='codebrowser/src/sentinel.c' l='991' u='r' c='releaseInstanceLink'/>
+<use f='codebrowser/src/sentinel.c' l='1878' u='r' c='sentinelSendAuthIfNeeded'/>
+<use f='codebrowser/src/sentinel.c' l='1893' u='r' c='sentinelSetClientName'/>
+<def f='codebrowser/src/sentinel.c' l='2255' ll='2261' type='void sentinelDiscardReplyCallback(redisAsyncContext * c, void * reply, void * privdata)'/>
+<use f='codebrowser/src/sentinel.c' l='2290' u='r' c='sentinelPingReplyCallback'/>
+<use f='codebrowser/src/sentinel.c' l='3763' u='r' c='sentinelSendSlaveOf'/>
+<use f='codebrowser/src/sentinel.c' l='3768' u='r' c='sentinelSendSlaveOf'/>
+<use f='codebrowser/src/sentinel.c' l='3773' u='r' c='sentinelSendSlaveOf'/>
+<use f='codebrowser/src/sentinel.c' l='3783' u='r' c='sentinelSendSlaveOf'/>
+<use f='codebrowser/src/sentinel.c' l='3788' u='r' c='sentinelSendSlaveOf'/>
+<doc f='codebrowser/src/sentinel.c' l='2253'>/* Just discard the reply. We use this when we are not monitoring the return
+ * value of the command but its effects directly. */</doc>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/quicklist.h' l='152' type='int quicklistPopCustom(quicklist * quicklist, int where, unsigned char ** data, unsigned int * sz, long long * sval, void *(*)(unsigned char *, unsigned int) saver)'/>
+<def f='codebrowser/src/quicklist.c' l='1324' ll='1369' type='int quicklistPopCustom(quicklist * quicklist, int where, unsigned char ** data, unsigned int * sz, long long * sval, void *(*)(unsigned char *, unsigned int) saver)'/>
+<use f='codebrowser/src/quicklist.c' l='1392' u='c' c='quicklistPop'/>
+<doc f='codebrowser/src/quicklist.c' l='1315'>/* pop from quicklist and return result in &apos;data&apos; ptr.  Value of &apos;data&apos;
+ * is the return value of &apos;saver&apos; function pointer if the data is NOT a number.
+ *
+ * If the quicklist element is a long long, then the return value is returned in
+ * &apos;sval&apos;.
+ *
+ * Return value of 0 means no elements available.
+ * Return value of 1 means check &apos;data&apos; and &apos;sval&apos; for values.
+ * If &apos;data&apos; is set, use &apos;data&apos; and &apos;sz&apos;.  Otherwise, use &apos;sval&apos;. */</doc>
+<use f='codebrowser/src/t_list.c' l='63' u='c' c='listTypePop'/>

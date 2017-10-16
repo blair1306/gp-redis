@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='884' type='unsigned int'/>
+<offset>576</offset>
+<doc f='codebrowser/src/server.h' l='884'>/* Clock for LRU eviction */</doc>
+<use f='codebrowser/src/evict.c' l='83' u='a' c='LRU_CLOCK'/>
+<use f='codebrowser/src/server.c' l='985' u='a' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1445' u='a' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2840' u='a' c='genRedisInfoString'/>

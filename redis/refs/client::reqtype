@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='688' type='int'/>
+<offset>704</offset>
+<doc f='codebrowser/src/server.h' l='688'>/* Request protocol type: PROTO_REQ_* */</doc>
+<use f='codebrowser/src/networking.c' l='101' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='1020' u='w' c='resetClient'/>
+<use f='codebrowser/src/networking.c' l='1309' u='r' c='processInputBuffer'/>
+<use f='codebrowser/src/networking.c' l='1311' u='w' c='processInputBuffer'/>
+<use f='codebrowser/src/networking.c' l='1313' u='w' c='processInputBuffer'/>
+<use f='codebrowser/src/networking.c' l='1317' u='r' c='processInputBuffer'/>
+<use f='codebrowser/src/networking.c' l='1319' u='r' c='processInputBuffer'/>
+<use f='codebrowser/src/networking.c' l='1366' u='r' c='readQueryFromClient'/>

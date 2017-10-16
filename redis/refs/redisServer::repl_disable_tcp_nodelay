@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1099' type='int'/>
+<offset>19456</offset>
+<doc f='codebrowser/src/server.h' l='1099'>/* Disable TCP_NODELAY after SYNC? */</doc>
+<use f='codebrowser/src/config.c' l='361' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='991' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1297' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1984' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/replication.c' l='685' u='r' c='syncCommand'/>
+<use f='codebrowser/src/server.c' l='1465' u='w' c='initServerConfig'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/lua/src/lparser.h' l='62' type='struct LexState *'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='85' u='r' c='fixjump'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='203' u='r' c='luaK_checkstack'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='808' u='r' c='luaK_codeABC'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='815' u='r' c='luaK_codeABx'/>
+<use f='codebrowser/deps/lua/src/lcode.c' l='827' u='r' c='luaK_setlist'/>
+<offset>192</offset>
+<doc f='codebrowser/deps/lua/src/lparser.h' l='62'>/* lexical state */</doc>
+<use f='codebrowser/deps/lua/src/lparser.c' l='76' u='r' c='errorlimit'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='299' u='r' c='leaveblock'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='333' u='w' c='open_func'/>

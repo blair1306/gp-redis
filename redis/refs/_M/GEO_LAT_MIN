@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/geohash.h' l='50'/>
+<use f='codebrowser/src/geo.c' l='102' u='c'/>
+<doc f='codebrowser/src/geohash.h' l='49'>/* Limits from EPSG:900913 / EPSG:3785 / OSGEO:41001 */</doc>
+<use f='codebrowser/src/geohash.c' l='118' u='c'/>

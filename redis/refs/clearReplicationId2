@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1504' type='void clearReplicationId2()'/>
+<use f='codebrowser/src/replication.c' l='697' u='c' c='syncCommand'/>
+<def f='codebrowser/src/replication.c' l='1015' ll='1019' type='void clearReplicationId2()'/>
+<use f='codebrowser/src/replication.c' l='1286' u='c' c='readSyncBulkPayload'/>
+<doc f='codebrowser/src/replication.c' l='1012'>/* Clear (invalidate) the secondary replication ID. This happens, for
+ * example, after a full resynchronization, when we start a new replication
+ * history. */</doc>
+<use f='codebrowser/src/server.c' l='1348' u='c' c='initServerConfig'/>

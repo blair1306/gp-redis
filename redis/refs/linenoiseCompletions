@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/linenoise/linenoise.h' l='46' ll='49'/>
+<size>16</size>
+<mbr r='linenoiseCompletions::len' o='0' t='size_t'/>
+<mbr r='linenoiseCompletions::cvec' o='64' t='char **'/>

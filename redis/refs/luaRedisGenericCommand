@@ -1,0 +1,3 @@
+<def f='codebrowser/src/scripting.c' l='348' ll='632' type='int luaRedisGenericCommand(lua_State * lua, int raise_error)'/>
+<use f='codebrowser/src/scripting.c' l='636' u='c' c='luaRedisCallCommand'/>
+<use f='codebrowser/src/scripting.c' l='641' u='c' c='luaRedisPCallCommand'/>

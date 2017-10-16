@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1059' type='char [41]'/>
+<offset>17384</offset>
+<doc f='codebrowser/src/server.h' l='1059'>/* replid inherited from master*/</doc>
+<use f='codebrowser/src/replication.c' l='466' u='r' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='472' u='r' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='477' c='masterTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1016' u='r' c='clearReplicationId2'/>
+<use f='codebrowser/src/replication.c' l='1017' u='w' c='clearReplicationId2'/>
+<use f='codebrowser/src/replication.c' l='1027' u='r' c='shiftReplicationId'/>
+<use f='codebrowser/src/replication.c' l='1037' c='shiftReplicationId'/>
+<use f='codebrowser/src/replication.c' l='1518' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1519' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/server.c' l='3244' c='genRedisInfoString'/>

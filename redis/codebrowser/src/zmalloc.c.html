@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>zmalloc.c source code [codebrowser/src/zmalloc.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/zmalloc.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>src</a>/<a href='zmalloc.c.html'>zmalloc.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* zmalloc - total amount of allocated memory aware version of malloc()</i></td></tr>
+<tr><th id="2">2</th><td><i> *</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (c) 2009-2010, Salvatore Sanfilippo &lt;antirez at gmail dot com&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i> * All rights reserved.</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="7">7</th><td><i> * modification, are permitted provided that the following conditions are met:</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *   * Redistributions of source code must retain the above copyright notice,</i></td></tr>
+<tr><th id="10">10</th><td><i> *     this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="11">11</th><td><i> *   * Redistributions in binary form must reproduce the above copyright</i></td></tr>
+<tr><th id="12">12</th><td><i> *     notice, this list of conditions and the following disclaimer in the</i></td></tr>
+<tr><th id="13">13</th><td><i> *     documentation and/or other materials provided with the distribution.</i></td></tr>
+<tr><th id="14">14</th><td><i> *   * Neither the name of Redis nor the names of its contributors may be used</i></td></tr>
+<tr><th id="15">15</th><td><i> *     to endorse or promote products derived from this software without</i></td></tr>
+<tr><th id="16">16</th><td><i> *     specific prior written permission.</i></td></tr>
+<tr><th id="17">17</th><td><i> *</i></td></tr>
+<tr><th id="18">18</th><td><i> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"</i></td></tr>
+<tr><th id="19">19</th><td><i> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</i></td></tr>
+<tr><th id="20">20</th><td><i> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</i></td></tr>
+<tr><th id="21">21</th><td><i> * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE</i></td></tr>
+<tr><th id="22">22</th><td><i> * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</i></td></tr>
+<tr><th id="23">23</th><td><i> * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</i></td></tr>
+<tr><th id="24">24</th><td><i> * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</i></td></tr>
+<tr><th id="25">25</th><td><i> * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</i></td></tr>
+<tr><th id="26">26</th><td><i> * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</i></td></tr>
+<tr><th id="27">27</th><td><i> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</i></td></tr>
+<tr><th id="28">28</th><td><i> * POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="29">29</th><td><i> */</i></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="../../include/stdio.h.html">&lt;stdio.h&gt;</a></u></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="../../include/stdlib.h.html">&lt;stdlib.h&gt;</a></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i>/* This function provide us access to the original libc free(). This is useful</i></td></tr>
+<tr><th id="35">35</th><td><i> * for instance to free results obtained by backtrace_symbols(). We need</i></td></tr>
+<tr><th id="36">36</th><td><i> * to define this function before including zmalloc.h that may shadow the</i></td></tr>
+<tr><th id="37">37</th><td><i> * free implementation if we use jemalloc or another non standard allocator. */</i></td></tr>
+<tr><th id="38">38</th><td><em>void</em> <dfn class="decl def" id="zlibc_free" title='zlibc_free' data-ref="zlibc_free">zlibc_free</dfn>(<em>void</em> *<dfn class="local col1 decl" id="1ptr" title='ptr' data-type='void *' data-ref="1ptr">ptr</dfn>) {</td></tr>
+<tr><th id="39">39</th><td>    <a class="ref" href="../../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col1 ref" href="#1ptr" title='ptr' data-ref="1ptr">ptr</a>);</td></tr>
+<tr><th id="40">40</th><td>}</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#include <a href="../../include/string.h.html">&lt;string.h&gt;</a></u></td></tr>
+<tr><th id="43">43</th><td><u>#include <a href="../../include/pthread.h.html">&lt;pthread.h&gt;</a></u></td></tr>
+<tr><th id="44">44</th><td><u>#include <a href="config.h.html">"config.h"</a></u></td></tr>
+<tr><th id="45">45</th><td><u>#include <a href="zmalloc.h.html">"zmalloc.h"</a></u></td></tr>
+<tr><th id="46">46</th><td><u>#include <a href="atomicvar.h.html">"atomicvar.h"</a></u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><u>#<span data-ppcond="48">ifdef</span> <a class="macro" href="zmalloc.h.html#52" data-ref="_M/HAVE_MALLOC_SIZE">HAVE_MALLOC_SIZE</a></u></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/PREFIX_SIZE" data-ref="_M/PREFIX_SIZE">PREFIX_SIZE</dfn> (0)</u></td></tr>
+<tr><th id="50">50</th><td><u>#<span data-ppcond="48">else</span></u></td></tr>
+<tr><th id="51">51</th><td><u>#if defined(__sun) || defined(__sparc) || defined(__sparc__)</u></td></tr>
+<tr><th id="52">52</th><td><u>#define PREFIX_SIZE (sizeof(long long))</u></td></tr>
+<tr><th id="53">53</th><td><u>#else</u></td></tr>
+<tr><th id="54">54</th><td><u>#define PREFIX_SIZE (sizeof(size_t))</u></td></tr>
+<tr><th id="55">55</th><td><u>#endif</u></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="48">endif</span></u></td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><i>/* Explicitly override malloc/free etc when using tcmalloc. */</i></td></tr>
+<tr><th id="59">59</th><td><u>#<span data-ppcond="59">if</span> defined(<span class="macro" data-ref="_M/USE_TCMALLOC">USE_TCMALLOC</span>)</u></td></tr>
+<tr><th id="60">60</th><td><u>#define malloc(size) tc_malloc(size)</u></td></tr>
+<tr><th id="61">61</th><td><u>#define calloc(count,size) tc_calloc(count,size)</u></td></tr>
+<tr><th id="62">62</th><td><u>#define realloc(ptr,size) tc_realloc(ptr,size)</u></td></tr>
+<tr><th id="63">63</th><td><u>#define free(ptr) tc_free(ptr)</u></td></tr>
+<tr><th id="64">64</th><td><u>#<span data-ppcond="59">elif</span> defined(<span class="macro" data-ref="_M/USE_JEMALLOC">USE_JEMALLOC</span>)</u></td></tr>
+<tr><th id="65">65</th><td><u>#define <dfn class="macro" id="_M/malloc" data-ref="_M/malloc">malloc</dfn>(size) <a class="ref" href="../deps/jemalloc/include/jemalloc/jemalloc.h.html#192" title='je_malloc' data-ref="je_malloc">je_malloc</a>(size)</u></td></tr>
+<tr><th id="66">66</th><td><u>#define <dfn class="macro" id="_M/calloc" data-ref="_M/calloc">calloc</dfn>(count,size) <a class="ref" href="../deps/jemalloc/include/jemalloc/jemalloc.h.html#195" title='je_calloc' data-ref="je_calloc">je_calloc</a>(count,size)</u></td></tr>
+<tr><th id="67">67</th><td><u>#define <dfn class="macro" id="_M/realloc" data-ref="_M/realloc">realloc</dfn>(ptr,size) <a class="ref" href="../deps/jemalloc/include/jemalloc/jemalloc.h.html#204" title='je_realloc' data-ref="je_realloc">je_realloc</a>(ptr,size)</u></td></tr>
+<tr><th id="68">68</th><td><u>#define <dfn class="macro" id="_M/free" data-ref="_M/free">free</dfn>(ptr) <a class="ref" href="../deps/jemalloc/include/jemalloc/jemalloc.h.html#206" title='je_free' data-ref="je_free">je_free</a>(ptr)</u></td></tr>
+<tr><th id="69">69</th><td><u>#define <dfn class="macro" id="_M/mallocx" data-ref="_M/mallocx">mallocx</dfn>(size,flags) <a class="ref" href="../deps/jemalloc/include/jemalloc/jemalloc.h.html#210" title='je_mallocx' data-ref="je_mallocx">je_mallocx</a>(size,flags)</u></td></tr>
+<tr><th id="70">70</th><td><u>#define <dfn class="macro" id="_M/dallocx" data-ref="_M/dallocx">dallocx</dfn>(ptr,flags) <a class="ref" href="../deps/jemalloc/include/jemalloc/jemalloc.h.html#219" title='je_dallocx' data-ref="je_dallocx">je_dallocx</a>(ptr,flags)</u></td></tr>
+<tr><th id="71">71</th><td><u>#<span data-ppcond="59">endif</span></u></td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><u>#define <dfn class="macro" id="_M/update_zmalloc_stat_alloc" data-ref="_M/update_zmalloc_stat_alloc">update_zmalloc_stat_alloc</dfn>(__n) do { \</u></td></tr>
+<tr><th id="74">74</th><td><u>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="5_n" title='_n' data-type='size_t' data-ref="5_n"><dfn class="local col8 decl" id="8_n" title='_n' data-type='size_t' data-ref="8_n"><dfn class="local col3 decl" id="13_n" title='_n' data-type='size_t' data-ref="13_n"><dfn class="local col9 decl" id="19_n" title='_n' data-type='size_t' data-ref="19_n">_n</dfn></dfn></dfn></dfn> = (__n); \</u></td></tr>
+<tr><th id="75">75</th><td><u>    if (<a class="local col5 ref" href="#102" title='_n' data-ref="5_n"><a class="local col8 ref" href="#118" title='_n' data-ref="8_n"><a class="local col3 ref" href="#134" title='_n' data-ref="13_n"><a class="local col9 ref" href="#157" title='_n' data-ref="19_n">_n</a></a></a></a>&amp;(sizeof(long)-1)) <a class="local col5 ref" href="#102" title='_n' data-ref="5_n"><a class="local col8 ref" href="#118" title='_n' data-ref="8_n"><a class="local col3 ref" href="#134" title='_n' data-ref="13_n"><a class="local col9 ref" href="#157" title='_n' data-ref="19_n">_n</a></a></a></a> += sizeof(long)-(<a class="local col5 ref" href="#102" title='_n' data-ref="5_n"><a class="local col8 ref" href="#118" title='_n' data-ref="8_n"><a class="local col3 ref" href="#134" title='_n' data-ref="13_n"><a class="local col9 ref" href="#157" title='_n' data-ref="19_n">_n</a></a></a></a>&amp;(sizeof(long)-1)); \</u></td></tr>
+<tr><th id="76">76</th><td><u>    atomicIncr(<a class="tu ref" href="#used_memory" title='used_memory' data-use='a' data-ref="used_memory">used_memory</a>,__n); \</u></td></tr>
+<tr><th id="77">77</th><td><u>} while(0)</u></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><u>#define <dfn class="macro" id="_M/update_zmalloc_stat_free" data-ref="_M/update_zmalloc_stat_free">update_zmalloc_stat_free</dfn>(__n) do { \</u></td></tr>
+<tr><th id="80">80</th><td><u>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="10_n" title='_n' data-type='size_t' data-ref="10_n"><dfn class="local col8 decl" id="18_n" title='_n' data-type='size_t' data-ref="18_n"><dfn class="local col1 decl" id="21_n" title='_n' data-type='size_t' data-ref="21_n">_n</dfn></dfn></dfn> = (__n); \</u></td></tr>
+<tr><th id="81">81</th><td><u>    if (<a class="local col0 ref" href="#124" title='_n' data-ref="10_n"><a class="local col8 ref" href="#156" title='_n' data-ref="18_n"><a class="local col1 ref" href="#194" title='_n' data-ref="21_n">_n</a></a></a>&amp;(sizeof(long)-1)) <a class="local col0 ref" href="#124" title='_n' data-ref="10_n"><a class="local col8 ref" href="#156" title='_n' data-ref="18_n"><a class="local col1 ref" href="#194" title='_n' data-ref="21_n">_n</a></a></a> += sizeof(long)-(<a class="local col0 ref" href="#124" title='_n' data-ref="10_n"><a class="local col8 ref" href="#156" title='_n' data-ref="18_n"><a class="local col1 ref" href="#194" title='_n' data-ref="21_n">_n</a></a></a>&amp;(sizeof(long)-1)); \</u></td></tr>
+<tr><th id="82">82</th><td><u>    atomicDecr(<a class="tu ref" href="#used_memory" title='used_memory' data-use='a' data-ref="used_memory">used_memory</a>,__n); \</u></td></tr>
+<tr><th id="83">83</th><td><u>} while(0)</u></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><em>static</em> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="tu decl def" id="used_memory" title='used_memory' data-type='size_t' data-ref="used_memory">used_memory</dfn> = <var>0</var>;</td></tr>
+<tr><th id="86">86</th><td><a class="typedef" href="../../include/x86_64-linux-gnu/bits/pthreadtypes.h.html#pthread_mutex_t" title='pthread_mutex_t' data-type='union pthread_mutex_t' data-ref="pthread_mutex_t">pthread_mutex_t</a> <dfn class="decl def" id="used_memory_mutex" title='used_memory_mutex' data-ref="used_memory_mutex">used_memory_mutex</dfn> = <a class="macro" href="../../include/pthread.h.html#86" title="{ { 0, 0, 0, 0, 0, 0, 0, { 0, 0 } } }" data-ref="_M/PTHREAD_MUTEX_INITIALIZER">PTHREAD_MUTEX_INITIALIZER</a>;</td></tr>
+<tr><th id="87">87</th><td></td></tr>
+<tr><th id="88">88</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="zmalloc_default_oom" title='zmalloc_default_oom' data-type='void zmalloc_default_oom(size_t size)' data-ref="zmalloc_default_oom">zmalloc_default_oom</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="2size" title='size' data-type='size_t' data-ref="2size">size</dfn>) {</td></tr>
+<tr><th id="89">89</th><td>    <a class="ref" href="../../include/stdio.h.html#fprintf" title='fprintf' data-ref="fprintf">fprintf</a>(<a class="macro" href="../../include/stdio.h.html#174" title="stderr" data-ref="_M/stderr">stderr</a>, <q>"zmalloc: Out of memory trying to allocate %zu bytes\n"</q>,</td></tr>
+<tr><th id="90">90</th><td>        <a class="local col2 ref" href="#2size" title='size' data-ref="2size">size</a>);</td></tr>
+<tr><th id="91">91</th><td>    <a class="ref" href="../../include/stdio.h.html#fflush" title='fflush' data-ref="fflush">fflush</a>(<a class="macro" href="../../include/stdio.h.html#174" title="stderr" data-ref="_M/stderr">stderr</a>);</td></tr>
+<tr><th id="92">92</th><td>    <a class="ref" href="../../include/stdlib.h.html#abort" title='abort' data-ref="abort">abort</a>();</td></tr>
+<tr><th id="93">93</th><td>}</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td><em>static</em> <em>void</em> (*<dfn class="tu decl def" id="zmalloc_oom_handler" title='zmalloc_oom_handler' data-type='void (*)(size_t)' data-ref="zmalloc_oom_handler">zmalloc_oom_handler</dfn>)(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>) = <a class="tu ref" href="#zmalloc_default_oom" title='zmalloc_default_oom' data-ref="zmalloc_default_oom">zmalloc_default_oom</a>;</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><em>void</em> *<dfn class="decl def" id="zmalloc" title='zmalloc' data-ref="zmalloc">zmalloc</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="3size" title='size' data-type='size_t' data-ref="3size">size</dfn>) {</td></tr>
+<tr><th id="98">98</th><td>    <em>void</em> *<dfn class="local col4 decl" id="4ptr" title='ptr' data-type='void *' data-ref="4ptr">ptr</dfn> = <a class="macro" href="#65" title="je_malloc(size+(0))" data-ref="_M/malloc">malloc</a>(<a class="local col3 ref" href="#3size" title='size' data-ref="3size">size</a>+<a class="macro" href="#49" title="(0)" data-ref="_M/PREFIX_SIZE">PREFIX_SIZE</a>);</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td>    <b>if</b> (!<a class="local col4 ref" href="#4ptr" title='ptr' data-ref="4ptr">ptr</a>) <a class="tu ref" href="#zmalloc_oom_handler" title='zmalloc_oom_handler' data-use='r' data-ref="zmalloc_oom_handler">zmalloc_oom_handler</a>(<a class="local col3 ref" href="#3size" title='size' data-ref="3size">size</a>);</td></tr>
+<tr><th id="101">101</th><td><u>#<span data-ppcond="101">ifdef</span> <a class="macro" href="zmalloc.h.html#52" data-ref="_M/HAVE_MALLOC_SIZE">HAVE_MALLOC_SIZE</a></u></td></tr>
+<tr><th id="102">102</th><td>    <a class="macro" href="#73" title="do { size_t _n = (je_malloc_usable_size(ptr)); if (_n&amp;(sizeof(long)-1)) _n += sizeof(long)-(_n&amp;(sizeof(long)-1)); __atomic_add_fetch(&amp;used_memory,(je_malloc_usable_size(ptr)),0); } while(0)" data-ref="_M/update_zmalloc_stat_alloc">update_zmalloc_stat_alloc</a>(<a class="macro" href="zmalloc.h.html#53" title="je_malloc_usable_size(ptr)" data-ref="_M/zmalloc_size">zmalloc_size</a>(<a class="local col4 ref" href="#4ptr" title='ptr' data-ref="4ptr">ptr</a>));</td></tr>
+<tr><th id="103">103</th><td>    <b>return</b> <a class="local col4 ref" href="#4ptr" title='ptr' data-ref="4ptr">ptr</a>;</td></tr>
+<tr><th id="104">104</th><td><u>#<span data-ppcond="101">else</span></u></td></tr>
+<tr><th id="105">105</th><td>    *((size_t*)ptr) = size;</td></tr>
+<tr><th id="106">106</th><td>    update_zmalloc_stat_alloc(size+PREFIX_SIZE);</td></tr>
+<tr><th id="107">107</th><td>    <b>return</b> (<em>char</em>*)ptr+PREFIX_SIZE;</td></tr>
+<tr><th id="108">108</th><td><u>#<span data-ppcond="101">endif</span></u></td></tr>
+<tr><th id="109">109</th><td>}</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><i>/* Allocation and free functions that bypass the thread cache</i></td></tr>
+<tr><th id="112">112</th><td><i> * and go straight to the allocator arena bins.</i></td></tr>
+<tr><th id="113">113</th><td><i> * Currently implemented only for jemalloc. Used for online defragmentation. */</i></td></tr>
+<tr><th id="114">114</th><td><u>#<span data-ppcond="114">ifdef</span> <a class="macro" href="zmalloc.h.html#72" data-ref="_M/HAVE_DEFRAG">HAVE_DEFRAG</a></u></td></tr>
+<tr><th id="115">115</th><td><em>void</em> *<dfn class="decl def" id="zmalloc_no_tcache" title='zmalloc_no_tcache' data-ref="zmalloc_no_tcache">zmalloc_no_tcache</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="6size" title='size' data-type='size_t' data-ref="6size">size</dfn>) {</td></tr>
+<tr><th id="116">116</th><td>    <em>void</em> *<dfn class="local col7 decl" id="7ptr" title='ptr' data-type='void *' data-ref="7ptr">ptr</dfn> = <a class="macro" href="#69" title="je_mallocx(size+(0),((int)(((-1)+2) &lt;&lt; 8)))" data-ref="_M/mallocx">mallocx</a>(<a class="local col6 ref" href="#6size" title='size' data-ref="6size">size</a>+<a class="macro" href="#49" title="(0)" data-ref="_M/PREFIX_SIZE">PREFIX_SIZE</a>, <a class="macro" href="../deps/jemalloc/include/jemalloc/jemalloc.h.html#101" title="((int)(((-1)+2) &lt;&lt; 8))" data-ref="_M/MALLOCX_TCACHE_NONE">MALLOCX_TCACHE_NONE</a>);</td></tr>
+<tr><th id="117">117</th><td>    <b>if</b> (!<a class="local col7 ref" href="#7ptr" title='ptr' data-ref="7ptr">ptr</a>) <a class="tu ref" href="#zmalloc_oom_handler" title='zmalloc_oom_handler' data-use='r' data-ref="zmalloc_oom_handler">zmalloc_oom_handler</a>(<a class="local col6 ref" href="#6size" title='size' data-ref="6size">size</a>);</td></tr>
+<tr><th id="118">118</th><td>    <a class="macro" href="#73" title="do { size_t _n = (je_malloc_usable_size(ptr)); if (_n&amp;(sizeof(long)-1)) _n += sizeof(long)-(_n&amp;(sizeof(long)-1)); __atomic_add_fetch(&amp;used_memory,(je_malloc_usable_size(ptr)),0); } while(0)" data-ref="_M/update_zmalloc_stat_alloc">update_zmalloc_stat_alloc</a>(<a class="macro" href="zmalloc.h.html#53" title="je_malloc_usable_size(ptr)" data-ref="_M/zmalloc_size">zmalloc_size</a>(<a class="local col7 ref" href="#7ptr" title='ptr' data-ref="7ptr">ptr</a>));</td></tr>
+<tr><th id="119">119</th><td>    <b>return</b> <a class="local col7 ref" href="#7ptr" title='ptr' data-ref="7ptr">ptr</a>;</td></tr>
+<tr><th id="120">120</th><td>}</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><em>void</em> <dfn class="decl def" id="zfree_no_tcache" title='zfree_no_tcache' data-ref="zfree_no_tcache">zfree_no_tcache</dfn>(<em>void</em> *<dfn class="local col9 decl" id="9ptr" title='ptr' data-type='void *' data-ref="9ptr">ptr</dfn>) {</td></tr>
+<tr><th id="123">123</th><td>    <b>if</b> (<a class="local col9 ref" href="#9ptr" title='ptr' data-ref="9ptr">ptr</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) <b>return</b>;</td></tr>
+<tr><th id="124">124</th><td>    <a class="macro" href="#79" title="do { size_t _n = (je_malloc_usable_size(ptr)); if (_n&amp;(sizeof(long)-1)) _n += sizeof(long)-(_n&amp;(sizeof(long)-1)); __atomic_sub_fetch(&amp;used_memory,(je_malloc_usable_size(ptr)),0); } while(0)" data-ref="_M/update_zmalloc_stat_free">update_zmalloc_stat_free</a>(<a class="macro" href="zmalloc.h.html#53" title="je_malloc_usable_size(ptr)" data-ref="_M/zmalloc_size">zmalloc_size</a>(<a class="local col9 ref" href="#9ptr" title='ptr' data-ref="9ptr">ptr</a>));</td></tr>
+<tr><th id="125">125</th><td>    <a class="macro" href="#70" title="je_dallocx(ptr,((int)(((-1)+2) &lt;&lt; 8)))" data-ref="_M/dallocx">dallocx</a>(<a class="local col9 ref" href="#9ptr" title='ptr' data-ref="9ptr">ptr</a>, <a class="macro" href="../deps/jemalloc/include/jemalloc/jemalloc.h.html#101" title="((int)(((-1)+2) &lt;&lt; 8))" data-ref="_M/MALLOCX_TCACHE_NONE">MALLOCX_TCACHE_NONE</a>);</td></tr>
+<tr><th id="126">126</th><td>}</td></tr>
+<tr><th id="127">127</th><td><u>#<span data-ppcond="114">endif</span></u></td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><em>void</em> *<dfn class="decl def" id="zcalloc" title='zcalloc' data-ref="zcalloc">zcalloc</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="11size" title='size' data-type='size_t' data-ref="11size">size</dfn>) {</td></tr>
+<tr><th id="130">130</th><td>    <em>void</em> *<dfn class="local col2 decl" id="12ptr" title='ptr' data-type='void *' data-ref="12ptr">ptr</dfn> = <a class="macro" href="#66" title="je_calloc(1,size+(0))" data-ref="_M/calloc">calloc</a>(<var>1</var>, <a class="local col1 ref" href="#11size" title='size' data-ref="11size">size</a>+<a class="macro" href="#49" title="(0)" data-ref="_M/PREFIX_SIZE">PREFIX_SIZE</a>);</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td>    <b>if</b> (!<a class="local col2 ref" href="#12ptr" title='ptr' data-ref="12ptr">ptr</a>) <a class="tu ref" href="#zmalloc_oom_handler" title='zmalloc_oom_handler' data-use='r' data-ref="zmalloc_oom_handler">zmalloc_oom_handler</a>(<a class="local col1 ref" href="#11size" title='size' data-ref="11size">size</a>);</td></tr>
+<tr><th id="133">133</th><td><u>#<span data-ppcond="133">ifdef</span> <a class="macro" href="zmalloc.h.html#52" data-ref="_M/HAVE_MALLOC_SIZE">HAVE_MALLOC_SIZE</a></u></td></tr>
+<tr><th id="134">134</th><td>    <a class="macro" href="#73" title="do { size_t _n = (je_malloc_usable_size(ptr)); if (_n&amp;(sizeof(long)-1)) _n += sizeof(long)-(_n&amp;(sizeof(long)-1)); __atomic_add_fetch(&amp;used_memory,(je_malloc_usable_size(ptr)),0); } while(0)" data-ref="_M/update_zmalloc_stat_alloc">update_zmalloc_stat_alloc</a>(<a class="macro" href="zmalloc.h.html#53" title="je_malloc_usable_size(ptr)" data-ref="_M/zmalloc_size">zmalloc_size</a>(<a class="local col2 ref" href="#12ptr" title='ptr' data-ref="12ptr">ptr</a>));</td></tr>
+<tr><th id="135">135</th><td>    <b>return</b> <a class="local col2 ref" href="#12ptr" title='ptr' data-ref="12ptr">ptr</a>;</td></tr>
+<tr><th id="136">136</th><td><u>#<span data-ppcond="133">else</span></u></td></tr>
+<tr><th id="137">137</th><td>    *((size_t*)ptr) = size;</td></tr>
+<tr><th id="138">138</th><td>    update_zmalloc_stat_alloc(size+PREFIX_SIZE);</td></tr>
+<tr><th id="139">139</th><td>    <b>return</b> (<em>char</em>*)ptr+PREFIX_SIZE;</td></tr>
+<tr><th id="140">140</th><td><u>#<span data-ppcond="133">endif</span></u></td></tr>
+<tr><th id="141">141</th><td>}</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td><em>void</em> *<dfn class="decl def" id="zrealloc" title='zrealloc' data-ref="zrealloc">zrealloc</dfn>(<em>void</em> *<dfn class="local col4 decl" id="14ptr" title='ptr' data-type='void *' data-ref="14ptr">ptr</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="15size" title='size' data-type='size_t' data-ref="15size">size</dfn>) {</td></tr>
+<tr><th id="144">144</th><td><u>#<span data-ppcond="144">ifndef</span> <a class="macro" href="zmalloc.h.html#52" data-ref="_M/HAVE_MALLOC_SIZE">HAVE_MALLOC_SIZE</a></u></td></tr>
+<tr><th id="145">145</th><td>    <em>void</em> *realptr;</td></tr>
+<tr><th id="146">146</th><td><u>#<span data-ppcond="144">endif</span></u></td></tr>
+<tr><th id="147">147</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="16oldsize" title='oldsize' data-type='size_t' data-ref="16oldsize">oldsize</dfn>;</td></tr>
+<tr><th id="148">148</th><td>    <em>void</em> *<dfn class="local col7 decl" id="17newptr" title='newptr' data-type='void *' data-ref="17newptr">newptr</dfn>;</td></tr>
+<tr><th id="149">149</th><td></td></tr>
+<tr><th id="150">150</th><td>    <b>if</b> (<a class="local col4 ref" href="#14ptr" title='ptr' data-ref="14ptr">ptr</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) <b>return</b> <a class="ref" href="#zmalloc" title='zmalloc' data-ref="zmalloc">zmalloc</a>(<a class="local col5 ref" href="#15size" title='size' data-ref="15size">size</a>);</td></tr>
+<tr><th id="151">151</th><td><u>#<span data-ppcond="151">ifdef</span> <a class="macro" href="zmalloc.h.html#52" data-ref="_M/HAVE_MALLOC_SIZE">HAVE_MALLOC_SIZE</a></u></td></tr>
+<tr><th id="152">152</th><td>    <a class="local col6 ref" href="#16oldsize" title='oldsize' data-ref="16oldsize">oldsize</a> = <a class="macro" href="zmalloc.h.html#53" title="je_malloc_usable_size(ptr)" data-ref="_M/zmalloc_size">zmalloc_size</a>(<a class="local col4 ref" href="#14ptr" title='ptr' data-ref="14ptr">ptr</a>);</td></tr>
+<tr><th id="153">153</th><td>    <a class="local col7 ref" href="#17newptr" title='newptr' data-ref="17newptr">newptr</a> = <a class="macro" href="#67" title="je_realloc(ptr,size)" data-ref="_M/realloc">realloc</a>(<a class="local col4 ref" href="#14ptr" title='ptr' data-ref="14ptr">ptr</a>,<a class="local col5 ref" href="#15size" title='size' data-ref="15size">size</a>);</td></tr>
+<tr><th id="154">154</th><td>    <b>if</b> (!<a class="local col7 ref" href="#17newptr" title='newptr' data-ref="17newptr">newptr</a>) <a class="tu ref" href="#zmalloc_oom_handler" title='zmalloc_oom_handler' data-use='r' data-ref="zmalloc_oom_handler">zmalloc_oom_handler</a>(<a class="local col5 ref" href="#15size" title='size' data-ref="15size">size</a>);</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td>    <a class="macro" href="#79" title="do { size_t _n = (oldsize); if (_n&amp;(sizeof(long)-1)) _n += sizeof(long)-(_n&amp;(sizeof(long)-1)); __atomic_sub_fetch(&amp;used_memory,(oldsize),0); } while(0)" data-ref="_M/update_zmalloc_stat_free">update_zmalloc_stat_free</a>(<a class="local col6 ref" href="#16oldsize" title='oldsize' data-ref="16oldsize">oldsize</a>);</td></tr>
+<tr><th id="157">157</th><td>    <a class="macro" href="#73" title="do { size_t _n = (je_malloc_usable_size(newptr)); if (_n&amp;(sizeof(long)-1)) _n += sizeof(long)-(_n&amp;(sizeof(long)-1)); __atomic_add_fetch(&amp;used_memory,(je_malloc_usable_size(newptr)),0); } while(0)" data-ref="_M/update_zmalloc_stat_alloc">update_zmalloc_stat_alloc</a>(<a class="macro" href="zmalloc.h.html#53" title="je_malloc_usable_size(newptr)" data-ref="_M/zmalloc_size">zmalloc_size</a>(<a class="local col7 ref" href="#17newptr" title='newptr' data-ref="17newptr">newptr</a>));</td></tr>
+<tr><th id="158">158</th><td>    <b>return</b> <a class="local col7 ref" href="#17newptr" title='newptr' data-ref="17newptr">newptr</a>;</td></tr>
+<tr><th id="159">159</th><td><u>#<span data-ppcond="151">else</span></u></td></tr>
+<tr><th id="160">160</th><td>    realptr = (<em>char</em>*)ptr-PREFIX_SIZE;</td></tr>
+<tr><th id="161">161</th><td>    oldsize = *((size_t*)realptr);</td></tr>
+<tr><th id="162">162</th><td>    newptr = realloc(realptr,size+PREFIX_SIZE);</td></tr>
+<tr><th id="163">163</th><td>    <b>if</b> (!newptr) zmalloc_oom_handler(size);</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td>    *((size_t*)newptr) = size;</td></tr>
+<tr><th id="166">166</th><td>    update_zmalloc_stat_free(oldsize);</td></tr>
+<tr><th id="167">167</th><td>    update_zmalloc_stat_alloc(size);</td></tr>
+<tr><th id="168">168</th><td>    <b>return</b> (<em>char</em>*)newptr+PREFIX_SIZE;</td></tr>
+<tr><th id="169">169</th><td><u>#<span data-ppcond="151">endif</span></u></td></tr>
+<tr><th id="170">170</th><td>}</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td><i>/* Provide zmalloc_size() for systems where this function is not provided by</i></td></tr>
+<tr><th id="173">173</th><td><i> * malloc itself, given that in that case we store a header with this</i></td></tr>
+<tr><th id="174">174</th><td><i> * information as the first bytes of every allocation. */</i></td></tr>
+<tr><th id="175">175</th><td><u>#<span data-ppcond="175">ifndef</span> <a class="macro" href="zmalloc.h.html#52" data-ref="_M/HAVE_MALLOC_SIZE">HAVE_MALLOC_SIZE</a></u></td></tr>
+<tr><th id="176">176</th><td>size_t zmalloc_size(<em>void</em> *ptr) {</td></tr>
+<tr><th id="177">177</th><td>    <em>void</em> *realptr = (<em>char</em>*)ptr-PREFIX_SIZE;</td></tr>
+<tr><th id="178">178</th><td>    size_t size = *((size_t*)realptr);</td></tr>
+<tr><th id="179">179</th><td>    <i>/* Assume at least that all the allocations are padded at sizeof(long) by</i></td></tr>
+<tr><th id="180">180</th><td><i>     * the underlying allocator. */</i></td></tr>
+<tr><th id="181">181</th><td>    <b>if</b> (size&amp;(<b>sizeof</b>(<em>long</em>)-<var>1</var>)) size += <b>sizeof</b>(<em>long</em>)-(size&amp;(<b>sizeof</b>(<em>long</em>)-<var>1</var>));</td></tr>
+<tr><th id="182">182</th><td>    <b>return</b> size+PREFIX_SIZE;</td></tr>
+<tr><th id="183">183</th><td>}</td></tr>
+<tr><th id="184">184</th><td><u>#<span data-ppcond="175">endif</span></u></td></tr>
+<tr><th id="185">185</th><td></td></tr>
+<tr><th id="186">186</th><td><em>void</em> <dfn class="decl def" id="zfree" title='zfree' data-ref="zfree">zfree</dfn>(<em>void</em> *<dfn class="local col0 decl" id="20ptr" title='ptr' data-type='void *' data-ref="20ptr">ptr</dfn>) {</td></tr>
+<tr><th id="187">187</th><td><u>#<span data-ppcond="187">ifndef</span> <a class="macro" href="zmalloc.h.html#52" data-ref="_M/HAVE_MALLOC_SIZE">HAVE_MALLOC_SIZE</a></u></td></tr>
+<tr><th id="188">188</th><td>    <em>void</em> *realptr;</td></tr>
+<tr><th id="189">189</th><td>    size_t oldsize;</td></tr>
+<tr><th id="190">190</th><td><u>#<span data-ppcond="187">endif</span></u></td></tr>
+<tr><th id="191">191</th><td></td></tr>
+<tr><th id="192">192</th><td>    <b>if</b> (<a class="local col0 ref" href="#20ptr" title='ptr' data-ref="20ptr">ptr</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) <b>return</b>;</td></tr>
+<tr><th id="193">193</th><td><u>#<span data-ppcond="193">ifdef</span> <a class="macro" href="zmalloc.h.html#52" data-ref="_M/HAVE_MALLOC_SIZE">HAVE_MALLOC_SIZE</a></u></td></tr>
+<tr><th id="194">194</th><td>    <a class="macro" href="#79" title="do { size_t _n = (je_malloc_usable_size(ptr)); if (_n&amp;(sizeof(long)-1)) _n += sizeof(long)-(_n&amp;(sizeof(long)-1)); __atomic_sub_fetch(&amp;used_memory,(je_malloc_usable_size(ptr)),0); } while(0)" data-ref="_M/update_zmalloc_stat_free">update_zmalloc_stat_free</a>(<a class="macro" href="zmalloc.h.html#53" title="je_malloc_usable_size(ptr)" data-ref="_M/zmalloc_size">zmalloc_size</a>(<a class="local col0 ref" href="#20ptr" title='ptr' data-ref="20ptr">ptr</a>));</td></tr>
+<tr><th id="195">195</th><td>    <a class="macro" href="#68" title="je_free(ptr)" data-ref="_M/free">free</a>(<a class="local col0 ref" href="#20ptr" title='ptr' data-ref="20ptr">ptr</a>);</td></tr>
+<tr><th id="196">196</th><td><u>#<span data-ppcond="193">else</span></u></td></tr>
+<tr><th id="197">197</th><td>    realptr = (<em>char</em>*)ptr-PREFIX_SIZE;</td></tr>
+<tr><th id="198">198</th><td>    oldsize = *((size_t*)realptr);</td></tr>
+<tr><th id="199">199</th><td>    update_zmalloc_stat_free(oldsize+PREFIX_SIZE);</td></tr>
+<tr><th id="200">200</th><td>    free(realptr);</td></tr>
+<tr><th id="201">201</th><td><u>#<span data-ppcond="193">endif</span></u></td></tr>
+<tr><th id="202">202</th><td>}</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td><em>char</em> *<dfn class="decl def" id="zstrdup" title='zstrdup' data-ref="zstrdup">zstrdup</dfn>(<em>const</em> <em>char</em> *<dfn class="local col2 decl" id="22s" title='s' data-type='const char *' data-ref="22s">s</dfn>) {</td></tr>
+<tr><th id="205">205</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="23l" title='l' data-type='size_t' data-ref="23l">l</dfn> = <a class="ref" href="../../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col2 ref" href="#22s" title='s' data-ref="22s">s</a>)+<var>1</var>;</td></tr>
+<tr><th id="206">206</th><td>    <em>char</em> *<dfn class="local col4 decl" id="24p" title='p' data-type='char *' data-ref="24p">p</dfn> = <a class="ref" href="#zmalloc" title='zmalloc' data-ref="zmalloc">zmalloc</a>(<a class="local col3 ref" href="#23l" title='l' data-ref="23l">l</a>);</td></tr>
+<tr><th id="207">207</th><td></td></tr>
+<tr><th id="208">208</th><td>    <a class="ref" href="../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="local col4 ref" href="#24p" title='p' data-ref="24p">p</a>,<a class="local col2 ref" href="#22s" title='s' data-ref="22s">s</a>,<a class="local col3 ref" href="#23l" title='l' data-ref="23l">l</a>);</td></tr>
+<tr><th id="209">209</th><td>    <b>return</b> <a class="local col4 ref" href="#24p" title='p' data-ref="24p">p</a>;</td></tr>
+<tr><th id="210">210</th><td>}</td></tr>
+<tr><th id="211">211</th><td></td></tr>
+<tr><th id="212">212</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="zmalloc_used_memory" title='zmalloc_used_memory' data-ref="zmalloc_used_memory">zmalloc_used_memory</dfn>(<em>void</em>) {</td></tr>
+<tr><th id="213">213</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="25um" title='um' data-type='size_t' data-ref="25um">um</dfn>;</td></tr>
+<tr><th id="214">214</th><td>    <a class="macro" href="atomicvar.h.html#79" title="do { um = __atomic_load_n(&amp;used_memory,0); } while(0)" data-ref="_M/atomicGet">atomicGet</a>(<a class="tu ref" href="#used_memory" title='used_memory' data-use='a' data-ref="used_memory">used_memory</a>,<a class="local col5 ref" href="#25um" title='um' data-ref="25um">um</a>);</td></tr>
+<tr><th id="215">215</th><td>    <b>return</b> <a class="local col5 ref" href="#25um" title='um' data-ref="25um">um</a>;</td></tr>
+<tr><th id="216">216</th><td>}</td></tr>
+<tr><th id="217">217</th><td></td></tr>
+<tr><th id="218">218</th><td><em>void</em> <dfn class="decl def" id="zmalloc_set_oom_handler" title='zmalloc_set_oom_handler' data-ref="zmalloc_set_oom_handler">zmalloc_set_oom_handler</dfn>(<em>void</em> (*<dfn class="local col6 decl" id="26oom_handler" title='oom_handler' data-type='void (*)(size_t)' data-ref="26oom_handler">oom_handler</dfn>)(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>)) {</td></tr>
+<tr><th id="219">219</th><td>    <a class="tu ref" href="#zmalloc_oom_handler" title='zmalloc_oom_handler' data-use='w' data-ref="zmalloc_oom_handler">zmalloc_oom_handler</a> = <a class="local col6 ref" href="#26oom_handler" title='oom_handler' data-ref="26oom_handler">oom_handler</a>;</td></tr>
+<tr><th id="220">220</th><td>}</td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td><i>/* Get the RSS information in an OS-specific way.</i></td></tr>
+<tr><th id="223">223</th><td><i> *</i></td></tr>
+<tr><th id="224">224</th><td><i> * WARNING: the function zmalloc_get_rss() is not designed to be fast</i></td></tr>
+<tr><th id="225">225</th><td><i> * and may not be called in the busy loops where Redis tries to release</i></td></tr>
+<tr><th id="226">226</th><td><i> * memory expiring or swapping out objects.</i></td></tr>
+<tr><th id="227">227</th><td><i> *</i></td></tr>
+<tr><th id="228">228</th><td><i> * For this kind of "fast RSS reporting" usages use instead the</i></td></tr>
+<tr><th id="229">229</th><td><i> * function RedisEstimateRSS() that is a much faster (and less precise)</i></td></tr>
+<tr><th id="230">230</th><td><i> * version of the function. */</i></td></tr>
+<tr><th id="231">231</th><td></td></tr>
+<tr><th id="232">232</th><td><u>#<span data-ppcond="232">if</span> defined(<a class="macro" href="config.h.html#53" data-ref="_M/HAVE_PROC_STAT">HAVE_PROC_STAT</a>)</u></td></tr>
+<tr><th id="233">233</th><td><u>#include <a href="../../include/unistd.h.html">&lt;unistd.h&gt;</a></u></td></tr>
+<tr><th id="234">234</th><td><u>#include <a href="../../include/x86_64-linux-gnu/sys/types.h.html">&lt;sys/types.h&gt;</a></u></td></tr>
+<tr><th id="235">235</th><td><u>#include <a href="../../include/x86_64-linux-gnu/sys/stat.h.html">&lt;sys/stat.h&gt;</a></u></td></tr>
+<tr><th id="236">236</th><td><u>#include <a href="../../include/fcntl.h.html">&lt;fcntl.h&gt;</a></u></td></tr>
+<tr><th id="237">237</th><td></td></tr>
+<tr><th id="238">238</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="zmalloc_get_rss" title='zmalloc_get_rss' data-ref="zmalloc_get_rss">zmalloc_get_rss</dfn>(<em>void</em>) {</td></tr>
+<tr><th id="239">239</th><td>    <em>int</em> <dfn class="local col7 decl" id="27page" title='page' data-type='int' data-ref="27page">page</dfn> = <a class="ref" href="../../include/unistd.h.html#sysconf" title='sysconf' data-ref="sysconf">sysconf</a>(<a class="macro" href="../../include/x86_64-linux-gnu/bits/confname.h.html#134" title="_SC_PAGESIZE" data-ref="_M/_SC_PAGESIZE">_SC_PAGESIZE</a>);</td></tr>
+<tr><th id="240">240</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="28rss" title='rss' data-type='size_t' data-ref="28rss">rss</dfn>;</td></tr>
+<tr><th id="241">241</th><td>    <em>char</em> <dfn class="local col9 decl" id="29buf" title='buf' data-type='char [4096]' data-ref="29buf">buf</dfn>[<var>4096</var>];</td></tr>
+<tr><th id="242">242</th><td>    <em>char</em> <dfn class="local col0 decl" id="30filename" title='filename' data-type='char [256]' data-ref="30filename">filename</dfn>[<var>256</var>];</td></tr>
+<tr><th id="243">243</th><td>    <em>int</em> <dfn class="local col1 decl" id="31fd" title='fd' data-type='int' data-ref="31fd">fd</dfn>, <dfn class="local col2 decl" id="32count" title='count' data-type='int' data-ref="32count">count</dfn>;</td></tr>
+<tr><th id="244">244</th><td>    <em>char</em> *<dfn class="local col3 decl" id="33p" title='p' data-type='char *' data-ref="33p">p</dfn>, *<dfn class="local col4 decl" id="34x" title='x' data-type='char *' data-ref="34x">x</dfn>;</td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td>    <a class="ref" href="../../include/stdio.h.html#snprintf" title='snprintf' data-ref="snprintf">snprintf</a>(<a class="local col0 ref" href="#30filename" title='filename' data-ref="30filename">filename</a>,<var>256</var>,<q>"/proc/%d/stat"</q>,<a class="ref" href="../../include/unistd.h.html#getpid" title='getpid' data-ref="getpid">getpid</a>());</td></tr>
+<tr><th id="247">247</th><td>    <b>if</b> ((<a class="local col1 ref" href="#31fd" title='fd' data-ref="31fd">fd</a> = <a class="ref" href="../../include/fcntl.h.html#open" title='open' data-ref="open">open</a>(<a class="local col0 ref" href="#30filename" title='filename' data-ref="30filename">filename</a>,<a class="macro" href="../../include/x86_64-linux-gnu/bits/fcntl-linux.h.html#43" title="00" data-ref="_M/O_RDONLY">O_RDONLY</a>)) == -<var>1</var>) <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="248">248</th><td>    <b>if</b> (<a class="ref" href="../../include/unistd.h.html#read" title='read' data-ref="read">read</a>(<a class="local col1 ref" href="#31fd" title='fd' data-ref="31fd">fd</a>,<a class="local col9 ref" href="#29buf" title='buf' data-ref="29buf">buf</a>,<var>4096</var>) &lt;= <var>0</var>) {</td></tr>
+<tr><th id="249">249</th><td>        <a class="ref" href="../../include/unistd.h.html#close" title='close' data-ref="close">close</a>(<a class="local col1 ref" href="#31fd" title='fd' data-ref="31fd">fd</a>);</td></tr>
+<tr><th id="250">250</th><td>        <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="251">251</th><td>    }</td></tr>
+<tr><th id="252">252</th><td>    <a class="ref" href="../../include/unistd.h.html#close" title='close' data-ref="close">close</a>(<a class="local col1 ref" href="#31fd" title='fd' data-ref="31fd">fd</a>);</td></tr>
+<tr><th id="253">253</th><td></td></tr>
+<tr><th id="254">254</th><td>    <a class="local col3 ref" href="#33p" title='p' data-ref="33p">p</a> = <a class="local col9 ref" href="#29buf" title='buf' data-ref="29buf">buf</a>;</td></tr>
+<tr><th id="255">255</th><td>    <a class="local col2 ref" href="#32count" title='count' data-ref="32count">count</a> = <var>23</var>; <i>/* RSS is the 24th field in /proc/&lt;pid&gt;/stat */</i></td></tr>
+<tr><th id="256">256</th><td>    <b>while</b>(<a class="local col3 ref" href="#33p" title='p' data-ref="33p">p</a> &amp;&amp; <a class="local col2 ref" href="#32count" title='count' data-ref="32count">count</a>--) {</td></tr>
+<tr><th id="257">257</th><td>        <a class="local col3 ref" href="#33p" title='p' data-ref="33p">p</a> = <a class="macro" href="../../include/x86_64-linux-gnu/bits/string2.h.html#395" title="(__extension__ (__builtin_constant_p (&apos; &apos;) &amp;&amp; !__builtin_constant_p (p) &amp;&amp; (&apos; &apos;) == &apos;\0&apos; ? (char *) __rawmemchr (p, &apos; &apos;) : __builtin_strchr (p, &apos; &apos;)))" data-ref="_M/strchr">strchr</a>(<a class="local col3 ref" href="#33p" title='p' data-ref="33p">p</a>,<kbd>' '</kbd>);</td></tr>
+<tr><th id="258">258</th><td>        <b>if</b> (<a class="local col3 ref" href="#33p" title='p' data-ref="33p">p</a>) <a class="local col3 ref" href="#33p" title='p' data-ref="33p">p</a>++;</td></tr>
+<tr><th id="259">259</th><td>    }</td></tr>
+<tr><th id="260">260</th><td>    <b>if</b> (!<a class="local col3 ref" href="#33p" title='p' data-ref="33p">p</a>) <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="261">261</th><td>    <a class="local col4 ref" href="#34x" title='x' data-ref="34x">x</a> = <a class="macro" href="../../include/x86_64-linux-gnu/bits/string2.h.html#395" title="(__extension__ (__builtin_constant_p (&apos; &apos;) &amp;&amp; !__builtin_constant_p (p) &amp;&amp; (&apos; &apos;) == &apos;\0&apos; ? (char *) __rawmemchr (p, &apos; &apos;) : __builtin_strchr (p, &apos; &apos;)))" data-ref="_M/strchr">strchr</a>(<a class="local col3 ref" href="#33p" title='p' data-ref="33p">p</a>,<kbd>' '</kbd>);</td></tr>
+<tr><th id="262">262</th><td>    <b>if</b> (!<a class="local col4 ref" href="#34x" title='x' data-ref="34x">x</a>) <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="263">263</th><td>    *<a class="local col4 ref" href="#34x" title='x' data-ref="34x">x</a> = <kbd>'\0'</kbd>;</td></tr>
+<tr><th id="264">264</th><td></td></tr>
+<tr><th id="265">265</th><td>    <a class="local col8 ref" href="#28rss" title='rss' data-ref="28rss">rss</a> = <a class="ref" href="../../include/stdlib.h.html#strtoll" title='strtoll' data-ref="strtoll">strtoll</a>(<a class="local col3 ref" href="#33p" title='p' data-ref="33p">p</a>,<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>,<var>10</var>);</td></tr>
+<tr><th id="266">266</th><td>    <a class="local col8 ref" href="#28rss" title='rss' data-ref="28rss">rss</a> *= <a class="local col7 ref" href="#27page" title='page' data-ref="27page">page</a>;</td></tr>
+<tr><th id="267">267</th><td>    <b>return</b> <a class="local col8 ref" href="#28rss" title='rss' data-ref="28rss">rss</a>;</td></tr>
+<tr><th id="268">268</th><td>}</td></tr>
+<tr><th id="269">269</th><td><u>#<span data-ppcond="232">elif</span> defined(HAVE_TASKINFO)</u></td></tr>
+<tr><th id="270">270</th><td><u>#include &lt;unistd.h&gt;</u></td></tr>
+<tr><th id="271">271</th><td><u>#include &lt;stdio.h&gt;</u></td></tr>
+<tr><th id="272">272</th><td><u>#include &lt;stdlib.h&gt;</u></td></tr>
+<tr><th id="273">273</th><td><u>#include &lt;sys/types.h&gt;</u></td></tr>
+<tr><th id="274">274</th><td><u>#include &lt;sys/sysctl.h&gt;</u></td></tr>
+<tr><th id="275">275</th><td><u>#include &lt;mach/task.h&gt;</u></td></tr>
+<tr><th id="276">276</th><td><u>#include &lt;mach/mach_init.h&gt;</u></td></tr>
+<tr><th id="277">277</th><td></td></tr>
+<tr><th id="278">278</th><td>size_t zmalloc_get_rss(<em>void</em>) {</td></tr>
+<tr><th id="279">279</th><td>    task_t task = MACH_PORT_NULL;</td></tr>
+<tr><th id="280">280</th><td>    <b>struct</b> task_basic_info t_info;</td></tr>
+<tr><th id="281">281</th><td>    mach_msg_type_number_t t_info_count = TASK_BASIC_INFO_COUNT;</td></tr>
+<tr><th id="282">282</th><td></td></tr>
+<tr><th id="283">283</th><td>    <b>if</b> (task_for_pid(current_task(), getpid(), &amp;task) != KERN_SUCCESS)</td></tr>
+<tr><th id="284">284</th><td>        <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="285">285</th><td>    task_info(task, TASK_BASIC_INFO, (task_info_t)&amp;t_info, &amp;t_info_count);</td></tr>
+<tr><th id="286">286</th><td></td></tr>
+<tr><th id="287">287</th><td>    <b>return</b> t_info.resident_size;</td></tr>
+<tr><th id="288">288</th><td>}</td></tr>
+<tr><th id="289">289</th><td><u>#else</u></td></tr>
+<tr><th id="290">290</th><td>size_t zmalloc_get_rss(<em>void</em>) {</td></tr>
+<tr><th id="291">291</th><td>    <i>/* If we can't get the RSS in an OS-specific way for this system just</i></td></tr>
+<tr><th id="292">292</th><td><i>     * return the memory usage we estimated in zmalloc()..</i></td></tr>
+<tr><th id="293">293</th><td><i>     *</i></td></tr>
+<tr><th id="294">294</th><td><i>     * Fragmentation will appear to be always 1 (no fragmentation)</i></td></tr>
+<tr><th id="295">295</th><td><i>     * of course... */</i></td></tr>
+<tr><th id="296">296</th><td>    <b>return</b> zmalloc_used_memory();</td></tr>
+<tr><th id="297">297</th><td>}</td></tr>
+<tr><th id="298">298</th><td><u>#<span data-ppcond="232">endif</span></u></td></tr>
+<tr><th id="299">299</th><td></td></tr>
+<tr><th id="300">300</th><td><i>/* Fragmentation = RSS / allocated-bytes */</i></td></tr>
+<tr><th id="301">301</th><td><em>float</em> <dfn class="decl def" id="zmalloc_get_fragmentation_ratio" title='zmalloc_get_fragmentation_ratio' data-ref="zmalloc_get_fragmentation_ratio">zmalloc_get_fragmentation_ratio</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="35rss" title='rss' data-type='size_t' data-ref="35rss">rss</dfn>) {</td></tr>
+<tr><th id="302">302</th><td>    <b>return</b> (<em>float</em>)<a class="local col5 ref" href="#35rss" title='rss' data-ref="35rss">rss</a>/<a class="ref" href="#zmalloc_used_memory" title='zmalloc_used_memory' data-ref="zmalloc_used_memory">zmalloc_used_memory</a>();</td></tr>
+<tr><th id="303">303</th><td>}</td></tr>
+<tr><th id="304">304</th><td></td></tr>
+<tr><th id="305">305</th><td><i>/* Get the sum of the specified field (converted form kb to bytes) in</i></td></tr>
+<tr><th id="306">306</th><td><i> * /proc/self/smaps. The field must be specified with trailing ":" as it</i></td></tr>
+<tr><th id="307">307</th><td><i> * apperas in the smaps output.</i></td></tr>
+<tr><th id="308">308</th><td><i> *</i></td></tr>
+<tr><th id="309">309</th><td><i> * If a pid is specified, the information is extracted for such a pid,</i></td></tr>
+<tr><th id="310">310</th><td><i> * otherwise if pid is -1 the information is reported is about the</i></td></tr>
+<tr><th id="311">311</th><td><i> * current process.</i></td></tr>
+<tr><th id="312">312</th><td><i> *</i></td></tr>
+<tr><th id="313">313</th><td><i> * Example: zmalloc_get_smap_bytes_by_field("Rss:",-1);</i></td></tr>
+<tr><th id="314">314</th><td><i> */</i></td></tr>
+<tr><th id="315">315</th><td><u>#<span data-ppcond="315">if</span> defined(<a class="macro" href="config.h.html#55" data-ref="_M/HAVE_PROC_SMAPS">HAVE_PROC_SMAPS</a>)</u></td></tr>
+<tr><th id="316">316</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="zmalloc_get_smap_bytes_by_field" title='zmalloc_get_smap_bytes_by_field' data-ref="zmalloc_get_smap_bytes_by_field">zmalloc_get_smap_bytes_by_field</dfn>(<em>char</em> *<dfn class="local col6 decl" id="36field" title='field' data-type='char *' data-ref="36field">field</dfn>, <em>long</em> <dfn class="local col7 decl" id="37pid" title='pid' data-type='long' data-ref="37pid">pid</dfn>) {</td></tr>
+<tr><th id="317">317</th><td>    <em>char</em> <dfn class="local col8 decl" id="38line" title='line' data-type='char [1024]' data-ref="38line">line</dfn>[<var>1024</var>];</td></tr>
+<tr><th id="318">318</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="39bytes" title='bytes' data-type='size_t' data-ref="39bytes">bytes</dfn> = <var>0</var>;</td></tr>
+<tr><th id="319">319</th><td>    <em>int</em> <dfn class="local col0 decl" id="40flen" title='flen' data-type='int' data-ref="40flen">flen</dfn> = <a class="ref" href="../../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col6 ref" href="#36field" title='field' data-ref="36field">field</a>);</td></tr>
+<tr><th id="320">320</th><td>    <a class="typedef" href="../../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col1 decl" id="41fp" title='fp' data-type='FILE *' data-ref="41fp">fp</dfn>;</td></tr>
+<tr><th id="321">321</th><td></td></tr>
+<tr><th id="322">322</th><td>    <b>if</b> (<a class="local col7 ref" href="#37pid" title='pid' data-ref="37pid">pid</a> == -<var>1</var>) {</td></tr>
+<tr><th id="323">323</th><td>        <a class="local col1 ref" href="#41fp" title='fp' data-ref="41fp">fp</a> = <a class="ref" href="../../include/stdio.h.html#fopen" title='fopen' data-ref="fopen">fopen</a>(<q>"/proc/self/smaps"</q>,<q>"r"</q>);</td></tr>
+<tr><th id="324">324</th><td>    } <b>else</b> {</td></tr>
+<tr><th id="325">325</th><td>        <em>char</em> <dfn class="local col2 decl" id="42filename" title='filename' data-type='char [128]' data-ref="42filename">filename</dfn>[<var>128</var>];</td></tr>
+<tr><th id="326">326</th><td>        <a class="ref" href="../../include/stdio.h.html#snprintf" title='snprintf' data-ref="snprintf">snprintf</a>(<a class="local col2 ref" href="#42filename" title='filename' data-ref="42filename">filename</a>,<b>sizeof</b>(<a class="local col2 ref" href="#42filename" title='filename' data-ref="42filename">filename</a>),<q>"/proc/%ld/smaps"</q>,<a class="local col7 ref" href="#37pid" title='pid' data-ref="37pid">pid</a>);</td></tr>
+<tr><th id="327">327</th><td>        <a class="local col1 ref" href="#41fp" title='fp' data-ref="41fp">fp</a> = <a class="ref" href="../../include/stdio.h.html#fopen" title='fopen' data-ref="fopen">fopen</a>(<a class="local col2 ref" href="#42filename" title='filename' data-ref="42filename">filename</a>,<q>"r"</q>);</td></tr>
+<tr><th id="328">328</th><td>    }</td></tr>
+<tr><th id="329">329</th><td></td></tr>
+<tr><th id="330">330</th><td>    <b>if</b> (!<a class="local col1 ref" href="#41fp" title='fp' data-ref="41fp">fp</a>) <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="331">331</th><td>    <b>while</b>(<a class="ref" href="../../include/stdio.h.html#fgets" title='fgets' data-ref="fgets">fgets</a>(<a class="local col8 ref" href="#38line" title='line' data-ref="38line">line</a>,<b>sizeof</b>(<a class="local col8 ref" href="#38line" title='line' data-ref="38line">line</a>),<a class="local col1 ref" href="#41fp" title='fp' data-ref="41fp">fp</a>) != <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="332">332</th><td>        <b>if</b> (<a class="macro" href="../../include/x86_64-linux-gnu/bits/string2.h.html#896" title="(__extension__ (__builtin_constant_p (flen) &amp;&amp; ((__builtin_constant_p (line) &amp;&amp; strlen (line) &lt; ((size_t) (flen))) || (__builtin_constant_p (field) &amp;&amp; strlen (field) &lt; ((size_t) (flen)))) ? __extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (line) &amp;&amp; __builtin_constant_p (field) &amp;&amp; (__s1_len = __builtin_strlen (line), __s2_len = __builtin_strlen (field), (!((size_t)(const void *)((line) + 1) - (size_t)(const void *)(line) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((field) + 1) - (size_t)(const void *)(field) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (line, field) : (__builtin_constant_p (line) &amp;&amp; ((size_t)(const void *)((line) + 1) - (size_t)(const void *)(line) == 1) &amp;&amp; (__s1_len = __builtin_strlen (line), __s1_len &lt; 4) ? (__builtin_constant_p (field) &amp;&amp; ((size_t)(const void *)((field) + 1) - (size_t)(const void *)(field) == 1) ? __builtin_strcmp (line, field) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (field); int __result = (((const unsigned char *) (const char *) (line))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (line))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (line))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (line))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (field) &amp;&amp; ((size_t)(const void *)((field) + 1) - (size_t)(const void *)(field) == 1) &amp;&amp; (__s2_len = __builtin_strlen (field), __s2_len &lt; 4) ? (__builtin_constant_p (line) &amp;&amp; ((size_t)(const void *)((line) + 1) - (size_t)(const void *)(line) == 1) ? __builtin_strcmp (line, field) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (line); int __result = (((const unsigned char *) (const char *) (field))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (field))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (field))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (field))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (line, field)))); }) : strncmp (line, field, flen)))" data-ref="_M/strncmp">strncmp</a>(<a class="local col8 ref" href="#38line" title='line' data-ref="38line">line</a>,<a class="local col6 ref" href="#36field" title='field' data-ref="36field">field</a>,<a class="local col0 ref" href="#40flen" title='flen' data-ref="40flen">flen</a>) == <var>0</var>) {</td></tr>
+<tr><th id="333">333</th><td>            <em>char</em> *<dfn class="local col3 decl" id="43p" title='p' data-type='char *' data-ref="43p">p</dfn> = <a class="macro" href="../../include/x86_64-linux-gnu/bits/string2.h.html#395" title="(__extension__ (__builtin_constant_p (&apos;k&apos;) &amp;&amp; !__builtin_constant_p (line) &amp;&amp; (&apos;k&apos;) == &apos;\0&apos; ? (char *) __rawmemchr (line, &apos;k&apos;) : __builtin_strchr (line, &apos;k&apos;)))" data-ref="_M/strchr">strchr</a>(<a class="local col8 ref" href="#38line" title='line' data-ref="38line">line</a>,<kbd>'k'</kbd>);</td></tr>
+<tr><th id="334">334</th><td>            <b>if</b> (<a class="local col3 ref" href="#43p" title='p' data-ref="43p">p</a>) {</td></tr>
+<tr><th id="335">335</th><td>                *<a class="local col3 ref" href="#43p" title='p' data-ref="43p">p</a> = <kbd>'\0'</kbd>;</td></tr>
+<tr><th id="336">336</th><td>                <a class="local col9 ref" href="#39bytes" title='bytes' data-ref="39bytes">bytes</a> += <a class="ref" href="../../include/stdlib.h.html#strtol" title='strtol' data-ref="strtol">strtol</a>(<a class="local col8 ref" href="#38line" title='line' data-ref="38line">line</a>+<a class="local col0 ref" href="#40flen" title='flen' data-ref="40flen">flen</a>,<span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>,<var>10</var>) * <var>1024</var>;</td></tr>
+<tr><th id="337">337</th><td>            }</td></tr>
+<tr><th id="338">338</th><td>        }</td></tr>
+<tr><th id="339">339</th><td>    }</td></tr>
+<tr><th id="340">340</th><td>    <a class="ref" href="../../include/stdio.h.html#fclose" title='fclose' data-ref="fclose">fclose</a>(<a class="local col1 ref" href="#41fp" title='fp' data-ref="41fp">fp</a>);</td></tr>
+<tr><th id="341">341</th><td>    <b>return</b> <a class="local col9 ref" href="#39bytes" title='bytes' data-ref="39bytes">bytes</a>;</td></tr>
+<tr><th id="342">342</th><td>}</td></tr>
+<tr><th id="343">343</th><td><u>#<span data-ppcond="315">else</span></u></td></tr>
+<tr><th id="344">344</th><td>size_t zmalloc_get_smap_bytes_by_field(<em>char</em> *field, <em>long</em> pid) {</td></tr>
+<tr><th id="345">345</th><td>    ((<em>void</em>) field);</td></tr>
+<tr><th id="346">346</th><td>    ((<em>void</em>) pid);</td></tr>
+<tr><th id="347">347</th><td>    <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="348">348</th><td>}</td></tr>
+<tr><th id="349">349</th><td><u>#<span data-ppcond="315">endif</span></u></td></tr>
+<tr><th id="350">350</th><td></td></tr>
+<tr><th id="351">351</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="zmalloc_get_private_dirty" title='zmalloc_get_private_dirty' data-ref="zmalloc_get_private_dirty">zmalloc_get_private_dirty</dfn>(<em>long</em> <dfn class="local col4 decl" id="44pid" title='pid' data-type='long' data-ref="44pid">pid</dfn>) {</td></tr>
+<tr><th id="352">352</th><td>    <b>return</b> <a class="ref" href="#zmalloc_get_smap_bytes_by_field" title='zmalloc_get_smap_bytes_by_field' data-ref="zmalloc_get_smap_bytes_by_field">zmalloc_get_smap_bytes_by_field</a>(<q>"Private_Dirty:"</q>,<a class="local col4 ref" href="#44pid" title='pid' data-ref="44pid">pid</a>);</td></tr>
+<tr><th id="353">353</th><td>}</td></tr>
+<tr><th id="354">354</th><td></td></tr>
+<tr><th id="355">355</th><td><i>/* Returns the size of physical memory (RAM) in bytes.</i></td></tr>
+<tr><th id="356">356</th><td><i> * It looks ugly, but this is the cleanest way to achive cross platform results.</i></td></tr>
+<tr><th id="357">357</th><td><i> * Cleaned up from:</i></td></tr>
+<tr><th id="358">358</th><td><i> *</i></td></tr>
+<tr><th id="359">359</th><td><i> * <a href="http://nadeausoftware.com/articles/2012/09/c_c_tip_how_get_physical_memory_size_system">http://nadeausoftware.com/articles/2012/09/c_c_tip_how_get_physical_memory_size_system</a></i></td></tr>
+<tr><th id="360">360</th><td><i> *</i></td></tr>
+<tr><th id="361">361</th><td><i> * Note that this function:</i></td></tr>
+<tr><th id="362">362</th><td><i> * 1) Was released under the following CC attribution license:</i></td></tr>
+<tr><th id="363">363</th><td><i> *    <a href="http://creativecommons.org/licenses/by/3.0/deed.en_US">http://creativecommons.org/licenses/by/3.0/deed.en_US</a>.</i></td></tr>
+<tr><th id="364">364</th><td><i> * 2) Was originally implemented by David Robert Nadeau.</i></td></tr>
+<tr><th id="365">365</th><td><i> * 3) Was modified for Redis by Matt Stancliff.</i></td></tr>
+<tr><th id="366">366</th><td><i> * 4) This note exists in order to comply with the original license.</i></td></tr>
+<tr><th id="367">367</th><td><i> */</i></td></tr>
+<tr><th id="368">368</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="zmalloc_get_memory_size" title='zmalloc_get_memory_size' data-ref="zmalloc_get_memory_size">zmalloc_get_memory_size</dfn>(<em>void</em>) {</td></tr>
+<tr><th id="369">369</th><td><u>#<span data-ppcond="369">if</span> defined(<span class="macro" data-ref="_M/__unix__">__unix__</span>) || defined(<span class="macro" data-ref="_M/__unix">__unix</span>) || defined(<span class="macro" data-ref="_M/unix">unix</span>) || \</u></td></tr>
+<tr><th id="370">370</th><td><u>    (defined(<span class="macro" data-ref="_M/__APPLE__">__APPLE__</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/__MACH__">__MACH__</span>))</u></td></tr>
+<tr><th id="371">371</th><td><u>#<span data-ppcond="371">if</span> defined(<span class="macro" data-ref="_M/CTL_HW">CTL_HW</span>) &amp;&amp; (defined(<span class="macro" data-ref="_M/HW_MEMSIZE">HW_MEMSIZE</span>) || defined(<span class="macro" data-ref="_M/HW_PHYSMEM64">HW_PHYSMEM64</span>))</u></td></tr>
+<tr><th id="372">372</th><td>    <em>int</em> mib[<var>2</var>];</td></tr>
+<tr><th id="373">373</th><td>    mib[<var>0</var>] = CTL_HW;</td></tr>
+<tr><th id="374">374</th><td><u>#if defined(HW_MEMSIZE)</u></td></tr>
+<tr><th id="375">375</th><td>    mib[<var>1</var>] = HW_MEMSIZE;            <i>/* OSX. --------------------- */</i></td></tr>
+<tr><th id="376">376</th><td><u>#elif defined(HW_PHYSMEM64)</u></td></tr>
+<tr><th id="377">377</th><td>    mib[<var>1</var>] = HW_PHYSMEM64;          <i>/* NetBSD, OpenBSD. --------- */</i></td></tr>
+<tr><th id="378">378</th><td><u>#endif</u></td></tr>
+<tr><th id="379">379</th><td>    int64_t size = <var>0</var>;               <i>/* 64-bit */</i></td></tr>
+<tr><th id="380">380</th><td>    size_t len = <b>sizeof</b>(size);</td></tr>
+<tr><th id="381">381</th><td>    <b>if</b> (sysctl( mib, <var>2</var>, &amp;size, &amp;len, NULL, <var>0</var>) == <var>0</var>)</td></tr>
+<tr><th id="382">382</th><td>        <b>return</b> (size_t)size;</td></tr>
+<tr><th id="383">383</th><td>    <b>return</b> <var>0L</var>;          <i>/* Failed? */</i></td></tr>
+<tr><th id="384">384</th><td></td></tr>
+<tr><th id="385">385</th><td><u>#<span data-ppcond="371">elif</span> defined(<a class="macro" href="../../include/x86_64-linux-gnu/bits/confname.h.html#255" data-ref="_M/_SC_PHYS_PAGES">_SC_PHYS_PAGES</a>) &amp;&amp; defined(<a class="macro" href="../../include/x86_64-linux-gnu/bits/confname.h.html#134" data-ref="_M/_SC_PAGESIZE">_SC_PAGESIZE</a>)</u></td></tr>
+<tr><th id="386">386</th><td>    <i>/* FreeBSD, Linux, OpenBSD, and Solaris. -------------------- */</i></td></tr>
+<tr><th id="387">387</th><td>    <b>return</b> (<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>)<a class="ref" href="../../include/unistd.h.html#sysconf" title='sysconf' data-ref="sysconf">sysconf</a>(<a class="macro" href="../../include/x86_64-linux-gnu/bits/confname.h.html#255" title="_SC_PHYS_PAGES" data-ref="_M/_SC_PHYS_PAGES">_SC_PHYS_PAGES</a>) * (<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>)<a class="ref" href="../../include/unistd.h.html#sysconf" title='sysconf' data-ref="sysconf">sysconf</a>(<a class="macro" href="../../include/x86_64-linux-gnu/bits/confname.h.html#134" title="_SC_PAGESIZE" data-ref="_M/_SC_PAGESIZE">_SC_PAGESIZE</a>);</td></tr>
+<tr><th id="388">388</th><td></td></tr>
+<tr><th id="389">389</th><td><u>#<span data-ppcond="371">elif</span> defined(CTL_HW) &amp;&amp; (defined(HW_PHYSMEM) || defined(HW_REALMEM))</u></td></tr>
+<tr><th id="390">390</th><td>    <i>/* DragonFly BSD, FreeBSD, NetBSD, OpenBSD, and OSX. -------- */</i></td></tr>
+<tr><th id="391">391</th><td>    <em>int</em> mib[<var>2</var>];</td></tr>
+<tr><th id="392">392</th><td>    mib[<var>0</var>] = CTL_HW;</td></tr>
+<tr><th id="393">393</th><td><u>#if defined(HW_REALMEM)</u></td></tr>
+<tr><th id="394">394</th><td>    mib[<var>1</var>] = HW_REALMEM;        <i>/* FreeBSD. ----------------- */</i></td></tr>
+<tr><th id="395">395</th><td><u>#elif defined(HW_PYSMEM)</u></td></tr>
+<tr><th id="396">396</th><td>    mib[<var>1</var>] = HW_PHYSMEM;        <i>/* Others. ------------------ */</i></td></tr>
+<tr><th id="397">397</th><td><u>#endif</u></td></tr>
+<tr><th id="398">398</th><td>    <em>unsigned</em> <em>int</em> size = <var>0</var>;      <i>/* 32-bit */</i></td></tr>
+<tr><th id="399">399</th><td>    size_t len = <b>sizeof</b>(size);</td></tr>
+<tr><th id="400">400</th><td>    <b>if</b> (sysctl(mib, <var>2</var>, &amp;size, &amp;len, NULL, <var>0</var>) == <var>0</var>)</td></tr>
+<tr><th id="401">401</th><td>        <b>return</b> (size_t)size;</td></tr>
+<tr><th id="402">402</th><td>    <b>return</b> <var>0L</var>;          <i>/* Failed? */</i></td></tr>
+<tr><th id="403">403</th><td><u>#else</u></td></tr>
+<tr><th id="404">404</th><td>    <b>return</b> <var>0L</var>;          <i>/* Unknown method to get the data. */</i></td></tr>
+<tr><th id="405">405</th><td><u>#<span data-ppcond="371">endif</span></u></td></tr>
+<tr><th id="406">406</th><td><u>#<span data-ppcond="369">else</span></u></td></tr>
+<tr><th id="407">407</th><td>    <b>return</b> <var>0L</var>;          <i>/* Unknown OS. */</i></td></tr>
+<tr><th id="408">408</th><td><u>#<span data-ppcond="369">endif</span></u></td></tr>
+<tr><th id="409">409</th><td>}</td></tr>
+<tr><th id="410">410</th><td></td></tr>
+<tr><th id="411">411</th><td></td></tr>
+<tr><th id="412">412</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Oct-16</em> from project codebrowser revision <em>with-deprecated-diskstore-4466-g2bf8c2c</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

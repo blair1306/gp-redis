@@ -1,0 +1,7 @@
+<def f='codebrowser/src/module.c' l='1422' ll='1432' type='size_t RM_ValueLength(RedisModuleKey * key)'/>
+<use f='codebrowser/src/module.c' l='3919' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1417'>/* Return the length of the value associated with the key.
+ * For strings this is the length of the string. For all the other types
+ * is the number of elements (just counting keys for hashes).
+ *
+ * If the key pointer is NULL or the key is empty, zero is returned. */</doc>

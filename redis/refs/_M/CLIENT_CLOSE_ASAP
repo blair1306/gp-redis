@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='231'/>
+<use f='codebrowser/src/networking.c' l='786' u='c'/>
+<use f='codebrowser/src/networking.c' l='854' u='c'/>
+<use f='codebrowser/src/networking.c' l='874' u='c'/>
+<use f='codebrowser/src/networking.c' l='875' u='c'/>
+<use f='codebrowser/src/networking.c' l='884' u='c'/>
+<use f='codebrowser/src/networking.c' l='1306' u='c'/>
+<use f='codebrowser/src/networking.c' l='1506' u='c'/>
+<use f='codebrowser/src/networking.c' l='1909' u='c'/>
+<use f='codebrowser/src/replication.c' l='2202' u='c'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1534' type='void sendChildInfo(int process_type)'/>
+<use f='codebrowser/src/aof.c' l='1362' u='c' c='rewriteAppendOnlyFileBackground'/>
+<def f='codebrowser/src/childinfo.c' l='62' ll='70' type='void sendChildInfo(int ptype)'/>
+<doc f='codebrowser/src/childinfo.c' l='60'>/* Send COW data to parent. The child should call this function after populating
+ * the corresponding fields it want to sent (according to the process type). */</doc>
+<use f='codebrowser/src/rdb.c' l='1075' u='c' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1886' u='c' c='rdbSaveToSlavesSockets'/>

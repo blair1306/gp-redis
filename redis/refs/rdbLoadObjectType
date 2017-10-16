@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rdb.h' l='130' type='int rdbLoadObjectType(rio * rdb)'/>
+<use f='codebrowser/src/cluster.c' l='4732' u='c' c='restoreCommand'/>
+<def f='codebrowser/src/rdb.c' l='635' ll='640' type='int rdbLoadObjectType(rio * rdb)'/>
+<doc f='codebrowser/src/rdb.c' l='633'>/* Use rdbLoadType() to load a TYPE in RDB format, but returns -1 if the
+ * type is not specifically a valid Object Type. */</doc>

@@ -1,0 +1,7 @@
+<def f='codebrowser/src/scripting.c' l='733' ll='743' type='int luaRedisDebugCommand(lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='995' u='r' c='scriptingInit'/>
+<doc f='codebrowser/src/scripting.c' l='728'>/* redis.debug()
+ *
+ * Log a string message into the output console.
+ * Can take multiple arguments that will be separated by commas.
+ * Nothing is returned to the caller. */</doc>

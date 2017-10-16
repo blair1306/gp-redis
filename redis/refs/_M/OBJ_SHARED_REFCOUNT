@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='583'/>
+<use f='codebrowser/src/object.c' l='71' u='c'/>
+<use f='codebrowser/src/object.c' l='307' u='c'/>
+<use f='codebrowser/src/object.c' l='324' u='c'/>
+<use f='codebrowser/src/slowlog.c' l='75' u='c'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='979' type='int'/>
+<offset>13216</offset>
+<doc f='codebrowser/src/server.h' l='979'>/* maximum percentage of fragmentation at which we use maximum effort */</doc>
+<use f='codebrowser/src/config.c' l='513' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='514' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1050' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1226' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1996' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/defrag.c' l='504' u='r' c='activeDefragCycle'/>
+<use f='codebrowser/src/server.c' l='1369' u='w' c='initServerConfig'/>

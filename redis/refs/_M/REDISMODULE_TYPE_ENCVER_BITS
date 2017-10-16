@@ -1,0 +1,2 @@
+<dec f='codebrowser/src/server.h' l='469'/>
+<doc f='codebrowser/src/server.h' l='468'>/* Extract encver / signature from a module type ID. */</doc>

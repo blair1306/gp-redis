@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='71' type='void * je_memalign(size_t alignment, size_t size)'/>
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1855' macro='1' type='void * je_memalign(size_t alignment, size_t size)'/>

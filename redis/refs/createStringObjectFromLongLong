@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='1449' type='robj * createStringObjectFromLongLong(long long value)'/>
+<use f='codebrowser/src/aof.c' l='505' u='c' c='catAppendOnlyExpireAtCommand'/>
+<use f='codebrowser/src/db.c' l='679' u='c' c='scanGenericCommand'/>
+<use f='codebrowser/src/db.c' l='691' u='c' c='scanGenericCommand'/>
+<def f='codebrowser/src/object.c' l='124' ll='139' type='robj * createStringObjectFromLongLong(long long value)'/>
+<use f='codebrowser/src/rdb.c' l='261' u='c' c='rdbLoadIntegerObject'/>
+<use f='codebrowser/src/t_hash.c' l='138' u='c' c='hashTypeGetValueObject'/>
+<use f='codebrowser/src/t_list.c' l='66' u='c' c='listTypePop'/>
+<use f='codebrowser/src/t_list.c' l='133' u='c' c='listTypeGet'/>
+<use f='codebrowser/src/t_list.c' l='329' u='c' c='lindexCommand'/>
+<use f='codebrowser/src/t_set.c' l='480' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='529' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='579' u='c' c='spopCommand'/>
+<use f='codebrowser/src/t_set.c' l='693' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='723' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_string.c' l='364' u='c' c='incrDecrCommand'/>

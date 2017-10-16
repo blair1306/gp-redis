@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/src/jemalloc.c' l='68' type='1'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1154' u='r' c='malloc_init_hard_needed'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1245' u='r' c='malloc_init_hard_recursible'/>

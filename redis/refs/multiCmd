@@ -1,0 +1,6 @@
+<def f='codebrowser/src/server.h' l='621' ll='625'/>
+<size>24</size>
+<doc f='codebrowser/src/server.h' l='620'>/* Client MULTI/EXEC state */</doc>
+<mbr r='multiCmd::argv' o='0' t='robj **'/>
+<mbr r='multiCmd::argc' o='64' t='int'/>
+<mbr r='multiCmd::cmd' o='128' t='struct redisCommand *'/>

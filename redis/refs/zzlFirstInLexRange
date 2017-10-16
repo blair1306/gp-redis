@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1591' type='unsigned char * zzlFirstInLexRange(unsigned char * zl, zlexrangespec * range)'/>
+<use f='codebrowser/src/module.c' l='1878' u='c' c='zsetInitLexRange'/>
+<def f='codebrowser/src/t_zset.c' l='895' ll='916' type='unsigned char * zzlFirstInLexRange(unsigned char * zl, zlexrangespec * range)'/>
+<use f='codebrowser/src/t_zset.c' l='1069' u='c' c='zzlDeleteRangeByLex'/>
+<use f='codebrowser/src/t_zset.c' l='2772' u='c' c='zlexcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2888' u='c' c='genericZrangebylexCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='893'>/* Find pointer to the first element contained in the specified lex range.
+ * Returns NULL when no element is contained in the range. */</doc>

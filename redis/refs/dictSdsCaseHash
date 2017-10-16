@@ -1,0 +1,19 @@
+<dec f='codebrowser/src/config.c' l='1426' type='uint64_t dictSdsCaseHash(const void * key)'/>
+<use f='codebrowser/src/config.c' l='1436'/>
+<use f='codebrowser/src/config.c' l='1436'/>
+<use f='codebrowser/src/config.c' l='1445'/>
+<use f='codebrowser/src/config.c' l='1445'/>
+<doc f='codebrowser/src/config.c' l='1423'>/* We use the following dictionary type to store where a configuration
+ * option is mentioned in the old configuration file, so it&apos;s
+ * like &quot;maxmemory&quot; -&gt; list of line numbers (first line is zero). */</doc>
+<def f='codebrowser/src/server.c' l='498' ll='500' type='uint64_t dictSdsCaseHash(const void * key)'/>
+<use f='codebrowser/src/server.c' l='586'/>
+<use f='codebrowser/src/server.c' l='586'/>
+<use f='codebrowser/src/server.c' l='606'/>
+<use f='codebrowser/src/server.c' l='606'/>
+<use f='codebrowser/src/server.c' l='651'/>
+<use f='codebrowser/src/server.c' l='651'/>
+<use f='codebrowser/src/server.c' l='663'/>
+<use f='codebrowser/src/server.c' l='663'/>
+<use f='codebrowser/src/server.c' l='685'/>
+<use f='codebrowser/src/server.c' l='685'/>

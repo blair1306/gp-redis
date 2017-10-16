@@ -1,0 +1,5 @@
+<def f='codebrowser/src/redis-cli.c' l='78' type='int'/>
+<use f='codebrowser/src/redis-cli.c' l='1017' u='w' c='parseOptions'/>
+<use f='codebrowser/src/redis-cli.c' l='1590' u='r' c='showLatencyDistSamples'/>
+<use f='codebrowser/src/redis-cli.c' l='1612' u='r' c='showLatencyDistLegend'/>
+<use f='codebrowser/src/redis-cli.c' l='2646' u='w' c='main'/>

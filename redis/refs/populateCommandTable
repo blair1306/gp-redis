@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1626' type='void populateCommandTable()'/>
+<use f='codebrowser/src/server.c' l='1501' u='c' c='initServerConfig'/>
+<def f='codebrowser/src/server.c' l='1956' ll='1991' type='void populateCommandTable()'/>
+<doc f='codebrowser/src/server.c' l='1954'>/* Populates the Redis Command Table starting from the hard coded list
+ * we have on top of redis.c file. */</doc>

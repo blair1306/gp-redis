@@ -1,0 +1,5 @@
+<def f='codebrowser/src/rdb.c' l='837' ll='839' type='int rdbSaveAuxFieldStrStr(rio * rdb, char * key, char * val)'/>
+<use f='codebrowser/src/rdb.c' l='854' u='c' c='rdbSaveInfoAuxFields'/>
+<use f='codebrowser/src/rdb.c' l='863' u='c' c='rdbSaveInfoAuxFields'/>
+<doc f='codebrowser/src/rdb.c' l='835'>/* Wrapper for rdbSaveAuxField() used when key/val length can be obtained
+ * with strlen(). */</doc>

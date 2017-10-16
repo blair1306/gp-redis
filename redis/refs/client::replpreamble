@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='705' type='sds'/>
+<offset>1536</offset>
+<doc f='codebrowser/src/server.h' l='705'>/* Replication DB preamble. */</doc>
+<use f='codebrowser/src/networking.c' l='834' u='r' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='834' u='r' c='freeClient'/>
+<use f='codebrowser/src/replication.c' l='880' u='r' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='881' u='r' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='881' u='r' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='889' u='r' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='890' u='r' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='891' u='r' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='892' u='w' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='989' u='w' c='updateSlavesWaitingBgsave'/>

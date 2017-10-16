@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/cluster.h' l='163' type='uint64_t'/>
+<use f='codebrowser/src/cluster.c' l='145' u='w' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='319' u='r' c='clusterSaveConfig'/>
+<use f='codebrowser/src/cluster.c' l='424' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='542' u='w' c='clusterReset'/>
+<use f='codebrowser/src/cluster.c' l='2624' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2692' u='w' c='clusterSendFailoverAuthIfNeeded'/>
+<offset>4195264</offset>
+<doc f='codebrowser/src/cluster.h' l='162'>/* The followign fields are used by masters to take state on elections. */</doc>
+<doc f='codebrowser/src/cluster.h' l='163'>/* Epoch of the last vote granted. */</doc>

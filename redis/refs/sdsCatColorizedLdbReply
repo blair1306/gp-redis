@@ -1,0 +1,4 @@
+<def f='codebrowser/src/redis-cli.c' l='650' ll='664' type='sds sdsCatColorizedLdbReply(sds o, char * s, size_t len)'/>
+<use f='codebrowser/src/redis-cli.c' l='693' u='c' c='cliFormatReplyRaw'/>
+<doc f='codebrowser/src/redis-cli.c' l='648'>/* Colorize Lua debugger status replies according to the prefix they
+ * have. */</doc>

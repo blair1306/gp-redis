@@ -1,0 +1,9 @@
+<def f='codebrowser/src/server.h' l='554' ll='557'/>
+<size>40</size>
+<doc f='codebrowser/src/server.h' l='549'>/* This is a structure used to export DEBUG DIGEST capabilities to Redis
+ * modules. We want to capture both the ordered and unordered elements of
+ * a data structure, so that a digest can be created in a way that correctly
+ * reflects the values. See the DEBUG DIGEST command implementation for more
+ * background. */</doc>
+<mbr r='RedisModuleDigest::o' o='0' t='unsigned char [20]'/>
+<mbr r='RedisModuleDigest::x' o='160' t='unsigned char [20]'/>

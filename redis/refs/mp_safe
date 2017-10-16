@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='859' ll='879' type='int mp_safe(lua_State * L)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='933' u='r' c='luaopen_cmsgpack_safe'/>

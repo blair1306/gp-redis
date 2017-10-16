@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/rdb.h' l='128' type='int rdbLoadLenByRef(rio * rdb, int * isencoded, uint64_t * lenptr)'/>
+<use f='codebrowser/src/module.c' l='2983' u='c' c='RM_LoadUnsigned'/>
+<def f='codebrowser/src/rdb.c' l='153' ll='187' type='int rdbLoadLenByRef(rio * rdb, int * isencoded, uint64_t * lenptr)'/>
+<use f='codebrowser/src/rdb.c' l='196' u='c' c='rdbLoadLen'/>
+<use f='codebrowser/src/rdb.c' l='1118' u='c' c='rdbLoadCheckModuleValue'/>
+<doc f='codebrowser/src/rdb.c' l='144'>/* Load an encoded length. If the loaded length is a normal length as stored
+ * with rdbSaveLen(), the read length is set to &apos;*lenptr&apos;. If instead the
+ * loaded length describes a special encoding that follows, then &apos;*isencoded&apos;
+ * is set to 1 and the encoding format is stored at &apos;*lenptr&apos;.
+ *
+ * See the RDB_ENC_* definitions in rdb.h for more information on special
+ * encodings.
+ *
+ * The function returns -1 on error, 0 on success. */</doc>

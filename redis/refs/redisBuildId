@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1814' type='uint64_t redisBuildId()'/>
+<def f='codebrowser/src/release.c' l='48' ll='52' type='uint64_t redisBuildId()'/>
+<use f='codebrowser/src/server.c' l='2865' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3399' u='c' c='version'/>

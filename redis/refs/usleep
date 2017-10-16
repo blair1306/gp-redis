@@ -1,0 +1,15 @@
+<dec f='include/unistd.h' l='463' type='int usleep(__useconds_t __useconds)'/>
+<doc f='include/unistd.h' l='458'>/* Sleep USECONDS microseconds, or until a signal arrives that is not blocked
+   or ignored.
+
+   This function is a cancellation point and therefore not marked with
+   __THROW.  */</doc>
+<use f='codebrowser/src/evict.c' l='563' u='c' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/redis-benchmark.c' l='421' u='c' c='createMissingClients'/>
+<use f='codebrowser/src/redis-cli.c' l='931' u='c' c='cliSendCommand'/>
+<use f='codebrowser/src/redis-cli.c' l='954' u='c' c='reconnectingRedisCommand'/>
+<use f='codebrowser/src/redis-cli.c' l='1551' u='c' c='latencyMode'/>
+<use f='codebrowser/src/redis-cli.c' l='1693' u='c' c='latencyDistMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2215' u='c' c='findBigKeys'/>
+<use f='codebrowser/src/redis-cli.c' l='2400' u='c' c='statMode'/>
+<use f='codebrowser/src/server.c' l='1569' u='c' c='restartServer'/>

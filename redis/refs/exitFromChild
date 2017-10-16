@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1328' type='void exitFromChild(int retcode)'/>
+<use f='codebrowser/src/aof.c' l='1363' u='c' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/aof.c' l='1365' u='c' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/rdb.c' l='1077' u='c' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1929' u='c' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/scripting.c' l='1656' u='c' c='ldbEndSession'/>
+<def f='codebrowser/src/server.c' l='419' ll='425' type='void exitFromChild(int retcode)'/>
+<doc f='codebrowser/src/server.c' l='415'>/* After an RDB dump or AOF rewrite we exit from children using _exit() instead of
+ * exit(), because the latter may interact with the same file objects used by
+ * the parent process. However if we are testing the coverage normal exit() is
+ * used in order to obtain the right coverage information. */</doc>

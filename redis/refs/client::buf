@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='728' type='char [16384]'/>
+<offset>3744</offset>
+<use f='codebrowser/src/module.c' l='2634' u='r' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='3514' u='r' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/networking.c' l='208' u='r' c='_addReplyToBuffer'/>
+<use f='codebrowser/src/networking.c' l='219' u='r' c='_addReplyToBuffer'/>
+<use f='codebrowser/src/networking.c' l='328' u='r' c='addReply'/>
+<use f='codebrowser/src/networking.c' l='593' u='r' c='copyClientOutputBuffer'/>
+<use f='codebrowser/src/networking.c' l='593' u='r' c='copyClientOutputBuffer'/>
+<use f='codebrowser/src/networking.c' l='899' u='r' c='writeToClient'/>
+<use f='codebrowser/src/scripting.c' l='563' u='w' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='564' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='567' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='590' u='r' c='luaRedisGenericCommand'/>

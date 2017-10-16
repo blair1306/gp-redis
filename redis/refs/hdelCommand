@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1933' type='void hdelCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='208' u='r'/>
+<use f='codebrowser/src/server.c' l='208' u='r'/>
+<use f='codebrowser/src/server.c' l='208' u='r'/>
+<use f='codebrowser/src/server.c' l='208' u='r'/>
+<def f='codebrowser/src/t_hash.c' l='702' ll='728' type='void hdelCommand(client * c)'/>

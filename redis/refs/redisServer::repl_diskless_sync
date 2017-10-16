@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1078' type='int'/>
+<offset>18464</offset>
+<doc f='codebrowser/src/server.h' l='1078'>/* Send RDB to slaves sockets directly. */</doc>
+<use f='codebrowser/src/config.c' l='365' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='993' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1299' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1985' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/replication.c' l='565' u='r' c='startBgsaveForReplication'/>
+<use f='codebrowser/src/replication.c' l='742' u='r' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='2660' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='1466' u='w' c='initServerConfig'/>

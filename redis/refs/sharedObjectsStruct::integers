@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='752' type='robj *[10000]'/>
+<offset>3392</offset>
+<use f='codebrowser/src/object.c' l='127' u='r' c='createStringObjectFromLongLong'/>
+<use f='codebrowser/src/object.c' l='128' u='r' c='createStringObjectFromLongLong'/>
+<use f='codebrowser/src/object.c' l='411' u='r' c='tryObjectEncoding'/>
+<use f='codebrowser/src/object.c' l='412' u='r' c='tryObjectEncoding'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='347' u='r' c='redis_check_rdb_main'/>
+<use f='codebrowser/src/server.c' l='1320' u='w' c='createSharedObjects'/>
+<use f='codebrowser/src/server.c' l='1322' u='r' c='createSharedObjects'/>

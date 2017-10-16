@@ -1,0 +1,4 @@
+<def f='codebrowser/src/module.c' l='3047' ll='3060' type='void * moduleLoadString(RedisModuleIO * io, int plain, size_t * lenptr)'/>
+<use f='codebrowser/src/module.c' l='3072' u='c' c='RM_LoadString'/>
+<use f='codebrowser/src/module.c' l='3083' u='c' c='RM_LoadStringBuffer'/>
+<doc f='codebrowser/src/module.c' l='3046'>/* Implements RM_LoadString() and RM_LoadStringBuffer() */</doc>

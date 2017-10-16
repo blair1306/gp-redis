@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='198' type='int redisGetReplyFromReader(redisContext * c, void ** reply)'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='862' ll='868' type='int redisGetReplyFromReader(redisContext * c, void ** reply)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='875' u='c' c='redisGetReply'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='890' u='c' c='redisGetReply'/>
+<doc f='codebrowser/deps/hiredis/hiredis.c' l='860'>/* Internal helper function to try and get a reply from the reader,
+ * or set an error in the context otherwise. */</doc>

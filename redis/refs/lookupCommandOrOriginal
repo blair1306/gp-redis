@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1606' type='struct redisCommand * lookupCommandOrOriginal(sds name)'/>
+<use f='codebrowser/src/networking.c' l='1754' u='c' c='rewriteClientCommandVector'/>
+<use f='codebrowser/src/networking.c' l='1765' u='c' c='replaceClientCommandVector'/>
+<use f='codebrowser/src/networking.c' l='1795' u='c' c='rewriteClientCommandArgument'/>
+<def f='codebrowser/src/server.c' l='2067' ll='2072' type='struct redisCommand * lookupCommandOrOriginal(sds name)'/>
+<doc f='codebrowser/src/server.c' l='2060'>/* Lookup the command in the current table, if not found also check in
+ * the original table containing the original command names unaffected by
+ * redis.conf rename-command statement.
+ *
+ * This is used by functions rewriting the argument vector such as
+ * rewriteClientCommandVector() in order to set client-&gt;cmd pointer
+ * correctly even if the command was renamed. */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rax.h' l='154' type='int raxPrev(raxIterator * it)'/>
+<def f='codebrowser/src/rax.c' l='1551' ll='1561' type='int raxPrev(raxIterator * it)'/>
+<doc f='codebrowser/src/rax.c' l='1548'>/* Go to the previous element in the scope of the iterator &apos;it&apos;.
+ * If EOF (or out of memory) is reached, 0 is returned, otherwise 1 is
+ * returned. In case 0 is returned because of OOM, errno is set to ENOMEM. */</doc>

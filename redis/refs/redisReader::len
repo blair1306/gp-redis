@@ -1,0 +1,12 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='86' type='size_t'/>
+<offset>1216</offset>
+<doc f='codebrowser/deps/hiredis/read.h' l='86'>/* Buffer length */</doc>
+<use f='codebrowser/deps/hiredis/read.c' l='58' u='w' c='__redisReaderSetError'/>
+<use f='codebrowser/deps/hiredis/read.c' l='111' u='r' c='readBytes'/>
+<use f='codebrowser/deps/hiredis/read.c' l='180' u='r' c='readLine'/>
+<use f='codebrowser/deps/hiredis/read.c' l='258' u='r' c='processBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='274' u='r' c='processBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='455' u='r' c='redisReaderFeed'/>
+<use f='codebrowser/deps/hiredis/read.c' l='471' u='w' c='redisReaderFeed'/>
+<use f='codebrowser/deps/hiredis/read.c' l='487' u='r' c='redisReaderGetReply'/>
+<use f='codebrowser/deps/hiredis/read.c' l='515' u='w' c='redisReaderGetReply'/>

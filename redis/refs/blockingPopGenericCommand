@@ -1,0 +1,4 @@
+<def f='codebrowser/src/t_list.c' l='880' ll='934' type='void blockingPopGenericCommand(client * c, int where)'/>
+<use f='codebrowser/src/t_list.c' l='937' u='c' c='blpopCommand'/>
+<use f='codebrowser/src/t_list.c' l='941' u='c' c='brpopCommand'/>
+<doc f='codebrowser/src/t_list.c' l='879'>/* Blocking RPOP/LPOP */</doc>

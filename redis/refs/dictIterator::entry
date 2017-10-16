@@ -1,0 +1,22 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='72' type='dictEntry *'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='263' u='w' c='dictGetIterator'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='270' u='r' c='dictNext'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='274' u='w' c='dictNext'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='276' u='w' c='dictNext'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='278' u='r' c='dictNext'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='281' u='r' c='dictNext'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='282' u='r' c='dictNext'/>
+<offset>128</offset>
+<dec f='codebrowser/src/dict.h' l='92' type='dictEntry *'/>
+<offset>192</offset>
+<use f='codebrowser/src/defrag.c' l='150' u='r' c='dictIterDefragEntry'/>
+<use f='codebrowser/src/defrag.c' l='155' u='r' c='dictIterDefragEntry'/>
+<use f='codebrowser/src/defrag.c' l='156' u='r' c='dictIterDefragEntry'/>
+<use f='codebrowser/src/defrag.c' l='158' u='w' c='dictIterDefragEntry'/>
+<use f='codebrowser/src/dict.c' l='550' u='w' c='dictGetIterator'/>
+<use f='codebrowser/src/dict.c' l='565' u='r' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='583' u='w' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='585' u='w' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='587' u='r' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='590' u='r' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='591' u='r' c='dictNext'/>

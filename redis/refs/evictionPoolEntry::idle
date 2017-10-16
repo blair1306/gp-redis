@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/evict.c' l='55' type='unsigned long long'/>
+<use f='codebrowser/src/evict.c' l='147' u='w' c='evictionPoolAlloc'/>
+<use f='codebrowser/src/evict.c' l='213' u='r' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='256' u='w' c='evictionPoolPopulate'/>
+<use f='codebrowser/src/evict.c' l='458' u='w' c='freeMemoryIfNeeded'/>
+<offset>0</offset>
+<doc f='codebrowser/src/evict.c' l='55'>/* Object idle time (inverse frequency for LFU) */</doc>

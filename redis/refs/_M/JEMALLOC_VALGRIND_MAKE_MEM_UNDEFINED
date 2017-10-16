@@ -1,0 +1,15 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/valgrind.h' l='20'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='341' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='477' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='542' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='676' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2188' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2194' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2881' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='26' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='35' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='387' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='412' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='445' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='462' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='142' u='c'/>

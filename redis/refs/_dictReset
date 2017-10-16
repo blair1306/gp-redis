@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/hiredis/dict.c' l='65' ll='70' type='void _dictReset(dict * ht)'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='81' u='c' c='_dictInit'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='233' u='c' c='_dictClear'/>
+<doc f='codebrowser/deps/hiredis/dict.c' l='63'>/* Reset an hashtable already initialized with ht_init().
+ * NOTE: This function should only called by ht_destroy(). */</doc>

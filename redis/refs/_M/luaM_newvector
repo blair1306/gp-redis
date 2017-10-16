@@ -1,0 +1,13 @@
+<dec f='codebrowser/deps/lua/src/lmem.h' l='30'/>
+<use f='codebrowser/deps/lua/src/lstate.c' l='44' u='c'/>
+<use f='codebrowser/deps/lua/src/lstate.c' l='49' u='c'/>
+<use f='codebrowser/deps/lua/src/lstring.c' l='28' u='c'/>
+<use f='codebrowser/deps/lua/src/ltable.c' l='284' u='c'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='131' u='c'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='133' u='c'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='93' u='c'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='104' u='c'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='131' u='c'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='141' u='c'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='145' u='c'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='155' u='c'/>

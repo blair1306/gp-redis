@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1535' type='void receiveChildInfo()'/>
+<def f='codebrowser/src/childinfo.c' l='73' ll='85' type='void receiveChildInfo()'/>
+<doc f='codebrowser/src/childinfo.c' l='72'>/* Receive COW data from parent. */</doc>
+<use f='codebrowser/src/server.c' l='1063' u='c' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1066' u='c' c='serverCron'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='17'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='138' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='13'>/*
+ * RTREE_BITS_PER_LEVEL must be a power of two that is no larger than the
+ * machine address width.
+ */</doc>

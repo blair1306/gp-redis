@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='154' ll='158' type='void mp_cur_init(mp_cur * cursor, const unsigned char * s, size_t len)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='805' u='c' c='mp_unpack_full'/>

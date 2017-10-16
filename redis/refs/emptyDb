@@ -1,0 +1,22 @@
+<dec f='codebrowser/src/server.h' l='1730' type='long long emptyDb(int dbnum, int flags, void (*)(void *) callback)'/>
+<use f='codebrowser/src/cluster.c' l='517' u='c' c='clusterReset'/>
+<def f='codebrowser/src/db.c' l='309' ll='337' type='long long emptyDb(int dbnum, int flags, void (*)(void *) callback)'/>
+<use f='codebrowser/src/db.c' l='397' u='c' c='flushdbCommand'/>
+<use f='codebrowser/src/db.c' l='409' u='c' c='flushallCommand'/>
+<doc f='codebrowser/src/db.c' l='295'>/* Remove all keys from all the databases in a Redis server.
+ * If callback is given the function is called from time to time to
+ * signal that work is in progress.
+ *
+ * The dbnum can be -1 if all teh DBs should be flushed, or the specified
+ * DB number if we want to flush only a single Redis database number.
+ *
+ * Flags are be EMPTYDB_NO_FLAGS if no special flags are specified or
+ * EMPTYDB_ASYNC if we want the memory to be freed in a different thread
+ * and the function to return ASAP.
+ *
+ * On success the fuction returns the number of keys removed from the
+ * database(s). Otherwise -1 is returned in the specific case the
+ * DB number is out of range, and errno is set to EINVAL. */</doc>
+<use f='codebrowser/src/debug.c' l='344' u='c' c='debugCommand'/>
+<use f='codebrowser/src/debug.c' l='353' u='c' c='debugCommand'/>
+<use f='codebrowser/src/replication.c' l='1257' u='c' c='readSyncBulkPayload'/>

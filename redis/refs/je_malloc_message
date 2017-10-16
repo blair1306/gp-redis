@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='52' type='void (*)(void *, const char *)'/>
+<def f='codebrowser/deps/jemalloc/src/util.c' l='59' macro='1' type='void (*)(void *, const char *)'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='69' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='70' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='615' macro='1' u='r'/>
+<use f='codebrowser/deps/jemalloc/src/util.c' l='615' macro='1' u='r'/>

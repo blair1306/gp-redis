@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/linenoise/linenoise.h' l='62' type='int linenoiseHistorySetMaxLen(int len)'/>
+<def f='codebrowser/deps/linenoise/linenoise.c' l='1133' ll='1159' type='int linenoiseHistorySetMaxLen(int len)'/>
+<doc f='codebrowser/deps/linenoise/linenoise.c' l='1129'>/* Set the maximum length for the history. This function can be called even
+ * if there is already some history, the function will make sure to retain
+ * just the latest &apos;len&apos; elements if the new history length value is smaller
+ * than the amount of items already inside the history. */</doc>

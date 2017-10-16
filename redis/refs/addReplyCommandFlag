@@ -1,0 +1,15 @@
+<def f='codebrowser/src/server.c' l='2680' ll='2686' type='int addReplyCommandFlag(client * c, struct redisCommand * cmd, int f, char * reply)'/>
+<use f='codebrowser/src/server.c' l='2700' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2701' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2702' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2703' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2704' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2705' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2706' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2707' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2708' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2709' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2710' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2711' u='c' c='addReplyCommand'/>
+<use f='codebrowser/src/server.c' l='2712' u='c' c='addReplyCommand'/>
+<doc f='codebrowser/src/server.c' l='2679'>/* Helper function for addReplyCommand() to output flags. */</doc>

@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='59' ll='63'/>
+<size>16</size>
+<mbr r='prof_bt_s::vec' o='0' t='void **'/>
+<mbr r='prof_bt_s::len' o='64' t='unsigned int'/>

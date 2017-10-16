@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='316'/>
+<doc f='codebrowser/src/server.h' l='315'>/* Sort operations */</doc>
+<use f='codebrowser/src/sort.c' l='270' u='c'/>
+<use f='codebrowser/src/sort.c' l='522' u='c'/>
+<use f='codebrowser/src/sort.c' l='531' u='c'/>
+<use f='codebrowser/src/sort.c' l='552' u='c'/>
+<use f='codebrowser/src/sort.c' l='562' u='c'/>

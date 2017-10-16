@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1308' type='void moduleInitModulesSystem()'/>
+<doc f='codebrowser/src/server.h' l='1307'>/* Modules */</doc>
+<def f='codebrowser/src/module.c' l='3681' ll='3701' type='void moduleInitModulesSystem()'/>
+<use f='codebrowser/src/server.c' l='3718' u='c' c='main'/>

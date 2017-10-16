@@ -1,0 +1,6 @@
+<def f='codebrowser/src/cluster.c' l='353' ll='358' type='void clusterSaveConfigOrDie(int do_fsync)'/>
+<use f='codebrowser/src/cluster.c' l='449' u='c' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='1064' u='c' c='clusterHandleConfigEpochCollision'/>
+<use f='codebrowser/src/cluster.c' l='2816' u='c' c='clusterFailoverReplaceYourMaster'/>
+<use f='codebrowser/src/cluster.c' l='3483' u='c' c='clusterBeforeSleep'/>
+<use f='codebrowser/src/cluster.c' l='3792' u='c' c='verifyClusterConfigWithData'/>

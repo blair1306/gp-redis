@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1705' type='void propagateExpire(redisDb * db, robj * key, int lazy)'/>
+<def f='codebrowser/src/db.c' l='1071' ll='1085' type='void propagateExpire(redisDb * db, robj * key, int lazy)'/>
+<use f='codebrowser/src/db.c' l='1117' u='c' c='expireIfNeeded'/>
+<doc f='codebrowser/src/db.c' l='1063'>/* Propagate expires into slaves and the AOF file.
+ * When a key expires in the master, a DEL operation for this key is sent
+ * to all the slaves and the AOF file if enabled.
+ *
+ * This way the key expiry is centralized in one place, and since both
+ * AOF and the master-&gt;slave link guarantee operation ordering, everything
+ * will be consistent even if we allow write operations against expiring
+ * keys. */</doc>
+<use f='codebrowser/src/evict.c' l='497' u='c' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/expire.c' l='60' u='c' c='activeExpireCycleTryExpire'/>

@@ -1,0 +1,23 @@
+<dec f='codebrowser/src/server.h' l='1655' type='unsigned long setTypeSize(const robj * subject)'/>
+<use f='codebrowser/src/aof.c' l='867' u='c' c='rewriteSetObject'/>
+<use f='codebrowser/src/debug.c' l='611' u='c' c='serverLogObjectDebugInfo'/>
+<use f='codebrowser/src/module.c' l='385' u='c' c='moduleDelKeyIfEmpty'/>
+<use f='codebrowser/src/module.c' l='1427' u='c' c='RM_ValueLength'/>
+<use f='codebrowser/src/sort.c' l='311' u='c' c='sortCommand'/>
+<def f='codebrowser/src/t_set.c' l='222' ll='230' type='unsigned long setTypeSize(const robj * subject)'/>
+<use f='codebrowser/src/t_set.c' l='300' u='c' c='sremCommand'/>
+<use f='codebrowser/src/t_set.c' l='350' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='391' u='c' c='scardCommand'/>
+<use f='codebrowser/src/t_set.c' l='428' u='c' c='spopWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='598' u='c' c='spopCommand'/>
+<use f='codebrowser/src/t_set.c' l='639' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='777' u='c' c='qsortCompareSetsByCardinality'/>
+<use f='codebrowser/src/t_set.c' l='777' u='c' c='qsortCompareSetsByCardinality'/>
+<use f='codebrowser/src/t_set.c' l='785' u='c' c='qsortCompareSetsByRevCardinality'/>
+<use f='codebrowser/src/t_set.c' l='785' u='c' c='qsortCompareSetsByRevCardinality'/>
+<use f='codebrowser/src/t_set.c' l='895' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='897' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='966' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='967' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1068' u='c' c='sunionDiffGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='1070' u='c' c='sunionDiffGenericCommand'/>

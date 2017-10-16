@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/server.h' l='1438' type='void freeHashObject(robj * o)'/>
+<def f='codebrowser/src/object.c' l='286' ll='298' type='void freeHashObject(robj * o)'/>
+<use f='codebrowser/src/object.c' l='317' u='c' c='decrRefCount'/>

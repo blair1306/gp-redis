@@ -1,0 +1,12 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='540' ll='549' macro='1' type='void atomic_write_p(void ** p, const void * x)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='208' u='c' c='je_rtree_val_write'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1117' u='c' c='je_arena_prof_tctx_set'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1153' u='c' c='je_arena_prof_tctx_reset'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='97' u='c' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='97' u='c' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='97' u='c' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='97' u='c' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='97' u='c' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='97' u='c' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='97' u='c' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='109' u='c' c='rtree_node_init'/>

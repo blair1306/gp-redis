@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/cluster.h' l='160' type='int'/>
+<use f='codebrowser/src/cluster.c' l='2839' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='3152' u='w' c='resetManualFailover'/>
+<use f='codebrowser/src/cluster.c' l='3173' u='r' c='clusterHandleManualFailover'/>
+<use f='codebrowser/src/cluster.c' l='3180' u='w' c='clusterHandleManualFailover'/>
+<use f='codebrowser/src/cluster.c' l='4538' u='w' c='clusterCommand'/>
+<offset>4195200</offset>
+<doc f='codebrowser/src/cluster.h' l='160'>/* If non-zero signal that the manual failover
+                                   can start requesting masters vote. */</doc>

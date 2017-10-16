@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/lua/src/ltm.h' l='22' type='3'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='165' u='r' c='traversetable'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='165' u='r' c='traversetable'/>
+<use f='codebrowser/deps/lua/src/lgc.c' l='165' u='r' c='traversetable'/>

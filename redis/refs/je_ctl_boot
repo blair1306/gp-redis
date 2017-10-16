@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='73' macro='1' type='_Bool je_ctl_boot()'/>
+<def f='codebrowser/deps/jemalloc/src/ctl.c' l='994' macro='1' type='_Bool je_ctl_boot()'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1198' macro='1' u='c'/>

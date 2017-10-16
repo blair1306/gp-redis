@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/cluster.h' l='248' type='char [46]'/>
+<use f='codebrowser/src/cluster.c' l='1458' u='r' c='nodeUpdateAddressIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1737' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2216' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2218' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2219' u='w' c='clusterBuildMessageHdr'/>
+<offset>17344</offset>
+<doc f='codebrowser/src/cluster.h' l='248'>/* Sender IP, if not all zeroed. */</doc>

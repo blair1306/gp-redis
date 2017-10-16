@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='97' type='redisCallbackList'/>
+<use f='codebrowser/deps/hiredis/async.c' l='135' u='m' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='136' u='m' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='286' u='a' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='406' u='a' c='__redisGetSubscribeCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='637' u='a' c='__redisAsyncCommand'/>
+<offset>0</offset>

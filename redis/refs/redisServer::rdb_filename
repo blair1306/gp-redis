@@ -1,0 +1,26 @@
+<dec f='codebrowser/src/server.h' l='1030' type='char *'/>
+<offset>15872</offset>
+<doc f='codebrowser/src/server.h' l='1030'>/* Name of RDB file */</doc>
+<use f='codebrowser/src/config.c' l='504' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='505' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='841' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='842' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1212' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1212' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1972' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/db.c' l='421' u='r' c='flushallCommand'/>
+<use f='codebrowser/src/debug.c' l='340' u='r' c='debugCommand'/>
+<use f='codebrowser/src/debug.c' l='345' u='r' c='debugCommand'/>
+<use f='codebrowser/src/rdb.c' l='63' u='r' c='rdbCheckThenExit'/>
+<use f='codebrowser/src/rdb.c' l='63' u='r' c='rdbCheckThenExit'/>
+<use f='codebrowser/src/rdb.c' l='1980' u='r' c='saveCommand'/>
+<use f='codebrowser/src/rdb.c' l='2014' u='r' c='bgsaveCommand'/>
+<use f='codebrowser/src/replication.c' l='580' u='r' c='startBgsaveForReplication'/>
+<use f='codebrowser/src/replication.c' l='980' u='r' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='1247' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1268' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/server.c' l='1097' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1171' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1401' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2555' u='r' c='prepareForShutdown'/>
+<use f='codebrowser/src/server.c' l='3530' u='r' c='loadDataFromDisk'/>

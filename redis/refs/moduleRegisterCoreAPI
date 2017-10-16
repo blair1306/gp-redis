@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/module.c' l='3679' type='void moduleRegisterCoreAPI()'/>
+<use f='codebrowser/src/module.c' l='3686' u='c' c='moduleInitModulesSystem'/>
+<def f='codebrowser/src/module.c' l='3894' ll='4005' type='void moduleRegisterCoreAPI()'/>
+<doc f='codebrowser/src/module.c' l='3678'>/* Global initialization at Redis startup. */</doc>
+<doc f='codebrowser/src/module.c' l='3892'>/* Register all the APIs we export. Keep this function at the end of the
+ * file so that&apos;s easy to seek it to add new entries. */</doc>

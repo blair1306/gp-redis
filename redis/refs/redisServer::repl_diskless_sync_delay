@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1079' type='int'/>
+<offset>18496</offset>
+<doc f='codebrowser/src/server.h' l='1079'>/* Delay to start a diskless repl BGSAVE. */</doc>
+<use f='codebrowser/src/config.c' l='369' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='370' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1092' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1276' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1986' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/replication.c' l='746' u='r' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='2661' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='1467' u='w' c='initServerConfig'/>

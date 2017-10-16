@@ -1,0 +1,4 @@
+<def f='codebrowser/src/sentinel.c' l='658' ll='664' type='void sentinelReleaseScriptJob(sentinelScriptJob * sj)'/>
+<use f='codebrowser/src/sentinel.c' l='705' u='c' c='sentinelScheduleScriptExecution'/>
+<use f='codebrowser/src/sentinel.c' l='834' u='c' c='sentinelCollectTerminatedScripts'/>
+<doc f='codebrowser/src/sentinel.c' l='657'>/* Release a script job structure and all the associated data. */</doc>

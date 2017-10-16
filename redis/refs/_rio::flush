@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/rio.h' l='46' type='int (*)(struct _rio *)'/>
+<use f='codebrowser/src/rio.h' l='124' u='r' c='rioFlush'/>
+<offset>192</offset>

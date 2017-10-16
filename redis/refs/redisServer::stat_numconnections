@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='938' type='long long'/>
+<offset>7680</offset>
+<doc f='codebrowser/src/server.h' l='938'>/* Number of connections received */</doc>
+<use f='codebrowser/src/networking.c' l='671' u='w' c='acceptCommonHandler'/>
+<use f='codebrowser/src/server.c' l='1762' u='w' c='resetServerStats'/>
+<use f='codebrowser/src/server.c' l='3099' u='r' c='genRedisInfoString'/>

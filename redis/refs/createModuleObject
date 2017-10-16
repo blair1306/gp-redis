@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1458' type='robj * createModuleObject(moduleType * mt, void * value)'/>
+<use f='codebrowser/src/module.c' l='2904' u='c' c='RM_ModuleTypeSetValue'/>
+<def f='codebrowser/src/object.c' l='235' ll='240' type='robj * createModuleObject(moduleType * mt, void * value)'/>
+<use f='codebrowser/src/rdb.c' l='1435' u='c' c='rdbLoadObject'/>

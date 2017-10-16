@@ -1,0 +1,13 @@
+<dec f='codebrowser/deps/lua/src/lobject.h' l='250' type='lu_byte'/>
+<offset>904</offset>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='278' u='r' c='precheck'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='210' u='r' c='adjust_varargs'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='281' u='r' c='luaD_precall'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='282' u='r' c='luaD_precall'/>
+<use f='codebrowser/deps/lua/src/ldump.c' l='135' u='r' c='DumpFunction'/>
+<use f='codebrowser/deps/lua/src/lfunc.c' l='128' u='w' c='luaF_newproto'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='571' u='w' c='parlist'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='171' u='w' c='LoadFunction'/>
+<use f='codebrowser/deps/lua/src/lvm.c' l='747' u='r' c='luaV_execute'/>
+<use f='codebrowser/deps/lua/src/print.c' l='175' u='r' c='PrintHeader'/>
+<use f='codebrowser/deps/lua/src/print.c' l='175' u='r' c='PrintHeader'/>

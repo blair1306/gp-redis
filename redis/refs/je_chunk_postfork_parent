@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk.h' l='75' macro='1' type='void je_chunk_postfork_parent()'/>
+<def f='codebrowser/deps/jemalloc/src/chunk.c' l='750' macro='1' type='void je_chunk_postfork_parent()'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2564' macro='1' u='c'/>

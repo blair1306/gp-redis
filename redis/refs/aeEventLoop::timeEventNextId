@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/ae.h' l='94' type='long long'/>
+<use f='codebrowser/src/ae.c' l='74' u='w' c='aeCreateEventLoop'/>
+<use f='codebrowser/src/ae.c' l='208' u='w' c='aeCreateTimeEvent'/>
+<use f='codebrowser/src/ae.c' l='288' u='r' c='processTimeEvents'/>
+<offset>64</offset>

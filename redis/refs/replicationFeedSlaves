@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1480' type='void replicationFeedSlaves(list * slaves, int dictid, robj ** argv, int argc)'/>
+<doc f='codebrowser/src/server.h' l='1479'>/* Replication */</doc>
+<use f='codebrowser/src/db.c' l='1081' u='c' c='propagateExpire'/>
+<def f='codebrowser/src/replication.c' l='173' ll='273' type='void replicationFeedSlaves(list * slaves, int dictid, robj ** argv, int argc)'/>
+<use f='codebrowser/src/replication.c' l='2549' u='c' c='replicationCron'/>
+<doc f='codebrowser/src/replication.c' l='168'>/* Propagate write commands to slaves, and populate the replication backlog
+ * as well. This function is used if the instance is a master: we use
+ * the commands received by our clients in order to create the replication
+ * stream. Instead if the instance is a slave and has sub-slaves attached,
+ * we use replicationFeedSlavesFromMaster() */</doc>
+<use f='codebrowser/src/server.c' l='1204' u='c' c='beforeSleep'/>
+<use f='codebrowser/src/server.c' l='2091' u='c' c='propagate'/>

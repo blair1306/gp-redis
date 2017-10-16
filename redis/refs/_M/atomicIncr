@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/atomicvar.h' l='74'/>
+<doc f='codebrowser/src/atomicvar.h' l='72'>/* Implementation using __atomic macros. */</doc>
+<use f='codebrowser/src/lazyfree.c' l='70' u='c'/>
+<use f='codebrowser/src/lazyfree.c' l='94' u='c'/>
+<use f='codebrowser/src/lazyfree.c' l='106' u='c'/>

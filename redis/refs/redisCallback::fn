@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='47' type='redisCallbackFn *'/>
+<use f='codebrowser/deps/hiredis/async.c' l='267' u='r' c='__redisRunCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='269' u='r' c='__redisRunCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='468' u='r' c='redisProcessCallbacks'/>
+<use f='codebrowser/deps/hiredis/async.c' l='597' u='w' c='__redisAsyncCommand'/>
+<offset>64</offset>
+<use f='codebrowser/src/sentinel.c' l='991' u='w' c='releaseInstanceLink'/>

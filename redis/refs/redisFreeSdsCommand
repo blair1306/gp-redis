@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='132' type='void redisFreeSdsCommand(sds cmd)'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='521' ll='523' type='void redisFreeSdsCommand(sds cmd)'/>

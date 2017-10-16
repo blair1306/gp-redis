@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='81' type='int'/>
+<offset>0</offset>
+<doc f='codebrowser/deps/hiredis/read.h' l='81'>/* Error flags, 0 when there is no error */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='815' u='r' c='redisBufferRead'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='864' u='r' c='redisGetReplyFromReader'/>
+<use f='codebrowser/deps/hiredis/read.c' l='65' u='w' c='__redisReaderSetError'/>
+<use f='codebrowser/deps/hiredis/read.c' l='423' u='w' c='redisReaderCreateWithFunctions'/>
+<use f='codebrowser/deps/hiredis/read.c' l='449' u='r' c='redisReaderFeed'/>
+<use f='codebrowser/deps/hiredis/read.c' l='483' u='r' c='redisReaderGetReply'/>
+<use f='codebrowser/deps/hiredis/read.c' l='507' u='r' c='redisReaderGetReply'/>

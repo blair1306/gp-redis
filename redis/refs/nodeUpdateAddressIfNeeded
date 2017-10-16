@@ -1,0 +1,15 @@
+<def f='codebrowser/src/cluster.c' l='1443' ll='1476' type='int nodeUpdateAddressIfNeeded(clusterNode * node, clusterLink * link, clusterMsg * hdr)'/>
+<use f='codebrowser/src/cluster.c' l='1769' u='c' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1811' u='c' c='clusterProcessPacket'/>
+<doc f='codebrowser/src/cluster.c' l='1431'>/* Update the node address to the IP address that can be extracted
+ * from link-&gt;fd, or if hdr-&gt;myip is non empty, to the address the node
+ * is announcing us. The port is taken from the packet header as well.
+ *
+ * If the address or port changed, disconnect the node link so that we&apos;ll
+ * connect again to the new address.
+ *
+ * If the ip/port pair are already correct no operation is performed at
+ * all.
+ *
+ * The function returns 0 if the node address is still the same,
+ * otherwise 1 is returned. */</doc>

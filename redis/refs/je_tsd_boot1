@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='609' macro='1' type='void je_tsd_boot1()'/>
+<use f='codebrowser/deps/jemalloc/src/tsd.c' l='124' macro='1' u='c'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/dict.c' l='87' type='uint64_t siphash(const uint8_t * in, const size_t inlen, const uint8_t * k)'/>
+<use f='codebrowser/src/dict.c' l='91' u='c' c='dictGenHashFunction'/>
+<doc f='codebrowser/src/dict.c' l='84'>/* The default hashing function uses SipHash implementation
+ * in siphash.c. */</doc>
+<def f='codebrowser/src/siphash.c' l='115' ll='172' type='uint64_t siphash(const uint8_t * in, const size_t inlen, const uint8_t * k)'/>

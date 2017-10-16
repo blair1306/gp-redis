@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1893' type='void getsetCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='219' u='r'/>
+<use f='codebrowser/src/server.c' l='219' u='r'/>
+<use f='codebrowser/src/server.c' l='219' u='r'/>
+<use f='codebrowser/src/server.c' l='219' u='r'/>
+<def f='codebrowser/src/t_string.c' l='176' ll='182' type='void getsetCommand(client * c)'/>

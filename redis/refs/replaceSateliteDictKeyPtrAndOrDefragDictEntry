@@ -1,0 +1,9 @@
+<def f='codebrowser/src/defrag.c' l='256' ll='270' type='dictEntry * replaceSateliteDictKeyPtrAndOrDefragDictEntry(dict * d, sds oldkey, sds newkey, unsigned int hash, int * defragged)'/>
+<use f='codebrowser/src/defrag.c' l='293' u='c' c='defragKey'/>
+<doc f='codebrowser/src/defrag.c' l='249'>/* Utility function that replaces an old key pointer in the dictionary with a
+ * new pointer. Additionally, we try to defrag the dictEntry in that dict.
+ * Oldkey mey be a dead pointer and should not be accessed (we get a
+ * pre-calculated hash value). Newkey may be null if the key pointer wasn&apos;t
+ * moved. Return value is the the dictEntry if found, or NULL if not found.
+ * NOTE: this is very ugly code, but it let&apos;s us avoid the complication of
+ * doing a scan on another dict. */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/scripting.c' l='51' type='void evalGenericCommandWithDebugging(client * c, int evalsha)'/>
+<use f='codebrowser/src/scripting.c' l='1404' u='c' c='evalCommand'/>
+<def f='codebrowser/src/scripting.c' l='1711' ll='1718' type='void evalGenericCommandWithDebugging(client * c, int evalsha)'/>
+<doc f='codebrowser/src/scripting.c' l='1709'>/* Wrapper for EVAL / EVALSHA that enables debugging, and makes sure
+ * that when EVAL returns, whatever happened, the session is ended. */</doc>

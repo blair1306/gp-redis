@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1716' type='robj * objectCommandLookupOrReply(client * c, robj * key, robj * reply)'/>
+<use f='codebrowser/src/debug.c' l='441' u='c' c='debugCommand'/>
+<def f='codebrowser/src/object.c' l='1003' ll='1008' type='robj * objectCommandLookupOrReply(client * c, robj * key, robj * reply)'/>
+<use f='codebrowser/src/object.c' l='1016' u='c' c='objectCommand'/>
+<use f='codebrowser/src/object.c' l='1020' u='c' c='objectCommand'/>
+<use f='codebrowser/src/object.c' l='1024' u='c' c='objectCommand'/>
+<use f='codebrowser/src/object.c' l='1032' u='c' c='objectCommand'/>
+<use f='codebrowser/src/object.c' l='1070' u='c' c='memoryCommand'/>

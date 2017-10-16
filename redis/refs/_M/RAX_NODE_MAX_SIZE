@@ -1,0 +1,64 @@
+<dec f='codebrowser/src/rax.h' l='67'/>
+<doc f='codebrowser/src/rax.h' l='6'>/* Representation of a radix tree as implemented in this file, that contains
+ * the strings &quot;foo&quot;, &quot;foobar&quot; and &quot;footer&quot; after the insertion of each
+ * word. When the node represents a key inside the radix tree, we write it
+ * between [], otherwise it is written between ().
+ *
+ * This is the vanilla representation:
+ *
+ *              (f) &quot;&quot;
+ *                \
+ *                (o) &quot;f&quot;
+ *                  \
+ *                  (o) &quot;fo&quot;
+ *                    \
+ *                  [t   b] &quot;foo&quot;
+ *                  /     \
+ *         &quot;foot&quot; (e)     (a) &quot;foob&quot;
+ *                /         \
+ *      &quot;foote&quot; (r)         (r) &quot;fooba&quot;
+ *              /             \
+ *    &quot;footer&quot; []             [] &quot;foobar&quot;
+ *
+ * However, this implementation implements a very common optimization where
+ * successive nodes having a single child are &quot;compressed&quot; into the node
+ * itself as a string of characters, each representing a next-level child,
+ * and only the link to the node representing the last character node is
+ * provided inside the representation. So the above representation is turend
+ * into:
+ *
+ *                  [&quot;foo&quot;] &quot;&quot;
+ *                     |
+ *                  [t   b] &quot;foo&quot;
+ *                  /     \
+ *        &quot;foot&quot; (&quot;er&quot;)    (&quot;ar&quot;) &quot;foob&quot;
+ *                 /          \
+ *       &quot;footer&quot; []          [] &quot;foobar&quot;
+ *
+ * However this optimization makes the implementation a bit more complex.
+ * For instance if a key &quot;first&quot; is added in the above radix tree, a
+ * &quot;node splitting&quot; operation is needed, since the &quot;foo&quot; prefix is no longer
+ * composed of nodes having a single child one after the other. This is the
+ * above tree and the resulting node splitting after this event happens:
+ *
+ *
+ *                    (f) &quot;&quot;
+ *                    /
+ *                 (i o) &quot;f&quot;
+ *                 /   \
+ *    &quot;firs&quot;  (&quot;rst&quot;)  (o) &quot;fo&quot;
+ *              /        \
+ *    &quot;first&quot; []       [t   b] &quot;foo&quot;
+ *                     /     \
+ *           &quot;foot&quot; (&quot;er&quot;)    (&quot;ar&quot;) &quot;foob&quot;
+ *                    /          \
+ *          &quot;footer&quot; []          [] &quot;foobar&quot;
+ *
+ * Similarly after deletion, if a new chain of nodes having a single child
+ * is created (the chain must also not include nodes that represent keys),
+ * it must be compressed back into a single node.
+ *
+ */</doc>
+<use f='codebrowser/src/rax.c' l='751' u='c'/>
+<use f='codebrowser/src/rax.c' l='752' u='c'/>
+<use f='codebrowser/src/rax.c' l='1035' u='c'/>

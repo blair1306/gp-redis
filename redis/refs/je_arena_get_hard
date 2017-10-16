@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='453' macro='1' type='arena_t * je_arena_get_hard(tsd_t * tsd, unsigned int ind, _Bool init_if_missing)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='787' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='794' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='800' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='502' macro='1' type='arena_t * je_arena_get_hard(tsd_t * tsd, unsigned int ind, _Bool init_if_missing)'/>

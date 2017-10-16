@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/poll.h' l='27'/>
+<use f='codebrowser/deps/hiredis/net.c' l='208' u='c'/>
+<use f='codebrowser/src/ae.c' l='446' u='c'/>
+<use f='codebrowser/src/ae.c' l='450' u='c'/>

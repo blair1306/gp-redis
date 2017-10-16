@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/quicklist.h' l='122' type='void quicklistSetOptions(quicklist * quicklist, int fill, int depth)'/>
+<use f='codebrowser/src/module.c' l='352' u='c' c='moduleCreateEmptyKey'/>
+<def f='codebrowser/src/quicklist.c' l='126' ll='129' type='void quicklistSetOptions(quicklist * quicklist, int fill, int depth)'/>
+<use f='codebrowser/src/quicklist.c' l='134' u='c' c='quicklistNew'/>
+<use f='codebrowser/src/rdb.c' l='1162' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1314' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_list.c' l='209' u='c' c='pushGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='554' u='c' c='rpoplpushHandlePush'/>

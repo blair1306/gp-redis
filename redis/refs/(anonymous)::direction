@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1249' type='unsigned char'/>
+<offset>72</offset>
+<doc f='codebrowser/src/server.h' l='1249'>/* Iteration direction */</doc>
+<use f='codebrowser/src/t_list.c' l='88' u='w' c='listTypeInitIterator'/>

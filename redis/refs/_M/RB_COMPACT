@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='163'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rb.h' l='25' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rb.h' l='55' u='a'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='708' macro='1' type='szind_t je_arena_mapbits_binind_get(arena_chunk_t * chunk, size_t pageind)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1218' macro='1' u='c'/>

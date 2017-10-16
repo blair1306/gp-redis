@@ -1,0 +1,9 @@
+<dec f='include/ctype.h' l='54' type='16384'/>
+<doc f='include/ctype.h' l='54'>/* Printing.  */</doc>
+<use f='codebrowser/deps/hiredis/read.c' l='86' macro='1' u='r'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='870' macro='1' u='r'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='973' macro='1' u='r'/>
+<use f='codebrowser/deps/lua/src/print.c' l='42' macro='1' u='r'/>
+<use f='codebrowser/src/networking.c' l='1125' macro='1' u='r'/>
+<use f='codebrowser/src/replication.c' l='287' macro='1' u='r'/>
+<use f='codebrowser/src/sds.c' l='875' macro='1' u='r'/>

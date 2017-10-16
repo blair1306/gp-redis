@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='81'/>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='79'>/* number of times we retry to connect in the case of EADDRNOTAVAIL and
+ * SO_REUSEADDR is being used. */</doc>
+<use f='codebrowser/deps/hiredis/net.c' l='384' u='c'/>

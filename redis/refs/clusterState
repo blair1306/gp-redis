@@ -1,0 +1,28 @@
+<def f='codebrowser/src/cluster.h' l='132' ll='170'/>
+<size>524576</size>
+<mbr r='clusterState::myself' o='0' t='clusterNode *'/>
+<mbr r='clusterState::currentEpoch' o='64' t='uint64_t'/>
+<mbr r='clusterState::state' o='128' t='int'/>
+<mbr r='clusterState::size' o='160' t='int'/>
+<mbr r='clusterState::nodes' o='192' t='dict *'/>
+<mbr r='clusterState::nodes_black_list' o='256' t='dict *'/>
+<mbr r='clusterState::migrating_slots_to' o='320' t='clusterNode *[16384]'/>
+<mbr r='clusterState::importing_slots_from' o='1048896' t='clusterNode *[16384]'/>
+<mbr r='clusterState::slots' o='2097472' t='clusterNode *[16384]'/>
+<mbr r='clusterState::slots_keys_count' o='3146048' t='uint64_t [16384]'/>
+<mbr r='clusterState::slots_to_keys' o='4194624' t='rax *'/>
+<mbr r='clusterState::failover_auth_time' o='4194688' t='mstime_t'/>
+<mbr r='clusterState::failover_auth_count' o='4194752' t='int'/>
+<mbr r='clusterState::failover_auth_sent' o='4194784' t='int'/>
+<mbr r='clusterState::failover_auth_rank' o='4194816' t='int'/>
+<mbr r='clusterState::failover_auth_epoch' o='4194880' t='uint64_t'/>
+<mbr r='clusterState::cant_failover_reason' o='4194944' t='int'/>
+<mbr r='clusterState::mf_end' o='4195008' t='mstime_t'/>
+<mbr r='clusterState::mf_slave' o='4195072' t='clusterNode *'/>
+<mbr r='clusterState::mf_master_offset' o='4195136' t='long long'/>
+<mbr r='clusterState::mf_can_start' o='4195200' t='int'/>
+<mbr r='clusterState::lastVoteEpoch' o='4195264' t='uint64_t'/>
+<mbr r='clusterState::todo_before_sleep' o='4195328' t='int'/>
+<mbr r='clusterState::stats_bus_messages_sent' o='4195392' t='long long [9]'/>
+<mbr r='clusterState::stats_bus_messages_received' o='4195968' t='long long [9]'/>
+<mbr r='clusterState::stats_pfail_nodes' o='4196544' t='long long'/>

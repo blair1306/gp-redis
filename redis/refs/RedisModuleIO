@@ -1,0 +1,11 @@
+<def f='codebrowser/src/server.h' l='528' ll='536'/>
+<size>40</size>
+<doc f='codebrowser/src/server.h' l='525'>/* This is a wrapper for the &apos;rio&apos; streams used inside rdb.c in Redis, so that
+ * the user does not have to take the total count of the written bytes nor
+ * to care about error conditions. */</doc>
+<mbr r='RedisModuleIO::bytes' o='0' t='size_t'/>
+<mbr r='RedisModuleIO::rio' o='64' t='rio *'/>
+<mbr r='RedisModuleIO::type' o='128' t='moduleType *'/>
+<mbr r='RedisModuleIO::error' o='192' t='int'/>
+<mbr r='RedisModuleIO::ver' o='224' t='int'/>
+<mbr r='RedisModuleIO::ctx' o='256' t='struct RedisModuleCtx *'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1742' type='void slotToKeyDel(robj * key)'/>
+<use f='codebrowser/src/db.c' l='243' u='c' c='dbSyncDelete'/>
+<def f='codebrowser/src/db.c' l='1382' ll='1384' type='void slotToKeyDel(robj * key)'/>
+<use f='codebrowser/src/lazyfree.c' l='80' u='c' c='dbAsyncDelete'/>

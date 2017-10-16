@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/crc64.h' l='6' type='uint64_t crc64(uint64_t crc, const unsigned char * s, uint64_t l)'/>
+<dec f='codebrowser/src/server.h' l='1327' type='uint64_t crc64(uint64_t crc, const unsigned char * s, uint64_t l)'/>
+<use f='codebrowser/src/cluster.c' l='4641' u='c' c='createDumpPayload'/>
+<use f='codebrowser/src/cluster.c' l='4665' u='c' c='verifyDumpPayload'/>
+<def f='codebrowser/src/crc64.c' l='173' ll='181' type='uint64_t crc64(uint64_t crc, const unsigned char * s, uint64_t l)'/>
+<use f='codebrowser/src/release.c' l='51' u='c' c='redisBuildId'/>
+<use f='codebrowser/src/rio.c' l='291' u='c' c='rioGenericUpdateChecksum'/>

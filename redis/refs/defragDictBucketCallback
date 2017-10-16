@@ -1,0 +1,4 @@
+<def f='codebrowser/src/defrag.c' l='430' ll='439' type='void defragDictBucketCallback(void * privdata, dictEntry ** bucketref)'/>
+<use f='codebrowser/src/defrag.c' l='558' u='r' c='activeDefragCycle'/>
+<doc f='codebrowser/src/defrag.c' l='428'>/* Defrag scan callback for for each hash table bicket,
+ * used in order to defrag the dictEntry allocations. */</doc>

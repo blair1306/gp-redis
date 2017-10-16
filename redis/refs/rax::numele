@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/rax.h' l='105' type='uint64_t'/>
+<offset>64</offset>
+<use f='codebrowser/src/lazyfree.c' l='106' u='r' c='slotToKeyFlushAsync'/>
+<use f='codebrowser/src/lazyfree.c' l='132' u='r' c='lazyfreeFreeSlotsMapFromBioThread'/>
+<use f='codebrowser/src/rax.c' l='159' u='w' c='raxNew'/>
+<use f='codebrowser/src/rax.c' l='444' u='w' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='735' u='w' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='775' u='w' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='789' u='w' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='908' u='w' c='raxRemove'/>
+<use f='codebrowser/src/rax.c' l='1398' u='r' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1576' u='r' c='raxRandomWalk'/>
+<use f='codebrowser/src/rax.c' l='1582' u='r' c='raxRandomWalk'/>

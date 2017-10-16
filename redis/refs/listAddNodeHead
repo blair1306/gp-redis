@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/adlist.h' l='76' type='list * listAddNodeHead(list * list, void * value)'/>
+<def f='codebrowser/src/adlist.c' l='88' ll='106' type='list * listAddNodeHead(list * list, void * value)'/>
+<doc f='codebrowser/src/adlist.c' l='82'>/* Add a new node to the list, to head, containing the specified &apos;value&apos;
+ * pointer as value.
+ *
+ * On error, NULL is returned and no operation is performed (i.e. the
+ * list remains unaltered).
+ * On success the &apos;list&apos; pointer you pass to the function is returned. */</doc>
+<use f='codebrowser/src/module.c' l='3531' u='c' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/networking.c' l='196' u='c' c='prepareClientToWrite'/>
+<use f='codebrowser/src/replication.c' l='2324' u='c' c='replicationScriptCacheAdd'/>
+<use f='codebrowser/src/slowlog.c' l='126' u='c' c='slowlogPushEntryIfNeeded'/>

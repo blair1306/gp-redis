@@ -1,0 +1,26 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='250' type='sds sdsmapchars(sds s, const char * from, const char * to, size_t setlen)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='1050' ll='1062' type='sds sdsmapchars(sds s, const char * from, const char * to, size_t setlen)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='1041'>/* Modify the string substituting all the occurrences of the set of
+ * characters specified in the &apos;from&apos; string to the corresponding character
+ * in the &apos;to&apos; array.
+ *
+ * For instance: sdsmapchars(mystring, &quot;ho&quot;, &quot;01&quot;, 2)
+ * will have the effect of turning the string &quot;hello&quot; into &quot;0ell1&quot;.
+ *
+ * The function returns the sds string pointer, that is always the same
+ * as the input pointer since no resize is needed. */</doc>
+<dec f='codebrowser/src/sds.h' l='250' type='sds sdsmapchars(sds s, const char * from, const char * to, size_t setlen)'/>
+<use f='codebrowser/src/debug.c' l='517' u='c' c='debugCommand'/>
+<use f='codebrowser/src/scripting.c' l='300' u='c' c='luaReplyToRedisReply'/>
+<use f='codebrowser/src/scripting.c' l='313' u='c' c='luaReplyToRedisReply'/>
+<use f='codebrowser/src/scripting.c' l='1568' u='c' c='ldbSendLogs'/>
+<def f='codebrowser/src/sds.c' l='1055' ll='1067' type='sds sdsmapchars(sds s, const char * from, const char * to, size_t setlen)'/>
+<doc f='codebrowser/src/sds.c' l='1046'>/* Modify the string substituting all the occurrences of the set of
+ * characters specified in the &apos;from&apos; string to the corresponding character
+ * in the &apos;to&apos; array.
+ *
+ * For instance: sdsmapchars(mystring, &quot;ho&quot;, &quot;01&quot;, 2)
+ * will have the effect of turning the string &quot;hello&quot; into &quot;0ell1&quot;.
+ *
+ * The function returns the sds string pointer, that is always the same
+ * as the input pointer since no resize is needed. */</doc>

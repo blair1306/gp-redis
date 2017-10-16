@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/ziplist.h' l='37' type='unsigned char * ziplistNew()'/>
+<use f='codebrowser/src/object.c' l='190' u='c' c='createZiplistObject'/>
+<use f='codebrowser/src/object.c' l='211' u='c' c='createHashObject'/>
+<use f='codebrowser/src/object.c' l='229' u='c' c='createZsetZiplistObject'/>
+<use f='codebrowser/src/quicklist.c' l='489' u='c' c='quicklistPushHead'/>
+<use f='codebrowser/src/quicklist.c' l='512' u='c' c='quicklistPushTail'/>
+<use f='codebrowser/src/quicklist.c' l='843' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='921' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/rdb.c' l='1345' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_zset.c' l='1158' u='c' c='zsetConvert'/>
+<def f='codebrowser/src/ziplist.c' l='578' ll='586' type='unsigned char * ziplistNew()'/>
+<doc f='codebrowser/src/ziplist.c' l='577'>/* Create a new empty ziplist. */</doc>

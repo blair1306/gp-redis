@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1015' type='int'/>
+<use f='codebrowser/src/aof.c' l='108' u='r' c='aofChildWriteDiffData'/>
+<use f='codebrowser/src/aof.c' l='113' u='r' c='aofChildWriteDiffData'/>
+<use f='codebrowser/src/aof.c' l='165' u='r' c='aofRewriteBufferAppend'/>
+<use f='codebrowser/src/aof.c' l='166' u='r' c='aofRewriteBufferAppend'/>
+<use f='codebrowser/src/aof.c' l='1294' u='w' c='aofCreatePipes'/>
+<use f='codebrowser/src/aof.c' l='1312' u='r' c='aofClosePipes'/>
+<use f='codebrowser/src/aof.c' l='1313' u='r' c='aofClosePipes'/>
+<offset>15264</offset>
+<doc f='codebrowser/src/server.h' l='1014'>/* AOF pipes used to communicate between parent and child during rewrite. */</doc>

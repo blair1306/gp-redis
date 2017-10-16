@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1004' type='time_t'/>
+<use f='codebrowser/src/aof.c' l='241' u='w' c='startAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='442' u='w' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='444' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='446' u='w' c='flushAppendOnlyFile'/>
+<offset>14784</offset>
+<doc f='codebrowser/src/server.h' l='1004'>/* UNIX time of last fsync() */</doc>
+<use f='codebrowser/src/server.c' l='1389' u='w' c='initServerConfig'/>

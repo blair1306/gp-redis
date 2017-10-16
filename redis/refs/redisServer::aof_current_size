@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='996' type='off_t'/>
+<use f='codebrowser/src/aof.c' l='371' u='r' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='403' u='w' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='417' u='w' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='648' u='w' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='767' u='r' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1430' u='w' c='aofUpdateCurrentSize'/>
+<use f='codebrowser/src/aof.c' l='1541' u='r' c='backgroundRewriteDoneHandler'/>
+<offset>14400</offset>
+<doc f='codebrowser/src/server.h' l='996'>/* AOF current size. */</doc>
+<use f='codebrowser/src/server.c' l='1106' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='1110' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='3029' u='r' c='genRedisInfoString'/>

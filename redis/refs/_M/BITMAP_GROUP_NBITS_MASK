@@ -1,0 +1,14 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='16'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='131' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='146' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='147' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='158' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='159' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='204' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='205' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='217' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/bitmap.h' l='219' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='66' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='67' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='74' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/bitmap.c' l='74' u='c'/>

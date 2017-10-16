@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1076' type='int'/>
+<offset>18400</offset>
+<doc f='codebrowser/src/server.h' l='1076'>/* Max lag of &lt;count&gt; slaves to write. */</doc>
+<use f='codebrowser/src/config.c' l='695' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='696' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1101' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1271' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1989' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/replication.c' l='2237' u='r' c='refreshGoodSlavesCount'/>
+<use f='codebrowser/src/replication.c' l='2245' u='r' c='refreshGoodSlavesCount'/>
+<use f='codebrowser/src/server.c' l='1471' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2414' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='3186' u='r' c='genRedisInfoString'/>

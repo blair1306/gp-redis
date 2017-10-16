@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='302' type='uint64_t'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='900' u='w' c='je_arena_prof_accum_impl'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='901' u='r' c='je_arena_prof_accum_impl'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='902' u='w' c='je_arena_prof_accum_impl'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3033' u='w' c='je_arena_new'/>
+<offset>1408</offset>

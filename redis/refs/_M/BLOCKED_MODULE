@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='257'/>
+<use f='codebrowser/src/blocked.c' l='139' u='c'/>
+<use f='codebrowser/src/blocked.c' l='165' u='c'/>
+<use f='codebrowser/src/module.c' l='3430' u='c'/>
+<use f='codebrowser/src/networking.c' l='1340' u='c'/>

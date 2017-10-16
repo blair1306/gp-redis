@@ -1,0 +1,4 @@
+<dec f='include/asm-generic/socket.h' l='19'/>
+<use f='codebrowser/deps/hiredis/net.c' l='131' u='c'/>
+<use f='codebrowser/src/anet.c' l='99' u='c'/>
+<use f='codebrowser/src/anet.c' l='175' u='c'/>

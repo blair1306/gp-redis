@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1409' type='int listTypeEqual(listTypeEntry * entry, robj * o)'/>
+<def f='codebrowser/src/t_list.c' l='160' ll='167' type='int listTypeEqual(listTypeEntry * entry, robj * o)'/>
+<use f='codebrowser/src/t_list.c' l='286' u='c' c='linsertCommand'/>
+<use f='codebrowser/src/t_list.c' l='512' u='c' c='lremCommand'/>
+<doc f='codebrowser/src/t_list.c' l='159'>/* Compare the given object with the entry at the current position. */</doc>

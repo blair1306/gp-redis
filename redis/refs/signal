@@ -1,0 +1,10 @@
+<dec f='include/signal.h' l='102' type='__sighandler_t signal(int __sig, __sighandler_t __handler)'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='36' u='c' c='laction'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='101' u='c' c='docall'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='103' u='c' c='docall'/>
+<use f='codebrowser/src/redis-benchmark.c' l='656' u='c' c='main'/>
+<use f='codebrowser/src/redis-benchmark.c' l='657' u='c' c='main'/>
+<use f='codebrowser/src/redis-cli.c' l='2569' u='c' c='intrinsicLatencyMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2719' u='c' c='main'/>
+<use f='codebrowser/src/server.c' l='1792' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1793' u='c' c='initServer'/>

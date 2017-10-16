@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1968' type='void scriptCommand(client * c)'/>
+<def f='codebrowser/src/scripting.c' l='1424' ll='1488' type='void scriptCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='285' u='r'/>
+<use f='codebrowser/src/server.c' l='285' u='r'/>
+<use f='codebrowser/src/server.c' l='285' u='r'/>
+<use f='codebrowser/src/server.c' l='285' u='r'/>
+<use f='codebrowser/src/server.c' l='2469' u='r' c='processCommand'/>

@@ -1,0 +1,20 @@
+<def f='codebrowser/src/server.h' l='814' ll='835'/>
+<size>120</size>
+<doc f='codebrowser/src/server.h' l='812'>/* This structure is returned by the getMemoryOverheadData() function in
+ * order to return memory overhead information. */</doc>
+<mbr r='redisMemOverhead::peak_allocated' o='0' t='size_t'/>
+<mbr r='redisMemOverhead::total_allocated' o='64' t='size_t'/>
+<mbr r='redisMemOverhead::startup_allocated' o='128' t='size_t'/>
+<mbr r='redisMemOverhead::repl_backlog' o='192' t='size_t'/>
+<mbr r='redisMemOverhead::clients_slaves' o='256' t='size_t'/>
+<mbr r='redisMemOverhead::clients_normal' o='320' t='size_t'/>
+<mbr r='redisMemOverhead::aof_buffer' o='384' t='size_t'/>
+<mbr r='redisMemOverhead::overhead_total' o='448' t='size_t'/>
+<mbr r='redisMemOverhead::dataset' o='512' t='size_t'/>
+<mbr r='redisMemOverhead::total_keys' o='576' t='size_t'/>
+<mbr r='redisMemOverhead::bytes_per_key' o='640' t='size_t'/>
+<mbr r='redisMemOverhead::dataset_perc' o='704' t='float'/>
+<mbr r='redisMemOverhead::peak_perc' o='736' t='float'/>
+<mbr r='redisMemOverhead::fragmentation' o='768' t='float'/>
+<mbr r='redisMemOverhead::num_dbs' o='832' t='size_t'/>
+<mbr r='redisMemOverhead::db' o='896' t='struct (anonymous struct at /home/jon/workspace/redis/deps/lua/src/../../../src/server.h:830:5) *'/>

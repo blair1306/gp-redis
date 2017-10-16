@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1124' type='unsigned int'/>
+<offset>20672</offset>
+<doc f='codebrowser/src/server.h' l='1123'>/* Blocked clients */</doc>
+<doc f='codebrowser/src/server.h' l='1124'>/* Number of clients blocked by lists */</doc>
+<use f='codebrowser/src/blocked.c' l='103' u='w' c='blockClient'/>
+<use f='codebrowser/src/blocked.c' l='148' u='w' c='unblockClient'/>
+<use f='codebrowser/src/server.c' l='1411' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='2898' u='r' c='genRedisInfoString'/>

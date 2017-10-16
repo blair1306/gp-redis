@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/confname.h' l='133' type='30'/>
+<use f='codebrowser/src/debug.c' l='1082' macro='1' u='r'/>
+<use f='codebrowser/src/zmalloc.c' l='239' macro='1' u='r'/>
+<use f='codebrowser/src/zmalloc.c' l='387' macro='1' u='r'/>

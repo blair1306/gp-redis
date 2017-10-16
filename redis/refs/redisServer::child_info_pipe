@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/server.h' l='1044' type='int [2]'/>
+<offset>16448</offset>
+<doc f='codebrowser/src/server.h' l='1043'>/* Pipe and data structures for child -&gt; parent info sharing. */</doc>
+<doc f='codebrowser/src/server.h' l='1044'>/* Pipe used to write the child_info_data. */</doc>
+<use f='codebrowser/src/childinfo.c' l='37' u='r' c='openChildInfoPipe'/>
+<use f='codebrowser/src/childinfo.c' l='41' u='r' c='openChildInfoPipe'/>
+<use f='codebrowser/src/childinfo.c' l='50' u='r' c='closeChildInfoPipe'/>
+<use f='codebrowser/src/childinfo.c' l='51' u='r' c='closeChildInfoPipe'/>
+<use f='codebrowser/src/childinfo.c' l='53' u='r' c='closeChildInfoPipe'/>
+<use f='codebrowser/src/childinfo.c' l='54' u='r' c='closeChildInfoPipe'/>
+<use f='codebrowser/src/childinfo.c' l='55' u='w' c='closeChildInfoPipe'/>
+<use f='codebrowser/src/childinfo.c' l='56' u='w' c='closeChildInfoPipe'/>
+<use f='codebrowser/src/childinfo.c' l='63' u='r' c='sendChildInfo'/>
+<use f='codebrowser/src/childinfo.c' l='67' u='r' c='sendChildInfo'/>
+<use f='codebrowser/src/childinfo.c' l='74' u='r' c='receiveChildInfo'/>
+<use f='codebrowser/src/childinfo.c' l='76' u='r' c='receiveChildInfo'/>
+<use f='codebrowser/src/server.c' l='1870' u='w' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1871' u='w' c='initServer'/>

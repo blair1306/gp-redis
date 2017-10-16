@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1923' type='void brpoplpushCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='156' u='r'/>
+<use f='codebrowser/src/server.c' l='156' u='r'/>
+<use f='codebrowser/src/server.c' l='156' u='r'/>
+<use f='codebrowser/src/server.c' l='156' u='r'/>
+<def f='codebrowser/src/t_list.c' l='944' ll='971' type='void brpoplpushCommand(client * c)'/>

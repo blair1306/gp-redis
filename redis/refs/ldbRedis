@@ -1,0 +1,6 @@
+<def f='codebrowser/src/scripting.c' l='2170' ll='2184' type='void ldbRedis(lua_State * lua, sds * argv, int argc)'/>
+<use f='codebrowser/src/scripting.c' l='2306' u='c' c='ldbRepl'/>
+<doc f='codebrowser/src/scripting.c' l='2166'>/* Implement the debugger &quot;redis&quot; command. We use a trick in order to make
+ * the implementation very simple: we just call the Lua redis.call() command
+ * implementation, with ldb.step enabled, so as a side effect the Redis command
+ * and its reply are logged. */</doc>

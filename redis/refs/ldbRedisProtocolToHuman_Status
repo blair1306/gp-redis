@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/scripting.c' l='1954' type='char * ldbRedisProtocolToHuman_Status(sds * o, char * reply)'/>
+<use f='codebrowser/src/scripting.c' l='1967' u='c' c='ldbRedisProtocolToHuman'/>
+<use f='codebrowser/src/scripting.c' l='1968' u='c' c='ldbRedisProtocolToHuman'/>
+<def f='codebrowser/src/scripting.c' l='1997' ll='2002' type='char * ldbRedisProtocolToHuman_Status(sds * o, char * reply)'/>

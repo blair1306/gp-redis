@@ -1,0 +1,5 @@
+<dec f='include/stdlib.h' l='134'/>
+<use f='codebrowser/deps/lua/src/loslib.c' l='217' u='c'/>
+<use f='codebrowser/deps/lua/src/lua.c' l='390' u='c'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='112' u='c'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='199' u='c'/>

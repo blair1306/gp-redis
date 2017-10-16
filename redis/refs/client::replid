@@ -1,0 +1,29 @@
+<dec f='codebrowser/src/server.h' l='713' type='char [41]'/>
+<offset>1920</offset>
+<doc f='codebrowser/src/server.h' l='713'>/* Master replication ID (if master). */</doc>
+<use f='codebrowser/src/replication.c' l='1083' u='r' c='replicationCreateMasterClient'/>
+<use f='codebrowser/src/replication.c' l='1284' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1431' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1513' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1518' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1525' u='r' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='2172' u='r' c='replicationCacheMasterUsingMyself'/>

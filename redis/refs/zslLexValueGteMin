@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1597' type='int zslLexValueGteMin(sds value, zlexrangespec * spec)'/>
+<use f='codebrowser/src/module.c' l='2055' u='c' c='RM_ZsetRangePrev'/>
+<dec f='codebrowser/src/t_zset.c' l='66' type='int zslLexValueGteMin(sds value, zlexrangespec * spec)'/>
+<use f='codebrowser/src/t_zset.c' l='367' u='c' c='zslDeleteRangeByLex'/>
+<def f='codebrowser/src/t_zset.c' l='583' ll='587' type='int zslLexValueGteMin(sds value, zlexrangespec * spec)'/>
+<use f='codebrowser/src/t_zset.c' l='605' u='c' c='zslIsInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='626' u='c' c='zslFirstInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='660' u='c' c='zslLastInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='857' u='c' c='zzlLexValueGteMin'/>
+<use f='codebrowser/src/t_zset.c' l='2980' u='c' c='genericZrangebylexCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='62'>/*-----------------------------------------------------------------------------
+ * Skiplist implementation of the low level API
+ *----------------------------------------------------------------------------*/</doc>

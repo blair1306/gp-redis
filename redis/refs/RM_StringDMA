@@ -1,0 +1,31 @@
+<def f='codebrowser/src/module.c' l='1523' ll='1543' type='char * RM_StringDMA(RedisModuleKey * key, size_t * len, int mode)'/>
+<use f='codebrowser/src/module.c' l='3944' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1494'>/* Prepare the key associated string value for DMA access, and returns
+ * a pointer and size (by reference), that the user can use to read or
+ * modify the string in-place accessing it directly via pointer.
+ *
+ * The &apos;mode&apos; is composed by bitwise OR-ing the following flags:
+ *
+ *     REDISMODULE_READ -- Read access
+ *     REDISMODULE_WRITE -- Write access
+ *
+ * If the DMA is not requested for writing, the pointer returned should
+ * only be accessed in a read-only fashion.
+ *
+ * On error (wrong type) NULL is returned.
+ *
+ * DMA access rules:
+ *
+ * 1. No other key writing function should be called since the moment
+ * the pointer is obtained, for all the time we want to use DMA access
+ * to read or modify the string.
+ *
+ * 2. Each time RM_StringTruncate() is called, to continue with the DMA
+ * access, RM_StringDMA() should be called again to re-obtain
+ * a new pointer and length.
+ *
+ * 3. If the returned pointer is not NULL, but the length is zero, no
+ * byte can be touched (the string is empty, or the key itself is empty)
+ * so a RM_StringTruncate() call should be used if there is to enlarge
+ * the string, and later call StringDMA() again to get the pointer.
+ */</doc>

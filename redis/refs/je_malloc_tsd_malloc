@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='576' macro='1' type='void * je_malloc_tsd_malloc(size_t size)'/>
+<def f='codebrowser/deps/jemalloc/src/tsd.c' l='15' macro='1' type='void * je_malloc_tsd_malloc(size_t size)'/>
+<doc f='codebrowser/deps/jemalloc/src/tsd.c' l='12'>/******************************************************************************/</doc>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/src/server.h' l='907' type='char *'/>
+<offset>2752</offset>
+<doc f='codebrowser/src/server.h' l='907'>/* UNIX socket path */</doc>
+<use f='codebrowser/src/config.c' l='239' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1216' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1216' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1957' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/networking.c' l='709' u='r' c='acceptUnixHandler'/>
+<use f='codebrowser/src/networking.c' l='1466' u='r' c='genClientPeerId'/>
+<use f='codebrowser/src/replication.c' l='316' u='r' c='replicationFeedMonitors'/>
+<use f='codebrowser/src/server.c' l='1356' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1833' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1834' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1835' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2505' u='r' c='closeListeningSockets'/>
+<use f='codebrowser/src/server.c' l='2507' u='r' c='closeListeningSockets'/>
+<use f='codebrowser/src/server.c' l='3853' u='r' c='main'/>

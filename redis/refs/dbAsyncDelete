@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1744' type='int dbAsyncDelete(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/db.c' l='253' u='c' c='dbDelete'/>
+<use f='codebrowser/src/db.c' l='433' u='c' c='delGenericCommand'/>
+<use f='codebrowser/src/db.c' l='1120' u='c' c='expireIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='509' u='c' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/expire.c' l='62' u='c' c='activeExpireCycleTryExpire'/>
+<use f='codebrowser/src/expire.c' l='408' u='c' c='expireGenericCommand'/>
+<def f='codebrowser/src/lazyfree.c' l='54' ll='85' type='int dbAsyncDelete(redisDb * db, robj * key)'/>

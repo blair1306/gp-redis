@@ -1,0 +1,14 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='686' macro='1' type='size_t je_arena_mapbits_large_size_get(arena_chunk_t * chunk, size_t pageind)'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='853' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1229' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1277' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1312' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1408' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1652' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1653' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1780' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1789' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1822' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1831' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2572' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2651' macro='1' u='c'/>

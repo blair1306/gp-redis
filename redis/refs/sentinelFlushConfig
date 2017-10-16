@@ -1,0 +1,25 @@
+<dec f='codebrowser/src/sentinel.c' l='373' type='void sentinelFlushConfig()'/>
+<use f='codebrowser/src/sentinel.c' l='499' u='c' c='sentinelIsRunning'/>
+<use f='codebrowser/src/sentinel.c' l='1513' u='c' c='sentinelResetMasterAndChangeAddress'/>
+<def f='codebrowser/src/sentinel.c' l='1845' ll='1863' type='void sentinelFlushConfig()'/>
+<use f='codebrowser/src/sentinel.c' l='2055' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2160' u='c' c='sentinelRefreshInstanceInfo'/>
+<use f='codebrowser/src/sentinel.c' l='2379' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='2386' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='3050' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3056' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3068' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3333' u='c' c='sentinelSetCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3345' u='c' c='sentinelSetCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3365' u='c' c='sentinelSetCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3371' u='c' c='sentinelSetCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3376' u='c' c='sentinelSetCommand'/>
+<use f='codebrowser/src/sentinel.c' l='3611' u='c' c='sentinelVoteLeader'/>
+<use f='codebrowser/src/sentinel.c' l='3621' u='c' c='sentinelVoteLeader'/>
+<doc f='codebrowser/src/sentinel.c' l='1838'>/* This function uses the config rewriting Redis engine in order to persist
+ * the state of the Sentinel in the current configuration file.
+ *
+ * Before returning the function calls fsync() against the generated
+ * configuration file to make sure changes are committed to disk.
+ *
+ * On failure the function logs a warning on the Redis log. */</doc>

@@ -1,0 +1,2 @@
+<def f='codebrowser/src/latency.c' l='516' ll='558' type='sds latencyCommandGenSparkeline(char * event, struct latencyTimeSeries * ts)'/>
+<use f='codebrowser/src/latency.c' l='589' u='c' c='latencyCommand'/>

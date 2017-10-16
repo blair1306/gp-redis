@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1345' type='void readQueryFromClient(aeEventLoop * el, int fd, void * privdata, int mask)'/>
+<use f='codebrowser/src/networking.c' l='83' u='r' c='createClient'/>
+<def f='codebrowser/src/networking.c' l='1352' ll='1431' type='void readQueryFromClient(aeEventLoop * el, int fd, void * privdata, int mask)'/>
+<use f='codebrowser/src/replication.c' l='2210' u='r' c='replicationResurrectCachedMaster'/>
+<use f='codebrowser/src/scripting.c' l='1328' u='r' c='evalGenericCommand'/>

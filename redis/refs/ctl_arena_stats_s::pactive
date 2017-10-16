@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='38' type='size_t'/>
+<offset>192</offset>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='524' u='w' c='ctl_arena_clear'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='546' u='a' c='ctl_arena_stats_amerge'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='563' u='w' c='ctl_arena_stats_smerge'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='563' u='r' c='ctl_arena_stats_smerge'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='631' u='w' c='ctl_arena_refresh'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='634' u='w' c='ctl_arena_refresh'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='726' u='r' c='ctl_refresh'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='733' u='r' c='ctl_refresh'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='2003' u='r' c='stats_arenas_i_pactive_ctl'/>

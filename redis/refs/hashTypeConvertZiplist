@@ -1,0 +1,2 @@
+<def f='codebrowser/src/t_hash.c' l='465' ll='498' type='void hashTypeConvertZiplist(robj * o, int enc)'/>
+<use f='codebrowser/src/t_hash.c' l='502' u='c' c='hashTypeConvert'/>

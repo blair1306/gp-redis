@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1090' type='off_t'/>
+<offset>19008</offset>
+<doc f='codebrowser/src/server.h' l='1090'>/* Amount of RDB read from master during sync. */</doc>
+<use f='codebrowser/src/replication.c' l='1179' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1213' u='w' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1218' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1228' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1231' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1240' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1833' u='w' c='syncWithMaster'/>
+<use f='codebrowser/src/server.c' l='3162' u='r' c='genRedisInfoString'/>

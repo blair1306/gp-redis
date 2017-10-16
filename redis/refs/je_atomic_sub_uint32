@@ -1,0 +1,1 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/atomic.h' l='310' macro='1' type='uint32_t je_atomic_sub_uint32(uint32_t * p, uint32_t x)'/>

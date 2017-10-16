@@ -1,0 +1,11 @@
+<def f='codebrowser/src/sentinel.c' l='974' ll='1004' type='instanceLink * releaseInstanceLink(instanceLink * link, sentinelRedisInstance * ri)'/>
+<use f='codebrowser/src/sentinel.c' l='1039' u='c' c='sentinelTryConnectionSharing'/>
+<use f='codebrowser/src/sentinel.c' l='1245' u='c' c='releaseSentinelRedisInstance'/>
+<doc f='codebrowser/src/sentinel.c' l='966'>/* Decrement the refcount of a link object, if it drops to zero, actually
+ * free it and return NULL. Otherwise don&apos;t do anything and return the pointer
+ * to the object.
+ *
+ * If we are not going to free the link and ri is not NULL, we rebind all the
+ * pending requests in link-&gt;cc (hiredis connection for commands) to a
+ * callback that will just ignore them. This is useful to avoid processing
+ * replies for an instance that no longer exists. */</doc>

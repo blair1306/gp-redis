@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/quicklist.h' l='142' type='quicklistIter * quicklistGetIteratorAtIdx(const quicklist * quicklist, int direction, const long long idx)'/>
+<def f='codebrowser/src/quicklist.c' l='1071' ll='1085' type='quicklistIter * quicklistGetIteratorAtIdx(const quicklist * quicklist, const int direction, const long long idx)'/>
+<doc f='codebrowser/src/quicklist.c' l='1069'>/* Initialize an iterator at a specific offset &apos;idx&apos; and make the iterator
+ * return nodes in &apos;direction&apos; direction. */</doc>
+<use f='codebrowser/src/t_list.c' l='95' u='c' c='listTypeInitIterator'/>

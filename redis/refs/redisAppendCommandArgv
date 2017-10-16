@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='208' type='int redisAppendCommandArgv(redisContext * c, int argc, const char ** argv, const size_t * argvlen)'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='961' ll='978' type='int redisAppendCommandArgv(redisContext * c, int argc, const char ** argv, const size_t * argvlen)'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='1018' u='c' c='redisCommandArgv'/>
+<use f='codebrowser/src/redis-cli.c' l='897' u='c' c='cliSendCommand'/>

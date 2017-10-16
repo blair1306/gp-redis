@@ -1,0 +1,76 @@
+<dec f='include/ctype.h' l='79' type='const unsigned short ** __ctype_b_loc()'/>
+<doc f='include/ctype.h' l='63'>/* These are defined in ctype-info.c.
+   The declarations here must match those in localeinfo.h.
+
+   In the thread-specific locale model (see `uselocale&apos; in &lt;locale.h&gt;)
+   we cannot use global variables for these as was done in the past.
+   Instead, the following accessor functions return the address of
+   each variable, which is local to the current thread if multithreaded.
+
+   These point into arrays of 384, so they can be indexed by any `unsigned
+   char&apos; value [0,255]; by EOF (-1); or by any `signed char&apos; value
+   [-128,-1).  ISO C requires that the ctype functions work for `unsigned
+   char&apos; values and for EOF; we also support negative `signed char&apos; values
+   for broken old programs.  The case conversion arrays are of `int&apos;s
+   rather than `unsigned char&apos;s because tolower (EOF) must be EOF, which
+   doesn&apos;t fit into an `unsigned char&apos;.  But today more important is that
+   the arrays are also used for multi-byte character sets.  */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='289' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='294' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/read.c' l='86' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='870' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='939' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='975' macro='1' u='c'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='990' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1973' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1973' macro='1' u='c'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='973' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lbaselib.c' l='69' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='81' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='198' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='201' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='304' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='312' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='403' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='413' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='418' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='422' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/llex.c' l='427' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lobject.c' l='97' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='229' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='230' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='231' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='232' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='233' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='234' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='235' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='236' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='237' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='241' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='397' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='599' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='730' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='731' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='734' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='735' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='737' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_struct.c' l='93' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_struct.c' l='101' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_struct.c' l='310' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/lua_struct.c' l='373' macro='1' u='c'/>
+<use f='codebrowser/deps/lua/src/print.c' l='42' macro='1' u='c'/>
+<use f='codebrowser/src/db.c' l='566' macro='1' u='c'/>
+<use f='codebrowser/src/networking.c' l='1125' macro='1' u='c'/>
+<use f='codebrowser/src/object.c' l='561' macro='1' u='c'/>
+<use f='codebrowser/src/object.c' l='603' macro='1' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='407' macro='1' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='432' macro='1' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='659' macro='1' u='c'/>
+<use f='codebrowser/src/replication.c' l='287' macro='1' u='c'/>
+<use f='codebrowser/src/sds.c' l='875' macro='1' u='c'/>
+<use f='codebrowser/src/sds.c' l='944' macro='1' u='c'/>
+<use f='codebrowser/src/sds.c' l='980' macro='1' u='c'/>
+<use f='codebrowser/src/sds.c' l='995' macro='1' u='c'/>
+<use f='codebrowser/src/sentinel.c' l='2024' macro='1' u='c'/>
+<use f='codebrowser/src/util.c' l='192' macro='1' u='c'/>
+<use f='codebrowser/src/util.c' l='440' macro='1' u='c'/>

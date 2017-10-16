@@ -1,0 +1,17 @@
+<dec f='codebrowser/src/server.h' l='1029' type='int'/>
+<offset>15808</offset>
+<doc f='codebrowser/src/server.h' l='1029'>/* Number of saving points */</doc>
+<use f='codebrowser/src/config.c' l='146' u='r' c='appendServerSaveParams'/>
+<use f='codebrowser/src/config.c' l='147' u='r' c='appendServerSaveParams'/>
+<use f='codebrowser/src/config.c' l='148' u='r' c='appendServerSaveParams'/>
+<use f='codebrowser/src/config.c' l='149' u='w' c='appendServerSaveParams'/>
+<use f='codebrowser/src/config.c' l='155' u='w' c='resetServerSaveParams'/>
+<use f='codebrowser/src/config.c' l='1348' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1352' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1711' u='r' c='rewriteConfigSaveOption'/>
+<use f='codebrowser/src/db.c' l='415' u='r' c='flushallCommand'/>
+<use f='codebrowser/src/module.c' l='1318' u='r' c='RM_GetContextFlags'/>
+<use f='codebrowser/src/scripting.c' l='490' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/server.c' l='1080' u='r' c='serverCron'/>
+<use f='codebrowser/src/server.c' l='2392' u='r' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2550' u='r' c='prepareForShutdown'/>

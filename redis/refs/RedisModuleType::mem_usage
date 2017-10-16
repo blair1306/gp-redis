@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='499' type='moduleTypeMemUsageFunc'/>
+<offset>320</offset>
+<use f='codebrowser/src/module.c' l='2889' u='w' c='RM_CreateDataType'/>
+<use f='codebrowser/src/object.c' l='790' u='r' c='objectComputeSize'/>
+<use f='codebrowser/src/object.c' l='791' u='r' c='objectComputeSize'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='163' type='redisContext * redisConnect(const char * ip, int port)'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='674' ll='684' type='redisContext * redisConnect(const char * ip, int port)'/>
+<doc f='codebrowser/deps/hiredis/hiredis.c' l='671'>/* Connect to a Redis instance. On error the field error in the returned
+ * context will be set to the return value of the error function.
+ * When no set of reply functions is given, the default set will be used. */</doc>
+<use f='codebrowser/src/redis-cli.c' l='519' u='c' c='cliConnect'/>
+<use f='codebrowser/src/redis-cli.c' l='953' u='c' c='reconnectingRedisCommand'/>

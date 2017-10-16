@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='16'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='20' u='c'/>

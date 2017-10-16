@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='985' type='int'/>
+<offset>13440</offset>
+<doc f='codebrowser/src/server.h' l='985'>/* See SUPERVISED_* */</doc>
+<use f='codebrowser/src/config.c' l='708' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='711' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1321' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2033' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='1381' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3824' u='r' c='main'/>

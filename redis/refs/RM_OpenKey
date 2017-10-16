@@ -1,0 +1,16 @@
+<def f='codebrowser/src/module.c' l='1362' ll='1387' type='void * RM_OpenKey(RedisModuleCtx * ctx, robj * keyname, int mode)'/>
+<use f='codebrowser/src/module.c' l='3916' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1348'>/* Return an handle representing a Redis key, so that it is possible
+ * to call other APIs with the key handle as argument to perform
+ * operations on the key.
+ *
+ * The return value is the handle repesenting the key, that must be
+ * closed with RM_CloseKey().
+ *
+ * If the key does not exist and WRITE mode is requested, the handle
+ * is still returned, since it is possible to perform operations on
+ * a yet not existing key (that will be created, for example, after
+ * a list push operation). If the mode is just READ instead, and the
+ * key does not exist, NULL is returned. However it is still safe to
+ * call RedisModule_CloseKey() and RedisModule_KeyType() on a NULL
+ * value. */</doc>

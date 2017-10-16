@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1081' type='char *'/>
+<offset>18560</offset>
+<doc f='codebrowser/src/server.h' l='1080'>/* Replication (slave) */</doc>
+<doc f='codebrowser/src/server.h' l='1081'>/* AUTH with this password with master */</doc>
+<use f='codebrowser/src/config.c' l='388' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='389' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='848' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='849' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1214' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1214' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1976' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/replication.c' l='1642' u='r' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1643' u='r' c='syncWithMaster'/>
+<use f='codebrowser/src/server.c' l='1453' u='w' c='initServerConfig'/>

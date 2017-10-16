@@ -1,0 +1,7 @@
+<def f='codebrowser/src/memtest.c' l='237' ll='264' type='int memtest_test(unsigned long * m, size_t bytes, int passes, int interactive)'/>
+<use f='codebrowser/src/memtest.c' l='345' u='c' c='memtest_alloc_and_test'/>
+<doc f='codebrowser/src/memtest.c' l='232'>/* Test the specified memory. The number of bytes must be multiple of 4096.
+ * If interactive is true the program exists with an error and prints
+ * ASCII arts to show progresses. Instead when interactive is 0, it can
+ * be used as an API call, and returns 1 if memory errors were found or
+ * 0 if there were no errors detected. */</doc>

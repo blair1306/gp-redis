@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='501' type='moduleTypeFreeFunc'/>
+<offset>448</offset>
+<use f='codebrowser/src/module.c' l='2891' u='w' c='RM_CreateDataType'/>
+<use f='codebrowser/src/object.c' l='302' u='r' c='freeModuleObject'/>

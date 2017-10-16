@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='809'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='570' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='811' u='w'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='805'>/*
+ * Include portions of arena.h interleaved with tcache.h in order to resolve
+ * circular dependencies.
+ */</doc>

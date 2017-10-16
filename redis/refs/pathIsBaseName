@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/util.h' l='48' type='int pathIsBaseName(char * path)'/>
+<use f='codebrowser/src/config.c' l='446' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='500' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='837' u='c' c='configSetCommand'/>
+<def f='codebrowser/src/util.c' l='672' ll='674' type='int pathIsBaseName(char * path)'/>
+<doc f='codebrowser/src/util.c' l='668'>/* Return true if the specified path is just a file basename without any
+ * relative or absolute path. This function just checks that no / or \
+ * character exists inside the specified path, that&apos;s enough in the
+ * environments where Redis runs. */</doc>

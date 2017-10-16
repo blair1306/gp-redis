@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/ziplist.h' l='46' type='unsigned char * ziplistDeleteRange(unsigned char * zl, int index, unsigned int num)'/>
+<use f='codebrowser/src/quicklist.c' l='816' u='c' c='_quicklistSplitNode'/>
+<use f='codebrowser/src/quicklist.c' l='820' u='c' c='_quicklistSplitNode'/>
+<use f='codebrowser/src/quicklist.c' l='1023' u='c' c='quicklistDelRange'/>
+<use f='codebrowser/src/t_zset.c' l='1095' u='c' c='zzlDeleteRangeByRank'/>
+<def f='codebrowser/src/ziplist.c' l='1074' ll='1077' type='unsigned char * ziplistDeleteRange(unsigned char * zl, int index, unsigned int num)'/>
+<doc f='codebrowser/src/ziplist.c' l='1073'>/* Delete a range of entries from the ziplist. */</doc>

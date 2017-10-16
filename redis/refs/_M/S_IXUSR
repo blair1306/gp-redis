@@ -1,0 +1,3 @@
+<dec f='include/fcntl.h' l='106'/>
+<dec f='include/x86_64-linux-gnu/sys/stat.h' l='173'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='1164' u='c'/>

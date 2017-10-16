@@ -1,0 +1,4 @@
+<def f='codebrowser/src/module.c' l='3107' ll='3120' type='double RM_LoadDouble(RedisModuleIO * io)'/>
+<use f='codebrowser/src/module.c' l='3981' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3105'>/* In the context of the rdb_save method of a module data type, loads back the
+ * double value saved by RedisModule_SaveDouble(). */</doc>

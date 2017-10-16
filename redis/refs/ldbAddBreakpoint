@@ -1,0 +1,5 @@
+<def f='codebrowser/src/scripting.c' l='1740' ll='1747' type='int ldbAddBreakpoint(int line)'/>
+<use f='codebrowser/src/scripting.c' l='2118' u='c' c='ldbBreak'/>
+<doc f='codebrowser/src/scripting.c' l='1737'>/* Add the specified breakpoint. Ignore it if we already reached the max.
+ * Returns 1 if the breakpoint was added (or was already set). 0 if there is
+ * no space for the breakpoint or if the line is invalid. */</doc>

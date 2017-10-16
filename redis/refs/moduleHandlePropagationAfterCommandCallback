@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='442' ll='458' type='void moduleHandlePropagationAfterCommandCallback(RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/module.c' l='469' u='c' c='RedisModuleCommandDispatcher'/>
+<use f='codebrowser/src/module.c' l='3500' u='c' c='moduleHandleBlockedClients'/>
+<doc f='codebrowser/src/module.c' l='440'>/* Helper function for when a command callback is called, in order to handle
+ * details needed to correctly replicate commands. */</doc>

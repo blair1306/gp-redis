@@ -1,0 +1,17 @@
+<def f='codebrowser/src/module.c' l='1843' ll='1845' type='int RM_ZsetFirstInScoreRange(RedisModuleKey * key, double min, double max, int minex, int maxex)'/>
+<use f='codebrowser/src/module.c' l='3953' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1828'>/* Setup a sorted set iterator seeking the first element in the specified
+ * range. Returns REDISMODULE_OK if the iterator was correctly initialized
+ * otherwise REDISMODULE_ERR is returned in the following conditions:
+ *
+ * 1. The value stored at key is not a sorted set or the key is empty.
+ *
+ * The range is specified according to the two double values &apos;min&apos; and &apos;max&apos;.
+ * Both can be infinite using the following two macros:
+ *
+ * REDISMODULE_POSITIVE_INFINITE for positive infinite value
+ * REDISMODULE_NEGATIVE_INFINITE for negative infinite value
+ *
+ * &apos;minex&apos; and &apos;maxex&apos; parameters, if true, respectively setup a range
+ * where the min and max value are exclusive (not included) instead of
+ * inclusive. */</doc>

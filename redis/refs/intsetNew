@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/intset.h' l='41' type='intset * intsetNew()'/>
+<def f='codebrowser/src/intset.c' l='97' ll='102' type='intset * intsetNew()'/>
+<doc f='codebrowser/src/intset.c' l='96'>/* Create an empty intset. */</doc>
+<use f='codebrowser/src/object.c' l='204' u='c' c='createIntsetObject'/>

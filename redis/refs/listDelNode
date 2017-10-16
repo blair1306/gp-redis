@@ -1,0 +1,47 @@
+<dec f='codebrowser/src/adlist.h' l='79' type='void listDelNode(list * list, listNode * node)'/>
+<def f='codebrowser/src/adlist.c' l='167' ll='180' type='void listDelNode(list * list, listNode * node)'/>
+<doc f='codebrowser/src/adlist.c' l='163'>/* Remove the specified node from the specified list.
+ * It&apos;s up to the caller to free the private value of the node.
+ *
+ * This function can&apos;t fail. */</doc>
+<use f='codebrowser/src/aof.c' l='120' u='c' c='aofChildWriteDiffData'/>
+<use f='codebrowser/src/bio.c' l='213' u='c' c='bioProcessBackgroundJobs'/>
+<use f='codebrowser/src/blocked.c' l='117' u='c' c='processUnblockedClients'/>
+<use f='codebrowser/src/cluster.c' l='754' u='c' c='clusterNodeCleanupFailureReports'/>
+<use f='codebrowser/src/cluster.c' l='784' u='c' c='clusterNodeDelFailureReport'/>
+<use f='codebrowser/src/config.c' l='1587' u='c' c='rewriteConfigRewriteLine'/>
+<use f='codebrowser/src/config.c' l='1868' u='c' c='rewriteConfigRemoveOrphaned'/>
+<use f='codebrowser/src/db.c' l='727' u='c' c='scanGenericCommand'/>
+<use f='codebrowser/src/db.c' l='739' u='c' c='scanGenericCommand'/>
+<use f='codebrowser/src/db.c' l='754' u='c' c='scanGenericCommand'/>
+<use f='codebrowser/src/module.c' l='2640' u='c' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='3485' u='c' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/multi.c' l='263' u='c' c='unwatchAllKeys'/>
+<use f='codebrowser/src/multi.c' l='268' u='c' c='unwatchAllKeys'/>
+<use f='codebrowser/src/networking.c' l='449' u='c' c='setDeferredMultiBulkLength'/>
+<use f='codebrowser/src/networking.c' l='748' u='c' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='761' u='c' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='770' u='c' c='unlinkClient'/>
+<use f='codebrowser/src/networking.c' l='839' u='c' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='857' u='c' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='886' u='c' c='freeClientsInAsyncFreeQueue'/>
+<use f='codebrowser/src/networking.c' l='915' u='c' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='926' u='c' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='998' u='c' c='handleClientsWithPendingWrites'/>
+<use f='codebrowser/src/pubsub.c' l='105' u='c' c='pubsubUnsubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='158' u='c' c='pubsubUnsubscribePattern'/>
+<use f='codebrowser/src/pubsub.c' l='162' u='c' c='pubsubUnsubscribePattern'/>
+<use f='codebrowser/src/redis-benchmark.c' l='136' u='c' c='freeClient'/>
+<use f='codebrowser/src/replication.c' l='597' u='c' c='startBgsaveForReplication'/>
+<use f='codebrowser/src/replication.c' l='2319' u='c' c='replicationScriptCacheAdd'/>
+<use f='codebrowser/src/replication.c' l='2430' u='c' c='unblockClientWaitingReplicas'/>
+<use f='codebrowser/src/scripting.c' l='573' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1511' u='c' c='ldbFlushLog'/>
+<use f='codebrowser/src/scripting.c' l='1571' u='c' c='ldbSendLogs'/>
+<use f='codebrowser/src/scripting.c' l='1682' u='c' c='ldbRemoveChild'/>
+<use f='codebrowser/src/sentinel.c' l='704' u='c' c='sentinelScheduleScriptExecution'/>
+<use f='codebrowser/src/sentinel.c' l='833' u='c' c='sentinelCollectTerminatedScripts'/>
+<use f='codebrowser/src/slowlog.c' l='131' u='c' c='slowlogPushEntryIfNeeded'/>
+<use f='codebrowser/src/slowlog.c' l='137' u='c' c='slowlogReset'/>
+<use f='codebrowser/src/t_list.c' l='674' u='c' c='unblockClientWaitingData'/>
+<use f='codebrowser/src/t_list.c' l='873' u='c' c='handleClientsBlockedOnLists'/>

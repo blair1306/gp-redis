@@ -1,0 +1,12 @@
+<def f='codebrowser/deps/hiredis/sds.h' l='50' ll='55'/>
+<size>3</size>
+<mbr r='sdshdr8::len' o='0' t='uint8_t'/>
+<mbr r='sdshdr8::alloc' o='8' t='uint8_t'/>
+<mbr r='sdshdr8::flags' o='16' t='unsigned char'/>
+<mbr r='sdshdr8::buf' o='24' t='char []'/>
+<def f='codebrowser/src/sds.h' l='50' ll='55'/>
+<size>3</size>
+<mbr r='sdshdr8::len' o='0' t='uint8_t'/>
+<mbr r='sdshdr8::alloc' o='8' t='uint8_t'/>
+<mbr r='sdshdr8::flags' o='16' t='unsigned char'/>
+<mbr r='sdshdr8::buf' o='24' t='char []'/>

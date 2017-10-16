@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1983' type='void geoposCommand(client * c)'/>
+<def f='codebrowser/src/geo.c' l='753' ll='779' type='void geoposCommand(client * c)'/>
+<doc f='codebrowser/src/geo.c' l='749'>/* GEOPOS key ele1 ele2 ... eleN
+ *
+ * Returns an array of two-items arrays representing the x,y position of each
+ * element specified in the arguments. For missing elements NULL is returned. */</doc>
+<use f='codebrowser/src/server.c' l='298' u='r'/>
+<use f='codebrowser/src/server.c' l='298' u='r'/>
+<use f='codebrowser/src/server.c' l='298' u='r'/>
+<use f='codebrowser/src/server.c' l='298' u='r'/>

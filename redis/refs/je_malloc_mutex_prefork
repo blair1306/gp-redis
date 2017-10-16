@@ -1,0 +1,17 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/mutex.h' l='56' macro='1' type='void je_malloc_mutex_prefork(malloc_mutex_t * mutex)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3286' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3287' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3288' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3289' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3291' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='159' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='195' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1009' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2537' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/mutex.c' l='110' macro='1' type='void je_malloc_mutex_prefork(malloc_mutex_t * mutex)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2190' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2191' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2192' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2193' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2195' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2197' macro='1' u='c'/>

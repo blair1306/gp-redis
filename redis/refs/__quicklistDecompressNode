@@ -1,0 +1,15 @@
+<def f='codebrowser/src/quicklist.c' l='215' ll='231' type='int __quicklistDecompressNode(quicklistNode * node)'/>
+<use f='codebrowser/src/quicklist.c' l='237' u='c' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='237' u='c' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='237' u='c' c='_quicklistZiplistMerge'/>
+<use f='codebrowser/src/quicklist.c' l='237' u='c' c='_quicklistZiplistMerge'/>
+<use f='codebrowser/src/quicklist.c' l='245' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='245' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='245' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='245' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='245' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='245' u='c' c='quicklistDelRange'/>
+<use f='codebrowser/src/quicklist.c' l='245' u='c' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='245' u='c' c='quicklistIndex'/>
+<doc f='codebrowser/src/quicklist.c' l='213'>/* Uncompress the ziplist in &apos;node&apos; and update encoding details.
+ * Returns 1 on successful decode, 0 on failure to decode. */</doc>

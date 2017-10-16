@@ -1,0 +1,40 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='119' type='int dictDelete(dict * ht, const void * key)'/>
+<def f='codebrowser/deps/hiredis/dict.c' l='182' ll='210' type='int dictDelete(dict * ht, const void * key)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='394' u='c' c='__redisGetSubscribeCallback'/>
+<doc f='codebrowser/deps/hiredis/dict.c' l='181'>/* Search and remove an element */</doc>
+<dec f='codebrowser/src/dict.h' l='157' type='int dictDelete(dict * d, const void * key)'/>
+<use f='codebrowser/src/cluster.c' l='549' u='c' c='clusterReset'/>
+<use f='codebrowser/src/cluster.c' l='853' u='c' c='freeClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='933' u='c' c='clusterRenameNode'/>
+<use f='codebrowser/src/cluster.c' l='1112' u='c' c='clusterBlacklistCleanup'/>
+<use f='codebrowser/src/cluster.c' l='4799' u='c' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4847' u='c' c='migrateCloseSocket'/>
+<use f='codebrowser/src/cluster.c' l='4861' u='c' c='migrateCloseTimedoutSockets'/>
+<use f='codebrowser/src/config.c' l='567' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1588' u='c' c='rewriteConfigRewriteLine'/>
+<use f='codebrowser/src/db.c' l='241' u='c' c='dbSyncDelete'/>
+<use f='codebrowser/src/db.c' l='242' u='c' c='dbSyncDelete'/>
+<use f='codebrowser/src/db.c' l='1027' u='c' c='removeExpire'/>
+<def f='codebrowser/src/dict.c' l='403' ll='405' type='int dictDelete(dict * ht, const void * key)'/>
+<doc f='codebrowser/src/dict.c' l='401'>/* Remove an element, returning DICT_OK on success or DICT_ERR if the
+ * element was not found. */</doc>
+<use f='codebrowser/src/expire.c' l='309' u='c' c='expireSlaveKeys'/>
+<use f='codebrowser/src/latency.c' l='144' u='c' c='latencyResetEvent'/>
+<use f='codebrowser/src/lazyfree.c' l='57' u='c' c='dbAsyncDelete'/>
+<use f='codebrowser/src/module.c' l='3800' u='c' c='moduleUnload'/>
+<use f='codebrowser/src/module.c' l='3801' u='c' c='moduleUnload'/>
+<use f='codebrowser/src/module.c' l='3822' u='c' c='moduleUnload'/>
+<use f='codebrowser/src/multi.c' l='266' u='c' c='unwatchAllKeys'/>
+<use f='codebrowser/src/pubsub.c' l='97' u='c' c='pubsubUnsubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='110' u='c' c='pubsubUnsubscribeChannel'/>
+<use f='codebrowser/src/replication.c' l='2317' u='c' c='replicationScriptCacheAdd'/>
+<use f='codebrowser/src/sentinel.c' l='1312' u='c' c='removeMatchingSentinelFromMaster'/>
+<use f='codebrowser/src/sentinel.c' l='3067' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/t_hash.c' l='297' u='c' c='hashTypeDelete'/>
+<use f='codebrowser/src/t_list.c' l='677' u='c' c='unblockClientWaitingData'/>
+<use f='codebrowser/src/t_list.c' l='815' u='c' c='handleClientsBlockedOnLists'/>
+<use f='codebrowser/src/t_set.c' l='91' u='c' c='setTypeRemove'/>
+<use f='codebrowser/src/t_set.c' l='707' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='350' u='c' c='zslDeleteRangeByScore'/>
+<use f='codebrowser/src/t_zset.c' l='379' u='c' c='zslDeleteRangeByLex'/>
+<use f='codebrowser/src/t_zset.c' l='408' u='c' c='zslDeleteRangeByRank'/>

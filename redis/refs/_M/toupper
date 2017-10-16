@@ -1,0 +1,4 @@
+<dec f='include/ctype.h' l='229'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='751' u='c'/>
+<use f='codebrowser/deps/lua/src/lstrlib.c' l='88' u='c'/>
+<use f='codebrowser/src/sds.c' l='756' u='c'/>

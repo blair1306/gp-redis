@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1989' type='void pfdebugCommand(client * c)'/>
+<def f='codebrowser/src/hyperloglog.c' l='1449' ll='1549' type='void pfdebugCommand(client * c)'/>
+<doc f='codebrowser/src/hyperloglog.c' l='1447'>/* PFDEBUG &lt;subcommand&gt; &lt;key&gt; ... args ...
+ * Different debugging related operations about the HLL implementation. */</doc>
+<use f='codebrowser/src/server.c' l='304' u='r'/>
+<use f='codebrowser/src/server.c' l='304' u='r'/>
+<use f='codebrowser/src/server.c' l='304' u='r'/>
+<use f='codebrowser/src/server.c' l='304' u='r'/>

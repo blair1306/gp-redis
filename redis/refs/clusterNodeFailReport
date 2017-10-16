@@ -1,0 +1,5 @@
+<def f='codebrowser/src/cluster.h' l='100' ll='103'/>
+<size>16</size>
+<doc f='codebrowser/src/cluster.h' l='99'>/* This structure represent elements of node-&gt;fail_reports. */</doc>
+<mbr r='clusterNodeFailReport::node' o='0' t='struct clusterNode *'/>
+<mbr r='clusterNodeFailReport::time' o='64' t='mstime_t'/>

@@ -1,0 +1,5 @@
+<def f='codebrowser/src/ziplist.c' l='589' ll='594' type='unsigned char * ziplistResize(unsigned char * zl, unsigned int len)'/>
+<use f='codebrowser/src/ziplist.c' l='639' u='c' c='__ziplistCascadeUpdate'/>
+<use f='codebrowser/src/ziplist.c' l='730' u='c' c='__ziplistDelete'/>
+<use f='codebrowser/src/ziplist.c' l='790' u='c' c='__ziplistInsert'/>
+<doc f='codebrowser/src/ziplist.c' l='588'>/* Resize the ziplist. */</doc>

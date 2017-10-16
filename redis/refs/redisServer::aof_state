@@ -1,0 +1,35 @@
+<dec f='codebrowser/src/server.h' l='989' type='int'/>
+<use f='codebrowser/src/aof.c' l='209' u='r' c='stopAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='216' u='w' c='stopAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='243' u='r' c='startAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='265' u='w' c='startAppendOnly'/>
+<use f='codebrowser/src/aof.c' l='565' u='r' c='feedAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='634' u='r' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='655' u='w' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='764' u='w' c='loadAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1553' u='r' c='backgroundRewriteDoneHandler'/>
+<use f='codebrowser/src/aof.c' l='1554' u='w' c='backgroundRewriteDoneHandler'/>
+<use f='codebrowser/src/aof.c' l='1583' u='r' c='backgroundRewriteDoneHandler'/>
+<offset>14080</offset>
+<doc f='codebrowser/src/server.h' l='988'>/* AOF persistence */</doc>
+<doc f='codebrowser/src/server.h' l='989'>/* AOF_(ON|OFF|WAIT_REWRITE) */</doc>
+<use f='codebrowser/src/config.c' l='444' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='883' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='885' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1331' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2000' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/db.c' l='1079' u='r' c='propagateExpire'/>
+<use f='codebrowser/src/debug.c' l='352' u='r' c='debugCommand'/>
+<use f='codebrowser/src/evict.c' l='371' u='r' c='freeMemoryGetNotCountedMemory'/>
+<use f='codebrowser/src/module.c' l='1316' u='r' c='RM_GetContextFlags'/>
+<use f='codebrowser/src/object.c' l='865' u='r' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/replication.c' l='1245' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='2628' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='1382' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1925' u='r' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2088' u='r' c='propagate'/>
+<use f='codebrowser/src/server.c' l='2529' u='r' c='prepareForShutdown'/>
+<use f='codebrowser/src/server.c' l='2535' u='r' c='prepareForShutdown'/>
+<use f='codebrowser/src/server.c' l='3010' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3020' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3525' u='r' c='loadDataFromDisk'/>

@@ -1,0 +1,29 @@
+<dec f='codebrowser/src/rio.h' l='83' type='struct (anonymous struct at /home/jon/workspace/redis/deps/lua/src/../../../src/rio.h:77:9)'/>
+<offset>0</offset>
+<doc f='codebrowser/src/rio.h' l='76'>/* Multiple FDs target (used to write to N sockets). */</doc>
+<use f='codebrowser/src/rdb.c' l='1911' u='m' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/rio.c' l='178' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='178' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='180' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='184' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='185' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='194' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='195' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='205' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='219' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='220' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='220' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='223' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='226' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='229' u='m' c='rioFdsetWrite'/>
+<use f='codebrowser/src/rio.c' l='243' u='m' c='rioFdsetTell'/>
+<use f='codebrowser/src/rio.c' l='270' u='m' c='rioInitWithFdset'/>
+<use f='codebrowser/src/rio.c' l='271' u='m' c='rioInitWithFdset'/>
+<use f='codebrowser/src/rio.c' l='272' u='m' c='rioInitWithFdset'/>
+<use f='codebrowser/src/rio.c' l='273' u='m' c='rioInitWithFdset'/>
+<use f='codebrowser/src/rio.c' l='274' u='m' c='rioInitWithFdset'/>
+<use f='codebrowser/src/rio.c' l='275' u='m' c='rioInitWithFdset'/>
+<use f='codebrowser/src/rio.c' l='276' u='m' c='rioInitWithFdset'/>
+<use f='codebrowser/src/rio.c' l='281' u='m' c='rioFreeFdset'/>
+<use f='codebrowser/src/rio.c' l='282' u='m' c='rioFreeFdset'/>
+<use f='codebrowser/src/rio.c' l='283' u='m' c='rioFreeFdset'/>

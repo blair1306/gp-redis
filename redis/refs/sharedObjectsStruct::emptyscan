@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='750' type='robj *'/>
+<offset>2688</offset>
+<use f='codebrowser/src/server.c' l='1261' u='w' c='createSharedObjects'/>
+<use f='codebrowser/src/t_hash.c' l='822' u='r' c='hscanCommand'/>
+<use f='codebrowser/src/t_set.c' l='1108' u='r' c='sscanCommand'/>
+<use f='codebrowser/src/t_zset.c' l='3067' u='r' c='zscanCommand'/>

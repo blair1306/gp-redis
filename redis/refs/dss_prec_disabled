@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk_dss.h' l='5' type='0'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2907' u='r' c='je_arena_dss_prec_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='49' u='r' c='je_chunk_dss_prec_get'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='61' u='r' c='je_chunk_dss_prec_set'/>

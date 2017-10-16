@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='45' ll='79'/>
+<size>16</size>
+<mbr r='rtree_level_s::bits' o='64' t='unsigned int'/>
+<mbr r='rtree_level_s::cumbits' o='96' t='unsigned int'/>

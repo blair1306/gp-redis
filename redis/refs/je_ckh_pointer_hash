@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='80' macro='1' type='void je_ckh_pointer_hash(const void * key, size_t * r_hash)'/>
+<def f='codebrowser/deps/jemalloc/src/ckh.c' l='551' macro='1' type='void je_ckh_pointer_hash(const void * key, size_t * r_hash)'/>

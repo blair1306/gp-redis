@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/cluster.h' l='246' type='unsigned char [2048]'/>
+<use f='codebrowser/src/cluster.c' l='1889' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1889' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1897' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1921' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2229' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2229' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2600' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<offset>640</offset>

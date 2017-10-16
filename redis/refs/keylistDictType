@@ -1,0 +1,7 @@
+<def f='codebrowser/src/server.c' l='627' ll='634' type='dictType'/>
+<use f='codebrowser/src/server.c' l='1854' u='a' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1856' u='a' c='initServer'/>
+<use f='codebrowser/src/server.c' l='1861' u='a' c='initServer'/>
+<doc f='codebrowser/src/server.c' l='624'>/* Keylist hash table type has unencoded redis objects as keys and
+ * lists as values. It&apos;s used for blocking operations (BLPOP) and to
+ * map swapped keys to a list of clients waiting for this keys to be loaded. */</doc>

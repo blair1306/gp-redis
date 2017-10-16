@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='69' type='void *'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='219' u='a' c='je_rtree_subtree_tryread'/>
+<offset>0</offset>

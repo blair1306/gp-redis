@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1645' type='robj * setTypeCreate(sds value)'/>
+<doc f='codebrowser/src/server.h' l='1644'>/* Set data type */</doc>
+<def f='codebrowser/src/t_set.c' l='42' ll='46' type='robj * setTypeCreate(sds value)'/>
+<use f='codebrowser/src/t_set.c' l='270' u='c' c='saddCommand'/>
+<use f='codebrowser/src/t_set.c' l='357' u='c' c='smoveCommand'/>
+<use f='codebrowser/src/t_set.c' l='513' u='c' c='spopWithCountCommand'/>
+<doc f='codebrowser/src/t_set.c' l='39'>/* Factory method to return a set that *can* hold &quot;value&quot;. When the object has
+ * an integer-encodable value, an intset will be returned. Otherwise a regular
+ * hash table. */</doc>

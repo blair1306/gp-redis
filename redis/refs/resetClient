@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1337' type='void resetClient(client * c)'/>
+<use f='codebrowser/src/module.c' l='3382' u='c' c='unblockClientFromModule'/>
+<def f='codebrowser/src/networking.c' l='1016' ll='1037' type='void resetClient(client * c)'/>
+<use f='codebrowser/src/networking.c' l='1327' u='c' c='processInputBuffer'/>
+<use f='codebrowser/src/networking.c' l='1341' u='c' c='processInputBuffer'/>
+<doc f='codebrowser/src/networking.c' l='1015'>/* resetClient prepare the client to process the next command */</doc>
+<use f='codebrowser/src/replication.c' l='2138' u='c' c='replicationCacheMaster'/>

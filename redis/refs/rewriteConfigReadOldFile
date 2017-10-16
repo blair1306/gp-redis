@@ -1,0 +1,7 @@
+<def f='codebrowser/src/config.c' l='1495' ll='1550' type='struct rewriteConfigState * rewriteConfigReadOldFile(char * path)'/>
+<use f='codebrowser/src/config.c' l='1945' u='c' c='rewriteConfig'/>
+<doc f='codebrowser/src/config.c' l='1490'>/* Read the old file, split it into lines to populate a newly created
+ * config rewrite state, and return it to the caller.
+ *
+ * If it is impossible to read the old file, NULL is returned.
+ * If the old file does not exist at all, an empty state is returned. */</doc>

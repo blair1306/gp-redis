@@ -1,0 +1,2 @@
+<def f='codebrowser/src/redis-cli.c' l='622' ll='625' type='int isColorTerm()'/>
+<use f='codebrowser/src/redis-cli.c' l='630' u='c' c='sdscatcolor'/>

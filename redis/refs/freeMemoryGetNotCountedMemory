@@ -1,0 +1,6 @@
+<def f='codebrowser/src/evict.c' l='357' ll='375' type='size_t freeMemoryGetNotCountedMemory()'/>
+<use f='codebrowser/src/evict.c' l='396' u='c' c='freeMemoryIfNeeded'/>
+<use f='codebrowser/src/evict.c' l='537' u='c' c='freeMemoryIfNeeded'/>
+<doc f='codebrowser/src/evict.c' l='354'>/* We don&apos;t want to count AOF buffers and slaves output buffers as
+ * used memory: the eviction should use mostly data size. This function
+ * returns the sum of AOF and slaves buffer. */</doc>

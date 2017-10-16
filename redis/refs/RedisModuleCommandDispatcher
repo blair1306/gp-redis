@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='462' ll='471' type='void RedisModuleCommandDispatcher(client * c)'/>
+<use f='codebrowser/src/module.c' l='635' u='r' c='RM_CreateCommand'/>
+<use f='codebrowser/src/module.c' l='3795' u='r' c='moduleUnload'/>
+<doc f='codebrowser/src/module.c' l='460'>/* This Redis command binds the normal Redis command invocation with commands
+ * exported by modules. */</doc>

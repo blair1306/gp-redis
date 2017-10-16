@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/cluster.c' l='55' type='void clusterSendFailoverAuthIfNeeded(clusterNode * node, clusterMsg * request)'/>
+<use f='codebrowser/src/cluster.c' l='1998' u='c' c='clusterProcessPacket'/>
+<def f='codebrowser/src/cluster.c' l='2596' ll='2696' type='void clusterSendFailoverAuthIfNeeded(clusterNode * node, clusterMsg * request)'/>
+<doc f='codebrowser/src/cluster.c' l='2595'>/* Vote for the node asking for our vote if there are the conditions. */</doc>

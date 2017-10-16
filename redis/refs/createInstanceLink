@@ -1,0 +1,3 @@
+<def f='codebrowser/src/sentinel.c' l='929' ll='950' type='instanceLink * createInstanceLink()'/>
+<use f='codebrowser/src/sentinel.c' l='1188' u='c' c='createSentinelRedisInstance'/>
+<doc f='codebrowser/src/sentinel.c' l='928'>/* Create a not yet connected link object. */</doc>

@@ -1,0 +1,38 @@
+<dec f='codebrowser/src/cluster.h' l='266' type='clusterNode * getNodeByQuery(client * c, struct redisCommand * cmd, robj ** argv, int argc, int * hashslot, int * ask)'/>
+<def f='codebrowser/src/cluster.c' l='5213' ll='5374' type='clusterNode * getNodeByQuery(client * c, struct redisCommand * cmd, robj ** argv, int argc, int * hashslot, int * error_code)'/>
+<doc f='codebrowser/src/cluster.c' l='5181'>/* Return the pointer to the cluster node that is able to serve the command.
+ * For the function to succeed the command should only target either:
+ *
+ * 1) A single key (even multiple times like LPOPRPUSH mylist mylist).
+ * 2) Multiple keys in the same hash slot, while the slot is stable (no
+ *    resharding in progress).
+ *
+ * On success the function returns the node that is able to serve the request.
+ * If the node is not &apos;myself&apos; a redirection must be perfomed. The kind of
+ * redirection is specified setting the integer passed by reference
+ * &apos;error_code&apos;, which will be set to CLUSTER_REDIR_ASK or
+ * CLUSTER_REDIR_MOVED.
+ *
+ * When the node is &apos;myself&apos; &apos;error_code&apos; is set to CLUSTER_REDIR_NONE.
+ *
+ * If the command fails NULL is returned, and the reason of the failure is
+ * provided via &apos;error_code&apos;, which will be set to:
+ *
+ * CLUSTER_REDIR_CROSS_SLOT if the request contains multiple keys that
+ * don&apos;t belong to the same hash slot.
+ *
+ * CLUSTER_REDIR_UNSTABLE if the request contains multiple keys
+ * belonging to the same slot, but the slot is not stable (in migration or
+ * importing state, likely because a resharding is in progress).
+ *
+ * CLUSTER_REDIR_DOWN_UNBOUND if the request addresses a slot which is
+ * not bound to any node. In this case the cluster global state should be
+ * already &quot;down&quot; but it is fragile to rely on the update of the global state,
+ * so we also handle it here.
+ *
+ * CLUSTER_REDIR_DOWN_STATE if the cluster is down but the user attempts to
+ * execute a command that addresses one or more keys. */</doc>
+<doc f='codebrowser/src/cluster.h' l='265'>/* ---------------------- API exported outside cluster.c -------------------- */</doc>
+<use f='codebrowser/src/module.c' l='2610' u='c' c='RM_Call'/>
+<use f='codebrowser/src/scripting.c' l='523' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/server.c' l='2356' u='c' c='processCommand'/>

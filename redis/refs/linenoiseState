@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/linenoise/linenoise.c' l='138' ll='151'/>
+<size>88</size>
+<doc f='codebrowser/deps/linenoise/linenoise.c' l='135'>/* The linenoiseState structure represents the state during line editing.
+ * We pass this state to functions implementing specific editing
+ * functionalities. */</doc>

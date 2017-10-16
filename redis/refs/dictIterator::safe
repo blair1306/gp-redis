@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/dict.h' l='91' type='int'/>
+<offset>160</offset>
+<use f='codebrowser/src/dict.c' l='549' u='w' c='dictGetIterator'/>
+<use f='codebrowser/src/dict.c' l='558' u='w' c='dictGetSafeIterator'/>
+<use f='codebrowser/src/dict.c' l='568' u='r' c='dictNext'/>
+<use f='codebrowser/src/dict.c' l='600' u='r' c='dictReleaseIterator'/>

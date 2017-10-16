@@ -1,0 +1,17 @@
+<dec f='codebrowser/src/server.h' l='313'/>
+<use f='codebrowser/src/debug.c' l='158' u='c'/>
+<use f='codebrowser/src/sort.c' l='358' u='c'/>
+<use f='codebrowser/src/sort.c' l='372' u='c'/>
+<use f='codebrowser/src/sort.c' l='544' u='c'/>
+<use f='codebrowser/src/sort.c' l='558' u='c'/>
+<use f='codebrowser/src/t_list.c' l='146' u='c'/>
+<use f='codebrowser/src/t_list.c' l='231' u='c'/>
+<use f='codebrowser/src/t_list.c' l='261' u='c'/>
+<use f='codebrowser/src/t_list.c' l='272' u='c'/>
+<use f='codebrowser/src/t_list.c' l='284' u='c'/>
+<use f='codebrowser/src/t_list.c' l='395' u='c'/>
+<use f='codebrowser/src/t_list.c' l='426' u='c'/>
+<use f='codebrowser/src/t_list.c' l='507' u='c'/>
+<use f='codebrowser/src/t_list.c' l='579' u='c'/>
+<use f='codebrowser/src/t_list.c' l='836' u='c'/>
+<use f='codebrowser/src/t_list.c' l='941' u='c'/>

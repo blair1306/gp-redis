@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='147'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='39' u='a'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='146'>/* Support memory filling (junk/zero/quarantine/redzone). */</doc>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='17' u='a'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='24' u='a'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='31' u='a'/>

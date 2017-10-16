@@ -1,0 +1,5 @@
+<def f='codebrowser/src/redis-cli.c' l='2460' ll='2463' type='void LRUTestGenKey(char * buf, size_t buflen)'/>
+<use f='codebrowser/src/redis-cli.c' l='2486' u='c' c='LRUTestMode'/>
+<use f='codebrowser/src/redis-cli.c' l='2494' u='c' c='LRUTestMode'/>
+<doc f='codebrowser/src/redis-cli.c' l='2458'>/* Generates a key name among a set of lru_test_sample_size keys, using
+ * an 80-20 distribution. */</doc>

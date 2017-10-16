@@ -1,0 +1,72 @@
+<dec f='codebrowser/src/adlist.h' l='81' type='listNode * listNext(listIter * iter)'/>
+<def f='codebrowser/src/adlist.c' l='229' ll='240' type='listNode * listNext(listIter * iter)'/>
+<use f='codebrowser/src/adlist.c' l='262' u='c' c='listDup'/>
+<use f='codebrowser/src/adlist.c' l='296' u='c' c='listSearchKey'/>
+<doc f='codebrowser/src/adlist.c' l='215'>/* Return the next element of an iterator.
+ * It&apos;s valid to remove the currently returned element using
+ * listDelNode(), but not to remove other elements.
+ *
+ * The function returns a pointer to the next element of the list,
+ * or NULL if there are no more elements, so the classical usage patter
+ * is:
+ *
+ * iter = listGetIterator(list,&lt;direction&gt;);
+ * while ((node = listNext(iter)) != NULL) {
+ *     doSomethingWith(listNodeValue(node));
+ * }
+ *
+ * */</doc>
+<use f='codebrowser/src/aof.c' l='85' u='c' c='aofRewriteBufferSize'/>
+<use f='codebrowser/src/aof.c' l='180' u='c' c='aofRewriteBufferWrite'/>
+<use f='codebrowser/src/blocked.c' l='184' u='c' c='disconnectAllBlockedClients'/>
+<use f='codebrowser/src/cluster.c' l='721' u='c' c='clusterNodeAddFailureReport'/>
+<use f='codebrowser/src/cluster.c' l='752' u='c' c='clusterNodeCleanupFailureReports'/>
+<use f='codebrowser/src/cluster.c' l='777' u='c' c='clusterNodeDelFailureReport'/>
+<use f='codebrowser/src/evict.c' l='366' u='c' c='freeMemoryGetNotCountedMemory'/>
+<use f='codebrowser/src/module.c' l='2726' u='c' c='moduleTypeLookupModuleByName'/>
+<use f='codebrowser/src/module.c' l='2765' u='c' c='moduleTypeLookupModuleByID'/>
+<use f='codebrowser/src/module.c' l='3717' u='c' c='moduleLoadFromQueue'/>
+<use f='codebrowser/src/multi.c' l='225' u='c' c='watchForKey'/>
+<use f='codebrowser/src/multi.c' l='254' u='c' c='unwatchAllKeys'/>
+<use f='codebrowser/src/multi.c' l='288' u='c' c='touchWatchedKey'/>
+<use f='codebrowser/src/multi.c' l='305' u='c' c='touchWatchedKeysOnFlush'/>
+<use f='codebrowser/src/multi.c' l='308' u='c' c='touchWatchedKeysOnFlush'/>
+<use f='codebrowser/src/networking.c' l='995' u='c' c='handleClientsWithPendingWrites'/>
+<use f='codebrowser/src/networking.c' l='1441' u='c' c='getClientsMaxBuffers'/>
+<use f='codebrowser/src/networking.c' l='1546' u='c' c='getAllClientsInfoString'/>
+<use f='codebrowser/src/networking.c' l='1635' u='c' c='clientCommand'/>
+<use f='codebrowser/src/networking.c' l='1928' u='c' c='flushSlavesOutputBuffers'/>
+<use f='codebrowser/src/networking.c' l='1986' u='c' c='clientsArePaused'/>
+<use f='codebrowser/src/object.c' l='836' u='c' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/object.c' l='852' u='c' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/pubsub.c' l='208' u='c' c='pubsubUnsubscribeAllPatterns'/>
+<use f='codebrowser/src/pubsub.c' l='239' u='c' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/pubsub.c' l='253' u='c' c='pubsubPublishMessage'/>
+<use f='codebrowser/src/rdb.c' l='1759' u='c' c='backgroundSaveDoneHandlerSocket'/>
+<use f='codebrowser/src/rdb.c' l='1843' u='c' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/rdb.c' l='1940' u='c' c='rdbSaveToSlavesSockets'/>
+<use f='codebrowser/src/replication.c' l='215' u='c' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/replication.c' l='255' u='c' c='replicationFeedSlaves'/>
+<use f='codebrowser/src/replication.c' l='294' u='c' c='replicationFeedSlavesFromMasterStream'/>
+<use f='codebrowser/src/replication.c' l='335' u='c' c='replicationFeedMonitors'/>
+<use f='codebrowser/src/replication.c' l='592' u='c' c='startBgsaveForReplication'/>
+<use f='codebrowser/src/replication.c' l='610' u='c' c='startBgsaveForReplication'/>
+<use f='codebrowser/src/replication.c' l='713' u='c' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='947' u='c' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='2044' u='c' c='roleCommand'/>
+<use f='codebrowser/src/replication.c' l='2240' u='c' c='refreshGoodSlavesCount'/>
+<use f='codebrowser/src/replication.c' l='2376' u='c' c='replicationCountAcksByOffset'/>
+<use f='codebrowser/src/replication.c' l='2443' u='c' c='processClientsWaitingReplicas'/>
+<use f='codebrowser/src/replication.c' l='2569' u='c' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2590' u='c' c='replicationCron'/>
+<use f='codebrowser/src/replication.c' l='2648' u='c' c='replicationCron'/>
+<use f='codebrowser/src/scripting.c' l='1700' u='c' c='ldbKillForkedSessions'/>
+<use f='codebrowser/src/sentinel.c' l='699' u='c' c='sentinelScheduleScriptExecution'/>
+<use f='codebrowser/src/sentinel.c' l='720' u='c' c='sentinelGetScriptListNodeByPid'/>
+<use f='codebrowser/src/sentinel.c' l='740' u='c' c='sentinelRunPendingScripts'/>
+<use f='codebrowser/src/sentinel.c' l='848' u='c' c='sentinelKillTimedoutScripts'/>
+<use f='codebrowser/src/sentinel.c' l='868' u='c' c='sentinelPendingScriptsCommand'/>
+<use f='codebrowser/src/server.c' l='3198' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/slowlog.c' l='163' u='c' c='slowlogCommand'/>
+<use f='codebrowser/src/sort.c' l='517' u='c' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='547' u='c' c='sortCommand'/>

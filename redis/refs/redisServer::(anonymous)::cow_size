@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1047' type='size_t'/>
+<use f='codebrowser/src/aof.c' l='1361' u='w' c='rewriteAppendOnlyFileBackground'/>
+<offset>64</offset>
+<doc f='codebrowser/src/server.h' l='1047'>/* Copy on write size. */</doc>
+<use f='codebrowser/src/childinfo.c' l='80' u='r' c='receiveChildInfo'/>
+<use f='codebrowser/src/childinfo.c' l='82' u='r' c='receiveChildInfo'/>
+<use f='codebrowser/src/rdb.c' l='1074' u='w' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1885' u='w' c='rdbSaveToSlavesSockets'/>

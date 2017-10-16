@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/rdb.h' l='131' type='int rdbLoad(char * filename, rdbSaveInfo * rsi)'/>
+<use f='codebrowser/src/debug.c' l='345' u='c' c='debugCommand'/>
+<def f='codebrowser/src/rdb.c' l='1653' ll='1665' type='int rdbLoad(char * filename, rdbSaveInfo * rsi)'/>
+<doc f='codebrowser/src/rdb.c' l='1646'>/* Like rdbLoadRio() but takes a filename instead of a rio stream. The
+ * filename is open for reading and a rio stream object created in order
+ * to do the actual loading. Moreover the ETA displayed in the INFO
+ * output is initialized and finalized.
+ *
+ * If you pass an &apos;rsi&apos; structure initialied with RDB_SAVE_OPTION_INIT, the
+ * loading code will fiil the information fields in the structure. */</doc>
+<use f='codebrowser/src/replication.c' l='1268' u='c' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/server.c' l='3530' u='c' c='loadDataFromDisk'/>

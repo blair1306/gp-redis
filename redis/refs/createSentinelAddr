@@ -1,0 +1,10 @@
+<def f='codebrowser/src/sentinel.c' l='517' ll='533' type='sentinelAddr * createSentinelAddr(char * hostname, int port)'/>
+<use f='codebrowser/src/sentinel.c' l='1155' u='c' c='createSentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1467' u='c' c='sentinelResetMasterAndChangeAddress'/>
+<use f='codebrowser/src/sentinel.c' l='1478' u='c' c='sentinelResetMasterAndChangeAddress'/>
+<use f='codebrowser/src/sentinel.c' l='1488' u='c' c='sentinelResetMasterAndChangeAddress'/>
+<doc f='codebrowser/src/sentinel.c' l='512'>/* Create a sentinelAddr object and return it on success.
+ * On error NULL is returned and errno is set to:
+ *  ENOENT: Can&apos;t resolve the hostname.
+ *  EINVAL: Invalid port number.
+ */</doc>

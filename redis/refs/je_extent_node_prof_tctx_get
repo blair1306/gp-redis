@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='140' macro='1' type='prof_tctx_t * je_extent_node_prof_tctx_get(const extent_node_t * node)'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='411' macro='1' u='c'/>

@@ -1,0 +1,6 @@
+<def f='codebrowser/src/module.c' l='1596' ll='1603' type='int RM_ListPush(RedisModuleKey * key, int where, robj * ele)'/>
+<use f='codebrowser/src/module.c' l='3920' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1592'>/* Push an element into a list, on head or tail depending on &apos;where&apos; argumnet.
+ * If the key pointer is about an empty key opened for writing, the key
+ * is created. On error (key opened for read-only operations or of the wrong
+ * type) REDISMODULE_ERR is returned, otherwise REDISMODULE_OK is returned. */</doc>

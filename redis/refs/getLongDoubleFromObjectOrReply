@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1466' type='int getLongDoubleFromObjectOrReply(client * c, robj * o, long double * target, const char * msg)'/>
+<def f='codebrowser/src/object.c' l='616' ll='628' type='int getLongDoubleFromObjectOrReply(client * c, robj * o, long double * target, const char * msg)'/>
+<use f='codebrowser/src/t_hash.c' l='602' u='c' c='hincrbyfloatCommand'/>
+<use f='codebrowser/src/t_string.c' l='407' u='c' c='incrbyfloatCommand'/>
+<use f='codebrowser/src/t_string.c' l='408' u='c' c='incrbyfloatCommand'/>

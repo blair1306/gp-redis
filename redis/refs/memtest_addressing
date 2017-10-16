@@ -1,0 +1,6 @@
+<def f='codebrowser/src/memtest.c' l='93' ll='121' type='int memtest_addressing(unsigned long * l, size_t bytes, int interactive)'/>
+<use f='codebrowser/src/memtest.c' l='245' u='c' c='memtest_test'/>
+<use f='codebrowser/src/memtest.c' l='308' u='c' c='memtest_preserving_test'/>
+<doc f='codebrowser/src/memtest.c' l='90'>/* Test that addressing is fine. Every location is populated with its own
+ * address, and finally verified. This test is very fast but may detect
+ * ASAP big issues with the memory subsystem. */</doc>

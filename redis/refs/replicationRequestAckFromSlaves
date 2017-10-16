@@ -1,0 +1,6 @@
+<def f='codebrowser/src/replication.c' l='2364' ll='2366' type='void replicationRequestAckFromSlaves()'/>
+<use f='codebrowser/src/replication.c' l='2420' u='c' c='waitCommand'/>
+<doc f='codebrowser/src/replication.c' l='2360'>/* This just set a flag so that we broadcast a REPLCONF GETACK command
+ * to all the slaves in the beforeSleep() function. Note that this way
+ * we &quot;group&quot; all the clients that want to wait for synchronouns replication
+ * in a given event loop iteration, and send a single GETACK for them all. */</doc>

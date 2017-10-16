@@ -1,0 +1,2 @@
+<def f='codebrowser/src/scripting.c' l='1071' ll='1074' type='void scriptingReset()'/>
+<use f='codebrowser/src/scripting.c' l='1426' u='c' c='scriptCommand'/>

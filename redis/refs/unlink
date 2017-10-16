@@ -1,0 +1,13 @@
+<dec f='include/unistd.h' l='829' type='int unlink(const char * __name)'/>
+<doc f='include/unistd.h' l='828'>/* Remove the link NAME.  */</doc>
+<use f='codebrowser/src/aof.c' l='1234' u='c' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1243' u='c' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1414' u='c' c='aofRemoveTempFile'/>
+<use f='codebrowser/src/debug.c' l='1106' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/rdb.c' l='1030' u='c' c='rdbSave'/>
+<use f='codebrowser/src/rdb.c' l='1043' u='c' c='rdbSave'/>
+<use f='codebrowser/src/rdb.c' l='1104' u='c' c='rdbRemoveTempFile'/>
+<use f='codebrowser/src/replication.c' l='1898' u='c' c='replicationAbortSyncTransfer'/>
+<use f='codebrowser/src/server.c' l='1834' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2507' u='c' c='closeListeningSockets'/>
+<use f='codebrowser/src/server.c' l='2569' u='c' c='prepareForShutdown'/>

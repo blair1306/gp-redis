@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1491' type='void replicationScriptCacheInit()'/>
+<def f='codebrowser/src/replication.c' l='2282' ll='2286' type='void replicationScriptCacheInit()'/>
+<doc f='codebrowser/src/replication.c' l='2281'>/* Initialize the script cache, only called at startup. */</doc>
+<use f='codebrowser/src/server.c' l='1946' u='c' c='initServer'/>

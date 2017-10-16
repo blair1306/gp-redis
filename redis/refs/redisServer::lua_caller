@@ -1,0 +1,17 @@
+<dec f='codebrowser/src/server.h' l='1166' type='client *'/>
+<offset>22336</offset>
+<doc f='codebrowser/src/server.h' l='1166'>/* The client running EVAL right now, or NULL */</doc>
+<use f='codebrowser/src/db.c' l='1101' u='r' c='expireIfNeeded'/>
+<use f='codebrowser/src/scripting.c' l='485' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='518' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='522' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='541' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='901' u='w' c='scriptingInit'/>
+<use f='codebrowser/src/scripting.c' l='1196' u='r' c='luaMaskCountHook'/>
+<use f='codebrowser/src/scripting.c' l='1303' u='w' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1330' u='w' c='evalGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1459' u='r' c='scriptCommand'/>
+<use f='codebrowser/src/server.c' l='2219' u='r' c='call'/>
+<use f='codebrowser/src/server.c' l='2221' u='r' c='call'/>
+<use f='codebrowser/src/server.c' l='2223' u='r' c='call'/>
+<use f='codebrowser/src/server.c' l='2350' u='r' c='processCommand'/>

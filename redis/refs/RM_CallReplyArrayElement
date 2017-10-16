@@ -1,0 +1,4 @@
+<def f='codebrowser/src/module.c' l='2442' ll='2447' type='RedisModuleCallReply * RM_CallReplyArrayElement(RedisModuleCallReply * reply, size_t idx)'/>
+<use f='codebrowser/src/module.c' l='3930' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='2440'>/* Return the &apos;idx&apos;-th nested call reply element of an array reply, or NULL
+ * if the reply type is wrong or the index is out of range. */</doc>

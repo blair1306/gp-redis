@@ -1,0 +1,4 @@
+<def f='codebrowser/src/t_zset.c' l='2827' ll='3001' type='void genericZrangebylexCommand(client * c, int reverse)'/>
+<use f='codebrowser/src/t_zset.c' l='3004' u='c' c='zrangebylexCommand'/>
+<use f='codebrowser/src/t_zset.c' l='3008' u='c' c='zrevrangebylexCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='2826'>/* This command implements ZRANGEBYLEX, ZREVRANGEBYLEX. */</doc>

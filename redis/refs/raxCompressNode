@@ -1,0 +1,10 @@
+<def f='codebrowser/src/rax.c' l='312' ll='343' type='raxNode * raxCompressNode(raxNode * n, unsigned char * s, size_t len, raxNode ** child)'/>
+<use f='codebrowser/src/rax.c' l='753' u='c' c='raxInsert'/>
+<doc f='codebrowser/src/rax.c' l='304'>/* Turn the node &apos;n&apos;, that must be a node without any children, into a
+ * compressed node representing a set of nodes linked one after the other
+ * and having exactly one child each. The node can be a key or not: this
+ * property and the associated value if any will be preserved.
+ *
+ * The function also returns a child node, since the last node of the
+ * compressed chain cannot be part of the chain: it has zero children while
+ * we can only compress inner nodes with exactly one child each. */</doc>

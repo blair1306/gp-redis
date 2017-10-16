@@ -1,0 +1,12 @@
+<def f='codebrowser/src/server.h' l='610' ll='618'/>
+<size>56</size>
+<doc f='codebrowser/src/server.h' l='607'>/* Redis database representation. There are multiple databases identified
+ * by integers from 0 (the default database) up to the max configured
+ * database. The database number is the &apos;id&apos; field in the structure. */</doc>
+<mbr r='redisDb::dict' o='0' t='dict *'/>
+<mbr r='redisDb::expires' o='64' t='dict *'/>
+<mbr r='redisDb::blocking_keys' o='128' t='dict *'/>
+<mbr r='redisDb::ready_keys' o='192' t='dict *'/>
+<mbr r='redisDb::watched_keys' o='256' t='dict *'/>
+<mbr r='redisDb::id' o='320' t='int'/>
+<mbr r='redisDb::avg_ttl' o='384' t='long long'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/server.h' l='1233' type='robj *'/>
+<offset>0</offset>
+<use f='codebrowser/src/sort.c' l='152' u='r' c='sortCompare'/>
+<use f='codebrowser/src/sort.c' l='152' u='r' c='sortCompare'/>
+<use f='codebrowser/src/sort.c' l='178' u='r' c='sortCompare'/>
+<use f='codebrowser/src/sort.c' l='178' u='r' c='sortCompare'/>
+<use f='codebrowser/src/sort.c' l='180' u='r' c='sortCompare'/>
+<use f='codebrowser/src/sort.c' l='180' u='r' c='sortCompare'/>
+<use f='codebrowser/src/sort.c' l='361' u='w' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='375' u='w' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='385' u='w' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='421' u='w' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='438' u='w' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='455' u='r' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='459' u='r' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='515' u='r' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='520' u='r' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='544' u='r' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='550' u='r' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='583' u='r' c='sortCommand'/>

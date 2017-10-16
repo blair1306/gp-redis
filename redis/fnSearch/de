@@ -1,0 +1,12 @@
+delCommand|delCommand
+delGenericCommand|delGenericCommand
+delKeysInSlot|delKeysInSlot
+debugCommand|debugCommand
+defragDictBucketCallback|defragDictBucketCallback
+defragKey|defragKey
+defragScanCallback|defragScanCallback
+decodeGeohash|decodeGeohash
+decrRefCount|decrRefCount
+decrRefCountVoid|decrRefCountVoid
+decrCommand|decrCommand
+decrbyCommand|decrbyCommand

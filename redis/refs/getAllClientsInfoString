@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1368' type='sds getAllClientsInfoString()'/>
+<use f='codebrowser/src/debug.c' l='1045' u='c' c='sigsegvHandler'/>
+<def f='codebrowser/src/networking.c' l='1539' ll='1552' type='sds getAllClientsInfoString()'/>
+<use f='codebrowser/src/networking.c' l='1561' u='c' c='clientCommand'/>

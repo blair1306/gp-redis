@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/huge.h' l='14' macro='1' type='void * je_huge_palloc(tsd_t * tsd, arena_t * arena, size_t size, size_t alignment, _Bool zero, tcache_t * tcache)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2377' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='45' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/huge.c' l='49' macro='1' type='void * je_huge_palloc(tsd_t * tsd, arena_t * arena, size_t size, size_t alignment, _Bool zero, tcache_t * tcache)'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='328' macro='1' u='c'/>

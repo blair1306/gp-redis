@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='20' type='2'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tsd.h' l='621' u='r' c='je_tsd_fetch'/>
+<use f='codebrowser/deps/jemalloc/src/tsd.c' l='84' u='r' c='je_tsd_cleanup'/>
+<use f='codebrowser/deps/jemalloc/src/tsd.c' l='87' c='je_tsd_cleanup'/>
+<use f='codebrowser/deps/jemalloc/src/tsd.c' l='101' u='r' c='je_tsd_cleanup'/>

@@ -1,0 +1,3 @@
+<def f='codebrowser/src/quicklist.c' l='400' ll='416' type='int _quicklistNodeSizeMeetsOptimizationRequirement(const size_t sz, const int fill)'/>
+<use f='codebrowser/src/quicklist.c' l='442' u='c' c='_quicklistNodeAllowInsert'/>
+<use f='codebrowser/src/quicklist.c' l='461' u='c' c='_quicklistNodeAllowMerge'/>

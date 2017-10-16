@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/adlist.h' l='92'/>
+<use f='codebrowser/src/adlist.c' l='191' u='c'/>
+<use f='codebrowser/src/adlist.c' l='207' u='c'/>
+<use f='codebrowser/src/adlist.c' l='234' u='c'/>
+<doc f='codebrowser/src/adlist.h' l='91'>/* Directions for iterators */</doc>
+<dec f='codebrowser/src/quicklist.h' l='166'/>
+<use f='codebrowser/src/aof.c' l='837' u='c'/>
+<doc f='codebrowser/src/quicklist.h' l='165'>/* Directions for iterators */</doc>
+<use f='codebrowser/src/quicklist.c' l='645' u='c'/>
+<use f='codebrowser/src/quicklist.c' l='1053' u='c'/>
+<use f='codebrowser/src/quicklist.c' l='1142' u='c'/>
+<use f='codebrowser/src/quicklist.c' l='1164' u='c'/>
+<use f='codebrowser/src/t_list.c' l='93' u='c'/>

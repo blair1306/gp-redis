@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1783' type='int ldbPendingChildren()'/>
+<def f='codebrowser/src/scripting.c' l='1690' ll='1692' type='int ldbPendingChildren()'/>
+<doc f='codebrowser/src/scripting.c' l='1688'>/* Return the number of children we still did not received termination
+ * acknowledge via wait() in the parent process. */</doc>
+<use f='codebrowser/src/server.c' l='1044' u='c' c='serverCron'/>

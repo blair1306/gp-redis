@@ -1,0 +1,10 @@
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='159' ll='169' macro='1' type='int prof_gctx_comp(const prof_gctx_t * a, const prof_gctx_t * b)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='172' u='c' c='gctx_tree_next'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='172' u='c' c='gctx_tree_prev'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='172' u='c' c='gctx_tree_search'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='172' u='c' c='gctx_tree_nsearch'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='172' u='c' c='gctx_tree_psearch'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='172' u='c' c='gctx_tree_insert'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='172' u='c' c='gctx_tree_remove'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='172' u='c' c='gctx_tree_iter_start'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='172' u='c' c='gctx_tree_reverse_iter_start'/>

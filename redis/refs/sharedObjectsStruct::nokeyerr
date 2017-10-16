@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='745' type='robj *'/>
+<offset>960</offset>
+<use f='codebrowser/src/db.c' l='838' u='r' c='renameGenericCommand'/>
+<use f='codebrowser/src/debug.c' l='367' u='r' c='debugCommand'/>
+<use f='codebrowser/src/debug.c' l='419' u='r' c='debugCommand'/>
+<use f='codebrowser/src/debug.c' l='441' u='r' c='debugCommand'/>
+<use f='codebrowser/src/server.c' l='1264' u='w' c='createSharedObjects'/>
+<use f='codebrowser/src/t_list.c' l='342' u='r' c='lsetCommand'/>

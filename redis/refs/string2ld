@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/util.h' l='44' type='int string2ld(const char * s, size_t slen, long double * dp)'/>
+<use f='codebrowser/src/t_hash.c' l='606' u='c' c='hincrbyfloatCommand'/>
+<def f='codebrowser/src/util.c' l='429' ll='449' type='int string2ld(const char * s, size_t slen, long double * dp)'/>
+<doc f='codebrowser/src/util.c' l='422'>/* Convert a string into a double. Returns 1 if the string could be parsed
+ * into a (non-overflowing) double, 0 otherwise. The value will be set to
+ * the parsed value when appropriate.
+ *
+ * Note that this function demands that the string strictly represents
+ * a double: no spaces or other characters before or after the string
+ * representing the number are accepted. */</doc>

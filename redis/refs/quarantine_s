@@ -1,0 +1,7 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/quarantine.h' l='19' ll='26'/>
+<size>48</size>
+<mbr r='quarantine_s::curbytes' o='0' t='size_t'/>
+<mbr r='quarantine_s::curobjs' o='64' t='size_t'/>
+<mbr r='quarantine_s::first' o='128' t='size_t'/>
+<mbr r='quarantine_s::lg_maxobjs' o='192' t='size_t'/>
+<mbr r='quarantine_s::objs' o='256' t='quarantine_obj_t [1]'/>

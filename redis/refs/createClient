@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1333' type='client * createClient(int fd)'/>
+<doc f='codebrowser/src/server.h' l='1332'>/* networking.c -- Networking and Client related operations */</doc>
+<use f='codebrowser/src/module.c' l='2582' u='c' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='3419' u='c' c='RM_BlockClient'/>
+<use f='codebrowser/src/module.c' l='3613' u='c' c='RM_GetThreadSafeContext'/>
+<def f='codebrowser/src/networking.c' l='70' ll='141' type='client * createClient(int fd)'/>
+<use f='codebrowser/src/networking.c' l='607' u='c' c='acceptCommonHandler'/>
+<use f='codebrowser/src/replication.c' l='1078' u='c' c='replicationCreateMasterClient'/>
+<use f='codebrowser/src/scripting.c' l='1052' u='c' c='scriptingInit'/>

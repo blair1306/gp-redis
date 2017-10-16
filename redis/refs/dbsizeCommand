@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1844' type='void dbsizeCommand(client * c)'/>
+<def f='codebrowser/src/db.c' l='769' ll='771' type='void dbsizeCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='234' u='r'/>
+<use f='codebrowser/src/server.c' l='234' u='r'/>
+<use f='codebrowser/src/server.c' l='234' u='r'/>
+<use f='codebrowser/src/server.c' l='234' u='r'/>

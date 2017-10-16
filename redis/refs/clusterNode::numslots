@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/cluster.h' l='111' type='int'/>
+<use f='codebrowser/src/cluster.c' l='683' u='w' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='1207' u='r' c='clearNodeFailureIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1220' u='r' c='clearNodeFailureIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='1577' u='r' c='clusterUpdateSlotsConfigWith'/>
+<use f='codebrowser/src/cluster.c' l='2004' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2376' u='r' c='clusterSendPing'/>
+<use f='codebrowser/src/cluster.c' l='2608' u='r' c='clusterSendFailoverAuthIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='2863' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='3073' u='r' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/cluster.c' l='3365' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3543' u='w' c='clusterNodeSetSlotBit'/>
+<use f='codebrowser/src/cluster.c' l='3557' u='r' c='clusterNodeSetSlotBit'/>
+<use f='codebrowser/src/cluster.c' l='3567' u='w' c='clusterNodeClearSlotBit'/>
+<use f='codebrowser/src/cluster.c' l='3683' u='r' c='clusterUpdateState'/>
+<use f='codebrowser/src/cluster.c' l='3804' u='r' c='clusterSetMaster'/>
+<use f='codebrowser/src/cluster.c' l='4008' u='r' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4444' u='r' c='clusterCommand'/>
+<offset>16896</offset>
+<doc f='codebrowser/src/cluster.h' l='111'>/* Number of slots handled by this node */</doc>

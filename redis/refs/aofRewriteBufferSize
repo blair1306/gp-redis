@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1528' type='unsigned long aofRewriteBufferSize()'/>
+<def f='codebrowser/src/aof.c' l='79' ll='90' type='unsigned long aofRewriteBufferSize()'/>
+<use f='codebrowser/src/aof.c' l='158' u='c' c='aofRewriteBufferAppend'/>
+<use f='codebrowser/src/aof.c' l='1470' u='c' c='backgroundRewriteDoneHandler'/>
+<doc f='codebrowser/src/aof.c' l='78'>/* Return the current size of the AOF rewrite buffer. */</doc>
+<use f='codebrowser/src/evict.c' l='372' u='c' c='freeMemoryGetNotCountedMemory'/>
+<use f='codebrowser/src/object.c' l='867' u='c' c='getMemoryOverheadData'/>
+<use f='codebrowser/src/server.c' l='3033' u='c' c='genRedisInfoString'/>

@@ -1,0 +1,3 @@
+<dec f='include/netinet/in.h' l='64' type='41'/>
+<doc f='include/netinet/in.h' l='64'>/* IPv6 header.  */</doc>
+<use f='codebrowser/src/anet.c' l='457' macro='1' u='r'/>

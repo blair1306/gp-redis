@@ -1,0 +1,11 @@
+<dec f='codebrowser/deps/lua/src/lobject.h' l='246' type='int'/>
+<offset>768</offset>
+<use f='codebrowser/deps/lua/src/ldebug.c' l='159' u='r' c='funcinfo'/>
+<use f='codebrowser/deps/lua/src/ldump.c' l='132' u='r' c='DumpFunction'/>
+<use f='codebrowser/deps/lua/src/lfunc.c' l='134' u='w' c='luaF_newproto'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='72' u='r' c='errorlimit'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='75' u='r' c='errorlimit'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='580' u='w' c='body'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='168' u='w' c='LoadFunction'/>
+<use f='codebrowser/deps/lua/src/print.c' l='171' u='r' c='PrintHeader'/>
+<use f='codebrowser/deps/lua/src/print.c' l='172' u='r' c='PrintHeader'/>

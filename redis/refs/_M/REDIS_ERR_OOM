@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='47'/>
+<use f='codebrowser/deps/hiredis/async.c' l='233' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='912' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='935' u='c'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='967' u='c'/>
+<use f='codebrowser/deps/hiredis/read.c' l='106' u='c'/>

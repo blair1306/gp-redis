@@ -1,0 +1,20 @@
+<def f='codebrowser/deps/hiredis/sds.h' l='103' ll='127' type='size_t sdsavail(const sds s)'/>
+<use f='codebrowser/deps/hiredis/read.c' l='455' u='c' c='redisReaderFeed'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='196' u='c' c='sdsMakeRoomFor'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='593' u='c' c='sdscatfmt'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='606' u='c' c='sdscatfmt'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='622' u='c' c='sdscatfmt'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='639' u='c' c='sdscatfmt'/>
+<def f='codebrowser/src/sds.h' l='103' ll='127' type='size_t sdsavail(const sds s)'/>
+<use f='codebrowser/src/aof.c' l='421' u='c' c='flushAppendOnlyFile'/>
+<use f='codebrowser/src/debug.c' l='432' u='c' c='debugCommand'/>
+<use f='codebrowser/src/debug.c' l='435' u='c' c='debugCommand'/>
+<use f='codebrowser/src/module.c' l='1581' u='c' c='RM_StringTruncate'/>
+<use f='codebrowser/src/networking.c' l='1531' u='c' c='catClientInfoString'/>
+<use f='codebrowser/src/object.c' l='444' u='c' c='tryObjectEncoding'/>
+<use f='codebrowser/src/sds.c' l='199' u='c' c='sdsMakeRoomFor'/>
+<use f='codebrowser/src/sds.c' l='598' u='c' c='sdscatfmt'/>
+<use f='codebrowser/src/sds.c' l='611' u='c' c='sdscatfmt'/>
+<use f='codebrowser/src/sds.c' l='627' u='c' c='sdscatfmt'/>
+<use f='codebrowser/src/sds.c' l='644' u='c' c='sdscatfmt'/>
+<use f='codebrowser/src/server.c' l='826' u='c' c='clientsCronResizeQueryBuffer'/>

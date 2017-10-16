@@ -1,0 +1,7 @@
+<def f='codebrowser/src/config.c' l='1464' ll='1467' type='void rewriteConfigAppendLine(struct rewriteConfigState * state, sds line)'/>
+<use f='codebrowser/src/config.c' l='1522' u='c' c='rewriteConfigReadOldFile'/>
+<use f='codebrowser/src/config.c' l='1535' u='c' c='rewriteConfigReadOldFile'/>
+<use f='codebrowser/src/config.c' l='1543' u='c' c='rewriteConfigReadOldFile'/>
+<use f='codebrowser/src/config.c' l='1594' u='c' c='rewriteConfigRewriteLine'/>
+<use f='codebrowser/src/config.c' l='1598' u='c' c='rewriteConfigRewriteLine'/>
+<doc f='codebrowser/src/config.c' l='1463'>/* Append the new line to the current configuration state. */</doc>

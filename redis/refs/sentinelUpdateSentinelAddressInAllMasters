@@ -1,0 +1,9 @@
+<def f='codebrowser/src/sentinel.c' l='1054' ll='1088' type='int sentinelUpdateSentinelAddressInAllMasters(sentinelRedisInstance * ri)'/>
+<use f='codebrowser/src/sentinel.c' l='2363' u='c' c='sentinelProcessHelloMessage'/>
+<use f='codebrowser/src/sentinel.c' l='2378' u='c' c='sentinelProcessHelloMessage'/>
+<doc f='codebrowser/src/sentinel.c' l='1048'>/* When we detect a Sentinel to switch address (reporting a different IP/port
+ * pair in Hello messages), let&apos;s update all the matching Sentinels in the
+ * context of other masters as well and disconnect the links, so that everybody
+ * will be updated.
+ *
+ * Return the number of updated Sentinel addresses. */</doc>

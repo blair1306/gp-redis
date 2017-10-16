@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='28' ll='31'/>
+<size>16</size>
+<mbr r='ctl_indexed_node_s::node' o='0' t='struct ctl_node_s'/>
+<mbr r='ctl_indexed_node_s::index' o='64' t='const ctl_named_node_t *(*)(const size_t *, size_t, size_t)'/>

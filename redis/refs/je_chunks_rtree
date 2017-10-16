@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk.h' l='43' macro='1' type='rtree_t'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk.h' l='91' macro='1' u='a'/>
+<def f='codebrowser/deps/jemalloc/src/chunk.c' l='14' macro='1' type='rtree_t'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='147' macro='1' u='a'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='173' macro='1' u='a'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='735' macro='1' u='a'/>

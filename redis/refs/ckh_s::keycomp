@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='59' type='ckh_keycomp_t *'/>
+<offset>256</offset>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='60' u='r' c='ckh_bucket_search'/>
+<use f='codebrowser/deps/jemalloc/src/ckh.c' l='387' u='w' c='je_ckh_new'/>

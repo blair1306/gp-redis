@@ -1,0 +1,16 @@
+<def f='codebrowser/src/module.c' l='101' ll='120'/>
+<size>104</size>
+<mbr r='RedisModuleCtx::getapifuncptr' o='0' t='void *'/>
+<mbr r='RedisModuleCtx::module' o='64' t='struct RedisModule *'/>
+<mbr r='RedisModuleCtx::client' o='128' t='client *'/>
+<mbr r='RedisModuleCtx::blocked_client' o='192' t='struct RedisModuleBlockedClient *'/>
+<mbr r='RedisModuleCtx::amqueue' o='256' t='struct AutoMemEntry *'/>
+<mbr r='RedisModuleCtx::amqueue_len' o='320' t='int'/>
+<mbr r='RedisModuleCtx::amqueue_used' o='352' t='int'/>
+<mbr r='RedisModuleCtx::flags' o='384' t='int'/>
+<mbr r='RedisModuleCtx::postponed_arrays' o='448' t='void **'/>
+<mbr r='RedisModuleCtx::postponed_arrays_count' o='512' t='int'/>
+<mbr r='RedisModuleCtx::blocked_privdata' o='576' t='void *'/>
+<mbr r='RedisModuleCtx::keys_pos' o='640' t='int *'/>
+<mbr r='RedisModuleCtx::keys_count' o='704' t='int'/>
+<mbr r='RedisModuleCtx::pa_head' o='768' t='struct RedisModulePoolAllocBlock *'/>

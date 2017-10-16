@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/private_namespace.h' l='460'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='142' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='711' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='291' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='408' u='c'/>

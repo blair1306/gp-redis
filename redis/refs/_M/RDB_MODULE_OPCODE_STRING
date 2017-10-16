@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rdb.h' l='111'/>
+<use f='codebrowser/src/module.c' l='3015' u='c'/>
+<use f='codebrowser/src/module.c' l='3033' u='c'/>
+<use f='codebrowser/src/module.c' l='3050' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1122' u='c'/>

@@ -1,0 +1,9 @@
+<dec f='include/netinet/in.h' l='243' type='struct in_addr'/>
+<offset>32</offset>
+<doc f='include/netinet/in.h' l='243'>/* Internet address.  */</doc>
+<use f='codebrowser/src/anet.c' l='220' u='a' c='anetGenericResolve'/>
+<use f='codebrowser/src/anet.c' l='557' u='a' c='anetTcpAccept'/>
+<use f='codebrowser/src/anet.c' l='586' u='a' c='anetPeerToString'/>
+<use f='codebrowser/src/anet.c' l='642' u='a' c='anetSockName'/>
+<use f='codebrowser/src/cluster.c' l='1266' u='a' c='clusterStartHandshake'/>
+<use f='codebrowser/src/cluster.c' l='1289' u='a' c='clusterStartHandshake'/>

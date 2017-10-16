@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/cluster.h' l='123' type='mstime_t'/>
+<use f='codebrowser/src/cluster.c' l='695' u='w' c='createClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='3077' u='r' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/cluster.c' l='3077' u='w' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/cluster.c' l='3079' u='w' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/cluster.c' l='3104' u='r' c='clusterHandleSlaveMigration'/>
+<offset>17408</offset>
+<doc f='codebrowser/src/cluster.h' l='123'>/* Starting time of orphaned master condition */</doc>

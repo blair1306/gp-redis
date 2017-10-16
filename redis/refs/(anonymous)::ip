@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/cluster.h' l='181' type='char [46]'/>
+<use f='codebrowser/src/cluster.c' l='1330' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1389' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1394' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1410' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='2286' u='r' c='clusterSetGossipEntry'/>
+<offset>384</offset>
+<doc f='codebrowser/src/cluster.h' l='181'>/* IP address last time it was seen */</doc>

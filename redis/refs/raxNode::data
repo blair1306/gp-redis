@@ -1,0 +1,76 @@
+<dec f='codebrowser/src/rax.h' l='100' type='unsigned char []'/>
+<offset>32</offset>
+<doc f='codebrowser/src/rax.h' l='73'>/* Data layout is as follows:
+     *
+     * If node is not compressed we have &apos;size&apos; bytes, one for each children
+     * character, and &apos;size&apos; raxNode pointers, point to each child node.
+     * Note how the character is not stored in the children but in the
+     * edge of the parents:
+     *
+     * [header strlen=0][abc][a-ptr][b-ptr][c-ptr](value-ptr?)
+     *
+     * if node is compressed (strlen != 0) the node has 1 children.
+     * In that case the &apos;size&apos; bytes of the string stored immediately at
+     * the start of the data section, represent a sequence of successive
+     * nodes linked one after the other, for which only the last one in
+     * the sequence is actually represented as a node, and pointed to by
+     * the current compressed node.
+     *
+     * [header strlen=3][xyz][z-ptr](value-ptr?)
+     *
+     * Both compressed and not compressed nodes can represent a key
+     * with associated data in the radix tree at any level (not just terminal
+     * nodes).
+     *
+     * If the node has an associated key (iskey=1) and is not NULL
+     * (isnull=0), then after the raxNode pointers poiting to the
+     * childen, an additional value pointer is present (as you can see
+     * in the representation above as &quot;value-ptr&quot; field).
+     */</doc>
+<use f='codebrowser/src/rax.c' l='248' u='r' c='raxAddChild'/>
+<use f='codebrowser/src/rax.c' l='258' u='r' c='raxAddChild'/>
+<use f='codebrowser/src/rax.c' l='268' u='r' c='raxAddChild'/>
+<use f='codebrowser/src/rax.c' l='276' u='r' c='raxAddChild'/>
+<use f='codebrowser/src/rax.c' l='283' u='w' c='raxAddChild'/>
+<use f='codebrowser/src/rax.c' l='285' u='r' c='raxAddChild'/>
+<use f='codebrowser/src/rax.c' l='338' u='r' c='raxCompressNode'/>
+<use f='codebrowser/src/rax.c' l='371' u='r' c='raxLowWalk'/>
+<use f='codebrowser/src/rax.c' l='302' u='r' c='raxLowWalk'/>
+<use f='codebrowser/src/rax.c' l='625' u='w' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='625' u='r' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='637' u='r' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='637' u='r' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='660' u='r' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='660' u='r' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='710' u='r' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='710' u='r' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='721' u='r' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='721' u='r' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='302' u='r' c='raxFindParentLink'/>
+<use f='codebrowser/src/rax.c' l='302' u='r' c='raxRemoveChild'/>
+<use f='codebrowser/src/rax.c' l='853' u='r' c='raxRemoveChild'/>
+<use f='codebrowser/src/rax.c' l='867' u='r' c='raxRemoveChild'/>
+<use f='codebrowser/src/rax.c' l='1062' u='r' c='raxRemove'/>
+<use f='codebrowser/src/rax.c' l='1062' u='r' c='raxRemove'/>
+<use f='codebrowser/src/rax.c' l='302' u='r' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1203' u='r' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='302' u='r' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1249' u='r' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1255' u='r' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1276' u='r' c='raxSeekGreatest'/>
+<use f='codebrowser/src/rax.c' l='1279' u='r' c='raxSeekGreatest'/>
+<use f='codebrowser/src/rax.c' l='1337' u='r' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1347' u='r' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1444' u='r' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='302' u='r' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1448' u='r' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1483' u='r' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1493' u='r' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1506' u='r' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1600' u='r' c='raxRandomWalk'/>
+<use f='codebrowser/src/rax.c' l='1602' u='r' c='raxRandomWalk'/>
+<use f='codebrowser/src/rax.c' l='302' u='r' c='raxRandomWalk'/>
+<use f='codebrowser/src/rax.c' l='1682' c='raxRecursiveShow'/>
+<use f='codebrowser/src/rax.c' l='302' u='r' c='raxRecursiveShow'/>
+<use f='codebrowser/src/rax.c' l='1700' u='r' c='raxRecursiveShow'/>
+<use f='codebrowser/src/rax.c' l='1720' c='raxDebugShowNode'/>

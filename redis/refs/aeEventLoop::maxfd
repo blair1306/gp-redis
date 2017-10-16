@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/ae.h' l='92' type='int'/>
+<use f='codebrowser/src/ae.c' l='76' u='w' c='aeCreateEventLoop'/>
+<use f='codebrowser/src/ae.c' l='111' u='r' c='aeResizeSetSize'/>
+<use f='codebrowser/src/ae.c' l='120' u='r' c='aeResizeSetSize'/>
+<use f='codebrowser/src/ae.c' l='151' u='r' c='aeCreateFileEvent'/>
+<use f='codebrowser/src/ae.c' l='152' u='w' c='aeCreateFileEvent'/>
+<use f='codebrowser/src/ae.c' l='164' u='r' c='aeDeleteFileEvent'/>
+<use f='codebrowser/src/ae.c' l='168' u='r' c='aeDeleteFileEvent'/>
+<use f='codebrowser/src/ae.c' l='170' u='w' c='aeDeleteFileEvent'/>
+<use f='codebrowser/src/ae.c' l='362' u='r' c='aeProcessEvents'/>
+<offset>0</offset>
+<doc f='codebrowser/src/ae.h' l='92'>/* highest file descriptor currently registered */</doc>

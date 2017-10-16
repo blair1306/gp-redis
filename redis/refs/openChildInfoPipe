@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1532' type='void openChildInfoPipe()'/>
+<use f='codebrowser/src/aof.c' l='1343' u='c' c='rewriteAppendOnlyFileBackground'/>
+<doc f='codebrowser/src/server.h' l='1531'>/* Child info */</doc>
+<def f='codebrowser/src/childinfo.c' l='36' ll='46' type='void openChildInfoPipe()'/>
+<doc f='codebrowser/src/childinfo.c' l='33'>/* Open a child-parent channel used in order to move information about the
+ * RDB / AOF saving process from the child to the parent (for instance
+ * the amount of copy on write memory used) */</doc>
+<use f='codebrowser/src/rdb.c' l='1055' u='c' c='rdbSaveBackground'/>
+<use f='codebrowser/src/rdb.c' l='1859' u='c' c='rdbSaveToSlavesSockets'/>

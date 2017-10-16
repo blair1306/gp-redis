@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/redismodule.h' l='38'/>
+<use f='codebrowser/src/module.c' l='2289' u='c'/>
+<use f='codebrowser/src/module.c' l='2381' u='c'/>
+<use f='codebrowser/src/module.c' l='2393' u='c'/>
+<use f='codebrowser/src/module.c' l='2433' u='c'/>
+<use f='codebrowser/src/module.c' l='2444' u='c'/>

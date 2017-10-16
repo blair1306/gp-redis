@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='134' macro='1' type='void je_tcache_arena_associate(tcache_t * tcache, arena_t * arena)'/>
+<def f='codebrowser/deps/jemalloc/src/tcache.c' l='252' macro='1' type='void je_tcache_arena_associate(tcache_t * tcache, arena_t * arena)'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='269' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='331' macro='1' u='c'/>

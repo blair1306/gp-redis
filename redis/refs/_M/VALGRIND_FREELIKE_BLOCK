@@ -1,0 +1,5 @@
+<dec f='include/valgrind/valgrind.h' l='7001'/>
+<doc f='include/valgrind/valgrind.h' l='6998'>/* See the comment for VALGRIND_MALLOCLIKE_BLOCK for details.
+   Ignored if addr == 0.
+*/</doc>
+<use f='codebrowser/deps/jemalloc/src/valgrind.c' l='33' u='c'/>

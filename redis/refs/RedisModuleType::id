@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='494' type='uint64_t'/>
+<offset>0</offset>
+<doc f='codebrowser/src/server.h' l='494'>/* Higher 54 bits of type ID + 10 lower bits of encoding ver. */</doc>
+<use f='codebrowser/src/module.c' l='2769' u='r' c='moduleTypeLookupModuleByID'/>
+<use f='codebrowser/src/module.c' l='2884' u='w' c='RM_CreateDataType'/>
+<use f='codebrowser/src/rdb.c' l='774' u='r' c='rdbSaveObject'/>

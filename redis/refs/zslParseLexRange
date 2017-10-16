@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1590' type='int zslParseLexRange(robj * min, robj * max, zlexrangespec * spec)'/>
+<use f='codebrowser/src/module.c' l='1871' u='c' c='zsetInitLexRange'/>
+<def f='codebrowser/src/t_zset.c' l='557' ll='571' type='int zslParseLexRange(robj * min, robj * max, zlexrangespec * spec)'/>
+<use f='codebrowser/src/t_zset.c' l='1667' u='c' c='zremrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2754' u='c' c='zlexcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2845' u='c' c='genericZrangebylexCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='552'>/* Populate the lex rangespec according to the objects min and max.
+ *
+ * Return C_OK on success. On error C_ERR is returned.
+ * When OK is returned the structure must be freed with zslFreeLexRange(),
+ * otherwise no release is needed. */</doc>

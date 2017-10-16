@@ -1,0 +1,14 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='226' type='size_t'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='980' u='r' c='je_u2rz'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2045' u='r' c='je_arena_alloc_junk_small'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2051' u='r' c='je_arena_alloc_junk_small'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2083' u='r' c='arena_redzones_validate'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2119' u='r' c='je_arena_dalloc_junk_small'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3117' u='w' c='bin_info_run_size_calc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3120' u='w' c='bin_info_run_size_calc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3121' u='r' c='bin_info_run_size_calc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3124' u='w' c='bin_info_run_size_calc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3128' u='r' c='bin_info_run_size_calc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3177' u='r' c='bin_info_run_size_calc'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3182' u='r' c='bin_info_run_size_calc'/>
+<offset>64</offset>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/intset.h' l='46' type='uint8_t intsetGet(intset * is, uint32_t pos, int64_t * value)'/>
+<use f='codebrowser/src/aof.c' l='873' u='c' c='rewriteSetObject'/>
+<use f='codebrowser/src/db.c' l='678' u='c' c='scanGenericCommand'/>
+<def f='codebrowser/src/intset.c' l='266' ll='272' type='uint8_t intsetGet(intset * is, uint32_t pos, int64_t * value)'/>
+<doc f='codebrowser/src/intset.c' l='264'>/* Get the value at the given position. When this position is
+ * out of range the function returns 0, when in range it returns 1. */</doc>
+<use f='codebrowser/src/t_set.c' l='161' u='c' c='setTypeNext'/>
+<use f='codebrowser/src/t_zset.c' l='1925' u='c' c='zuiNext'/>

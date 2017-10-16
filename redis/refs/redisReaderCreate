@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='121' type='redisReader * redisReaderCreate()'/>
+<def f='codebrowser/deps/hiredis/hiredis.c' l='588' ll='590' type='redisReader * redisReaderCreate()'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='602' u='c' c='redisContextInit'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='655' u='c' c='redisReconnect'/>
+<use f='codebrowser/src/redis-cli.c' l='1824' u='c' c='pipeMode'/>

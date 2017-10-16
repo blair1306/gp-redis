@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/lfunc.h' l='21' type='Proto * luaF_newproto(lua_State * L)'/>
+<def f='codebrowser/deps/lua/src/lfunc.c' l='115' ll='138' type='Proto * luaF_newproto(lua_State * L)'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='330' u='c' c='open_func'/>
+<use f='codebrowser/deps/lua/src/luac.c' l='126' u='c' c='combine'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='165' u='c' c='LoadFunction'/>

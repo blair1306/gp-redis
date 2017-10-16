@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1795' type='void expireSlaveKeys()'/>
+<def f='codebrowser/src/expire.c' l='263' ll='318' type='void expireSlaveKeys()'/>
+<doc f='codebrowser/src/expire.c' l='261'>/* Check the set of keys created by the master with an expire set in order to
+ * check if they should be evicted. */</doc>
+<use f='codebrowser/src/server.c' l='880' u='c' c='databasesCron'/>

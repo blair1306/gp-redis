@@ -1,0 +1,14 @@
+<def f='codebrowser/src/rax.c' l='199' ll='205' type='void * raxGetData(raxNode * n)'/>
+<use f='codebrowser/src/rax.c' l='326' u='c' c='raxCompressNode'/>
+<use f='codebrowser/src/rax.c' l='438' u='c' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='630' u='c' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='642' u='c' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='724' u='c' c='raxInsert'/>
+<use f='codebrowser/src/rax.c' l='807' u='c' c='raxFind'/>
+<use f='codebrowser/src/rax.c' l='837' u='c' c='raxRemoveChild'/>
+<use f='codebrowser/src/rax.c' l='906' u='c' c='raxRemove'/>
+<use f='codebrowser/src/rax.c' l='1210' u='c' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1259' u='c' c='raxIteratorNextStep'/>
+<use f='codebrowser/src/rax.c' l='1359' u='c' c='raxIteratorPrevStep'/>
+<use f='codebrowser/src/rax.c' l='1684' u='c' c='raxRecursiveShow'/>
+<doc f='codebrowser/src/rax.c' l='198'>/* Get the node auxiliary data. */</doc>

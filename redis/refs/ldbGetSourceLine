@@ -1,0 +1,4 @@
+<def f='codebrowser/src/scripting.c' l='1722' ll='1726' type='char * ldbGetSourceLine(int line)'/>
+<use f='codebrowser/src/scripting.c' l='1815' u='c' c='ldbLogSourceLine'/>
+<doc f='codebrowser/src/scripting.c' l='1720'>/* Return a pointer to ldb.src source code line, considering line to be
+ * one-based, and returning a special string for out of range lines. */</doc>

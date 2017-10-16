@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>siphash.c source code [codebrowser/src/siphash.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/siphash.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>src</a>/<a href='siphash.c.html'>siphash.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i>   SipHash reference C implementation</i></td></tr>
+<tr><th id="3">3</th><td><i></i></td></tr>
+<tr><th id="4">4</th><td><i>   Copyright (c) 2012-2016 Jean-Philippe Aumasson</i></td></tr>
+<tr><th id="5">5</th><td><i>   &lt;jeanphilippe.aumasson@gmail.com&gt;</i></td></tr>
+<tr><th id="6">6</th><td><i>   Copyright (c) 2012-2014 Daniel J. Bernstein &lt;djb@cr.yp.to&gt;</i></td></tr>
+<tr><th id="7">7</th><td><i>   Copyright (c) 2017 Salvatore Sanfilippo &lt;antirez@gmail.com&gt;</i></td></tr>
+<tr><th id="8">8</th><td><i></i></td></tr>
+<tr><th id="9">9</th><td><i>   To the extent possible under law, the author(s) have dedicated all copyright</i></td></tr>
+<tr><th id="10">10</th><td><i>   and related and neighboring rights to this software to the public domain</i></td></tr>
+<tr><th id="11">11</th><td><i>   worldwide. This software is distributed without any warranty.</i></td></tr>
+<tr><th id="12">12</th><td><i></i></td></tr>
+<tr><th id="13">13</th><td><i>   You should have received a copy of the CC0 Public Domain Dedication along</i></td></tr>
+<tr><th id="14">14</th><td><i>   with this software. If not, see</i></td></tr>
+<tr><th id="15">15</th><td><i>   &lt;<a href="http://creativecommons.org/publicdomain/zero/1.0/">http://creativecommons.org/publicdomain/zero/1.0/</a>&gt;.</i></td></tr>
+<tr><th id="16">16</th><td><i></i></td></tr>
+<tr><th id="17">17</th><td><i>   ----------------------------------------------------------------------------</i></td></tr>
+<tr><th id="18">18</th><td><i></i></td></tr>
+<tr><th id="19">19</th><td><i>   This version was modified by Salvatore Sanfilippo &lt;antirez@gmail.com&gt;</i></td></tr>
+<tr><th id="20">20</th><td><i>   in the following ways:</i></td></tr>
+<tr><th id="21">21</th><td><i></i></td></tr>
+<tr><th id="22">22</th><td><i>   1. We use SipHash 1-2. This is not believed to be as strong as the</i></td></tr>
+<tr><th id="23">23</th><td><i>      suggested 2-4 variant, but AFAIK there are not trivial attacks</i></td></tr>
+<tr><th id="24">24</th><td><i>      against this reduced-rounds version, and it runs at the same speed</i></td></tr>
+<tr><th id="25">25</th><td><i>      as Murmurhash2 that we used previously, why the 2-4 variant slowed</i></td></tr>
+<tr><th id="26">26</th><td><i>      down Redis by a 4% figure more or less.</i></td></tr>
+<tr><th id="27">27</th><td><i>   2. Hard-code rounds in the hope the compiler can optimize it more</i></td></tr>
+<tr><th id="28">28</th><td><i>      in this raw from. Anyway we always want the standard 2-4 variant.</i></td></tr>
+<tr><th id="29">29</th><td><i>   3. Modify the prototype and implementation so that the function directly</i></td></tr>
+<tr><th id="30">30</th><td><i>      returns an uint64_t value, the hash itself, instead of receiving an</i></td></tr>
+<tr><th id="31">31</th><td><i>      output buffer. This also means that the output size is set to 8 bytes</i></td></tr>
+<tr><th id="32">32</th><td><i>      and the 16 bytes output code handling was removed.</i></td></tr>
+<tr><th id="33">33</th><td><i>   4. Provide a case insensitive variant to be used when hashing strings that</i></td></tr>
+<tr><th id="34">34</th><td><i>      must be considered identical by the hash table regardless of the case.</i></td></tr>
+<tr><th id="35">35</th><td><i>      If we don't have directly a case insensitive hash function, we need to</i></td></tr>
+<tr><th id="36">36</th><td><i>      perform a text transformation in some temporary buffer, which is costly.</i></td></tr>
+<tr><th id="37">37</th><td><i>   5. Remove debugging code.</i></td></tr>
+<tr><th id="38">38</th><td><i>   6. Modified the original test.c file to be a stand-alone function testing</i></td></tr>
+<tr><th id="39">39</th><td><i>      the function in the new form (returing an uint64_t) using just the</i></td></tr>
+<tr><th id="40">40</th><td><i>      relevant test vector.</i></td></tr>
+<tr><th id="41">41</th><td><i> */</i></td></tr>
+<tr><th id="42">42</th><td><u>#include <a href="../../include/assert.h.html">&lt;assert.h&gt;</a></u></td></tr>
+<tr><th id="43">43</th><td><u>#include &lt;stdint.h&gt;</u></td></tr>
+<tr><th id="44">44</th><td><u>#include <a href="../../include/stdio.h.html">&lt;stdio.h&gt;</a></u></td></tr>
+<tr><th id="45">45</th><td><u>#include <a href="../../include/string.h.html">&lt;string.h&gt;</a></u></td></tr>
+<tr><th id="46">46</th><td><u>#include <a href="../../include/ctype.h.html">&lt;ctype.h&gt;</a></u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><i>/* Fast tolower() alike function that does not care about locale</i></td></tr>
+<tr><th id="49">49</th><td><i> * but just returns a-z insetad of A-Z. */</i></td></tr>
+<tr><th id="50">50</th><td><em>int</em> <dfn class="decl def" id="siptlw" title='siptlw' data-ref="siptlw">siptlw</dfn>(<em>int</em> <dfn class="local col1 decl" id="1c" title='c' data-type='int' data-ref="1c">c</dfn>) {</td></tr>
+<tr><th id="51">51</th><td>    <b>if</b> (<a class="local col1 ref" href="#1c" title='c' data-ref="1c">c</a> &gt;= <kbd>'A'</kbd> &amp;&amp; <a class="local col1 ref" href="#1c" title='c' data-ref="1c">c</a> &lt;= <kbd>'Z'</kbd>) {</td></tr>
+<tr><th id="52">52</th><td>        <b>return</b> <a class="local col1 ref" href="#1c" title='c' data-ref="1c">c</a>+(<kbd>'a'</kbd>-<kbd>'A'</kbd>);</td></tr>
+<tr><th id="53">53</th><td>    } <b>else</b> {</td></tr>
+<tr><th id="54">54</th><td>        <b>return</b> <a class="local col1 ref" href="#1c" title='c' data-ref="1c">c</a>;</td></tr>
+<tr><th id="55">55</th><td>    }</td></tr>
+<tr><th id="56">56</th><td>}</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><i>/* Test of the CPU is Little Endian and supports not aligned accesses.</i></td></tr>
+<tr><th id="59">59</th><td><i> * Two interesting conditions to speedup the function that happen to be</i></td></tr>
+<tr><th id="60">60</th><td><i> * in most of x86 servers. */</i></td></tr>
+<tr><th id="61">61</th><td><u>#<span data-ppcond="61">if</span> defined(<span class="macro" data-ref="_M/__X86_64__">__X86_64__</span>) || defined(<span class="macro" data-ref="_M/__x86_64__">__x86_64__</span>) || defined (<span class="macro" data-ref="_M/__i386__">__i386__</span>)</u></td></tr>
+<tr><th id="62">62</th><td><u>#define <dfn class="macro" id="_M/UNALIGNED_LE_CPU" data-ref="_M/UNALIGNED_LE_CPU">UNALIGNED_LE_CPU</dfn></u></td></tr>
+<tr><th id="63">63</th><td><u>#<span data-ppcond="61">endif</span></u></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><u>#define <dfn class="macro" id="_M/ROTL" data-ref="_M/ROTL">ROTL</dfn>(x, b) (<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)(((x) &lt;&lt; (b)) | ((x) &gt;&gt; (64 - (b))))</u></td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><u>#define <dfn class="macro" id="_M/U32TO8_LE" data-ref="_M/U32TO8_LE">U32TO8_LE</dfn>(p, v)                                                        \</u></td></tr>
+<tr><th id="68">68</th><td><u>    (p)[0] = (uint8_t)((v));                                                   \</u></td></tr>
+<tr><th id="69">69</th><td><u>    (p)[1] = (uint8_t)((v) &gt;&gt; 8);                                              \</u></td></tr>
+<tr><th id="70">70</th><td><u>    (p)[2] = (uint8_t)((v) &gt;&gt; 16);                                             \</u></td></tr>
+<tr><th id="71">71</th><td><u>    (p)[3] = (uint8_t)((v) &gt;&gt; 24);</u></td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><u>#define <dfn class="macro" id="_M/U64TO8_LE" data-ref="_M/U64TO8_LE">U64TO8_LE</dfn>(p, v)                                                        \</u></td></tr>
+<tr><th id="74">74</th><td><u>    U32TO8_LE((p), (uint32_t)((v)));                                           \</u></td></tr>
+<tr><th id="75">75</th><td><u>    U32TO8_LE((p) + 4, (uint32_t)((v) &gt;&gt; 32));</u></td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="77">ifdef</span> <a class="macro" href="#62" data-ref="_M/UNALIGNED_LE_CPU">UNALIGNED_LE_CPU</a></u></td></tr>
+<tr><th id="78">78</th><td><u>#define <dfn class="macro" id="_M/U8TO64_LE" data-ref="_M/U8TO64_LE">U8TO64_LE</dfn>(p) (*((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>*)(p)))</u></td></tr>
+<tr><th id="79">79</th><td><u>#<span data-ppcond="77">else</span></u></td></tr>
+<tr><th id="80">80</th><td><u>#define U8TO64_LE(p)                                                           \</u></td></tr>
+<tr><th id="81">81</th><td><u>    (((uint64_t)((p)[0])) | ((uint64_t)((p)[1]) &lt;&lt; 8) |                        \</u></td></tr>
+<tr><th id="82">82</th><td><u>     ((uint64_t)((p)[2]) &lt;&lt; 16) | ((uint64_t)((p)[3]) &lt;&lt; 24) |                 \</u></td></tr>
+<tr><th id="83">83</th><td><u>     ((uint64_t)((p)[4]) &lt;&lt; 32) | ((uint64_t)((p)[5]) &lt;&lt; 40) |                 \</u></td></tr>
+<tr><th id="84">84</th><td><u>     ((uint64_t)((p)[6]) &lt;&lt; 48) | ((uint64_t)((p)[7]) &lt;&lt; 56))</u></td></tr>
+<tr><th id="85">85</th><td><u>#<span data-ppcond="77">endif</span></u></td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td><u>#define <dfn class="macro" id="_M/U8TO64_LE_NOCASE" data-ref="_M/U8TO64_LE_NOCASE">U8TO64_LE_NOCASE</dfn>(p)                                                    \</u></td></tr>
+<tr><th id="88">88</th><td><u>    (((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)(<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>((p)[0]))) |                                           \</u></td></tr>
+<tr><th id="89">89</th><td><u>     ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)(<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>((p)[1])) &lt;&lt; 8) |                                      \</u></td></tr>
+<tr><th id="90">90</th><td><u>     ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)(<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>((p)[2])) &lt;&lt; 16) |                                     \</u></td></tr>
+<tr><th id="91">91</th><td><u>     ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)(<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>((p)[3])) &lt;&lt; 24) |                                     \</u></td></tr>
+<tr><th id="92">92</th><td><u>     ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)(<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>((p)[4])) &lt;&lt; 32) |                                              \</u></td></tr>
+<tr><th id="93">93</th><td><u>     ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)(<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>((p)[5])) &lt;&lt; 40) |                                              \</u></td></tr>
+<tr><th id="94">94</th><td><u>     ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)(<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>((p)[6])) &lt;&lt; 48) |                                              \</u></td></tr>
+<tr><th id="95">95</th><td><u>     ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)(<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>((p)[7])) &lt;&lt; 56))</u></td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><u>#define <dfn class="macro" id="_M/SIPROUND" data-ref="_M/SIPROUND">SIPROUND</dfn>                                                               \</u></td></tr>
+<tr><th id="98">98</th><td><u>    do {                                                                       \</u></td></tr>
+<tr><th id="99">99</th><td><u>        <a class="local col5 ref" href="#5v0" title='v0' data-ref="5v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0">v0</a></a></a></a></a> += <a class="local col6 ref" href="#6v1" title='v1' data-ref="6v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1">v1</a></a></a></a></a>;                                                              \</u></td></tr>
+<tr><th id="100">100</th><td><u>        <a class="local col6 ref" href="#6v1" title='v1' data-ref="6v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1">v1</a></a></a></a></a> = ROTL(<a class="local col6 ref" href="#6v1" title='v1' data-ref="6v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1">v1</a></a></a></a></a></a></a></a></a>, 13);                                                     \</u></td></tr>
+<tr><th id="101">101</th><td><u>        <a class="local col6 ref" href="#6v1" title='v1' data-ref="6v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1">v1</a></a></a></a></a> ^= <a class="local col5 ref" href="#5v0" title='v0' data-ref="5v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0">v0</a></a></a></a></a>;                                                              \</u></td></tr>
+<tr><th id="102">102</th><td><u>        <a class="local col5 ref" href="#5v0" title='v0' data-ref="5v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0">v0</a></a></a></a></a> = ROTL(<a class="local col5 ref" href="#5v0" title='v0' data-ref="5v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0">v0</a></a></a></a></a></a></a></a></a>, 32);                                                     \</u></td></tr>
+<tr><th id="103">103</th><td><u>        <a class="local col7 ref" href="#7v2" title='v2' data-ref="7v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2">v2</a></a></a></a></a> += <a class="local col8 ref" href="#8v3" title='v3' data-ref="8v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3">v3</a></a></a></a></a>;                                                              \</u></td></tr>
+<tr><th id="104">104</th><td><u>        <a class="local col8 ref" href="#8v3" title='v3' data-ref="8v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3">v3</a></a></a></a></a> = ROTL(<a class="local col8 ref" href="#8v3" title='v3' data-ref="8v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3">v3</a></a></a></a></a></a></a></a></a>, 16);                                                     \</u></td></tr>
+<tr><th id="105">105</th><td><u>        <a class="local col8 ref" href="#8v3" title='v3' data-ref="8v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3">v3</a></a></a></a></a> ^= <a class="local col7 ref" href="#7v2" title='v2' data-ref="7v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2">v2</a></a></a></a></a>;                                                              \</u></td></tr>
+<tr><th id="106">106</th><td><u>        <a class="local col5 ref" href="#5v0" title='v0' data-ref="5v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0">v0</a></a></a></a></a> += <a class="local col8 ref" href="#8v3" title='v3' data-ref="8v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3">v3</a></a></a></a></a>;                                                              \</u></td></tr>
+<tr><th id="107">107</th><td><u>        <a class="local col8 ref" href="#8v3" title='v3' data-ref="8v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3">v3</a></a></a></a></a> = ROTL(<a class="local col8 ref" href="#8v3" title='v3' data-ref="8v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3">v3</a></a></a></a></a></a></a></a></a>, 21);                                                     \</u></td></tr>
+<tr><th id="108">108</th><td><u>        <a class="local col8 ref" href="#8v3" title='v3' data-ref="8v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3"><a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3">v3</a></a></a></a></a> ^= <a class="local col5 ref" href="#5v0" title='v0' data-ref="5v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0"><a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0">v0</a></a></a></a></a>;                                                              \</u></td></tr>
+<tr><th id="109">109</th><td><u>        <a class="local col7 ref" href="#7v2" title='v2' data-ref="7v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2">v2</a></a></a></a></a> += <a class="local col6 ref" href="#6v1" title='v1' data-ref="6v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1">v1</a></a></a></a></a>;                                                              \</u></td></tr>
+<tr><th id="110">110</th><td><u>        <a class="local col6 ref" href="#6v1" title='v1' data-ref="6v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1">v1</a></a></a></a></a> = ROTL(<a class="local col6 ref" href="#6v1" title='v1' data-ref="6v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1">v1</a></a></a></a></a></a></a></a></a>, 17);                                                     \</u></td></tr>
+<tr><th id="111">111</th><td><u>        <a class="local col6 ref" href="#6v1" title='v1' data-ref="6v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1"><a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1">v1</a></a></a></a></a> ^= <a class="local col7 ref" href="#7v2" title='v2' data-ref="7v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2">v2</a></a></a></a></a>;                                                              \</u></td></tr>
+<tr><th id="112">112</th><td><u>        <a class="local col7 ref" href="#7v2" title='v2' data-ref="7v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2">v2</a></a></a></a></a> = ROTL(<a class="local col7 ref" href="#7v2" title='v2' data-ref="7v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2"><a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2">v2</a></a></a></a></a></a></a></a></a>, 32);                                                     \</u></td></tr>
+<tr><th id="113">113</th><td><u>    } while (0)</u></td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="decl def" id="siphash" title='siphash' data-ref="siphash">siphash</dfn>(<em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> *<dfn class="local col2 decl" id="2in" title='in' data-type='const uint8_t *' data-ref="2in">in</dfn>, <em>const</em> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="3inlen" title='inlen' data-type='const size_t' data-ref="3inlen">inlen</dfn>, <em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> *<dfn class="local col4 decl" id="4k" title='k' data-type='const uint8_t *' data-ref="4k">k</dfn>) {</td></tr>
+<tr><th id="116">116</th><td><u>#<span data-ppcond="116">ifndef</span> <a class="macro" href="#62" data-ref="_M/UNALIGNED_LE_CPU">UNALIGNED_LE_CPU</a></u></td></tr>
+<tr><th id="117">117</th><td>    uint64_t hash;</td></tr>
+<tr><th id="118">118</th><td>    uint8_t *out = (uint8_t*) &amp;hash;</td></tr>
+<tr><th id="119">119</th><td><u>#<span data-ppcond="116">endif</span></u></td></tr>
+<tr><th id="120">120</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col5 decl" id="5v0" title='v0' data-type='uint64_t' data-ref="5v0">v0</dfn> = <var>0x736f6d6570736575ULL</var>;</td></tr>
+<tr><th id="121">121</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col6 decl" id="6v1" title='v1' data-type='uint64_t' data-ref="6v1">v1</dfn> = <var>0x646f72616e646f6dULL</var>;</td></tr>
+<tr><th id="122">122</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col7 decl" id="7v2" title='v2' data-type='uint64_t' data-ref="7v2">v2</dfn> = <var>0x6c7967656e657261ULL</var>;</td></tr>
+<tr><th id="123">123</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col8 decl" id="8v3" title='v3' data-type='uint64_t' data-ref="8v3">v3</dfn> = <var>0x7465646279746573ULL</var>;</td></tr>
+<tr><th id="124">124</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col9 decl" id="9k0" title='k0' data-type='uint64_t' data-ref="9k0">k0</dfn> = <a class="macro" href="#78" title="(*((uint64_t*)(k)))" data-ref="_M/U8TO64_LE">U8TO64_LE</a>(<a class="local col4 ref" href="#4k" title='k' data-ref="4k">k</a>);</td></tr>
+<tr><th id="125">125</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col0 decl" id="10k1" title='k1' data-type='uint64_t' data-ref="10k1">k1</dfn> = <a class="macro" href="#78" title="(*((uint64_t*)(k + 8)))" data-ref="_M/U8TO64_LE">U8TO64_LE</a>(<a class="local col4 ref" href="#4k" title='k' data-ref="4k">k</a> + <var>8</var>);</td></tr>
+<tr><th id="126">126</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col1 decl" id="11m" title='m' data-type='uint64_t' data-ref="11m">m</dfn>;</td></tr>
+<tr><th id="127">127</th><td>    <em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> *<dfn class="local col2 decl" id="12end" title='end' data-type='const uint8_t *' data-ref="12end">end</dfn> = <a class="local col2 ref" href="#2in" title='in' data-ref="2in">in</a> + <a class="local col3 ref" href="#3inlen" title='inlen' data-ref="3inlen">inlen</a> - (<a class="local col3 ref" href="#3inlen" title='inlen' data-ref="3inlen">inlen</a> % <b>sizeof</b>(<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>));</td></tr>
+<tr><th id="128">128</th><td>    <em>const</em> <em>int</em> <dfn class="local col3 decl" id="13left" title='left' data-type='const int' data-ref="13left">left</dfn> = <a class="local col3 ref" href="#3inlen" title='inlen' data-ref="3inlen">inlen</a> &amp; <var>7</var>;</td></tr>
+<tr><th id="129">129</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col4 decl" id="14b" title='b' data-type='uint64_t' data-ref="14b">b</dfn> = ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="local col3 ref" href="#3inlen" title='inlen' data-ref="3inlen">inlen</a>) &lt;&lt; <var>56</var>;</td></tr>
+<tr><th id="130">130</th><td>    <a class="local col8 ref" href="#8v3" title='v3' data-ref="8v3">v3</a> ^= <a class="local col0 ref" href="#10k1" title='k1' data-ref="10k1">k1</a>;</td></tr>
+<tr><th id="131">131</th><td>    <a class="local col7 ref" href="#7v2" title='v2' data-ref="7v2">v2</a> ^= <a class="local col9 ref" href="#9k0" title='k0' data-ref="9k0">k0</a>;</td></tr>
+<tr><th id="132">132</th><td>    <a class="local col6 ref" href="#6v1" title='v1' data-ref="6v1">v1</a> ^= <a class="local col0 ref" href="#10k1" title='k1' data-ref="10k1">k1</a>;</td></tr>
+<tr><th id="133">133</th><td>    <a class="local col5 ref" href="#5v0" title='v0' data-ref="5v0">v0</a> ^= <a class="local col9 ref" href="#9k0" title='k0' data-ref="9k0">k0</a>;</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td>    <b>for</b> (; <a class="local col2 ref" href="#2in" title='in' data-ref="2in">in</a> != <a class="local col2 ref" href="#12end" title='end' data-ref="12end">end</a>; <a class="local col2 ref" href="#2in" title='in' data-ref="2in">in</a> += <var>8</var>) {</td></tr>
+<tr><th id="136">136</th><td>        <a class="local col1 ref" href="#11m" title='m' data-ref="11m">m</a> = <a class="macro" href="#78" title="(*((uint64_t*)(in)))" data-ref="_M/U8TO64_LE">U8TO64_LE</a>(<a class="local col2 ref" href="#2in" title='in' data-ref="2in">in</a>);</td></tr>
+<tr><th id="137">137</th><td>        <a class="local col8 ref" href="#8v3" title='v3' data-ref="8v3">v3</a> ^= <a class="local col1 ref" href="#11m" title='m' data-ref="11m">m</a>;</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td>        <a class="macro" href="#97" title="do { v0 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (13)) | ((v1) &gt;&gt; (64 - (13)))); v1 ^= v0; v0 = (uint64_t)(((v0) &lt;&lt; (32)) | ((v0) &gt;&gt; (64 - (32)))); v2 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (16)) | ((v3) &gt;&gt; (64 - (16)))); v3 ^= v2; v0 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (21)) | ((v3) &gt;&gt; (64 - (21)))); v3 ^= v0; v2 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (17)) | ((v1) &gt;&gt; (64 - (17)))); v1 ^= v2; v2 = (uint64_t)(((v2) &lt;&lt; (32)) | ((v2) &gt;&gt; (64 - (32)))); } while (0)" data-ref="_M/SIPROUND">SIPROUND</a>;</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td>        <a class="local col5 ref" href="#5v0" title='v0' data-ref="5v0">v0</a> ^= <a class="local col1 ref" href="#11m" title='m' data-ref="11m">m</a>;</td></tr>
+<tr><th id="142">142</th><td>    }</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td>    <b>switch</b> (<a class="local col3 ref" href="#13left" title='left' data-ref="13left">left</a>) {</td></tr>
+<tr><th id="145">145</th><td>    <b>case</b> <var>7</var>: <a class="local col4 ref" href="#14b" title='b' data-ref="14b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="local col2 ref" href="#2in" title='in' data-ref="2in">in</a>[<var>6</var>]) &lt;&lt; <var>48</var>;</td></tr>
+<tr><th id="146">146</th><td>    <b>case</b> <var>6</var>: <a class="local col4 ref" href="#14b" title='b' data-ref="14b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="local col2 ref" href="#2in" title='in' data-ref="2in">in</a>[<var>5</var>]) &lt;&lt; <var>40</var>;</td></tr>
+<tr><th id="147">147</th><td>    <b>case</b> <var>5</var>: <a class="local col4 ref" href="#14b" title='b' data-ref="14b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="local col2 ref" href="#2in" title='in' data-ref="2in">in</a>[<var>4</var>]) &lt;&lt; <var>32</var>;</td></tr>
+<tr><th id="148">148</th><td>    <b>case</b> <var>4</var>: <a class="local col4 ref" href="#14b" title='b' data-ref="14b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="local col2 ref" href="#2in" title='in' data-ref="2in">in</a>[<var>3</var>]) &lt;&lt; <var>24</var>;</td></tr>
+<tr><th id="149">149</th><td>    <b>case</b> <var>3</var>: <a class="local col4 ref" href="#14b" title='b' data-ref="14b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="local col2 ref" href="#2in" title='in' data-ref="2in">in</a>[<var>2</var>]) &lt;&lt; <var>16</var>;</td></tr>
+<tr><th id="150">150</th><td>    <b>case</b> <var>2</var>: <a class="local col4 ref" href="#14b" title='b' data-ref="14b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="local col2 ref" href="#2in" title='in' data-ref="2in">in</a>[<var>1</var>]) &lt;&lt; <var>8</var>;</td></tr>
+<tr><th id="151">151</th><td>    <b>case</b> <var>1</var>: <a class="local col4 ref" href="#14b" title='b' data-ref="14b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="local col2 ref" href="#2in" title='in' data-ref="2in">in</a>[<var>0</var>]); <b>break</b>;</td></tr>
+<tr><th id="152">152</th><td>    <b>case</b> <var>0</var>: <b>break</b>;</td></tr>
+<tr><th id="153">153</th><td>    }</td></tr>
+<tr><th id="154">154</th><td></td></tr>
+<tr><th id="155">155</th><td>    <a class="local col8 ref" href="#8v3" title='v3' data-ref="8v3">v3</a> ^= <a class="local col4 ref" href="#14b" title='b' data-ref="14b">b</a>;</td></tr>
+<tr><th id="156">156</th><td></td></tr>
+<tr><th id="157">157</th><td>    <a class="macro" href="#97" title="do { v0 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (13)) | ((v1) &gt;&gt; (64 - (13)))); v1 ^= v0; v0 = (uint64_t)(((v0) &lt;&lt; (32)) | ((v0) &gt;&gt; (64 - (32)))); v2 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (16)) | ((v3) &gt;&gt; (64 - (16)))); v3 ^= v2; v0 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (21)) | ((v3) &gt;&gt; (64 - (21)))); v3 ^= v0; v2 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (17)) | ((v1) &gt;&gt; (64 - (17)))); v1 ^= v2; v2 = (uint64_t)(((v2) &lt;&lt; (32)) | ((v2) &gt;&gt; (64 - (32)))); } while (0)" data-ref="_M/SIPROUND">SIPROUND</a>;</td></tr>
+<tr><th id="158">158</th><td></td></tr>
+<tr><th id="159">159</th><td>    <a class="local col5 ref" href="#5v0" title='v0' data-ref="5v0">v0</a> ^= <a class="local col4 ref" href="#14b" title='b' data-ref="14b">b</a>;</td></tr>
+<tr><th id="160">160</th><td>    <a class="local col7 ref" href="#7v2" title='v2' data-ref="7v2">v2</a> ^= <var>0xff</var>;</td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td>    <a class="macro" href="#97" title="do { v0 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (13)) | ((v1) &gt;&gt; (64 - (13)))); v1 ^= v0; v0 = (uint64_t)(((v0) &lt;&lt; (32)) | ((v0) &gt;&gt; (64 - (32)))); v2 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (16)) | ((v3) &gt;&gt; (64 - (16)))); v3 ^= v2; v0 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (21)) | ((v3) &gt;&gt; (64 - (21)))); v3 ^= v0; v2 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (17)) | ((v1) &gt;&gt; (64 - (17)))); v1 ^= v2; v2 = (uint64_t)(((v2) &lt;&lt; (32)) | ((v2) &gt;&gt; (64 - (32)))); } while (0)" data-ref="_M/SIPROUND">SIPROUND</a>;</td></tr>
+<tr><th id="163">163</th><td>    <a class="macro" href="#97" title="do { v0 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (13)) | ((v1) &gt;&gt; (64 - (13)))); v1 ^= v0; v0 = (uint64_t)(((v0) &lt;&lt; (32)) | ((v0) &gt;&gt; (64 - (32)))); v2 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (16)) | ((v3) &gt;&gt; (64 - (16)))); v3 ^= v2; v0 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (21)) | ((v3) &gt;&gt; (64 - (21)))); v3 ^= v0; v2 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (17)) | ((v1) &gt;&gt; (64 - (17)))); v1 ^= v2; v2 = (uint64_t)(((v2) &lt;&lt; (32)) | ((v2) &gt;&gt; (64 - (32)))); } while (0)" data-ref="_M/SIPROUND">SIPROUND</a>;</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td>    <a class="local col4 ref" href="#14b" title='b' data-ref="14b">b</a> = <a class="local col5 ref" href="#5v0" title='v0' data-ref="5v0">v0</a> ^ <a class="local col6 ref" href="#6v1" title='v1' data-ref="6v1">v1</a> ^ <a class="local col7 ref" href="#7v2" title='v2' data-ref="7v2">v2</a> ^ <a class="local col8 ref" href="#8v3" title='v3' data-ref="8v3">v3</a>;</td></tr>
+<tr><th id="166">166</th><td><u>#<span data-ppcond="166">ifndef</span> <a class="macro" href="#62" data-ref="_M/UNALIGNED_LE_CPU">UNALIGNED_LE_CPU</a></u></td></tr>
+<tr><th id="167">167</th><td>    U64TO8_LE(out, b);</td></tr>
+<tr><th id="168">168</th><td>    <b>return</b> hash;</td></tr>
+<tr><th id="169">169</th><td><u>#<span data-ppcond="166">else</span></u></td></tr>
+<tr><th id="170">170</th><td>    <b>return</b> <a class="local col4 ref" href="#14b" title='b' data-ref="14b">b</a>;</td></tr>
+<tr><th id="171">171</th><td><u>#<span data-ppcond="166">endif</span></u></td></tr>
+<tr><th id="172">172</th><td>}</td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="decl def" id="siphash_nocase" title='siphash_nocase' data-ref="siphash_nocase">siphash_nocase</dfn>(<em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> *<dfn class="local col5 decl" id="15in" title='in' data-type='const uint8_t *' data-ref="15in">in</dfn>, <em>const</em> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="16inlen" title='inlen' data-type='const size_t' data-ref="16inlen">inlen</dfn>, <em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> *<dfn class="local col7 decl" id="17k" title='k' data-type='const uint8_t *' data-ref="17k">k</dfn>)</td></tr>
+<tr><th id="175">175</th><td>{</td></tr>
+<tr><th id="176">176</th><td><u>#<span data-ppcond="176">ifndef</span> <a class="macro" href="#62" data-ref="_M/UNALIGNED_LE_CPU">UNALIGNED_LE_CPU</a></u></td></tr>
+<tr><th id="177">177</th><td>    uint64_t hash;</td></tr>
+<tr><th id="178">178</th><td>    uint8_t *out = (uint8_t*) &amp;hash;</td></tr>
+<tr><th id="179">179</th><td><u>#<span data-ppcond="176">endif</span></u></td></tr>
+<tr><th id="180">180</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col8 decl" id="18v0" title='v0' data-type='uint64_t' data-ref="18v0">v0</dfn> = <var>0x736f6d6570736575ULL</var>;</td></tr>
+<tr><th id="181">181</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col9 decl" id="19v1" title='v1' data-type='uint64_t' data-ref="19v1">v1</dfn> = <var>0x646f72616e646f6dULL</var>;</td></tr>
+<tr><th id="182">182</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col0 decl" id="20v2" title='v2' data-type='uint64_t' data-ref="20v2">v2</dfn> = <var>0x6c7967656e657261ULL</var>;</td></tr>
+<tr><th id="183">183</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col1 decl" id="21v3" title='v3' data-type='uint64_t' data-ref="21v3">v3</dfn> = <var>0x7465646279746573ULL</var>;</td></tr>
+<tr><th id="184">184</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col2 decl" id="22k0" title='k0' data-type='uint64_t' data-ref="22k0">k0</dfn> = <a class="macro" href="#78" title="(*((uint64_t*)(k)))" data-ref="_M/U8TO64_LE">U8TO64_LE</a>(<a class="local col7 ref" href="#17k" title='k' data-ref="17k">k</a>);</td></tr>
+<tr><th id="185">185</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col3 decl" id="23k1" title='k1' data-type='uint64_t' data-ref="23k1">k1</dfn> = <a class="macro" href="#78" title="(*((uint64_t*)(k + 8)))" data-ref="_M/U8TO64_LE">U8TO64_LE</a>(<a class="local col7 ref" href="#17k" title='k' data-ref="17k">k</a> + <var>8</var>);</td></tr>
+<tr><th id="186">186</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col4 decl" id="24m" title='m' data-type='uint64_t' data-ref="24m">m</dfn>;</td></tr>
+<tr><th id="187">187</th><td>    <em>const</em> <a class="typedef" href="../../include/stdint.h.html#uint8_t" title='uint8_t' data-type='unsigned char' data-ref="uint8_t">uint8_t</a> *<dfn class="local col5 decl" id="25end" title='end' data-type='const uint8_t *' data-ref="25end">end</dfn> = <a class="local col5 ref" href="#15in" title='in' data-ref="15in">in</a> + <a class="local col6 ref" href="#16inlen" title='inlen' data-ref="16inlen">inlen</a> - (<a class="local col6 ref" href="#16inlen" title='inlen' data-ref="16inlen">inlen</a> % <b>sizeof</b>(<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>));</td></tr>
+<tr><th id="188">188</th><td>    <em>const</em> <em>int</em> <dfn class="local col6 decl" id="26left" title='left' data-type='const int' data-ref="26left">left</dfn> = <a class="local col6 ref" href="#16inlen" title='inlen' data-ref="16inlen">inlen</a> &amp; <var>7</var>;</td></tr>
+<tr><th id="189">189</th><td>    <a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a> <dfn class="local col7 decl" id="27b" title='b' data-type='uint64_t' data-ref="27b">b</dfn> = ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="local col6 ref" href="#16inlen" title='inlen' data-ref="16inlen">inlen</a>) &lt;&lt; <var>56</var>;</td></tr>
+<tr><th id="190">190</th><td>    <a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3">v3</a> ^= <a class="local col3 ref" href="#23k1" title='k1' data-ref="23k1">k1</a>;</td></tr>
+<tr><th id="191">191</th><td>    <a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2">v2</a> ^= <a class="local col2 ref" href="#22k0" title='k0' data-ref="22k0">k0</a>;</td></tr>
+<tr><th id="192">192</th><td>    <a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1">v1</a> ^= <a class="local col3 ref" href="#23k1" title='k1' data-ref="23k1">k1</a>;</td></tr>
+<tr><th id="193">193</th><td>    <a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0">v0</a> ^= <a class="local col2 ref" href="#22k0" title='k0' data-ref="22k0">k0</a>;</td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td>    <b>for</b> (; <a class="local col5 ref" href="#15in" title='in' data-ref="15in">in</a> != <a class="local col5 ref" href="#25end" title='end' data-ref="25end">end</a>; <a class="local col5 ref" href="#15in" title='in' data-ref="15in">in</a> += <var>8</var>) {</td></tr>
+<tr><th id="196">196</th><td>        <a class="local col4 ref" href="#24m" title='m' data-ref="24m">m</a> = <a class="macro" href="#87" title="(((uint64_t)(siptlw((in)[0]))) | ((uint64_t)(siptlw((in)[1])) &lt;&lt; 8) | ((uint64_t)(siptlw((in)[2])) &lt;&lt; 16) | ((uint64_t)(siptlw((in)[3])) &lt;&lt; 24) | ((uint64_t)(siptlw((in)[4])) &lt;&lt; 32) | ((uint64_t)(siptlw((in)[5])) &lt;&lt; 40) | ((uint64_t)(siptlw((in)[6])) &lt;&lt; 48) | ((uint64_t)(siptlw((in)[7])) &lt;&lt; 56))" data-ref="_M/U8TO64_LE_NOCASE">U8TO64_LE_NOCASE</a>(<a class="local col5 ref" href="#15in" title='in' data-ref="15in">in</a>);</td></tr>
+<tr><th id="197">197</th><td>        <a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3">v3</a> ^= <a class="local col4 ref" href="#24m" title='m' data-ref="24m">m</a>;</td></tr>
+<tr><th id="198">198</th><td></td></tr>
+<tr><th id="199">199</th><td>        <a class="macro" href="#97" title="do { v0 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (13)) | ((v1) &gt;&gt; (64 - (13)))); v1 ^= v0; v0 = (uint64_t)(((v0) &lt;&lt; (32)) | ((v0) &gt;&gt; (64 - (32)))); v2 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (16)) | ((v3) &gt;&gt; (64 - (16)))); v3 ^= v2; v0 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (21)) | ((v3) &gt;&gt; (64 - (21)))); v3 ^= v0; v2 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (17)) | ((v1) &gt;&gt; (64 - (17)))); v1 ^= v2; v2 = (uint64_t)(((v2) &lt;&lt; (32)) | ((v2) &gt;&gt; (64 - (32)))); } while (0)" data-ref="_M/SIPROUND">SIPROUND</a>;</td></tr>
+<tr><th id="200">200</th><td></td></tr>
+<tr><th id="201">201</th><td>        <a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0">v0</a> ^= <a class="local col4 ref" href="#24m" title='m' data-ref="24m">m</a>;</td></tr>
+<tr><th id="202">202</th><td>    }</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td>    <b>switch</b> (<a class="local col6 ref" href="#26left" title='left' data-ref="26left">left</a>) {</td></tr>
+<tr><th id="205">205</th><td>    <b>case</b> <var>7</var>: <a class="local col7 ref" href="#27b" title='b' data-ref="27b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>(<a class="local col5 ref" href="#15in" title='in' data-ref="15in">in</a>[<var>6</var>])) &lt;&lt; <var>48</var>;</td></tr>
+<tr><th id="206">206</th><td>    <b>case</b> <var>6</var>: <a class="local col7 ref" href="#27b" title='b' data-ref="27b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>(<a class="local col5 ref" href="#15in" title='in' data-ref="15in">in</a>[<var>5</var>])) &lt;&lt; <var>40</var>;</td></tr>
+<tr><th id="207">207</th><td>    <b>case</b> <var>5</var>: <a class="local col7 ref" href="#27b" title='b' data-ref="27b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>(<a class="local col5 ref" href="#15in" title='in' data-ref="15in">in</a>[<var>4</var>])) &lt;&lt; <var>32</var>;</td></tr>
+<tr><th id="208">208</th><td>    <b>case</b> <var>4</var>: <a class="local col7 ref" href="#27b" title='b' data-ref="27b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>(<a class="local col5 ref" href="#15in" title='in' data-ref="15in">in</a>[<var>3</var>])) &lt;&lt; <var>24</var>;</td></tr>
+<tr><th id="209">209</th><td>    <b>case</b> <var>3</var>: <a class="local col7 ref" href="#27b" title='b' data-ref="27b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>(<a class="local col5 ref" href="#15in" title='in' data-ref="15in">in</a>[<var>2</var>])) &lt;&lt; <var>16</var>;</td></tr>
+<tr><th id="210">210</th><td>    <b>case</b> <var>2</var>: <a class="local col7 ref" href="#27b" title='b' data-ref="27b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>(<a class="local col5 ref" href="#15in" title='in' data-ref="15in">in</a>[<var>1</var>])) &lt;&lt; <var>8</var>;</td></tr>
+<tr><th id="211">211</th><td>    <b>case</b> <var>1</var>: <a class="local col7 ref" href="#27b" title='b' data-ref="27b">b</a> |= ((<a class="typedef" href="../../include/stdint.h.html#uint64_t" title='uint64_t' data-type='unsigned long' data-ref="uint64_t">uint64_t</a>)<a class="ref" href="#siptlw" title='siptlw' data-ref="siptlw">siptlw</a>(<a class="local col5 ref" href="#15in" title='in' data-ref="15in">in</a>[<var>0</var>])); <b>break</b>;</td></tr>
+<tr><th id="212">212</th><td>    <b>case</b> <var>0</var>: <b>break</b>;</td></tr>
+<tr><th id="213">213</th><td>    }</td></tr>
+<tr><th id="214">214</th><td></td></tr>
+<tr><th id="215">215</th><td>    <a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3">v3</a> ^= <a class="local col7 ref" href="#27b" title='b' data-ref="27b">b</a>;</td></tr>
+<tr><th id="216">216</th><td></td></tr>
+<tr><th id="217">217</th><td>    <a class="macro" href="#97" title="do { v0 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (13)) | ((v1) &gt;&gt; (64 - (13)))); v1 ^= v0; v0 = (uint64_t)(((v0) &lt;&lt; (32)) | ((v0) &gt;&gt; (64 - (32)))); v2 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (16)) | ((v3) &gt;&gt; (64 - (16)))); v3 ^= v2; v0 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (21)) | ((v3) &gt;&gt; (64 - (21)))); v3 ^= v0; v2 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (17)) | ((v1) &gt;&gt; (64 - (17)))); v1 ^= v2; v2 = (uint64_t)(((v2) &lt;&lt; (32)) | ((v2) &gt;&gt; (64 - (32)))); } while (0)" data-ref="_M/SIPROUND">SIPROUND</a>;</td></tr>
+<tr><th id="218">218</th><td></td></tr>
+<tr><th id="219">219</th><td>    <a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0">v0</a> ^= <a class="local col7 ref" href="#27b" title='b' data-ref="27b">b</a>;</td></tr>
+<tr><th id="220">220</th><td>    <a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2">v2</a> ^= <var>0xff</var>;</td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td>    <a class="macro" href="#97" title="do { v0 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (13)) | ((v1) &gt;&gt; (64 - (13)))); v1 ^= v0; v0 = (uint64_t)(((v0) &lt;&lt; (32)) | ((v0) &gt;&gt; (64 - (32)))); v2 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (16)) | ((v3) &gt;&gt; (64 - (16)))); v3 ^= v2; v0 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (21)) | ((v3) &gt;&gt; (64 - (21)))); v3 ^= v0; v2 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (17)) | ((v1) &gt;&gt; (64 - (17)))); v1 ^= v2; v2 = (uint64_t)(((v2) &lt;&lt; (32)) | ((v2) &gt;&gt; (64 - (32)))); } while (0)" data-ref="_M/SIPROUND">SIPROUND</a>;</td></tr>
+<tr><th id="223">223</th><td>    <a class="macro" href="#97" title="do { v0 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (13)) | ((v1) &gt;&gt; (64 - (13)))); v1 ^= v0; v0 = (uint64_t)(((v0) &lt;&lt; (32)) | ((v0) &gt;&gt; (64 - (32)))); v2 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (16)) | ((v3) &gt;&gt; (64 - (16)))); v3 ^= v2; v0 += v3; v3 = (uint64_t)(((v3) &lt;&lt; (21)) | ((v3) &gt;&gt; (64 - (21)))); v3 ^= v0; v2 += v1; v1 = (uint64_t)(((v1) &lt;&lt; (17)) | ((v1) &gt;&gt; (64 - (17)))); v1 ^= v2; v2 = (uint64_t)(((v2) &lt;&lt; (32)) | ((v2) &gt;&gt; (64 - (32)))); } while (0)" data-ref="_M/SIPROUND">SIPROUND</a>;</td></tr>
+<tr><th id="224">224</th><td></td></tr>
+<tr><th id="225">225</th><td>    <a class="local col7 ref" href="#27b" title='b' data-ref="27b">b</a> = <a class="local col8 ref" href="#18v0" title='v0' data-ref="18v0">v0</a> ^ <a class="local col9 ref" href="#19v1" title='v1' data-ref="19v1">v1</a> ^ <a class="local col0 ref" href="#20v2" title='v2' data-ref="20v2">v2</a> ^ <a class="local col1 ref" href="#21v3" title='v3' data-ref="21v3">v3</a>;</td></tr>
+<tr><th id="226">226</th><td><u>#<span data-ppcond="226">ifndef</span> <a class="macro" href="#62" data-ref="_M/UNALIGNED_LE_CPU">UNALIGNED_LE_CPU</a></u></td></tr>
+<tr><th id="227">227</th><td>    U64TO8_LE(out, b);</td></tr>
+<tr><th id="228">228</th><td>    <b>return</b> hash;</td></tr>
+<tr><th id="229">229</th><td><u>#<span data-ppcond="226">else</span></u></td></tr>
+<tr><th id="230">230</th><td>    <b>return</b> <a class="local col7 ref" href="#27b" title='b' data-ref="27b">b</a>;</td></tr>
+<tr><th id="231">231</th><td><u>#<span data-ppcond="226">endif</span></u></td></tr>
+<tr><th id="232">232</th><td>}</td></tr>
+<tr><th id="233">233</th><td></td></tr>
+<tr><th id="234">234</th><td></td></tr>
+<tr><th id="235">235</th><td><i>/* --------------------------------- TEST ------------------------------------ */</i></td></tr>
+<tr><th id="236">236</th><td></td></tr>
+<tr><th id="237">237</th><td><u>#<span data-ppcond="237">ifdef</span> <span class="macro" data-ref="_M/SIPHASH_TEST">SIPHASH_TEST</span></u></td></tr>
+<tr><th id="238">238</th><td></td></tr>
+<tr><th id="239">239</th><td><em>const</em> uint8_t vectors_sip64[<var>64</var>][<var>8</var>] = {</td></tr>
+<tr><th id="240">240</th><td>    { <var>0x31</var>, <var>0x0e</var>, <var>0x0e</var>, <var>0xdd</var>, <var>0x47</var>, <var>0xdb</var>, <var>0x6f</var>, <var>0x72</var>, },</td></tr>
+<tr><th id="241">241</th><td>    { <var>0xfd</var>, <var>0x67</var>, <var>0xdc</var>, <var>0x93</var>, <var>0xc5</var>, <var>0x39</var>, <var>0xf8</var>, <var>0x74</var>, },</td></tr>
+<tr><th id="242">242</th><td>    { <var>0x5a</var>, <var>0x4f</var>, <var>0xa9</var>, <var>0xd9</var>, <var>0x09</var>, <var>0x80</var>, <var>0x6c</var>, <var>0x0d</var>, },</td></tr>
+<tr><th id="243">243</th><td>    { <var>0x2d</var>, <var>0x7e</var>, <var>0xfb</var>, <var>0xd7</var>, <var>0x96</var>, <var>0x66</var>, <var>0x67</var>, <var>0x85</var>, },</td></tr>
+<tr><th id="244">244</th><td>    { <var>0xb7</var>, <var>0x87</var>, <var>0x71</var>, <var>0x27</var>, <var>0xe0</var>, <var>0x94</var>, <var>0x27</var>, <var>0xcf</var>, },</td></tr>
+<tr><th id="245">245</th><td>    { <var>0x8d</var>, <var>0xa6</var>, <var>0x99</var>, <var>0xcd</var>, <var>0x64</var>, <var>0x55</var>, <var>0x76</var>, <var>0x18</var>, },</td></tr>
+<tr><th id="246">246</th><td>    { <var>0xce</var>, <var>0xe3</var>, <var>0xfe</var>, <var>0x58</var>, <var>0x6e</var>, <var>0x46</var>, <var>0xc9</var>, <var>0xcb</var>, },</td></tr>
+<tr><th id="247">247</th><td>    { <var>0x37</var>, <var>0xd1</var>, <var>0x01</var>, <var>0x8b</var>, <var>0xf5</var>, <var>0x00</var>, <var>0x02</var>, <var>0xab</var>, },</td></tr>
+<tr><th id="248">248</th><td>    { <var>0x62</var>, <var>0x24</var>, <var>0x93</var>, <var>0x9a</var>, <var>0x79</var>, <var>0xf5</var>, <var>0xf5</var>, <var>0x93</var>, },</td></tr>
+<tr><th id="249">249</th><td>    { <var>0xb0</var>, <var>0xe4</var>, <var>0xa9</var>, <var>0x0b</var>, <var>0xdf</var>, <var>0x82</var>, <var>0x00</var>, <var>0x9e</var>, },</td></tr>
+<tr><th id="250">250</th><td>    { <var>0xf3</var>, <var>0xb9</var>, <var>0xdd</var>, <var>0x94</var>, <var>0xc5</var>, <var>0xbb</var>, <var>0x5d</var>, <var>0x7a</var>, },</td></tr>
+<tr><th id="251">251</th><td>    { <var>0xa7</var>, <var>0xad</var>, <var>0x6b</var>, <var>0x22</var>, <var>0x46</var>, <var>0x2f</var>, <var>0xb3</var>, <var>0xf4</var>, },</td></tr>
+<tr><th id="252">252</th><td>    { <var>0xfb</var>, <var>0xe5</var>, <var>0x0e</var>, <var>0x86</var>, <var>0xbc</var>, <var>0x8f</var>, <var>0x1e</var>, <var>0x75</var>, },</td></tr>
+<tr><th id="253">253</th><td>    { <var>0x90</var>, <var>0x3d</var>, <var>0x84</var>, <var>0xc0</var>, <var>0x27</var>, <var>0x56</var>, <var>0xea</var>, <var>0x14</var>, },</td></tr>
+<tr><th id="254">254</th><td>    { <var>0xee</var>, <var>0xf2</var>, <var>0x7a</var>, <var>0x8e</var>, <var>0x90</var>, <var>0xca</var>, <var>0x23</var>, <var>0xf7</var>, },</td></tr>
+<tr><th id="255">255</th><td>    { <var>0xe5</var>, <var>0x45</var>, <var>0xbe</var>, <var>0x49</var>, <var>0x61</var>, <var>0xca</var>, <var>0x29</var>, <var>0xa1</var>, },</td></tr>
+<tr><th id="256">256</th><td>    { <var>0xdb</var>, <var>0x9b</var>, <var>0xc2</var>, <var>0x57</var>, <var>0x7f</var>, <var>0xcc</var>, <var>0x2a</var>, <var>0x3f</var>, },</td></tr>
+<tr><th id="257">257</th><td>    { <var>0x94</var>, <var>0x47</var>, <var>0xbe</var>, <var>0x2c</var>, <var>0xf5</var>, <var>0xe9</var>, <var>0x9a</var>, <var>0x69</var>, },</td></tr>
+<tr><th id="258">258</th><td>    { <var>0x9c</var>, <var>0xd3</var>, <var>0x8d</var>, <var>0x96</var>, <var>0xf0</var>, <var>0xb3</var>, <var>0xc1</var>, <var>0x4b</var>, },</td></tr>
+<tr><th id="259">259</th><td>    { <var>0xbd</var>, <var>0x61</var>, <var>0x79</var>, <var>0xa7</var>, <var>0x1d</var>, <var>0xc9</var>, <var>0x6d</var>, <var>0xbb</var>, },</td></tr>
+<tr><th id="260">260</th><td>    { <var>0x98</var>, <var>0xee</var>, <var>0xa2</var>, <var>0x1a</var>, <var>0xf2</var>, <var>0x5c</var>, <var>0xd6</var>, <var>0xbe</var>, },</td></tr>
+<tr><th id="261">261</th><td>    { <var>0xc7</var>, <var>0x67</var>, <var>0x3b</var>, <var>0x2e</var>, <var>0xb0</var>, <var>0xcb</var>, <var>0xf2</var>, <var>0xd0</var>, },</td></tr>
+<tr><th id="262">262</th><td>    { <var>0x88</var>, <var>0x3e</var>, <var>0xa3</var>, <var>0xe3</var>, <var>0x95</var>, <var>0x67</var>, <var>0x53</var>, <var>0x93</var>, },</td></tr>
+<tr><th id="263">263</th><td>    { <var>0xc8</var>, <var>0xce</var>, <var>0x5c</var>, <var>0xcd</var>, <var>0x8c</var>, <var>0x03</var>, <var>0x0c</var>, <var>0xa8</var>, },</td></tr>
+<tr><th id="264">264</th><td>    { <var>0x94</var>, <var>0xaf</var>, <var>0x49</var>, <var>0xf6</var>, <var>0xc6</var>, <var>0x50</var>, <var>0xad</var>, <var>0xb8</var>, },</td></tr>
+<tr><th id="265">265</th><td>    { <var>0xea</var>, <var>0xb8</var>, <var>0x85</var>, <var>0x8a</var>, <var>0xde</var>, <var>0x92</var>, <var>0xe1</var>, <var>0xbc</var>, },</td></tr>
+<tr><th id="266">266</th><td>    { <var>0xf3</var>, <var>0x15</var>, <var>0xbb</var>, <var>0x5b</var>, <var>0xb8</var>, <var>0x35</var>, <var>0xd8</var>, <var>0x17</var>, },</td></tr>
+<tr><th id="267">267</th><td>    { <var>0xad</var>, <var>0xcf</var>, <var>0x6b</var>, <var>0x07</var>, <var>0x63</var>, <var>0x61</var>, <var>0x2e</var>, <var>0x2f</var>, },</td></tr>
+<tr><th id="268">268</th><td>    { <var>0xa5</var>, <var>0xc9</var>, <var>0x1d</var>, <var>0xa7</var>, <var>0xac</var>, <var>0xaa</var>, <var>0x4d</var>, <var>0xde</var>, },</td></tr>
+<tr><th id="269">269</th><td>    { <var>0x71</var>, <var>0x65</var>, <var>0x95</var>, <var>0x87</var>, <var>0x66</var>, <var>0x50</var>, <var>0xa2</var>, <var>0xa6</var>, },</td></tr>
+<tr><th id="270">270</th><td>    { <var>0x28</var>, <var>0xef</var>, <var>0x49</var>, <var>0x5c</var>, <var>0x53</var>, <var>0xa3</var>, <var>0x87</var>, <var>0xad</var>, },</td></tr>
+<tr><th id="271">271</th><td>    { <var>0x42</var>, <var>0xc3</var>, <var>0x41</var>, <var>0xd8</var>, <var>0xfa</var>, <var>0x92</var>, <var>0xd8</var>, <var>0x32</var>, },</td></tr>
+<tr><th id="272">272</th><td>    { <var>0xce</var>, <var>0x7c</var>, <var>0xf2</var>, <var>0x72</var>, <var>0x2f</var>, <var>0x51</var>, <var>0x27</var>, <var>0x71</var>, },</td></tr>
+<tr><th id="273">273</th><td>    { <var>0xe3</var>, <var>0x78</var>, <var>0x59</var>, <var>0xf9</var>, <var>0x46</var>, <var>0x23</var>, <var>0xf3</var>, <var>0xa7</var>, },</td></tr>
+<tr><th id="274">274</th><td>    { <var>0x38</var>, <var>0x12</var>, <var>0x05</var>, <var>0xbb</var>, <var>0x1a</var>, <var>0xb0</var>, <var>0xe0</var>, <var>0x12</var>, },</td></tr>
+<tr><th id="275">275</th><td>    { <var>0xae</var>, <var>0x97</var>, <var>0xa1</var>, <var>0x0f</var>, <var>0xd4</var>, <var>0x34</var>, <var>0xe0</var>, <var>0x15</var>, },</td></tr>
+<tr><th id="276">276</th><td>    { <var>0xb4</var>, <var>0xa3</var>, <var>0x15</var>, <var>0x08</var>, <var>0xbe</var>, <var>0xff</var>, <var>0x4d</var>, <var>0x31</var>, },</td></tr>
+<tr><th id="277">277</th><td>    { <var>0x81</var>, <var>0x39</var>, <var>0x62</var>, <var>0x29</var>, <var>0xf0</var>, <var>0x90</var>, <var>0x79</var>, <var>0x02</var>, },</td></tr>
+<tr><th id="278">278</th><td>    { <var>0x4d</var>, <var>0x0c</var>, <var>0xf4</var>, <var>0x9e</var>, <var>0xe5</var>, <var>0xd4</var>, <var>0xdc</var>, <var>0xca</var>, },</td></tr>
+<tr><th id="279">279</th><td>    { <var>0x5c</var>, <var>0x73</var>, <var>0x33</var>, <var>0x6a</var>, <var>0x76</var>, <var>0xd8</var>, <var>0xbf</var>, <var>0x9a</var>, },</td></tr>
+<tr><th id="280">280</th><td>    { <var>0xd0</var>, <var>0xa7</var>, <var>0x04</var>, <var>0x53</var>, <var>0x6b</var>, <var>0xa9</var>, <var>0x3e</var>, <var>0x0e</var>, },</td></tr>
+<tr><th id="281">281</th><td>    { <var>0x92</var>, <var>0x59</var>, <var>0x58</var>, <var>0xfc</var>, <var>0xd6</var>, <var>0x42</var>, <var>0x0c</var>, <var>0xad</var>, },</td></tr>
+<tr><th id="282">282</th><td>    { <var>0xa9</var>, <var>0x15</var>, <var>0xc2</var>, <var>0x9b</var>, <var>0xc8</var>, <var>0x06</var>, <var>0x73</var>, <var>0x18</var>, },</td></tr>
+<tr><th id="283">283</th><td>    { <var>0x95</var>, <var>0x2b</var>, <var>0x79</var>, <var>0xf3</var>, <var>0xbc</var>, <var>0x0a</var>, <var>0xa6</var>, <var>0xd4</var>, },</td></tr>
+<tr><th id="284">284</th><td>    { <var>0xf2</var>, <var>0x1d</var>, <var>0xf2</var>, <var>0xe4</var>, <var>0x1d</var>, <var>0x45</var>, <var>0x35</var>, <var>0xf9</var>, },</td></tr>
+<tr><th id="285">285</th><td>    { <var>0x87</var>, <var>0x57</var>, <var>0x75</var>, <var>0x19</var>, <var>0x04</var>, <var>0x8f</var>, <var>0x53</var>, <var>0xa9</var>, },</td></tr>
+<tr><th id="286">286</th><td>    { <var>0x10</var>, <var>0xa5</var>, <var>0x6c</var>, <var>0xf5</var>, <var>0xdf</var>, <var>0xcd</var>, <var>0x9a</var>, <var>0xdb</var>, },</td></tr>
+<tr><th id="287">287</th><td>    { <var>0xeb</var>, <var>0x75</var>, <var>0x09</var>, <var>0x5c</var>, <var>0xcd</var>, <var>0x98</var>, <var>0x6c</var>, <var>0xd0</var>, },</td></tr>
+<tr><th id="288">288</th><td>    { <var>0x51</var>, <var>0xa9</var>, <var>0xcb</var>, <var>0x9e</var>, <var>0xcb</var>, <var>0xa3</var>, <var>0x12</var>, <var>0xe6</var>, },</td></tr>
+<tr><th id="289">289</th><td>    { <var>0x96</var>, <var>0xaf</var>, <var>0xad</var>, <var>0xfc</var>, <var>0x2c</var>, <var>0xe6</var>, <var>0x66</var>, <var>0xc7</var>, },</td></tr>
+<tr><th id="290">290</th><td>    { <var>0x72</var>, <var>0xfe</var>, <var>0x52</var>, <var>0x97</var>, <var>0x5a</var>, <var>0x43</var>, <var>0x64</var>, <var>0xee</var>, },</td></tr>
+<tr><th id="291">291</th><td>    { <var>0x5a</var>, <var>0x16</var>, <var>0x45</var>, <var>0xb2</var>, <var>0x76</var>, <var>0xd5</var>, <var>0x92</var>, <var>0xa1</var>, },</td></tr>
+<tr><th id="292">292</th><td>    { <var>0xb2</var>, <var>0x74</var>, <var>0xcb</var>, <var>0x8e</var>, <var>0xbf</var>, <var>0x87</var>, <var>0x87</var>, <var>0x0a</var>, },</td></tr>
+<tr><th id="293">293</th><td>    { <var>0x6f</var>, <var>0x9b</var>, <var>0xb4</var>, <var>0x20</var>, <var>0x3d</var>, <var>0xe7</var>, <var>0xb3</var>, <var>0x81</var>, },</td></tr>
+<tr><th id="294">294</th><td>    { <var>0xea</var>, <var>0xec</var>, <var>0xb2</var>, <var>0xa3</var>, <var>0x0b</var>, <var>0x22</var>, <var>0xa8</var>, <var>0x7f</var>, },</td></tr>
+<tr><th id="295">295</th><td>    { <var>0x99</var>, <var>0x24</var>, <var>0xa4</var>, <var>0x3c</var>, <var>0xc1</var>, <var>0x31</var>, <var>0x57</var>, <var>0x24</var>, },</td></tr>
+<tr><th id="296">296</th><td>    { <var>0xbd</var>, <var>0x83</var>, <var>0x8d</var>, <var>0x3a</var>, <var>0xaf</var>, <var>0xbf</var>, <var>0x8d</var>, <var>0xb7</var>, },</td></tr>
+<tr><th id="297">297</th><td>    { <var>0x0b</var>, <var>0x1a</var>, <var>0x2a</var>, <var>0x32</var>, <var>0x65</var>, <var>0xd5</var>, <var>0x1a</var>, <var>0xea</var>, },</td></tr>
+<tr><th id="298">298</th><td>    { <var>0x13</var>, <var>0x50</var>, <var>0x79</var>, <var>0xa3</var>, <var>0x23</var>, <var>0x1c</var>, <var>0xe6</var>, <var>0x60</var>, },</td></tr>
+<tr><th id="299">299</th><td>    { <var>0x93</var>, <var>0x2b</var>, <var>0x28</var>, <var>0x46</var>, <var>0xe4</var>, <var>0xd7</var>, <var>0x06</var>, <var>0x66</var>, },</td></tr>
+<tr><th id="300">300</th><td>    { <var>0xe1</var>, <var>0x91</var>, <var>0x5f</var>, <var>0x5c</var>, <var>0xb1</var>, <var>0xec</var>, <var>0xa4</var>, <var>0x6c</var>, },</td></tr>
+<tr><th id="301">301</th><td>    { <var>0xf3</var>, <var>0x25</var>, <var>0x96</var>, <var>0x5c</var>, <var>0xa1</var>, <var>0x6d</var>, <var>0x62</var>, <var>0x9f</var>, },</td></tr>
+<tr><th id="302">302</th><td>    { <var>0x57</var>, <var>0x5f</var>, <var>0xf2</var>, <var>0x8e</var>, <var>0x60</var>, <var>0x38</var>, <var>0x1b</var>, <var>0xe5</var>, },</td></tr>
+<tr><th id="303">303</th><td>    { <var>0x72</var>, <var>0x45</var>, <var>0x06</var>, <var>0xeb</var>, <var>0x4c</var>, <var>0x32</var>, <var>0x8a</var>, <var>0x95</var>, },</td></tr>
+<tr><th id="304">304</th><td>};</td></tr>
+<tr><th id="305">305</th><td></td></tr>
+<tr><th id="306">306</th><td></td></tr>
+<tr><th id="307">307</th><td><i>/* Test siphash using a test vector. Returns 0 if the function passed</i></td></tr>
+<tr><th id="308">308</th><td><i> * all the tests, otherwise 1 is returned.</i></td></tr>
+<tr><th id="309">309</th><td><i> *</i></td></tr>
+<tr><th id="310">310</th><td><i> * IMPORTANT: The test vector is for SipHash 2-4. Before running</i></td></tr>
+<tr><th id="311">311</th><td><i> * the test revert back the siphash() function to 2-4 rounds since</i></td></tr>
+<tr><th id="312">312</th><td><i> * now it uses 1-2 rounds. */</i></td></tr>
+<tr><th id="313">313</th><td><em>int</em> siphash_test(<em>void</em>) {</td></tr>
+<tr><th id="314">314</th><td>    uint8_t in[<var>64</var>], k[<var>16</var>];</td></tr>
+<tr><th id="315">315</th><td>    <em>int</em> i;</td></tr>
+<tr><th id="316">316</th><td>    <em>int</em> fails = <var>0</var>;</td></tr>
+<tr><th id="317">317</th><td></td></tr>
+<tr><th id="318">318</th><td>    <b>for</b> (i = <var>0</var>; i &lt; <var>16</var>; ++i)</td></tr>
+<tr><th id="319">319</th><td>        k[i] = i;</td></tr>
+<tr><th id="320">320</th><td></td></tr>
+<tr><th id="321">321</th><td>    <b>for</b> (i = <var>0</var>; i &lt; <var>64</var>; ++i) {</td></tr>
+<tr><th id="322">322</th><td>        in[i] = i;</td></tr>
+<tr><th id="323">323</th><td>        uint64_t hash = siphash(in, i, k);</td></tr>
+<tr><th id="324">324</th><td>        <em>const</em> uint8_t *v = NULL;</td></tr>
+<tr><th id="325">325</th><td>        v = (uint8_t *)vectors_sip64;</td></tr>
+<tr><th id="326">326</th><td>        <b>if</b> (memcmp(&amp;hash, v + (i * <var>8</var>), <var>8</var>)) {</td></tr>
+<tr><th id="327">327</th><td>            <i>/* printf("fail for %d bytes\n", i); */</i></td></tr>
+<tr><th id="328">328</th><td>            fails++;</td></tr>
+<tr><th id="329">329</th><td>        }</td></tr>
+<tr><th id="330">330</th><td>    }</td></tr>
+<tr><th id="331">331</th><td></td></tr>
+<tr><th id="332">332</th><td>    <i>/* Run a few basic tests with the case insensitive version. */</i></td></tr>
+<tr><th id="333">333</th><td>    uint64_t h1, h2;</td></tr>
+<tr><th id="334">334</th><td>    h1 = siphash((uint8_t*)<q>"hello world"</q>,<var>11</var>,(uint8_t*)<q>"1234567812345678"</q>);</td></tr>
+<tr><th id="335">335</th><td>    h2 = siphash_nocase((uint8_t*)<q>"hello world"</q>,<var>11</var>,(uint8_t*)<q>"1234567812345678"</q>);</td></tr>
+<tr><th id="336">336</th><td>    <b>if</b> (h1 != h2) fails++;</td></tr>
+<tr><th id="337">337</th><td></td></tr>
+<tr><th id="338">338</th><td>    h1 = siphash((uint8_t*)<q>"hello world"</q>,<var>11</var>,(uint8_t*)<q>"1234567812345678"</q>);</td></tr>
+<tr><th id="339">339</th><td>    h2 = siphash_nocase((uint8_t*)<q>"HELLO world"</q>,<var>11</var>,(uint8_t*)<q>"1234567812345678"</q>);</td></tr>
+<tr><th id="340">340</th><td>    <b>if</b> (h1 != h2) fails++;</td></tr>
+<tr><th id="341">341</th><td></td></tr>
+<tr><th id="342">342</th><td>    h1 = siphash((uint8_t*)<q>"HELLO world"</q>,<var>11</var>,(uint8_t*)<q>"1234567812345678"</q>);</td></tr>
+<tr><th id="343">343</th><td>    h2 = siphash_nocase((uint8_t*)<q>"HELLO world"</q>,<var>11</var>,(uint8_t*)<q>"1234567812345678"</q>);</td></tr>
+<tr><th id="344">344</th><td>    <b>if</b> (h1 == h2) fails++;</td></tr>
+<tr><th id="345">345</th><td></td></tr>
+<tr><th id="346">346</th><td>    <b>if</b> (!fails) <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="347">347</th><td>    <b>return</b> <var>1</var>;</td></tr>
+<tr><th id="348">348</th><td>}</td></tr>
+<tr><th id="349">349</th><td></td></tr>
+<tr><th id="350">350</th><td><em>int</em> main(<em>void</em>) {</td></tr>
+<tr><th id="351">351</th><td>    <b>if</b> (siphash_test() == <var>0</var>) {</td></tr>
+<tr><th id="352">352</th><td>        printf(<q>"SipHash test: OK\n"</q>);</td></tr>
+<tr><th id="353">353</th><td>        <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="354">354</th><td>    } <b>else</b> {</td></tr>
+<tr><th id="355">355</th><td>        printf(<q>"SipHash test: FAILED\n"</q>);</td></tr>
+<tr><th id="356">356</th><td>        <b>return</b> <var>1</var>;</td></tr>
+<tr><th id="357">357</th><td>    }</td></tr>
+<tr><th id="358">358</th><td>}</td></tr>
+<tr><th id="359">359</th><td></td></tr>
+<tr><th id="360">360</th><td><u>#<span data-ppcond="237">endif</span></u></td></tr>
+<tr><th id="361">361</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Oct-16</em> from project codebrowser revision <em>with-deprecated-diskstore-4466-g2bf8c2c</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

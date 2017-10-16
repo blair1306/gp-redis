@@ -1,0 +1,26 @@
+<dec f='codebrowser/src/ziplist.h' l='43' type='unsigned int ziplistGet(unsigned char * p, unsigned char ** sval, unsigned int * slen, long long * lval)'/>
+<use f='codebrowser/src/aof.c' l='930' u='c' c='rewriteSortedSetObject'/>
+<use f='codebrowser/src/db.c' l='688' u='c' c='scanGenericCommand'/>
+<use f='codebrowser/src/debug.c' l='191' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/geo.c' l='254' u='c' c='geoGetPointsInRange'/>
+<use f='codebrowser/src/quicklist.c' l='550' u='c' c='quicklistAppendValuesFromZiplist'/>
+<use f='codebrowser/src/quicklist.c' l='1158' u='c' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1275' u='c' c='quicklistIndex'/>
+<use f='codebrowser/src/quicklist.c' l='1292' u='c' c='quicklistRotate'/>
+<use f='codebrowser/src/quicklist.c' l='1353' u='c' c='quicklistPopCustom'/>
+<use f='codebrowser/src/t_hash.c' l='79' u='c' c='hashTypeGetFromZiplist'/>
+<use f='codebrowser/src/t_hash.c' l='395' u='c' c='hashTypeCurrentFromZiplist'/>
+<use f='codebrowser/src/t_hash.c' l='398' u='c' c='hashTypeCurrentFromZiplist'/>
+<use f='codebrowser/src/t_zset.c' l='676' u='c' c='zzlGetScore'/>
+<use f='codebrowser/src/t_zset.c' l='696' u='c' c='ziplistGetObject'/>
+<use f='codebrowser/src/t_zset.c' l='713' u='c' c='zzlCompareElements'/>
+<use f='codebrowser/src/t_zset.c' l='1143' u='c' c='zsetConvert'/>
+<use f='codebrowser/src/t_zset.c' l='1949' u='c' c='zuiNext'/>
+<use f='codebrowser/src/t_zset.c' l='2417' u='c' c='zrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2576' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2927' u='c' c='genericZrangebylexCommand'/>
+<def f='codebrowser/src/ziplist.c' l='1034' ll='1051' type='unsigned int ziplistGet(unsigned char * p, unsigned char ** sstr, unsigned int * slen, long long * sval)'/>
+<doc f='codebrowser/src/ziplist.c' l='1030'>/* Get entry pointed to by &apos;p&apos; and store in either &apos;*sstr&apos; or &apos;sval&apos; depending
+ * on the encoding of the entry. &apos;*sstr&apos; is always set to NULL to be able
+ * to find out whether the string pointer or the integer value was set.
+ * Return 0 if &apos;p&apos; points to the end of the ziplist, 1 otherwise. */</doc>

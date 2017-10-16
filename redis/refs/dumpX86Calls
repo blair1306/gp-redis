@@ -1,0 +1,5 @@
+<def f='codebrowser/src/debug.c' l='991' ll='1012' type='void dumpX86Calls(void * addr, size_t len)'/>
+<use f='codebrowser/src/debug.c' l='1093' u='c' c='sigsegvHandler'/>
+<doc f='codebrowser/src/debug.c' l='988'>/* Scans the (assumed) x86 code starting at addr, for a max of `len`
+ * bytes, searching for E8 (callq) opcodes, and dumping the symbols
+ * and the call offset if they appear to be valid. */</doc>

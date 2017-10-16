@@ -1,0 +1,2 @@
+<dec f='codebrowser/src/anet.h' l='52' type='int anetTcpConnect(char * err, char * addr, int port)'/>
+<def f='codebrowser/src/anet.c' l='348' ll='351' type='int anetTcpConnect(char * err, char * addr, int port)'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='40' type='rtree_node_elm_t *'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/rtree.h' l='165' u='r' c='je_rtree_child_tryread'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='71' u='r' c='rtree_delete_subtree'/>
+<use f='codebrowser/deps/jemalloc/src/rtree.c' l='126' u='a' c='je_rtree_child_read_hard'/>

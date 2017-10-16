@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/quicklist.h' l='86' type='long'/>
+<offset>192</offset>
+<doc f='codebrowser/src/quicklist.h' l='86'>/* offset in current ziplist */</doc>
+<use f='codebrowser/src/quicklist.c' l='647' u='w' c='quicklistDelEntry'/>
+<use f='codebrowser/src/quicklist.c' l='650' u='w' c='quicklistDelEntry'/>
+<use f='codebrowser/src/quicklist.c' l='1055' u='w' c='quicklistGetIterator'/>
+<use f='codebrowser/src/quicklist.c' l='1058' u='w' c='quicklistGetIterator'/>
+<use f='codebrowser/src/quicklist.c' l='1080' u='w' c='quicklistGetIteratorAtIdx'/>
+<use f='codebrowser/src/quicklist.c' l='1139' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1150' u='w' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1154' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1168' u='w' c='quicklistNext'/>
+<use f='codebrowser/src/quicklist.c' l='1173' u='w' c='quicklistNext'/>

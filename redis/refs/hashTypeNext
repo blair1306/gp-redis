@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1671' type='int hashTypeNext(hashTypeIterator * hi)'/>
+<use f='codebrowser/src/aof.c' l='1013' u='c' c='rewriteHashObject'/>
+<use f='codebrowser/src/debug.c' l='228' u='c' c='computeDatasetDigest'/>
+<def f='codebrowser/src/t_hash.c' l='348' ll='381' type='int hashTypeNext(hashTypeIterator * hi)'/>
+<use f='codebrowser/src/t_hash.c' l='479' u='c' c='hashTypeConvertZiplist'/>
+<use f='codebrowser/src/t_hash.c' l='782' u='c' c='genericHgetallCommand'/>
+<doc f='codebrowser/src/t_hash.c' l='346'>/* Move to the next entry in the hash. Return C_OK when the next entry
+ * could be found and C_ERR when the iterator reaches the end. */</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/rdb.h' l='133' type='int rdbSaveToSlavesSockets(rdbSaveInfo * rsi)'/>
+<def f='codebrowser/src/rdb.c' l='1814' ll='1971' type='int rdbSaveToSlavesSockets(rdbSaveInfo * rsi)'/>
+<doc f='codebrowser/src/rdb.c' l='1812'>/* Spawn an RDB child that writes the RDB to the sockets of the slaves
+ * that are currently in SLAVE_STATE_WAIT_BGSAVE_START state. */</doc>
+<use f='codebrowser/src/replication.c' l='578' u='c' c='startBgsaveForReplication'/>

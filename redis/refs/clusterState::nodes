@@ -1,0 +1,33 @@
+<dec f='codebrowser/src/cluster.h' l='137' type='dict *'/>
+<use f='codebrowser/src/cluster.c' l='416' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='528' u='r' c='clusterReset'/>
+<use f='codebrowser/src/cluster.c' l='549' u='r' c='clusterReset'/>
+<use f='codebrowser/src/cluster.c' l='853' u='r' c='freeClusterNode'/>
+<use f='codebrowser/src/cluster.c' l='867' u='r' c='clusterAddNode'/>
+<use f='codebrowser/src/cluster.c' l='899' u='r' c='clusterDelNode'/>
+<use f='codebrowser/src/cluster.c' l='917' u='r' c='clusterLookupNode'/>
+<use f='codebrowser/src/cluster.c' l='933' u='r' c='clusterRenameNode'/>
+<use f='codebrowser/src/cluster.c' l='951' u='r' c='clusterGetMaxEpoch'/>
+<use f='codebrowser/src/cluster.c' l='1239' u='r' c='clusterHandshakeInProgress'/>
+<use f='codebrowser/src/cluster.c' l='2178' u='r' c='clusterBroadcastMessage'/>
+<use f='codebrowser/src/cluster.c' l='2305' u='r' c='clusterSendPing'/>
+<use f='codebrowser/src/cluster.c' l='2305' u='r' c='clusterSendPing'/>
+<use f='codebrowser/src/cluster.c' l='2333' u='r' c='clusterSendPing'/>
+<use f='codebrowser/src/cluster.c' l='2333' u='r' c='clusterSendPing'/>
+<use f='codebrowser/src/cluster.c' l='2360' u='r' c='clusterSendPing'/>
+<use f='codebrowser/src/cluster.c' l='2396' u='r' c='clusterSendPing'/>
+<use f='codebrowser/src/cluster.c' l='2443' u='r' c='clusterBroadcastPong'/>
+<use f='codebrowser/src/cluster.c' l='3056' u='r' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/cluster.c' l='3241' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3320' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3347' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3525' u='r' c='clusterMastersHaveSlaves'/>
+<use f='codebrowser/src/cluster.c' l='3679' u='r' c='clusterUpdateState'/>
+<use f='codebrowser/src/cluster.c' l='3940' u='r' c='clusterGenNodesDescription'/>
+<use f='codebrowser/src/cluster.c' l='4001' u='r' c='clusterReplyMultiBulkSlots'/>
+<use f='codebrowser/src/cluster.c' l='4309' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4309' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4560' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4560' u='r' c='clusterCommand'/>
+<offset>192</offset>
+<doc f='codebrowser/src/cluster.h' l='137'>/* Hash table of name -&gt; clusterNode structures */</doc>

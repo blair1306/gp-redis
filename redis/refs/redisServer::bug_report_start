@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1192' type='int'/>
+<offset>23264</offset>
+<doc f='codebrowser/src/server.h' l='1192'>/* True if bug report header was already logged. */</doc>
+<use f='codebrowser/src/debug.c' l='652' u='r' c='bugReportStart'/>
+<use f='codebrowser/src/debug.c' l='655' u='w' c='bugReportStart'/>
+<use f='codebrowser/src/server.c' l='1523' u='w' c='initServerConfig'/>

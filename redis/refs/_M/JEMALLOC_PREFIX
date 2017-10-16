@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='9'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='4'>/*
+ * If JEMALLOC_PREFIX is defined via --with-jemalloc-prefix, it will cause all
+ * public APIs to be prefixed.  This makes it possible, with some care, to use
+ * multiple allocators simultaneously.
+ */</doc>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='888' u='a'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='889' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='912' u='a'/>

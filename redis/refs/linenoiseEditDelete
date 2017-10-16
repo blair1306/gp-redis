@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/linenoise/linenoise.c' l='724' ll='731' type='void linenoiseEditDelete(struct linenoiseState * l)'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='838' u='c' c='linenoiseEdit'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='881' u='c' c='linenoiseEdit'/>
+<doc f='codebrowser/deps/linenoise/linenoise.c' l='722'>/* Delete the character at the right of the cursor without altering the cursor
+ * position. Basically this is what happens with the &quot;Delete&quot; keyboard key. */</doc>

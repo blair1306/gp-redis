@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/cluster.h' l='16'/>
+<doc f='codebrowser/src/cluster.h' l='14'>/* The following defines are amount of time, sometimes expressed as
+ * multiplicators of the node timeout value (when ending with MULT). */</doc>
+<use f='codebrowser/src/config.c' l='2010' u='c'/>
+<use f='codebrowser/src/server.c' l='1427' u='c'/>

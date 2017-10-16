@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/geo.h' l='18' type='size_t'/>
+<use f='codebrowser/src/geo.c' l='57' u='w' c='geoArrayCreate'/>
+<use f='codebrowser/src/geo.c' l='65' u='r' c='geoArrayAppend'/>
+<use f='codebrowser/src/geo.c' l='66' u='w' c='geoArrayAppend'/>
+<use f='codebrowser/src/geo.c' l='66' u='r' c='geoArrayAppend'/>
+<use f='codebrowser/src/geo.c' l='66' u='r' c='geoArrayAppend'/>
+<use f='codebrowser/src/geo.c' l='67' u='r' c='geoArrayAppend'/>
+<offset>64</offset>

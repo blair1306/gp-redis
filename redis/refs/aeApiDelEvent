@@ -1,0 +1,2 @@
+<def f='codebrowser/src/ae_epoll.c' l='90' ll='106' type='void aeApiDelEvent(aeEventLoop * eventLoop, int fd, int delmask)'/>
+<use f='codebrowser/src/ae.c' l='162' u='c' c='aeDeleteFileEvent'/>

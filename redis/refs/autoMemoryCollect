@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/module.c' l='225' type='void autoMemoryCollect(RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/module.c' l='425' u='c' c='moduleFreeContext'/>
+<def f='codebrowser/src/module.c' l='731' ll='751' type='void autoMemoryCollect(RedisModuleCtx * ctx)'/>
+<doc f='codebrowser/src/module.c' l='730'>/* Release all the objects in queue. */</doc>

@@ -1,0 +1,2 @@
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='1693' ll='1704' macro='1' type='uint64_t prof_thr_uid_alloc()'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1757' u='c' c='je_prof_tdata_init'/>

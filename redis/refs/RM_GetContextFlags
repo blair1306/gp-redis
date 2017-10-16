@@ -1,0 +1,29 @@
+<def f='codebrowser/src/module.c' l='1293' ll='1331' type='int RM_GetContextFlags(RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/module.c' l='3966' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1266'>/* Return the current context&apos;s flags. The flags provide information on the 
+ * current request context (whether the client is a Lua script or in a MULTI),
+ * and about the Redis instance in general, i.e replication and persistence. 
+ * 
+ * The available flags are:
+ * 
+ *  * REDISMODULE_CTX_FLAGS_LUA: The command is running in a Lua script
+ * 
+ *  * REDISMODULE_CTX_FLAGS_MULTI: The command is running inside a transaction
+ * 
+ *  * REDISMODULE_CTX_FLAGS_MASTER: The Redis instance is a master
+ * 
+ *  * REDISMODULE_CTX_FLAGS_SLAVE: The Redis instance is a slave
+ * 
+ *  * REDISMODULE_CTX_FLAGS_READONLY: The Redis instance is read-only
+ * 
+ *  * REDISMODULE_CTX_FLAGS_CLUSTER: The Redis instance is in cluster mode
+ * 
+ *  * REDISMODULE_CTX_FLAGS_AOF: The Redis instance has AOF enabled
+ * 
+ *  * REDISMODULE_CTX_FLAGS_RDB: The instance has RDB enabled
+ * 
+ *  * REDISMODULE_CTX_FLAGS_MAXMEMORY:  The instance has Maxmemory set
+ * 
+ *  * REDISMODULE_CTX_FLAGS_EVICT:  Maxmemory is set and has an eviction
+ *    policy that may delete keys
+ */</doc>

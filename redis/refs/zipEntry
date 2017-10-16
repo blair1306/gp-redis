@@ -1,0 +1,10 @@
+<def f='codebrowser/src/ziplist.c' l='569' ll='575' type='void zipEntry(unsigned char * p, zlentry * e)'/>
+<use f='codebrowser/src/ziplist.c' l='623' u='c' c='__ziplistCascadeUpdate'/>
+<use f='codebrowser/src/ziplist.c' l='629' u='c' c='__ziplistCascadeUpdate'/>
+<use f='codebrowser/src/ziplist.c' l='684' u='c' c='__ziplistDelete'/>
+<use f='codebrowser/src/ziplist.c' l='713' u='c' c='__ziplistDelete'/>
+<use f='codebrowser/src/ziplist.c' l='811' u='c' c='__ziplistInsert'/>
+<use f='codebrowser/src/ziplist.c' l='1039' u='c' c='ziplistGet'/>
+<use f='codebrowser/src/ziplist.c' l='1087' u='c' c='ziplistCompare'/>
+<use f='codebrowser/src/ziplist.c' l='1204' u='c' c='ziplistRepr'/>
+<doc f='codebrowser/src/ziplist.c' l='568'>/* Return a struct with all information about an entry. */</doc>

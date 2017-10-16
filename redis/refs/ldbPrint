@@ -1,0 +1,5 @@
+<def f='codebrowser/src/scripting.c' l='2036' ll='2064' type='void ldbPrint(lua_State * lua, char * varname)'/>
+<use f='codebrowser/src/scripting.c' l='2310' u='c' c='ldbRepl'/>
+<doc f='codebrowser/src/scripting.c' l='2033'>/* Implements the &quot;print &lt;var&gt;&quot; command of the Lua debugger. It scans for Lua
+ * var &quot;varname&quot; starting from the current stack frame up to the top stack
+ * frame. The first matching variable is printed. */</doc>

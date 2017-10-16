@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/latency.c' l='48' type='void dictVanillaFree(void * privdata, void * val)'/>
+<use f='codebrowser/src/latency.c' l='55' u='r'/>
+<use f='codebrowser/src/latency.c' l='56' u='r'/>
+<use f='codebrowser/src/latency.c' l='55' u='r'/>
+<use f='codebrowser/src/latency.c' l='56' u='r'/>
+<def f='codebrowser/src/server.c' l='433' ll='437' type='void dictVanillaFree(void * privdata, void * val)'/>
+<doc f='codebrowser/src/server.c' l='429'>/* This is a hash table type that uses the SDS dynamic strings library as
+ * keys and redis objects as values (objects can hold SDS strings,
+ * lists, sets). */</doc>

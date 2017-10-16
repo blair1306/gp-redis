@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='53' type='redisCallback *'/>
+<use f='codebrowser/deps/hiredis/async.c' l='134' u='w' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='136' u='w' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='243' u='r' c='__redisPushCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='244' u='r' c='__redisPushCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='245' u='w' c='__redisPushCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='253' u='r' c='__redisShiftCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='254' u='w' c='__redisShiftCallback'/>
+<offset>64</offset>

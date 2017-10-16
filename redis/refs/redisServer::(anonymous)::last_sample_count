@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='967' type='long long'/>
+<offset>64</offset>
+<doc f='codebrowser/src/server.h' l='967'>/* Count in last sample */</doc>
+<use f='codebrowser/src/server.c' l='751' u='r' c='trackInstantaneousMetric'/>
+<use f='codebrowser/src/server.c' l='761' u='w' c='trackInstantaneousMetric'/>
+<use f='codebrowser/src/server.c' l='1780' u='w' c='resetServerStats'/>

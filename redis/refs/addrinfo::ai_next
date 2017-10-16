@@ -1,0 +1,8 @@
+<dec f='include/netdb.h' l='576' type='struct addrinfo *'/>
+<use f='codebrowser/deps/hiredis/net.c' l='337' u='r' c='_redisContextConnectTcp'/>
+<use f='codebrowser/deps/hiredis/net.c' l='363' u='r' c='_redisContextConnectTcp'/>
+<offset>320</offset>
+<doc f='include/netdb.h' l='576'>/* Pointer to next in list.  */</doc>
+<use f='codebrowser/src/anet.c' l='284' u='r' c='anetTcpGenericConnect'/>
+<use f='codebrowser/src/anet.c' l='301' u='r' c='anetTcpGenericConnect'/>
+<use f='codebrowser/src/anet.c' l='481' u='r' c='_anetTcpServer'/>

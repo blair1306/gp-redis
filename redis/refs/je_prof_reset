@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='304' macro='1' type='void je_prof_reset(tsd_t * tsd, size_t lg_sample)'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1980' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='1862' macro='1' type='void je_prof_reset(tsd_t * tsd, size_t lg_sample)'/>

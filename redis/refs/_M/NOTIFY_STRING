@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/server.h' l='420'/>
+<use f='codebrowser/src/bitops.c' l='558' u='c'/>
+<use f='codebrowser/src/bitops.c' l='758' u='c'/>
+<use f='codebrowser/src/bitops.c' l='1121' u='c'/>
+<use f='codebrowser/src/hyperloglog.c' l='1181' u='c'/>
+<use f='codebrowser/src/hyperloglog.c' l='1334' u='c'/>
+<use f='codebrowser/src/notify.c' l='48' u='c'/>
+<use f='codebrowser/src/notify.c' l='75' u='c'/>
+<use f='codebrowser/src/t_string.c' l='89' u='c'/>
+<use f='codebrowser/src/t_string.c' l='180' u='c'/>
+<use f='codebrowser/src/t_string.c' l='237' u='c'/>
+<use f='codebrowser/src/t_string.c' l='327' u='c'/>
+<use f='codebrowser/src/t_string.c' l='372' u='c'/>
+<use f='codebrowser/src/t_string.c' l='422' u='c'/>
+<use f='codebrowser/src/t_string.c' l='463' u='c'/>

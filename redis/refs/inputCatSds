@@ -1,0 +1,4 @@
+<def f='codebrowser/src/object.c' l='912' ll='916' type='void inputCatSds(void * result, const char * str)'/>
+<use f='codebrowser/src/object.c' l='1140' u='r' c='memoryCommand'/>
+<doc f='codebrowser/src/object.c' l='910'>/* Helper for &quot;MEMORY allocator-stats&quot;, used as a callback for the jemalloc
+ * stats output. */</doc>

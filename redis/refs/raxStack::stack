@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/rax.h' l='114' type='void **'/>
+<offset>0</offset>
+<doc f='codebrowser/src/rax.h' l='114'>/* Points to static_items or an heap allocated array. */</doc>
+<use f='codebrowser/src/rax.c' l='79' u='w' c='raxStackInit'/>
+<use f='codebrowser/src/rax.c' l='88' u='r' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='89' u='w' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='90' u='r' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='91' u='w' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='96' u='r' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='98' u='r' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='104' u='w' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='108' u='r' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='118' u='r' c='raxStackPop'/>
+<use f='codebrowser/src/rax.c' l='125' u='r' c='raxStackPeek'/>
+<use f='codebrowser/src/rax.c' l='130' u='r' c='raxStackFree'/>
+<use f='codebrowser/src/rax.c' l='130' u='r' c='raxStackFree'/>
+<use f='codebrowser/src/rax.c' l='1441' u='r' c='raxSeek'/>
+<use f='codebrowser/src/rax.c' l='1442' u='r' c='raxSeek'/>

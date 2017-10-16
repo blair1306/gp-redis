@@ -1,0 +1,12 @@
+<def f='codebrowser/deps/hiredis/sds.h' l='46' ll='49'/>
+<size>1</size>
+<doc f='codebrowser/deps/hiredis/sds.h' l='44'>/* Note: sdshdr5 is never used, we just access the flags byte directly.
+ * However is here to document the layout of type 5 SDS strings. */</doc>
+<mbr r='sdshdr5::flags' o='0' t='unsigned char'/>
+<mbr r='sdshdr5::buf' o='8' t='char []'/>
+<def f='codebrowser/src/sds.h' l='46' ll='49'/>
+<size>1</size>
+<doc f='codebrowser/src/sds.h' l='44'>/* Note: sdshdr5 is never used, we just access the flags byte directly.
+ * However is here to document the layout of type 5 SDS strings. */</doc>
+<mbr r='sdshdr5::flags' o='0' t='unsigned char'/>
+<mbr r='sdshdr5::buf' o='8' t='char []'/>

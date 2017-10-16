@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='14'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='9'>/*
+ * tcache pointers close to NULL are used to encode state information that is
+ * used for two purposes: preventing thread caching on a per thread basis and
+ * cleaning up during thread shutdown.
+ */</doc>

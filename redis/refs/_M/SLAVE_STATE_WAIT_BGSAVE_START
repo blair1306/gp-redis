@@ -1,0 +1,18 @@
+<dec f='codebrowser/src/server.h' l='298'/>
+<use f='codebrowser/src/aof.c' l='599' u='c'/>
+<doc f='codebrowser/src/server.h' l='294'>/* State of slaves from the POV of the master. Used in client-&gt;replstate.
+ * In SEND_BULK and ONLINE state the slave receives new updates
+ * in its output queue. In the WAIT_BGSAVE states instead the server is waiting
+ * to start the next background saving in order to send updates to it. */</doc>
+<use f='codebrowser/src/rdb.c' l='1846' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1946' u='c'/>
+<use f='codebrowser/src/replication.c' l='217' u='c'/>
+<use f='codebrowser/src/replication.c' l='259' u='c'/>
+<use f='codebrowser/src/replication.c' l='298' u='c'/>
+<use f='codebrowser/src/replication.c' l='595' u='c'/>
+<use f='codebrowser/src/replication.c' l='613' u='c'/>
+<use f='codebrowser/src/replication.c' l='684' u='c'/>
+<use f='codebrowser/src/replication.c' l='950' u='c'/>
+<use f='codebrowser/src/replication.c' l='2573' u='c'/>
+<use f='codebrowser/src/replication.c' l='2650' u='c'/>
+<use f='codebrowser/src/server.c' l='3211' u='c'/>

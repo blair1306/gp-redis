@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='105'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='102'>/*
+ * Bias arena index bits so that 0 encodes &quot;use an automatically chosen arena&quot;.
+ */</doc>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/extent.h' l='66' macro='1' type='_Bool je_extent_tree_ad_empty(extent_tree_t * rbtree)'/>
+<def f='codebrowser/deps/jemalloc/src/extent.c' l='53' macro='1' type='_Bool je_extent_tree_ad_empty(extent_tree_t * rbtree)'/>

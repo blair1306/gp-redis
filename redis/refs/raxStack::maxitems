@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/rax.h' l='115' type='size_t'/>
+<offset>128</offset>
+<use f='codebrowser/src/rax.c' l='81' u='w' c='raxStackInit'/>
+<use f='codebrowser/src/rax.c' l='87' u='r' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='89' u='r' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='96' u='r' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='98' u='r' c='raxStackPush'/>
+<use f='codebrowser/src/rax.c' l='106' u='w' c='raxStackPush'/>

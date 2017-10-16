@@ -1,0 +1,2 @@
+<dec f='codebrowser/src/server.h' l='1400' type='void listTypeTryConversion(robj * subject, robj * value)'/>
+<doc f='codebrowser/src/server.h' l='1399'>/* List data type */</doc>

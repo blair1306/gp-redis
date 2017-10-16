@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1046' type='int'/>
+<offset>0</offset>
+<doc f='codebrowser/src/server.h' l='1046'>/* AOF or RDB child? */</doc>
+<use f='codebrowser/src/childinfo.c' l='65' u='w' c='sendChildInfo'/>
+<use f='codebrowser/src/childinfo.c' l='79' u='r' c='receiveChildInfo'/>
+<use f='codebrowser/src/childinfo.c' l='81' u='r' c='receiveChildInfo'/>

@@ -1,0 +1,10 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='33'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='235' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='26'>/*
+ * At least Linux omits the &quot;const&quot; in:
+ *
+ *   size_t malloc_usable_size(const void *ptr);
+ *
+ * Match the operating system&apos;s prototype.
+ */</doc>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2473' u='c'/>

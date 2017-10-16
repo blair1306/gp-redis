@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='281' type='size_t'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1967' u='r' c='prof_reset_ctl'/>
+<use f='codebrowser/deps/jemalloc/src/ctl.c' l='1988' u='r' c='lg_prof_sample_ctl'/>
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='56' type='size_t'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1292' u='r' c='je_prof_dump_header'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1871' u='w' c='je_prof_reset'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2110' u='w' c='je_prof_boot2'/>

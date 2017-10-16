@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1768' type='void initSentinelConfig()'/>
+<doc f='codebrowser/src/server.h' l='1767'>/* Sentinel */</doc>
+<def f='codebrowser/src/sentinel.c' l='441' ll='443' type='void initSentinelConfig()'/>
+<doc f='codebrowser/src/sentinel.c' l='439'>/* This function overwrites a few normal Redis config default with Sentinel
+ * specific defaults. */</doc>
+<use f='codebrowser/src/server.c' l='3731' u='c' c='main'/>

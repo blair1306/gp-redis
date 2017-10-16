@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1852' type='void renamenxCommand(client * c)'/>
+<def f='codebrowser/src/db.c' l='875' ll='877' type='void renamenxCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='227' u='r'/>
+<use f='codebrowser/src/server.c' l='227' u='r'/>
+<use f='codebrowser/src/server.c' l='227' u='r'/>
+<use f='codebrowser/src/server.c' l='227' u='r'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1042' type='int'/>
+<offset>16416</offset>
+<doc f='codebrowser/src/server.h' l='1042'>/* of each slave in diskless SYNC. */</doc>
+<use f='codebrowser/src/rdb.c' l='1733' u='r' c='backgroundSaveDoneHandlerSocket'/>
+<use f='codebrowser/src/rdb.c' l='1742' u='r' c='backgroundSaveDoneHandlerSocket'/>
+<use f='codebrowser/src/rdb.c' l='1750' u='r' c='backgroundSaveDoneHandlerSocket'/>
+<use f='codebrowser/src/rdb.c' l='1830' u='w' c='rdbSaveToSlavesSockets'/>

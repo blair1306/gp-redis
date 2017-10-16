@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/endianconv.h' l='51'/>
+<use f='codebrowser/src/cluster.c' l='4643' u='c'/>
+<use f='codebrowser/src/cluster.c' l='4666' u='c'/>
+<use f='codebrowser/src/intset.c' l='62' u='c'/>
+<use f='codebrowser/src/intset.c' l='86' u='c'/>
+<use f='codebrowser/src/rdb.c' l='569' u='c'/>
+<use f='codebrowser/src/rdb.c' l='577' u='c'/>
+<use f='codebrowser/src/rdb.c' l='951' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1630' u='c'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='305' u='c'/>
+<use f='codebrowser/src/ziplist.c' l='528' u='c'/>
+<use f='codebrowser/src/ziplist.c' l='558' u='c'/>

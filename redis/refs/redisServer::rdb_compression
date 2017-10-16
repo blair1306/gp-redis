@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1031' type='int'/>
+<offset>15936</offset>
+<doc f='codebrowser/src/server.h' l='1031'>/* Use compression in RDB? */</doc>
+<use f='codebrowser/src/config.c' l='399' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='989' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1291' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1970' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/rdb.c' l='390' u='r' c='rdbSaveRawString'/>
+<use f='codebrowser/src/server.c' l='1404' u='w' c='initServerConfig'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/src/geohash_helper.c' l='54' type='const double'/>
+<use f='codebrowser/src/geohash_helper.c' l='65' u='r' c='geohashEstimateStepsByRadius'/>

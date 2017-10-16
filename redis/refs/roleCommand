@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1899' type='void roleCommand(client * c)'/>
+<def f='codebrowser/src/replication.c' l='2032' ll='2083' type='void roleCommand(client * c)'/>
+<doc f='codebrowser/src/replication.c' l='2029'>/* ROLE command: provide information about the role of the instance
+ * (master or slave) and additional information related to replication
+ * in an easy to process format. */</doc>
+<use f='codebrowser/src/server.c' l='260' u='r'/>
+<use f='codebrowser/src/server.c' l='260' u='r'/>
+<use f='codebrowser/src/server.c' l='260' u='r'/>
+<use f='codebrowser/src/server.c' l='260' u='r'/>

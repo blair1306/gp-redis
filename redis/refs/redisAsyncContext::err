@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='66' type='int'/>
+<use f='codebrowser/deps/hiredis/async.c' l='119' u='w' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='149' u='w' c='__redisAsyncCopyError'/>
+<use f='codebrowser/deps/hiredis/async.c' l='311' u='r' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='337' u='r' c='__redisAsyncDisconnect'/>
+<offset>1664</offset>
+<doc f='codebrowser/deps/hiredis/async.h' l='65'>/* Setup error flags so they can be used directly. */</doc>
+<use f='codebrowser/src/sentinel.c' l='1915' u='r' c='sentinelReconnectInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1938' u='r' c='sentinelReconnectInstance'/>

@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>redis-check-aof.c source code [codebrowser/src/redis-check-aof.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/src/redis-check-aof.c'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>src</a>/<a href='redis-check-aof.c.html'>redis-check-aof.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (c) 2009-2012, Pieter Noordhuis &lt;pcnoordhuis at gmail dot com&gt;</i></td></tr>
+<tr><th id="3">3</th><td><i> * Copyright (c) 2009-2012, Salvatore Sanfilippo &lt;antirez at gmail dot com&gt;</i></td></tr>
+<tr><th id="4">4</th><td><i> * All rights reserved.</i></td></tr>
+<tr><th id="5">5</th><td><i> *</i></td></tr>
+<tr><th id="6">6</th><td><i> * Redistribution and use in source and binary forms, with or without</i></td></tr>
+<tr><th id="7">7</th><td><i> * modification, are permitted provided that the following conditions are met:</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *   * Redistributions of source code must retain the above copyright notice,</i></td></tr>
+<tr><th id="10">10</th><td><i> *     this list of conditions and the following disclaimer.</i></td></tr>
+<tr><th id="11">11</th><td><i> *   * Redistributions in binary form must reproduce the above copyright</i></td></tr>
+<tr><th id="12">12</th><td><i> *     notice, this list of conditions and the following disclaimer in the</i></td></tr>
+<tr><th id="13">13</th><td><i> *     documentation and/or other materials provided with the distribution.</i></td></tr>
+<tr><th id="14">14</th><td><i> *   * Neither the name of Redis nor the names of its contributors may be used</i></td></tr>
+<tr><th id="15">15</th><td><i> *     to endorse or promote products derived from this software without</i></td></tr>
+<tr><th id="16">16</th><td><i> *     specific prior written permission.</i></td></tr>
+<tr><th id="17">17</th><td><i> *</i></td></tr>
+<tr><th id="18">18</th><td><i> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"</i></td></tr>
+<tr><th id="19">19</th><td><i> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</i></td></tr>
+<tr><th id="20">20</th><td><i> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</i></td></tr>
+<tr><th id="21">21</th><td><i> * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE</i></td></tr>
+<tr><th id="22">22</th><td><i> * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</i></td></tr>
+<tr><th id="23">23</th><td><i> * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</i></td></tr>
+<tr><th id="24">24</th><td><i> * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</i></td></tr>
+<tr><th id="25">25</th><td><i> * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</i></td></tr>
+<tr><th id="26">26</th><td><i> * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</i></td></tr>
+<tr><th id="27">27</th><td><i> * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</i></td></tr>
+<tr><th id="28">28</th><td><i> * POSSIBILITY OF SUCH DAMAGE.</i></td></tr>
+<tr><th id="29">29</th><td><i> */</i></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#include <a href="server.h.html">"server.h"</a></u></td></tr>
+<tr><th id="32">32</th><td><u>#include <a href="../../include/x86_64-linux-gnu/sys/stat.h.html">&lt;sys/stat.h&gt;</a></u></td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#define <dfn class="macro" id="_M/ERROR" data-ref="_M/ERROR">ERROR</dfn>(...) { \</u></td></tr>
+<tr><th id="35">35</th><td><u>    char <dfn class="local col2 decl" id="2__buf" title='__buf' data-type='char [1024]' data-ref="2__buf"><dfn class="local col8 decl" id="8__buf" title='__buf' data-type='char [1024]' data-ref="8__buf"><dfn class="local col3 decl" id="13__buf" title='__buf' data-type='char [1024]' data-ref="13__buf"><dfn class="local col5 decl" id="25__buf" title='__buf' data-type='char [1024]' data-ref="25__buf"><dfn class="local col6 decl" id="26__buf" title='__buf' data-type='char [1024]' data-ref="26__buf"><dfn class="local col7 decl" id="27__buf" title='__buf' data-type='char [1024]' data-ref="27__buf">__buf</dfn></dfn></dfn></dfn></dfn></dfn>[1024]; \</u></td></tr>
+<tr><th id="36">36</th><td><u>    <a class="ref" href="../../include/stdio.h.html#sprintf" title='sprintf' data-ref="sprintf">sprintf</a>(<a class="local col2 ref" href="#45" title='__buf' data-ref="2__buf"><a class="local col8 ref" href="#58" title='__buf' data-ref="8__buf"><a class="local col3 ref" href="#70" title='__buf' data-ref="13__buf"><a class="local col5 ref" href="#115" title='__buf' data-ref="25__buf"><a class="local col6 ref" href="#120" title='__buf' data-ref="26__buf"><a class="local col7 ref" href="#136" title='__buf' data-ref="27__buf">__buf</a></a></a></a></a></a>, __VA_ARGS__); \</u></td></tr>
+<tr><th id="37">37</th><td><u>    <a class="ref" href="../../include/stdio.h.html#sprintf" title='sprintf' data-ref="sprintf">sprintf</a>(<a class="tu ref" href="#error" title='error' data-use='r' data-ref="error">error</a>, "0x%16llx: %s", (long long)<a class="tu ref" href="#epos" title='epos' data-use='r' data-ref="epos">epos</a>, <a class="local col2 ref" href="#45" title='__buf' data-ref="2__buf"><a class="local col8 ref" href="#58" title='__buf' data-ref="8__buf"><a class="local col3 ref" href="#70" title='__buf' data-ref="13__buf"><a class="local col5 ref" href="#115" title='__buf' data-ref="25__buf"><a class="local col6 ref" href="#120" title='__buf' data-ref="26__buf"><a class="local col7 ref" href="#136" title='__buf' data-ref="27__buf">__buf</a></a></a></a></a></a>); \</u></td></tr>
+<tr><th id="38">38</th><td><u>}</u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><em>static</em> <em>char</em> <dfn class="tu decl def" id="error" title='error' data-type='char [1024]' data-ref="error">error</dfn>[<var>1024</var>];</td></tr>
+<tr><th id="41">41</th><td><em>static</em> <a class="typedef" href="../../include/x86_64-linux-gnu/sys/types.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="tu decl def" id="epos" title='epos' data-type='off_t' data-ref="epos">epos</dfn>;</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><em>int</em> <dfn class="decl def" id="consumeNewline" title='consumeNewline' data-ref="consumeNewline">consumeNewline</dfn>(<em>char</em> *<dfn class="local col1 decl" id="1buf" title='buf' data-type='char *' data-ref="1buf">buf</dfn>) {</td></tr>
+<tr><th id="44">44</th><td>    <b>if</b> (<a class="macro" href="../../include/x86_64-linux-gnu/bits/string2.h.html#896" title="(__extension__ (__builtin_constant_p (2) &amp;&amp; ((__builtin_constant_p (buf) &amp;&amp; strlen (buf) &lt; ((size_t) (2))) || (__builtin_constant_p (&quot;\r\n&quot;) &amp;&amp; strlen (&quot;\r\n&quot;) &lt; ((size_t) (2)))) ? __extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (buf) &amp;&amp; __builtin_constant_p (&quot;\r\n&quot;) &amp;&amp; (__s1_len = __builtin_strlen (buf), __s2_len = __builtin_strlen (&quot;\r\n&quot;), (!((size_t)(const void *)((buf) + 1) - (size_t)(const void *)(buf) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;\r\n&quot;) + 1) - (size_t)(const void *)(&quot;\r\n&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (buf, &quot;\r\n&quot;) : (__builtin_constant_p (buf) &amp;&amp; ((size_t)(const void *)((buf) + 1) - (size_t)(const void *)(buf) == 1) &amp;&amp; (__s1_len = __builtin_strlen (buf), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;\r\n&quot;) &amp;&amp; ((size_t)(const void *)((&quot;\r\n&quot;) + 1) - (size_t)(const void *)(&quot;\r\n&quot;) == 1) ? __builtin_strcmp (buf, &quot;\r\n&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;\r\n&quot;); int __result = (((const unsigned char *) (const char *) (buf))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (buf))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (buf))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (buf))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;\r\n&quot;) &amp;&amp; ((size_t)(const void *)((&quot;\r\n&quot;) + 1) - (size_t)(const void *)(&quot;\r\n&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;\r\n&quot;), __s2_len &lt; 4) ? (__builtin_constant_p (buf) &amp;&amp; ((size_t)(const void *)((buf) + 1) - (size_t)(const void *)(buf) == 1) ? __builtin_strcmp (buf, &quot;\r\n&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (buf); int __result = (((const unsigned char *) (const char *) (&quot;\r\n&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;\r\n&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;\r\n&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;\r\n&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (buf, &quot;\r\n&quot;)))); }) : strncmp (buf, &quot;\r\n&quot;, 2)))" data-ref="_M/strncmp">strncmp</a>(<a class="local col1 ref" href="#1buf" title='buf' data-ref="1buf">buf</a>,<q>"\r\n"</q>,<var>2</var>) != <var>0</var>) {</td></tr>
+<tr><th id="45">45</th><td>        <a class="macro" href="#34" title="{ char __buf[1024]; sprintf(__buf, &quot;Expected \\r\\n, got: %02x%02x&quot;,buf[0],buf[1]); sprintf(error, &quot;0x%16llx: %s&quot;, (long long)epos, __buf); }" data-ref="_M/ERROR">ERROR</a>(<q>"Expected \\r\\n, got: %02x%02x"</q>,<a class="local col1 ref" href="#1buf" title='buf' data-ref="1buf">buf</a>[<var>0</var>],<a class="local col1 ref" href="#1buf" title='buf' data-ref="1buf">buf</a>[<var>1</var>]);</td></tr>
+<tr><th id="46">46</th><td>        <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="47">47</th><td>    }</td></tr>
+<tr><th id="48">48</th><td>    <b>return</b> <var>1</var>;</td></tr>
+<tr><th id="49">49</th><td>}</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><em>int</em> <dfn class="decl def" id="readLong" title='readLong' data-ref="readLong">readLong</dfn>(<a class="typedef" href="../../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col3 decl" id="3fp" title='fp' data-type='FILE *' data-ref="3fp">fp</dfn>, <em>char</em> <dfn class="local col4 decl" id="4prefix" title='prefix' data-type='char' data-ref="4prefix">prefix</dfn>, <em>long</em> *<dfn class="local col5 decl" id="5target" title='target' data-type='long *' data-ref="5target">target</dfn>) {</td></tr>
+<tr><th id="52">52</th><td>    <em>char</em> <dfn class="local col6 decl" id="6buf" title='buf' data-type='char [128]' data-ref="6buf">buf</dfn>[<var>128</var>], *<dfn class="local col7 decl" id="7eptr" title='eptr' data-type='char *' data-ref="7eptr">eptr</dfn>;</td></tr>
+<tr><th id="53">53</th><td>    <a class="tu ref" href="#epos" title='epos' data-use='w' data-ref="epos">epos</a> = <a class="ref" href="../../include/stdio.h.html#784" title='ftello' data-ref="ftello64">ftello</a>(<a class="local col3 ref" href="#3fp" title='fp' data-ref="3fp">fp</a>);</td></tr>
+<tr><th id="54">54</th><td>    <b>if</b> (<a class="ref" href="../../include/stdio.h.html#fgets" title='fgets' data-ref="fgets">fgets</a>(<a class="local col6 ref" href="#6buf" title='buf' data-ref="6buf">buf</a>,<b>sizeof</b>(<a class="local col6 ref" href="#6buf" title='buf' data-ref="6buf">buf</a>),<a class="local col3 ref" href="#3fp" title='fp' data-ref="3fp">fp</a>) == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="55">55</th><td>        <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="56">56</th><td>    }</td></tr>
+<tr><th id="57">57</th><td>    <b>if</b> (<a class="local col6 ref" href="#6buf" title='buf' data-ref="6buf">buf</a>[<var>0</var>] != <a class="local col4 ref" href="#4prefix" title='prefix' data-ref="4prefix">prefix</a>) {</td></tr>
+<tr><th id="58">58</th><td>        <a class="macro" href="#34" title="{ char __buf[1024]; sprintf(__buf, &quot;Expected prefix &apos;%c&apos;, got: &apos;%c&apos;&quot;,prefix,buf[0]); sprintf(error, &quot;0x%16llx: %s&quot;, (long long)epos, __buf); }" data-ref="_M/ERROR">ERROR</a>(<q>"Expected prefix '%c', got: '%c'"</q>,<a class="local col4 ref" href="#4prefix" title='prefix' data-ref="4prefix">prefix</a>,<a class="local col6 ref" href="#6buf" title='buf' data-ref="6buf">buf</a>[<var>0</var>]);</td></tr>
+<tr><th id="59">59</th><td>        <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="60">60</th><td>    }</td></tr>
+<tr><th id="61">61</th><td>    *<a class="local col5 ref" href="#5target" title='target' data-ref="5target">target</a> = <a class="ref" href="../../include/stdlib.h.html#strtol" title='strtol' data-ref="strtol">strtol</a>(<a class="local col6 ref" href="#6buf" title='buf' data-ref="6buf">buf</a>+<var>1</var>,&amp;<a class="local col7 ref" href="#7eptr" title='eptr' data-ref="7eptr">eptr</a>,<var>10</var>);</td></tr>
+<tr><th id="62">62</th><td>    <b>return</b> <a class="ref" href="#consumeNewline" title='consumeNewline' data-ref="consumeNewline">consumeNewline</a>(<a class="local col7 ref" href="#7eptr" title='eptr' data-ref="7eptr">eptr</a>);</td></tr>
+<tr><th id="63">63</th><td>}</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><em>int</em> <dfn class="decl def" id="readBytes" title='readBytes' data-ref="readBytes">readBytes</dfn>(<a class="typedef" href="../../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col9 decl" id="9fp" title='fp' data-type='FILE *' data-ref="9fp">fp</dfn>, <em>char</em> *<dfn class="local col0 decl" id="10target" title='target' data-type='char *' data-ref="10target">target</dfn>, <em>long</em> <dfn class="local col1 decl" id="11length" title='length' data-type='long' data-ref="11length">length</dfn>) {</td></tr>
+<tr><th id="66">66</th><td>    <em>long</em> <dfn class="local col2 decl" id="12real" title='real' data-type='long' data-ref="12real">real</dfn>;</td></tr>
+<tr><th id="67">67</th><td>    <a class="tu ref" href="#epos" title='epos' data-use='w' data-ref="epos">epos</a> = <a class="ref" href="../../include/stdio.h.html#784" title='ftello' data-ref="ftello64">ftello</a>(<a class="local col9 ref" href="#9fp" title='fp' data-ref="9fp">fp</a>);</td></tr>
+<tr><th id="68">68</th><td>    <a class="local col2 ref" href="#12real" title='real' data-ref="12real">real</a> = <a class="ref" href="../../include/stdio.h.html#fread" title='fread' data-ref="fread">fread</a>(<a class="local col0 ref" href="#10target" title='target' data-ref="10target">target</a>,<var>1</var>,<a class="local col1 ref" href="#11length" title='length' data-ref="11length">length</a>,<a class="local col9 ref" href="#9fp" title='fp' data-ref="9fp">fp</a>);</td></tr>
+<tr><th id="69">69</th><td>    <b>if</b> (<a class="local col2 ref" href="#12real" title='real' data-ref="12real">real</a> != <a class="local col1 ref" href="#11length" title='length' data-ref="11length">length</a>) {</td></tr>
+<tr><th id="70">70</th><td>        <a class="macro" href="#34" title="{ char __buf[1024]; sprintf(__buf, &quot;Expected to read %ld bytes, got %ld bytes&quot;,length,real); sprintf(error, &quot;0x%16llx: %s&quot;, (long long)epos, __buf); }" data-ref="_M/ERROR">ERROR</a>(<q>"Expected to read %ld bytes, got %ld bytes"</q>,<a class="local col1 ref" href="#11length" title='length' data-ref="11length">length</a>,<a class="local col2 ref" href="#12real" title='real' data-ref="12real">real</a>);</td></tr>
+<tr><th id="71">71</th><td>        <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="72">72</th><td>    }</td></tr>
+<tr><th id="73">73</th><td>    <b>return</b> <var>1</var>;</td></tr>
+<tr><th id="74">74</th><td>}</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><em>int</em> <dfn class="decl def" id="readString" title='readString' data-ref="readString">readString</dfn>(<a class="typedef" href="../../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col4 decl" id="14fp" title='fp' data-type='FILE *' data-ref="14fp">fp</dfn>, <em>char</em>** <dfn class="local col5 decl" id="15target" title='target' data-type='char **' data-ref="15target">target</dfn>) {</td></tr>
+<tr><th id="77">77</th><td>    <em>long</em> <dfn class="local col6 decl" id="16len" title='len' data-type='long' data-ref="16len">len</dfn>;</td></tr>
+<tr><th id="78">78</th><td>    *<a class="local col5 ref" href="#15target" title='target' data-ref="15target">target</a> = <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="79">79</th><td>    <b>if</b> (!<a class="ref" href="#readLong" title='readLong' data-ref="readLong">readLong</a>(<a class="local col4 ref" href="#14fp" title='fp' data-ref="14fp">fp</a>,<kbd>'$'</kbd>,&amp;<a class="local col6 ref" href="#16len" title='len' data-ref="16len">len</a>)) {</td></tr>
+<tr><th id="80">80</th><td>        <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="81">81</th><td>    }</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td>    <i>/* Increase length to also consume \r\n */</i></td></tr>
+<tr><th id="84">84</th><td>    <a class="local col6 ref" href="#16len" title='len' data-ref="16len">len</a> += <var>2</var>;</td></tr>
+<tr><th id="85">85</th><td>    *<a class="local col5 ref" href="#15target" title='target' data-ref="15target">target</a> = (<em>char</em>*)<a class="ref" href="zmalloc.h.html#zmalloc" title='zmalloc' data-ref="zmalloc">zmalloc</a>(<a class="local col6 ref" href="#16len" title='len' data-ref="16len">len</a>);</td></tr>
+<tr><th id="86">86</th><td>    <b>if</b> (!<a class="ref" href="#readBytes" title='readBytes' data-ref="readBytes">readBytes</a>(<a class="local col4 ref" href="#14fp" title='fp' data-ref="14fp">fp</a>,*<a class="local col5 ref" href="#15target" title='target' data-ref="15target">target</a>,<a class="local col6 ref" href="#16len" title='len' data-ref="16len">len</a>)) {</td></tr>
+<tr><th id="87">87</th><td>        <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="88">88</th><td>    }</td></tr>
+<tr><th id="89">89</th><td>    <b>if</b> (!<a class="ref" href="#consumeNewline" title='consumeNewline' data-ref="consumeNewline">consumeNewline</a>(*<a class="local col5 ref" href="#15target" title='target' data-ref="15target">target</a>+<a class="local col6 ref" href="#16len" title='len' data-ref="16len">len</a>-<var>2</var>)) {</td></tr>
+<tr><th id="90">90</th><td>        <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="91">91</th><td>    }</td></tr>
+<tr><th id="92">92</th><td>    (*<a class="local col5 ref" href="#15target" title='target' data-ref="15target">target</a>)[<a class="local col6 ref" href="#16len" title='len' data-ref="16len">len</a>-<var>2</var>] = <kbd>'\0'</kbd>;</td></tr>
+<tr><th id="93">93</th><td>    <b>return</b> <var>1</var>;</td></tr>
+<tr><th id="94">94</th><td>}</td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><em>int</em> <dfn class="decl def" id="readArgc" title='readArgc' data-ref="readArgc">readArgc</dfn>(<a class="typedef" href="../../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col7 decl" id="17fp" title='fp' data-type='FILE *' data-ref="17fp">fp</dfn>, <em>long</em> *<dfn class="local col8 decl" id="18target" title='target' data-type='long *' data-ref="18target">target</dfn>) {</td></tr>
+<tr><th id="97">97</th><td>    <b>return</b> <a class="ref" href="#readLong" title='readLong' data-ref="readLong">readLong</a>(<a class="local col7 ref" href="#17fp" title='fp' data-ref="17fp">fp</a>,<kbd>'*'</kbd>,<a class="local col8 ref" href="#18target" title='target' data-ref="18target">target</a>);</td></tr>
+<tr><th id="98">98</th><td>}</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><a class="typedef" href="../../include/x86_64-linux-gnu/sys/types.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="decl def" id="process" title='process' data-ref="process">process</dfn>(<a class="typedef" href="../../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col9 decl" id="19fp" title='fp' data-type='FILE *' data-ref="19fp">fp</dfn>) {</td></tr>
+<tr><th id="101">101</th><td>    <em>long</em> <dfn class="local col0 decl" id="20argc" title='argc' data-type='long' data-ref="20argc">argc</dfn>;</td></tr>
+<tr><th id="102">102</th><td>    <a class="typedef" href="../../include/x86_64-linux-gnu/sys/types.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col1 decl" id="21pos" title='pos' data-type='off_t' data-ref="21pos">pos</dfn> = <var>0</var>;</td></tr>
+<tr><th id="103">103</th><td>    <em>int</em> <dfn class="local col2 decl" id="22i" title='i' data-type='int' data-ref="22i">i</dfn>, <dfn class="local col3 decl" id="23multi" title='multi' data-type='int' data-ref="23multi">multi</dfn> = <var>0</var>;</td></tr>
+<tr><th id="104">104</th><td>    <em>char</em> *<dfn class="local col4 decl" id="24str" title='str' data-type='char *' data-ref="24str">str</dfn>;</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td>    <b>while</b>(<var>1</var>) {</td></tr>
+<tr><th id="107">107</th><td>        <b>if</b> (!<a class="local col3 ref" href="#23multi" title='multi' data-ref="23multi">multi</a>) <a class="local col1 ref" href="#21pos" title='pos' data-ref="21pos">pos</a> = <a class="ref" href="../../include/stdio.h.html#784" title='ftello' data-ref="ftello64">ftello</a>(<a class="local col9 ref" href="#19fp" title='fp' data-ref="19fp">fp</a>);</td></tr>
+<tr><th id="108">108</th><td>        <b>if</b> (!<a class="ref" href="#readArgc" title='readArgc' data-ref="readArgc">readArgc</a>(<a class="local col9 ref" href="#19fp" title='fp' data-ref="19fp">fp</a>, &amp;<a class="local col0 ref" href="#20argc" title='argc' data-ref="20argc">argc</a>)) <b>break</b>;</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td>        <b>for</b> (<a class="local col2 ref" href="#22i" title='i' data-ref="22i">i</a> = <var>0</var>; <a class="local col2 ref" href="#22i" title='i' data-ref="22i">i</a> &lt; <a class="local col0 ref" href="#20argc" title='argc' data-ref="20argc">argc</a>; <a class="local col2 ref" href="#22i" title='i' data-ref="22i">i</a>++) {</td></tr>
+<tr><th id="111">111</th><td>            <b>if</b> (!<a class="ref" href="#readString" title='readString' data-ref="readString">readString</a>(<a class="local col9 ref" href="#19fp" title='fp' data-ref="19fp">fp</a>,&amp;<a class="local col4 ref" href="#24str" title='str' data-ref="24str">str</a>)) <b>break</b>;</td></tr>
+<tr><th id="112">112</th><td>            <b>if</b> (<a class="local col2 ref" href="#22i" title='i' data-ref="22i">i</a> == <var>0</var>) {</td></tr>
+<tr><th id="113">113</th><td>                <b>if</b> (<a class="ref" href="../../include/string.h.html#strcasecmp" title='strcasecmp' data-ref="strcasecmp">strcasecmp</a>(<a class="local col4 ref" href="#24str" title='str' data-ref="24str">str</a>, <q>"multi"</q>) == <var>0</var>) {</td></tr>
+<tr><th id="114">114</th><td>                    <b>if</b> (<a class="local col3 ref" href="#23multi" title='multi' data-ref="23multi">multi</a>++) {</td></tr>
+<tr><th id="115">115</th><td>                        <a class="macro" href="#34" title="{ char __buf[1024]; sprintf(__buf, &quot;Unexpected MULTI&quot;); sprintf(error, &quot;0x%16llx: %s&quot;, (long long)epos, __buf); }" data-ref="_M/ERROR">ERROR</a>(<q>"Unexpected MULTI"</q>);</td></tr>
+<tr><th id="116">116</th><td>                        <b>break</b>;</td></tr>
+<tr><th id="117">117</th><td>                    }</td></tr>
+<tr><th id="118">118</th><td>                } <b>else</b> <b>if</b> (<a class="ref" href="../../include/string.h.html#strcasecmp" title='strcasecmp' data-ref="strcasecmp">strcasecmp</a>(<a class="local col4 ref" href="#24str" title='str' data-ref="24str">str</a>, <q>"exec"</q>) == <var>0</var>) {</td></tr>
+<tr><th id="119">119</th><td>                    <b>if</b> (--<a class="local col3 ref" href="#23multi" title='multi' data-ref="23multi">multi</a>) {</td></tr>
+<tr><th id="120">120</th><td>                        <a class="macro" href="#34" title="{ char __buf[1024]; sprintf(__buf, &quot;Unexpected EXEC&quot;); sprintf(error, &quot;0x%16llx: %s&quot;, (long long)epos, __buf); }" data-ref="_M/ERROR">ERROR</a>(<q>"Unexpected EXEC"</q>);</td></tr>
+<tr><th id="121">121</th><td>                        <b>break</b>;</td></tr>
+<tr><th id="122">122</th><td>                    }</td></tr>
+<tr><th id="123">123</th><td>                }</td></tr>
+<tr><th id="124">124</th><td>            }</td></tr>
+<tr><th id="125">125</th><td>            <a class="ref" href="zmalloc.h.html#zfree" title='zfree' data-ref="zfree">zfree</a>(<a class="local col4 ref" href="#24str" title='str' data-ref="24str">str</a>);</td></tr>
+<tr><th id="126">126</th><td>        }</td></tr>
+<tr><th id="127">127</th><td></td></tr>
+<tr><th id="128">128</th><td>        <i>/* Stop if the loop did not finish */</i></td></tr>
+<tr><th id="129">129</th><td>        <b>if</b> (<a class="local col2 ref" href="#22i" title='i' data-ref="22i">i</a> &lt; <a class="local col0 ref" href="#20argc" title='argc' data-ref="20argc">argc</a>) {</td></tr>
+<tr><th id="130">130</th><td>            <b>if</b> (<a class="local col4 ref" href="#24str" title='str' data-ref="24str">str</a>) <a class="ref" href="zmalloc.h.html#zfree" title='zfree' data-ref="zfree">zfree</a>(<a class="local col4 ref" href="#24str" title='str' data-ref="24str">str</a>);</td></tr>
+<tr><th id="131">131</th><td>            <b>break</b>;</td></tr>
+<tr><th id="132">132</th><td>        }</td></tr>
+<tr><th id="133">133</th><td>    }</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td>    <b>if</b> (<a class="ref" href="../../include/stdio.h.html#feof" title='feof' data-ref="feof">feof</a>(<a class="local col9 ref" href="#19fp" title='fp' data-ref="19fp">fp</a>) &amp;&amp; <a class="local col3 ref" href="#23multi" title='multi' data-ref="23multi">multi</a> &amp;&amp; <a class="ref" href="../../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="tu ref" href="#error" title='error' data-use='r' data-ref="error">error</a>) == <var>0</var>) {</td></tr>
+<tr><th id="136">136</th><td>        <a class="macro" href="#34" title="{ char __buf[1024]; sprintf(__buf, &quot;Reached EOF before reading EXEC for MULTI&quot;); sprintf(error, &quot;0x%16llx: %s&quot;, (long long)epos, __buf); }" data-ref="_M/ERROR">ERROR</a>(<q>"Reached EOF before reading EXEC for MULTI"</q>);</td></tr>
+<tr><th id="137">137</th><td>    }</td></tr>
+<tr><th id="138">138</th><td>    <b>if</b> (<a class="ref" href="../../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="tu ref" href="#error" title='error' data-use='r' data-ref="error">error</a>) &gt; <var>0</var>) {</td></tr>
+<tr><th id="139">139</th><td>        <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"%s\n"</q>, <a class="tu ref" href="#error" title='error' data-ref="error">error</a>);</td></tr>
+<tr><th id="140">140</th><td>    }</td></tr>
+<tr><th id="141">141</th><td>    <b>return</b> <a class="local col1 ref" href="#21pos" title='pos' data-ref="21pos">pos</a>;</td></tr>
+<tr><th id="142">142</th><td>}</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td><em>int</em> <dfn class="decl def" id="redis_check_aof_main" title='redis_check_aof_main' data-ref="redis_check_aof_main">redis_check_aof_main</dfn>(<em>int</em> <dfn class="local col8 decl" id="28argc" title='argc' data-type='int' data-ref="28argc">argc</dfn>, <em>char</em> **<dfn class="local col9 decl" id="29argv" title='argv' data-type='char **' data-ref="29argv">argv</dfn>) {</td></tr>
+<tr><th id="145">145</th><td>    <em>char</em> *<dfn class="local col0 decl" id="30filename" title='filename' data-type='char *' data-ref="30filename">filename</dfn>;</td></tr>
+<tr><th id="146">146</th><td>    <em>int</em> <dfn class="local col1 decl" id="31fix" title='fix' data-type='int' data-ref="31fix">fix</dfn> = <var>0</var>;</td></tr>
+<tr><th id="147">147</th><td></td></tr>
+<tr><th id="148">148</th><td>    <b>if</b> (<a class="local col8 ref" href="#28argc" title='argc' data-ref="28argc">argc</a> &lt; <var>2</var>) {</td></tr>
+<tr><th id="149">149</th><td>        <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"Usage: %s [--fix] &lt;file.aof&gt;\n"</q>, <a class="local col9 ref" href="#29argv" title='argv' data-ref="29argv">argv</a>[<var>0</var>]);</td></tr>
+<tr><th id="150">150</th><td>        <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>1</var>);</td></tr>
+<tr><th id="151">151</th><td>    } <b>else</b> <b>if</b> (<a class="local col8 ref" href="#28argc" title='argc' data-ref="28argc">argc</a> == <var>2</var>) {</td></tr>
+<tr><th id="152">152</th><td>        <a class="local col0 ref" href="#30filename" title='filename' data-ref="30filename">filename</a> = <a class="local col9 ref" href="#29argv" title='argv' data-ref="29argv">argv</a>[<var>1</var>];</td></tr>
+<tr><th id="153">153</th><td>    } <b>else</b> <b>if</b> (<a class="local col8 ref" href="#28argc" title='argc' data-ref="28argc">argc</a> == <var>3</var>) {</td></tr>
+<tr><th id="154">154</th><td>        <b>if</b> (<a class="macro" href="../../include/x86_64-linux-gnu/bits/string2.h.html#799" title="__extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (argv[1]) &amp;&amp; __builtin_constant_p (&quot;--fix&quot;) &amp;&amp; (__s1_len = __builtin_strlen (argv[1]), __s2_len = __builtin_strlen (&quot;--fix&quot;), (!((size_t)(const void *)((argv[1]) + 1) - (size_t)(const void *)(argv[1]) == 1) || __s1_len &gt;= 4) &amp;&amp; (!((size_t)(const void *)((&quot;--fix&quot;) + 1) - (size_t)(const void *)(&quot;--fix&quot;) == 1) || __s2_len &gt;= 4)) ? __builtin_strcmp (argv[1], &quot;--fix&quot;) : (__builtin_constant_p (argv[1]) &amp;&amp; ((size_t)(const void *)((argv[1]) + 1) - (size_t)(const void *)(argv[1]) == 1) &amp;&amp; (__s1_len = __builtin_strlen (argv[1]), __s1_len &lt; 4) ? (__builtin_constant_p (&quot;--fix&quot;) &amp;&amp; ((size_t)(const void *)((&quot;--fix&quot;) + 1) - (size_t)(const void *)(&quot;--fix&quot;) == 1) ? __builtin_strcmp (argv[1], &quot;--fix&quot;) : (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (&quot;--fix&quot;); int __result = (((const unsigned char *) (const char *) (argv[1]))[0] - __s2[0]); if (__s1_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (argv[1]))[1] - __s2[1]); if (__s1_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (argv[1]))[2] - __s2[2]); if (__s1_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (argv[1]))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (&quot;--fix&quot;) &amp;&amp; ((size_t)(const void *)((&quot;--fix&quot;) + 1) - (size_t)(const void *)(&quot;--fix&quot;) == 1) &amp;&amp; (__s2_len = __builtin_strlen (&quot;--fix&quot;), __s2_len &lt; 4) ? (__builtin_constant_p (argv[1]) &amp;&amp; ((size_t)(const void *)((argv[1]) + 1) - (size_t)(const void *)(argv[1]) == 1) ? __builtin_strcmp (argv[1], &quot;--fix&quot;) : (- (__extension__ ({ const unsigned char *__s2 = (const unsigned char *) (const char *) (argv[1]); int __result = (((const unsigned char *) (const char *) (&quot;--fix&quot;))[0] - __s2[0]); if (__s2_len &gt; 0 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;--fix&quot;))[1] - __s2[1]); if (__s2_len &gt; 1 &amp;&amp; __result == 0) { __result = (((const unsigned char *) (const char *) (&quot;--fix&quot;))[2] - __s2[2]); if (__s2_len &gt; 2 &amp;&amp; __result == 0) __result = (((const unsigned char *) (const char *) (&quot;--fix&quot;))[3] - __s2[3]); } } __result; })))) : __builtin_strcmp (argv[1], &quot;--fix&quot;)))); })" data-ref="_M/strcmp">strcmp</a>(<a class="local col9 ref" href="#29argv" title='argv' data-ref="29argv">argv</a>[<var>1</var>],<q>"--fix"</q>) != <var>0</var>) {</td></tr>
+<tr><th id="155">155</th><td>            <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"Invalid argument: %s\n"</q>, <a class="local col9 ref" href="#29argv" title='argv' data-ref="29argv">argv</a>[<var>1</var>]);</td></tr>
+<tr><th id="156">156</th><td>            <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>1</var>);</td></tr>
+<tr><th id="157">157</th><td>        }</td></tr>
+<tr><th id="158">158</th><td>        <a class="local col0 ref" href="#30filename" title='filename' data-ref="30filename">filename</a> = <a class="local col9 ref" href="#29argv" title='argv' data-ref="29argv">argv</a>[<var>2</var>];</td></tr>
+<tr><th id="159">159</th><td>        <a class="local col1 ref" href="#31fix" title='fix' data-ref="31fix">fix</a> = <var>1</var>;</td></tr>
+<tr><th id="160">160</th><td>    } <b>else</b> {</td></tr>
+<tr><th id="161">161</th><td>        <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"Invalid arguments\n"</q>);</td></tr>
+<tr><th id="162">162</th><td>        <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>1</var>);</td></tr>
+<tr><th id="163">163</th><td>    }</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td>    <a class="typedef" href="../../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="local col2 decl" id="32fp" title='fp' data-type='FILE *' data-ref="32fp">fp</dfn> = <a class="ref" href="../../include/stdio.h.html#283" title='fopen' data-ref="fopen64">fopen</a>(<a class="local col0 ref" href="#30filename" title='filename' data-ref="30filename">filename</a>,<q>"r+"</q>);</td></tr>
+<tr><th id="166">166</th><td>    <b>if</b> (<a class="local col2 ref" href="#32fp" title='fp' data-ref="32fp">fp</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="167">167</th><td>        <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"Cannot open file: %s\n"</q>, <a class="local col0 ref" href="#30filename" title='filename' data-ref="30filename">filename</a>);</td></tr>
+<tr><th id="168">168</th><td>        <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>1</var>);</td></tr>
+<tr><th id="169">169</th><td>    }</td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td>    <b>struct</b> <a class="macro" href="config.h.html#48" title="stat" data-ref="_M/redis_stat">redis_stat</a> <dfn class="local col3 decl" id="33sb" title='sb' data-type='struct stat' data-ref="33sb">sb</dfn>;</td></tr>
+<tr><th id="172">172</th><td>    <b>if</b> (<a class="macro" href="config.h.html#47" title="fstat" data-ref="_M/redis_fstat">redis_fstat</a>(<a class="ref" href="../../include/stdio.h.html#fileno" title='fileno' data-ref="fileno">fileno</a>(<a class="local col2 ref" href="#32fp" title='fp' data-ref="32fp">fp</a>),&amp;<a class="local col3 ref" href="#33sb" title='sb' data-ref="33sb">sb</a>) == -<var>1</var>) {</td></tr>
+<tr><th id="173">173</th><td>        <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"Cannot stat file: %s\n"</q>, <a class="local col0 ref" href="#30filename" title='filename' data-ref="30filename">filename</a>);</td></tr>
+<tr><th id="174">174</th><td>        <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>1</var>);</td></tr>
+<tr><th id="175">175</th><td>    }</td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td>    <a class="typedef" href="../../include/x86_64-linux-gnu/sys/types.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col4 decl" id="34size" title='size' data-type='off_t' data-ref="34size">size</dfn> = <a class="local col3 ref" href="#33sb" title='sb' data-ref="33sb">sb</a>.<a class="ref" href="../../include/x86_64-linux-gnu/bits/stat.h.html#stat::st_size" title='stat::st_size' data-ref="stat::st_size">st_size</a>;</td></tr>
+<tr><th id="178">178</th><td>    <b>if</b> (<a class="local col4 ref" href="#34size" title='size' data-ref="34size">size</a> == <var>0</var>) {</td></tr>
+<tr><th id="179">179</th><td>        <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"Empty file: %s\n"</q>, <a class="local col0 ref" href="#30filename" title='filename' data-ref="30filename">filename</a>);</td></tr>
+<tr><th id="180">180</th><td>        <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>1</var>);</td></tr>
+<tr><th id="181">181</th><td>    }</td></tr>
+<tr><th id="182">182</th><td></td></tr>
+<tr><th id="183">183</th><td>    <i>/* This AOF file may have an RDB preamble. Check this to start, and if this</i></td></tr>
+<tr><th id="184">184</th><td><i>     * is the case, start processing the RDB part. */</i></td></tr>
+<tr><th id="185">185</th><td>    <b>if</b> (<a class="local col4 ref" href="#34size" title='size' data-ref="34size">size</a> &gt;= <var>8</var>) {    <i>/* There must be at least room for the RDB header. */</i></td></tr>
+<tr><th id="186">186</th><td>        <em>char</em> <dfn class="local col5 decl" id="35sig" title='sig' data-type='char [5]' data-ref="35sig">sig</dfn>[<var>5</var>];</td></tr>
+<tr><th id="187">187</th><td>        <em>int</em> <dfn class="local col6 decl" id="36has_preamble" title='has_preamble' data-type='int' data-ref="36has_preamble">has_preamble</dfn> = <a class="ref" href="../../include/stdio.h.html#fread" title='fread' data-ref="fread">fread</a>(<a class="local col5 ref" href="#35sig" title='sig' data-ref="35sig">sig</a>,<b>sizeof</b>(<a class="local col5 ref" href="#35sig" title='sig' data-ref="35sig">sig</a>),<var>1</var>,<a class="local col2 ref" href="#32fp" title='fp' data-ref="32fp">fp</a>) == <var>1</var> &amp;&amp;</td></tr>
+<tr><th id="188">188</th><td>                            <a class="ref" href="../../include/string.h.html#memcmp" title='memcmp' data-ref="memcmp">memcmp</a>(<a class="local col5 ref" href="#35sig" title='sig' data-ref="35sig">sig</a>,<q>"REDIS"</q>,<b>sizeof</b>(<a class="local col5 ref" href="#35sig" title='sig' data-ref="35sig">sig</a>)) == <var>0</var>;</td></tr>
+<tr><th id="189">189</th><td>        <a class="ref" href="../../include/stdio.h.html#rewind" title='rewind' data-ref="rewind">rewind</a>(<a class="local col2 ref" href="#32fp" title='fp' data-ref="32fp">fp</a>);</td></tr>
+<tr><th id="190">190</th><td>        <b>if</b> (<a class="local col6 ref" href="#36has_preamble" title='has_preamble' data-ref="36has_preamble">has_preamble</a>) {</td></tr>
+<tr><th id="191">191</th><td>            <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"The AOF appears to start with an RDB preamble.\n"</q></td></tr>
+<tr><th id="192">192</th><td>                   <q>"Checking the RDB preamble to start:\n"</q>);</td></tr>
+<tr><th id="193">193</th><td>            <b>if</b> (<a class="ref" href="server.h.html#redis_check_rdb_main" title='redis_check_rdb_main' data-ref="redis_check_rdb_main">redis_check_rdb_main</a>(<a class="local col8 ref" href="#28argc" title='argc' data-ref="28argc">argc</a>,<a class="local col9 ref" href="#29argv" title='argv' data-ref="29argv">argv</a>,<a class="local col2 ref" href="#32fp" title='fp' data-ref="32fp">fp</a>) == <a class="macro" href="server.h.html#78" title="-1" data-ref="_M/C_ERR">C_ERR</a>) {</td></tr>
+<tr><th id="194">194</th><td>                <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"RDB preamble of AOF file is not sane, aborting.\n"</q>);</td></tr>
+<tr><th id="195">195</th><td>                <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>1</var>);</td></tr>
+<tr><th id="196">196</th><td>            } <b>else</b> {</td></tr>
+<tr><th id="197">197</th><td>                <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"RDB preamble is OK, proceeding with AOF tail...\n"</q>);</td></tr>
+<tr><th id="198">198</th><td>            }</td></tr>
+<tr><th id="199">199</th><td>        }</td></tr>
+<tr><th id="200">200</th><td>    }</td></tr>
+<tr><th id="201">201</th><td></td></tr>
+<tr><th id="202">202</th><td>    <a class="typedef" href="../../include/x86_64-linux-gnu/sys/types.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col7 decl" id="37pos" title='pos' data-type='off_t' data-ref="37pos">pos</dfn> = <a class="ref" href="#process" title='process' data-ref="process">process</a>(<a class="local col2 ref" href="#32fp" title='fp' data-ref="32fp">fp</a>);</td></tr>
+<tr><th id="203">203</th><td>    <a class="typedef" href="../../include/x86_64-linux-gnu/sys/types.h.html#off_t" title='off_t' data-type='__off64_t' data-ref="off_t">off_t</a> <dfn class="local col8 decl" id="38diff" title='diff' data-type='off_t' data-ref="38diff">diff</dfn> = <a class="local col4 ref" href="#34size" title='size' data-ref="34size">size</a>-<a class="local col7 ref" href="#37pos" title='pos' data-ref="37pos">pos</a>;</td></tr>
+<tr><th id="204">204</th><td>    <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"AOF analyzed: size=%lld, ok_up_to=%lld, diff=%lld\n"</q>,</td></tr>
+<tr><th id="205">205</th><td>        (<em>long</em> <em>long</em>) <a class="local col4 ref" href="#34size" title='size' data-ref="34size">size</a>, (<em>long</em> <em>long</em>) <a class="local col7 ref" href="#37pos" title='pos' data-ref="37pos">pos</a>, (<em>long</em> <em>long</em>) <a class="local col8 ref" href="#38diff" title='diff' data-ref="38diff">diff</a>);</td></tr>
+<tr><th id="206">206</th><td>    <b>if</b> (<a class="local col8 ref" href="#38diff" title='diff' data-ref="38diff">diff</a> &gt; <var>0</var>) {</td></tr>
+<tr><th id="207">207</th><td>        <b>if</b> (<a class="local col1 ref" href="#31fix" title='fix' data-ref="31fix">fix</a>) {</td></tr>
+<tr><th id="208">208</th><td>            <em>char</em> <dfn class="local col9 decl" id="39buf" title='buf' data-type='char [2]' data-ref="39buf">buf</dfn>[<var>2</var>];</td></tr>
+<tr><th id="209">209</th><td>            <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"This will shrink the AOF from %lld bytes, with %lld bytes, to %lld bytes\n"</q>,(<em>long</em> <em>long</em>)<a class="local col4 ref" href="#34size" title='size' data-ref="34size">size</a>,(<em>long</em> <em>long</em>)<a class="local col8 ref" href="#38diff" title='diff' data-ref="38diff">diff</a>,(<em>long</em> <em>long</em>)<a class="local col7 ref" href="#37pos" title='pos' data-ref="37pos">pos</a>);</td></tr>
+<tr><th id="210">210</th><td>            <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"Continue? [y/N]: "</q>);</td></tr>
+<tr><th id="211">211</th><td>            <b>if</b> (<a class="ref" href="../../include/stdio.h.html#fgets" title='fgets' data-ref="fgets">fgets</a>(<a class="local col9 ref" href="#39buf" title='buf' data-ref="39buf">buf</a>,<b>sizeof</b>(<a class="local col9 ref" href="#39buf" title='buf' data-ref="39buf">buf</a>),<a class="macro" href="../../include/stdio.h.html#172" title="stdin" data-ref="_M/stdin">stdin</a>) == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span> ||</td></tr>
+<tr><th id="212">212</th><td>                <a class="ref" href="../../include/string.h.html#strncasecmp" title='strncasecmp' data-ref="strncasecmp">strncasecmp</a>(<a class="local col9 ref" href="#39buf" title='buf' data-ref="39buf">buf</a>,<q>"y"</q>,<var>1</var>) != <var>0</var>) {</td></tr>
+<tr><th id="213">213</th><td>                    <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"Aborting...\n"</q>);</td></tr>
+<tr><th id="214">214</th><td>                    <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>1</var>);</td></tr>
+<tr><th id="215">215</th><td>            }</td></tr>
+<tr><th id="216">216</th><td>            <b>if</b> (<a class="ref" href="../../include/unistd.h.html#1022" title='ftruncate' data-ref="ftruncate64">ftruncate</a>(<a class="ref" href="../../include/stdio.h.html#fileno" title='fileno' data-ref="fileno">fileno</a>(<a class="local col2 ref" href="#32fp" title='fp' data-ref="32fp">fp</a>), <a class="local col7 ref" href="#37pos" title='pos' data-ref="37pos">pos</a>) == -<var>1</var>) {</td></tr>
+<tr><th id="217">217</th><td>                <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"Failed to truncate AOF\n"</q>);</td></tr>
+<tr><th id="218">218</th><td>                <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>1</var>);</td></tr>
+<tr><th id="219">219</th><td>            } <b>else</b> {</td></tr>
+<tr><th id="220">220</th><td>                <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"Successfully truncated AOF\n"</q>);</td></tr>
+<tr><th id="221">221</th><td>            }</td></tr>
+<tr><th id="222">222</th><td>        } <b>else</b> {</td></tr>
+<tr><th id="223">223</th><td>            <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"AOF is not valid. "</q></td></tr>
+<tr><th id="224">224</th><td>                   <q>"Use the --fix option to try fixing it.\n"</q>);</td></tr>
+<tr><th id="225">225</th><td>            <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>1</var>);</td></tr>
+<tr><th id="226">226</th><td>        }</td></tr>
+<tr><th id="227">227</th><td>    } <b>else</b> {</td></tr>
+<tr><th id="228">228</th><td>        <a class="ref" href="../../include/stdio.h.html#printf" title='printf' data-ref="printf">printf</a>(<q>"AOF is valid\n"</q>);</td></tr>
+<tr><th id="229">229</th><td>    }</td></tr>
+<tr><th id="230">230</th><td></td></tr>
+<tr><th id="231">231</th><td>    <a class="ref" href="../../include/stdio.h.html#fclose" title='fclose' data-ref="fclose">fclose</a>(<a class="local col2 ref" href="#32fp" title='fp' data-ref="32fp">fp</a>);</td></tr>
+<tr><th id="232">232</th><td>    <a class="ref" href="../../include/stdlib.h.html#exit" title='exit' data-ref="exit">exit</a>(<var>0</var>);</td></tr>
+<tr><th id="233">233</th><td>}</td></tr>
+<tr><th id="234">234</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2017-Oct-16</em> from project codebrowser revision <em>with-deprecated-diskstore-4466-g2bf8c2c</em><br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

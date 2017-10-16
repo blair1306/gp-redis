@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='1160' type='char *'/>
+<offset>22080</offset>
+<doc f='codebrowser/src/server.h' l='1160'>/* IP address to announce on cluster bus. */</doc>
+<use f='codebrowser/src/cluster.c' l='1715' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2217' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2218' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='3211' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='3223' u='r' c='clusterCron'/>
+<use f='codebrowser/src/config.c' l='588' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='589' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='851' u='r' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='852' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1215' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1215' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1977' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='1432' u='w' c='initServerConfig'/>

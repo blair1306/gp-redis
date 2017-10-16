@@ -1,0 +1,8 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/jemalloc.h' l='304' type='chunk_merge_t *'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1019' u='r' c='arena_chunk_ralloc_huge_expand_hard'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1054' u='r' c='je_arena_chunk_ralloc_huge_expand'/>
+<offset>384</offset>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='105' u='a' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='105' u='r' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='487' u='r' c='chunk_record'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='531' u='r' c='chunk_record'/>

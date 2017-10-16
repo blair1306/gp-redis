@@ -1,0 +1,2 @@
+<dec f='codebrowser/src/anet.h' l='57' type='int anetUnixNonBlockConnect(char * err, char * path)'/>
+<def f='codebrowser/src/anet.c' l='405' ll='408' type='int anetUnixNonBlockConnect(char * err, char * path)'/>

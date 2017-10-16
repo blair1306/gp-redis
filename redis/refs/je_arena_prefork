@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='502' macro='1' type='void je_arena_prefork(arena_t * arena)'/>
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='3282' macro='1' type='void je_arena_prefork(arena_t * arena)'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2540' macro='1' u='c'/>

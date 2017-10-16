@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='71' macro='1' type='int je_ctl_bymib(const size_t * mib, size_t miblen, void * oldp, size_t * oldlenp, void * newp, size_t newlen)'/>
+<def f='codebrowser/deps/jemalloc/src/ctl.c' l='944' macro='1' type='int je_ctl_bymib(const size_t * mib, size_t miblen, void * oldp, size_t * oldlenp, void * newp, size_t newlen)'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2461' macro='1' u='c'/>

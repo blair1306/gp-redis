@@ -1,0 +1,14 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='200'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='189'>/*
+ * Flags bits:
+ *
+ * a: arena
+ * t: tcache
+ * 0: unused
+ * z: zero
+ * n: alignment
+ *
+ * aaaaaaaa aaaatttt tttttttt 0znnnnnn
+ */</doc>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1935' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2173' u='c'/>

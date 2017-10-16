@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1676' type='sds hashTypeCurrentFromHashTable(hashTypeIterator * hi, int what)'/>
+<use f='codebrowser/src/aof.c' l='998' u='c' c='rioWriteHashIteratorCursor'/>
+<def f='codebrowser/src/t_hash.c' l='406' ll='414' type='sds hashTypeCurrentFromHashTable(hashTypeIterator * hi, int what)'/>
+<use f='codebrowser/src/t_hash.c' l='431' u='c' c='hashTypeCurrentObject'/>
+<use f='codebrowser/src/t_hash.c' l='759' u='c' c='addHashIteratorCursorToReply'/>
+<doc f='codebrowser/src/t_hash.c' l='403'>/* Get the field or value at iterator cursor, for an iterator on a hash value
+ * encoded as a hash table. Prototype is similar to
+ * `hashTypeGetFromHashTable`. */</doc>

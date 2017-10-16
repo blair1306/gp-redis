@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1454' type='robj * createIntsetObject()'/>
+<def f='codebrowser/src/object.c' l='203' ll='208' type='robj * createIntsetObject()'/>
+<use f='codebrowser/src/rdb.c' l='1186' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_set.c' l='44' u='c' c='setTypeCreate'/>
+<use f='codebrowser/src/t_set.c' l='836' u='c' c='sinterGenericCommand'/>
+<use f='codebrowser/src/t_set.c' l='987' u='c' c='sunionDiffGenericCommand'/>

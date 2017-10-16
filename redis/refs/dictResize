@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/dict.h' l='163' type='int dictResize(dict * d)'/>
+<def f='codebrowser/src/dict.c' l='135' ll='144' type='int dictResize(dict * d)'/>
+<doc f='codebrowser/src/dict.c' l='133'>/* Resize the table to the minimal size that contains all the elements,
+ * but with the invariant of a USED/BUCKETS ratio near to &lt;= 1 */</doc>
+<use f='codebrowser/src/server.c' l='706' u='c' c='tryResizeHashTables'/>
+<use f='codebrowser/src/server.c' l='708' u='c' c='tryResizeHashTables'/>
+<use f='codebrowser/src/t_hash.c' l='301' u='c' c='hashTypeDelete'/>
+<use f='codebrowser/src/t_set.c' l='92' u='c' c='setTypeRemove'/>
+<use f='codebrowser/src/t_zset.c' l='1406' u='c' c='zsetDel'/>
+<use f='codebrowser/src/t_zset.c' l='1723' u='c' c='zremrangeGenericCommand'/>

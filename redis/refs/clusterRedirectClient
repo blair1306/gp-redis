@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/cluster.h' l='268' type='void clusterRedirectClient(client * c, clusterNode * n, int hashslot, int error_code)'/>
+<def f='codebrowser/src/cluster.c' l='5383' ll='5405' type='void clusterRedirectClient(client * c, clusterNode * n, int hashslot, int error_code)'/>
+<use f='codebrowser/src/cluster.c' l='5425' u='c' c='clusterRedirectBlockedClientIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='5443' u='c' c='clusterRedirectBlockedClientIfNeeded'/>
+<use f='codebrowser/src/cluster.c' l='5446' u='c' c='clusterRedirectBlockedClientIfNeeded'/>
+<doc f='codebrowser/src/cluster.c' l='5376'>/* Send the client the right redirection code, according to error_code
+ * that should be set to one of CLUSTER_REDIR_* macros.
+ *
+ * If CLUSTER_REDIR_ASK or CLUSTER_REDIR_MOVED error codes
+ * are used, then the node &apos;n&apos; should not be NULL, but should be the
+ * node we want to mention in the redirection. Moreover hashslot should
+ * be set to the hash slot that caused the redirection. */</doc>
+<use f='codebrowser/src/server.c' l='2364' u='c' c='processCommand'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/src/server.h' l='690' type='long'/>
+<offset>768</offset>
+<doc f='codebrowser/src/server.h' l='690'>/* Length of bulk argument in multi bulk request. */</doc>
+<use f='codebrowser/src/networking.c' l='106' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='1022' u='w' c='resetClient'/>
+<use f='codebrowser/src/networking.c' l='1198' u='r' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1245' u='w' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1249' u='r' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1257' u='r' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1258' u='r' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1264' u='r' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1269' u='r' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1270' u='r' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1272' u='w' c='processMultibulkBuffer'/>
+<use f='codebrowser/src/networking.c' l='1366' u='r' c='readQueryFromClient'/>
+<use f='codebrowser/src/networking.c' l='1367' u='r' c='readQueryFromClient'/>
+<use f='codebrowser/src/networking.c' l='1369' u='r' c='readQueryFromClient'/>

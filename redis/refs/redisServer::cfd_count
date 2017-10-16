@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='913' type='int'/>
+<offset>3936</offset>
+<doc f='codebrowser/src/server.h' l='913'>/* Used slots in cfd[] */</doc>
+<use f='codebrowser/src/cluster.c' l='452' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='467' u='a' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='473' u='r' c='clusterInit'/>
+<use f='codebrowser/src/server.c' l='2504' u='r' c='closeListeningSockets'/>

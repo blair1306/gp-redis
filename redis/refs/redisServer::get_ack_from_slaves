@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1115' type='int'/>
+<offset>20416</offset>
+<doc f='codebrowser/src/server.h' l='1115'>/* If true we send REPLCONF GETACK. */</doc>
+<use f='codebrowser/src/replication.c' l='2365' u='w' c='replicationRequestAckFromSlaves'/>
+<use f='codebrowser/src/server.c' l='1198' u='r' c='beforeSleep'/>
+<use f='codebrowser/src/server.c' l='1208' u='w' c='beforeSleep'/>
+<use f='codebrowser/src/server.c' l='1812' u='w' c='initServer'/>

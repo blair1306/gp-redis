@@ -1,0 +1,7 @@
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='283' ll='307' macro='1' type='void prof_leave(tsd_t * tsd, prof_tdata_t * tdata)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='594' u='c' c='prof_gctx_try_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='605' u='c' c='prof_gctx_try_destroy'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='726' u='c' c='prof_lookup_global'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='732' u='c' c='prof_lookup_global'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='747' u='c' c='prof_lookup_global'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1508' u='c' c='prof_dump'/>

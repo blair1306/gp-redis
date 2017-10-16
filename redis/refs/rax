@@ -1,0 +1,5 @@
+<def f='codebrowser/src/rax.h' l='103' ll='107'/>
+<size>24</size>
+<mbr r='rax::head' o='0' t='raxNode *'/>
+<mbr r='rax::numele' o='64' t='uint64_t'/>
+<mbr r='rax::numnodes' o='128' t='uint64_t'/>

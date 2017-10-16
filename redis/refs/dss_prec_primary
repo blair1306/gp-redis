@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/chunk_dss.h' l='6' type='1'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='349' u='r' c='chunk_alloc_core'/>

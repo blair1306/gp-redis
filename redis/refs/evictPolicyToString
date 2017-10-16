@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1635' type='const char * evictPolicyToString()'/>
+<def f='codebrowser/src/config.c' l='131' ll='133' type='const char * evictPolicyToString()'/>
+<doc f='codebrowser/src/config.c' l='130'>/* Used for INFO generation. */</doc>
+<use f='codebrowser/src/server.c' l='2911' u='c' c='genRedisInfoString'/>

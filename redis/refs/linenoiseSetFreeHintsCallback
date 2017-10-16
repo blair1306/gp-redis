@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/linenoise/linenoise.h' l='56' type='void linenoiseSetFreeHintsCallback(linenoiseFreeHintsCallback * )'/>
+<def f='codebrowser/deps/linenoise/linenoise.c' l='421' ll='423' type='void linenoiseSetFreeHintsCallback(linenoiseFreeHintsCallback * fn)'/>
+<doc f='codebrowser/deps/linenoise/linenoise.c' l='419'>/* Register a function to free the hints returned by the hints callback
+ * registered with linenoiseSetHintsCallback(). */</doc>
+<use f='codebrowser/src/redis-cli.c' l='1290' u='c' c='repl'/>

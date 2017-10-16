@@ -1,0 +1,4 @@
+<def f='codebrowser/src/sentinel.c' l='536' ll='543' type='sentinelAddr * dupSentinelAddr(sentinelAddr * src)'/>
+<use f='codebrowser/src/sentinel.c' l='1080' u='c' c='sentinelUpdateSentinelAddressInAllMasters'/>
+<use f='codebrowser/src/sentinel.c' l='2406' u='c' c='sentinelProcessHelloMessage'/>
+<doc f='codebrowser/src/sentinel.c' l='535'>/* Return a duplicate of the source address. */</doc>

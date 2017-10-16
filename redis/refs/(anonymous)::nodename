@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/cluster.h' l='178' type='char [40]'/>
+<dec f='codebrowser/src/cluster.h' l='189' type='char [40]'/>
+<dec f='codebrowser/src/cluster.h' l='203' type='char [40]'/>
+<use f='codebrowser/src/cluster.c' l='1329' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1338' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1408' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='1958' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1964' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1974' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2030' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2272' u='r' c='clusterNodeIsInGossipSection'/>
+<use f='codebrowser/src/cluster.c' l='2283' u='r' c='clusterSetGossipEntry'/>
+<use f='codebrowser/src/cluster.c' l='2514' u='r' c='clusterSendFail'/>
+<use f='codebrowser/src/cluster.c' l='2527' u='r' c='clusterSendUpdate'/>
+<offset>64</offset>
+<doc f='codebrowser/src/cluster.h' l='203'>/* Name of the slots owner. */</doc>

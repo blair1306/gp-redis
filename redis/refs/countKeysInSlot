@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1736' type='unsigned int countKeysInSlot(unsigned int hashslot)'/>
+<use f='codebrowser/src/cluster.c' l='1552' u='c' c='clusterUpdateSlotsConfigWith'/>
+<use f='codebrowser/src/cluster.c' l='3768' u='c' c='verifyClusterConfigWithData'/>
+<use f='codebrowser/src/cluster.c' l='4220' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4230' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4369' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4388' u='c' c='clusterCommand'/>
+<def f='codebrowser/src/db.c' l='1436' ll='1438' type='unsigned int countKeysInSlot(unsigned int hashslot)'/>

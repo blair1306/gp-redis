@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='259' ll='261' type='void RM_Free(void * ptr)'/>
+<use f='codebrowser/src/module.c' l='3899' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='256'>/* Use like free() for memory obtained by RedisModule_Alloc() and
+ * RedisModule_Realloc(). However you should never try to free with
+ * RedisModule_Free() memory allocated with malloc() inside your module. */</doc>

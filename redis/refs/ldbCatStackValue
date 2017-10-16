@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/scripting.c' l='55' type='sds ldbCatStackValue(sds s, lua_State * lua, int idx)'/>
+<use f='codebrowser/src/scripting.c' l='738' u='c' c='luaRedisDebugCommand'/>
+<def f='codebrowser/src/scripting.c' l='1939' ll='1941' type='sds ldbCatStackValue(sds s, lua_State * lua, int idx)'/>
+<use f='codebrowser/src/scripting.c' l='1948' u='c' c='ldbLogStackValue'/>
+<doc f='codebrowser/src/scripting.c' l='1937'>/* Higher level wrapper for ldbCatStackValueRec() that just uses an initial
+ * recursion level of &apos;0&apos;. */</doc>

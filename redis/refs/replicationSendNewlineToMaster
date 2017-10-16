@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1498' type='void replicationSendNewlineToMaster()'/>
+<use f='codebrowser/src/rdb.c' l='1483' u='c' c='rdbLoadProgressCallback'/>
+<def f='codebrowser/src/replication.c' l='1057' ll='1065' type='void replicationSendNewlineToMaster()'/>
+<use f='codebrowser/src/replication.c' l='1071' u='c' c='replicationEmptyDbCallback'/>
+<doc f='codebrowser/src/replication.c' l='1049'>/* Avoid the master to detect the slave is timing out while loading the
+ * RDB file in initial synchronization. We send a single newline character
+ * that is valid protocol but is guaranteed to either be sent entierly or
+ * not, since the byte is indivisible.
+ *
+ * The function is called in two contexts: while we flush the current
+ * data with emptyDb(), and while we load the new data received as an
+ * RDB file from the master. */</doc>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='431' macro='1' type='void je_arena_chunk_cache_maybe_insert(arena_t * arena, extent_node_t * node, _Bool cache)'/>
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='269' macro='1' type='void je_arena_chunk_cache_maybe_insert(arena_t * arena, extent_node_t * node, _Bool cache)'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='266' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='295' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='502' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='523' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='549' macro='1' u='c'/>

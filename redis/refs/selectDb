@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1732' type='int selectDb(client * c, int id)'/>
+<use f='codebrowser/src/aof.c' l='587' u='c' c='createFakeClient'/>
+<def f='codebrowser/src/db.c' l='339' ll='344' type='int selectDb(client * c, int id)'/>
+<use f='codebrowser/src/db.c' l='478' u='c' c='selectCommand'/>
+<use f='codebrowser/src/db.c' l='896' u='c' c='moveCommand'/>
+<use f='codebrowser/src/db.c' l='902' u='c' c='moveCommand'/>
+<use f='codebrowser/src/module.c' l='1344' u='c' c='RM_SelectDb'/>
+<use f='codebrowser/src/module.c' l='3614' u='c' c='RM_GetThreadSafeContext'/>
+<use f='codebrowser/src/networking.c' l='91' u='c' c='createClient'/>
+<use f='codebrowser/src/replication.c' l='1089' u='c' c='replicationCreateMasterClient'/>
+<use f='codebrowser/src/scripting.c' l='1294' u='c' c='evalGenericCommand'/>
+<use f='codebrowser/src/server.c' l='3548' u='c' c='loadDataFromDisk'/>

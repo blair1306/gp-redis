@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1723' type='robj * dbRandomKey(redisDb * db)'/>
+<def f='codebrowser/src/db.c' l='215' ll='235' type='robj * dbRandomKey(redisDb * db)'/>
+<use f='codebrowser/src/db.c' l='488' u='c' c='randomkeyCommand'/>
+<doc f='codebrowser/src/db.c' l='211'>/* Return a random key, in form of a Redis object.
+ * If there are no keys, NULL is returned.
+ *
+ * The function makes sure to return keys not already expired. */</doc>

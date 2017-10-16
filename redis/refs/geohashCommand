@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1982' type='void geohashCommand(client * c)'/>
+<def f='codebrowser/src/geo.c' l='699' ll='747' type='void geohashCommand(client * c)'/>
+<doc f='codebrowser/src/geo.c' l='695'>/* GEOHASH key ele1 ele2 ... eleN
+ *
+ * Returns an array with an 11 characters geohash representation of the
+ * position of the specified elements. */</doc>
+<use f='codebrowser/src/server.c' l='297' u='r'/>
+<use f='codebrowser/src/server.c' l='297' u='r'/>
+<use f='codebrowser/src/server.c' l='297' u='r'/>
+<use f='codebrowser/src/server.c' l='297' u='r'/>

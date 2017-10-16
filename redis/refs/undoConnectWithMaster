@@ -1,0 +1,7 @@
+<def f='codebrowser/src/replication.c' l='1883' ll='1889' type='void undoConnectWithMaster()'/>
+<use f='codebrowser/src/replication.c' l='1896' u='c' c='replicationAbortSyncTransfer'/>
+<use f='codebrowser/src/replication.c' l='1917' u='c' c='cancelReplicationHandshake'/>
+<doc f='codebrowser/src/replication.c' l='1879'>/* This function can be called when a non blocking connection is currently
+ * in progress to undo it.
+ * Never call this function directly, use cancelReplicationHandshake() instead.
+ */</doc>

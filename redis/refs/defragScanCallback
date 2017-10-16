@@ -1,0 +1,3 @@
+<def f='codebrowser/src/defrag.c' l='419' ll='426' type='void defragScanCallback(void * privdata, const dictEntry * de)'/>
+<use f='codebrowser/src/defrag.c' l='558' u='r' c='activeDefragCycle'/>
+<doc f='codebrowser/src/defrag.c' l='418'>/* Defrag scan callback for the main db dictionary. */</doc>

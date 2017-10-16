@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='875' type='pid_t'/>
+<offset>0</offset>
+<doc f='codebrowser/src/server.h' l='874'>/* General */</doc>
+<doc f='codebrowser/src/server.h' l='875'>/* Main process pid. */</doc>
+<use f='codebrowser/src/server.c' l='341' u='r' c='serverLogRaw'/>
+<use f='codebrowser/src/server.c' l='1801' u='w' c='initServer'/>

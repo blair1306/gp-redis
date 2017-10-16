@@ -1,0 +1,18 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='100' type='struct (anonymous struct at /home/jon/workspace/redis/deps/hiredis/async.h:96:5)'/>
+<use f='codebrowser/deps/hiredis/async.c' l='135' u='m' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='136' u='m' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='137' u='m' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='138' u='m' c='redisAsyncInitialize'/>
+<use f='codebrowser/deps/hiredis/async.c' l='286' u='m' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='290' u='m' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='294' u='m' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='296' u='m' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='300' u='m' c='__redisAsyncFree'/>
+<use f='codebrowser/deps/hiredis/async.c' l='381' u='m' c='__redisGetSubscribeCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='383' u='m' c='__redisGetSubscribeCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='406' u='m' c='__redisGetSubscribeCallback'/>
+<use f='codebrowser/deps/hiredis/async.c' l='615' u='m' c='__redisAsyncCommand'/>
+<use f='codebrowser/deps/hiredis/async.c' l='617' u='m' c='__redisAsyncCommand'/>
+<use f='codebrowser/deps/hiredis/async.c' l='637' u='m' c='__redisAsyncCommand'/>
+<offset>2496</offset>
+<doc f='codebrowser/deps/hiredis/async.h' l='95'>/* Subscription callbacks */</doc>

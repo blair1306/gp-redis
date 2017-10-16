@@ -1,0 +1,16 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/valgrind.h' l='102' macro='1' type='void je_valgrind_make_mem_defined(void * ptr, size_t usize)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='351' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='451' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='684' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='124' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='316' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1827' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1827' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1827' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2215' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2215' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2215' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2335' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2335' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2335' macro='1' u='c'/>
+<def f='codebrowser/deps/jemalloc/src/valgrind.c' l='23' macro='1' type='void je_valgrind_make_mem_defined(void * ptr, size_t usize)'/>

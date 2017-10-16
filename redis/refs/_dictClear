@@ -1,0 +1,9 @@
+<def f='codebrowser/deps/hiredis/dict.c' l='213' ll='235' type='int _dictClear(dict * ht)'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='239' u='c' c='dictRelease'/>
+<doc f='codebrowser/deps/hiredis/dict.c' l='212'>/* Destroy an entire hash table */</doc>
+<def f='codebrowser/src/dict.c' l='442' ll='466' type='int _dictClear(dict * d, dictht * ht, void (*)(void *) callback)'/>
+<use f='codebrowser/src/dict.c' l='471' u='c' c='dictRelease'/>
+<use f='codebrowser/src/dict.c' l='472' u='c' c='dictRelease'/>
+<use f='codebrowser/src/dict.c' l='984' u='c' c='dictEmpty'/>
+<use f='codebrowser/src/dict.c' l='985' u='c' c='dictEmpty'/>
+<doc f='codebrowser/src/dict.c' l='441'>/* Destroy an entire dictionary */</doc>

@@ -1,0 +1,3 @@
+<dec f='include/valgrind/memcheck.h' l='214'/>
+<doc f='include/valgrind/memcheck.h' l='212'>/* Return number of leaked, dubious, reachable and suppressed bytes found by
+   all previous leak checks.  They must be lvalues.  */</doc>

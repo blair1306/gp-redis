@@ -1,0 +1,7 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='18'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='12'>/*
+ * JEMALLOC_PRIVATE_NAMESPACE is used as a prefix for all library-private APIs.
+ * For shared libraries, symbol visibility mechanisms prevent these symbols
+ * from being exported, but for static libraries, naming collisions are a real
+ * possibility.
+ */</doc>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1056' type='int'/>
+<offset>17024</offset>
+<doc f='codebrowser/src/server.h' l='1056'>/* Syslog facility */</doc>
+<use f='codebrowser/src/config.c' l='298' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='300' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1325' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1693' u='r' c='rewriteConfigSyslogfacilityOption'/>
+<use f='codebrowser/src/server.c' l='1378' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='1798' u='r' c='initServer'/>

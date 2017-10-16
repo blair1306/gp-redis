@@ -1,0 +1,3 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/quarantine.h' l='34' macro='1' type='void je_quarantine_cleanup(tsd_t * tsd)'/>
+<def f='codebrowser/deps/jemalloc/src/quarantine.c' l='170' macro='1' type='void je_quarantine_cleanup(tsd_t * tsd)'/>
+<use f='codebrowser/deps/jemalloc/src/tsd.c' l='82' macro='1' u='c'/>

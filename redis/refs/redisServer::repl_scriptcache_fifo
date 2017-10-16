@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1111' type='list *'/>
+<offset>20224</offset>
+<doc f='codebrowser/src/server.h' l='1111'>/* First in, first out LRU eviction. */</doc>
+<use f='codebrowser/src/replication.c' l='2285' u='w' c='replicationScriptCacheInit'/>
+<use f='codebrowser/src/replication.c' l='2301' u='r' c='replicationScriptCacheFlush'/>
+<use f='codebrowser/src/replication.c' l='2302' u='w' c='replicationScriptCacheFlush'/>
+<use f='codebrowser/src/replication.c' l='2312' u='r' c='replicationScriptCacheAdd'/>
+<use f='codebrowser/src/replication.c' l='2314' u='r' c='replicationScriptCacheAdd'/>
+<use f='codebrowser/src/replication.c' l='2319' u='r' c='replicationScriptCacheAdd'/>
+<use f='codebrowser/src/replication.c' l='2324' u='r' c='replicationScriptCacheAdd'/>
+<use f='codebrowser/src/replication.c' l='2629' u='r' c='replicationCron'/>

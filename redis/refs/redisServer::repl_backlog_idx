@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='1067' type='long long'/>
+<offset>18112</offset>
+<doc f='codebrowser/src/server.h' l='1067'>/* Backlog circular buffer current offset,
+                                       that is the next byte will&apos;ll write to.*/</doc>
+<use f='codebrowser/src/replication.c' l='81' u='w' c='createReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='110' u='w' c='resizeReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='134' u='r' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='136' u='r' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='137' u='w' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='138' u='r' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='139' u='w' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='361' u='r' c='addReplyReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='369' u='r' c='addReplyReplicationBacklog'/>
+<use f='codebrowser/src/server.c' l='1481' u='w' c='initServerConfig'/>

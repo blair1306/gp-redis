@@ -1,0 +1,4 @@
+<def f='codebrowser/src/scripting.c' l='840' ll='845' type='void luaRemoveUnsupportedFunctions(lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='908' u='c' c='scriptingInit'/>
+<doc f='codebrowser/src/scripting.c' l='838'>/* Remove a functions that we don&apos;t want to expose to the Redis scripting
+ * environment. */</doc>

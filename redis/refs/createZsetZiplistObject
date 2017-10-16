@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1457' type='robj * createZsetZiplistObject()'/>
+<use f='codebrowser/src/module.c' l='356' u='c' c='moduleCreateEmptyKey'/>
+<def f='codebrowser/src/object.c' l='228' ll='233' type='robj * createZsetZiplistObject()'/>
+<use f='codebrowser/src/t_zset.c' l='1561' u='c' c='zaddGenericCommand'/>

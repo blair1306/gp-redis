@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='417'/>
+<doc f='codebrowser/src/server.h' l='415'>/* Keyspace changes notification classes. Every class is associated with a
+ * character for configuration purposes. */</doc>
+<use f='codebrowser/src/notify.c' l='55' u='c'/>
+<use f='codebrowser/src/notify.c' l='83' u='c'/>
+<use f='codebrowser/src/notify.c' l='107' u='c'/>

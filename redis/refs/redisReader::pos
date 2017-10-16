@@ -1,0 +1,21 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='85' type='size_t'/>
+<offset>1152</offset>
+<doc f='codebrowser/deps/hiredis/read.h' l='85'>/* Buffer cursor */</doc>
+<use f='codebrowser/deps/hiredis/read.c' l='58' u='w' c='__redisReaderSetError'/>
+<use f='codebrowser/deps/hiredis/read.c' l='111' u='r' c='readBytes'/>
+<use f='codebrowser/deps/hiredis/read.c' l='112' u='r' c='readBytes'/>
+<use f='codebrowser/deps/hiredis/read.c' l='113' u='w' c='readBytes'/>
+<use f='codebrowser/deps/hiredis/read.c' l='179' u='r' c='readLine'/>
+<use f='codebrowser/deps/hiredis/read.c' l='180' u='r' c='readLine'/>
+<use f='codebrowser/deps/hiredis/read.c' l='182' u='r' c='readLine'/>
+<use f='codebrowser/deps/hiredis/read.c' l='183' u='w' c='readLine'/>
+<use f='codebrowser/deps/hiredis/read.c' l='257' u='r' c='processBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='258' u='r' c='processBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='260' u='r' c='processBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='261' u='r' c='processBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='274' u='r' c='processBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='290' u='w' c='processBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='458' u='w' c='redisReaderFeed'/>
+<use f='codebrowser/deps/hiredis/read.c' l='512' u='r' c='redisReaderGetReply'/>
+<use f='codebrowser/deps/hiredis/read.c' l='513' u='r' c='redisReaderGetReply'/>
+<use f='codebrowser/deps/hiredis/read.c' l='514' u='w' c='redisReaderGetReply'/>

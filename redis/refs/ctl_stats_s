@@ -1,0 +1,9 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='53' ll='61'/>
+<size>56</size>
+<mbr r='ctl_stats_s::allocated' o='0' t='size_t'/>
+<mbr r='ctl_stats_s::active' o='64' t='size_t'/>
+<mbr r='ctl_stats_s::metadata' o='128' t='size_t'/>
+<mbr r='ctl_stats_s::resident' o='192' t='size_t'/>
+<mbr r='ctl_stats_s::mapped' o='256' t='size_t'/>
+<mbr r='ctl_stats_s::narenas' o='320' t='unsigned int'/>
+<mbr r='ctl_stats_s::arenas' o='384' t='ctl_arena_stats_t *'/>

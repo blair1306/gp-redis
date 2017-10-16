@@ -1,0 +1,47 @@
+<dec f='codebrowser/deps/hiredis/dict.h' l='117' type='int dictAdd(dict * ht, void * key, void * val)'/>
+<def f='codebrowser/deps/hiredis/dict.c' l='135' ll='154' type='int dictAdd(dict * ht, void * key, void * val)'/>
+<use f='codebrowser/deps/hiredis/dict.c' l='165' u='c' c='dictReplace'/>
+<doc f='codebrowser/deps/hiredis/dict.c' l='134'>/* Add an element to the target hash table */</doc>
+<dec f='codebrowser/src/dict.h' l='153' type='int dictAdd(dict * d, void * key, void * val)'/>
+<use f='codebrowser/src/cluster.c' l='867' u='c' c='clusterAddNode'/>
+<use f='codebrowser/src/cluster.c' l='1123' u='c' c='clusterBlacklistAddNode'/>
+<use f='codebrowser/src/cluster.c' l='4827' u='c' c='migrateGetSocket'/>
+<use f='codebrowser/src/config.c' l='574' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1475' u='c' c='rewriteConfigAddLineNumberToOption'/>
+<use f='codebrowser/src/config.c' l='1487' u='c' c='rewriteConfigMarkAsProcessed'/>
+<use f='codebrowser/src/db.c' l='162' u='c' c='dbAdd'/>
+<def f='codebrowser/src/dict.c' l='265' ll='272' type='int dictAdd(dict * d, void * key, void * val)'/>
+<doc f='codebrowser/src/dict.c' l='264'>/* Add an element to the target hash table */</doc>
+<use f='codebrowser/src/geo.c' l='654' u='c' c='georadiusGeneric'/>
+<use f='codebrowser/src/latency.c' l='109' u='c' c='latencyAddSample'/>
+<use f='codebrowser/src/module.c' l='644' u='c' c='RM_CreateCommand'/>
+<use f='codebrowser/src/module.c' l='645' u='c' c='RM_CreateCommand'/>
+<use f='codebrowser/src/module.c' l='3672' u='c' c='moduleRegisterApi'/>
+<use f='codebrowser/src/module.c' l='3764' u='c' c='moduleLoad'/>
+<use f='codebrowser/src/multi.c' l='234' u='c' c='watchForKey'/>
+<use f='codebrowser/src/pubsub.c' l='64' u='c' c='pubsubSubscribeChannel'/>
+<use f='codebrowser/src/pubsub.c' l='71' u='c' c='pubsubSubscribeChannel'/>
+<use f='codebrowser/src/rdb.c' l='1210' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1244' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1303' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/replication.c' l='2323' u='c' c='replicationScriptCacheAdd'/>
+<use f='codebrowser/src/scripting.c' l='1173' u='c' c='luaCreateFunction'/>
+<use f='codebrowser/src/sentinel.c' l='456' u='c' c='initSentinel'/>
+<use f='codebrowser/src/sentinel.c' l='1231' u='c' c='createSentinelRedisInstance'/>
+<use f='codebrowser/src/sentinel.c' l='3118' u='c' c='sentinelCommand'/>
+<use f='codebrowser/src/server.c' l='1985' u='c' c='populateCommandTable'/>
+<use f='codebrowser/src/server.c' l='1988' u='c' c='populateCommandTable'/>
+<use f='codebrowser/src/t_hash.c' l='264' u='c' c='hashTypeSet'/>
+<use f='codebrowser/src/t_hash.c' l='484' u='c' c='hashTypeConvertZiplist'/>
+<use f='codebrowser/src/t_list.c' l='637' u='c' c='blockForKeys'/>
+<use f='codebrowser/src/t_list.c' l='647' u='c' c='blockForKeys'/>
+<use f='codebrowser/src/t_list.c' l='716' u='c' c='signalListAsReady'/>
+<use f='codebrowser/src/t_set.c' l='79' u='c' c='setTypeAdd'/>
+<use f='codebrowser/src/t_set.c' l='252' u='c' c='setTypeConvert'/>
+<use f='codebrowser/src/t_set.c' l='693' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='695' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_set.c' l='730' u='c' c='srandmemberWithCountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1150' u='c' c='zsetConvert'/>
+<use f='codebrowser/src/t_zset.c' l='1361' u='c' c='zsetAdd'/>
+<use f='codebrowser/src/t_zset.c' l='2255' u='c' c='zunionInterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2321' u='c' c='zunionInterGenericCommand'/>

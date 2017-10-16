@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/lua/src/lobject.h' l='264' type='int'/>
+<offset>64</offset>
+<doc f='codebrowser/deps/lua/src/lobject.h' l='264'>/* first point where variable is active */</doc>
+<use f='codebrowser/deps/lua/src/ldump.c' l='121' u='r' c='DumpDebug'/>
+<use f='codebrowser/deps/lua/src/lfunc.c' l='165' u='r' c='luaF_getlocalname'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='171' u='w' c='adjustlocalvars'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='1175' u='w' c='localfunc'/>
+<use f='codebrowser/deps/lua/src/lundump.c' l='151' u='w' c='LoadDebug'/>
+<use f='codebrowser/deps/lua/src/print.c' l='200' u='r' c='PrintLocals'/>

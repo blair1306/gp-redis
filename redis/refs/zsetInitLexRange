@@ -1,0 +1,12 @@
+<def f='codebrowser/src/module.c' l='1862' ll='1891' type='int zsetInitLexRange(RedisModuleKey * key, robj * min, robj * max, int first)'/>
+<use f='codebrowser/src/module.c' l='1906' u='c' c='RM_ZsetFirstInLexRange'/>
+<use f='codebrowser/src/module.c' l='1912' u='c' c='RM_ZsetLastInLexRange'/>
+<doc f='codebrowser/src/module.c' l='1853'>/* Helper function for RM_ZsetFirstInLexRange() and RM_ZsetLastInLexRange().
+ * Setup the sorted set iteration according to the specified lexicographical
+ * range (see the functions calling it for more info). If &apos;first&apos; is true the
+ * first element in the range is used as a starting point for the iterator
+ * otherwise the last. Return REDISMODULE_OK on success otherwise
+ * REDISMODULE_ERR.
+ *
+ * Note that this function takes &apos;min&apos; and &apos;max&apos; in the same form of the
+ * Redis ZRANGEBYLEX command. */</doc>

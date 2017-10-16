@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/module.c' l='113' type='void *'/>
+<use f='codebrowser/src/module.c' l='3496' u='w' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='3574' u='r' c='RM_GetBlockedClientPrivateData'/>
+<offset>576</offset>
+<doc f='codebrowser/src/module.c' l='113'>/* Privdata set when unblocking a client. */</doc>

@@ -1,0 +1,21 @@
+<dec f='codebrowser/src/server.h' l='1621' type='void serverLogRaw(int level, const char * msg)'/>
+<use f='codebrowser/src/debug.c' l='653' u='c' c='bugReportStart'/>
+<use f='codebrowser/src/debug.c' l='892' u='c' c='logCurrentClient'/>
+<use f='codebrowser/src/debug.c' l='1037' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/debug.c' l='1041' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/debug.c' l='1043' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/debug.c' l='1044' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/debug.c' l='1046' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/debug.c' l='1058' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/debug.c' l='1061' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/debug.c' l='1064' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/debug.c' l='1098' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/debug.c' l='1135' u='c' c='serverLogHexDump'/>
+<use f='codebrowser/src/debug.c' l='1139' u='c' c='serverLogHexDump'/>
+<use f='codebrowser/src/module.c' l='3310' u='c' c='RM_LogRaw'/>
+<use f='codebrowser/src/scripting.c' l='801' u='c' c='luaLogCommand'/>
+<def f='codebrowser/src/server.c' l='314' ll='353' type='void serverLogRaw(int level, const char * msg)'/>
+<use f='codebrowser/src/server.c' l='368' u='c' c='serverLog'/>
+<use f='codebrowser/src/server.c' l='3451' u='c' c='redisAsciiArt'/>
+<doc f='codebrowser/src/server.c' l='312'>/* Low level logging. To use only for very big messages, otherwise
+ * serverLog() is to prefer. */</doc>

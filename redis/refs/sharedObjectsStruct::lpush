@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='750' type='robj *'/>
+<offset>2624</offset>
+<use f='codebrowser/src/server.c' l='1318' u='w' c='createSharedObjects'/>
+<use f='codebrowser/src/t_list.c' l='772' u='r' c='serveClientBlockedOnList'/>

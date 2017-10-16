@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='795' type='robj **'/>
+<offset>0</offset>
+<use f='codebrowser/src/server.c' l='2024' u='w' c='redisOpArrayAppend'/>
+<use f='codebrowser/src/server.c' l='2039' u='r' c='redisOpArrayFree'/>
+<use f='codebrowser/src/server.c' l='2040' u='r' c='redisOpArrayFree'/>
+<use f='codebrowser/src/server.c' l='2291' u='r' c='call'/>

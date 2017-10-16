@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/cluster.h' l='194' type='uint32_t'/>
+<use f='codebrowser/src/cluster.c' l='1650' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='1986' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2479' u='w' c='clusterSendPublish'/>
+<offset>32</offset>

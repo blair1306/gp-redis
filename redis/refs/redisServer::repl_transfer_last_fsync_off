@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1091' type='off_t'/>
+<offset>19072</offset>
+<doc f='codebrowser/src/server.h' l='1091'>/* Offset when we fsync-ed last time. */</doc>
+<use f='codebrowser/src/replication.c' l='1229' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1232' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1234' u='r' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1235' u='w' c='readSyncBulkPayload'/>
+<use f='codebrowser/src/replication.c' l='1834' u='w' c='syncWithMaster'/>

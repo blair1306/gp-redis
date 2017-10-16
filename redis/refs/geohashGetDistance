@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/geohash_helper.h' l='61' type='double geohashGetDistance(double lon1d, double lat1d, double lon2d, double lat2d)'/>
+<use f='codebrowser/src/geo.c' l='817' u='c' c='geodistCommand'/>
+<use f='codebrowser/src/geohash_helper.c' l='153' u='c' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='155' u='c' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='157' u='c' c='geohashGetAreasByRadius'/>
+<use f='codebrowser/src/geohash_helper.c' l='159' u='c' c='geohashGetAreasByRadius'/>
+<def f='codebrowser/src/geohash_helper.c' l='211' ll='221' type='double geohashGetDistance(double lon1d, double lat1d, double lon2d, double lat2d)'/>
+<use f='codebrowser/src/geohash_helper.c' l='226' u='c' c='geohashGetDistanceIfInRadius'/>
+<doc f='codebrowser/src/geohash_helper.c' l='210'>/* Calculate distance using haversin great circle distance formula. */</doc>

@@ -1,0 +1,3 @@
+<def f='codebrowser/src/scripting.c' l='635' ll='637' type='int luaRedisCallCommand(lua_State * lua)'/>
+<use f='codebrowser/src/scripting.c' l='920' u='r' c='scriptingInit'/>
+<doc f='codebrowser/src/scripting.c' l='634'>/* redis.call() */</doc>

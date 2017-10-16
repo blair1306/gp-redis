@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1865' type='void lsetCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='160' u='r'/>
+<use f='codebrowser/src/server.c' l='160' u='r'/>
+<use f='codebrowser/src/server.c' l='160' u='r'/>
+<use f='codebrowser/src/server.c' l='160' u='r'/>
+<def f='codebrowser/src/t_list.c' l='341' ll='365' type='void lsetCommand(client * c)'/>

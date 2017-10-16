@@ -1,0 +1,2 @@
+<dec f='include/valgrind/valgrind.h' l='7031'/>
+<doc f='include/valgrind/valgrind.h' l='7030'>/* Resize and/or move a piece associated with a memory pool. */</doc>

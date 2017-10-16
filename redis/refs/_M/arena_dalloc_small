@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/private_namespace.h' l='27'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='473' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1273' u='c'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='1326' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2531' u='c'/>

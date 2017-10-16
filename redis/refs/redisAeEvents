@@ -1,0 +1,6 @@
+<def f='codebrowser/src/sentinel.c' l='264' ll='269'/>
+<size>32</size>
+<doc f='codebrowser/src/sentinel.c' l='259'>/* ======================= hiredis ae.c adapters =============================
+ * Note: this implementation is taken from hiredis/adapters/ae.h, however
+ * we have our modified copy for Sentinel in order to use our allocator
+ * and to have full control over how the adapter works. */</doc>

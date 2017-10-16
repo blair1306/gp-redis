@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/replication.c' l='42' type='void replicationSendAck()'/>
+<use f='codebrowser/src/replication.c' l='832' u='c' c='replconfCommand'/>
+<def f='codebrowser/src/replication.c' l='2088' ll='2099' type='void replicationSendAck()'/>
+<use f='codebrowser/src/replication.c' l='2534' u='c' c='replicationCron'/>
+<doc f='codebrowser/src/replication.c' l='2085'>/* Send a REPLCONF ACK command to the master to inform it about the current
+ * processed offset. If we are not connected with a master, the command has
+ * no effects. */</doc>

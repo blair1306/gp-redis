@@ -1,0 +1,2 @@
+<def f='codebrowser/src/memtest.c' l='194' ll='216' type='int memtest_compare(unsigned long * l, size_t bytes, int interactive)'/>
+<use f='codebrowser/src/memtest.c' l='226' u='c' c='memtest_compare_times'/>

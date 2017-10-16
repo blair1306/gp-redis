@@ -1,0 +1,9 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='65' type='int'/>
+<offset>32</offset>
+<doc f='codebrowser/deps/hiredis/read.h' l='65'>/* number of elements in multibulk container */</doc>
+<use f='codebrowser/deps/hiredis/read.c' l='202' u='r' c='moveToNextTask'/>
+<use f='codebrowser/deps/hiredis/read.c' l='206' u='r' c='moveToNextTask'/>
+<use f='codebrowser/deps/hiredis/read.c' l='208' u='w' c='moveToNextTask'/>
+<use f='codebrowser/deps/hiredis/read.c' l='345' u='w' c='processMultiBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='349' u='w' c='processMultiBulkItem'/>
+<use f='codebrowser/deps/hiredis/read.c' l='493' u='w' c='redisReaderGetReply'/>

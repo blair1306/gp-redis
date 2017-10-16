@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='3277' ll='3285' type='RedisModuleCtx * RM_GetContextFromIO(RedisModuleIO * io)'/>
+<use f='codebrowser/src/module.c' l='3990' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3273'>/* --------------------------------------------------------------------------
+ * IO context handling
+ * -------------------------------------------------------------------------- */</doc>

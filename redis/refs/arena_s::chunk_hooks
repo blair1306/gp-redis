@@ -1,0 +1,16 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='401' type='chunk_hooks_t'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='439' u='m' c='arena_run_split_large_helper'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='527' u='m' c='arena_run_split_small'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1047' u='a' c='je_arena_chunk_ralloc_huge_expand'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1671' u='m' c='arena_run_decommit'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='3074' u='w' c='je_arena_new'/>
+<offset>8384</offset>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='62' u='r' c='chunk_hooks_get_locked'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='83' u='r' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='96' u='m' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='96' u='m' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='96' u='m' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='96' u='m' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='96' u='m' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='96' u='m' c='je_chunk_hooks_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='96' u='m' c='je_chunk_hooks_set'/>

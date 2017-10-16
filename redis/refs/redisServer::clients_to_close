@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='915' type='list *'/>
+<offset>4032</offset>
+<doc f='codebrowser/src/server.h' l='915'>/* Clients to close asynchronously */</doc>
+<use f='codebrowser/src/networking.c' l='855' u='r' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='857' u='r' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='876' u='r' c='freeClientAsync'/>
+<use f='codebrowser/src/networking.c' l='880' u='r' c='freeClientsInAsyncFreeQueue'/>
+<use f='codebrowser/src/networking.c' l='881' u='r' c='freeClientsInAsyncFreeQueue'/>
+<use f='codebrowser/src/networking.c' l='886' u='r' c='freeClientsInAsyncFreeQueue'/>
+<use f='codebrowser/src/server.c' l='1804' u='w' c='initServer'/>

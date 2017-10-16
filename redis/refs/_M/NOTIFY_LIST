@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='421'/>
+<use f='codebrowser/src/geo.c' l='662' u='c'/>
+<use f='codebrowser/src/notify.c' l='49' u='c'/>
+<use f='codebrowser/src/notify.c' l='76' u='c'/>
+<use f='codebrowser/src/sort.c' l='569' u='c'/>
+<use f='codebrowser/src/t_list.c' l='221' u='c'/>
+<use f='codebrowser/src/t_list.c' l='251' u='c'/>
+<use f='codebrowser/src/t_list.c' l='296' u='c'/>
+<use f='codebrowser/src/t_list.c' l='359' u='c'/>
+<use f='codebrowser/src/t_list.c' l='379' u='c'/>
+<use f='codebrowser/src/t_list.c' l='480' u='c'/>
+<use f='codebrowser/src/t_list.c' l='560' u='c'/>
+<use f='codebrowser/src/t_list.c' l='590' u='c'/>
+<use f='codebrowser/src/t_list.c' l='905' u='c'/>

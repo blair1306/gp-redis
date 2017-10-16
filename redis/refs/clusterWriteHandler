@@ -1,0 +1,5 @@
+<def f='codebrowser/src/cluster.c' l='2065' ll='2081' type='void clusterWriteHandler(aeEventLoop * el, int fd, void * privdata, int mask)'/>
+<use f='codebrowser/src/cluster.c' l='2157' u='r' c='clusterSendMessage'/>
+<doc f='codebrowser/src/cluster.c' l='2062'>/* Send data. This is handled using a trivial send buffer that gets
+ * consumed by write(). We don&apos;t try to optimize this for speed too much
+ * as this is a very low traffic channel. */</doc>

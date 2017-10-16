@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/sentinel.c' l='364' type='const char * sentinelRedisInstanceTypeStr(sentinelRedisInstance * ri)'/>
+<use f='codebrowser/src/sentinel.c' l='595' u='c' c='sentinelEvent'/>
+<use f='codebrowser/src/sentinel.c' l='600' u='c' c='sentinelEvent'/>
+<def f='codebrowser/src/sentinel.c' l='1282' ll='1287' type='const char * sentinelRedisInstanceTypeStr(sentinelRedisInstance * ri)'/>
+<doc f='codebrowser/src/sentinel.c' l='1281'>/* Return the name of the type of the instance as a string. */</doc>

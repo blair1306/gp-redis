@@ -1,0 +1,21 @@
+<dec f='codebrowser/src/server.h' l='1065' type='long long'/>
+<offset>17984</offset>
+<doc f='codebrowser/src/server.h' l='1065'>/* Backlog circular buffer size */</doc>
+<use f='codebrowser/src/config.c' l='1264' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1982' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/replication.c' l='79' u='r' c='createReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='98' u='r' c='resizeReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='100' u='w' c='resizeReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='108' u='r' c='resizeReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='134' u='r' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='138' u='r' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='144' u='r' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='145' u='r' c='feedReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='355' u='r' c='addReplyReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='370' u='r' c='addReplyReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='371' u='r' c='addReplyReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='375' u='r' c='addReplyReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='383' u='r' c='addReplyReplicationBacklog'/>
+<use f='codebrowser/src/replication.c' l='384' u='r' c='addReplyReplicationBacklog'/>
+<use f='codebrowser/src/server.c' l='1479' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3248' u='r' c='genRedisInfoString'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1023' type='sds'/>
+<use f='codebrowser/src/aof.c' l='1059' u='w' c='aofReadDiffFromParent'/>
+<use f='codebrowser/src/aof.c' l='1059' u='r' c='aofReadDiffFromParent'/>
+<use f='codebrowser/src/aof.c' l='1164' u='w' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1221' u='r' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1222' u='r' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1222' u='r' c='rewriteAppendOnlyFile'/>
+<offset>15488</offset>
+<doc f='codebrowser/src/server.h' l='1023'>/* AOF diff accumulator child side. */</doc>

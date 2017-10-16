@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='809' macro='1' type='void je_arena_mapbits_unallocated_size_set(arena_chunk_t * chunk, size_t pageind, size_t size)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1593' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1594' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1632' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1633' macro='1' u='c'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/dict.h' l='155' type='dictEntry * dictAddOrFind(dict * d, void * key)'/>
+<use f='codebrowser/src/db.c' l='1040' u='c' c='setExpire'/>
+<def f='codebrowser/src/dict.c' l='355' ll='359' type='dictEntry * dictAddOrFind(dict * d, void * key)'/>
+<doc f='codebrowser/src/dict.c' l='348'>/* Add or Find:
+ * dictAddOrFind() is simply a version of dictAddRaw() that always
+ * returns the hash entry of the specified key, even if the key already
+ * exists and can&apos;t be added (in that case the entry of the already
+ * existing key is returned.)
+ *
+ * See dictAddRaw() for more information. */</doc>
+<use f='codebrowser/src/expire.c' l='336' u='c' c='rememberSlaveKeyWithExpire'/>

@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/bits/fcntl-linux.h' l='62'/>
+<use f='codebrowser/deps/hiredis/net.c' l='115' u='c'/>
+<use f='codebrowser/deps/hiredis/net.c' l='117' u='c'/>
+<use f='codebrowser/src/anet.c' l='73' u='c'/>
+<use f='codebrowser/src/anet.c' l='75' u='c'/>
+<use f='codebrowser/src/aof.c' l='1505' u='c'/>

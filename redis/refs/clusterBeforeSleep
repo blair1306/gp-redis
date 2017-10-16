@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1765' type='void clusterBeforeSleep()'/>
+<def f='codebrowser/src/cluster.c' l='3469' ll='3489' type='void clusterBeforeSleep()'/>
+<doc f='codebrowser/src/cluster.c' l='3464'>/* This function is called before the event handler returns to sleep for
+ * events. It is useful to perform operations that must be done ASAP in
+ * reaction to events fired but that are not safe to perform inside event
+ * handlers, or to perform potentially expansive tasks that we need to do
+ * a single time before replying to clients. */</doc>
+<use f='codebrowser/src/server.c' l='1189' u='c' c='beforeSleep'/>

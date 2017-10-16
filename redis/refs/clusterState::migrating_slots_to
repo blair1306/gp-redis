@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/cluster.h' l='139' type='clusterNode *[16384]'/>
+<use f='codebrowser/src/cluster.c' l='253' u='w' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='892' u='r' c='clusterDelNode'/>
+<use f='codebrowser/src/cluster.c' l='893' u='w' c='clusterDelNode'/>
+<use f='codebrowser/src/cluster.c' l='3616' u='r' c='clusterCloseAllSlots'/>
+<use f='codebrowser/src/cluster.c' l='3617' u='r' c='clusterCloseAllSlots'/>
+<use f='codebrowser/src/cluster.c' l='3911' u='r' c='clusterGenNodeDescription'/>
+<use f='codebrowser/src/cluster.c' l='3913' u='r' c='clusterGenNodeDescription'/>
+<use f='codebrowser/src/cluster.c' l='4191' u='w' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4207' u='w' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4231' u='r' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4232' u='w' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='5284' u='r' c='getNodeByQuery'/>
+<use f='codebrowser/src/cluster.c' l='5341' u='r' c='getNodeByQuery'/>
+<offset>320</offset>

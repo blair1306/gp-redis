@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/cluster.h' l='185' type='uint32_t'/>
+<dec f='codebrowser/src/cluster.h' l='249' type='char [34]'/>
+<use f='codebrowser/src/cluster.c' l='2290' u='w' c='clusterSetGossipEntry'/>
+<offset>17712</offset>
+<doc f='codebrowser/src/cluster.h' l='249'>/* 34 bytes reserved for future usage. */</doc>

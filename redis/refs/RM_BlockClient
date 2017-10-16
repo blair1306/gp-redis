@@ -1,0 +1,18 @@
+<def f='codebrowser/src/module.c' l='3401' ll='3433' type='RedisModuleBlockedClient * RM_BlockClient(RedisModuleCtx * ctx, RedisModuleCmdFunc reply_callback, RedisModuleCmdFunc timeout_callback, void (*)(void *) free_privdata, long long timeout_ms)'/>
+<use f='codebrowser/src/module.c' l='3991' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='3385'>/* Block a client in the context of a blocking command, returning an handle
+ * which will be used, later, in order to unblock the client with a call to
+ * RedisModule_UnblockClient(). The arguments specify callback functions
+ * and a timeout after which the client is unblocked.
+ *
+ * The callbacks are called in the following contexts:
+ *
+ *     reply_callback:  called after a successful RedisModule_UnblockClient()
+ *                      call in order to reply to the client and unblock it.
+ *
+ *     reply_timeout:   called when the timeout is reached in order to send an
+ *                      error to the client.
+ *
+ *     free_privdata:   called in order to free the privata data that is passed
+ *                      by RedisModule_UnblockClient() call.
+ */</doc>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='1463' type='int getDoubleFromObject(const robj * o, double * target)'/>
+<use f='codebrowser/src/module.c' l='889' u='c' c='RM_StringToDouble'/>
+<def f='codebrowser/src/object.c' l='550' ll='576' type='int getDoubleFromObject(const robj * o, double * target)'/>
+<use f='codebrowser/src/object.c' l='580' u='c' c='getDoubleFromObjectOrReply'/>

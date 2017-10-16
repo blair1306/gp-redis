@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1863' type='void ltrimCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='162' u='r'/>
+<use f='codebrowser/src/server.c' l='162' u='r'/>
+<use f='codebrowser/src/server.c' l='162' u='r'/>
+<use f='codebrowser/src/server.c' l='162' u='r'/>
+<def f='codebrowser/src/t_list.c' l='444' ll='488' type='void ltrimCommand(client * c)'/>

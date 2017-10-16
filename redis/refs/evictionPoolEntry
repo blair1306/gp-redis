@@ -1,0 +1,6 @@
+<def f='codebrowser/src/evict.c' l='54' ll='59'/>
+<size>32</size>
+<mbr r='evictionPoolEntry::idle' o='0' t='unsigned long long'/>
+<mbr r='evictionPoolEntry::key' o='64' t='sds'/>
+<mbr r='evictionPoolEntry::cached' o='128' t='sds'/>
+<mbr r='evictionPoolEntry::dbid' o='192' t='int'/>

@@ -1,0 +1,6 @@
+<def f='codebrowser/src/module.c' l='1486' ll='1492' type='int RM_StringSet(RedisModuleKey * key, robj * str)'/>
+<use f='codebrowser/src/module.c' l='3943' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='1482'>/* If the key is open for writing, set the specified string &apos;str&apos; as the
+ * value of the key, deleting the old value if any.
+ * On success REDISMODULE_OK is returned. If the key is not open for
+ * writing or there is an active iterator, REDISMODULE_ERR is returned. */</doc>

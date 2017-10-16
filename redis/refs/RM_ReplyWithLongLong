@@ -1,0 +1,4 @@
+<def f='codebrowser/src/module.c' l='981' ll='986' type='int RM_ReplyWithLongLong(RedisModuleCtx * ctx, long long ll)'/>
+<use f='codebrowser/src/module.c' l='3904' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='979'>/* Send an integer reply to the client, with the specified long long value.
+ * The function always returns REDISMODULE_OK. */</doc>

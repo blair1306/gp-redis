@@ -1,0 +1,24 @@
+<def f='codebrowser/src/module.c' l='844' ll='857' type='void RM_RetainString(RedisModuleCtx * ctx, robj * str)'/>
+<use f='codebrowser/src/module.c' l='3988' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='822'>/* Every call to this function, will make the string &apos;str&apos; requiring
+ * an additional call to RedisModule_FreeString() in order to really
+ * free the string. Note that the automatic freeing of the string obtained
+ * enabling modules automatic memory management counts for one
+ * RedisModule_FreeString() call (it is just executed automatically).
+ *
+ * Normally you want to call this function when, at the same time
+ * the following conditions are true:
+ *
+ * 1) You have automatic memory management enabled.
+ * 2) You want to create string objects.
+ * 3) Those string objects you create need to live *after* the callback
+ *    function(for example a command implementation) creating them returns.
+ *
+ * Usually you want this in order to store the created string object
+ * into your own data structure, for example when implementing a new data
+ * type.
+ *
+ * Note that when memory management is turned off, you don&apos;t need
+ * any call to RetainString() since creating a string will always result
+ * into a string that lives after the callback function returns, if
+ * no FreeString() call is performed. */</doc>

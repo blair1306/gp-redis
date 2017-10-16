@@ -1,0 +1,16 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/ctl.h' l='33' ll='51'/>
+<size>3016</size>
+<mbr r='ctl_arena_stats_s::initialized' o='0' t='_Bool'/>
+<mbr r='ctl_arena_stats_s::nthreads' o='32' t='unsigned int'/>
+<mbr r='ctl_arena_stats_s::dss' o='64' t='const char *'/>
+<mbr r='ctl_arena_stats_s::lg_dirty_mult' o='128' t='ssize_t'/>
+<mbr r='ctl_arena_stats_s::pactive' o='192' t='size_t'/>
+<mbr r='ctl_arena_stats_s::pdirty' o='256' t='size_t'/>
+<mbr r='ctl_arena_stats_s::astats' o='320' t='arena_stats_t'/>
+<mbr r='ctl_arena_stats_s::allocated_small' o='1280' t='size_t'/>
+<mbr r='ctl_arena_stats_s::nmalloc_small' o='1344' t='uint64_t'/>
+<mbr r='ctl_arena_stats_s::ndalloc_small' o='1408' t='uint64_t'/>
+<mbr r='ctl_arena_stats_s::nrequests_small' o='1472' t='uint64_t'/>
+<mbr r='ctl_arena_stats_s::bstats' o='1536' t='malloc_bin_stats_t [39]'/>
+<mbr r='ctl_arena_stats_s::lstats' o='24000' t='malloc_large_stats_t *'/>
+<mbr r='ctl_arena_stats_s::hstats' o='24064' t='malloc_huge_stats_t *'/>

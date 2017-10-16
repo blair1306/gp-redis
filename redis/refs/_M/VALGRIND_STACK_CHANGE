@@ -1,0 +1,4 @@
+<dec f='include/valgrind/valgrind.h' l='7063'/>
+<doc f='include/valgrind/valgrind.h' l='7060'>/* Change the start and end address of the stack id.
+   start is the new lowest addressable stack byte, end is the new highest
+   addressable stack byte. */</doc>

@@ -1,0 +1,20 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='176' ll='239'/>
+<size>1192</size>
+<mbr r='prof_tdata_s::lock' o='0' t='malloc_mutex_t *'/>
+<mbr r='prof_tdata_s::thr_uid' o='64' t='uint64_t'/>
+<mbr r='prof_tdata_s::thr_discrim' o='128' t='uint64_t'/>
+<mbr r='prof_tdata_s::thread_name' o='192' t='char *'/>
+<mbr r='prof_tdata_s::attached' o='256' t='_Bool'/>
+<mbr r='prof_tdata_s::expired' o='264' t='_Bool'/>
+<mbr r='prof_tdata_s::tdata_link' o='320' t='struct (anonymous struct at /home/jon/workspace/redis/deps/jemalloc/include/jemalloc/internal/prof.h:194:2)'/>
+<mbr r='prof_tdata_s::tctx_uid_next' o='448' t='uint64_t'/>
+<mbr r='prof_tdata_s::bt2tctx' o='512' t='ckh_t'/>
+<mbr r='prof_tdata_s::prng_state' o='896' t='uint64_t'/>
+<mbr r='prof_tdata_s::bytes_until_sample' o='960' t='uint64_t'/>
+<mbr r='prof_tdata_s::enq' o='1024' t='_Bool'/>
+<mbr r='prof_tdata_s::enq_idump' o='1032' t='_Bool'/>
+<mbr r='prof_tdata_s::enq_gdump' o='1040' t='_Bool'/>
+<mbr r='prof_tdata_s::dumping' o='1048' t='_Bool'/>
+<mbr r='prof_tdata_s::active' o='1056' t='_Bool'/>
+<mbr r='prof_tdata_s::cnt_summed' o='1088' t='prof_cnt_t'/>
+<mbr r='prof_tdata_s::vec' o='1344' t='void *[128]'/>

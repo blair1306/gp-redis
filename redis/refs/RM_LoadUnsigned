@@ -1,0 +1,6 @@
+<def f='codebrowser/src/module.c' l='2977' ll='2990' type='uint64_t RM_LoadUnsigned(RedisModuleIO * io)'/>
+<use f='codebrowser/src/module.c' l='3002' u='c' c='RM_LoadSigned'/>
+<use f='codebrowser/src/module.c' l='3973' macro='1' u='r'/>
+<doc f='codebrowser/src/module.c' l='2974'>/* Load an unsigned 64 bit value from the RDB file. This function should only
+ * be called in the context of the rdb_load method of modules implementing
+ * new data types. */</doc>

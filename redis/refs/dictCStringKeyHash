@@ -1,0 +1,5 @@
+<def f='codebrowser/src/module.c' l='3653' ll='3655' type='uint64_t dictCStringKeyHash(const void * key)'/>
+<use f='codebrowser/src/module.c' l='3663'/>
+<use f='codebrowser/src/module.c' l='3663'/>
+<doc f='codebrowser/src/module.c' l='3650'>/* server.moduleapi dictionary type. Only uses plain C strings since
+ * this gets queries from modules. */</doc>

@@ -1,0 +1,32 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='225' type='sds sdscatsds(sds s, const sds t)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='399' ll='401' type='sds sdscatsds(sds s, const sds t)'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='1083' u='c' c='sdsjoinsds'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='395'>/* Append the specified sds &apos;t&apos; to the existing sds &apos;s&apos;.
+ *
+ * After the call, the modified sds string is no longer valid and all the
+ * references must be substituted with the new pointer returned by the call. */</doc>
+<dec f='codebrowser/src/sds.h' l='225' type='sds sdscatsds(sds s, const sds t)'/>
+<use f='codebrowser/src/cluster.c' l='3946' u='c' c='clusterGenNodesDescription'/>
+<use f='codebrowser/src/config.c' l='1533' u='c' c='rewriteConfigReadOldFile'/>
+<use f='codebrowser/src/config.c' l='1805' u='c' c='rewriteConfigBindOption'/>
+<use f='codebrowser/src/config.c' l='1825' u='c' c='rewriteConfigGetContentFromState'/>
+<use f='codebrowser/src/debug.c' l='516' u='c' c='debugCommand'/>
+<use f='codebrowser/src/module.c' l='2639' u='c' c='RM_Call'/>
+<use f='codebrowser/src/networking.c' l='238' u='c' c='_addReplyObjectToList'/>
+<use f='codebrowser/src/networking.c' l='268' u='c' c='_addReplySdsToList'/>
+<use f='codebrowser/src/networking.c' l='448' u='c' c='setDeferredMultiBulkLength'/>
+<use f='codebrowser/src/notify.c' l='112' u='c' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/notify.c' l='124' u='c' c='notifyKeyspaceEvent'/>
+<use f='codebrowser/src/redis-cli.c' l='461' u='c' c='hintsCallback'/>
+<use f='codebrowser/src/scripting.c' l='449' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='572' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='1569' u='c' c='ldbSendLogs'/>
+<use f='codebrowser/src/scripting.c' l='1910' u='c' c='ldbCatStackValueRec'/>
+<use f='codebrowser/src/scripting.c' l='2140' u='c' c='ldbEval'/>
+<def f='codebrowser/src/sds.c' l='402' ll='404' type='sds sdscatsds(sds s, const sds t)'/>
+<use f='codebrowser/src/sds.c' l='1088' u='c' c='sdsjoinsds'/>
+<doc f='codebrowser/src/sds.c' l='398'>/* Append the specified sds &apos;t&apos; to the existing sds &apos;s&apos;.
+ *
+ * After the call, the modified sds string is no longer valid and all the
+ * references must be substituted with the new pointer returned by the call. */</doc>
+<use f='codebrowser/src/util.c' l='663' u='c' c='getAbsolutePath'/>

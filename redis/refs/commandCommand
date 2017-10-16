@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1820' type='void commandCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='291' u='r'/>
+<use f='codebrowser/src/server.c' l='291' u='r'/>
+<use f='codebrowser/src/server.c' l='291' u='r'/>
+<use f='codebrowser/src/server.c' l='291' u='r'/>
+<def f='codebrowser/src/server.c' l='2728' ll='2769' type='void commandCommand(client * c)'/>
+<doc f='codebrowser/src/server.c' l='2727'>/* COMMAND &lt;subcommand&gt; &lt;args&gt; */</doc>

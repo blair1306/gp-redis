@@ -1,0 +1,9 @@
+<def f='codebrowser/deps/hiredis/sds.h' l='179' ll='194' type='size_t sdsalloc(const sds s)'/>
+<doc f='codebrowser/deps/hiredis/sds.h' l='178'>/* sdsalloc() = sdsavail() + sdslen() */</doc>
+<use f='codebrowser/deps/hiredis/sds.c' l='279' u='c' c='sdsAllocSize'/>
+<use f='codebrowser/deps/hiredis/sds.c' l='406' u='c' c='sdscpylen'/>
+<def f='codebrowser/src/sds.h' l='179' ll='194' type='size_t sdsalloc(const sds s)'/>
+<doc f='codebrowser/src/sds.h' l='178'>/* sdsalloc() = sdsavail() + sdslen() */</doc>
+<use f='codebrowser/src/scripting.c' l='611' u='c' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/sds.c' l='282' u='c' c='sdsAllocSize'/>
+<use f='codebrowser/src/sds.c' l='409' u='c' c='sdscpylen'/>

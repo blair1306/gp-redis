@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='1156' type='int'/>
+<offset>21952</offset>
+<doc f='codebrowser/src/server.h' l='1156'>/* Cluster replicas migration barrier. */</doc>
+<use f='codebrowser/src/cluster.c' l='3043' u='r' c='clusterHandleSlaveMigration'/>
+<use f='codebrowser/src/config.c' l='621' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='622' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1110' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1274' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2011' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/server.c' l='1428' u='w' c='initServerConfig'/>

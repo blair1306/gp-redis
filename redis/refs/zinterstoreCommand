@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1938' type='void zinterstoreCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='187' u='r'/>
+<use f='codebrowser/src/server.c' l='187' u='r'/>
+<use f='codebrowser/src/server.c' l='187' u='r'/>
+<use f='codebrowser/src/server.c' l='187' u='r'/>
+<def f='codebrowser/src/t_zset.c' l='2356' ll='2358' type='void zinterstoreCommand(client * c)'/>

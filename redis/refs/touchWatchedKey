@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1422' type='void touchWatchedKey(redisDb * db, robj * key)'/>
+<use f='codebrowser/src/db.c' l='356' u='c' c='signalModifiedKey'/>
+<def f='codebrowser/src/multi.c' l='276' ll='293' type='void touchWatchedKey(redisDb * db, robj * key)'/>
+<doc f='codebrowser/src/multi.c' l='274'>/* &quot;Touch&quot; a key, so that if this key is being WATCHed by some client the
+ * next EXEC will fail. */</doc>

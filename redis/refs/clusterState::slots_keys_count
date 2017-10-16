@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/cluster.h' l='142' type='uint64_t [16384]'/>
+<use f='codebrowser/src/cluster.c' l='483' u='r' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='484' u='r' c='clusterInit'/>
+<offset>3146048</offset>
+<use f='codebrowser/src/db.c' l='1365' u='w' c='slotToKeyUpdateKey'/>
+<use f='codebrowser/src/db.c' l='1389' u='r' c='slotToKeyFlush'/>
+<use f='codebrowser/src/db.c' l='1390' u='r' c='slotToKeyFlush'/>
+<use f='codebrowser/src/db.c' l='1423' u='r' c='delKeysInSlot'/>
+<use f='codebrowser/src/db.c' l='1437' u='r' c='countKeysInSlot'/>
+<use f='codebrowser/src/lazyfree.c' l='104' u='r' c='slotToKeyFlushAsync'/>
+<use f='codebrowser/src/lazyfree.c' l='105' u='r' c='slotToKeyFlushAsync'/>

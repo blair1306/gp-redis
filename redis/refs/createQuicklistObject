@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1451' type='robj * createQuicklistObject()'/>
+<use f='codebrowser/src/module.c' l='351' u='c' c='moduleCreateEmptyKey'/>
+<def f='codebrowser/src/object.c' l='182' ll='187' type='robj * createQuicklistObject()'/>
+<use f='codebrowser/src/rdb.c' l='1161' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1313' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/sort.c' l='223' u='c' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='536' u='c' c='sortCommand'/>
+<use f='codebrowser/src/t_list.c' l='208' u='c' c='pushGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='553' u='c' c='rpoplpushHandlePush'/>

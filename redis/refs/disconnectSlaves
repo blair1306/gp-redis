@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/server.h' l='1379' type='void disconnectSlaves()'/>
+<def f='codebrowser/src/networking.c' l='725' ll='730' type='void disconnectSlaves()'/>
+<doc f='codebrowser/src/networking.c' l='722'>/* Close all the slaves connections. This is useful in chained replication
+ * when we resync with our own master and want to force all our slaves to
+ * resync with us as well. */</doc>
+<use f='codebrowser/src/replication.c' l='1528' u='c' c='slaveTryPartialResynchronization'/>
+<use f='codebrowser/src/replication.c' l='1793' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/replication.c' l='1939' u='c' c='replicationSetMaster'/>
+<use f='codebrowser/src/replication.c' l='1965' u='c' c='replicationUnsetMaster'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/ziplist.h' l='49' type='unsigned int ziplistLen(unsigned char * zl)'/>
+<use f='codebrowser/src/quicklist.c' l='529' u='c' c='quicklistAppendZiplist'/>
+<use f='codebrowser/src/quicklist.c' l='712' u='c' c='_quicklistZiplistMerge'/>
+<use f='codebrowser/src/quicklist.c' l='817' u='c' c='_quicklistSplitNode'/>
+<use f='codebrowser/src/quicklist.c' l='821' u='c' c='_quicklistSplitNode'/>
+<use f='codebrowser/src/t_hash.c' l='315' u='c' c='hashTypeLength'/>
+<use f='codebrowser/src/t_zset.c' l='727' u='c' c='zzlLength'/>
+<def f='codebrowser/src/ziplist.c' l='1168' ll='1183' type='unsigned int ziplistLen(unsigned char * zl)'/>
+<doc f='codebrowser/src/ziplist.c' l='1167'>/* Return length of ziplist. */</doc>

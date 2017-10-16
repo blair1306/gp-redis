@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1250' type='quicklistIter *'/>
+<offset>128</offset>
+<use f='codebrowser/src/t_list.c' l='89' u='w' c='listTypeInitIterator'/>
+<use f='codebrowser/src/t_list.c' l='95' u='w' c='listTypeInitIterator'/>
+<use f='codebrowser/src/t_list.c' l='105' u='r' c='listTypeReleaseIterator'/>
+<use f='codebrowser/src/t_list.c' l='118' u='r' c='listTypeNext'/>
+<use f='codebrowser/src/t_list.c' l='172' u='r' c='listTypeDelete'/>

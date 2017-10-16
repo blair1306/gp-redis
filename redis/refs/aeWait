@@ -1,0 +1,9 @@
+<dec f='codebrowser/src/ae.h' l='118' type='int aeWait(int fd, int mask, long long milliseconds)'/>
+<def f='codebrowser/src/ae.c' l='439' ll='457' type='int aeWait(int fd, int mask, long long milliseconds)'/>
+<doc f='codebrowser/src/ae.c' l='437'>/* Wait for milliseconds until the given file descriptor becomes
+ * writable/readable/exception */</doc>
+<use f='codebrowser/src/aof.c' l='1194' u='c' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/cluster.c' l='4814' u='c' c='migrateGetSocket'/>
+<use f='codebrowser/src/redis-cli.c' l='1846' u='c' c='pipeMode'/>
+<use f='codebrowser/src/syncio.c' l='71' u='c' c='syncWrite'/>
+<use f='codebrowser/src/syncio.c' l='110' u='c' c='syncRead'/>

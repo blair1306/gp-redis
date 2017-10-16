@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/server.h' l='782' type='unsigned long long'/>
+<offset>64</offset>
+<use f='codebrowser/src/config.c' l='670' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='973' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1368' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1770' u='r' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/config.c' l='1771' u='r' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/config.c' l='1780' u='r' c='rewriteConfigClientoutputbufferlimitOption'/>
+<use f='codebrowser/src/networking.c' l='1874' u='r' c='checkClientOutputBufferLimits'/>
+<use f='codebrowser/src/networking.c' l='1875' u='r' c='checkClientOutputBufferLimits'/>

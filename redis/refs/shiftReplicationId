@@ -1,0 +1,7 @@
+<def f='codebrowser/src/replication.c' l='1026' ll='1038' type='void shiftReplicationId()'/>
+<use f='codebrowser/src/replication.c' l='1957' u='c' c='replicationUnsetMaster'/>
+<doc f='codebrowser/src/replication.c' l='1021'>/* Use the current replication ID / offset as secondary replication
+ * ID, and change the current one in order to start a new history.
+ * This should be used when an instance is switched from slave to master
+ * so that it can serve PSYNC requests performed using the master
+ * replication ID. */</doc>

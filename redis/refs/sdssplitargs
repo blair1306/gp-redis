@@ -1,0 +1,50 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='249' type='sds * sdssplitargs(const char * line, int * argc)'/>
+<def f='codebrowser/deps/hiredis/sds.c' l='931' ll='1039' type='sds * sdssplitargs(const char * line, int * argc)'/>
+<doc f='codebrowser/deps/hiredis/sds.c' l='912'>/* Split a line into arguments, where every argument can be in the
+ * following programming-language REPL-alike form:
+ *
+ * foo bar &quot;newline are supported\n&quot; and &quot;\xff\x00otherstuff&quot;
+ *
+ * The number of arguments is stored into *argc, and an array
+ * of sds is returned.
+ *
+ * The caller should free the resulting array of sds strings with
+ * sdsfreesplitres().
+ *
+ * Note that sdscatrepr() is able to convert back a string into
+ * a quoted string in the same format sdssplitargs() is able to parse.
+ *
+ * The function returns the allocated tokens on success, even when the
+ * input string is empty, or NULL if the input contains unbalanced
+ * quotes or closed quotes followed by non space characters
+ * as in: &quot;foo&quot;bar or &quot;foo&apos;
+ */</doc>
+<dec f='codebrowser/src/sds.h' l='249' type='sds * sdssplitargs(const char * line, int * argc)'/>
+<use f='codebrowser/src/cluster.c' l='134' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/config.c' l='191' u='c' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1527' u='c' c='rewriteConfigReadOldFile'/>
+<use f='codebrowser/src/networking.c' l='1071' u='c' c='processInlineBuffer'/>
+<use f='codebrowser/src/redis-cli.c' l='255' u='c' c='cliInitHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='431' u='c' c='hintsCallback'/>
+<use f='codebrowser/src/redis-cli.c' l='1230' u='c' c='cliSplitArgs'/>
+<use f='codebrowser/src/redis-cli.c' l='1265' u='c' c='cliLoadPreferences'/>
+<def f='codebrowser/src/sds.c' l='936' ll='1044' type='sds * sdssplitargs(const char * line, int * argc)'/>
+<doc f='codebrowser/src/sds.c' l='917'>/* Split a line into arguments, where every argument can be in the
+ * following programming-language REPL-alike form:
+ *
+ * foo bar &quot;newline are supported\n&quot; and &quot;\xff\x00otherstuff&quot;
+ *
+ * The number of arguments is stored into *argc, and an array
+ * of sds is returned.
+ *
+ * The caller should free the resulting array of sds strings with
+ * sdsfreesplitres().
+ *
+ * Note that sdscatrepr() is able to convert back a string into
+ * a quoted string in the same format sdssplitargs() is able to parse.
+ *
+ * The function returns the allocated tokens on success, even when the
+ * input string is empty, or NULL if the input contains unbalanced
+ * quotes or closed quotes followed by non space characters
+ * as in: &quot;foo&quot;bar or &quot;foo&apos;
+ */</doc>

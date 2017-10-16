@@ -1,0 +1,29 @@
+<dec f='codebrowser/src/server.h' l='727' type='int'/>
+<use f='codebrowser/src/aof.c' l='594' u='w' c='createFakeClient'/>
+<use f='codebrowser/src/aof.c' l='746' u='r' c='loadAppendOnlyFile'/>
+<offset>3712</offset>
+<doc f='codebrowser/src/server.h' l='726'>/* Response buffer */</doc>
+<use f='codebrowser/src/module.c' l='2634' u='r' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='2635' u='w' c='RM_Call'/>
+<use f='codebrowser/src/module.c' l='3513' u='r' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='3515' u='r' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/networking.c' l='97' u='w' c='createClient'/>
+<use f='codebrowser/src/networking.c' l='208' u='r' c='_addReplyToBuffer'/>
+<use f='codebrowser/src/networking.c' l='219' u='r' c='_addReplyToBuffer'/>
+<use f='codebrowser/src/networking.c' l='220' u='w' c='_addReplyToBuffer'/>
+<use f='codebrowser/src/networking.c' l='328' u='r' c='addReply'/>
+<use f='codebrowser/src/networking.c' l='593' u='r' c='copyClientOutputBuffer'/>
+<use f='codebrowser/src/networking.c' l='594' u='w' c='copyClientOutputBuffer'/>
+<use f='codebrowser/src/networking.c' l='594' u='r' c='copyClientOutputBuffer'/>
+<use f='codebrowser/src/networking.c' l='601' u='r' c='clientHasPendingReplies'/>
+<use f='codebrowser/src/networking.c' l='898' u='r' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='899' u='r' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='906' u='r' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='907' u='w' c='writeToClient'/>
+<use f='codebrowser/src/networking.c' l='1532' u='r' c='catClientInfoString'/>
+<use f='codebrowser/src/replication.c' l='2137' u='w' c='replicationCacheMaster'/>
+<use f='codebrowser/src/scripting.c' l='559' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='563' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='565' u='w' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='567' u='r' c='luaRedisGenericCommand'/>
+<use f='codebrowser/src/scripting.c' l='568' u='w' c='luaRedisGenericCommand'/>

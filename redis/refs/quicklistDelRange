@@ -1,0 +1,10 @@
+<dec f='codebrowser/src/quicklist.h' l='140' type='int quicklistDelRange(quicklist * quicklist, const long start, const long stop)'/>
+<def f='codebrowser/src/quicklist.c' l='958' ll='1039' type='int quicklistDelRange(quicklist * quicklist, const long start, const long count)'/>
+<doc f='codebrowser/src/quicklist.c' l='952'>/* Delete a range of elements from the quicklist.
+ *
+ * elements may span across multiple quicklistNodes, so we
+ * have to be careful about tracking where we start and end.
+ *
+ * Returns 1 if entries were deleted, 0 if nothing was deleted. */</doc>
+<use f='codebrowser/src/t_list.c' l='474' u='c' c='ltrimCommand'/>
+<use f='codebrowser/src/t_list.c' l='475' u='c' c='ltrimCommand'/>

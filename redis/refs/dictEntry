@@ -1,0 +1,10 @@
+<def f='codebrowser/deps/hiredis/dict.h' l='45' ll='49'/>
+<size>24</size>
+<mbr r='dictEntry::key' o='0' t='void *'/>
+<mbr r='dictEntry::val' o='64' t='void *'/>
+<mbr r='dictEntry::next' o='128' t='struct dictEntry *'/>
+<def f='codebrowser/src/dict.h' l='47' ll='56'/>
+<size>24</size>
+<mbr r='dictEntry::key' o='0' t='void *'/>
+<mbr r='dictEntry::v' o='64' t='union (anonymous union at /home/jon/workspace/redis/deps/lua/src/../../../src/dict.h:49:5)'/>
+<mbr r='dictEntry::next' o='128' t='struct dictEntry *'/>

@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1668' type='unsigned long hashTypeLength(const robj * o)'/>
+<use f='codebrowser/src/aof.c' l='1010' u='c' c='rewriteHashObject'/>
+<use f='codebrowser/src/debug.c' l='613' u='c' c='serverLogObjectDebugInfo'/>
+<use f='codebrowser/src/module.c' l='387' u='c' c='moduleDelKeyIfEmpty'/>
+<use f='codebrowser/src/module.c' l='1429' u='c' c='RM_ValueLength'/>
+<use f='codebrowser/src/rdb.c' l='1363' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1390' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_hash.c' l='237' u='c' c='hashTypeSet'/>
+<def f='codebrowser/src/t_hash.c' l='311' ll='322' type='unsigned long hashTypeLength(const robj * o)'/>
+<use f='codebrowser/src/t_hash.c' l='712' u='c' c='hdelCommand'/>
+<use f='codebrowser/src/t_hash.c' l='736' u='c' c='hlenCommand'/>
+<use f='codebrowser/src/t_hash.c' l='778' u='c' c='genericHgetallCommand'/>
+<doc f='codebrowser/src/t_hash.c' l='310'>/* Return the number of elements in a hash. */</doc>

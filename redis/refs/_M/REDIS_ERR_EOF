@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/hiredis/read.h' l='45'/>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='811' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='770' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='947' u='c'/>
+<use f='codebrowser/src/redis-cli.c' l='961' u='c'/>

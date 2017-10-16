@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='94' type='tcaches_t *'/>
+<offset>0</offset>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='454' u='r' c='je_tcaches_create'/>
+<use f='codebrowser/deps/jemalloc/src/tcache.c' l='489' u='w' c='je_tcaches_destroy'/>

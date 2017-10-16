@@ -1,0 +1,2 @@
+<def f='codebrowser/src/server.c' l='73' type='volatile unsigned long'/>
+<doc f='codebrowser/src/server.c' l='73'>/* Server global current LRU time. */</doc>

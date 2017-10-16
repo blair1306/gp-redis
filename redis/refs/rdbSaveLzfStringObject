@@ -1,0 +1,2 @@
+<def f='codebrowser/src/rdb.c' l='311' ll='327' type='ssize_t rdbSaveLzfStringObject(rio * rdb, unsigned char * s, size_t len)'/>
+<use f='codebrowser/src/rdb.c' l='391' u='c' c='rdbSaveRawString'/>

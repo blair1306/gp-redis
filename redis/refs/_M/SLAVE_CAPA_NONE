@@ -1,0 +1,3 @@
+<dec f='codebrowser/src/server.h' l='304'/>
+<doc f='codebrowser/src/server.h' l='303'>/* Slave capabilities. */</doc>
+<use f='codebrowser/src/networking.c' l='119' u='c'/>

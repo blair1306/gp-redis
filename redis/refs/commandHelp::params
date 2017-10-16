@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/help.h' l='25' type='char *'/>
+<use f='codebrowser/src/redis-cli.c' l='305' u='w' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='308' u='w' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='308' u='r' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='311' u='w' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='311' u='r' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='313' u='w' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='313' u='r' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='324' u='r' c='cliOutputCommandHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='447' u='r' c='hintsCallback'/>
+<offset>64</offset>

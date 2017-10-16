@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1910' type='void zcountCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='193' u='r'/>
+<use f='codebrowser/src/server.c' l='193' u='r'/>
+<use f='codebrowser/src/server.c' l='193' u='r'/>
+<use f='codebrowser/src/server.c' l='193' u='r'/>
+<def f='codebrowser/src/t_zset.c' l='2670' ll='2745' type='void zcountCommand(client * c)'/>

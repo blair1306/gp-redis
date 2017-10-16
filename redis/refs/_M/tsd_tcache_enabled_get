@@ -1,0 +1,2 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/private_namespace.h' l='483'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/tcache.h' l='191' u='c'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='749' type='robj *'/>
+<offset>2304</offset>
+<use f='codebrowser/src/pubsub.c' l='167' u='r' c='pubsubUnsubscribePattern'/>
+<use f='codebrowser/src/pubsub.c' l='216' u='r' c='pubsubUnsubscribeAllPatterns'/>
+<use f='codebrowser/src/server.c' l='1313' u='w' c='createSharedObjects'/>

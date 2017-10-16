@@ -1,0 +1,17 @@
+<dec f='codebrowser/deps/hiredis/hiredis.h' l='114' type='long long'/>
+<use f='codebrowser/deps/hiredis/async.c' l='399' u='r' c='__redisGetSubscribeCallback'/>
+<offset>64</offset>
+<doc f='codebrowser/deps/hiredis/hiredis.h' l='114'>/* The integer when type is REDIS_REPLY_INTEGER */</doc>
+<use f='codebrowser/deps/hiredis/hiredis.c' l='166' u='w' c='createIntegerObject'/>
+<use f='codebrowser/src/redis-cli.c' l='306' u='r' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='307' u='r' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='312' u='r' c='cliIntegrateHelp'/>
+<use f='codebrowser/src/redis-cli.c' l='566' u='r' c='cliFormatReplyTTY'/>
+<use f='codebrowser/src/redis-cli.c' l='700' u='r' c='cliFormatReplyRaw'/>
+<use f='codebrowser/src/redis-cli.c' l='730' u='r' c='cliFormatReplyCSV'/>
+<use f='codebrowser/src/redis-cli.c' l='2025' u='r' c='getDbSize'/>
+<use f='codebrowser/src/redis-cli.c' l='2119' u='r' c='getKeySizes'/>
+<use f='codebrowser/src/sentinel.c' l='3526' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3535' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3539' u='r' c='sentinelReceiveIsMasterDownReply'/>
+<use f='codebrowser/src/sentinel.c' l='3541' u='r' c='sentinelReceiveIsMasterDownReply'/>

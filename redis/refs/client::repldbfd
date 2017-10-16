@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='702' type='int'/>
+<offset>1344</offset>
+<doc f='codebrowser/src/server.h' l='702'>/* Replication DB file descriptor. */</doc>
+<use f='codebrowser/src/networking.c' l='833' u='r' c='freeClient'/>
+<use f='codebrowser/src/networking.c' l='833' u='r' c='freeClient'/>
+<use f='codebrowser/src/replication.c' l='687' u='w' c='syncCommand'/>
+<use f='codebrowser/src/replication.c' l='900' u='r' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='901' u='r' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='919' u='r' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='920' u='w' c='sendBulkToSlave'/>
+<use f='codebrowser/src/replication.c' l='980' u='w' c='updateSlavesWaitingBgsave'/>
+<use f='codebrowser/src/replication.c' l='981' u='r' c='updateSlavesWaitingBgsave'/>

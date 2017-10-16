@@ -1,0 +1,4 @@
+<def f='codebrowser/src/latency.c' l='477' ll='491' type='void latencyCommandReplyWithSamples(client * c, struct latencyTimeSeries * ts)'/>
+<use f='codebrowser/src/latency.c' l='576' u='c' c='latencyCommand'/>
+<doc f='codebrowser/src/latency.c' l='475'>/* latencyCommand() helper to produce a time-delay reply for all the samples
+ * in memory for the specified time series. */</doc>

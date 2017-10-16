@@ -1,0 +1,15 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='321'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='713' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='100' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='124' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='134' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1101' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1145' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2276' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2282' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2687' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2689' u='c'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='320'>/* Return the smallest pagesize multiple that is &gt;= s. */</doc>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='66' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='121' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/base.c' l='122' u='c'/>

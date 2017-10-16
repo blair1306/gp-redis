@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1425' type='void flagTransaction(client * c)'/>
+<def f='codebrowser/src/multi.c' l='81' ll='84' type='void flagTransaction(client * c)'/>
+<doc f='codebrowser/src/multi.c' l='79'>/* Flag the transacation as DIRTY_EXEC so that EXEC will fail.
+ * Should be called every time there is an error while queueing a command. */</doc>
+<use f='codebrowser/src/server.c' l='2323' u='c' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2329' u='c' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2338' u='c' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2362' u='c' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2383' u='c' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2399' u='c' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2418' u='c' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2450' u='c' c='processCommand'/>
+<use f='codebrowser/src/server.c' l='2473' u='c' c='processCommand'/>

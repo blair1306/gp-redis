@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/adlist.h' l='75' type='void listEmpty(list * list)'/>
+<def f='codebrowser/src/adlist.c' l='56' ll='71' type='void listEmpty(list * list)'/>
+<use f='codebrowser/src/adlist.c' l='78' u='c' c='listRelease'/>
+<doc f='codebrowser/src/adlist.c' l='55'>/* Remove all the elements from the list without destroying the list itself. */</doc>
+<use f='codebrowser/src/replication.c' l='2136' u='c' c='replicationCacheMaster'/>

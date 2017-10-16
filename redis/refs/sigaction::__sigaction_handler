@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/bits/sigaction.h' l='35' type='union (anonymous union at /usr/include/x86_64-linux-gnu/bits/sigaction.h:28:5)'/>
+<offset>0</offset>
+<use f='codebrowser/src/debug.c' l='1112' macro='1' u='m'/>
+<use f='codebrowser/src/debug.c' l='1187' macro='1' u='m'/>
+<use f='codebrowser/src/debug.c' l='1209' macro='1' u='m'/>
+<use f='codebrowser/src/redis-check-rdb.c' l='168' macro='1' u='m'/>
+<use f='codebrowser/src/scripting.c' l='1605' macro='1' u='m'/>
+<use f='codebrowser/src/server.c' l='3493' macro='1' u='m'/>
+<use f='codebrowser/src/server.c' l='3500' macro='1' u='m'/>

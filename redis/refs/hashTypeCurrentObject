@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/server.h' l='1677' type='void hashTypeCurrentObject(hashTypeIterator * hi, int what, unsigned char ** vstr, unsigned int * vlen, long long * vll)'/>
+<def f='codebrowser/src/t_hash.c' l='426' ll='437' type='void hashTypeCurrentObject(hashTypeIterator * hi, int what, unsigned char ** vstr, unsigned int * vlen, long long * vll)'/>
+<use f='codebrowser/src/t_hash.c' l='446' u='c' c='hashTypeCurrentObjectNewSds'/>
+<doc f='codebrowser/src/t_hash.c' l='416'>/* Higher level function of hashTypeCurrent*() that returns the hash value
+ * at current iterator position.
+ *
+ * The returned element is returned by reference in either *vstr and *vlen if
+ * it&apos;s returned in string form, or stored in *vll if it&apos;s returned as
+ * a number.
+ *
+ * If *vll is populated *vstr is set to NULL, so the caller
+ * can always check the function return by checking the return value
+ * type checking if vstr == NULL. */</doc>

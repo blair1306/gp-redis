@@ -1,0 +1,13 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/valgrind.h' l='33'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/valgrind.h' l='28'>/*
+ * The VALGRIND_MALLOCLIKE_BLOCK() and VALGRIND_RESIZEINPLACE_BLOCK() macro
+ * calls must be embedded in macros rather than in functions so that when
+ * Valgrind reports errors, there are no extra stack frames in the backtraces.
+ */</doc>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1441' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1556' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1573' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1680' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1860' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1874' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2077' u='c'/>

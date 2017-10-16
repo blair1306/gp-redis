@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='913' ll='923' macro='1' type='int luaopen_cmsgpack(lua_State * L)'/>
+<use f='codebrowser/deps/lua/src/lua_cmsgpack.c' l='928' u='c' c='luaopen_cmsgpack_safe'/>
+<dec f='codebrowser/src/scripting.c' l='818' type='int luaopen_cmsgpack(lua_State * L)'/>
+<use f='codebrowser/src/scripting.c' l='829' u='r' c='luaLoadLibraries'/>

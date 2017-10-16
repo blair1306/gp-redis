@@ -1,0 +1,14 @@
+<dec f='codebrowser/src/server.h' l='745' type='robj *'/>
+<offset>896</offset>
+<use f='codebrowser/src/object.c' l='354' u='r' c='checkType'/>
+<use f='codebrowser/src/server.c' l='1262' u='w' c='createSharedObjects'/>
+<use f='codebrowser/src/sort.c' l='207' u='r' c='sortCommand'/>
+<use f='codebrowser/src/t_hash.c' l='458' u='r' c='hashTypeLookupWriteOrCreate'/>
+<use f='codebrowser/src/t_hash.c' l='692' u='r' c='hmgetCommand'/>
+<use f='codebrowser/src/t_list.c' l='202' u='r' c='pushGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='892' u='r' c='blockingPopGenericCommand'/>
+<use f='codebrowser/src/t_list.c' l='963' u='r' c='brpoplpushCommand'/>
+<use f='codebrowser/src/t_set.c' l='274' u='r' c='saddCommand'/>
+<use f='codebrowser/src/t_string.c' l='164' u='r' c='getGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='1566' u='r' c='zaddGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2161' u='r' c='zunionInterGenericCommand'/>

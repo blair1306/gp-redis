@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/lua.h' l='347' type='int'/>
+<offset>0</offset>
+<use f='codebrowser/deps/lua/src/ldblib.c' l='215' u='r' c='hookf'/>
+<use f='codebrowser/deps/lua/src/ldo.c' l='187' u='w' c='luaD_callhook'/>
+<use f='codebrowser/src/scripting.c' l='2355' u='r' c='luaLdbLineHook'/>

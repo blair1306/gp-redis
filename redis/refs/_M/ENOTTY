@@ -1,0 +1,2 @@
+<dec f='include/asm-generic/errno-base.h' l='28'/>
+<use f='codebrowser/deps/linenoise/linenoise.c' l='249' u='c'/>

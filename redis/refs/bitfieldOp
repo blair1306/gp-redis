@@ -1,0 +1,11 @@
+<def f='codebrowser/src/bitops.c' l='905' ll='912'/>
+<size>32</size>
+<doc f='codebrowser/src/bitops.c' l='895'>/* BITFIELD key subcommmand-1 arg ... subcommand-2 arg ... subcommand-N ...
+ *
+ * Supported subcommands:
+ *
+ * GET &lt;type&gt; &lt;offset&gt;
+ * SET &lt;type&gt; &lt;offset&gt; &lt;value&gt;
+ * INCRBY &lt;type&gt; &lt;offset&gt; &lt;increment&gt;
+ * OVERFLOW [WRAP|SAT|FAIL]
+ */</doc>

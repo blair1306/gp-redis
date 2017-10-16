@@ -1,0 +1,17 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='31' ll='33' type='const _Bool'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='2906' u='r' c='je_arena_dss_prec_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='349' u='r' c='chunk_alloc_core'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='361' u='r' c='chunk_alloc_core'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='603' u='r' c='chunk_dalloc_default'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='686' u='r' c='chunk_merge_default'/>
+<use f='codebrowser/deps/jemalloc/src/chunk.c' l='733' u='r' c='je_chunk_boot'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='48' u='r' c='je_chunk_dss_prec_get'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='60' u='r' c='je_chunk_dss_prec_set'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='72' u='r' c='je_chunk_alloc_dss'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='162' u='r' c='je_chunk_in_dss'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='179' u='r' c='je_chunk_dss_boot'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='194' u='r' c='je_chunk_dss_prefork'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='202' u='r' c='je_chunk_dss_postfork_parent'/>
+<use f='codebrowser/deps/jemalloc/src/chunk_dss.c' l='210' u='r' c='je_chunk_dss_postfork_child'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='113' u='r' c='je_huge_dalloc_junk'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='118' u='r' c='je_huge_dalloc_junk'/>

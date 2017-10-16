@@ -1,0 +1,2 @@
+<def f='codebrowser/src/debug.c' l='706' ll='833' type='void logRegisters(ucontext_t * uc)'/>
+<use f='codebrowser/src/debug.c' l='1054' u='c' c='sigsegvHandler'/>

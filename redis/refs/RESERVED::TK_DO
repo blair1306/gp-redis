@@ -1,0 +1,5 @@
+<dec f='codebrowser/deps/lua/src/llex.h' l='27' type='259'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='1001' u='r' c='whilestat'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='1052' u='r' c='forbody'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='1282' c='statement'/>
+<use f='codebrowser/deps/lua/src/lparser.c' l='1285' u='r' c='statement'/>

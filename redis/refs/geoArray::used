@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/geo.h' l='19' type='size_t'/>
+<use f='codebrowser/src/geo.c' l='58' u='w' c='geoArrayCreate'/>
+<use f='codebrowser/src/geo.c' l='65' u='r' c='geoArrayAppend'/>
+<use f='codebrowser/src/geo.c' l='69' u='r' c='geoArrayAppend'/>
+<use f='codebrowser/src/geo.c' l='70' u='w' c='geoArrayAppend'/>
+<use f='codebrowser/src/geo.c' l='77' u='r' c='geoArrayFree'/>
+<use f='codebrowser/src/geo.c' l='229' u='r' c='geoGetPointsInRange'/>
+<use f='codebrowser/src/geo.c' l='283' u='r' c='geoGetPointsInRange'/>
+<use f='codebrowser/src/geo.c' l='568' u='r' c='georadiusGeneric'/>
+<use f='codebrowser/src/geo.c' l='574' u='r' c='georadiusGeneric'/>
+<offset>128</offset>

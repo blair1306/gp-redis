@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='922' type='dict *'/>
+<offset>6528</offset>
+<doc f='codebrowser/src/server.h' l='922'>/* MIGRATE cached sockets */</doc>
+<use f='codebrowser/src/cluster.c' l='4785' u='r' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4793' u='r' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4793' u='r' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4795' u='r' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4799' u='r' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4827' u='r' c='migrateGetSocket'/>
+<use f='codebrowser/src/cluster.c' l='4839' u='r' c='migrateCloseSocket'/>
+<use f='codebrowser/src/cluster.c' l='4847' u='r' c='migrateCloseSocket'/>
+<use f='codebrowser/src/cluster.c' l='4852' u='r' c='migrateCloseTimedoutSockets'/>
+<use f='codebrowser/src/cluster.c' l='4861' u='r' c='migrateCloseTimedoutSockets'/>
+<use f='codebrowser/src/server.c' l='1435' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/server.c' l='3117' u='r' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3117' u='r' c='genRedisInfoString'/>

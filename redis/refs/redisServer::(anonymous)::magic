@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1048' type='unsigned long long'/>
+<offset>128</offset>
+<doc f='codebrowser/src/server.h' l='1048'>/* Magic value to make sure data is valid. */</doc>
+<use f='codebrowser/src/childinfo.c' l='64' u='w' c='sendChildInfo'/>
+<use f='codebrowser/src/childinfo.c' l='77' u='r' c='receiveChildInfo'/>
+<use f='codebrowser/src/server.c' l='1872' u='w' c='initServer'/>

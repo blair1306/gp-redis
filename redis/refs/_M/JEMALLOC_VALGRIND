@@ -1,0 +1,6 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='153'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal.h' l='116' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/valgrind.h' l='4' u='a'/>
+<use f='codebrowser/deps/jemalloc/include/jemalloc/internal/valgrind.h' l='99' u='a'/>
+<doc f='codebrowser/deps/jemalloc/include/jemalloc/internal/jemalloc_internal_defs.h' l='152'>/* Support Valgrind. */</doc>
+<use f='codebrowser/deps/jemalloc/src/valgrind.c' l='2' u='a'/>

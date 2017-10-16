@@ -1,0 +1,10 @@
+<def f='codebrowser/src/server.h' l='636' ll='655'/>
+<size>48</size>
+<doc f='codebrowser/src/server.h' l='634'>/* This structure holds the blocking operation state for a client.
+ * The fields used depend on client-&gt;btype. */</doc>
+<mbr r='blockingState::timeout' o='0' t='mstime_t'/>
+<mbr r='blockingState::keys' o='64' t='dict *'/>
+<mbr r='blockingState::target' o='128' t='robj *'/>
+<mbr r='blockingState::numreplicas' o='192' t='int'/>
+<mbr r='blockingState::reploffset' o='256' t='long long'/>
+<mbr r='blockingState::module_blocked_handle' o='320' t='void *'/>

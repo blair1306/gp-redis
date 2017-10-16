@@ -1,0 +1,3 @@
+<def f='codebrowser/src/bitops.c' l='379' ll='389' type='void printBits(unsigned char * p, unsigned long count)'/>
+<doc f='codebrowser/src/bitops.c' l='377'>/* Debugging function. Just show bits in the specified bitmap. Not used
+ * but here for not having to rewrite it when debugging is needed. */</doc>

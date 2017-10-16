@@ -1,0 +1,7 @@
+<def f='codebrowser/deps/jemalloc/src/prof.c' l='1018' ll='1032' macro='1' type='_Bool prof_dump_printf(_Bool propagate_err, const char * format)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1112' u='c' c='prof_tctx_dump_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1269' u='c' c='prof_tdata_dump_iter'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1289' u='c' c='je_prof_dump_header'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1329' u='c' c='prof_dump_gctx'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1334' u='c' c='prof_dump_gctx'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1341' u='c' c='prof_dump_gctx'/>

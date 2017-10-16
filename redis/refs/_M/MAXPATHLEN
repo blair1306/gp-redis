@@ -1,0 +1,6 @@
+<dec f='include/x86_64-linux-gnu/sys/param.h' l='48'/>
+<use f='codebrowser/src/aof.c' l='239' u='c'/>
+<use f='codebrowser/src/aof.c' l='245' u='c'/>
+<use f='codebrowser/src/rdb.c' l='990' u='c'/>
+<use f='codebrowser/src/rdb.c' l='998' u='c'/>
+<use f='codebrowser/src/rdb.c' l='1022' u='c'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/async.h' l='109' type='int redisAsyncSetConnectCallback(redisAsyncContext * ac, redisConnectCallback * fn)'/>
+<def f='codebrowser/deps/hiredis/async.c' l='205' ll='216' type='int redisAsyncSetConnectCallback(redisAsyncContext * ac, redisConnectCallback * fn)'/>
+<use f='codebrowser/src/sentinel.c' l='1924' u='c' c='sentinelReconnectInstance'/>
+<use f='codebrowser/src/sentinel.c' l='1948' u='c' c='sentinelReconnectInstance'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='969' type='int'/>
+<offset>1152</offset>
+<use f='codebrowser/src/server.c' l='756' u='r' c='trackInstantaneousMetric'/>
+<use f='codebrowser/src/server.c' l='758' u='w' c='trackInstantaneousMetric'/>
+<use f='codebrowser/src/server.c' l='759' u='w' c='trackInstantaneousMetric'/>
+<use f='codebrowser/src/server.c' l='1778' u='w' c='resetServerStats'/>

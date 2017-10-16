@@ -1,0 +1,4 @@
+<def f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1727' ll='1747' macro='1' type='void ifree(tsd_t * tsd, void * ptr, tcache_t * tcache)'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1783' u='c' c='je_realloc'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='1839' u='c' c='je_free'/>
+<use f='codebrowser/deps/jemalloc/src/jemalloc.c' l='2378' u='c' c='je_dallocx'/>

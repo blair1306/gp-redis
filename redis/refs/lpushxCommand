@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1855' type='void lpushxCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='151' u='r'/>
+<use f='codebrowser/src/server.c' l='151' u='r'/>
+<use f='codebrowser/src/server.c' l='151' u='r'/>
+<use f='codebrowser/src/server.c' l='151' u='r'/>
+<def f='codebrowser/src/t_list.c' l='256' ll='258' type='void lpushxCommand(client * c)'/>

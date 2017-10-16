@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1314' type='void moduleFreeContext(struct RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/aof.c' l='1044' u='c' c='rewriteModuleObject'/>
+<def f='codebrowser/src/module.c' l='424' ll='438' type='void moduleFreeContext(RedisModuleCtx * ctx)'/>
+<use f='codebrowser/src/module.c' l='470' u='c' c='RedisModuleCommandDispatcher'/>
+<use f='codebrowser/src/module.c' l='492' u='c' c='moduleGetCommandKeysViaAPI'/>
+<use f='codebrowser/src/module.c' l='3501' u='c' c='moduleHandleBlockedClients'/>
+<use f='codebrowser/src/module.c' l='3557' u='c' c='moduleBlockedClientTimedOut'/>
+<use f='codebrowser/src/module.c' l='3620' u='c' c='RM_FreeThreadSafeContext'/>
+<use f='codebrowser/src/module.c' l='3767' u='c' c='moduleLoad'/>
+<doc f='codebrowser/src/module.c' l='423'>/* Free the context after the user function was called. */</doc>
+<use f='codebrowser/src/rdb.c' l='785' u='c' c='rdbSaveObject'/>
+<use f='codebrowser/src/rdb.c' l='1417' u='c' c='rdbLoadObject'/>

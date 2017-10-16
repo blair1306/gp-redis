@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1841' type='void randomkeyCommand(client * c)'/>
+<def f='codebrowser/src/db.c' l='485' ll='495' type='void randomkeyCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='222' u='r'/>
+<use f='codebrowser/src/server.c' l='222' u='r'/>
+<use f='codebrowser/src/server.c' l='222' u='r'/>
+<use f='codebrowser/src/server.c' l='222' u='r'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='439' macro='1' type='void je_arena_chunk_dalloc_huge(arena_t * arena, void * chunk, size_t usize)'/>
+<def f='codebrowser/deps/jemalloc/src/arena.c' l='929' macro='1' type='void je_arena_chunk_dalloc_huge(arena_t * arena, void * chunk, size_t usize)'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='85' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/huge.c' l='373' macro='1' u='c'/>

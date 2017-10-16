@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/server.h' l='738' type='int'/>
+<offset>64</offset>
+<use f='codebrowser/src/config.c' l='165' u='w' c='queueLoadModule'/>
+<use f='codebrowser/src/module.c' l='3719' u='r' c='moduleLoadFromQueue'/>

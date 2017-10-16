@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/ckh.h' l='69' macro='1' type='_Bool je_ckh_new(tsd_t * tsd, ckh_t * ckh, size_t minitems, ckh_hash_t * je_hash, ckh_keycomp_t * keycomp)'/>
+<def f='codebrowser/deps/jemalloc/src/ckh.c' l='350' macro='1' type='_Bool je_ckh_new(tsd_t * tsd, ckh_t * ckh, size_t minitems, ckh_hash_t * je_hash, ckh_keycomp_t * keycomp)'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1730' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='2125' macro='1' u='c'/>

@@ -1,0 +1,5 @@
+tolower|tolower
+toupper|toupper
+touchCommand|touchCommand
+touchWatchedKey|touchWatchedKey
+touchWatchedKeysOnFlush|touchWatchedKeysOnFlush

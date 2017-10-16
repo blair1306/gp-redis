@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/ae.h' l='79' type='aeEventFinalizerProc *'/>
+<use f='codebrowser/src/ae.c' l='216' u='w' c='aeCreateTimeEvent'/>
+<use f='codebrowser/src/ae.c' l='300' u='r' c='processTimeEvents'/>
+<use f='codebrowser/src/ae.c' l='301' u='r' c='processTimeEvents'/>
+<offset>256</offset>

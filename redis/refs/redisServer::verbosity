@@ -1,0 +1,16 @@
+<dec f='codebrowser/src/server.h' l='972' type='int'/>
+<offset>12928</offset>
+<doc f='codebrowser/src/server.h' l='971'>/* Configuration */</doc>
+<doc f='codebrowser/src/server.h' l='972'>/* Loglevel in redis.conf */</doc>
+<use f='codebrowser/src/cluster.c' l='1326' u='r' c='clusterProcessGossipSection'/>
+<use f='codebrowser/src/config.c' l='264' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='265' u='r' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1143' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1319' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='1962' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/networking.c' l='1111' u='r' c='setProtocolError'/>
+<use f='codebrowser/src/sentinel.c' l='616' u='r' c='sentinelEvent'/>
+<use f='codebrowser/src/server.c' l='323' u='r' c='serverLogRaw'/>
+<use f='codebrowser/src/server.c' l='362' u='r' c='serverLog'/>
+<use f='codebrowser/src/server.c' l='382' u='r' c='serverLogFromHandler'/>
+<use f='codebrowser/src/server.c' l='1362' u='w' c='initServerConfig'/>

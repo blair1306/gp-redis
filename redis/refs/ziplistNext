@@ -1,0 +1,46 @@
+<dec f='codebrowser/src/ziplist.h' l='41' type='unsigned char * ziplistNext(unsigned char * zl, unsigned char * p)'/>
+<use f='codebrowser/src/aof.c' l='926' u='c' c='rewriteSortedSetObject'/>
+<use f='codebrowser/src/db.c' l='692' u='c' c='scanGenericCommand'/>
+<use f='codebrowser/src/debug.c' l='187' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/geo.c' l='245' u='c' c='geoGetPointsInRange'/>
+<use f='codebrowser/src/module.c' l='1927' u='c' c='RM_ZsetRangeCurrentElement'/>
+<use f='codebrowser/src/module.c' l='1952' u='c' c='RM_ZsetRangeNext'/>
+<use f='codebrowser/src/module.c' l='1953' u='c' c='RM_ZsetRangeNext'/>
+<use f='codebrowser/src/module.c' l='1963' u='c' c='RM_ZsetRangeNext'/>
+<use f='codebrowser/src/module.c' l='2026' u='c' c='RM_ZsetRangePrev'/>
+<use f='codebrowser/src/quicklist.c' l='557' u='c' c='quicklistAppendValuesFromZiplist'/>
+<use f='codebrowser/src/quicklist.c' l='879' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='1143' u='r' c='quicklistNext'/>
+<use f='codebrowser/src/t_hash.c' l='73' u='c' c='hashTypeGetFromZiplist'/>
+<use f='codebrowser/src/t_hash.c' l='214' u='c' c='hashTypeSet'/>
+<use f='codebrowser/src/t_hash.c' l='364' u='c' c='hashTypeNext'/>
+<use f='codebrowser/src/t_hash.c' l='369' u='c' c='hashTypeNext'/>
+<use f='codebrowser/src/t_zset.c' l='736' u='c' c='zzlNext'/>
+<use f='codebrowser/src/t_zset.c' l='738' u='c' c='zzlNext'/>
+<use f='codebrowser/src/t_zset.c' l='804' u='c' c='zzlFirstInRange'/>
+<use f='codebrowser/src/t_zset.c' l='816' u='c' c='zzlFirstInRange'/>
+<use f='codebrowser/src/t_zset.c' l='832' u='c' c='zzlLastInRange'/>
+<use f='codebrowser/src/t_zset.c' l='910' u='c' c='zzlFirstInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='912' u='c' c='zzlFirstInLexRange'/>
+<use f='codebrowser/src/t_zset.c' l='950' u='c' c='zzlFind'/>
+<use f='codebrowser/src/t_zset.c' l='960' u='c' c='zzlFind'/>
+<use f='codebrowser/src/t_zset.c' l='993' u='c' c='zzlInsertAt'/>
+<use f='codebrowser/src/t_zset.c' l='1006' u='c' c='zzlInsert'/>
+<use f='codebrowser/src/t_zset.c' l='1025' u='c' c='zzlInsert'/>
+<use f='codebrowser/src/t_zset.c' l='1046' u='c' c='zzlDeleteRangeByScore'/>
+<use f='codebrowser/src/t_zset.c' l='1074' u='c' c='zzlDeleteRangeByLex'/>
+<use f='codebrowser/src/t_zset.c' l='1138' u='c' c='zsetConvert'/>
+<use f='codebrowser/src/t_zset.c' l='1438' u='c' c='zsetRank'/>
+<use f='codebrowser/src/t_zset.c' l='1840' u='c' c='zuiInitIterator'/>
+<use f='codebrowser/src/t_zset.c' l='2413' u='c' c='zrangeGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2548' u='c' c='genericZrangebyscoreCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2701' u='c' c='zcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2782' u='c' c='zlexcountCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2900' u='c' c='genericZrangebylexCommand'/>
+<def f='codebrowser/src/ziplist.c' l='993' ll='1009' type='unsigned char * ziplistNext(unsigned char * zl, unsigned char * p)'/>
+<doc f='codebrowser/src/ziplist.c' l='987'>/* Return pointer to next entry in ziplist.
+ *
+ * zl is the pointer to the ziplist
+ * p is the pointer to the current element
+ *
+ * The element after &apos;p&apos; is returned, otherwise NULL if we are at the end. */</doc>

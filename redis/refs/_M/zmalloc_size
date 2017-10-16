@@ -1,0 +1,13 @@
+<dec f='codebrowser/src/zmalloc.h' l='53'/>
+<use f='codebrowser/src/defrag.c' l='71' u='c'/>
+<use f='codebrowser/src/networking.c' l='43' u='c'/>
+<use f='codebrowser/src/networking.c' l='52' u='c'/>
+<use f='codebrowser/src/object.c' l='760' u='c'/>
+<use f='codebrowser/src/object.c' l='826' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='102' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='118' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='124' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='134' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='152' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='157' u='c'/>
+<use f='codebrowser/src/zmalloc.c' l='194' u='c'/>

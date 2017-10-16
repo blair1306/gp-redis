@@ -1,0 +1,3 @@
+<def f='codebrowser/src/cluster.c' l='3508' ll='3512' type='void bitmapSetBit(unsigned char * bitmap, int pos)'/>
+<use f='codebrowser/src/cluster.c' l='3541' u='c' c='clusterNodeSetSlotBit'/>
+<doc f='codebrowser/src/cluster.c' l='3507'>/* Set the bit at position &apos;pos&apos; in a bitmap. */</doc>

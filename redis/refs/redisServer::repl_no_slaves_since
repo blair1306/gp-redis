@@ -1,0 +1,7 @@
+<dec f='codebrowser/src/server.h' l='1073' type='time_t'/>
+<offset>18304</offset>
+<doc f='codebrowser/src/server.h' l='1073'>/* We have no slaves since that time.
+                                       Only valid if server.slaves len is 0. */</doc>
+<use f='codebrowser/src/networking.c' l='844' u='w' c='freeClient'/>
+<use f='codebrowser/src/replication.c' l='2613' u='r' c='replicationCron'/>
+<use f='codebrowser/src/server.c' l='1484' u='w' c='initServerConfig'/>

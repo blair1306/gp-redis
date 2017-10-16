@@ -1,0 +1,5 @@
+<def f='codebrowser/deps/jemalloc/include/jemalloc/internal/arena.h' l='615' macro='1' type='arena_chunk_map_misc_t * je_arena_rd_to_miscelm(arena_runs_dirty_link_t * rd)'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1254' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1330' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1406' macro='1' u='c'/>
+<use f='codebrowser/deps/jemalloc/src/arena.c' l='1491' macro='1' u='c'/>

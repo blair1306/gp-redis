@@ -1,0 +1,23 @@
+<dec f='include/unistd.h' l='631' type='__pid_t getpid()'/>
+<doc f='include/unistd.h' l='630'>/* Get the process ID of the calling process.  */</doc>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1388' u='c' c='prof_dump_maps'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1557' u='c' c='prof_dump_filename'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='1562' u='c' c='prof_dump_filename'/>
+<use f='codebrowser/src/aof.c' l='1157' u='c' c='rewriteAppendOnlyFile'/>
+<use f='codebrowser/src/aof.c' l='1351' u='c' c='rewriteAppendOnlyFileBackground'/>
+<use f='codebrowser/src/debug.c' l='1114' u='c' c='sigsegvHandler'/>
+<use f='codebrowser/src/rdb.c' l='995' u='c' c='rdbSave'/>
+<use f='codebrowser/src/redis-cli.c' l='2473' u='c' c='LRUTestMode'/>
+<use f='codebrowser/src/replication.c' l='1811' u='c' c='syncWithMaster'/>
+<use f='codebrowser/src/server.c' l='334' u='c' c='serverLogRaw'/>
+<use f='codebrowser/src/server.c' l='347' u='c' c='serverLogRaw'/>
+<use f='codebrowser/src/server.c' l='387' u='c' c='serverLogFromHandler'/>
+<use f='codebrowser/src/server.c' l='1801' u='c' c='initServer'/>
+<use f='codebrowser/src/server.c' l='2876' u='c' c='genRedisInfoString'/>
+<use f='codebrowser/src/server.c' l='3370' u='c' c='createPidFile'/>
+<use f='codebrowser/src/server.c' l='3449' u='c' c='redisAsciiArt'/>
+<use f='codebrowser/src/server.c' l='3476' u='c' c='sigShutdownHandler'/>
+<use f='codebrowser/src/server.c' l='3711' u='c' c='main'/>
+<use f='codebrowser/src/server.c' l='3816' u='c' c='main'/>
+<use f='codebrowser/src/util.c' l='588' u='c' c='getRandomHexChars'/>
+<use f='codebrowser/src/zmalloc.c' l='246' u='c' c='zmalloc_get_rss'/>

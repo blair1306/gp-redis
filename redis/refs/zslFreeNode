@@ -1,0 +1,11 @@
+<def f='codebrowser/src/t_zset.c' l='100' ll='103' type='void zslFreeNode(zskiplistNode * node)'/>
+<use f='codebrowser/src/t_zset.c' l='112' u='c' c='zslFree'/>
+<use f='codebrowser/src/t_zset.c' l='239' u='c' c='zslDelete'/>
+<use f='codebrowser/src/t_zset.c' l='351' u='c' c='zslDeleteRangeByScore'/>
+<use f='codebrowser/src/t_zset.c' l='380' u='c' c='zslDeleteRangeByLex'/>
+<use f='codebrowser/src/t_zset.c' l='409' u='c' c='zslDeleteRangeByRank'/>
+<use f='codebrowser/src/t_zset.c' l='1174' u='c' c='zsetConvert'/>
+<use f='codebrowser/src/t_zset.c' l='1350' u='c' c='zsetAdd'/>
+<doc f='codebrowser/src/t_zset.c' l='97'>/* Free the specified skiplist node. The referenced SDS string representation
+ * of the element is freed too, unless node-&gt;ele is set to NULL before calling
+ * this function. */</doc>

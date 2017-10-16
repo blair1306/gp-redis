@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='749' type='robj *'/>
+<offset>2432</offset>
+<use f='codebrowser/src/db.c' l='1074' u='r' c='propagateExpire'/>
+<use f='codebrowser/src/expire.c' l='414' u='r' c='expireGenericCommand'/>
+<use f='codebrowser/src/server.c' l='1315' u='w' c='createSharedObjects'/>

@@ -1,0 +1,17 @@
+<def f='codebrowser/src/quicklist.c' l='178' ll='203' type='int __quicklistCompressNode(quicklistNode * node)'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='__quicklistCompress'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='__quicklistInsertNode'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='quicklistReplaceAtIndex'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='_quicklistZiplistMerge'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='_quicklistInsert'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='quicklistDelRange'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='quicklistReleaseIterator'/>
+<use f='codebrowser/src/quicklist.c' l='209' u='c' c='quicklistNext'/>
+<doc f='codebrowser/src/quicklist.c' l='175'>/* Compress the ziplist in &apos;node&apos; and update encoding details.
+ * Returns 1 if ziplist compressed successfully.
+ * Returns 0 if compression failed or if ziplist too small to compress. */</doc>

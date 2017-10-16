@@ -1,0 +1,6 @@
+<def f='codebrowser/src/t_zset.c' l='1911' ll='1969' type='int zuiNext(zsetopsrc * op, zsetopval * val)'/>
+<use f='codebrowser/src/t_zset.c' l='2231' u='c' c='zunionInterGenericCommand'/>
+<use f='codebrowser/src/t_zset.c' l='2279' u='c' c='zunionInterGenericCommand'/>
+<doc f='codebrowser/src/t_zset.c' l='1908'>/* Check if the current value is valid. If so, store it in the passed structure
+ * and move to the next element. If not valid, this means we have reached the
+ * end of the structure and can abort. */</doc>

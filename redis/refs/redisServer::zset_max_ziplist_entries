@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/server.h' l='1137' type='size_t'/>
+<offset>21184</offset>
+<use f='codebrowser/src/config.c' l='551' u='w' c='loadServerConfigFromString'/>
+<use f='codebrowser/src/config.c' l='1070' u='w' c='configSetCommand'/>
+<use f='codebrowser/src/config.c' l='1245' u='r' c='configGetCommand'/>
+<use f='codebrowser/src/config.c' l='2022' u='r' c='rewriteConfig'/>
+<use f='codebrowser/src/rdb.c' l='1248' u='r' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1384' u='r' c='rdbLoadObject'/>
+<use f='codebrowser/src/server.c' l='1422' u='w' c='initServerConfig'/>
+<use f='codebrowser/src/t_zset.c' l='1193' u='r' c='zsetConvertToZiplistIfNeeded'/>
+<use f='codebrowser/src/t_zset.c' l='1307' u='r' c='zsetAdd'/>
+<use f='codebrowser/src/t_zset.c' l='1556' u='r' c='zaddGenericCommand'/>

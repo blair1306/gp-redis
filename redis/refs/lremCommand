@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/server.h' l='1884' type='void lremCommand(client * c)'/>
+<use f='codebrowser/src/server.c' l='163' u='r'/>
+<use f='codebrowser/src/server.c' l='163' u='r'/>
+<use f='codebrowser/src/server.c' l='163' u='r'/>
+<use f='codebrowser/src/server.c' l='163' u='r'/>
+<def f='codebrowser/src/t_list.c' l='490' ll='532' type='void lremCommand(client * c)'/>

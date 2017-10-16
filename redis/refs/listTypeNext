@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/server.h' l='1406' type='int listTypeNext(listTypeIterator * li, listTypeEntry * entry)'/>
+<use f='codebrowser/src/debug.c' l='160' u='c' c='computeDatasetDigest'/>
+<use f='codebrowser/src/sort.c' l='360' u='c' c='sortCommand'/>
+<use f='codebrowser/src/sort.c' l='374' u='c' c='sortCommand'/>
+<def f='codebrowser/src/t_list.c' l='112' ll='123' type='int listTypeNext(listTypeIterator * li, listTypeEntry * entry)'/>
+<use f='codebrowser/src/t_list.c' l='285' u='c' c='linsertCommand'/>
+<use f='codebrowser/src/t_list.c' l='430' u='c' c='lrangeCommand'/>
+<use f='codebrowser/src/t_list.c' l='511' u='c' c='lremCommand'/>
+<doc f='codebrowser/src/t_list.c' l='109'>/* Stores pointer to current the entry in the provided entry structure
+ * and advances the position of the iterator. Returns 1 when the current
+ * entry is in fact an entry, 0 otherwise. */</doc>

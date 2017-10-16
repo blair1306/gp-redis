@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/intset.h' l='47' type='uint32_t intsetLen(const intset * is)'/>
+<def f='codebrowser/src/intset.c' l='275' ll='277' type='uint32_t intsetLen(const intset * is)'/>
+<doc f='codebrowser/src/intset.c' l='274'>/* Return intset length */</doc>
+<use f='codebrowser/src/rdb.c' l='1378' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_set.c' l='69' u='c' c='setTypeAdd'/>
+<use f='codebrowser/src/t_set.c' l='226' u='c' c='setTypeSize'/>
+<use f='codebrowser/src/t_set.c' l='246' u='c' c='setTypeConvert'/>
+<use f='codebrowser/src/t_zset.c' l='1887' u='c' c='zuiLength'/>

@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/cluster.h' l='143' type='rax *'/>
+<use f='codebrowser/src/cluster.c' l='482' u='w' c='clusterInit'/>
+<offset>4194624</offset>
+<use f='codebrowser/src/db.c' l='1371' u='r' c='slotToKeyUpdateKey'/>
+<use f='codebrowser/src/db.c' l='1373' u='r' c='slotToKeyUpdateKey'/>
+<use f='codebrowser/src/db.c' l='1387' u='r' c='slotToKeyFlush'/>
+<use f='codebrowser/src/db.c' l='1388' u='w' c='slotToKeyFlush'/>
+<use f='codebrowser/src/db.c' l='1403' u='r' c='getKeysInSlot'/>
+<use f='codebrowser/src/db.c' l='1422' u='r' c='delKeysInSlot'/>
+<use f='codebrowser/src/lazyfree.c' l='101' u='r' c='slotToKeyFlushAsync'/>
+<use f='codebrowser/src/lazyfree.c' l='103' u='w' c='slotToKeyFlushAsync'/>

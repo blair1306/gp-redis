@@ -1,0 +1,6 @@
+<def f='codebrowser/src/memtest.c' l='82' ll='88' type='void memtest_progress_step(size_t curr, size_t size, char c)'/>
+<use f='codebrowser/src/memtest.c' l='103' u='c' c='memtest_addressing'/>
+<use f='codebrowser/src/memtest.c' l='118' u='c' c='memtest_addressing'/>
+<use f='codebrowser/src/memtest.c' l='156' u='c' c='memtest_fill_random'/>
+<use f='codebrowser/src/memtest.c' l='189' u='c' c='memtest_fill_value'/>
+<use f='codebrowser/src/memtest.c' l='213' u='c' c='memtest_compare'/>

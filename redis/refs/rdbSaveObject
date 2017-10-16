@@ -1,0 +1,6 @@
+<dec f='codebrowser/src/rdb.h' l='136' type='ssize_t rdbSaveObject(rio * rdb, robj * o)'/>
+<use f='codebrowser/src/cluster.c' l='4626' u='c' c='createDumpPayload'/>
+<def f='codebrowser/src/rdb.c' l='643' ll='793' type='ssize_t rdbSaveObject(rio * rdb, robj * o)'/>
+<use f='codebrowser/src/rdb.c' l='800' u='c' c='rdbSavedObjectLen'/>
+<use f='codebrowser/src/rdb.c' l='823' u='c' c='rdbSaveKeyValuePair'/>
+<doc f='codebrowser/src/rdb.c' l='642'>/* Save a Redis object. Returns -1 on error, number of bytes written on success. */</doc>

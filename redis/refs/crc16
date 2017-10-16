@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1760' type='unsigned short crc16(const char * buf, int len)'/>
+<use f='codebrowser/src/cluster.c' l='647' u='c' c='keyHashSlot'/>
+<use f='codebrowser/src/cluster.c' l='654' u='c' c='keyHashSlot'/>
+<use f='codebrowser/src/cluster.c' l='658' u='c' c='keyHashSlot'/>
+<def f='codebrowser/src/crc16.c' l='82' ll='88' type='unsigned short crc16(const char * buf, int len)'/>

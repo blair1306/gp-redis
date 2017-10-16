@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/signum.h' l='47'/>
+<use f='codebrowser/src/scripting.c' l='1606' u='c'/>
+<use f='codebrowser/src/server.c' l='3463' u='c'/>
+<use f='codebrowser/src/server.c' l='3494' u='c'/>

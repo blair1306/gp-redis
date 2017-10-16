@@ -1,0 +1,15 @@
+<dec f='codebrowser/src/cluster.c' l='49' type='clusterNode * createClusterNode(char * nodename, int flags)'/>
+<use f='codebrowser/src/cluster.c' l='163' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='217' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='249' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='443' u='c' c='clusterInit'/>
+<def f='codebrowser/src/cluster.c' l='672' ll='700' type='clusterNode * createClusterNode(char * nodename, int flags)'/>
+<use f='codebrowser/src/cluster.c' l='1304' u='c' c='clusterStartHandshake'/>
+<use f='codebrowser/src/cluster.c' l='1736' u='c' c='clusterProcessPacket'/>
+<doc f='codebrowser/src/cluster.c' l='665'>/* Create a new cluster node, with the specified flags.
+ * If &quot;nodename&quot; is NULL this is considered a first handshake and a random
+ * node name is assigned to this node (it will be fixed later when we&apos;ll
+ * receive the first pong).
+ *
+ * The node is created and returned to the user, but it is not automatically
+ * added to the nodes hash table. */</doc>

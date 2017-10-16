@@ -1,0 +1,5 @@
+<dec f='codebrowser/src/server.h' l='1363' type='void * dupClientReplyValue(void * o)'/>
+<use f='codebrowser/src/aof.c' l='606' u='r' c='createFakeClient'/>
+<def f='codebrowser/src/networking.c' l='58' ll='60' type='void * dupClientReplyValue(void * o)'/>
+<use f='codebrowser/src/networking.c' l='124' u='r' c='createClient'/>
+<doc f='codebrowser/src/networking.c' l='57'>/* Client.reply list dup and free methods. */</doc>

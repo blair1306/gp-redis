@@ -1,0 +1,8 @@
+<dec f='codebrowser/src/server.h' l='1663' type='void hashTypeConvert(robj * o, int enc)'/>
+<use f='codebrowser/src/rdb.c' l='1263' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1286' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1366' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/rdb.c' l='1391' u='c' c='rdbLoadObject'/>
+<use f='codebrowser/src/t_hash.c' l='49' u='c' c='hashTypeTryConversion'/>
+<use f='codebrowser/src/t_hash.c' l='238' u='c' c='hashTypeSet'/>
+<def f='codebrowser/src/t_hash.c' l='500' ll='508' type='void hashTypeConvert(robj * o, int enc)'/>

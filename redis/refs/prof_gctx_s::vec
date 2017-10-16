@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/jemalloc/include/jemalloc/internal/prof.h' l='172' type='void *[1]'/>
+<offset>1728</offset>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='567' u='r' c='prof_gctx_create'/>
+<use f='codebrowser/deps/jemalloc/src/prof.c' l='568' u='r' c='prof_gctx_create'/>

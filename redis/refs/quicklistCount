@@ -1,0 +1,4 @@
+<dec f='codebrowser/src/quicklist.h' l='157' type='unsigned int quicklistCount(const quicklist * ql)'/>
+<def f='codebrowser/src/quicklist.c' l='152' type='unsigned int quicklistCount(const quicklist * ql)'/>
+<doc f='codebrowser/src/quicklist.c' l='151'>/* Return cached quicklist count */</doc>
+<use f='codebrowser/src/t_list.c' l='76' u='c' c='listTypeLength'/>

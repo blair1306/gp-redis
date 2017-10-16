@@ -1,0 +1,11 @@
+<dec f='codebrowser/src/cluster.c' l='50' type='int clusterAddNode(clusterNode * node)'/>
+<use f='codebrowser/src/cluster.c' l='164' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='218' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='250' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='446' u='c' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='552' u='c' c='clusterReset'/>
+<def f='codebrowser/src/cluster.c' l='864' ll='870' type='int clusterAddNode(clusterNode * node)'/>
+<use f='codebrowser/src/cluster.c' l='937' u='c' c='clusterRenameNode'/>
+<use f='codebrowser/src/cluster.c' l='1308' u='c' c='clusterStartHandshake'/>
+<use f='codebrowser/src/cluster.c' l='1740' u='c' c='clusterProcessPacket'/>
+<doc f='codebrowser/src/cluster.c' l='863'>/* Add a node to the nodes hash table */</doc>

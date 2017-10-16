@@ -1,0 +1,2 @@
+<dec f='include/x86_64-linux-gnu/bits/mathcalls.h' l='343' macro='1' type='long long llroundl(long double __x)'/>
+<use f='codebrowser/src/hyperloglog.c' l='1015' u='c' c='hllCount'/>

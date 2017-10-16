@@ -1,0 +1,12 @@
+<dec f='codebrowser/src/cluster.c' l='61' type='int clusterAddSlot(clusterNode * n, int slot)'/>
+<use f='codebrowser/src/cluster.c' l='265' u='c' c='clusterLoadConfig'/>
+<use f='codebrowser/src/cluster.c' l='1562' u='c' c='clusterUpdateSlotsConfigWith'/>
+<use f='codebrowser/src/cluster.c' l='2810' u='c' c='clusterFailoverReplaceYourMaster'/>
+<def f='codebrowser/src/cluster.c' l='3580' ll='3585' type='int clusterAddSlot(clusterNode * n, int slot)'/>
+<use f='codebrowser/src/cluster.c' l='3784' u='c' c='verifyClusterConfigWithData'/>
+<use f='codebrowser/src/cluster.c' l='4159' u='c' c='clusterCommand'/>
+<use f='codebrowser/src/cluster.c' l='4255' u='c' c='clusterCommand'/>
+<doc f='codebrowser/src/cluster.c' l='3576'>/* Add the specified slot to the list of slots that node &apos;n&apos; will
+ * serve. Return C_OK if the operation ended with success.
+ * If the slot is already assigned to another instance this is considered
+ * an error and C_ERR is returned. */</doc>

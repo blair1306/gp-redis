@@ -1,0 +1,20 @@
+<dec f='codebrowser/src/cluster.h' l='153' type='mstime_t'/>
+<use f='codebrowser/src/cluster.c' l='495' u='w' c='clusterInit'/>
+<use f='codebrowser/src/cluster.c' l='1685' u='r' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2019' u='w' c='clusterProcessPacket'/>
+<use f='codebrowser/src/cluster.c' l='2250' u='r' c='clusterBuildMessageHdr'/>
+<use f='codebrowser/src/cluster.c' l='2563' u='r' c='clusterRequestFailoverAuth'/>
+<use f='codebrowser/src/cluster.c' l='2838' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2916' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='2939' u='r' c='clusterHandleSlaveFailover'/>
+<use f='codebrowser/src/cluster.c' l='3147' u='r' c='resetManualFailover'/>
+<use f='codebrowser/src/cluster.c' l='3151' u='w' c='resetManualFailover'/>
+<use f='codebrowser/src/cluster.c' l='3159' u='r' c='manualFailoverCheckTimeout'/>
+<use f='codebrowser/src/cluster.c' l='3159' u='r' c='manualFailoverCheckTimeout'/>
+<use f='codebrowser/src/cluster.c' l='3169' u='r' c='clusterHandleManualFailover'/>
+<use f='codebrowser/src/cluster.c' l='3404' u='r' c='clusterCron'/>
+<use f='codebrowser/src/cluster.c' l='4523' u='w' c='clusterCommand'/>
+<offset>4195008</offset>
+<doc f='codebrowser/src/cluster.h' l='152'>/* Manual failover state in common. */</doc>
+<doc f='codebrowser/src/cluster.h' l='153'>/* Manual failover time limit (ms unixtime).
+                                   It is zero if there is no MF in progress. */</doc>

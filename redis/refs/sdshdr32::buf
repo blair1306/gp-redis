@@ -1,0 +1,4 @@
+<dec f='codebrowser/deps/hiredis/sds.h' l='66' type='char []'/>
+<offset>72</offset>
+<dec f='codebrowser/src/sds.h' l='66' type='char []'/>
+<offset>72</offset>

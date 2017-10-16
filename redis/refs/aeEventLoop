@@ -1,0 +1,14 @@
+<def f='codebrowser/src/ae.h' l='91' ll='103'/>
+<size>80</size>
+<doc f='codebrowser/src/ae.h' l='90'>/* State of an event based program */</doc>
+<mbr r='aeEventLoop::maxfd' o='0' t='int'/>
+<mbr r='aeEventLoop::setsize' o='32' t='int'/>
+<mbr r='aeEventLoop::timeEventNextId' o='64' t='long long'/>
+<mbr r='aeEventLoop::lastTime' o='128' t='time_t'/>
+<mbr r='aeEventLoop::events' o='192' t='aeFileEvent *'/>
+<mbr r='aeEventLoop::fired' o='256' t='aeFiredEvent *'/>
+<mbr r='aeEventLoop::timeEventHead' o='320' t='aeTimeEvent *'/>
+<mbr r='aeEventLoop::stop' o='384' t='int'/>
+<mbr r='aeEventLoop::apidata' o='448' t='void *'/>
+<mbr r='aeEventLoop::beforesleep' o='512' t='aeBeforeSleepProc *'/>
+<mbr r='aeEventLoop::aftersleep' o='576' t='aeBeforeSleepProc *'/>

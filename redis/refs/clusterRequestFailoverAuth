@@ -1,0 +1,8 @@
+<def f='codebrowser/src/cluster.c' l='2554' ll='2567' type='void clusterRequestFailoverAuth()'/>
+<use f='codebrowser/src/cluster.c' l='2971' u='c' c='clusterHandleSlaveFailover'/>
+<doc f='codebrowser/src/cluster.c' l='2548'>/* This function sends a FAILOVE_AUTH_REQUEST message to every node in order to
+ * see if there is the quorum for this slave instance to failover its failing
+ * master.
+ *
+ * Note that we send the failover request to everybody, master and slave nodes,
+ * but only the masters are supposed to reply to our query. */</doc>
